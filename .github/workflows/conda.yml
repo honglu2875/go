@@ -45,7 +45,9 @@ jobs:
           env
 
       - name: Build
-        run: conda build conda.recipe
+        run: |
+          export CPPFLAGS="-L${CONDA_PREFIX}/lib -I${CONDA_PREFIX}/include"
+          conda build conda.recipe
 
       - name: Install
         run: conda install -c ${CONDA_PREFIX}/conda-bld/ go[dev]

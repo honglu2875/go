@@ -9,7 +9,7 @@ from setuptools import setup
 
 __version__ = "0.0.1"
 
-os.environ["CPPFLAGS"] = "-lboost_filesystem"
+os.environ["CPPFLAGS"] += " -lboost_filesystem"
 
 ext_modules = [
     Pybind11Extension("go",
