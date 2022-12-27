@@ -12,20 +12,23 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - boost
 
   host:
     - python
     - pip
     - pybind11 >=2.10.0
+    - boost
 
   run:
     - python
+    - pytest
+    - boost
 
 
 test:
   imports:
     - go
+    - pytest
   source_files:
     - tests
   commands:
