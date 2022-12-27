@@ -9,14 +9,14 @@ from setuptools import setup
 
 __version__ = "0.0.1"
 
-os.environ["CPPFLAGS"] = "-lboost_filesystem"
+ext = Pybind11Extension("go",
+                        sorted(glob("src/*.cpp")),
+                        define_macros=[('VERSION_INFO', __version__)],
+                        )
 
-ext_modules = [
-    Pybind11Extension("go",
-                      sorted(glob("src/*.cpp")),
-                      define_macros=[('VERSION_INFO', __version__)],
-                      ),
-]
+ext.extra_compile_args[:0] = ["-lboost_filesystem"]
+
+ext_modules = [ext, ]
 
 setup(
     name="go",

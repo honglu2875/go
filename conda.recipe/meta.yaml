@@ -7,11 +7,12 @@ source:
 
 build:
   number: 0
-  script: CPPFLAGS="-L${CONDA_PREFIX}/lib -I${CONDA_PREFIX}/include" {{ PYTHON }} -m pip install .[dev] -vvv
+  script: {{ PYTHON }} -m pip install .[dev] -vvv
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - boost
 
   host:
     - python
