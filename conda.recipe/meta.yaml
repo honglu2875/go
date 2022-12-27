@@ -7,7 +7,7 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install .[dev] -vvv
+  script: CPPFLAGS="-L${CONDA_PREFIX}/lib -I${CONDA_PREFIX}/include" {{ PYTHON }} -m pip install .[dev] -vvv
 
 requirements:
   build:

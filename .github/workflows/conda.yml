@@ -46,7 +46,6 @@ jobs:
 
       - name: Build
         run: |
-          export CPPFLAGS="-L${CONDA_PREFIX}/lib -I${CONDA_PREFIX}/include"
           conda build conda.recipe
 
       - name: Install
