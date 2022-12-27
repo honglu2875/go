@@ -36,15 +36,15 @@ jobs:
           channels: conda-forge
 
       - name: Prepare
-        run: conda install conda-build conda-verify
+        run: |
+          conda install conda-build conda-verify
+          conda install -c conda-forge gcc gxx boost
 
       - name: Build
         run: conda build conda.recipe
 
       - name: Install
-        run: |
-          conda install -c conda-forge gcc gxx boost
-          conda install -c ${CONDA_PREFIX}/conda-bld/ go[dev]
+        run: conda install -c ${CONDA_PREFIX}/conda-bld/ go[dev]
 
       - name: Test
         run: pytest
