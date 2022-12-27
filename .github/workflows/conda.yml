@@ -34,11 +34,15 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           channels: conda-forge
+          auto-activate-base: true
 
       - name: Prepare
         run: |
           conda install conda-build conda-verify
-          sudo apt-get install libboost-all-dev
+          conda create -y --name test
+          conda activate test
+          conda install -c conda-forge boost
+          env
 
       - name: Build
         run: conda build conda.recipe
