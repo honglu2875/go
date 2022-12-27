@@ -38,7 +38,7 @@ jobs:
       - name: Prepare
         run: |
           conda install conda-build conda-verify
-          conda install -c conda-forge gcc gxx boost
+          conda install -c conda-forge boost
 
       - name: Build
         run: conda build conda.recipe
