@@ -1,5 +1,5 @@
 package:
-  name: go_rl-rl
+  name: go_rl
   version: 0.0.1
 
 source:
@@ -17,12 +17,12 @@ requirements:
     - python
     - pip
     - pybind11 >=2.10.0
-    - libboost
+    - boost
 
   run:
     - python
     - pytest
-    - libboost
+    - boost
 
 
 test:
@@ -35,5 +35,5 @@ test:
     - pytest
 
 about:
-  summary: a go_rl game library.
+  summary: a go game library.
   license_file: LICENSE
