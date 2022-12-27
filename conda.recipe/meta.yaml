@@ -1,5 +1,5 @@
 package:
-  name: go
+  name: go-rl
   version: 0.0.1
 
 source:
@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-    - go
+    - go-rl
     - pytest
   source_files:
     - tests
