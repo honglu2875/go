@@ -1,5 +1,5 @@
 package:
-  name: go-rl
+  name: go_rl-rl
   version: 0.0.1
 
 source:
@@ -27,7 +27,7 @@ requirements:
 
 test:
   imports:
-    - go-rl
+    - go_rl
     - pytest
   source_files:
     - tests
@@ -35,5 +35,5 @@ test:
     - pytest
 
 about:
-  summary: a go library.
+  summary: a go_rl game library.
   license_file: LICENSE

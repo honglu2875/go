@@ -46,7 +46,7 @@ jobs:
           conda build conda.recipe
 
       - name: Install
-        run: conda install -c ${CONDA_PREFIX}/conda-bld/ go-rl[dev]
+        run: conda install -c ${CONDA_PREFIX}/conda-bld/ go_rl-rl[dev]
 
       - name: Test
         run: python -m pytest

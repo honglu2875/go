@@ -1,5 +1,5 @@
 import random
-from go import FastState, FastBoard
+from go_rl import FastState, FastBoard
 
 
 def test_random_play():

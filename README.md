@@ -1,4 +1,4 @@
-# go
+# go-rl
 
 An on-going study of RL in go games. This is a repo to collect refactored codes.
 

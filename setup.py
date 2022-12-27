@@ -9,7 +9,7 @@ from setuptools import setup
 
 __version__ = "0.0.1"
 
-ext = Pybind11Extension("go",
+ext = Pybind11Extension("go_rl",
                         sorted(glob("src/*.cpp")),
                         define_macros=[('VERSION_INFO', __version__)],
                         )
@@ -19,7 +19,7 @@ ext.extra_compile_args[:0] = ["-lboost_filesystem"]
 ext_modules = [ext, ]
 
 setup(
-    name="go",
+    name="go-rl",
     version=__version__,
     author="Honglu Fan",
     author_email="honglu2875@gmail.com",

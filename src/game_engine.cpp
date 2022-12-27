@@ -9,7 +9,7 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(go, m) {
+PYBIND11_MODULE(go_rl, m) {
 py::class_<FastBoard> fast_board(m, "FastBoard");
 
 fast_board.def(py::init<>())
