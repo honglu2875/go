@@ -44,9 +44,9 @@
 #include <string>
 #include <cstdio>
 
-#include "FastBoard.h"
+#include "fast_board.h"
 
-#include "Utils.h"
+#include "utils.h"
 
 const int FastBoard::NBR_SHIFT;
 const int FastBoard::NUM_VERTICES;

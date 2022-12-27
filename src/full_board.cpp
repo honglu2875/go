@@ -38,11 +38,11 @@
 #include <array>
 #include <cassert>
 
-#include "FullBoard.h"
+#include "full_board.h"
 
 //#include "Network.h"
-#include "Utils.h"
-#include "Zobrist.h"
+#include "utils.h"
+#include "zobrist.h"
 
 using namespace Utils;
 

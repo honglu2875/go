@@ -39,7 +39,6 @@ jobs:
       - name: Prepare
         run: |
           conda install conda-build conda-verify
-          conda install -c conda-forge boost
           env  # for debugging
 
       - name: Build

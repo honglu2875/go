@@ -39,11 +39,11 @@
 #include <vector>
 #include <cstdio>
 
-#include "FastState.h"
+#include "fast_state.h"
 
-#include "FastBoard.h"
-#include "Zobrist.h"
-#include "Utils.h"
+#include "fast_board.h"
+#include "zobrist.h"
+#include "utils.h"
 
 void FastState::init_game(const int size, const float komi) {
     board.reset_board(size);

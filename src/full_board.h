@@ -40,7 +40,7 @@
 
 #include <cstdint>
 
-#include "FastBoard.h"
+#include "fast_board.h"
 
 class FullBoard : public FastBoard {
 public:

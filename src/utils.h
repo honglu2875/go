@@ -32,36 +32,54 @@
     this Program grant you additional permission to convey the resulting
     work.
 */
+
+#ifndef UTILS_H_INCLUDED
+#define UTILS_H_INCLUDED
+
 #include "config.h"
 
-#include "Zobrist.h"
+#include <atomic>
+#include <limits>
+#include <string>
 
-#include "Random.h"
+#include "thread_pool.h"
 
-std::array<std::array<std::uint64_t, FastBoard::NUM_VERTICES>,     4> Zobrist::zobrist;
-std::array<std::uint64_t, FastBoard::NUM_VERTICES>                    Zobrist::zobrist_ko;
-std::array<std::array<std::uint64_t, FastBoard::NUM_VERTICES * 2>, 2> Zobrist::zobrist_pris;
-std::array<std::uint64_t, 5>                                          Zobrist::zobrist_pass;
+extern Utils::ThreadPool thread_pool;
 
-void Zobrist::init_zobrist(Random& rng) {
-    for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < FastBoard::NUM_VERTICES; j++) {
-            Zobrist::zobrist[i][j] = rng.randuint64();
-        }
+namespace Utils {
+    void myprintf_error(const char* fmt, ...);
+    void myprintf(const char* fmt, ...);
+    void gtp_printf(int id, const char* fmt, ...);
+    void gtp_printf_raw(const char* fmt, ...);
+    void gtp_fail_printf(int id, const char* fmt, ...);
+    void log_input(const std::string& input);
+    bool input_pending();
+
+    template <class T>
+    void atomic_add(std::atomic<T>& f, const T d) {
+        T old = f.load();
+        while (!f.compare_exchange_weak(old, old + d)) {}
     }
 
-    for (int j = 0; j < FastBoard::NUM_VERTICES; j++) {
-        Zobrist::zobrist_ko[j] = rng.randuint64();
+    template <typename T>
+    T rotl(const T x, const int k) {
+        return (x << k) | (x >> (std::numeric_limits<T>::digits - k));
     }
 
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < FastBoard::NUM_VERTICES * 2; j++) {
-            Zobrist::zobrist_pris[i][j] = rng.randuint64();
-        }
+    inline bool is7bit(const int c) {
+        return c >= 0 && c <= 127;
     }
 
-    for (int i = 0; i < 5; i++) {
-        Zobrist::zobrist_pass[i] = rng.randuint64();
-    }
+    size_t ceilMultiple(size_t a, size_t b);
+
+    std::string leelaz_file(const std::string& file);
+
+    void create_z_table();
+    float cached_t_quantile(int v);
+
+    std::pair <int, int> get_symmetry(const std::pair<int, int>& vertex,
+                                      const int symmetry,
+                                      const int board_size);
 }
 
+#endif

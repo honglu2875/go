@@ -40,8 +40,8 @@
 #include <array>
 #include <cstdint>
 
-#include "FastBoard.h"
-#include "Random.h"
+#include "fast_board.h"
+#include "random.h"
 
 class Zobrist {
 public:

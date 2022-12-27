@@ -39,9 +39,9 @@
 #include <random>
 #include <thread>
 #include <chrono>
-#include "Random.h"
+#include "random.h"
 
-#include "Utils.h"
+#include "utils.h"
 
 Random& Random::get_Rng() {
     static thread_local Random s_rng{0};

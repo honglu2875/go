@@ -1,10 +1,10 @@
 #include <pybind11/pybind11.h>
 
 #include "config.h"
-#include "FastState.h"
-#include "FastBoard.h"
-#include "Random.h"
-#include "Zobrist.h"
+#include "fast_state.h"
+#include "fast_board.h"
+#include "random.h"
+#include "zobrist.h"
 
 
 namespace py = pybind11;

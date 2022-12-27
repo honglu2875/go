@@ -41,7 +41,7 @@
 #include <string>
 #include <vector>
 
-#include "FullBoard.h"
+#include "full_board.h"
 
 class FastState {
 public:
