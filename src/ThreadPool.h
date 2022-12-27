@@ -1,6 +1,12 @@
 #ifndef THREADPOOL_H_INCLUDED
 #define THREADPOOL_H_INCLUDED
 /*
+    This file is modified from Leela Zero as a detached component
+    implementing Go.
+    Modifications:
+    Copyright (c) 2022-2023 Honglu Fan
+
+    -----------Original header-----------
     Extended from code:
     Copyright (c) 2012 Jakob Progsch, Václav Zeman
     Modifications:

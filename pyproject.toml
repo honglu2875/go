@@ -8,15 +8,3 @@ build-backend = "setuptools.build_meta"
 [tool.cibuildwheel]
 test-command = "python {project}/tests/test.py"
 test-skip = "*universal2:arm64"
-
-[project.optional-dependencies]
-dev = [
-    "black",
-    "isort",
-    "flake8",
-    "pydocstyle",
-    "mypy",
-    "pre-commit",
-    "pytest",
-    "pytest-cov",
-]

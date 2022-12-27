@@ -1,4 +1,10 @@
 /*
+    This file is modified from Leela Zero as a detached component
+    implementing Go.
+    Modifications:
+    Copyright (c) 2022-2023 Honglu Fan
+
+    -----------Original header-----------
     This file is part of Leela Zero.
     Copyright (C) 2017-2019 Gian-Carlo Pascutto and contributors
 
