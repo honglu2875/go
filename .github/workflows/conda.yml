@@ -38,9 +38,9 @@ jobs:
 
       - name: Prepare
         run: |
-          conda install conda-build conda-verify
           conda create -y --name test
           conda activate test
+          conda install conda-build conda-verify
           conda install -c conda-forge boost
           env
 
