@@ -1,0 +1,39 @@
+{
+  "additional_reserve_by_host": {
+    "0": 3000000000,
+    "1": 3000000000,
+    "2": 3000000000,
+    "3": 3000000000
+  },
+  "audit_python": "/workspace/go/.gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "checkpoint_reserve_bytes": 2850000000,
+  "config_sha256": "cf4aaf43367623f79bbe81ea8953c7536d06b43a68844742a750c7dc6b402158",
+  "created": 1789505973.1249778,
+  "disk_floor_bytes": 1073741824,
+  "expected_positions": 243326,
+  "kind": "registered_joint19_run",
+  "memory_floor_bytes": 103079215104,
+  "operators": {
+    "research/studies/strong19_scaling/audit_run.py": "013c6b63b26352aa242deeeb5df6055921af800d584ef12e951c943dc96a5352",
+    "research/studies/strong19_scaling/execute_run.py": "a771184591d5ede58ac78c21e76f763cd3fca5f6c34123f5a2c12a85c0647e61",
+    "research/studies/strong19_source_muon/replicate_full_size.py": "5ad8480692a675dd21de41fda9342d8023031d005d50c793a624d15548eac5df"
+  },
+  "output_directory": "transformer-execution-001",
+  "parameters": 232011540,
+  "prerequisites": {
+    "ops/cold_checkpoint_storage/source-qualification-001/result.json": "1b55b85833b1a91dc8a735b0eea1123c05518cb462e68d33a1ba2d74119a7767",
+    "research/studies/strong19_scaling/adamw-auditor-check-001.json": "a6d22de1b25623be86d94c41aea3b3d336cc5aa465ad37faab6b420422ba069c",
+    "research/studies/strong19_scaling/source-auditor-check-001.json": "2915db08784c4460fecef87ccdb2f17b575868f9455a31984921604a021553c6",
+    "research/studies/strong19_scaling/transformer-execution-preparation-001.json": "7b153240e94140bca53f3382f1839f7fdafa7c504381316263848db907547fdc",
+    "research/studies/strong19_source_muon/full-size-execution-002/result.json": "c1217aa12cfef6d4056cb6dfda20e780277abe57d2c2f3d7d7edfb76caaed6f5"
+  },
+  "producer_growth_reserve_bytes": 2147483648,
+  "purpose": "qualification",
+  "replica_peer": 2,
+  "scope": "One fresh four-update full-size selected Transformer execution with complete all-rank audit. The fixture provides execution evidence only; scientific learning requires the separate frozen cohort and plans. Reserve the cohort allocation while this qualification runs.",
+  "shm_floor_bytes": 68719476736,
+  "snapshot": "63822bcf6a552eff3c8fe1acada47d05a9cee0c31e9b81e4cea542b013b9f071",
+  "steps": 4,
+  "timeout_seconds": 1800,
+  "validation_positions": null
+}

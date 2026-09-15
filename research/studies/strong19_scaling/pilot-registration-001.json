@@ -1,0 +1,62 @@
+{
+  "arms": {
+    "cnn_adamw": {
+      "config_sha256": "00b66998287a717b9f4a87a9aeef3a762df967f8eb8cd92b703dc95a9485b3ce",
+      "output_directory": "pilot-cnn-adamw-001",
+      "parameters": 233220870,
+      "snapshot": "779336b7884695f35cfff4fa578b3779ade63515755cb873f0527d798c25b0f8"
+    },
+    "source_cnn": {
+      "config_sha256": "f675a42a29b8b3fded264b374802b73ddc7294198dffee57b2aa7e271daf652c",
+      "output_directory": "pilot-source-cnn-001",
+      "parameters": 233220870,
+      "snapshot": "8899a885fdfeb48328c447892c0b1b6dd0e22a3d21510204d7d7686a769edbf8"
+    },
+    "transformer": {
+      "config_sha256": "29367b0b01bbdfa9522ad32021a4c51cc30449b54198aec52ee63dbd70282c73",
+      "output_directory": "pilot-transformer-001",
+      "parameters": 232011540,
+      "snapshot": "5e3978d62bc6d8611cd703f5ac894bb70a73289b7a6d62fe615c44e2727a5173"
+    }
+  },
+  "audit_python": "/workspace/go/.gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "checkpoint_reserve_bytes": 2850000000,
+  "created": 1789507540.822561,
+  "draw_reference": "research/studies/strong19_scaling/pilot-draw-replay-001.json",
+  "kind": "joint19_three_arm_pilot",
+  "operators": {
+    "ops/cold_checkpoint_storage/eligible_registered_joint.py": "95fbd53f875d720285a4db6f622cbdf936a946c6c979e95707527d3a91288675",
+    "ops/cold_checkpoint_storage/storage_registered_joint.py": "1b3047b352ae12fe9911b76536e38b78e9ca2bd6e812bfe04170987dd8c14428",
+    "research/studies/strong19_scaling/audit_run.py": "013c6b63b26352aa242deeeb5df6055921af800d584ef12e951c943dc96a5352",
+    "research/studies/strong19_scaling/execute_pilot.py": "7ca7c65ebd2bc349d1c7f5a8cc411b94252c18a7825c382618e07686154a2251",
+    "research/studies/strong19_scaling/execute_run.py": "a771184591d5ede58ac78c21e76f763cd3fca5f6c34123f5a2c12a85c0647e61",
+    "research/studies/strong19_scaling/pilot_observation.py": "7e0073511f594ea66b4c351f8ffd6657b9933caef3b12846bb54160d7a8fb1a9",
+    "research/studies/strong19_source_muon/replicate_full_size.py": "5ad8480692a675dd21de41fda9342d8023031d005d50c793a624d15548eac5df"
+  },
+  "order": [
+    "source_cnn",
+    "cnn_adamw",
+    "transformer"
+  ],
+  "population_reference": "research/studies/strong19_scaling/pilot-population-reference-001.json",
+  "prerequisites": {
+    "research/studies/strong19_joint/budget-qualification-001.json": "3c25f4957d2c14c2b5b0580a500baaaf5dc17a8a1b0fd0b00095472ea4567724",
+    "research/studies/strong19_scaling/cohort-staging-all-001/receipt.json": "bb6f4fff7d73022f5a0b7ab903bb4c8a5fb50a4fb0449697ce1a49dcda96359e",
+    "research/studies/strong19_scaling/pilot-configuration-review-001.json": "8f77be30da0d55b1fdbed7c37e930b965479d8f9c37db5b322106e915cf12e2b",
+    "research/studies/strong19_scaling/pilot-draw-replay-001.json": "6b7a5a85522a6823d0b4b7bc0f5de5ae6db6038b3b7cfe8023cfaa07cf599762",
+    "research/studies/strong19_scaling/pilot-population-reference-001.json": "f0fb8b421101034422760f3daedc0feba0a9629569f76d4b5dc6e9452ce68a0a",
+    "research/studies/strong19_scaling/pilot-settings-003.json": "1ef45cdf2a20a6076bafe4cb782c654673b6fde8174fdc54a90304e587783fef",
+    "research/studies/strong19_scaling/pilot-snapshots-002.json": "24a5370b3bc58d7a3ea06a4b94036dca01eaefa7c953f68461beae5568c0674d",
+    "research/studies/strong19_scaling/transformer-execution-002/result.json": "034ccf48ab1e59589fb6282b723a8d7e3c0382d79c42bd5410aff4db17f23edd",
+    "research/studies/strong19_scaling/transformer-retention-002/result.json": "7c5d38cb445c32f62f9a874f7b99f628e28bb6c296ce1cdcc2e5dc1844c32073",
+    "research/studies/strong19_source_muon/full-size-execution-002/result.json": "c1217aa12cfef6d4056cb6dfda20e780277abe57d2c2f3d7d7edfb76caaed6f5",
+    "research/studies/strong9_followups/scale1e-2-continuation/outcome-001.json": "681c55c07e741b9a6aee76b81576d099a7fb2bc4228b13b950c9eba6721fbbe8"
+  },
+  "producer_growth_reserve_bytes": 2147483648,
+  "replica_peer": 1,
+  "retention": "Each completed arm is independently audited, copied to peers 1 and 3, root-sealed and hash-verified before only owner arrays are evicted. Retain metadata and restore locators. RAM remains volatile.",
+  "scope": "Joint supervised learnability, same 5,787,025 live position exposures, full fixed validation and fixed probe. No test targets. Real trained KataGo matches and long-horizon training remain separate work.",
+  "status": "prepared",
+  "termination": "Stop after three fixed 108-update arms. Any run/audit/retention failure stops the sequence. Overfit flags are diagnostic; no adaptive horizon or extra seed is launched.",
+  "timeout_seconds": 10800
+}

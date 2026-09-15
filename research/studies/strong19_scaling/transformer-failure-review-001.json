@@ -1,0 +1,35 @@
+{
+  "attempt": "pod-20260915T210000Z-3fc676ba",
+  "attempt_status": "failed",
+  "closure_sha256": "250a8d8dc4f88267097443cd71327596084a0676ec56c390e8ad209b8f87506e",
+  "created": 1789506371.8602383,
+  "decision": "Halve independent encoder chunk frames from 16 to 8. No model, targets, batch size, auxiliary coefficient or deployed decode FLOP change. No learning result was produced.",
+  "elapsed_seconds": 140.01003170013428,
+  "error": "RESOURCE_EXHAUSTED: HLO temporaries (34.14G) exceeds available HBM (30.75G) during first 512-position update compilation.",
+  "kind": "joint19_transformer_memory_failure_review",
+  "ranks": {
+    "0": {
+      "accepted_updates": 0,
+      "closure_sha256": "b7b869ccd9e95e8c84971ddade2c3e1bbef18fe57174be553595626e95905b47",
+      "stderr_sha256": "8343c75e3990ca904b228394b0e4e266c32b1957504dfbce50af0b7b3d6ccbcd"
+    },
+    "1": {
+      "accepted_updates": 0,
+      "closure_sha256": "0598e1de9464372496b7c207cbf0475fee3a3f4a1651c3e3a0482bbe6211d224",
+      "stderr_sha256": "89b9998be61a970f23c4b809bcf171edc008370e60dc731aedb70ab0fec82479"
+    },
+    "2": {
+      "accepted_updates": 0,
+      "closure_sha256": "957173c148e65d6e51653fc54c8f20f6808c929a877d2da90a01bae254392965",
+      "stderr_sha256": "8280ffb0976327d67f68e107366ee07a54c92e3c8f8f9c5d67380df23998284f"
+    },
+    "3": {
+      "accepted_updates": 0,
+      "closure_sha256": "9d272dfccf1473d9b3d2f3eb45836840da7482ddd6bc9c9b0b3281ba96fbd835",
+      "stderr_sha256": "27c6382b72cfcfd184b670042ea47b42f95f3ab8c17dc240e8bab7af4a0aad02"
+    }
+  },
+  "reserved_chip_hours": 0.6222668075561524,
+  "snapshot": "63822bcf6a552eff3c8fe1acada47d05a9cee0c31e9b81e4cea542b013b9f071",
+  "status": "passed"
+}

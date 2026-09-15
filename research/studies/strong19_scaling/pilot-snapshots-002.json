@@ -1,0 +1,39 @@
+{
+  "change": {
+    "transformer.training.chunk_frames": [
+      16,
+      8
+    ]
+  },
+  "created": 1789506470.5905886,
+  "kind": "joint19_pilot_prepared_snapshots",
+  "learning_jobs_started": false,
+  "parent_preparation_sha256": "e0debc0b97f298cef161c155ebdaa11f6d5252c6b06180f7bd5a725da1058687",
+  "remaining_launch_gates": [
+    "selected transformer chunk8 full-size execution",
+    "bounded checkpoint retention",
+    "final immutable run registration"
+  ],
+  "settings_sha256": "fa1adc614438889c4b856ae219379d7c1d29eedc40396c38301f5e1793892c47",
+  "snapshots": {
+    "cnn_adamw": {
+      "config_sha256": "00b66998287a717b9f4a87a9aeef3a762df967f8eb8cd92b703dc95a9485b3ce",
+      "files": 1336,
+      "id": "779336b7884695f35cfff4fa578b3779ade63515755cb873f0527d798c25b0f8",
+      "recipe": "research/recipes/strong19_train"
+    },
+    "source_cnn": {
+      "config_sha256": "f675a42a29b8b3fded264b374802b73ddc7294198dffee57b2aa7e271daf652c",
+      "files": 1342,
+      "id": "8899a885fdfeb48328c447892c0b1b6dd0e22a3d21510204d7d7686a769edbf8",
+      "recipe": "research/recipes/strong19_source_muon_learning"
+    },
+    "transformer": {
+      "config_sha256": "29367b0b01bbdfa9522ad32021a4c51cc30449b54198aec52ee63dbd70282c73",
+      "files": 1349,
+      "id": "5e3978d62bc6d8611cd703f5ac894bb70a73289b7a6d62fe615c44e2727a5173",
+      "recipe": "research/recipes/strong19_train"
+    }
+  },
+  "status": "prepared"
+}

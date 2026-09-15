@@ -1,0 +1,105 @@
+{
+  "kind": "full_size_source19_recovery_results",
+  "status": "passed",
+  "created": 1789506162.2510417,
+  "snapshot": "e86f23f814ee39abc9dada34bc534b401462cc359cadcf743d39c99bd09b3ff4",
+  "audit_sha256": "fefa0a4df500d508cfc024aa7f73631982242928938fe1e0a30f6737dccab1b9",
+  "result_sha256": "c1217aa12cfef6d4056cb6dfda20e780277abe57d2c2f3d7d7edfb76caaed6f5",
+  "world_size": 4,
+  "model_parameters": 233220870,
+  "horizon": 4,
+  "prefix_turn": 2,
+  "position_exposures": 243326,
+  "complete_all_rank_state_exact": true,
+  "checkpoint_payload_manifests_exact": true,
+  "update_metrics_exact_except_timings": true,
+  "stages": {
+    "full": {
+      "attempt": "pod-20260915T200931Z-8cb3f544",
+      "closure_sha256": "5d695a8b1b3b5072a859b0dc9c044d61fd0a8814142fdaf013a0f69b7abddf4c",
+      "elapsed_seconds": 982.4299054145813,
+      "reserved_chip_hours": 4.366355135175917,
+      "maximum_rank_learning_seconds": 404.7392055319797,
+      "rank0_timing": {
+        "checkpoint_seconds": 14.564591616013786,
+        "compilation_seconds": 398.2557222380419,
+        "evaluation_seconds": 193.59079239403945,
+        "learning_seconds": 382.2287489209848,
+        "sampling_seconds": 2.906234214984579
+      },
+      "compiled_update_memory": {
+        "1536": {
+          "alias_size_in_bytes": 2806818304,
+          "argument_size_in_bytes": 3220408320,
+          "output_size_in_bytes": 2806830080,
+          "temp_size_in_bytes": 24030412800
+        },
+        "512": {
+          "alias_size_in_bytes": 2806818304,
+          "argument_size_in_bytes": 2944681984,
+          "output_size_in_bytes": 2806830080,
+          "temp_size_in_bytes": 21421031424
+        }
+      }
+    },
+    "prefix": {
+      "attempt": "pod-20260915T202618Z-f34ea433",
+      "closure_sha256": "861d945b9e72b73bb17fcfb08e0a0696a3d9cccd66458456dc5567fd9cd143a2",
+      "elapsed_seconds": 758.9133865833282,
+      "reserved_chip_hours": 3.372948384814792,
+      "maximum_rank_learning_seconds": 219.73084267499507,
+      "rank0_timing": {
+        "checkpoint_seconds": 14.894080595986452,
+        "compilation_seconds": 404.45257537899306,
+        "evaluation_seconds": 159.10161097100354,
+        "learning_seconds": 191.05165226501413,
+        "sampling_seconds": 2.0054698739841115
+      },
+      "compiled_update_memory": {
+        "1536": {
+          "alias_size_in_bytes": 2806818304,
+          "argument_size_in_bytes": 3220408320,
+          "output_size_in_bytes": 2806830080,
+          "temp_size_in_bytes": 24030412800
+        },
+        "512": {
+          "alias_size_in_bytes": 2806818304,
+          "argument_size_in_bytes": 2944681984,
+          "output_size_in_bytes": 2806830080,
+          "temp_size_in_bytes": 21421031424
+        }
+      }
+    },
+    "resumed": {
+      "attempt": "pod-20260915T203923Z-73dbda64",
+      "closure_sha256": "02b2a27d8e8097dfdcdfbef8645a407c7c42e88704d426287ed5f9273624a267",
+      "elapsed_seconds": 764.0737528800964,
+      "reserved_chip_hours": 3.395883346133762,
+      "maximum_rank_learning_seconds": 216.33226361198467,
+      "rank0_timing": {
+        "checkpoint_seconds": 14.479245283990167,
+        "compilation_seconds": 402.7288712099835,
+        "evaluation_seconds": 122.95833446501638,
+        "learning_seconds": 191.03539556701435,
+        "sampling_seconds": 1.8937052629771642
+      },
+      "compiled_update_memory": {
+        "1536": {
+          "alias_size_in_bytes": 2806818304,
+          "argument_size_in_bytes": 3220408320,
+          "output_size_in_bytes": 2806830080,
+          "temp_size_in_bytes": 24030412800
+        },
+        "512": {
+          "alias_size_in_bytes": 2806818304,
+          "argument_size_in_bytes": 2944681984,
+          "output_size_in_bytes": 2806830080,
+          "temp_size_in_bytes": 21421031424
+        }
+      }
+    }
+  },
+  "earlier_memory_failure_sha256": "41da6604e1fc817d3dd6223a5b6c7c91809b3b0a23e0edfac5d3b1b13465d8d5",
+  "retention_result_sha256": "1b55b85833b1a91dc8a735b0eea1123c05518cb462e68d33a1ba2d74119a7767",
+  "scope": "Actual execution and deterministic complete-state recovery, not learnability, source-hyperparameter optimality, MFU or playing strength. Compiler buffer accounting and device allocator statistics are distinct. Compilation/evaluation timers overlap and must not be summed."
+}

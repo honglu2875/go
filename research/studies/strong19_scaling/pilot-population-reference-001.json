@@ -1,0 +1,13 @@
+{
+  "created": 1789506666.1477666,
+  "dataset_manifest_sha256": "2d39f7647a463e2e718844b19d45c35052d88f9ab9d8b2b222f5cd6c1f791def",
+  "kind": "joint19_fixed_pilot_population_reference",
+  "probe_episode_ids_sha256": "95e9221c6962ffe16d5e3c91dfa8a2527f05fe908042df820fdccab94b3781a6",
+  "probe_games": 128,
+  "probe_positions": 53743,
+  "status": "passed",
+  "test_targets_read": false,
+  "validation_episode_ids_sha256": "bec421033b4213d6fcf71b96566567461c5e09fbba2e6880e480b2e8a1a90a6a",
+  "validation_games": 146,
+  "validation_positions": 60284
+}

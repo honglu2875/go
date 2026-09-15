@@ -38,10 +38,9 @@ signed player-to-move expectations with MSE weight 0.7. This objective adapts
 KataGo's richer original training labels: ownership, score and its other
 auxiliary targets are absent.
 
-The proposed first horizon is 108 accepted updates, with evaluation every nine
-updates and at the endpoint. That is approximately 5.73 million position
-exposures, or 5.25 passes over this training population. Record the actual
-seed-specific exposure replay before launching. This pilot is intended to
+The first horizon is 108 accepted updates, with evaluation every nine
+updates and at the endpoint. The predeclared seed replay contains 5,787,025
+position exposures, or 5.3033 passes over this training population. This pilot is intended to
 establish joint learnability and guide the next horizon, not train a strong
 19×19 engine to completion. Do not copy the 4,096-update 9×9 horizon into this
 much smaller population.
@@ -71,10 +70,19 @@ selector. If validation worsens while the training probe improves, review the
 curves before extending the horizon or launching another seed. Preserve all
 observations and distinguish a weak/noisy value stratum from global overfitting.
 
-Before launching, verify the concrete configurations, same-draw replay, data
-replicas and actual full-size execution under the existing research authorization.
-The source-CNN recovery sequence currently owns the TPU allocation; the
-selected transformer execution follows it. Register the final launch inputs
-and storage reservations after those gates close. Then use actual trained
+The source CNN has passed full-size execution and exact all-rank recovery.
+The fixed corpus is verified on all hosts. Transformer execution with a
+16-frame chunk exhausted HBM before its first update; the retry used eight
+independent encoder frames per chunk and passed all four updates and its
+complete checkpoint audit. This
+execution adjustment leaves the model, decoding FLOPs and global game batch
+unchanged. CNN chunks remain at their qualified size of 16 frames.
+
+The final launch inputs and storage reservations are pinned in
+`pilot-registration-001.json`; the source-optimizer CNN arm has started.
+The fixed validation hash
+covers all 146 games; the 128-game training probe contains 53,743 positions.
+Each completed arm retains two verified peer checkpoint copies and an owner
+restore locator, keeping RAM use bounded across the sequence. Then use trained
 joint checkpoints for paired-colour KataGo matches; validation loss and the
 small interoperability fixtures do not establish playing strength.

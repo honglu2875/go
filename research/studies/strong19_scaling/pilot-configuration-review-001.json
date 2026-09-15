@@ -1,0 +1,29 @@
+{
+  "kind": "joint19_pilot_configuration_review",
+  "status": "passed",
+  "created": 1789507412.7631958,
+  "settings_sha256": "1ef45cdf2a20a6076bafe4cb782c654673b6fde8174fdc54a90304e587783fef",
+  "snapshot_preparation_sha256": "24a5370b3bc58d7a3ea06a4b94036dca01eaefa7c953f68461beae5568c0674d",
+  "budget_reference_sha256": "3c25f4957d2c14c2b5b0580a500baaaf5dc17a8a1b0fd0b00095472ea4567724",
+  "model_shapes_match_qualified_decode_budget": true,
+  "only_model_scalar_changed": "Transformer encoder_layer_scale 1e-6 to 0.01",
+  "independent_encoder_chunks": {
+    "source_cnn": 16,
+    "cnn_adamw": 16,
+    "transformer": 8
+  },
+  "cnn_model_and_initialization_source_identical": true,
+  "source_batch_clock_and_epoch_adaptations_checked": true,
+  "adamw_controls_identical": true,
+  "position_exposures": 5787025,
+  "padded_position_slots": 7602176,
+  "bucket_updates": {
+    "512": 92,
+    "768": 16
+  },
+  "learning_time_estimate_seconds": {
+    "source_cnn": 5556.4,
+    "transformer": 8166.4
+  },
+  "scope": "Prelaunch numerical configuration and metadata review. Timing is a rough linear projection from execution-fixture shapes, excludes compile/eval/data/checkpoints, and is not a pilot learning result."
+}

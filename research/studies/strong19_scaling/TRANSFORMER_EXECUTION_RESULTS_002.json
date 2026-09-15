@@ -1,0 +1,39 @@
+{
+  "kind": "selected_joint19_transformer_execution_results",
+  "status": "passed",
+  "created": 1789507494.5079448,
+  "attempt": "pod-20260915T210637Z-2269abad",
+  "snapshot": "b5db968636349cc88bb13474b9e6171d5aa91408984b43fa82230c5dba25666d",
+  "audit_sha256": "aeba8b59f62255a1eac3da976785c894e4dac5c7d452917312075d78360ce4b0",
+  "execution_result_sha256": "034ccf48ab1e59589fb6282b723a8d7e3c0382d79c42bd5410aff4db17f23edd",
+  "parameters": 232011540,
+  "steps": 4,
+  "position_exposures": 243326,
+  "all_rank_metrics_and_saved_state_verified": true,
+  "checkpoint_tensor_sha256": "2750594d1ad14c01a4415366553c0c1fb544ff284afe43b7cd325d7af88b0f96",
+  "elapsed_seconds": 950.4672145843506,
+  "reserved_chip_hours": 4.2242987314860025,
+  "rank0_timing": {
+    "checkpoint_seconds": 14.38724013400497,
+    "compilation_seconds": 166.50804119298118,
+    "evaluation_seconds": 187.44750056200428,
+    "learning_seconds": 564.6337960569945,
+    "sampling_seconds": 2.7018920939881355
+  },
+  "compiled_update_memory": {
+    "1536": {
+      "alias_size_in_bytes": 2784883712,
+      "argument_size_in_bytes": 3198522880,
+      "output_size_in_bytes": 2784898048,
+      "temp_size_in_bytes": 31474076160
+    },
+    "512": {
+      "alias_size_in_bytes": 2784883712,
+      "argument_size_in_bytes": 2922763776,
+      "output_size_in_bytes": 2784898048,
+      "temp_size_in_bytes": 28399427584
+    }
+  },
+  "earlier_failure_review_sha256": "67bc10d89b74e998c3790456c420c1281601582a6be593cbffa494257925d1a6",
+  "scope": "Four actual full-size updates and complete checkpoint/optimizer/draw audit. Separate CPU exact recovery and distributed checkpoint transport remain prerequisites; this is not a second full-size Transformer interrupted/resumed experiment. Execution fixture, not a scientific learnability or strength result. Compilation/evaluation timers overlap."
+}

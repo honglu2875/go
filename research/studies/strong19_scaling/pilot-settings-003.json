@@ -1,0 +1,48 @@
+{
+  "checkpoint_policy": "Final checkpoint retained and replicated. Intermediate validation has no stored model arrays; no retrospective best-checkpoint claim.",
+  "cohort_all_host_staging_sha256": "bb6f4fff7d73022f5a0b7ab903bb4c8a5fb50a4fb0449697ce1a49dcda96359e",
+  "cohort_manifest_sha256": "2d39f7647a463e2e718844b19d45c35052d88f9ab9d8b2b222f5cd6c1f791def",
+  "cohort_result_sha256": "b06764ed4d2a8b495f0ffd8721fa180d9b9de7caaa4bf5404d7a3ea17e159783",
+  "configs": {
+    "cnn_adamw": {
+      "path": "research/studies/strong19_scaling/pilot-cnn-adamw-config-001.json",
+      "recipe": "research/recipes/strong19_train",
+      "sha256": "00b66998287a717b9f4a87a9aeef3a762df967f8eb8cd92b703dc95a9485b3ce"
+    },
+    "source_cnn": {
+      "path": "research/studies/strong19_scaling/pilot-source-cnn-config-001.json",
+      "recipe": "research/recipes/strong19_source_muon_learning",
+      "sha256": "f675a42a29b8b3fded264b374802b73ddc7294198dffee57b2aa7e271daf652c"
+    },
+    "transformer": {
+      "path": "research/studies/strong19_scaling/pilot-transformer-config-002.json",
+      "recipe": "research/recipes/strong19_train",
+      "sha256": "29367b0b01bbdfa9522ad32021a4c51cc30449b54198aec52ee63dbd70282c73"
+    }
+  },
+  "created": 1789506502.6089165,
+  "data_staging_pending": false,
+  "draw_replay_sha256": "6b7a5a85522a6823d0b4b7bc0f5de5ae6db6038b3b7cfe8023cfaa07cf599762",
+  "encoder_decision_sha256": "681c55c07e741b9a6aee76b81576d099a7fb2bc4228b13b950c9eba6721fbbe8",
+  "execution_change": "Only Transformer independent-frame chunk size 16 to 8 after actual HBM failure. Architecture/decode FLOPs/targets/global batch unchanged.",
+  "expected_batch_positions": 53027.86332574032,
+  "full_size_gates_pending": [
+    "selected transformer chunk8 execution"
+  ],
+  "kind": "joint19_pilot_settings",
+  "learning_jobs_started": false,
+  "metadata_correction": "Use the repository-relative recipe path for the Transformer configuration; no numerical configuration change.",
+  "operator_sha256": "2d92680212a6d2f9b73411714bbb2af618360b4a5bf6109e69757f0fc669a35e",
+  "order": [
+    "source_cnn",
+    "cnn_adamw",
+    "transformer"
+  ],
+  "parent_settings_sha256": "26925aafe4c6319a5f9ce1cff79eea6fbc33f3d77cc83040cae7efa525b8d1e9",
+  "position_exposures": 5787025,
+  "rounded_batch_reference": 53028,
+  "scope": "Prepared first-seed joint19 learnability pilot, not a launch receipt or completed scientific result. Source-derived batch/cadence/epoch transfer is explicit; no historical-checkpoint hyperparameter equivalence. Full-size gates and storage/data staging must close before registration/launch.",
+  "snapshots_preparation_sha256": "24a5370b3bc58d7a3ea06a4b94036dca01eaefa7c953f68461beae5568c0674d",
+  "status": "prepared",
+  "training_population_equivalent_passes": 5.30329064693085
+}

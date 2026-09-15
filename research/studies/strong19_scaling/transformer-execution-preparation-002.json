@@ -1,0 +1,17 @@
+{
+  "change": {
+    "training.chunk_frames": [
+      16,
+      8
+    ]
+  },
+  "config_sha256": "f8feef491c41edb0c507afd1fff78fe983aeefe22efff88c8a0ddddecd405713",
+  "created": 1789506372.5363393,
+  "failure_review_sha256": "67bc10d89b74e998c3790456c420c1281601582a6be593cbffa494257925d1a6",
+  "kind": "selected_joint19_transformer_execution_preparation",
+  "parent": "63822bcf6a552eff3c8fe1acada47d05a9cee0c31e9b81e4cea542b013b9f071",
+  "scope": "Configuration-only independent-frame chunk reduction after a closed actual HBM compile failure; complete 4-update execution and audit still required.",
+  "snapshot": "b5db968636349cc88bb13474b9e6171d5aa91408984b43fa82230c5dba25666d",
+  "status": "prepared",
+  "unchanged_numerical_files": 70
+}
