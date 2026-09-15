@@ -1,0 +1,46 @@
+{
+  "kind": "joint_source_muon_full_size_abstract_schema",
+  "status": "passed",
+  "created": 1789488027.2374287,
+  "seconds": 4.698818060016492,
+  "snapshot": "49412bc1b88b99bd800d0081481836a8ceaa3a2133a1ff9b580110c95def9497",
+  "preparation_sha256": "87817845d15c05f854db4a887e4dd6c87e34bf52194d4b1b08da4fd8b0a9a67e",
+  "operator_sha256": "942b12cefce7a6603ee24b0619b941845c4b8595c06203eb1dba1b55ae7c0b16",
+  "jax_version": "0.11.1",
+  "master_parameters": 233220870,
+  "master_parameter_bytes": 932883480,
+  "optimizer_state_bytes": 1872823428,
+  "optimizer_bytes_by_component": {
+    "first": 932883480,
+    "hyperparameters": 52,
+    "lookahead": 932883484,
+    "second": 7056408,
+    "step": 4
+  },
+  "master_parameter_leaves": 111,
+  "cases": [
+    {
+      "positions": 512,
+      "global_sequences": 128,
+      "sequences_per_device": 8,
+      "global_input_bytes": 2206073344,
+      "per_device_input_bytes": 137879584,
+      "trace_seconds": 2.4903271759976633,
+      "shard_map_equations": 2,
+      "scalar_metrics": 19,
+      "complete_schema_preserved": true
+    },
+    {
+      "positions": 1536,
+      "global_sequences": 128,
+      "sequences_per_device": 8,
+      "global_input_bytes": 6618219008,
+      "per_device_input_bytes": 413638688,
+      "trace_seconds": 2.07080064699403,
+      "shard_map_equations": 2,
+      "scalar_metrics": 19,
+      "complete_schema_preserved": true
+    }
+  ],
+  "scope": "Abstract shapes on a simulated data-parallel CPU mesh. Includes the actual SUM-gradient collective and complete Muon/AuxAdam, Lookahead and scalar state. No full parameter arrays allocated, TPU execution, peak-HBM, timing or distributed-recovery claim. State/input byte counts are not a peak-memory estimate."
+}

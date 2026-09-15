@@ -1,0 +1,2233 @@
+{
+  "kind": "closed_larger9_architecture_gap_diagnostic",
+  "status": "passed",
+  "created": 1789488415.0265992,
+  "operator_sha256": "45152c4be40b9568b16b83529a46bdc91548fde6c763301589f02e139200c19a",
+  "paired_reader_sha256": "db1fc92ac0e8a53fa9149bcc9a9092f65ecaa92da83fc0aaaa6af6bce0c7d0ce",
+  "cases": [
+    {
+      "seed": 91312427,
+      "audit_sha256": {
+        "cnn": "226cf79338c1f6fcaa363a38708fd88bb70d727b4b2900168b67470f1e9daaae",
+        "transformer": "060c15a033eeec9ffa2169ffc23304fb304d17faef107c7a1cfe551e5f3ac28f"
+      },
+      "phases": {
+        "rows": [
+          {
+            "group": "phase_0_16",
+            "positions": 247040.0,
+            "fraction_positions": 0.17802952505521985,
+            "cnn_kl": 0.11666011810302734,
+            "transformer_kl": 0.1268066167831421,
+            "kl_difference": 0.010146498680114746,
+            "contribution_to_overall_gap": 0.0018063763409942434,
+            "fraction_of_overall_gap": 0.5092070376058552
+          },
+          {
+            "group": "phase_16_64",
+            "positions": 723954.0,
+            "fraction_positions": 0.5217178869083008,
+            "cnn_kl": 0.19194161891937256,
+            "transformer_kl": 0.1935199499130249,
+            "kl_difference": 0.0015783309936523438,
+            "contribution_to_overall_gap": 0.0008234435108501795,
+            "fraction_of_overall_gap": 0.23212396070521885
+          },
+          {
+            "group": "phase_64_128",
+            "positions": 402146.0,
+            "fraction_positions": 0.2898067575407077,
+            "cnn_kl": 0.03101348876953125,
+            "transformer_kl": 0.03399991989135742,
+            "kl_difference": 0.002986431121826172,
+            "contribution_to_overall_gap": 0.0008654879200351012,
+            "fraction_of_overall_gap": 0.24397603635693965
+          },
+          {
+            "group": "phase_128_256",
+            "positions": 14495.0,
+            "fraction_positions": 0.010445830495771583,
+            "cnn_kl": 0.0048084259033203125,
+            "transformer_kl": 0.009806632995605469,
+            "kl_difference": 0.004998207092285156,
+            "contribution_to_overall_gap": 5.221042406877409e-05,
+            "fraction_of_overall_gap": 0.01471781642001179
+          },
+          {
+            "group": "phase_256_2048",
+            "positions": 0.0,
+            "fraction_positions": 0.0,
+            "cnn_kl": 0.0,
+            "transformer_kl": 0.0,
+            "kl_difference": 0.0,
+            "contribution_to_overall_gap": 0.0,
+            "fraction_of_overall_gap": 0.0
+          }
+        ],
+        "overall_gap": 0.0035474300384521484,
+        "reconstructed_gap": 0.0035475181959482983,
+        "rounding_residual": -8.815749614988697e-08
+      },
+      "opponents": {
+        "rows": [
+          {
+            "group": "opponent_0",
+            "positions": 115132.0,
+            "fraction_positions": 0.08296994526658667,
+            "cnn_kl": 0.047224998474121094,
+            "transformer_kl": 0.05024576187133789,
+            "kl_difference": 0.003020763397216797,
+            "contribution_to_overall_gap": 0.00025063257373038604,
+            "fraction_of_overall_gap": 0.07065187220429149
+          },
+          {
+            "group": "opponent_1",
+            "positions": 120797.0,
+            "fraction_positions": 0.0870524309346478,
+            "cnn_kl": 0.06071352958679199,
+            "transformer_kl": 0.06444168090820312,
+            "kl_difference": 0.003728151321411133,
+            "contribution_to_overall_gap": 0.00032454463542105856,
+            "fraction_of_overall_gap": 0.09148725468950115
+          },
+          {
+            "group": "opponent_2",
+            "positions": 130759.0,
+            "fraction_positions": 0.09423155224536711,
+            "cnn_kl": 0.08417892456054688,
+            "transformer_kl": 0.08969032764434814,
+            "kl_difference": 0.0055114030838012695,
+            "contribution_to_overall_gap": 0.0005193480676364968,
+            "fraction_of_overall_gap": 0.14640121496606148
+          },
+          {
+            "group": "opponent_3",
+            "positions": 106741.0,
+            "fraction_positions": 0.07692296605375333,
+            "cnn_kl": 0.08832395076751709,
+            "transformer_kl": 0.09288394451141357,
+            "kl_difference": 0.004559993743896484,
+            "contribution_to_overall_gap": 0.0003507682439670768,
+            "fraction_of_overall_gap": 0.09887953819101325
+          },
+          {
+            "group": "opponent_4",
+            "positions": 286324.0,
+            "fraction_positions": 0.20633956335779943,
+            "cnn_kl": 0.14729821681976318,
+            "transformer_kl": 0.15187323093414307,
+            "kl_difference": 0.004575014114379883,
+            "contribution_to_overall_gap": 0.0009440064147169144,
+            "fraction_of_overall_gap": 0.26610994564640184
+          },
+          {
+            "group": "opponent_5",
+            "positions": 333154.0,
+            "fraction_positions": 0.24008763111336914,
+            "cnn_kl": 0.14598381519317627,
+            "transformer_kl": 0.1474320888519287,
+            "kl_difference": 0.0014482736587524414,
+            "contribution_to_overall_gap": 0.00034771259193376564,
+            "fraction_of_overall_gap": 0.09801816756490093
+          },
+          {
+            "group": "opponent_6",
+            "positions": 131081.0,
+            "fraction_positions": 0.09446360173965056,
+            "cnn_kl": 0.1897515058517456,
+            "transformer_kl": 0.19509589672088623,
+            "kl_difference": 0.005344390869140625,
+            "contribution_to_overall_gap": 0.0005048504106035249,
+            "fraction_of_overall_gap": 0.1423144093417573
+          },
+          {
+            "group": "opponent_7",
+            "positions": 163647.0,
+            "fraction_positions": 0.11793230928882595,
+            "cnn_kl": 0.1920541524887085,
+            "transformer_kl": 0.19464600086212158,
+            "kl_difference": 0.002591848373413086,
+            "contribution_to_overall_gap": 0.00030566266400309253,
+            "fraction_of_overall_gap": 0.08616453621068802
+          }
+        ],
+        "overall_gap": 0.0035474300384521484,
+        "reconstructed_gap": 0.0035475256020123156,
+        "rounding_residual": -9.556356016715215e-08
+      },
+      "endpoint": {
+        "cnn_top1": 0.7952710390090942,
+        "transformer_top1": 0.7897061705589294,
+        "cnn_predicted_entropy": 1.7580771446228027,
+        "transformer_predicted_entropy": 1.7338522672653198,
+        "target_entropy": 1.6341843605041504
+      },
+      "phase_curves": [
+        {
+          "turn": 256,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.459384560585022,
+              "transformer_kl": 0.5197409391403198,
+              "kl_difference": 0.06035637855529785,
+              "contribution_to_overall_gap": 0.010745217408252733,
+              "fraction_of_overall_gap": 0.28702161707470336
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.6388946771621704,
+              "transformer_kl": 0.6770838499069214,
+              "kl_difference": 0.03818917274475098,
+              "contribution_to_overall_gap": 0.019923974507167555,
+              "fraction_of_overall_gap": 0.5322006213862447
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.15968632698059082,
+              "transformer_kl": 0.18273186683654785,
+              "kl_difference": 0.02304553985595703,
+              "contribution_to_overall_gap": 0.006678753181430057,
+              "fraction_of_overall_gap": 0.17839997697064622
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.03297567367553711,
+              "transformer_kl": 0.041498422622680664,
+              "kl_difference": 0.008522748947143555,
+              "contribution_to_overall_gap": 8.902719085987729e-05,
+              "fraction_of_overall_gap": 0.002378055958606735
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.03743696212768555,
+          "reconstructed_gap": 0.03743697228771022,
+          "rounding_residual": -1.016002467574273e-08
+        },
+        {
+          "turn": 512,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.31323349475860596,
+              "transformer_kl": 0.36771702766418457,
+              "kl_difference": 0.05448353290557861,
+              "contribution_to_overall_gap": 0.009699677486510603,
+              "fraction_of_overall_gap": 0.23184857061662337
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.4597761631011963,
+              "transformer_kl": 0.5108703374862671,
+              "kl_difference": 0.0510941743850708,
+              "contribution_to_overall_gap": 0.02665674469350337,
+              "fraction_of_overall_gap": 0.6371684175145033
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.09885573387145996,
+              "transformer_kl": 0.11749386787414551,
+              "kl_difference": 0.018638134002685547,
+              "contribution_to_overall_gap": 0.005401457181927511,
+              "fraction_of_overall_gap": 0.12910946045560762
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.014445066452026367,
+              "transformer_kl": 0.02196025848388672,
+              "kl_difference": 0.0075151920318603516,
+              "contribution_to_overall_gap": 7.850242210798646e-05,
+              "fraction_of_overall_gap": 0.001876420569755155
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.04183626174926758,
+          "reconstructed_gap": 0.04183638178404947,
+          "rounding_residual": -1.2003478189193117e-07
+        },
+        {
+          "turn": 768,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.26214098930358887,
+              "transformer_kl": 0.29239988327026367,
+              "kl_difference": 0.030258893966674805,
+              "contribution_to_overall_gap": 0.005386976521583373,
+              "fraction_of_overall_gap": 0.16758290968306103
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.38466203212738037,
+              "transformer_kl": 0.4279341697692871,
+              "kl_difference": 0.04327213764190674,
+              "contribution_to_overall_gap": 0.022575848212540727,
+              "fraction_of_overall_gap": 0.7023097867351924
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.07643508911132812,
+              "transformer_kl": 0.0904693603515625,
+              "kl_difference": 0.014034271240234375,
+              "contribution_to_overall_gap": 0.004067226642579132,
+              "fraction_of_overall_gap": 0.12652694370821924
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.011730194091796875,
+              "transformer_kl": 0.02276301383972168,
+              "kl_difference": 0.011032819747924805,
+              "contribution_to_overall_gap": 0.00011524696497722387,
+              "fraction_of_overall_gap": 0.003585206218301521
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.032145142555236816,
+          "reconstructed_gap": 0.03214529834168046,
+          "rounding_residual": -1.5578644364105942e-07
+        },
+        {
+          "turn": 1024,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.24302542209625244,
+              "transformer_kl": 0.25926637649536133,
+              "kl_difference": 0.016240954399108887,
+              "contribution_to_overall_gap": 0.0028913693981168385,
+              "fraction_of_overall_gap": 0.3541225904338915
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.3724400997161865,
+              "transformer_kl": 0.37969839572906494,
+              "kl_difference": 0.007258296012878418,
+              "contribution_to_overall_gap": 0.003786782858393873,
+              "fraction_of_overall_gap": 0.4637890115661057
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.07163000106811523,
+              "transformer_kl": 0.07663154602050781,
+              "kl_difference": 0.005001544952392578,
+              "contribution_to_overall_gap": 0.0014494815253469865,
+              "fraction_of_overall_gap": 0.17752631430499816
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.010509252548217773,
+              "transformer_kl": 0.014095783233642578,
+              "kl_difference": 0.0035865306854248047,
+              "contribution_to_overall_gap": 3.746429160783098e-05,
+              "fraction_of_overall_gap": 0.004588466628157797
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.00816488265991211,
+          "reconstructed_gap": 0.00816509807346553,
+          "rounding_residual": -2.1541355342026558e-07
+        },
+        {
+          "turn": 1280,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.209786057472229,
+              "transformer_kl": 0.21867656707763672,
+              "kl_difference": 0.008890509605407715,
+              "contribution_to_overall_gap": 0.0015827732025496056,
+              "fraction_of_overall_gap": 0.111613977732233
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.3137807846069336,
+              "transformer_kl": 0.33413243293762207,
+              "kl_difference": 0.020351648330688477,
+              "contribution_to_overall_gap": 0.01061781896218764,
+              "fraction_of_overall_gap": 0.7487472035168921
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.05670881271362305,
+              "transformer_kl": 0.06344199180603027,
+              "kl_difference": 0.0067331790924072266,
+              "contribution_to_overall_gap": 0.0019513208007114237,
+              "fraction_of_overall_gap": 0.13760321191198716
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.00770878791809082,
+              "transformer_kl": 0.010457038879394531,
+              "kl_difference": 0.002748250961303711,
+              "contribution_to_overall_gap": 2.8707763701619872e-05,
+              "fraction_of_overall_gap": 0.0020244136641771235
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.014180779457092285,
+          "reconstructed_gap": 0.014180620729150288,
+          "rounding_residual": 1.5872794199671414e-07
+        },
+        {
+          "turn": 1536,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.21140873432159424,
+              "transformer_kl": 0.21321618556976318,
+              "kl_difference": 0.0018074512481689453,
+              "contribution_to_overall_gap": 0.00032177968727198163,
+              "fraction_of_overall_gap": 0.0353378760082116
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.29660487174987793,
+              "transformer_kl": 0.3083702325820923,
+              "kl_difference": 0.011765360832214355,
+              "contribution_to_overall_gap": 0.006138199192096561,
+              "fraction_of_overall_gap": 0.6740976218945441
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.05201101303100586,
+              "transformer_kl": 0.06077408790588379,
+              "kl_difference": 0.00876307487487793,
+              "contribution_to_overall_gap": 0.002539598315574816,
+              "fraction_of_overall_gap": 0.2788989297220322
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.007231473922729492,
+              "transformer_kl": 0.017388343811035156,
+              "kl_difference": 0.010156869888305664,
+              "contribution_to_overall_gap": 0.00010609694122084742,
+              "fraction_of_overall_gap": 0.011651576224399168
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.009105801582336426,
+          "reconstructed_gap": 0.009105674136164206,
+          "rounding_residual": 1.274461722197695e-07
+        },
+        {
+          "turn": 1792,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.17368590831756592,
+              "transformer_kl": 0.1916954517364502,
+              "kl_difference": 0.018009543418884277,
+              "contribution_to_overall_gap": 0.003206230461325328,
+              "fraction_of_overall_gap": 0.35830982638207026
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.28305232524871826,
+              "transformer_kl": 0.29298949241638184,
+              "kl_difference": 0.009937167167663574,
+              "contribution_to_overall_gap": 0.005184397856567984,
+              "fraction_of_overall_gap": 0.579378406602308
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.05320596694946289,
+              "transformer_kl": 0.05506706237792969,
+              "kl_difference": 0.0018610954284667969,
+              "contribution_to_overall_gap": 0.0005393580315977966,
+              "fraction_of_overall_gap": 0.060275543193391276
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.008255243301391602,
+              "transformer_kl": 0.010015010833740234,
+              "kl_difference": 0.0017597675323486328,
+              "contribution_to_overall_gap": 1.8382233354876053e-05,
+              "fraction_of_overall_gap": 0.002054292391438926
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.008948206901550293,
+          "reconstructed_gap": 0.008948368582845985,
+          "rounding_residual": -1.6168129569199552e-07
+        },
+        {
+          "turn": 2048,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.1636418104171753,
+              "transformer_kl": 0.18279898166656494,
+              "kl_difference": 0.01915717124938965,
+              "contribution_to_overall_gap": 0.0034105420989303517,
+              "fraction_of_overall_gap": 0.3885551022724659
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.26292216777801514,
+              "transformer_kl": 0.2698246240615845,
+              "kl_difference": 0.006902456283569336,
+              "contribution_to_overall_gap": 0.003601134906740717,
+              "fraction_of_overall_gap": 0.4102688960867628
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.0448918342590332,
+              "transformer_kl": 0.05079364776611328,
+              "kl_difference": 0.005901813507080078,
+              "contribution_to_overall_gap": 0.0017103854360968303,
+              "fraction_of_overall_gap": 0.19486022126991837
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.006882905960083008,
+              "transformer_kl": 0.012183189392089844,
+              "kl_difference": 0.005300283432006836,
+              "contribution_to_overall_gap": 5.5365862310289874e-05,
+              "fraction_of_overall_gap": 0.006307703487702138
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.008777499198913574,
+          "reconstructed_gap": 0.008777428304078188,
+          "rounding_residual": 7.0894835385929e-08
+        },
+        {
+          "turn": 2304,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.16473591327667236,
+              "transformer_kl": 0.16275012493133545,
+              "kl_difference": -0.001985788345336914,
+              "contribution_to_overall_gap": -0.0003535289559805217,
+              "fraction_of_overall_gap": 0.7565346500943501
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.254056453704834,
+              "transformer_kl": 0.2535499334335327,
+              "kl_difference": -0.0005065202713012695,
+              "contribution_to_overall_gap": -0.0002642606856195176,
+              "fraction_of_overall_gap": 0.5655049238452475
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.04411649703979492,
+              "transformer_kl": 0.04459404945373535,
+              "kl_difference": 0.0004775524139404297,
+              "contribution_to_overall_gap": 0.0001383979166398138,
+              "fraction_of_overall_gap": -0.29616476293573346
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.006470918655395508,
+              "transformer_kl": 0.007628917694091797,
+              "kl_difference": 0.001157999038696289,
+              "contribution_to_overall_gap": 1.2096261672487873e-05,
+              "fraction_of_overall_gap": -0.025885407509164578
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": -0.0
+            }
+          ],
+          "overall_gap": -0.0004673004150390625,
+          "reconstructed_gap": -0.0004672954632877376,
+          "rounding_residual": -4.951751324895528e-09
+        },
+        {
+          "turn": 2560,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.15045475959777832,
+              "transformer_kl": 0.16680026054382324,
+              "kl_difference": 0.016345500946044922,
+              "contribution_to_overall_gap": 0.0029099817702140244,
+              "fraction_of_overall_gap": 0.6831032980963069
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.23845350742340088,
+              "transformer_kl": 0.23918187618255615,
+              "kl_difference": 0.0007283687591552734,
+              "contribution_to_overall_gap": 0.00038000300991651034,
+              "fraction_of_overall_gap": 0.08920375791268274
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03979825973510742,
+              "transformer_kl": 0.043064117431640625,
+              "kl_difference": 0.003265857696533203,
+              "contribution_to_overall_gap": 0.0009464676296216523,
+              "fraction_of_overall_gap": 0.2221784225433113
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.0059261322021484375,
+              "transformer_kl": 0.008168697357177734,
+              "kl_difference": 0.002242565155029297,
+              "contribution_to_overall_gap": 2.3425455485159755e-05,
+              "fraction_of_overall_gap": 0.0054990055488024344
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.004259943962097168,
+          "reconstructed_gap": 0.004259877865237347,
+          "rounding_residual": 6.609685982133379e-08
+        },
+        {
+          "turn": 2816,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.13581180572509766,
+              "transformer_kl": 0.1504150629043579,
+              "kl_difference": 0.014603257179260254,
+              "contribution_to_overall_gap": 0.0025998109398829325,
+              "fraction_of_overall_gap": 0.7390807526362169
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.22533655166625977,
+              "transformer_kl": 0.2258014678955078,
+              "kl_difference": 0.0004649162292480469,
+              "contribution_to_overall_gap": 0.00024255511271266617,
+              "fraction_of_overall_gap": 0.06895417374753875
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03720235824584961,
+              "transformer_kl": 0.039494991302490234,
+              "kl_difference": 0.002292633056640625,
+              "contribution_to_overall_gap": 0.0006644205523756614,
+              "fraction_of_overall_gap": 0.1888831354555677
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.005550384521484375,
+              "transformer_kl": 0.0066106319427490234,
+              "kl_difference": 0.0010602474212646484,
+              "contribution_to_overall_gap": 1.1075164846109444e-05,
+              "fraction_of_overall_gap": 0.003148475546610833
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.003517627716064453,
+          "reconstructed_gap": 0.0035178617698173693,
+          "rounding_residual": -2.3405375291617875e-07
+        },
+        {
+          "turn": 3072,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.12688279151916504,
+              "transformer_kl": 0.1366509199142456,
+              "kl_difference": 0.009768128395080566,
+              "contribution_to_overall_gap": 0.0017390152588546,
+              "fraction_of_overall_gap": 0.7965445731434841
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.21770596504211426,
+              "transformer_kl": 0.2170809507369995,
+              "kl_difference": -0.0006250143051147461,
+              "contribution_to_overall_gap": -0.0003260811425519253,
+              "fraction_of_overall_gap": -0.1493593360849744
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03595471382141113,
+              "transformer_kl": 0.03859853744506836,
+              "kl_difference": 0.0026438236236572266,
+              "contribution_to_overall_gap": 0.0007661979518816252,
+              "fraction_of_overall_gap": 0.3509519640022833
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.005796194076538086,
+              "transformer_kl": 0.006180763244628906,
+              "kl_difference": 0.0003845691680908203,
+              "contribution_to_overall_gap": 4.017144343776598e-06,
+              "fraction_of_overall_gap": 0.0018400267106781219
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.002183198928833008,
+          "reconstructed_gap": 0.0021831492125280764,
+          "rounding_residual": 4.9716304931397837e-08
+        },
+        {
+          "turn": 3328,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.12923717498779297,
+              "transformer_kl": 0.13417840003967285,
+              "kl_difference": 0.004941225051879883,
+              "contribution_to_overall_gap": 0.0008796839491771296,
+              "fraction_of_overall_gap": 0.28965786675847316
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.2096700668334961,
+              "transformer_kl": 0.21270859241485596,
+              "kl_difference": 0.0030385255813598633,
+              "contribution_to_overall_gap": 0.001585253145623884,
+              "fraction_of_overall_gap": 0.5219841112971298
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03449726104736328,
+              "transformer_kl": 0.03645753860473633,
+              "kl_difference": 0.001960277557373047,
+              "contribution_to_overall_gap": 0.0005681016827821015,
+              "fraction_of_overall_gap": 0.18706163922905475
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.005741596221923828,
+              "transformer_kl": 0.006115436553955078,
+              "kl_difference": 0.00037384033203125,
+              "contribution_to_overall_gap": 3.9050727408814054e-06,
+              "fraction_of_overall_gap": 0.001285842535513412
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.003036975860595703,
+          "reconstructed_gap": 0.0030369438503239964,
+          "rounding_residual": 3.2010271706732485e-08
+        },
+        {
+          "turn": 3584,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.12669920921325684,
+              "transformer_kl": 0.13133549690246582,
+              "kl_difference": 0.004636287689208984,
+              "contribution_to_overall_gap": 0.0008253960953292383,
+              "fraction_of_overall_gap": 0.1940289838432846
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.1999887228012085,
+              "transformer_kl": 0.2056865692138672,
+              "kl_difference": 0.005697846412658691,
+              "contribution_to_overall_gap": 0.0029726683903403346,
+              "fraction_of_overall_gap": 0.6987964085906138
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03305220603942871,
+              "transformer_kl": 0.0345613956451416,
+              "kl_difference": 0.0015091896057128906,
+              "contribution_to_overall_gap": 0.000437373346145792,
+              "fraction_of_overall_gap": 0.10281500771935996
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.0052030086517333984,
+              "transformer_kl": 0.006979942321777344,
+              "kl_difference": 0.0017769336700439453,
+              "contribution_to_overall_gap": 1.8561547919508363e-05,
+              "fraction_of_overall_gap": 0.00436333331567805
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.004253983497619629,
+          "reconstructed_gap": 0.004253999379734873,
+          "rounding_residual": -1.588211524447547e-08
+        },
+        {
+          "turn": 3840,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.1154632568359375,
+              "transformer_kl": 0.12440752983093262,
+              "kl_difference": 0.008944272994995117,
+              "contribution_to_overall_gap": 0.0015923446732632096,
+              "fraction_of_overall_gap": 0.5143852150682819
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.19526314735412598,
+              "transformer_kl": 0.19705915451049805,
+              "kl_difference": 0.0017960071563720703,
+              "contribution_to_overall_gap": 0.0009370090584946227,
+              "fraction_of_overall_gap": 0.3026879884534989
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03176403045654297,
+              "transformer_kl": 0.033677101135253906,
+              "kl_difference": 0.0019130706787109375,
+              "contribution_to_overall_gap": 0.0005544208103434179,
+              "fraction_of_overall_gap": 0.17909807628670973
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.004914283752441406,
+              "transformer_kl": 0.006040096282958984,
+              "kl_difference": 0.0011258125305175781,
+              "contribution_to_overall_gap": 1.1760046863802294e-05,
+              "fraction_of_overall_gap": 0.0037989226433328264
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.0030956268310546875,
+          "reconstructed_gap": 0.0030955345889650526,
+          "rounding_residual": 9.224208963494462e-08
+        },
+        {
+          "turn": 4096,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.11666011810302734,
+              "transformer_kl": 0.1268066167831421,
+              "kl_difference": 0.010146498680114746,
+              "contribution_to_overall_gap": 0.0018063763409942434,
+              "fraction_of_overall_gap": 0.5092070376058552
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.19194161891937256,
+              "transformer_kl": 0.1935199499130249,
+              "kl_difference": 0.0015783309936523438,
+              "contribution_to_overall_gap": 0.0008234435108501795,
+              "fraction_of_overall_gap": 0.23212396070521885
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03101348876953125,
+              "transformer_kl": 0.03399991989135742,
+              "kl_difference": 0.002986431121826172,
+              "contribution_to_overall_gap": 0.0008654879200351012,
+              "fraction_of_overall_gap": 0.24397603635693965
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.0048084259033203125,
+              "transformer_kl": 0.009806632995605469,
+              "kl_difference": 0.004998207092285156,
+              "contribution_to_overall_gap": 5.221042406877409e-05,
+              "fraction_of_overall_gap": 0.01471781642001179
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.0035474300384521484,
+          "reconstructed_gap": 0.0035475181959482983,
+          "rounding_residual": -8.815749614988697e-08
+        }
+      ]
+    },
+    {
+      "seed": 91312428,
+      "audit_sha256": {
+        "cnn": "8003ebb2cccd58761ace388c5fb97fd575da786fe8088d0950057eb05dd74e1f",
+        "transformer": "34971ce106609c2ad9e8b7155689cdaea5bababd381a5aa1badd9e8ce27822d2"
+      },
+      "phases": {
+        "rows": [
+          {
+            "group": "phase_0_16",
+            "positions": 247040.0,
+            "fraction_positions": 0.17802952505521985,
+            "cnn_kl": 0.11391317844390869,
+            "transformer_kl": 0.12374353408813477,
+            "kl_difference": 0.009830355644226074,
+            "contribution_to_overall_gap": 0.0017500935464654678,
+            "fraction_of_overall_gap": 0.27736347486545615
+          },
+          {
+            "group": "phase_16_64",
+            "positions": 723954.0,
+            "fraction_positions": 0.5217178869083008,
+            "cnn_kl": 0.19011104106903076,
+            "transformer_kl": 0.19772303104400635,
+            "kl_difference": 0.007611989974975586,
+            "contribution_to_overall_gap": 0.003971311324911432,
+            "fraction_of_overall_gap": 0.6293930464886196
+          },
+          {
+            "group": "phase_64_128",
+            "positions": 402146.0,
+            "fraction_positions": 0.2898067575407077,
+            "cnn_kl": 0.031046152114868164,
+            "transformer_kl": 0.03305506706237793,
+            "kl_difference": 0.0020089149475097656,
+            "contribution_to_overall_gap": 0.0005821971271128662,
+            "fraction_of_overall_gap": 0.09226947814237685
+          },
+          {
+            "group": "phase_128_256",
+            "positions": 14495.0,
+            "fraction_positions": 0.010445830495771583,
+            "cnn_kl": 0.005437135696411133,
+            "transformer_kl": 0.006021738052368164,
+            "kl_difference": 0.0005846023559570312,
+            "contribution_to_overall_gap": 6.106657117755871e-06,
+            "fraction_of_overall_gap": 0.0009678132014219505
+          },
+          {
+            "group": "phase_256_2048",
+            "positions": 0.0,
+            "fraction_positions": 0.0,
+            "cnn_kl": 0.0,
+            "transformer_kl": 0.0,
+            "kl_difference": 0.0,
+            "contribution_to_overall_gap": 0.0,
+            "fraction_of_overall_gap": 0.0
+          }
+        ],
+        "overall_gap": 0.0063097476959228516,
+        "reconstructed_gap": 0.006309708655607522,
+        "rounding_residual": 3.904031532948882e-08
+      },
+      "opponents": {
+        "rows": [
+          {
+            "group": "opponent_0",
+            "positions": 115132.0,
+            "fraction_positions": 0.08296994526658667,
+            "cnn_kl": 0.04729032516479492,
+            "transformer_kl": 0.04983115196228027,
+            "kl_difference": 0.0025408267974853516,
+            "contribution_to_overall_gap": 0.00021081226031923633,
+            "fraction_of_overall_gap": 0.03341056892900111
+          },
+          {
+            "group": "opponent_1",
+            "positions": 120797.0,
+            "fraction_positions": 0.0870524309346478,
+            "cnn_kl": 0.06119585037231445,
+            "transformer_kl": 0.06491780281066895,
+            "kl_difference": 0.003721952438354492,
+            "contribution_to_overall_gap": 0.0003240050075818984,
+            "fraction_of_overall_gap": 0.05134991495638719
+          },
+          {
+            "group": "opponent_2",
+            "positions": 130759.0,
+            "fraction_positions": 0.09423155224536711,
+            "cnn_kl": 0.08426272869110107,
+            "transformer_kl": 0.09014427661895752,
+            "kl_difference": 0.005881547927856445,
+            "contribution_to_overall_gap": 0.0005542273908474354,
+            "fraction_of_overall_gap": 0.08783669610205787
+          },
+          {
+            "group": "opponent_3",
+            "positions": 106741.0,
+            "fraction_positions": 0.07692296605375333,
+            "cnn_kl": 0.08816730976104736,
+            "transformer_kl": 0.09391605854034424,
+            "kl_difference": 0.005748748779296875,
+            "contribution_to_overall_gap": 0.0004422108072014094,
+            "fraction_of_overall_gap": 0.07008375429767996
+          },
+          {
+            "group": "opponent_4",
+            "positions": 286324.0,
+            "fraction_positions": 0.20633956335779943,
+            "cnn_kl": 0.14718878269195557,
+            "transformer_kl": 0.1531691551208496,
+            "kl_difference": 0.005980372428894043,
+            "contribution_to_overall_gap": 0.001233987435695019,
+            "fraction_of_overall_gap": 0.19556842763972648
+          },
+          {
+            "group": "opponent_5",
+            "positions": 333154.0,
+            "fraction_positions": 0.24008763111336914,
+            "cnn_kl": 0.14554321765899658,
+            "transformer_kl": 0.15200269222259521,
+            "kl_difference": 0.006459474563598633,
+            "contribution_to_overall_gap": 0.0015508399462114597,
+            "fraction_of_overall_gap": 0.2457847795108449
+          },
+          {
+            "group": "opponent_6",
+            "positions": 131081.0,
+            "fraction_positions": 0.09446360173965056,
+            "cnn_kl": 0.18315565586090088,
+            "transformer_kl": 0.188470721244812,
+            "kl_difference": 0.005315065383911133,
+            "contribution_to_overall_gap": 0.0005020802196459841,
+            "fraction_of_overall_gap": 0.07957215467908671
+          },
+          {
+            "group": "opponent_7",
+            "positions": 163647.0,
+            "fraction_positions": 0.11793230928882595,
+            "cnn_kl": 0.18595027923583984,
+            "transformer_kl": 0.19859850406646729,
+            "kl_difference": 0.012648224830627441,
+            "contribution_to_overall_gap": 0.0014916343626801636,
+            "fraction_of_overall_gap": 0.23640158601650713
+          }
+        ],
+        "overall_gap": 0.0063097476959228516,
+        "reconstructed_gap": 0.006309797430182606,
+        "rounding_residual": -4.973425975478979e-08
+      },
+      "endpoint": {
+        "cnn_top1": 0.8113372325897217,
+        "transformer_top1": 0.7862708568572998,
+        "cnn_predicted_entropy": 1.790336012840271,
+        "transformer_predicted_entropy": 1.7543340921401978,
+        "target_entropy": 1.6341843605041504
+      },
+      "phase_curves": [
+        {
+          "turn": 256,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.4212653636932373,
+              "transformer_kl": 0.510043740272522,
+              "kl_difference": 0.08877837657928467,
+              "contribution_to_overall_gap": 0.015805172217583503,
+              "fraction_of_overall_gap": 0.28231938475156343
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.6079589128494263,
+              "transformer_kl": 0.6700822114944458,
+              "kl_difference": 0.06212329864501953,
+              "contribution_to_overall_gap": 0.0324108360968529,
+              "fraction_of_overall_gap": 0.5789375262844352
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.15680527687072754,
+              "transformer_kl": 0.18335509300231934,
+              "kl_difference": 0.026549816131591797,
+              "contribution_to_overall_gap": 0.007694316126398595,
+              "fraction_of_overall_gap": 0.1374394764564613
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.03806352615356445,
+              "transformer_kl": 0.04504251480102539,
+              "kl_difference": 0.0069789886474609375,
+              "contribution_to_overall_gap": 7.290133244329113e-05,
+              "fraction_of_overall_gap": 0.0013021977261381526
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.05598330497741699,
+          "reconstructed_gap": 0.055983225773278286,
+          "rounding_residual": 7.920413870599052e-08
+        },
+        {
+          "turn": 512,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.2922557592391968,
+              "transformer_kl": 0.37717199325561523,
+              "kl_difference": 0.08491623401641846,
+              "contribution_to_overall_gap": 0.015117596811420882,
+              "fraction_of_overall_gap": 0.29847390687502284
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.45744073390960693,
+              "transformer_kl": 0.5137432813644409,
+              "kl_difference": 0.056302547454833984,
+              "contribution_to_overall_gap": 0.029374046085690317,
+              "fraction_of_overall_gap": 0.5799457681858183
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.0978083610534668,
+              "transformer_kl": 0.1188054084777832,
+              "kl_difference": 0.020997047424316406,
+              "contribution_to_overall_gap": 0.006085086231969607,
+              "fraction_of_overall_gap": 0.1201407527918238
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.016524076461791992,
+              "transformer_kl": 0.023496150970458984,
+              "kl_difference": 0.006972074508666992,
+              "contribution_to_overall_gap": 7.282910852142534e-05,
+              "fraction_of_overall_gap": 0.0014378997419876125
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.05064964294433594,
+          "reconstructed_gap": 0.050649558237602234,
+          "rounding_residual": 8.470673370369886e-08
+        },
+        {
+          "turn": 768,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.2597297430038452,
+              "transformer_kl": 0.31141483783721924,
+              "kl_difference": 0.05168509483337402,
+              "contribution_to_overall_gap": 0.009201472885619575,
+              "fraction_of_overall_gap": 0.23824347058234446
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.39075005054473877,
+              "transformer_kl": 0.43812501430511475,
+              "kl_difference": 0.04737496376037598,
+              "contribution_to_overall_gap": 0.024716365985420683,
+              "fraction_of_overall_gap": 0.6399532863649288
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.07716584205627441,
+              "transformer_kl": 0.09329962730407715,
+              "kl_difference": 0.016133785247802734,
+              "contribution_to_overall_gap": 0.004675679989523815,
+              "fraction_of_overall_gap": 0.12106216492551959
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.015180349349975586,
+              "transformer_kl": 0.01792430877685547,
+              "kl_difference": 0.002743959426879883,
+              "contribution_to_overall_gap": 2.8662935060461793e-05,
+              "fraction_of_overall_gap": 0.0007421373959111513
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.038622140884399414,
+          "reconstructed_gap": 0.03862218179562454,
+          "rounding_residual": -4.091122512289713e-08
+        },
+        {
+          "turn": 1024,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.23944199085235596,
+              "transformer_kl": 0.25209522247314453,
+              "kl_difference": 0.012653231620788574,
+              "contribution_to_overall_gap": 0.0022526488158626794,
+              "fraction_of_overall_gap": 0.1649132772870463
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.35887205600738525,
+              "transformer_kl": 0.37646520137786865,
+              "kl_difference": 0.0175931453704834,
+              "contribution_to_overall_gap": 0.009178658626759154,
+              "fraction_of_overall_gap": 0.6719567935218471
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.06724286079406738,
+              "transformer_kl": 0.07473516464233398,
+              "kl_difference": 0.0074923038482666016,
+              "contribution_to_overall_gap": 0.0021713202847759108,
+              "fraction_of_overall_gap": 0.15895932898227066
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.009271860122680664,
+              "transformer_kl": 0.014719486236572266,
+              "kl_difference": 0.0054476261138916016,
+              "contribution_to_overall_gap": 5.690497899005053e-05,
+              "fraction_of_overall_gap": 0.004165934127466682
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.01365959644317627,
+          "reconstructed_gap": 0.013659532706387796,
+          "rounding_residual": 6.373678847378106e-08
+        },
+        {
+          "turn": 1280,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.20987462997436523,
+              "transformer_kl": 0.24131405353546143,
+              "kl_difference": 0.03143942356109619,
+              "contribution_to_overall_gap": 0.005597145644591844,
+              "fraction_of_overall_gap": 0.35130759993556526
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.321940541267395,
+              "transformer_kl": 0.33848273754119873,
+              "kl_difference": 0.01654219627380371,
+              "contribution_to_overall_gap": 0.00863035968479124,
+              "fraction_of_overall_gap": 0.5416887713783559
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.05958819389343262,
+              "transformer_kl": 0.06542062759399414,
+              "kl_difference": 0.0058324337005615234,
+              "contribution_to_overall_gap": 0.0016902786993308863,
+              "fraction_of_overall_gap": 0.10609117410727024
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.010387659072875977,
+              "transformer_kl": 0.01177978515625,
+              "kl_difference": 0.0013921260833740234,
+              "contribution_to_overall_gap": 1.4541913095667427e-05,
+              "fraction_of_overall_gap": 0.0009127303294397348
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.015932321548461914,
+          "reconstructed_gap": 0.015932325941809638,
+          "rounding_residual": -4.39334772381339e-09
+        },
+        {
+          "turn": 1536,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.17981767654418945,
+              "transformer_kl": 0.19807493686676025,
+              "kl_difference": 0.0182572603225708,
+              "contribution_to_overall_gap": 0.0032503313840367897,
+              "fraction_of_overall_gap": 0.2094916393968751
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.29381096363067627,
+              "transformer_kl": 0.31239211559295654,
+              "kl_difference": 0.018581151962280273,
+              "contribution_to_overall_gap": 0.00969411933808289,
+              "fraction_of_overall_gap": 0.6248092002612088
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.052266836166381836,
+              "transformer_kl": 0.060712337493896484,
+              "kl_difference": 0.008445501327514648,
+              "contribution_to_overall_gap": 0.002447563355532763,
+              "fraction_of_overall_gap": 0.1577513180337527
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.00980377197265625,
+              "transformer_kl": 0.02159404754638672,
+              "kl_difference": 0.011790275573730469,
+              "contribution_to_overall_gap": 0.0001231592201416245,
+              "fraction_of_overall_gap": 0.007937906596547056
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.015515327453613281,
+          "reconstructed_gap": 0.015515173297794069,
+          "rounding_residual": 1.5415581921217336e-07
+        },
+        {
+          "turn": 1792,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.17168259620666504,
+              "transformer_kl": 0.177803635597229,
+              "kl_difference": 0.006121039390563965,
+              "contribution_to_overall_gap": 0.001089725735546395,
+              "fraction_of_overall_gap": 0.141328705848864
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.27464818954467773,
+              "transformer_kl": 0.28456830978393555,
+              "kl_difference": 0.009920120239257812,
+              "contribution_to_overall_gap": 0.005175504169101853,
+              "fraction_of_overall_gap": 0.6712214665351673
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.049239158630371094,
+              "transformer_kl": 0.0541229248046875,
+              "kl_difference": 0.004883766174316406,
+              "contribution_to_overall_gap": 0.0014153484395656247,
+              "fraction_of_overall_gap": 0.18355936430988568
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.006930112838745117,
+              "transformer_kl": 0.00978994369506836,
+              "kl_difference": 0.002859830856323242,
+              "contribution_to_overall_gap": 2.987330837172988e-05,
+              "fraction_of_overall_gap": 0.003874328992958678
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.007710576057434082,
+          "reconstructed_gap": 0.007710451652585603,
+          "rounding_residual": 1.2440484847917738e-07
+        },
+        {
+          "turn": 2048,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.16697490215301514,
+              "transformer_kl": 0.18069040775299072,
+              "kl_difference": 0.013715505599975586,
+              "contribution_to_overall_gap": 0.002441764947855862,
+              "fraction_of_overall_gap": 0.20221544406526873
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.2596477270126343,
+              "transformer_kl": 0.27499353885650635,
+              "kl_difference": 0.01534581184387207,
+              "contribution_to_overall_gap": 0.008006184528077312,
+              "fraction_of_overall_gap": 0.6630344010119709
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.04363250732421875,
+              "transformer_kl": 0.04924130439758301,
+              "kl_difference": 0.005608797073364258,
+              "contribution_to_overall_gap": 0.0016254672935355067,
+              "fraction_of_overall_gap": 0.13461352652493558
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.007407665252685547,
+              "transformer_kl": 0.0075800418853759766,
+              "kl_difference": 0.0001723766326904297,
+              "contribution_to_overall_gap": 1.8006170865161072e-06,
+              "fraction_of_overall_gap": 0.00014911860540102188
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.012075066566467285,
+          "reconstructed_gap": 0.012075217386555197,
+          "rounding_residual": -1.5082008791161838e-07
+        },
+        {
+          "turn": 2304,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.15669620037078857,
+              "transformer_kl": 0.16330456733703613,
+              "kl_difference": 0.006608366966247559,
+              "contribution_to_overall_gap": 0.001176484432391657,
+              "fraction_of_overall_gap": 0.1946177622054055
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.24867570400238037,
+              "transformer_kl": 0.25486671924591064,
+              "kl_difference": 0.0061910152435302734,
+              "contribution_to_overall_gap": 0.0032299633906716935,
+              "fraction_of_overall_gap": 0.5343107225142121
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.04150962829589844,
+              "transformer_kl": 0.04703402519226074,
+              "kl_difference": 0.005524396896362305,
+              "contribution_to_overall_gap": 0.0016010075519027089,
+              "fraction_of_overall_gap": 0.26484371441434584
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.0063934326171875,
+              "transformer_kl": 0.009995698928833008,
+              "kl_difference": 0.003602266311645508,
+              "contribution_to_overall_gap": 3.762866329207726e-05,
+              "fraction_of_overall_gap": 0.006224652059184099
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.006045103073120117,
+          "reconstructed_gap": 0.006045084038258136,
+          "rounding_residual": 1.903486198089749e-08
+        },
+        {
+          "turn": 2560,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.14796507358551025,
+              "transformer_kl": 0.15420877933502197,
+              "kl_difference": 0.006243705749511719,
+              "contribution_to_overall_gap": 0.0011115639691701169,
+              "fraction_of_overall_gap": 0.13686900060610618
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.23973298072814941,
+              "transformer_kl": 0.25071394443511963,
+              "kl_difference": 0.010980963706970215,
+              "contribution_to_overall_gap": 0.005728965181417242,
+              "fraction_of_overall_gap": 0.7054184560094842
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.04036521911621094,
+              "transformer_kl": 0.044740915298461914,
+              "kl_difference": 0.0043756961822509766,
+              "contribution_to_overall_gap": 0.0012681063225614094,
+              "fraction_of_overall_gap": 0.15614436041935237
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.006238698959350586,
+              "transformer_kl": 0.007462263107299805,
+              "kl_difference": 0.0012235641479492188,
+              "contribution_to_overall_gap": 1.2781143690180722e-05,
+              "fraction_of_overall_gap": 0.001573766703489065
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.008121371269226074,
+          "reconstructed_gap": 0.008121416616838949,
+          "rounding_residual": -4.534761287484923e-08
+        },
+        {
+          "turn": 2816,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.14742720127105713,
+              "transformer_kl": 0.15018653869628906,
+              "kl_difference": 0.0027593374252319336,
+              "contribution_to_overall_gap": 0.0004912435312811344,
+              "fraction_of_overall_gap": 3.0434633799506456
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.23223280906677246,
+              "transformer_kl": 0.23033559322357178,
+              "kl_difference": -0.0018972158432006836,
+              "contribution_to_overall_gap": -0.0009898114407236108,
+              "fraction_of_overall_gap": -6.132304409265589
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03809952735900879,
+              "transformer_kl": 0.0403132438659668,
+              "kl_difference": 0.002213716506958008,
+              "contribution_to_overall_gap": 0.0006415500029958418,
+              "fraction_of_overall_gap": 3.974676135547225
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.005837440490722656,
+              "transformer_kl": 0.007616758346557617,
+              "kl_difference": 0.001779317855834961,
+              "contribution_to_overall_gap": 1.858645272015174e-05,
+              "fraction_of_overall_gap": 0.11515100884777447
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.0001614093780517578,
+          "reconstructed_gap": 0.00016156854627351715,
+          "rounding_residual": -1.591682217593404e-07
+        },
+        {
+          "turn": 3072,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.13576972484588623,
+              "transformer_kl": 0.14117848873138428,
+              "kl_difference": 0.005408763885498047,
+              "contribution_to_overall_gap": 0.0009629196656710428,
+              "fraction_of_overall_gap": 0.13648438928079745
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.21520674228668213,
+              "transformer_kl": 0.22564852237701416,
+              "kl_difference": 0.010441780090332031,
+              "contribution_to_overall_gap": 0.005447663444289194,
+              "fraction_of_overall_gap": 0.772152698411231
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03592324256896973,
+              "transformer_kl": 0.03816103935241699,
+              "kl_difference": 0.0022377967834472656,
+              "contribution_to_overall_gap": 0.0006485286298458774,
+              "fraction_of_overall_gap": 0.09192255297220765
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.006494045257568359,
+              "transformer_kl": 0.006119966506958008,
+              "kl_difference": -0.00037407875061035156,
+              "contribution_to_overall_gap": -3.907563220945743e-06,
+              "fraction_of_overall_gap": -0.0005538586434572636
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.007055163383483887,
+          "reconstructed_gap": 0.007055204176585168,
+          "rounding_residual": -4.079310128145969e-08
+        },
+        {
+          "turn": 3328,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.12826526165008545,
+              "transformer_kl": 0.14103734493255615,
+              "kl_difference": 0.012772083282470703,
+              "contribution_to_overall_gap": 0.0022738079207439725,
+              "fraction_of_overall_gap": 0.3611011191249149
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.20639216899871826,
+              "transformer_kl": 0.21257364749908447,
+              "kl_difference": 0.006181478500366211,
+              "contribution_to_overall_gap": 0.0032249879011801517,
+              "fraction_of_overall_gap": 0.5121570426667492
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03390049934387207,
+              "transformer_kl": 0.03658938407897949,
+              "kl_difference": 0.002688884735107422,
+              "contribution_to_overall_gap": 0.0007792569664821868,
+              "fraction_of_overall_gap": 0.12375300486706683
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.00532984733581543,
+              "transformer_kl": 0.0071375370025634766,
+              "kl_difference": 0.0018076896667480469,
+              "contribution_to_overall_gap": 1.8882819847807918e-05,
+              "fraction_of_overall_gap": 0.002998761380445274
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.006296873092651367,
+          "reconstructed_gap": 0.006296935608254119,
+          "rounding_residual": -6.251560275179202e-08
+        },
+        {
+          "turn": 3584,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.12189006805419922,
+              "transformer_kl": 0.126167893409729,
+              "kl_difference": 0.004277825355529785,
+              "contribution_to_overall_gap": 0.0007615792163141446,
+              "fraction_of_overall_gap": 0.2646913120072325
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.20365488529205322,
+              "transformer_kl": 0.20680201053619385,
+              "kl_difference": 0.003147125244140625,
+              "contribution_to_overall_gap": 0.0016419115322088172,
+              "fraction_of_overall_gap": 0.5706559585009588
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.033452749252319336,
+              "transformer_kl": 0.03505897521972656,
+              "kl_difference": 0.0016062259674072266,
+              "contribution_to_overall_gap": 0.00046549513949197484,
+              "fraction_of_overall_gap": 0.16178555896186178
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.005178213119506836,
+              "transformer_kl": 0.0059735774993896484,
+              "kl_difference": 0.0007953643798828125,
+              "contribution_to_overall_gap": 8.308241494630336e-06,
+              "fraction_of_overall_gap": 0.002887577936186112
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.0028772354125976562,
+          "reconstructed_gap": 0.002877294129509567,
+          "rounding_residual": -5.871691191074169e-08
+        },
+        {
+          "turn": 3840,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.111350417137146,
+              "transformer_kl": 0.12322080135345459,
+              "kl_difference": 0.011870384216308594,
+              "contribution_to_overall_gap": 0.002113278864252397,
+              "fraction_of_overall_gap": 0.4999004000591781
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.19610846042633057,
+              "transformer_kl": 0.19919860363006592,
+              "kl_difference": 0.0030901432037353516,
+              "contribution_to_overall_gap": 0.0016121829824968545,
+              "fraction_of_overall_gap": 0.38136515324677045
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.03224587440490723,
+              "transformer_kl": 0.033957719802856445,
+              "kl_difference": 0.0017118453979492188,
+              "contribution_to_overall_gap": 0.0004961043641906457,
+              "fraction_of_overall_gap": 0.11735449321201748
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.005033969879150391,
+              "transformer_kl": 0.005585193634033203,
+              "kl_difference": 0.0005512237548828125,
+              "contribution_to_overall_gap": 5.757989908748603e-06,
+              "fraction_of_overall_gap": 0.0013620641873681066
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.004227399826049805,
+          "reconstructed_gap": 0.004227324200848646,
+          "rounding_residual": 7.562520115862725e-08
+        },
+        {
+          "turn": 4096,
+          "rows": [
+            {
+              "group": "phase_0_16",
+              "positions": 247040.0,
+              "fraction_positions": 0.17802952505521985,
+              "cnn_kl": 0.11391317844390869,
+              "transformer_kl": 0.12374353408813477,
+              "kl_difference": 0.009830355644226074,
+              "contribution_to_overall_gap": 0.0017500935464654678,
+              "fraction_of_overall_gap": 0.27736347486545615
+            },
+            {
+              "group": "phase_16_64",
+              "positions": 723954.0,
+              "fraction_positions": 0.5217178869083008,
+              "cnn_kl": 0.19011104106903076,
+              "transformer_kl": 0.19772303104400635,
+              "kl_difference": 0.007611989974975586,
+              "contribution_to_overall_gap": 0.003971311324911432,
+              "fraction_of_overall_gap": 0.6293930464886196
+            },
+            {
+              "group": "phase_64_128",
+              "positions": 402146.0,
+              "fraction_positions": 0.2898067575407077,
+              "cnn_kl": 0.031046152114868164,
+              "transformer_kl": 0.03305506706237793,
+              "kl_difference": 0.0020089149475097656,
+              "contribution_to_overall_gap": 0.0005821971271128662,
+              "fraction_of_overall_gap": 0.09226947814237685
+            },
+            {
+              "group": "phase_128_256",
+              "positions": 14495.0,
+              "fraction_positions": 0.010445830495771583,
+              "cnn_kl": 0.005437135696411133,
+              "transformer_kl": 0.006021738052368164,
+              "kl_difference": 0.0005846023559570312,
+              "contribution_to_overall_gap": 6.106657117755871e-06,
+              "fraction_of_overall_gap": 0.0009678132014219505
+            },
+            {
+              "group": "phase_256_2048",
+              "positions": 0.0,
+              "fraction_positions": 0.0,
+              "cnn_kl": 0.0,
+              "transformer_kl": 0.0,
+              "kl_difference": 0.0,
+              "contribution_to_overall_gap": 0.0,
+              "fraction_of_overall_gap": 0.0
+            }
+          ],
+          "overall_gap": 0.0063097476959228516,
+          "reconstructed_gap": 0.006309708655607522,
+          "rounding_residual": 3.904031532948882e-08
+        }
+      ]
+    }
+  ],
+  "mean_phase_summary": [
+    {
+      "group": "phase_0_16",
+      "positions": 247040.0,
+      "mean_cnn_kl": 0.11528664827346802,
+      "mean_transformer_kl": 0.12527507543563843,
+      "mean_kl_difference": 0.00998842716217041,
+      "mean_contribution": 0.0017782349437298556,
+      "mean_fraction_of_paired_gap": 0.3932852562356557
+    },
+    {
+      "group": "phase_16_64",
+      "positions": 723954.0,
+      "mean_cnn_kl": 0.19102632999420166,
+      "mean_transformer_kl": 0.19562149047851562,
+      "mean_kl_difference": 0.004595160484313965,
+      "mean_contribution": 0.0023973774178808055,
+      "mean_fraction_of_paired_gap": 0.43075850359691925
+    },
+    {
+      "group": "phase_64_128",
+      "positions": 402146.0,
+      "mean_cnn_kl": 0.031029820442199707,
+      "mean_transformer_kl": 0.033527493476867676,
+      "mean_kl_difference": 0.0024976730346679688,
+      "mean_contribution": 0.0007238425235739838,
+      "mean_fraction_of_paired_gap": 0.16812275724965825
+    },
+    {
+      "group": "phase_128_256",
+      "positions": 14495.0,
+      "mean_cnn_kl": 0.005122780799865723,
+      "mean_transformer_kl": 0.007914185523986816,
+      "mean_kl_difference": 0.0027914047241210938,
+      "mean_contribution": 2.915854059326498e-05,
+      "mean_fraction_of_paired_gap": 0.00784281481071687
+    },
+    {
+      "group": "phase_256_2048",
+      "positions": 0.0,
+      "mean_cnn_kl": 0.0,
+      "mean_transformer_kl": 0.0,
+      "mean_kl_difference": 0.0,
+      "mean_contribution": 0.0,
+      "mean_fraction_of_paired_gap": 0.0
+    }
+  ],
+  "scope": "Post-hoc descriptive decomposition of two paired seeds on the same fixed validation population. Phase and opponent partitions are overlapping descriptions and must not be added together. Predicted entropy alone is not a calibration test. The concentrated opening-family mixture limits generalization. No cause, significance, new selection criterion, held-out test or strength claim."
+}

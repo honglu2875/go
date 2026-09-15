@@ -1,0 +1,13 @@
+{
+  "kind": "closed_lr_comparison_plot_receipt",
+  "created": 1789488050.1406713,
+  "status": "passed",
+  "source_sha256": {
+    "research/studies/strong9_scaling/plot_report.py": "054a224c54fcc3b66514f9b518741a972a2f1f06dc6d65567637c0b14464e393",
+    "research/studies/strong9_followups/lr15/seed1-final-002.png": "f60b384851d7bd82d9dab7b6c030bc5c93fd68f8da4495d12857e3a444442d72",
+    "research/studies/strong9_followups/lr15/seed1-final-002.csv": "7c504e910c64acdee84253883990f93629b26e83a92525ba79e7f658a204ae61"
+  },
+  "contrast_sha256": "1d282bd60540359eadf2edecb5f2185b0e2189ab8d30e0d5ec00975ccff29b3c",
+  "visual_inspection": "All six curves, axes, legend and mixture caption are legible.",
+  "scope": "Presentation only; no selection or metric changes."
+}

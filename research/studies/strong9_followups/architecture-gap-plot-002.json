@@ -1,0 +1,12 @@
+{
+  "kind": "architecture_gap_plot_receipt",
+  "status": "passed",
+  "created": 1789488757.3893723,
+  "diagnostic_sha256": "68059f38f7bff3327034403c96537210221e8f27b8f62e51da0e478884d6811f",
+  "files": {
+    "plot_architecture_gap.py": "c64c3a7bcab508120d6600c7ae1afb495b9afa20521afd5599e219db949af507",
+    "architecture-gap-002.png": "2aeab1277f14456b4e7b0f78aaa92289f41d442a4b7de72d0b066fab219b111f",
+    "architecture-gap-002.csv": "7131a21a6e19c4f67bdd816c21c01097f73dcf25d07188ba84b23ac0ba1bacd3"
+  },
+  "visual_inspection": "Final revision has readable title, panels, labels, legends and footnotes. The first rendering had overlapping titles; no metric or scientific result changed."
+}

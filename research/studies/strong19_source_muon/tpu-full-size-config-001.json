@@ -1,0 +1,90 @@
+{
+  "checkpoint_every": 4,
+  "checkpoint_temporary": true,
+  "checkpoint_temporary_uncompressed": true,
+  "dataset": {
+    "bucket_probabilities": [
+      0.8,
+      0.2
+    ],
+    "buckets": [
+      512,
+      1536
+    ],
+    "manifest_sha256": "da627b1968dbb353acbf3b630a9feb84cf30080957a5660c8bc4125917fbe0ae",
+    "path": "/dev/shm/gozero-datasets/joint19-execution-001",
+    "warmup_buckets": [
+      512,
+      1536
+    ]
+  },
+  "eval_every": 2,
+  "evaluation": {
+    "games_per_bucket": 2,
+    "run_test": false,
+    "training_probe_games": 4
+  },
+  "expected_devices": 16,
+  "expected_processes": 4,
+  "kind": "fixed_joint_learning",
+  "learner": {
+    "augmentation": "d4",
+    "games_per_host": 32,
+    "gradient_units": "actual_global_position_sum",
+    "source_runtime": {
+      "effective_lr_scale": 1.0,
+      "epochs": [
+        [
+          4
+        ]
+      ],
+      "factors": {
+        "gnorm_clip_scale": 1.0,
+        "head_lr_factor": 0.5,
+        "input_wd_factor": 1.0,
+        "muon_adam_lr_factor": 1.0,
+        "noreg_lr_factor": 1.0,
+        "normal_attn_wd_factor": 1.0,
+        "normal_wd_factor": 1.0
+      },
+      "initial_samples": 249000,
+      "lookahead": {
+        "alpha": 0.5,
+        "k": 3
+      },
+      "no_lr_warmup": false,
+      "print_every": 3,
+      "reference_batch_positions": 256
+    }
+  },
+  "log_every": 1,
+  "model": {
+    "architecture": "katago_nested_policy",
+    "dtype": "bfloat16",
+    "gpool_width": 128,
+    "layers": 40,
+    "max_board_size": 19,
+    "max_positions": 1536,
+    "microbatch": 32,
+    "mid_width": 384,
+    "norm_epsilon": 0.0001,
+    "policy_width": 128,
+    "rematerialize": true,
+    "width": 768
+  },
+  "platform": "tpu",
+  "schema_version": 1,
+  "seed": 91312427,
+  "steps": 4,
+  "training": {
+    "chunk_frames": 32,
+    "optimizer": "muon_source_runtime",
+    "path": "bounded",
+    "purpose": "qualification",
+    "value_weight": 0.7
+  },
+  "value_model": {
+    "hidden": 256,
+    "spatial_channels": 256
+  }
+}

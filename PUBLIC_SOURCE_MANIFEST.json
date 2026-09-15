@@ -4366,8 +4366,8 @@
       "sha256": "44e89f43fbe2ac4ccc50a19d5008e19bdc50a67f1750177e8e574c38979f53d5"
     },
     "ops/STATUS.md": {
-      "bytes": 1677,
-      "sha256": "1c979a0b6f27f6dd0471388e90684fa2b501ca50f0dc0687dbea7b5cde95e4c1"
+      "bytes": 2039,
+      "sha256": "4d93c44adefdee79eba65e0e7e0163ab2a4db6c7357e1df401557a629f1517cb"
     },
     "ops/analyze_visual_xplane.py": {
       "bytes": 4473,
@@ -13629,6 +13629,10 @@
       "bytes": 8744,
       "sha256": "fdc3cfd5ea9425e7d57bbb579815e471e7c59afffde199ff3b01a95ff9faeb4b"
     },
+    "research/studies/strong19_source_muon/FULL_SIZE.md": {
+      "bytes": 2474,
+      "sha256": "504f3fae9556eba6f8cdc5882e175df4d785025bca7cc77fd3966971b92775ea"
+    },
     "research/studies/strong19_source_muon/PLAN.md": {
       "bytes": 1808,
       "sha256": "41a1f0e6e3e6a7a6bbea9e6c0706f2a0194d183bbe9feccdb1d17dde032d1c7b"
@@ -13640,6 +13644,14 @@
     "research/studies/strong19_source_muon/cpu-config-001.json": {
       "bytes": 1952,
       "sha256": "e5fdf85786f156a4131ef2a52d799b3c337b745a9168fdd3662fe430fe6e6a9f"
+    },
+    "research/studies/strong19_source_muon/full-size-preparation-001.json": {
+      "bytes": 10848,
+      "sha256": "ec84178c5f0d783a6381092bf1217a412401e8fc2bf9400ad77de61fc7b270cf"
+    },
+    "research/studies/strong19_source_muon/full-size-trace-001.json": {
+      "bytes": 1733,
+      "sha256": "3f728d14046cfff4367576696c7e4b7522207eaf35dcd79e132ad7275432d7ad"
     },
     "research/studies/strong19_source_muon/harness-plan-001.json": {
       "bytes": 2251,
@@ -13660,6 +13672,10 @@
     "research/studies/strong19_source_muon/inference-cpu-plan-001.json": {
       "bytes": 1091,
       "sha256": "afe394d4e6bbb84c938940a8db76c043495539a52a04602c42d6ecc52c8c2498"
+    },
+    "research/studies/strong19_source_muon/prepare_full_size.py": {
+      "bytes": 5784,
+      "sha256": "14604ead11fc57683e2d3be102ae761e61b7263be524bf6c92d4fb298247e754"
     },
     "research/studies/strong19_source_muon/prepare_inference.py": {
       "bytes": 4001,
@@ -13688,6 +13704,14 @@
     "research/studies/strong19_source_muon/source-copies-001.json": {
       "bytes": 3628,
       "sha256": "66479a249bf447315ddd84426a29d5f69773728158194f7da647edaa0ab65f29"
+    },
+    "research/studies/strong19_source_muon/tpu-full-size-config-001.json": {
+      "bytes": 1997,
+      "sha256": "509e715f69564e47f99b6cd866febfc185ce7bd984beedd16a3715723a9d2101"
+    },
+    "research/studies/strong19_source_muon/trace_full_size.py": {
+      "bytes": 6128,
+      "sha256": "942b12cefce7a6603ee24b0619b941845c4b8595c06203eb1dba1b55ae7c0b16"
     },
     "research/studies/strong19_train/README.md": {
       "bytes": 7866,
@@ -13825,6 +13849,10 @@
       "bytes": 605,
       "sha256": "0091ee2199eb7952725f2128ff57c2842cb5174c4349d426aee04795fe0b3204"
     },
+    "research/studies/strong9_followups/ARCHITECTURE_GAP.md": {
+      "bytes": 1898,
+      "sha256": "7042777ac3166ddcf4414801936e14583aa9334e536d96b2a638f3a0ae3f01ba"
+    },
     "research/studies/strong9_followups/DIAGNOSTIC_NOTES.md": {
       "bytes": 5809,
       "sha256": "3565a3b69b44e44e9f332ff9a89d269277f63c6a61db39c45120e829911929dd"
@@ -13845,6 +13873,22 @@
       "bytes": 2973,
       "sha256": "daa00303fedddd86e6435e12ae13ce4249b101a8b003ce449a621d8b7bfb6756"
     },
+    "research/studies/strong9_followups/architecture-gap-001.csv": {
+      "bytes": 1010,
+      "sha256": "7131a21a6e19c4f67bdd816c21c01097f73dcf25d07188ba84b23ac0ba1bacd3"
+    },
+    "research/studies/strong9_followups/architecture-gap-001.json": {
+      "bytes": 89632,
+      "sha256": "68059f38f7bff3327034403c96537210221e8f27b8f62e51da0e478884d6811f"
+    },
+    "research/studies/strong9_followups/architecture-gap-002.csv": {
+      "bytes": 1010,
+      "sha256": "7131a21a6e19c4f67bdd816c21c01097f73dcf25d07188ba84b23ac0ba1bacd3"
+    },
+    "research/studies/strong9_followups/architecture-gap-plot-002.json": {
+      "bytes": 693,
+      "sha256": "0df6d0561e79a68a71ce045d6d9ea46980c3f2770962b114b036a0380ee0cb4d"
+    },
     "research/studies/strong9_followups/continue_lr.py": {
       "bytes": 12221,
       "sha256": "9ac5e7cb81428993e5f12725918161ca01574a73826c42382e9c2fcd4417d1a5"
@@ -13856,6 +13900,10 @@
     "research/studies/strong9_followups/diagnose.py": {
       "bytes": 9339,
       "sha256": "d8387d507b52751ae74d9a8338b182c8d5735befc1e2d9c90c9ecf8916bcb7b7"
+    },
+    "research/studies/strong9_followups/diagnose_architecture.py": {
+      "bytes": 5361,
+      "sha256": "45152c4be40b9568b16b83529a46bdc91548fde6c763301589f02e139200c19a"
     },
     "research/studies/strong9_followups/diagnose_lr.py": {
       "bytes": 5363,
@@ -13921,6 +13969,10 @@
       "bytes": 9987,
       "sha256": "213ebb0ca15f32b4e815b38de6ac99259658fdad51757272ae6681050251d082"
     },
+    "research/studies/strong9_followups/lr15-plot-report-002.json": {
+      "bytes": 765,
+      "sha256": "aaa5a204f9ec94d4c03351991033e54a9471b9d24a4ec9f36de263ec3abfc0cd"
+    },
     "research/studies/strong9_followups/lr15-registration-001.json": {
       "bytes": 3791,
       "sha256": "6adef0d5b4f7bdca52633bc925596f967a4c1229fd2ba930146df3847205adff"
@@ -13944,6 +13996,10 @@
     "research/studies/strong9_followups/lr_source.py": {
       "bytes": 3733,
       "sha256": "5818bad714e6011b7c4b9faec68eb9608d279e04d734a1ee730038be2603a2c9"
+    },
+    "research/studies/strong9_followups/plot_architecture_gap.py": {
+      "bytes": 3506,
+      "sha256": "c64c3a7bcab508120d6600c7ae1afb495b9afa20521afd5599e219db949af507"
     },
     "research/studies/strong9_followups/plot_time.py": {
       "bytes": 3553,
@@ -13986,8 +14042,8 @@
       "sha256": "df3eb81d18acb0f4dac9e0056fbdc196372c7e5596522d7ea0ed8b6d5109b8e5"
     },
     "research/studies/strong9_followups/scale1e-2/seed1-progress.csv": {
-      "bytes": 7260,
-      "sha256": "969302b43f96f6649f6aa482b492ae0d418f7cf661b622b357e9724bfe3bda4e"
+      "bytes": 7910,
+      "sha256": "a7772902cdf3f2053e14da5f4bf4f8a59737db1c73b1996b21a54e33e07b279d"
     },
     "research/studies/strong9_followups/scale1e-2-registration-001.json": {
       "bytes": 4531,

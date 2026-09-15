@@ -16,11 +16,16 @@ The scalar harness passed numerical preparation and corruption checks.
 
 The combined source Muon/AuxAdam, Lookahead and norm/schedule implementation
 passed small real-19×19 joint neural training, exact fresh-process recovery,
-and native search inference. Full-size execution, scientific learning settings,
-and trained playing-strength comparison remain open. The mixed-strength
+and native search inference. The full-size source-optimizer CNN now has a frozen execution configuration
+and passed abstract distributed update shapes for complete histories. Actual
+TPU execution/recovery, scientific settings and trained strength remain open. The mixed-strength
 19×19 producer continues; inventory003 records 2,064 completed games and
 856,540 positions, with a still-small teacher-self-play validation stratum.
 
 The closed 9×9 dataset is available at https://huggingface.co/datasets/quintic/go9x9,
 revision 4f579b0a21c456f3bb568174d384056351124cd5, tag final-9x9-v1.
 Publication scope and historical artifact limitations are in PUBLICATION.md.
+
+The paired architecture-gap diagnostic places 74–91% of each seed's overall
+validation KL gap in moves 1–64. This is post-hoc description and does not
+change selection rules. See strong9_followups/ARCHITECTURE_GAP.md and the CSV.
