@@ -4366,8 +4366,8 @@
       "sha256": "44e89f43fbe2ac4ccc50a19d5008e19bdc50a67f1750177e8e574c38979f53d5"
     },
     "ops/STATUS.md": {
-      "bytes": 2039,
-      "sha256": "4d93c44adefdee79eba65e0e7e0163ab2a4db6c7357e1df401557a629f1517cb"
+      "bytes": 1335,
+      "sha256": "85edb515e37fcce298374b03dfdf0b89a3f600b85cb2db25d1671006dfc9e9a1"
     },
     "ops/analyze_visual_xplane.py": {
       "bytes": 4473,
@@ -12997,6 +12997,34 @@
       "bytes": 2183,
       "sha256": "1ec2326ddeaa7b358614994d235b68951d5b10b04de2104720af4e488f8a6d48"
     },
+    "research/studies/katago_cpu_batching/README.md": {
+      "bytes": 2392,
+      "sha256": "81f0e857231bcf5794bf94d303f98eb92ec6c6ea2925c8c4fc0b262d78460d9d"
+    },
+    "research/studies/katago_cpu_batching/benchmark.py": {
+      "bytes": 10071,
+      "sha256": "68f836d0d338502b2c0b315ca80299a6ee62f5322d665400c47d89453d239f74"
+    },
+    "research/studies/katago_cpu_batching/benchmark_v2.py": {
+      "bytes": 10129,
+      "sha256": "7ea520339976bde3859d4b9fc569a7f095a9a6ca7ab515f59abc4b2186f3f6ff"
+    },
+    "research/studies/katago_cpu_batching/plan-001.json": {
+      "bytes": 1214,
+      "sha256": "1e3e65ded10f47b5fcd0c9dbfa5ce34897ded854dd0f68e27d10a481ca03acc1"
+    },
+    "research/studies/katago_cpu_batching/plan-002.json": {
+      "bytes": 1311,
+      "sha256": "c498b38f190106c9197740bdd3a0fd5760d503f74b47b531a3e65f078d379045"
+    },
+    "research/studies/katago_cpu_batching/review-002.json": {
+      "bytes": 1255,
+      "sha256": "d1b08c995e5cef1fabd3b24482d7320cb65832c23cb3c512acfcbf4b54440b0d"
+    },
+    "research/studies/katago_cpu_batching/startup-failure-001.json": {
+      "bytes": 662,
+      "sha256": "21e02b6bfe56a36cf12092ce62abe23b9236038f02cf95f08fbc2ddecad35620"
+    },
     "research/studies/katago_ladder/README.md": {
       "bytes": 2550,
       "sha256": "86c06136cfa9be1d7e554bb7442c9b069268e1fb80f0e37e8c97cb2ee962abb9"
@@ -13605,6 +13633,10 @@
       "bytes": 1641,
       "sha256": "b9164f70c4c4157286543df0428adb0eefbde64505a6806312d5558e91911190"
     },
+    "research/studies/strong19_scaling/LEARNING_DESIGN.md": {
+      "bytes": 3778,
+      "sha256": "6abd8f270b5570dc7ca257cf94fee48ee3a294c0dbe82cdcd1a696dfd1105db9"
+    },
     "research/studies/strong19_scaling/README.md": {
       "bytes": 1404,
       "sha256": "6c7ce8bc16faffb40faa1adf0adb32a587ca76649574636093231eb87ca5925d"
@@ -13630,8 +13662,8 @@
       "sha256": "fdc3cfd5ea9425e7d57bbb579815e471e7c59afffde199ff3b01a95ff9faeb4b"
     },
     "research/studies/strong19_source_muon/FULL_SIZE.md": {
-      "bytes": 2474,
-      "sha256": "504f3fae9556eba6f8cdc5882e175df4d785025bca7cc77fd3966971b92775ea"
+      "bytes": 3300,
+      "sha256": "540f0285756348e65a7777a2b30f8b23817c79d8f07f38784810cd84d1fcc7d5"
     },
     "research/studies/strong19_source_muon/PLAN.md": {
       "bytes": 1808,
@@ -13644,6 +13676,22 @@
     "research/studies/strong19_source_muon/cpu-config-001.json": {
       "bytes": 1952,
       "sha256": "e5fdf85786f156a4131ef2a52d799b3c337b745a9168fdd3662fe430fe6e6a9f"
+    },
+    "research/studies/strong19_source_muon/distributed-recovery-cpu-001.json": {
+      "bytes": 150331,
+      "sha256": "04315da233a186befd757b9ebb5f0a47018facc0f250915e51c8f01b740d67a0"
+    },
+    "research/studies/strong19_source_muon/distributed_recovery.py": {
+      "bytes": 21094,
+      "sha256": "1f3059d88f3bc248356c17673ee1706ec8511456fecc97084a2d734563b86afd"
+    },
+    "research/studies/strong19_source_muon/execute_full_size.py": {
+      "bytes": 11606,
+      "sha256": "c5d014c7120acf2756137b4bca3c1f4cd3dd8d65b4133e6aa5c833ef6d83c399"
+    },
+    "research/studies/strong19_source_muon/full-size-execution-plan-001.json": {
+      "bytes": 2403,
+      "sha256": "38700edb6c72961867ebc3ada8d813ad29e8559c61b8d5ab52059b042f265cee"
     },
     "research/studies/strong19_source_muon/full-size-preparation-001.json": {
       "bytes": 10848,
@@ -13692,6 +13740,10 @@
     "research/studies/strong19_source_muon/recovery_audit.py": {
       "bytes": 7351,
       "sha256": "0f4ce31d1d10f349e3290cc6f2de401844ba62d30d5a89a66563c1ddae8981e3"
+    },
+    "research/studies/strong19_source_muon/replicate_full_size.py": {
+      "bytes": 3968,
+      "sha256": "2a41c76531c88a3d0dfa15752509092d5a339c261e4c188a4f2563e8e9f808df"
     },
     "research/studies/strong19_source_muon/runtime-cpu-001.json": {
       "bytes": 1221,
@@ -13957,18 +14009,6 @@
       "bytes": 1051,
       "sha256": "dc4a3ae3802a7f1d1ce79428baba1cbd93e689bfcdffc3d7bb794ace2db78f41"
     },
-    "research/studies/strong9_followups/lr15/seed1-final-002.csv": {
-      "bytes": 10470,
-      "sha256": "7c504e910c64acdee84253883990f93629b26e83a92525ba79e7f658a204ae61"
-    },
-    "research/studies/strong9_followups/lr15/seed1-final.csv": {
-      "bytes": 10198,
-      "sha256": "934cebef8d13ef51034c1566f1a307b46cd92a872a7013fcddd56df2d293f055"
-    },
-    "research/studies/strong9_followups/lr15/seed1-progress.csv": {
-      "bytes": 9987,
-      "sha256": "213ebb0ca15f32b4e815b38de6ac99259658fdad51757272ae6681050251d082"
-    },
     "research/studies/strong9_followups/lr15-plot-report-002.json": {
       "bytes": 765,
       "sha256": "aaa5a204f9ec94d4c03351991033e54a9471b9d24a4ec9f36de263ec3abfc0cd"
@@ -13988,6 +14028,18 @@
     "research/studies/strong9_followups/lr15-review-001.md": {
       "bytes": 1211,
       "sha256": "ef30843d0299e2257112953bb149ba1b683d8dd8615a5fa5cdff6bb298c8524b"
+    },
+    "research/studies/strong9_followups/lr15/seed1-final-002.csv": {
+      "bytes": 10470,
+      "sha256": "7c504e910c64acdee84253883990f93629b26e83a92525ba79e7f658a204ae61"
+    },
+    "research/studies/strong9_followups/lr15/seed1-final.csv": {
+      "bytes": 10198,
+      "sha256": "934cebef8d13ef51034c1566f1a307b46cd92a872a7013fcddd56df2d293f055"
+    },
+    "research/studies/strong9_followups/lr15/seed1-progress.csv": {
+      "bytes": 9987,
+      "sha256": "213ebb0ca15f32b4e815b38de6ac99259658fdad51757272ae6681050251d082"
     },
     "research/studies/strong9_followups/lr_compare.py": {
       "bytes": 7670,
@@ -14041,10 +14093,6 @@
       "bytes": 3276,
       "sha256": "df3eb81d18acb0f4dac9e0056fbdc196372c7e5596522d7ea0ed8b6d5109b8e5"
     },
-    "research/studies/strong9_followups/scale1e-2/seed1-progress.csv": {
-      "bytes": 7910,
-      "sha256": "a7772902cdf3f2053e14da5f4bf4f8a59737db1c73b1996b21a54e33e07b279d"
-    },
     "research/studies/strong9_followups/scale1e-2-registration-001.json": {
       "bytes": 4531,
       "sha256": "64ff3c98b7d9d2020c83a9e3957e12ece4e6f23d4c13d135343369cf4a295b22"
@@ -14052,6 +14100,10 @@
     "research/studies/strong9_followups/scale1e-2-review-001.json": {
       "bytes": 2840,
       "sha256": "120f823b5f3ebaca4e5550eac82181304bc3080605caf0ca175c1ae47d324d0d"
+    },
+    "research/studies/strong9_followups/scale1e-2/seed1-progress.csv": {
+      "bytes": 9874,
+      "sha256": "db0c8e31e272397a0998158b31eb7e1cf6c82f2c36fcd11daa1c48684d6021a9"
     },
     "research/studies/strong9_followups/seed1-through-2816-001.json": {
       "bytes": 154898,
@@ -14950,5 +15002,6 @@
       "sha256": "7e12df7ffb7eb7dddd3747d4b2b27f804383466826776b4225d558582ef11a4d"
     }
   },
-  "kind": "sanitized_public_source_manifest"
+  "kind": "sanitized_public_source_manifest",
+  "updated": 1789492751.4643548
 }

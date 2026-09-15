@@ -32,10 +32,23 @@ checkpoint/rank state, independent sampling replay, validation/probe histories,
 and applied schedule replay across all ranks. Record actual compilation cost,
 memory analysis, update/evaluation timing and checkpoint transport.
 
+The [execution plan](full-size-execution-plan-001.json) now freezes those three
+stages, the auditor and the CPU recovery prerequisite. The new auditor passed
+against the existing real CPU run: 11 uninterrupted updates versus a fresh
+six-update prefix and five-update continuation. It checks canonical tensor and
+payload identities, all rank state, independent game/D4 draws, source schedule
+replay and retained policy/value diagnostics. That result verifies the auditor
+on one process; the real distributed full-size result is still required.
+
 No TPU job has launched from this preparation. The current 9×9 intervention
-retains the accelerator allocation. Full execution needs its own frozen
-launch/recovery plan and enough RAM for the complete retained checkpoint
-sequence. The 256-position schedule reference, synthetic initial sample
+retains the accelerator allocation. The launch operator requires its complete
+review, including its conditional second seed, before starting. Every stage
+checks exclusive allocation and reserves its remaining checkpoints, peer
+transport and producer growth above the RAM floor. Closed negative trials have
+been moved to verified peer copies to provide that headroom; all unique states
+remain available through private restore locators.
+
+The 256-position schedule reference, synthetic initial sample
 offset, short epoch and Lookahead period remain execution fixtures. They do
 not select scientific 19×19 batch size, optimizer settings, training horizon
 or historical KataGo equivalence. Transformer execution uses its separately

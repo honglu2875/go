@@ -1,0 +1,37 @@
+{
+  "kind": "joint_source_muon_full_size_execution",
+  "created": 1789492142.1239793,
+  "snapshot": "49412bc1b88b99bd800d0081481836a8ceaa3a2133a1ff9b580110c95def9497",
+  "stages": [
+    "full",
+    "prefix",
+    "resumed"
+  ],
+  "horizon": 4,
+  "prefix_turn": 2,
+  "output_directory": "full-size-execution-001",
+  "stage_timeout_seconds": 1800,
+  "checkpoint_reserve_bytes": 2850000000,
+  "shm_floor_bytes": 68719476736,
+  "producer_growth_reserve_bytes": 2147483648,
+  "memory_floor_bytes": 103079215104,
+  "disk_floor_bytes": 1073741824,
+  "audit_python": "/workspace/go/.gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "operators": {
+    "research/studies/strong19_source_muon/execute_full_size.py": "bd32ecf06c542ff91b64602293a04df7f6ba8f85c9fa1aa9c0cac3878220cf1d",
+    "research/studies/strong19_source_muon/replicate_full_size.py": "5ad8480692a675dd21de41fda9342d8023031d005d50c793a624d15548eac5df",
+    "research/studies/strong19_source_muon/distributed_recovery.py": "1f3059d88f3bc248356c17673ee1706ec8511456fecc97084a2d734563b86afd"
+  },
+  "prerequisites": {
+    "research/studies/strong19_source_muon/full-size-preparation-001.json": "87817845d15c05f854db4a887e4dd6c87e34bf52194d4b1b08da4fd8b0a9a67e",
+    "research/studies/strong19_source_muon/full-size-trace-001.json": "3f728d14046cfff4367576696c7e4b7522207eaf35dcd79e132ad7275432d7ad",
+    "research/studies/strong19_source_muon/distributed-recovery-cpu-001.json": "60847e265d68e124f52d70a40247404a3d54acf6a6762e5680688de8491d5490",
+    "research/studies/strong19_source_muon/harness-result-001.json": "0cab9d71e6aa105c7189bf0569cd573150698c8005ad2228d23ca5d3ebcad7e5"
+  },
+  "preceding_intervention": {
+    "registration": "research/studies/strong9_followups/scale1e-2-registration-001.json",
+    "registration_sha256": "1e2260d9d9f82e465f0ad6ab67b54347289772c45ef8c819d9af3cb22466ae0b",
+    "outcome": "research/studies/strong9_followups/scale1e-2-continuation/outcome-001.json"
+  },
+  "scope": "Three fresh full-size real-data execution processes, including exact recovery across every rank and actual memory/timing observations. Qualification only; does not select scientific batch, horizon or architecture. Starts only after the complete preceding 9x9 intervention closes. Checkpoints retained on owner and peer; prefix arrays additionally staged across peers for continuation."
+}

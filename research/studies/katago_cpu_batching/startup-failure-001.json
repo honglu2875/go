@@ -1,0 +1,12 @@
+{
+  "kind": "katago_cpu_batching_startup_failure",
+  "status": "failed",
+  "created": 1789489581.6211495,
+  "plan_sha256": "4e929c705d53edf284bbf9e18de5913bf0f7304219a66d63e2eda55a44462f79",
+  "operator_sha256": "68f836d0d338502b2c0b315ca80299a6ee62f5322d665400c47d89453d239f74",
+  "log_sha256": "50a85e65996d9e533593a73bc09bba05009dcb8ee88a4b72984010793c1783eb",
+  "engine_launched": false,
+  "queries_executed": 0,
+  "reason": "The corpus identity hashes canonical JSON without a terminal newline; the generic snapshot canonicalizer includes one.",
+  "correction": "Use the exact corpus serialization for its identity; retain all scientific pilot settings."
+}

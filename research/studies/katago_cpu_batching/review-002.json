@@ -1,0 +1,24 @@
+{
+  "kind": "katago_cpu_batching_pilot_review",
+  "status": "completed",
+  "created": 1789490357.5692468,
+  "result_sha256": "098ccb30104542c7672811d8b972a34f90c1ad1868a59726fe0422fb56ff0edf",
+  "plan_sha256": "cc9ee708557dc3390eeb12abb2168bab797f0f93320fe4b5402889a60d1ccadd",
+  "source_reference_commit": "92ee95c0a4b25fec214da00951ab69e97e207729",
+  "reference_source_sha256": {
+    "cpp/program/setup.cpp": "e0986e44d56db7b5876776105237587b403dc8950fca0954395f7b8ef33c9e00",
+    "cpp/neuralnet/nninterface.h": "0c5fed8e7c4497b95ada2e6b323347652c29a1707fa736bc294ea8601f400b4c",
+    "cpp/neuralnet/eigenbackend.cpp": "3f9ea2f109ba8b936e7eebb320610bd51d0609fa5ea50f7bf1d2ad0dc7289be8"
+  },
+  "engine_version_sha256": "2a7aa8f8528c2691de3cbf56b65d3a533d4c1bb03d4bc249a5d638c3e199e002",
+  "engine_git_revision_available": false,
+  "actual_average_batch_size": 1.894736842105263,
+  "relative_throughput_to_c8": {
+    "16": 0.968234327562131,
+    "32": 1.0427198477822601,
+    "8": 1.0
+  },
+  "decision": "Keep production settings. This varied analysis concurrency but did not produce larger actual NN batches; two small timing samples per setting do not establish full-worker gameplay throughput gains.",
+  "producer_changed": false,
+  "tpu_used": false
+}
