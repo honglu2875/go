@@ -1,0 +1,67 @@
+{
+  "kind": "katago_source_runtime_observation",
+  "status": "passed",
+  "created": 1789475115.793671,
+  "revision": "92ee95c0a4b25fec214da00951ab69e97e207729",
+  "operator_sha256": "aa9840c3d0b043689de34d8add14583403822d81ab13168c0a97751994c0f980",
+  "source_sha256": {
+    "python/train.py": "991cbfb2d5cea8180cd3daf818ef2a516aca048e0ae0eab68865e9a125967e9e",
+    "python/katago/train/trainloop_helpers.py": "cc16929bd450424da4366a1f117fcd1e1a716536a6e055eb6e7f25799046ab5b",
+    "python/katago/train/metrics_logging.py": "e4a4bfe209f4b91a92dc183d69e7b37a74ed5c03e4fd3d913b12e7268fe10755"
+  },
+  "executed_source_functions": [
+    {
+      "path": "python/katago/train/trainloop_helpers.py",
+      "function": "set_snapshot_metrics",
+      "line": 462,
+      "end_line": 467
+    },
+    {
+      "path": "python/katago/train/metrics_logging.py",
+      "function": "accumulate_metrics",
+      "line": 10,
+      "end_line": 26
+    },
+    {
+      "path": "python/katago/train/metrics_logging.py",
+      "function": "log_metrics",
+      "line": 28,
+      "end_line": 48
+    }
+  ],
+  "norm_snapshot_observations": [
+    {
+      "accumulation_weight": 0.0,
+      "current_norm": 3.0,
+      "post_log_normal_ratio": 3.0,
+      "retained_weight": 0.001
+    },
+    {
+      "accumulation_weight": 0.0,
+      "current_norm": 9.0,
+      "post_log_normal_ratio": 9.0,
+      "retained_weight": 0.001
+    },
+    {
+      "accumulation_weight": 1.0,
+      "current_norm": 3.0,
+      "post_log_normal_ratio": 3.0,
+      "retained_weight": 0.001
+    },
+    {
+      "accumulation_weight": 1.0,
+      "current_norm": 9.0,
+      "post_log_normal_ratio": 9.0,
+      "retained_weight": 0.001
+    }
+  ],
+  "subepoch_loop_line": 1480,
+  "subepoch_counter_reset_line": 1510,
+  "slow_parameter_flush_line": 1736,
+  "flush_outside_subepoch_loop": true,
+  "findings": [
+    "Default print-only model norms replace prior metric sum/weight; the ratio is the latest pre-update norm snapshot, not an EMA.",
+    "Lookahead counter resets at each subepoch start. Fast parameters are copied from slow parameters after the complete subepoch loop, at epoch end."
+  ],
+  "scope": "Observation of unmodified pinned source functions and AST nesting, not a schedule integration, neural training result or historical checkpoint configuration."
+}

@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Joint19 standard Muon learner integration",
+  "hypothesis": "The reference-qualified Muon update trains the unchanged joint CNN loss and preserves complete restart state.",
+  "requires_native": false
+}

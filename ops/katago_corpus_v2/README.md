@@ -4,9 +4,10 @@ It admits eight independent games per worker and refills a slot as soon as its
 game finishes. It persists admission counters before submission, so a restart
 cannot reuse an ID, and reports unfinished plies separately from published data.
 
-Configure each worker's CPU set and divide inference threads between teacher
-and opponent according to the target environment. This continuous scheduling
-change requires measured throughput qualification on that environment.
+The supplied example assigns eight CPU cores per worker. Ordinary strata use
+seven Eigen inference threads for the teacher and one for the opponent; teacher
+self-play uses four for each process. Size these example allocations to the
+available CPUs and measure completed-game throughput before selecting a change.
 
 `tests-001.json` records seven controlled queue/handover tests.
 `qualification-result-001.json` records 24 isolated real-engine games, 96 plies,
@@ -29,6 +30,7 @@ before any recovery action.
 Run `monitor.py` to record both generations, live workers, unfinished v2 plies,
 storage headroom, and unexpected overlapping process allocations. A requested
 stop drains all admitted v2 games; a supervisor failure has a 24-hour shutdown
-bound. Admission preserves 64 GiB free SHM and 96 GiB available host RAM; the
-producer's own root is capped at 24 GiB per host. It never deletes data to make
-space. Both production cohorts remain distinct and carry their exact contracts.
+bound. Admission enforces the configured free-memory floors and producer
+storage cap. It never deletes data to make space. Both production cohorts
+remain distinct and carry their exact contracts.
+

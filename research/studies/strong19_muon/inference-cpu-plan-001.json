@@ -1,0 +1,24 @@
+{
+  "created": 1789474922.925114,
+  "kind": "joint_muon_trained_inference_cpu_plan",
+  "numerical_modules_unchanged": [
+    "causal.py",
+    "compact.py",
+    "draft_mask.py",
+    "draft_model.py",
+    "encoder.py",
+    "heads.py",
+    "inference.py",
+    "joint.py",
+    "katago.py",
+    "observation_attention.py",
+    "policy_model.py",
+    "spatial_readout.py"
+  ],
+  "parent_inference_snapshot": "9f0c19fd619d80b36200510583220d75042f14b87419b7c1445e2f0c4c2db016",
+  "recovery_receipt_sha256": "3c2efba0d788948f774670779e1efdb819a58508cea6769fd694bfecd66290ec",
+  "scope": "Actual trained Muon checkpoint export, portable parameter readback, cached/batched policy-value and Rust search execution; CPU execution qualification only.",
+  "snapshot_id": "741a7c0f89b771e9281334d05dde68b8dc6fab81faa470d8fdbbab389095aeb3",
+  "training_result_sha256": "c5da073fdf03d5008fed4d5faa637503ad877b63ce85314fd7b5b5e8fd4d874c",
+  "training_snapshot": "50fcb6ddef844d67dbc3b9ef595299c169659757504869d49acefcbba5b9853a"
+}

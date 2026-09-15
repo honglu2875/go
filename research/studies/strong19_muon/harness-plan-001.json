@@ -1,0 +1,16 @@
+{
+  "created": 1789474288.9594135,
+  "dataset_sha256": "da627b1968dbb353acbf3b630a9feb84cf30080957a5660c8bc4125917fbe0ae",
+  "kind": "real19_muon_training_cpu_continuation_plan",
+  "operator_sha256": "598a97004b0a77f7b7547b2e3db0bff7cff49a74cf2fa749672d1e94eb0caab8",
+  "parent_operator": "research/studies/strong19_train/qualify_harness.py",
+  "parent_operator_sha256": "88389cf66f567a2610430c98f2a23218432b492dd0276b115be626459751e2a9",
+  "required": [
+    "All parameters, Muon momentum, auxiliary Adam moments and step exactly equal for uninterrupted four versus fresh-process two plus two updates",
+    "All game/bucket/D4 RNGs, position counters and validation/probe/overfit history exactly equal",
+    "Independent whole-game draw replay, including 512 and 1536 padded shapes; no truncation"
+  ],
+  "run_directory": "research/studies/strong19_muon/harness-cpu-001",
+  "scope": "Execution qualification with fixed explicit group rates/decays, summed-gradient clipping and no Lookahead; not a scientific learning experiment.",
+  "snapshot_id": "50fcb6ddef844d67dbc3b9ef595299c169659757504869d49acefcbba5b9853a"
+}

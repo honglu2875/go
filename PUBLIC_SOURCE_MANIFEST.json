@@ -4365,8 +4365,8 @@
       "sha256": "44e89f43fbe2ac4ccc50a19d5008e19bdc50a67f1750177e8e574c38979f53d5"
     },
     "ops/STATUS.md": {
-      "bytes": 854,
-      "sha256": "84c388073fe3630e72904d5af1f43d05cd0b4a7f3ed766cd34f409378a4a3058"
+      "bytes": 1203,
+      "sha256": "d4289f8d3aba7a17364d74178dfa8dc9fc830599fb357fadc5da488fde60b63b"
     },
     "ops/analyze_visual_xplane.py": {
       "bytes": 4473,
@@ -4501,8 +4501,8 @@
       "sha256": "ec86a7680e85ccf5af66f0007c0837151c1f929770bc65ffaec4db0fd208258e"
     },
     "ops/katago_corpus_v2/README.md": {
-      "bytes": 2254,
-      "sha256": "f77e235fa86d506ddff7e688cfa0e765cff71bb5f7d5c5b06ca4ff1641d8c7aa"
+      "bytes": 2301,
+      "sha256": "d23c6367cfff7e1b7e8f9ef753c6649c53c2b9940de42ba4907ceb10f3421b03"
     },
     "ops/katago_corpus_v2/deploy.py": {
       "bytes": 4077,
@@ -8007,6 +8007,130 @@
     "research/recipes/strong19_joint/training_arithmetic.py": {
       "bytes": 11702,
       "sha256": "8bbf67f57a720dd4690ce44b555f0427c945f3cbd4b722bb1d968f5440bf053a"
+    },
+    "research/recipes/strong19_muon/KATAGO_LICENSE.md": {
+      "bytes": 2616,
+      "sha256": "ead22455d923920cd152546d89e4f415c94d6b580aa109fda3b57a69c57c32e0"
+    },
+    "research/recipes/strong19_muon/MUON_LICENSE.md": {
+      "bytes": 1070,
+      "sha256": "8c8d17398ecce3dd3fcb1bb77b5d268a427f8250f364ac655c9b38df5b693f6b"
+    },
+    "research/recipes/strong19_muon/README.md": {
+      "bytes": 1013,
+      "sha256": "2c0af7a5ce056b1a2d2603bababb6a07c825418a92569244b6365b49d0bd0ada"
+    },
+    "research/recipes/strong19_muon/causal.py": {
+      "bytes": 17533,
+      "sha256": "4a4dcd9984b7c2c402c0a07efc4b3495e47c39f566354f41f903dc518484aecc"
+    },
+    "research/recipes/strong19_muon/cnn_chunks.py": {
+      "bytes": 5177,
+      "sha256": "9f5ea9909b52058ba793110ae54c5277df67666bebf1ba41d6e518f0059e359d"
+    },
+    "research/recipes/strong19_muon/compact.py": {
+      "bytes": 6766,
+      "sha256": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1"
+    },
+    "research/recipes/strong19_muon/draft_mask.py": {
+      "bytes": 1096,
+      "sha256": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44"
+    },
+    "research/recipes/strong19_muon/draft_model.py": {
+      "bytes": 3118,
+      "sha256": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3"
+    },
+    "research/recipes/strong19_muon/encoder.py": {
+      "bytes": 7847,
+      "sha256": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad"
+    },
+    "research/recipes/strong19_muon/evaluation.py": {
+      "bytes": 4486,
+      "sha256": "af1681b4b28271173b383ab7843d4529d0f521a22e53f5d7b66339096795633f"
+    },
+    "research/recipes/strong19_muon/heads.py": {
+      "bytes": 5399,
+      "sha256": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa"
+    },
+    "research/recipes/strong19_muon/host_metrics.py": {
+      "bytes": 1574,
+      "sha256": "d020e95421bbdeba8174f235bb453ca841d52440763daeda13a8f8bd19a06144"
+    },
+    "research/recipes/strong19_muon/inference.py": {
+      "bytes": 13492,
+      "sha256": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2"
+    },
+    "research/recipes/strong19_muon/joint.py": {
+      "bytes": 6157,
+      "sha256": "56d1ad999aebd3982d62103f86628310f4ea6c7926bd0fb5a5e77673314194d9"
+    },
+    "research/recipes/strong19_muon/katago.py": {
+      "bytes": 10164,
+      "sha256": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29"
+    },
+    "research/recipes/strong19_muon/learner.py": {
+      "bytes": 4438,
+      "sha256": "a850ea6b352a12d1a83a1bfbeb6b86120e65e4d4578798fe5e69a5a14a9a209a"
+    },
+    "research/recipes/strong19_muon/muon.py": {
+      "bytes": 6929,
+      "sha256": "6da070c54458aee9cec0173df889f6ceffce5affddf8f3439c61f2eb87fe5b10"
+    },
+    "research/recipes/strong19_muon/muon_groups.py": {
+      "bytes": 1749,
+      "sha256": "803b0dc4c4f8e1970977657b9c5479a8256f6e3be8badfaf3ff6a9f36d4657b3"
+    },
+    "research/recipes/strong19_muon/muon_state_io.py": {
+      "bytes": 4406,
+      "sha256": "2bad0483b0390c00a7e8e373710c1f03cfc97c506870572b752c6006b82dd9b4"
+    },
+    "research/recipes/strong19_muon/observation_attention.py": {
+      "bytes": 1778,
+      "sha256": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544"
+    },
+    "research/recipes/strong19_muon/optimizer.py": {
+      "bytes": 2608,
+      "sha256": "038b21153c347593eb1ebe8c65c80493166d70cf3d52bec0cab54b2c23fe0e99"
+    },
+    "research/recipes/strong19_muon/optimizer_io.py": {
+      "bytes": 978,
+      "sha256": "d2e407e9ae38e9f2356ed7fb4e1d71b2225e5bc3fc7e04377609d9a893351e93"
+    },
+    "research/recipes/strong19_muon/policy_config.py": {
+      "bytes": 4644,
+      "sha256": "df3bc12e7bb42c4cb449b1b03aab506fd4c5375e80efc78cd1f849844d135cd1"
+    },
+    "research/recipes/strong19_muon/policy_model.py": {
+      "bytes": 4929,
+      "sha256": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2"
+    },
+    "research/recipes/strong19_muon/qualify_evaluation.py": {
+      "bytes": 9440,
+      "sha256": "376bb447beffda37a5c41fe0d614a89b7a132c9746c8ca5c0a45aa4180a6b08a"
+    },
+    "research/recipes/strong19_muon/recipe.json": {
+      "bytes": 238,
+      "sha256": "5eab23693cddf3867c8dd424044539acb86d751853e900a31cf92bcdc78a8b99"
+    },
+    "research/recipes/strong19_muon/spatial_readout.py": {
+      "bytes": 1881,
+      "sha256": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9"
+    },
+    "research/recipes/strong19_muon/train.py": {
+      "bytes": 748,
+      "sha256": "6f20ec5741187e40ef4cc2fd4428fca4451849ab9620680591a7d02693157335"
+    },
+    "research/recipes/strong19_muon/train_config.py": {
+      "bytes": 2070,
+      "sha256": "4dd5dbf7a6e2f09eac751b39415c9d1f8fe6f75b56ba0ffe29e516a0a309629d"
+    },
+    "research/recipes/strong19_muon/train_joint.py": {
+      "bytes": 24118,
+      "sha256": "b2ac54e7efb3c5e21c5a3a615aa2a8048935530273e9566699d24381fff530d4"
+    },
+    "research/recipes/strong19_muon/training_probe.py": {
+      "bytes": 1954,
+      "sha256": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5"
     },
     "research/recipes/strong19_train/KATAGO_LICENSE.md": {
       "bytes": 2616,
@@ -12797,8 +12921,8 @@
       "sha256": "83495577c82e1a99c06c039553779bcf86fb8ba8ef72910750ceeccefe1c15aa"
     },
     "research/studies/katago_muon_schedule/README.md": {
-      "bytes": 1929,
-      "sha256": "c36b6a5d3978a96eb27d4668d02d71ded3c2b613298407291f83d5a507fbfcb4"
+      "bytes": 2741,
+      "sha256": "eddac1e59eca5a883ac5c97ace208d3eb79b7c3d80a761a76390cdae5c1eeada"
     },
     "research/studies/katago_muon_schedule/cpu-001.json": {
       "bytes": 226,
@@ -12812,9 +12936,21 @@
       "bytes": 695,
       "sha256": "bdf48604a4316af6dbc39e1e9cf36a2bd5bda59a7bd99287738a29b46ec7344a"
     },
+    "research/studies/katago_muon_schedule/observe_source_runtime.py": {
+      "bytes": 4643,
+      "sha256": "aa9840c3d0b043689de34d8add14583403822d81ab13168c0a97751994c0f980"
+    },
     "research/studies/katago_muon_schedule/reference-001.json": {
       "bytes": 520010,
       "sha256": "5c351c84186f43caf40a3213748382c90bdab38804b46e22eb9e27b32947123f"
+    },
+    "research/studies/katago_muon_schedule/source-runtime-execution-001.json": {
+      "bytes": 392,
+      "sha256": "d59d35d88fa511ea1adf439dbbcc9a20102b1c1941e54cdc90cde82462847999"
+    },
+    "research/studies/katago_muon_schedule/source-runtime-observation-001.json": {
+      "bytes": 2301,
+      "sha256": "12bf95168df1ff627ac2ce87a40749e02f92555c0b63a0c50db3619b415dbec7"
     },
     "research/studies/learned_trace/README.md": {
       "bytes": 4461,
@@ -13212,6 +13348,58 @@
       "bytes": 4995,
       "sha256": "b9b093566ada0de572031674ae9c212fc18d08e405b4330642ffa9317c9fa758"
     },
+    "research/studies/strong19_muon/PLAN.md": {
+      "bytes": 1245,
+      "sha256": "978dee947c5582206e81c726f57f303d32a21a41cfd77db0eb467321b5f4c91c"
+    },
+    "research/studies/strong19_muon/README.md": {
+      "bytes": 2563,
+      "sha256": "941c89237bddf5e926789d6824b8e2a358b5fc01046c4db15535d7883ced71fe"
+    },
+    "research/studies/strong19_muon/bridge-cpu-001.json": {
+      "bytes": 768,
+      "sha256": "69063ffb7127260adcc73ecc488e2bc3a6688257bde1fdebb09b8567b5038894"
+    },
+    "research/studies/strong19_muon/cpu-config-001.json": {
+      "bytes": 1690,
+      "sha256": "504d3fc216f4f8a6e4b615e52ae8315d417570ab0afa82aee44be18b272a9da7"
+    },
+    "research/studies/strong19_muon/harness-cpu-001.json": {
+      "bytes": 9098,
+      "sha256": "3c2efba0d788948f774670779e1efdb819a58508cea6769fd694bfecd66290ec"
+    },
+    "research/studies/strong19_muon/harness-plan-001.json": {
+      "bytes": 1118,
+      "sha256": "a1173bbdb00360e96674fc88e608a89b75335c65e47f8612a47becf901fd4d25"
+    },
+    "research/studies/strong19_muon/inference-cpu-config-001.json": {
+      "bytes": 1148,
+      "sha256": "68965580d8f240d59851cdca5e79530cef54898ca99d42e8b85ae7e4a4705d18"
+    },
+    "research/studies/strong19_muon/inference-cpu-plan-001.json": {
+      "bytes": 1010,
+      "sha256": "43ba29b817b76ce6f7ef1a4187625b92977bf73f0efc9ef9245a2de3b816a5ed"
+    },
+    "research/studies/strong19_muon/integration-source-001.json": {
+      "bytes": 1477,
+      "sha256": "2799f0216a00eb01da77fdf85f4b9f08f64e1c50b841a487c171b4d910265b8f"
+    },
+    "research/studies/strong19_muon/qualify_bridge.py": {
+      "bytes": 5918,
+      "sha256": "5eda2d0897e7ef60b5feb8106b72e9b3edaad8f205b100c4fa3a97fd49559ccb"
+    },
+    "research/studies/strong19_muon/qualify_harness.py": {
+      "bytes": 4200,
+      "sha256": "598a97004b0a77f7b7547b2e3db0bff7cff49a74cf2fa749672d1e94eb0caab8"
+    },
+    "research/studies/strong19_muon/seal_source.py": {
+      "bytes": 4672,
+      "sha256": "96712dd0991adb7f6c393da07f19fa6384074776fa2e3326f88bf51de4150d42"
+    },
+    "research/studies/strong19_muon/source-copies-001.json": {
+      "bytes": 2611,
+      "sha256": "bbc3cb88127d6a54bde204bcfdd258a9aa9d7cd2e1b0139927d6aa4ef41f28e0"
+    },
     "research/studies/strong19_scaling/README.md": {
       "bytes": 1404,
       "sha256": "6c7ce8bc16faffb40faa1adf0adb32a587ca76649574636093231eb87ca5925d"
@@ -13372,6 +13560,10 @@
       "bytes": 5809,
       "sha256": "3565a3b69b44e44e9f332ff9a89d269277f63c6a61db39c45120e829911929dd"
     },
+    "research/studies/strong9_followups/HARNESS.md": {
+      "bytes": 1957,
+      "sha256": "d14e9e4164b2254e9a1123a6817e2002325816254309d899abd76e7b6b3b3496"
+    },
     "research/studies/strong9_followups/PLAN.md": {
       "bytes": 3214,
       "sha256": "0a24febdce428cbd67cf05db22d58e6104f8e93560b6dabdd5345fd99693fa58"
@@ -13388,9 +13580,21 @@
       "bytes": 707,
       "sha256": "a235d5c9b9befc400934c20a22fff59e36cf3f3cfc1a7736217742ad5511c8c0"
     },
+    "research/studies/strong9_followups/launch_lr.py": {
+      "bytes": 7869,
+      "sha256": "827c5d5c0463ae962532570603177df151155bd56a62f84e9900c362a8c5dbbe"
+    },
+    "research/studies/strong9_followups/lr-comparison-cpu-001.json": {
+      "bytes": 1128,
+      "sha256": "bf615b8bf195452e70ccdd3369800d54b66217e43d19368d425dd361489a6c7b"
+    },
     "research/studies/strong9_followups/lr-source-cpu-001.json": {
       "bytes": 1051,
       "sha256": "dc4a3ae3802a7f1d1ce79428baba1cbd93e689bfcdffc3d7bb794ace2db78f41"
+    },
+    "research/studies/strong9_followups/lr_compare.py": {
+      "bytes": 7670,
+      "sha256": "db1fc92ac0e8a53fa9149bcc9a9092f65ecaa92da83fc0aaaa6af6bce0c7d0ce"
     },
     "research/studies/strong9_followups/lr_source.py": {
       "bytes": 3733,
@@ -13403,6 +13607,10 @@
     "research/studies/strong9_followups/plot_time_review.py": {
       "bytes": 3582,
       "sha256": "c54f83348eee839a79f8ed0ad7f6a152e16c5a17956429f84abae3303cb36bb9"
+    },
+    "research/studies/strong9_followups/qualify_lr_compare.py": {
+      "bytes": 3345,
+      "sha256": "b5d77c050e3e207f9a99d48c231f7c09785d053742d862b9a109f7b54215e7a8"
     },
     "research/studies/strong9_followups/qualify_lr_source.py": {
       "bytes": 4054,
@@ -13513,8 +13721,8 @@
       "sha256": "734f0ee4456a5471c47491c1cd5b9cdc9d5fcd0592a84a04592d97eb4df9da8b"
     },
     "research/studies/strong9_scaling/seed2-progress.csv": {
-      "bytes": 3706,
-      "sha256": "2d0432d6d638b34fc2ce37223e0b84efcdb9e27013c8a816e4bef14743e72373"
+      "bytes": 5473,
+      "sha256": "75a1c9fa63e1fa81ea8d3c64fc9163c5f3d6311ed827cf110f2b4284f67c8f7e"
     },
     "research/studies/strong9_scaling/test_conclude.py": {
       "bytes": 3881,

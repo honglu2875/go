@@ -1,0 +1,29 @@
+{
+  "kind": "strong9_lr_comparison_cpu_qualification",
+  "status": "passed",
+  "created": 1789474693.109354,
+  "seconds": 0.9241224589932244,
+  "parent_audit_sha256": "060c15a033eeec9ffa2169ffc23304fb304d17faef107c7a1cfe551e5f3ac28f",
+  "source_sha256": {
+    "lr_compare.py": "db1fc92ac0e8a53fa9149bcc9a9092f65ecaa92da83fc0aaaa6af6bce0c7d0ce",
+    "lr_source.py": "5818bad714e6011b7c4b9faec68eb9608d279e04d734a1ee730038be2603a2c9",
+    "qualify_lr_compare.py": "b5d77c050e3e207f9a99d48c231f7c09785d053742d862b9a109f7b54215e7a8"
+  },
+  "actual_audited_rank_draws": 16384,
+  "actual_validation_points": 17,
+  "identity_gains_exact": true,
+  "synthetic_two_percent_gains_within_1e_12": true,
+  "rejected_evidence": [
+    "missing evaluation",
+    "duplicate turn",
+    "different games",
+    "different split",
+    "metric missing",
+    "position denominator",
+    "family denominator",
+    "target entropy",
+    "nonfinite metric",
+    "negative endpoint"
+  ],
+  "scope": "CPU comparison arithmetic and evidence validation; the changed curves are synthetic fixtures, not an LR experiment, chosen rate, registration or launch."
+}

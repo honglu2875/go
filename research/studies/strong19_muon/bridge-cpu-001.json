@@ -1,0 +1,23 @@
+{
+  "kind": "joint_muon_gradient_bridge_qualification",
+  "snapshot_id": "50fcb6ddef844d67dbc3b9ef595299c169659757504869d49acefcbba5b9853a",
+  "status": "passed",
+  "groups": [
+    "input",
+    "noreg",
+    "normal",
+    "normal_gamma",
+    "output",
+    "output_noreg"
+  ],
+  "parameter_leaves": 9,
+  "moment_arrays_checked": 15,
+  "rejected_updates": 6,
+  "checkpoint_arrays": 25,
+  "state_codec_exact": true,
+  "source_sum_gradient_norm": 576.3887329101562,
+  "clip_scale": 0.11103617399930954,
+  "reference_arithmetic": "Independent NumPy float64 global-sum, explicit eligible centers and norm/clipping; compare actual first/second moments.",
+  "seconds": 3.51124073198298,
+  "operator_sha256": "5eda2d0897e7ef60b5feb8106b72e9b3edaad8f205b100c4fa3a97fd49559ccb"
+}

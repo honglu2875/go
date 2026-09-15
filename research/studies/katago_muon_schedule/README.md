@@ -24,7 +24,19 @@ gradient scaling and clipping. The Muon clipping base is 11,000 in the source's
 summed-gradient units, with batch/LR/explicit-factor scaling applied afterward.
 It should not be copied directly as a threshold on position-mean gradients.
 
-Running norm observations/averages and their update cadence, lookahead slow
-weights/counter and epoch flushing, complete learner recovery, and measured TPU
-overhead remain required. Lookahead LR scaling here does not implement its
-parameter averaging. The running 9×9 AdamW comparison is unchanged.
+The [source runtime observation](source-runtime-observation-001.json) executes
+the original metric functions and inspects the trainer's AST nesting. With
+the default print-only norm setting, `set_snapshot_metrics` replaces the prior
+sum/weight before logging: the ratio is the latest pre-update norm snapshot,
+not an EMA. The subsequent 0.001 multiplier preserves that ratio. Lookahead's
+counter resets at each subepoch entry; its slow-to-fast flush is outside the
+subepoch loop, at epoch end. A missing `json` execution-namespace import in the
+first observation attempt is retained in `source-runtime-execution-001.json`;
+the corrected check executes the original equations unchanged.
+
+The separate [joint Muon integration](../strong19_muon/README.md) now qualifies
+neural-loss conversion and complete small-model recovery with fixed explicit
+group settings. Source schedule/norm cadence, Lookahead slow weights/counter,
+epoch behavior and measured full-size TPU overhead remain to be integrated.
+Lookahead LR scaling here does not implement parameter averaging. The running
+9×9 AdamW comparison is unchanged.

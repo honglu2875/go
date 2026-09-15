@@ -1,0 +1,9 @@
+{
+  "kind": "source_runtime_observation_execution",
+  "status": "failed",
+  "created": 1789475115.228269,
+  "operator_sha256": "5e4763f02f72f4131fda75ae6c2fa876209bfa3d7fab8846e851d22da9f8c294",
+  "error": "NameError: json was missing from the execution namespace for the extracted original log_metrics function",
+  "scientific_settings_changed": false,
+  "source_equations_changed": false
+}
