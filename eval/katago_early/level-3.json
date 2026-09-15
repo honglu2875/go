@@ -1,0 +1,12 @@
+{
+  "board_sizes": [
+    9
+  ],
+  "bytes": 4975306,
+  "model": "kata1-b6c96-s24455424-d3879081",
+  "path": ".gozero/external/models/36420d10c6a4bbf243d991b4a2920dc6ff42f6c2d0a1cfaa438a4daf2b0254ac/kata1-b6c96-s24455424-d3879081.txt.gz",
+  "reference_page": "https://katagotraining.org/networks/",
+  "role": "evaluation_only",
+  "sha256": "36420d10c6a4bbf243d991b4a2920dc6ff42f6c2d0a1cfaa438a4daf2b0254ac",
+  "url": "https://media.katagotraining.org/uploaded/networks/models/kata1/kata1-b6c96-s24455424-d3879081.txt.gz"
+}

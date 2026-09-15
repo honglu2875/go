@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "kind": "student_calibration",
+  "workspace_root": "/workspace/go",
+  "dataset": {
+    "path": "/workspace/go/.gozero/datasets/board-causal-13bcd5cd",
+    "manifest_sha256": "6c935aa44ec03893878f43f2456e01be96240b478489547235175441cb58169e"
+  },
+  "candidates": {
+    "empty": {
+      "path": "eval/board_state_distillation/empty.json",
+      "sha256": "5a27e4e8a87b186c4f6530a36eaa0b1aa0b9e521547fe7ce12f88e8edfbd0f6b"
+    },
+    "exact": {
+      "path": "eval/board_state_distillation/exact.json",
+      "sha256": "4f1cd49a3834c1f6aefcca7827a8ef873d123b689097050081bf0b2a1e5fb541"
+    }
+  },
+  "split": 1,
+  "phase_edges": [
+    0,
+    20,
+    60,
+    120,
+    324
+  ],
+  "calibration_edges": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "pass_target_edges": [
+    0.0,
+    0.01,
+    0.1,
+    0.5,
+    1.000001
+  ],
+  "saturation_absolute_value": 0.95,
+  "aggregate_reference_tolerance": 0.0002,
+  "maximum_seconds": 600,
+  "maximum_output_bytes_per_arm_per_rank": 134217728,
+  "platform": "tpu",
+  "expected_processes": 4,
+  "expected_devices": 16,
+  "batch_games": 32,
+  "maximum_games_per_role": null
+}

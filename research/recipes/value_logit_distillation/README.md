@@ -1,0 +1,15 @@
+# Logit value-loss ablation
+
+This clone owns the complete plain-JAX model, learner, optimizer, data sampling and recovery scripts. Both arms use exact pre-action board states and the same history/behavior architecture. The only scientific configuration difference is `model.value_objective`: `mse` or `bce2`. All policy and observed-behavior targets, masks and gradient barriers are preserved.
+
+For raw value logit r, predicted value v = tanh(r), terminal target z and win probability p = sigmoid(2r), the control uses (v−z)². The candidate uses twice binary cross entropy with target (z+1)/2, computed stably as 2[softplus(2r)−(z+1)r]. The candidate gradient with respect to r is 2(v−z); MSE also multiplies this by (1−v²). Thus gradients match at r=0, while BCE2 retains correction for confidently wrong values. The multiplier is fixed before training, not selected by a loss sweep.
+
+The inference head, parameter tree and exported value are unchanged. `value_loss` remains outcome MSE in both arms for comparable validation; `training_value_loss` records the objective actually optimized. Total training losses use different scales and are not a cross-arm success metric.
+
+This comparison is motivated by the [fixed-student calibration study](../../studies/student_calibration/README.md), which found early/middle-game overconfidence while late values were accurate. It does not establish causation or guarantee stronger play. KataGo already uses cross entropy for its categorical value head and binary logit losses for win/loss estimates; see the [pinned implementation](https://github.com/lightvector/KataGo/blob/92ee95c0a4b25fec214da00951ab69e97e207729/python/katago/train/metrics_pytorch.py). This two-class scalar-head ablation is not a reproduction of all KataGo losses or a novel cross-entropy method.
+
+The clone owns a SHA-pinned `reference_model.py` fixture because sibling recipes are excluded from frozen snapshots. Tests compare MSE predictions, full loss and gradients exactly against that fixture, verify the analytic BCE2 gradient and saturated correction, and preserve causal inputs and target separation. CPU and multi-host checkpoint continuation are prerequisites for the registered pilot. `run_cpu_qualification.py` retains bounded test/training attempts and invokes the exact-recovery analyzer.
+
+Use `pilot_41_mse.json` and `pilot_41_bce2.json` only under their own registered comparison. The candidate needs prediction and fresh real-KataGo evidence before further scale-up. The source-compatible GTP inference adapter reads the frozen model; speculative execution of newly trained weights needs separate qualification.
+
+The [registered pilot](../../studies/value_logit_distillation/README.md) is complete. CPU/multi-host exact continuation, matched training and independent game replay passed. BCE2 increased validation outcome MSE by 2.08% and failed the external score-interval/completion criterion over 144 fresh games. The MSE control reproduced the prior export exactly. Retain both immutable arms and the negative result; the candidate is not promoted.

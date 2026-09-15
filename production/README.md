@@ -1,0 +1,3 @@
+Official recipes and sustained-training configurations live here after promotion from research. A promoted recipe owns its model/training code and references a frozen source snapshot, full dependency/native build identities, benchmark evidence, and parent checkpoint lineage.
+
+The production launcher will enforce the multi-host SPMD contract, bounded resource schedules, durable replay/checkpoints, model publication, external evaluation, failure detection, and restart accounting. Long-running training begins only after the implementation milestones and actual validation described in [DESIGN.md](../DESIGN.md) are satisfied. There is no production trainer yet.

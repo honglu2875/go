@@ -1,0 +1,54 @@
+{
+  "automatic_retry": false,
+  "changes": [
+    [
+      ".learner.end_learning_rate",
+      0.00017999999999999998,
+      0.0003
+    ],
+    [
+      ".learner.learning_rate",
+      0.0006,
+      0.001
+    ]
+  ],
+  "constraints": {
+    "batch_norm": false,
+    "decode_reference_gflops": 37.348255744,
+    "decode_tolerance": 0.01,
+    "encoder_trunk_allocation": "1:1; keep blocks, sharing, tokens and temporal depth fixed for first readout contrast",
+    "parameters_reference": 232431872,
+    "parameters_tolerance": 0.01,
+    "reference_board": 9,
+    "reference_global_batch": 128,
+    "reference_past_moves": 128,
+    "target": "same fixed policy labels; one policy distribution",
+    "test_split": "closed",
+    "width": 768
+  },
+  "control_snapshot": "c83cca0a112b23bf9140d094ecd65a92eb1e38b34b6ebfbf53d0815329c053ea",
+  "created_at": "2026-09-13T14:29:15.621628+00:00",
+  "expected_initial_parameter_elements_sha256": "56f9a969dc143be9c1bb7d6972a7eb337e0b4ae8845fd2872baff1155c427814",
+  "hypothesis": "Peak AdamW LR 1e-3 improves endpoint validation KL over 6e-4 on the unchanged one-token 1:1 model.",
+  "kind": "shared_spatial_lr_control_registration",
+  "maximum_seconds": 7200,
+  "next": "Qualify and run minimal spatial logit correction at selected LR. Replicate control and candidate with a second independent seed if relative KL improves by at least 1%, without more than 15% warm decode latency regression. All exploratory outcomes retained.",
+  "numerical_files_identical": [
+    "causal.py",
+    "encoder.py",
+    "train_policy.py",
+    "train.py",
+    "policy_model.py",
+    "policy_optimizer.py",
+    "policy_config.py",
+    "observation_attention.py",
+    "profile_causal.py"
+  ],
+  "primary": "Full validation KL at update 1024; retain every scheduled evaluation.",
+  "qualification": "Reuse the identical passed model/trainer/shape qualification; audit finite updates, exact samples and trained cache for this run.",
+  "seed": 91312427,
+  "selection": "Choose the lowest endpoint KL among completed 3e-4, 6e-4 and 1e-3 controls. No convergence claim.",
+  "snapshot": "ee830175ff81ffd3e24abfb717cb4fbcd3dc3fcb69ac9bda48cf12bcdb9fd390",
+  "steps": 1024,
+  "storage": "Persistent checkpoints; old checkpoints retained via independently verified remote replicas."
+}

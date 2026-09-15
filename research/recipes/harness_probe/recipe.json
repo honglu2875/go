@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "id": "harness_probe",
+  "kind": "harness_validation",
+  "hypothesis": "Cloned recipes and frozen source bundles preserve deterministic inputs and outputs.",
+  "claims_go_strength": false
+}

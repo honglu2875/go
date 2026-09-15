@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "coordinator_rank": 0,
+  "hosts": [
+    {"rank": 0, "ssh": "go-user@worker-0.example.invalid"},
+    {"rank": 1, "ssh": "go-user@worker-1.example.invalid"}
+  ]
+}

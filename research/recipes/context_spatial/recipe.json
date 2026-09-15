@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "A zero-initialized temporal query conditions spatial policy correction on the complete causal history, preserving all common initial arrays and one board token.",
+  "id": "context_spatial",
+  "kind": "sequential_policy_learnability",
+  "parent": {
+    "recipe": "research/recipes/single_board_spatial",
+    "snapshot_id": "fff3608e72827f0479a323cd22a0b672420cd2fcf890acdfd08bc933619d4bfe"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

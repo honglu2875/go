@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "id": "learning_probe",
+  "kind": "learning_integration_qualification",
+  "hypothesis": "Native self-play, terminal replay targets, and a plain-JAX learner form a complete finite small-board training loop.",
+  "claims_go_strength": false
+}

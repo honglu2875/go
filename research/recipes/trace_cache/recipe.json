@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Retaining validated committed-history KV eliminates repeated prefill and improves complete equal-work native/JAX rollout throughput.",
+  "id": "trace_cache",
+  "kind": "equal_work_retained_kv_trace_benchmark",
+  "parent": {
+    "recipe": "research/recipes/trace_precision",
+    "source_sha256": "41d741a55d30017c35551a3b85e467e58f676a11722e70b036c53aa1a349af1e"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

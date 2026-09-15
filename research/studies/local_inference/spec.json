@@ -1,0 +1,23 @@
+{
+  "baseline_snapshot": "7a7745037997ddad53162a92d2fbead438bc9a6235b240e9e973142772618b66",
+  "candidate_snapshot": "d2d32bc65e032c9b77e5d50e60c9529505747241f0c7032aae63ca85f8215e26",
+  "claims_mfu": false,
+  "claims_sample_efficiency": false,
+  "correctness_gate": "All completed game records, replay arrays, optimizer and final parameters must match exactly. If not, retain timing but do not call it a pure systems speedup.",
+  "hypothesis": "A local inference executable removes the global active-count reduction per neural call and improves equal-work 9x9 training throughput.",
+  "maximum_pilot_attempts": 2,
+  "measured_pairs": 3,
+  "primary_metric": "Slowest-host full training-segment wall time for 512 turns; checkpoints and host I/O included; compilation and staging reported separately.",
+  "protocol": "One candidate pilot for correctness, then three fresh interleaved baseline/candidate pairs. No concurrent evaluation or additional workloads during measured segments. Same seed is deliberate for systems controls, not an independent learning seed study.",
+  "registered_unix": 1789104583.8092613,
+  "schema_version": 1,
+  "scientific_controls": "Same seed, actor identities, weights initialization, CNN architecture, precision, searches, replay sampling, global learner batches, update schedule and CPU sets.",
+  "secondary_metrics": [
+    "inference time",
+    "native time",
+    "learner time",
+    "padding fraction",
+    "active neural evaluations/second"
+  ],
+  "timeout_seconds_per_attempt": 180
+}

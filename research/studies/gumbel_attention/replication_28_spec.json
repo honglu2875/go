@@ -1,0 +1,236 @@
+{
+  "absolute_anchor": {
+    "candidate_cpuct": 0.0,
+    "candidate_simulations": 16,
+    "game_timeout_seconds": 360,
+    "katago_visits": [
+      1,
+      16
+    ],
+    "max_game_moves": 324,
+    "new_candidate_games": 8,
+    "openings": [
+      [],
+      [
+        "C3",
+        "G7"
+      ]
+    ],
+    "opponent_sha256": "a1298ce1adc1dad7bd868ca962b2384cc8388ed373a00e6bae1114fa6f9e2d61",
+    "reused_control_result": "runs/eval/gumbel-replication-28-candidate-f53480d1/result.json",
+    "reused_control_result_sha256": "0a19cbddf0f384773b9da24496beb93aea19971ae8cea39e8ea3eb958b37112b"
+  },
+  "budget": {
+    "checkpoint_every": 8192,
+    "global_real_moves": 16777216,
+    "maximum_new_eval_seconds": 2400,
+    "maximum_new_training_attempts": 1,
+    "minimum_free_bytes": 8589934592,
+    "prepare_timeout_seconds": 180,
+    "seed": 28,
+    "selfplay_turns": 32768,
+    "simulations": 16,
+    "timeout_seconds": 2400
+  },
+  "candidate_snapshot": "01fd1303a7719f5c8e50a8736d896f60b9d1e150ef902e9ee37685a1137da836",
+  "control_attempt": "pod-20260911T111515Z-fd49f349",
+  "control_model_sha256": "b94eec1c3ee548ab5a4b90b52db4ceb9a03a5d6c2cb2d268ba1b262845dc79a8",
+  "control_reuse": "Reuse the independently trained seed28 Gumbel CNN. All non-model scientific settings and the complete trainer match byte-for-byte. Only the new attention training attempt is charged as new work; prior CNN compute remains recorded.",
+  "control_snapshot": "5cc18cbaee669a67ab0e77ce1c3addaa6f031bc92fa3674ef8d6e311e53219ec",
+  "hypothesis": "The registered attention advantage over a matched Gumbel CNN persists under independent parameter initialization and self-play seed28.",
+  "intervention": {
+    "candidate": {
+      "architecture": "attention",
+      "blocks": 6,
+      "dtype": "bfloat16",
+      "groups": 8,
+      "heads": 4,
+      "max_board_size": 26,
+      "mlp_ratio": 4,
+      "score_scale": 2.0,
+      "score_utility_factor": 0.0,
+      "value_hidden": 64,
+      "width": 64
+    },
+    "control": {
+      "blocks": 4,
+      "dtype": "bfloat16",
+      "groups": 8,
+      "score_scale": 2.0,
+      "score_utility_factor": 0.0,
+      "value_hidden": 64,
+      "width": 64
+    },
+    "parameter_counts": [
+      307461,
+      311425
+    ]
+  },
+  "kind": "gumbel_attention_independent_seed_replication",
+  "limitations": [
+    "Independent seed28, with a reused CNN checkpoint chosen before the new attention run. This is two trained seeds overall, not a precise estimate of across-seed variance.",
+    "Parameter counts differ by about1.3%; FLOPs and optimal architecture-specific hyperparameters are not matched.",
+    "The same SGD settings form a controlled screen, not equal-budget tuning of each architecture.",
+    "The simple attention trunk is an ablation control; official KataGo already uses more advanced transformers.",
+    "CPU evaluation and maintenance may overlap training on separate physical cores, so timing is diagnostic.",
+    "The calibrated historical KataGo level3 will be used in a separate prospective learning-curve study; it cannot replace the direct primary panel or strong anchor."
+  ],
+  "parent_protocol_sha256": "7f788c150cea9a67c5fc3b1e000230aec580a332c57a94ab720ea9d7bc344585",
+  "parent_result_sha256": "49fdc374c9649672bd72d07ecbcde8a35e2ef478562fb9a769cd1c9ac8c16084",
+  "primary_metric": {
+    "candidate_cpuct": 0.0,
+    "candidate_simulations": 16,
+    "game_timeout_seconds": 180,
+    "games": 64,
+    "komi": 7.5,
+    "max_game_moves": 1296,
+    "name": "Paired score against the reused independent-seed Gumbel CNN checkpoint",
+    "opening_seed": 72913307,
+    "openings": [
+      [
+        "J2",
+        "D6"
+      ],
+      [
+        "F3",
+        "C7"
+      ],
+      [
+        "H3",
+        "H6"
+      ],
+      [
+        "C1",
+        "F8"
+      ],
+      [
+        "F9",
+        "F4"
+      ],
+      [
+        "B4",
+        "A2"
+      ],
+      [
+        "F1",
+        "H2"
+      ],
+      [
+        "H3",
+        "C9"
+      ],
+      [
+        "C6",
+        "D7"
+      ],
+      [
+        "B8",
+        "H9"
+      ],
+      [
+        "H2",
+        "D5"
+      ],
+      [
+        "E1",
+        "J1"
+      ],
+      [
+        "A1",
+        "A5"
+      ],
+      [
+        "C9",
+        "G7"
+      ],
+      [
+        "E2",
+        "B3"
+      ],
+      [
+        "J5",
+        "H8"
+      ],
+      [
+        "J3",
+        "A2"
+      ],
+      [
+        "J9",
+        "B2"
+      ],
+      [
+        "C9",
+        "F9"
+      ],
+      [
+        "H9",
+        "C4"
+      ],
+      [
+        "B8",
+        "D8"
+      ],
+      [
+        "E1",
+        "J4"
+      ],
+      [
+        "A3",
+        "F5"
+      ],
+      [
+        "F3",
+        "H8"
+      ],
+      [
+        "H5",
+        "G2"
+      ],
+      [
+        "J6",
+        "J7"
+      ],
+      [
+        "D4",
+        "A7"
+      ],
+      [
+        "D1",
+        "E2"
+      ],
+      [
+        "E3",
+        "H6"
+      ],
+      [
+        "G1",
+        "J1"
+      ],
+      [
+        "C3",
+        "J5"
+      ],
+      [
+        "G8",
+        "B6"
+      ]
+    ],
+    "opponent_cpuct": 0.0,
+    "opponent_simulations": 16,
+    "referee_binary_sha256": "1ae1ed2108caa025bba853634b7f1aad3a29baa0ba27b4a298759ca6b172d104",
+    "referee_weights_sha256": "a1298ce1adc1dad7bd868ca962b2384cc8388ed373a00e6bae1114fa6f9e2d61",
+    "size": 9
+  },
+  "promotion": "Replication supports the relative architecture advantage only if all64 direct games complete, all KataGo board/score checks pass, paired score is at least0.65 and conservative paired95% lower bound exceeds0.5. No production promotion; strong absolute anchor remains required.",
+  "qualification_sha256": "c2c807ab4197bac06d7d2a649c859f4734e4245bd7da12cbce207def57753773",
+  "registered_unix": 1789130747.6854267,
+  "schema_version": 1,
+  "secondary_metrics": [
+    "Color-specific win rates and early double-pass frequency",
+    "Terminal rows, completed games and truncations",
+    "Active neural evaluations, slots and learner exposures",
+    "Inference, learner, native, CPU and wall times; same reservation denominator"
+  ],
+  "shape_qualification_sha256": "d597ee3f7a065a4cd5dc89762ab76277de9af42eac23d7eb573f5269c3a0659a"
+}

@@ -1,0 +1,1 @@
+{"schema_version":1,"kind":"attention_tile_qualification","platform":"tpu","expected_processes":4,"expected_devices":16,"tiles":[128,512],"lengths":[4864,9728,14592],"repeats":5}

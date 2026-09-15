@@ -1,0 +1,80 @@
+{
+  "accounting": "Complete cached decoding at 128 historical moves; encoder, projections and heads included; parameters and multiply-add FLOPs each within 1% of the frozen CNN",
+  "checkpoint_io_change": "Uncompressed NPZ in bounded RAM; identical array representation and ordinary reader. Preserves 64 GiB free. No numerical training change.",
+  "checkpoint_io_tests": {
+    "path": "research/studies/strong9_scaling/harness-cpu-tests-001.json",
+    "sha256": "a5551a58b10d69904197b90c8be3bcdc4486f05e3405631a624bea1254d44250"
+  },
+  "claims": "Fixed-data policy learnability only; no Go-strength, RL-speed or MFU claim",
+  "comparison": "Identical old expert histories, bucket/episode/D4 draws and one expert-policy target; same auxiliary weight .25",
+  "comparison_operator": "study contrast will verify the sole policy_readout_kind=additive model delta, same common initialization and all draws",
+  "cpu_budget": {
+    "path": "research/studies/readout_followups/additive-cpu-budget-001.json",
+    "sha256": "e73b9b8dde3230ff42aaae10634d201c4ac7fcb19ef5386866a7e090f97c140a"
+  },
+  "cpu_tests": {
+    "path": "research/studies/readout_followups/cpu-tests-001.json",
+    "sha256": "e0822d90bd4ad841e32d24c340d514b99122442825098b03646ca27b68eb5c36"
+  },
+  "created_unix": 1789436823.88981,
+  "decisions": {
+    "first_seed_replication_min_relative_endpoint_gain": 0.005,
+    "replicated_mean_min_relative_endpoint_gain": 0.005,
+    "require_improvement_in_both_seeds": true,
+    "require_no_last_three_validation_mean_regression": true,
+    "runtime": "Report absolute qualified latency; historical timing used different CPU allocations and is not a contemporary matched runtime control",
+    "subsequent_parent": "Review both seeds before using a changed parent; retain rank64 if the criterion fails"
+  },
+  "hypothesis": "A learned SiLU score of the sum of temporal and spatial projections can represent a richer location-dependent policy correction than their rank-64 inner product.",
+  "initialization": "Preserve all parent arrays; additional score projection starts at zero, so initial policy is identical. Query begins at zero as in the parent.",
+  "intervention": "additive_nonlinear_readout_rank64",
+  "kind": "sequential_readout_screen",
+  "overfit": {
+    "action": "diagnostic only; keep this registered horizon",
+    "every_updates": 128,
+    "patience": 3,
+    "probe_games": 1024,
+    "relative_margin": 0.005
+  },
+  "parent": "First-pass auxiliary, contextual rank 64",
+  "preceding_decision": {
+    "path": "research/studies/readout_followups/rank128-decision-001.json",
+    "sha256": "f2fe5c4cf6367c7ae5b7614fe3908f9b303af59441ca7e0b4b6ae9cfad83c753"
+  },
+  "references": [
+    {
+      "path": "runs/spatial-followups-auxiliary-001/first_seed-audit.json",
+      "sha256": "2b9fcfd3e0dd201262c7642448d8f8d93d865f34c73d288439357734315f6fb0"
+    },
+    {
+      "path": "runs/spatial-followups-auxiliary-001/second_seed-audit.json",
+      "sha256": "c001d6cd888f01b7ffba8cbf900b3133d9b45d0d752d5bf73d67084a3722f957"
+    }
+  ],
+  "schema_version": 1,
+  "snapshots": {
+    "first_seed": "e13787f6f1e45cc9f1b9c74330db3b61ab5633548150533578b3279b4828e555",
+    "qualification": "c217944e06dd655e6ab404dee0315c4d4960878f85b234cfb81e04d31cfe97c6",
+    "second_seed": "bf644acc7c7f768dae1ba8f44d3a4d0d0ffa341154506002ddb882b8d4798a99"
+  },
+  "storage": {
+    "checkpoints": "temporary RAM with two verified host copies",
+    "maximum_new_attempts": 3,
+    "minimum_memory_available_bytes": 103079215104,
+    "minimum_shm_free_bytes": 68719476736,
+    "selected_final": "promote to persistent storage"
+  },
+  "test_set": "closed",
+  "training": {
+    "end_learning_rate": 0.0003,
+    "global_games": 128,
+    "learning_rate": 0.001,
+    "seeds": [
+      91312427,
+      91312428
+    ],
+    "steps": 1024,
+    "warmup_steps": 64
+  },
+  "unchanged_model_tests_verified": true
+}

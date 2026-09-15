@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "kind": "exploratory_relative_checkpoint_screen",
+  "registered_unix": 1789112737.1324732,
+  "spec": "eval/low_visit_puct/selfmatch_panel.json",
+  "spec_sha256": "120601840624d0ed8b4932b2887fbdc72593384829113257d702b3ad9f334338",
+  "candidate_model": "aa06e5568bbad82bb0ea2d0c300e035b91324372f57dce086084fd25adc7cc6a",
+  "opponent_model": "b20748c9aad12e6e100dcbcff861200f7a4fd756d728690c308162505ab15870",
+  "opening_generator": "Python random.Random(734891); independently sample two distinct intersections without replacement within each opening, sixteen openings; GTP columnsABCDEFGHJ, rows9 down to1. No opening selected by inspecting model performance.",
+  "games": 32,
+  "max_game_moves": 648,
+  "game_timeout_seconds": 180,
+  "workers": 4,
+  "primary": "Paired-color score against the previous native checkpoint, complete/incomplete game counts, and agreement of every board and terminal score with KataGo referee.",
+  "interpretation": "Secondary exploratory diagnostic chosen after both checkpoints had zero wins against the strong external anchor. One training seed, no independent replication, no new claim of strength against KataGo or of algorithm superiority. Move-limit or failed games have no assigned outcome. The planned paired summary is not qualified unless all games complete.",
+  "gate": "First require two-game integration smoke with all boards and final scores matching; retain failed qualification or panel attempts."
+}

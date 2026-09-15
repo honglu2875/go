@@ -1,0 +1,18 @@
+[project]
+name = "gozero-workspace"
+version = "0.1.0"
+description = "Go self-play research and production infrastructure"
+requires-python = "==3.12.*"
+dependencies = ["gozero"]
+
+[project.optional-dependencies]
+tpu = [
+    "jax[tpu]>=0.11.1",
+    "numpy>=2.5.3",
+]
+
+[tool.uv.workspace]
+members = ["packages/gozero"]
+
+[tool.uv.sources]
+gozero = { workspace = true }

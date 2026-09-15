@@ -1,0 +1,61 @@
+{
+  "candidate": "eval/gumbel_search/candidate.json",
+  "candidate_cpuct": 0.0,
+  "candidate_cpus": [
+    72,
+    73,
+    74,
+    75
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "game_timeout_seconds": 60,
+  "katago_config": "eval/ownership_aux/katago_visits_1.cfg",
+  "katago_cpus": [
+    76,
+    77,
+    78,
+    79
+  ],
+  "katago_max_visits": 1,
+  "katago_weights": "eval/katago_early/level-2.json",
+  "komi": 7.5,
+  "max_game_moves": 648,
+  "openings": [
+    [
+      "G9",
+      "H6"
+    ],
+    [
+      "E4",
+      "A4"
+    ],
+    [
+      "D1",
+      "D8"
+    ],
+    [
+      "E9",
+      "G1"
+    ],
+    [
+      "D2",
+      "G2"
+    ],
+    [
+      "D7",
+      "B5"
+    ],
+    [
+      "H1",
+      "J1"
+    ],
+    [
+      "C1",
+      "A7"
+    ]
+  ],
+  "purpose": "Fresh paired openings confirm both intermediate-score official calibration levels; no algorithm promotion.",
+  "schema_version": 1,
+  "seed_prefix": "gozero-ladder-confirmation-9172631-chunk-1",
+  "size": 9
+}

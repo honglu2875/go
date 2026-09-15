@@ -1,0 +1,69 @@
+{
+  "board_size": 9,
+  "branches": 16,
+  "checkpoint_turn": 32768,
+  "expected_devices": 16,
+  "expected_processes": 4,
+  "input_channels": 12,
+  "input_checkpoints": [
+    {
+      "group_sha256": "bf03bba3c0fea5b8d99681c4759e7e95677b806be8e327405aa7d1918309f7bd",
+      "host_rank": 0,
+      "manifest_sha256": "bbdbb4ca17b262b5203e7cc615710e986f3f656e3dcf7e7e7489d9c2b85f1a9e",
+      "path": "runs/pod-20260911T094436Z-43759b05/rank-0/artifacts/checkpoints/turn-000032768"
+    },
+    {
+      "group_sha256": "bf03bba3c0fea5b8d99681c4759e7e95677b806be8e327405aa7d1918309f7bd",
+      "host_rank": 1,
+      "manifest_sha256": "a71e62a10836ad425a7b9e60584812bdabf56636bade42bbff6b45867a1ee067",
+      "path": "runs/pod-20260911T094436Z-43759b05/rank-1/artifacts/checkpoints/turn-000032768"
+    },
+    {
+      "group_sha256": "bf03bba3c0fea5b8d99681c4759e7e95677b806be8e327405aa7d1918309f7bd",
+      "host_rank": 2,
+      "manifest_sha256": "85e46291a2588c779d9f2c9ced497ccab8745a427050cc4def375b3e3ff541d9",
+      "path": "runs/pod-20260911T094436Z-43759b05/rank-2/artifacts/checkpoints/turn-000032768"
+    },
+    {
+      "group_sha256": "bf03bba3c0fea5b8d99681c4759e7e95677b806be8e327405aa7d1918309f7bd",
+      "host_rank": 3,
+      "manifest_sha256": "88020bd54524379139adefa3837b92eefb8330e6fc4e5c39fcaf069423d6a8ec",
+      "path": "runs/pod-20260911T094436Z-43759b05/rank-3/artifacts/checkpoints/turn-000032768"
+    }
+  ],
+  "input_seed": 19450241,
+  "model": {
+    "blocks": 4,
+    "dtype": "bfloat16",
+    "groups": 8,
+    "score_scale": 2.0,
+    "score_utility_factor": 0.0,
+    "value_hidden": 64,
+    "width": 64
+  },
+  "model_sha256": "47214161b4e60dbbc4bd396202af9ee9d28c28a770a6d46ba1cc85cda5a8a371",
+  "orders": [
+    [
+      "serial",
+      "queued",
+      "wide"
+    ],
+    [
+      "wide",
+      "queued",
+      "serial"
+    ],
+    [
+      "queued",
+      "serial",
+      "wide"
+    ]
+  ],
+  "platform": "tpu",
+  "purpose": "Fixed learned CNN and real replay inputs. Transport-inclusive inference timing and wide-batch numerical differences only. No training or rollout speed claim.",
+  "schema_version": 1,
+  "small_batch": 128,
+  "timed_iterations": 50,
+  "training_snapshot": "3750f1f428dced41601ca8db566027ca8d524d396c707296a7301f5b50eaec36",
+  "warmup_iterations": 3
+}

@@ -1,0 +1,216 @@
+{
+  "absolute_metric": {
+    "candidate_simulations": 16,
+    "game_timeout_seconds": 360,
+    "games_per_arm": 8,
+    "katago_visits": [
+      1,
+      16
+    ],
+    "max_game_moves": 324,
+    "openings": [
+      [],
+      [
+        "C3",
+        "G7"
+      ]
+    ],
+    "opponent_sha256": "a1298ce1adc1dad7bd868ca962b2384cc8388ed373a00e6bae1114fa6f9e2d61",
+    "scope": "Continue the pinned absolute anchor; report zero-win floors and incomplete games without ranking them."
+  },
+  "budget": {
+    "checkpoint_every": 8192,
+    "global_real_moves_per_arm": 16777216,
+    "maximum_total_eval_seconds": 2400,
+    "maximum_training_attempts": 2,
+    "minimum_free_bytes_before_launch": 8589934592,
+    "order": [
+      "control",
+      "candidate"
+    ],
+    "prepare_timeout_seconds": 180,
+    "seed": 28,
+    "selfplay_turns": 32768,
+    "simulations_excluding_root": 16,
+    "timeout_seconds_per_attempt": 1800
+  },
+  "candidate_snapshot": "5cc18cbaee669a67ab0e77ce1c3addaa6f031bc92fa3674ef8d6e311e53219ec",
+  "control_snapshot": "d6dcc348e9dcec2bf13bc269aa9b801d40f50c94a8721a9a9a7a48f7d2c49e4d",
+  "cpu_qualification_snapshot": "a7bc602431e0e4c21f7adeefff646471ff0758aabfafdf48fcb1156383c327b6",
+  "cpu_resume_sha256": "55dc917ee4e913205b7c39a85fb7a06933d23ef253b1e5b69edd20eca485e293",
+  "gtp_qualification_sha256": "3a5e745982c24c5a3d05ad7f94a3ec5babbc90d7144e537acb271f9ddc99a929",
+  "hypothesis": "The observed Gumbel advantage over the fixed low-visit PUCT control persists under independent parameter initialization and self-play seed28.",
+  "intervention": "Full native Gumbel AlphaZero versus PUCT with FPU0.2, Dirichlet0.25 alpha0.15 and temperature1 for30 moves. Both use the same full CNN initialization, ownership1.5/score1 losses, score utility factor0, optimizer and self-play/replay budgets. Gumbel uses at most16 considered actions, value scale0.1, offset50, Q-range scaling, training perturbation1 and deterministic evaluation.",
+  "kind": "gumbel_independent_seed_replication",
+  "limitations": [
+    "Both search systems are under-tuned at16 simulations; this is not full KataGo or original-scale AlphaZero reproduction.",
+    "The longer fixed horizon calibrates a more informative learning stage after several shorter zero-win screens.",
+    "Architecture and objectives are fixed; search allocation, played-action rule, root perturbation and policy target are an algorithm bundle.",
+    "No Elo claim from the small deterministic opening panel.",
+    "Compression affects storage and wall time but not scientific arrays; its writer was checked on a real9x9 checkpoint.",
+    "Unknown allocation duration and durable bucket still limit sustained production planning; this is bounded research.",
+    "Seed27 was used for discovery. This is a fixed seed28 confirmation with fresh registered openings.",
+    "Search settings remain under-tuned; a successful replication still does not identify the best possible PUCT control.",
+    "Operational peer cancellation is enabled; scientific model, optimizer, search code and settings are unchanged apart from seed."
+  ],
+  "lineage": "Both arms from scratch. No KataGo labels or weights enter training.",
+  "mctx_comparison_sha256": "e366df6de2a21016875b540578179398d14ad595ddf9b5077580a03987b4031d",
+  "mctx_reference_revision": "88f92056a420c2673bed282f5a0c00211f126e78",
+  "parent_protocol_sha256": "ad4452db13420501430d67f9f5a36e7d77662587eb1ef7374556695f694b61ec",
+  "parent_result_sha256": "e658a52d7927465a23551e3a1f5e54def9b681ccf8d04bd1c83dc643ca5303ec",
+  "primary_metric": {
+    "candidate_cpuct": 0.0,
+    "candidate_simulations": 16,
+    "game_timeout_seconds": 180,
+    "games": 64,
+    "komi": 7.5,
+    "max_game_moves": 1296,
+    "name": "paired candidate score against the fresh matched PUCT checkpoint",
+    "opening_seed": 9921285,
+    "openings": [
+      [
+        "E8",
+        "A7"
+      ],
+      [
+        "C2",
+        "F1"
+      ],
+      [
+        "H1",
+        "G4"
+      ],
+      [
+        "E5",
+        "E9"
+      ],
+      [
+        "E1",
+        "G3"
+      ],
+      [
+        "E5",
+        "B4"
+      ],
+      [
+        "A8",
+        "H6"
+      ],
+      [
+        "D8",
+        "E2"
+      ],
+      [
+        "B7",
+        "J5"
+      ],
+      [
+        "E5",
+        "D2"
+      ],
+      [
+        "H9",
+        "F8"
+      ],
+      [
+        "C6",
+        "E3"
+      ],
+      [
+        "F8",
+        "E9"
+      ],
+      [
+        "C9",
+        "A8"
+      ],
+      [
+        "F3",
+        "A1"
+      ],
+      [
+        "A9",
+        "C7"
+      ],
+      [
+        "D4",
+        "E4"
+      ],
+      [
+        "J1",
+        "A1"
+      ],
+      [
+        "H6",
+        "E7"
+      ],
+      [
+        "C3",
+        "G6"
+      ],
+      [
+        "D5",
+        "D4"
+      ],
+      [
+        "D6",
+        "F4"
+      ],
+      [
+        "H6",
+        "J7"
+      ],
+      [
+        "D2",
+        "G4"
+      ],
+      [
+        "D4",
+        "G5"
+      ],
+      [
+        "A2",
+        "B6"
+      ],
+      [
+        "A5",
+        "F2"
+      ],
+      [
+        "J7",
+        "E5"
+      ],
+      [
+        "F4",
+        "C6"
+      ],
+      [
+        "A1",
+        "F4"
+      ],
+      [
+        "G3",
+        "B6"
+      ],
+      [
+        "D9",
+        "G4"
+      ]
+    ],
+    "opponent_cpuct": 1.5,
+    "opponent_simulations": 16,
+    "qualification": "Run the complete fixed panel; move caps have no assigned outcome and invalidate the paired qualification. Stop on actual board/rule/score inconsistencies. This larger cap is declared for a new study, not a reinterpretation of the earlier incomplete FPU panel.",
+    "referee": "Pinned official KataGo verifies every played board and complete score; it chooses no moves.",
+    "size": 9
+  },
+  "promotion": "Replication support only if all64 direct games finish with every board/score check passed, paired score>=0.65 and conservative paired95 lower bound>0.5. Report the seed separately from discovery. Both absolute anchors remain required. No production, strong-KataGo or optimal-PUCT claim.",
+  "registered_unix": 1789122704.6941442,
+  "resource_preflight_sha256": "e5d397d745ed044e2a1ba71f5a8d242a7eb7058cef41d3f849cad226fefb8144",
+  "schema_version": 1,
+  "secondary_metrics": [
+    "actual active neural evaluations and neural slots",
+    "self-play completed games, truncations and eligible rows",
+    "learner exposures and replay reuse",
+    "reserved attempt windows and CPU/wall time, with overlap noted"
+  ]
+}

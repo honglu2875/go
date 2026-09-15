@@ -1,0 +1,395 @@
+{
+  "budget": {
+    "candidate_simulations": 16,
+    "game_timeout_seconds": 60,
+    "games_per_checkpoint": 64,
+    "katago_visits": 1,
+    "max_game_moves": 648,
+    "maximum_games": 1024,
+    "maximum_total_panel_seconds": 7200,
+    "minimum_completed_fraction_per_checkpoint": 0.9,
+    "training_attempts": 0
+  },
+  "checkpoints": [
+    {
+      "architecture": "cnn",
+      "checkpoint_path": "runs/pod-20260911T094436Z-43759b05/rank-0/artifacts/checkpoints/turn-000008192",
+      "global_real_moves": 4194304,
+      "id": "s27-cnn-t008192",
+      "panel": "eval/architecture_curves/s27-cnn-t008192_panel.json",
+      "panel_sha256": "461357b14f2ea0f21983ed7d5ac46c43d5f98eacfc27139bd9ced81bd892aba5",
+      "seed": 27,
+      "training_attempt": "pod-20260911T094436Z-43759b05",
+      "training_snapshot": "3750f1f428dced41601ca8db566027ca8d524d396c707296a7301f5b50eaec36",
+      "turn": 8192
+    },
+    {
+      "architecture": "cnn",
+      "checkpoint_path": "runs/pod-20260911T094436Z-43759b05/rank-0/artifacts/checkpoints/turn-000016384",
+      "global_real_moves": 8388608,
+      "id": "s27-cnn-t016384",
+      "panel": "eval/architecture_curves/s27-cnn-t016384_panel.json",
+      "panel_sha256": "ce46025ab1118d4710d19f1933eb896610d271f178c21f2e1e8892a3df8f159a",
+      "seed": 27,
+      "training_attempt": "pod-20260911T094436Z-43759b05",
+      "training_snapshot": "3750f1f428dced41601ca8db566027ca8d524d396c707296a7301f5b50eaec36",
+      "turn": 16384
+    },
+    {
+      "architecture": "cnn",
+      "checkpoint_path": "runs/pod-20260911T094436Z-43759b05/rank-0/artifacts/checkpoints/turn-000024576",
+      "global_real_moves": 12582912,
+      "id": "s27-cnn-t024576",
+      "panel": "eval/architecture_curves/s27-cnn-t024576_panel.json",
+      "panel_sha256": "444d04d443774f93256c823b088f06b44033337b510146c69c54beeb6bbb8d1f",
+      "seed": 27,
+      "training_attempt": "pod-20260911T094436Z-43759b05",
+      "training_snapshot": "3750f1f428dced41601ca8db566027ca8d524d396c707296a7301f5b50eaec36",
+      "turn": 24576
+    },
+    {
+      "architecture": "cnn",
+      "checkpoint_path": "runs/pod-20260911T094436Z-43759b05/rank-0/artifacts/checkpoints/turn-000032768",
+      "global_real_moves": 16777216,
+      "id": "s27-cnn-t032768",
+      "panel": "eval/architecture_curves/s27-cnn-t032768_panel.json",
+      "panel_sha256": "0cdc677e4b4ed877dd664b3d178a44cc144ebf789c5262da17e72ca3e30b5032",
+      "seed": 27,
+      "training_attempt": "pod-20260911T094436Z-43759b05",
+      "training_snapshot": "3750f1f428dced41601ca8db566027ca8d524d396c707296a7301f5b50eaec36",
+      "turn": 32768
+    },
+    {
+      "architecture": "attention",
+      "checkpoint_path": "runs/pod-20260911T114924Z-22e7c207/rank-0/artifacts/checkpoints/turn-000008192",
+      "global_real_moves": 4194304,
+      "id": "s27-attention-t008192",
+      "panel": "eval/architecture_curves/s27-attention-t008192_panel.json",
+      "panel_sha256": "7030702cd5b7f01971d1d7c866cdd1064670bb7b09445abafdd2964af99e6ece",
+      "seed": 27,
+      "training_attempt": "pod-20260911T114924Z-22e7c207",
+      "training_snapshot": "08b8996848f5f08ace154f1d99fe4ed9f37c4cb8c2965a4a96b15f726f483295",
+      "turn": 8192
+    },
+    {
+      "architecture": "attention",
+      "checkpoint_path": "runs/pod-20260911T114924Z-22e7c207/rank-0/artifacts/checkpoints/turn-000016384",
+      "global_real_moves": 8388608,
+      "id": "s27-attention-t016384",
+      "panel": "eval/architecture_curves/s27-attention-t016384_panel.json",
+      "panel_sha256": "1d18bd5b9f3e9b6e7dea32b64087ae11395bcf4b553b4fa5d2e84b1f07f21857",
+      "seed": 27,
+      "training_attempt": "pod-20260911T114924Z-22e7c207",
+      "training_snapshot": "08b8996848f5f08ace154f1d99fe4ed9f37c4cb8c2965a4a96b15f726f483295",
+      "turn": 16384
+    },
+    {
+      "architecture": "attention",
+      "checkpoint_path": "runs/pod-20260911T114924Z-22e7c207/rank-0/artifacts/checkpoints/turn-000024576",
+      "global_real_moves": 12582912,
+      "id": "s27-attention-t024576",
+      "panel": "eval/architecture_curves/s27-attention-t024576_panel.json",
+      "panel_sha256": "502aac47a52ecc6e1d9d55d6723ceca8baab4541fea5f73555f2c3128da60100",
+      "seed": 27,
+      "training_attempt": "pod-20260911T114924Z-22e7c207",
+      "training_snapshot": "08b8996848f5f08ace154f1d99fe4ed9f37c4cb8c2965a4a96b15f726f483295",
+      "turn": 24576
+    },
+    {
+      "architecture": "attention",
+      "checkpoint_path": "runs/pod-20260911T114924Z-22e7c207/rank-0/artifacts/checkpoints/turn-000032768",
+      "global_real_moves": 16777216,
+      "id": "s27-attention-t032768",
+      "panel": "eval/architecture_curves/s27-attention-t032768_panel.json",
+      "panel_sha256": "993d6a55751c6f19a6cb89e9585f015517f6f118aa8b0a3fa0faa1c56dedce3e",
+      "seed": 27,
+      "training_attempt": "pod-20260911T114924Z-22e7c207",
+      "training_snapshot": "08b8996848f5f08ace154f1d99fe4ed9f37c4cb8c2965a4a96b15f726f483295",
+      "turn": 32768
+    },
+    {
+      "architecture": "cnn",
+      "checkpoint_path": "runs/pod-20260911T111515Z-fd49f349/rank-0/artifacts/checkpoints/turn-000008192",
+      "global_real_moves": 4194304,
+      "id": "s28-cnn-t008192",
+      "panel": "eval/architecture_curves/s28-cnn-t008192_panel.json",
+      "panel_sha256": "5e71fc646ea7f8cf830495e64410a3daaea1782e8a72db235e0099e90fbccc59",
+      "seed": 28,
+      "training_attempt": "pod-20260911T111515Z-fd49f349",
+      "training_snapshot": "5cc18cbaee669a67ab0e77ce1c3addaa6f031bc92fa3674ef8d6e311e53219ec",
+      "turn": 8192
+    },
+    {
+      "architecture": "cnn",
+      "checkpoint_path": "runs/pod-20260911T111515Z-fd49f349/rank-0/artifacts/checkpoints/turn-000016384",
+      "global_real_moves": 8388608,
+      "id": "s28-cnn-t016384",
+      "panel": "eval/architecture_curves/s28-cnn-t016384_panel.json",
+      "panel_sha256": "c75dcffe472338a332582b5d6d1b315326a4087126f0d4144447807a66d46be0",
+      "seed": 28,
+      "training_attempt": "pod-20260911T111515Z-fd49f349",
+      "training_snapshot": "5cc18cbaee669a67ab0e77ce1c3addaa6f031bc92fa3674ef8d6e311e53219ec",
+      "turn": 16384
+    },
+    {
+      "architecture": "cnn",
+      "checkpoint_path": "runs/pod-20260911T111515Z-fd49f349/rank-0/artifacts/checkpoints/turn-000024576",
+      "global_real_moves": 12582912,
+      "id": "s28-cnn-t024576",
+      "panel": "eval/architecture_curves/s28-cnn-t024576_panel.json",
+      "panel_sha256": "675f3657488fc6b7f11bff44063b4dddf4f05aa3d37622dc1491f9fe14bde715",
+      "seed": 28,
+      "training_attempt": "pod-20260911T111515Z-fd49f349",
+      "training_snapshot": "5cc18cbaee669a67ab0e77ce1c3addaa6f031bc92fa3674ef8d6e311e53219ec",
+      "turn": 24576
+    },
+    {
+      "architecture": "cnn",
+      "checkpoint_path": "runs/pod-20260911T111515Z-fd49f349/rank-0/artifacts/checkpoints/turn-000032768",
+      "global_real_moves": 16777216,
+      "id": "s28-cnn-t032768",
+      "panel": "eval/architecture_curves/s28-cnn-t032768_panel.json",
+      "panel_sha256": "1b9ba60465a4312fa79cf6bd7dc6f95b5da5d5244b0694b84650a0d69237124a",
+      "seed": 28,
+      "training_attempt": "pod-20260911T111515Z-fd49f349",
+      "training_snapshot": "5cc18cbaee669a67ab0e77ce1c3addaa6f031bc92fa3674ef8d6e311e53219ec",
+      "turn": 32768
+    },
+    {
+      "architecture": "attention",
+      "checkpoint_path": "runs/pod-20260911T124618Z-3c7697c4/rank-0/artifacts/checkpoints/turn-000008192",
+      "global_real_moves": 4194304,
+      "id": "s28-attention-t008192",
+      "panel": "eval/architecture_curves/s28-attention-t008192_panel.json",
+      "panel_sha256": "0d7401d65bca0fb3f9221763d1da300360e3b4cf1893e343680ba0f6f299a1dd",
+      "seed": 28,
+      "training_attempt": "pod-20260911T124618Z-3c7697c4",
+      "training_snapshot": "01fd1303a7719f5c8e50a8736d896f60b9d1e150ef902e9ee37685a1137da836",
+      "turn": 8192
+    },
+    {
+      "architecture": "attention",
+      "checkpoint_path": "runs/pod-20260911T124618Z-3c7697c4/rank-0/artifacts/checkpoints/turn-000016384",
+      "global_real_moves": 8388608,
+      "id": "s28-attention-t016384",
+      "panel": "eval/architecture_curves/s28-attention-t016384_panel.json",
+      "panel_sha256": "6398aa6144c4e929939d5b0a947ac59a53630cce6fd31cf1f1524d799a3f54a3",
+      "seed": 28,
+      "training_attempt": "pod-20260911T124618Z-3c7697c4",
+      "training_snapshot": "01fd1303a7719f5c8e50a8736d896f60b9d1e150ef902e9ee37685a1137da836",
+      "turn": 16384
+    },
+    {
+      "architecture": "attention",
+      "checkpoint_path": "runs/pod-20260911T124618Z-3c7697c4/rank-0/artifacts/checkpoints/turn-000024576",
+      "global_real_moves": 12582912,
+      "id": "s28-attention-t024576",
+      "panel": "eval/architecture_curves/s28-attention-t024576_panel.json",
+      "panel_sha256": "c0e4ca6f322fda8df85b23133f0c17d162a84587b308db26e6039928610f3750",
+      "seed": 28,
+      "training_attempt": "pod-20260911T124618Z-3c7697c4",
+      "training_snapshot": "01fd1303a7719f5c8e50a8736d896f60b9d1e150ef902e9ee37685a1137da836",
+      "turn": 24576
+    },
+    {
+      "architecture": "attention",
+      "checkpoint_path": "runs/pod-20260911T124618Z-3c7697c4/rank-0/artifacts/checkpoints/turn-000032768",
+      "global_real_moves": 16777216,
+      "id": "s28-attention-t032768",
+      "panel": "eval/architecture_curves/s28-attention-t032768_panel.json",
+      "panel_sha256": "719681b888b65fed326e00e04c7dd3263df8f30934a22dc1ae6989ab1d604dd7",
+      "seed": 28,
+      "training_attempt": "pod-20260911T124618Z-3c7697c4",
+      "training_snapshot": "01fd1303a7719f5c8e50a8736d896f60b9d1e150ef902e9ee37685a1137da836",
+      "turn": 32768
+    }
+  ],
+  "evaluation_code_sha256": {
+    "eval/learned_gtp.py": "7fb463a5d2e3416453d4908b0cd89436418da86b4daa9cf0c9163814e3856a65",
+    "eval/match.py": "3205267b70018f0060e8b815548f699b03c7bd968600e4f963559958e5e2e2ac",
+    "eval/panel.py": "5b78f529a0abf5778ec1eb1aa738c9958ad730cd8f13d52554169663d35addc8",
+    "packages/gozero/src/gozero/model_artifacts.py": "95c1b6b8cbd130bc18741d3c2376d5aa02647d24c009a89d1ea66a56e1755d9a",
+    "packages/gozero/src/gozero/native.py": "ea07e53de479d8968e0ddb198a087afa8f9326d270146f80bc8293f5f1c82402",
+    "uv.lock": "7e12df7ffb7eb7dddd3747d4b2b27f804383466826776b4225d558582ef11a4d"
+  },
+  "katago": {
+    "binary_sha256": "1ae1ed2108caa025bba853634b7f1aad3a29baa0ba27b4a298759ca6b172d104",
+    "calibration_result_sha256": "4d174ea340ac82a758a559bfb2bfccff413f10eecee9d889e0cf58883b264ebd",
+    "descriptor": "eval/katago_early/level-3.json",
+    "descriptor_sha256": "1ed86e4e86e41b54a14a3fb2e59a46ebfb477aafec258b9fbff586ddd1223e83",
+    "weights_sha256": "36420d10c6a4bbf243d991b4a2920dc6ff42f6c2d0a1cfaa438a4daf2b0254ac"
+  },
+  "kind": "paired_architecture_sample_budget_curves",
+  "limitations": [
+    "Four preselected budgets from4.19M to16.78M real moves; no interpolation claim below the first checkpoint.",
+    "This confirms performance across sample budgets against a historical small checkpoint at unequal16 candidate simulations versus1 KataGo visit, not superiority over current KataGo.",
+    "The same openings across all budgets and seeds induce dependence handled by resampling complete opening units. Only two training seeds are available.",
+    "Architecture parameters are approximately matched; FLOPs and architecture-specific tuning are not matched.",
+    "The strong KataGo anchor and independent direct-match replication remain separate requirements.",
+    "The seed28 attention run is ongoing. Every listed checkpoint is required; missing checkpoints cannot be replaced or dropped.",
+    "Paired-bootstrap intervals are approximate, conditional on the trained checkpoints. Caps are bounded, never assigned outcomes.",
+    "No production promotion."
+  ],
+  "opening_seed": 19450231,
+  "openings": [
+    [
+      "F6",
+      "G2"
+    ],
+    [
+      "G8",
+      "B3"
+    ],
+    [
+      "G1",
+      "D6"
+    ],
+    [
+      "D7",
+      "C9"
+    ],
+    [
+      "J7",
+      "J3"
+    ],
+    [
+      "C3",
+      "B3"
+    ],
+    [
+      "C8",
+      "B6"
+    ],
+    [
+      "F5",
+      "A6"
+    ],
+    [
+      "C6",
+      "D1"
+    ],
+    [
+      "H9",
+      "D1"
+    ],
+    [
+      "C6",
+      "E3"
+    ],
+    [
+      "G6",
+      "D7"
+    ],
+    [
+      "C4",
+      "E9"
+    ],
+    [
+      "B1",
+      "J8"
+    ],
+    [
+      "D5",
+      "J2"
+    ],
+    [
+      "C2",
+      "A1"
+    ],
+    [
+      "E3",
+      "F2"
+    ],
+    [
+      "D7",
+      "B8"
+    ],
+    [
+      "H2",
+      "E4"
+    ],
+    [
+      "G7",
+      "A6"
+    ],
+    [
+      "C7",
+      "C1"
+    ],
+    [
+      "J5",
+      "H9"
+    ],
+    [
+      "F2",
+      "A2"
+    ],
+    [
+      "D5",
+      "D6"
+    ],
+    [
+      "D4",
+      "B9"
+    ],
+    [
+      "D3",
+      "G8"
+    ],
+    [
+      "E3",
+      "D9"
+    ],
+    [
+      "C9",
+      "G3"
+    ],
+    [
+      "B1",
+      "A4"
+    ],
+    [
+      "F8",
+      "B4"
+    ],
+    [
+      "D2",
+      "H3"
+    ],
+    [
+      "F6",
+      "D2"
+    ]
+  ],
+  "order": "Evaluate available checkpoints in the listed order; skip only checkpoints not yet published by the currently live registered training attempt, and revisit every missing checkpoint. Record all attempts and failures; no automatic retry.",
+  "primary": {
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 19450232,
+    "checkpoint_weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "criterion": "Every scheduled result is present; no integrity or process failure; at least90% of games complete at every checkpoint; bootstrap95% lower limit of the conservative difference lower bound exceeds0; conservative mean difference lower bound is positive separately in both seeds. Report caps, both bounds and all curves regardless of criterion.",
+    "missing_outcomes": "A capped game remains unassigned. Its possible points interval is [0,1]; completed points are exact. Difference lower bound uses attention lower minus CNN upper, and upper bound uses attention upper minus CNN lower. Integrity failures invalidate the study.",
+    "name": "Mean attention-minus-CNN score over the four registered real-move budgets, averaged over two fixed training seeds",
+    "uncertainty": "Paired percentile bootstrap over 32 opening units, 10000 draws, PCG64 seed19450232; uncertainty is conditional on the two trained seeds, not across-training-seed population inference.",
+    "unit": "One opening pair, retaining both colors, all four budgets and both seeds together"
+  },
+  "registered_unix": 1789131028.197417,
+  "rules": {
+    "ko": "positional",
+    "komi": 7.5,
+    "scoring": "pass_alive_area",
+    "size": 9,
+    "suicide": true
+  },
+  "schema_version": 1,
+  "secondary": [
+    "Per-checkpoint paired score and completion coverage, with unresolved-outcome bounds",
+    "Terminal-row generation, actual neural evaluations, learner updates and training exposures from each committed checkpoint",
+    "Final whole-attempt chip-hours only; historical intermediate wall time was not logged and will not be invented",
+    "Color-specific outcomes and early double-pass frequency"
+  ]
+}

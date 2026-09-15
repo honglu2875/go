@@ -1,0 +1,215 @@
+{
+  "candidate": "eval/gumbel_search/candidate.json",
+  "candidate_cpuct": 0.0,
+  "candidate_simulations": 16,
+  "cpu_groups": [
+    {
+      "candidate": [
+        64,
+        65,
+        66,
+        67
+      ],
+      "opponent": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "referee": [
+        72
+      ]
+    },
+    {
+      "candidate": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "opponent": [
+        77,
+        78,
+        79,
+        80
+      ],
+      "referee": [
+        81
+      ]
+    },
+    {
+      "candidate": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "opponent": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "referee": [
+        90
+      ]
+    },
+    {
+      "candidate": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "opponent": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "referee": [
+        99
+      ]
+    }
+  ],
+  "game_timeout_seconds": 180,
+  "komi": 7.5,
+  "max_game_moves": 1296,
+  "openings": [
+    [
+      "B7",
+      "A9"
+    ],
+    [
+      "D5",
+      "H1"
+    ],
+    [
+      "G6",
+      "F7"
+    ],
+    [
+      "J1",
+      "A6"
+    ],
+    [
+      "E1",
+      "H7"
+    ],
+    [
+      "D6",
+      "C4"
+    ],
+    [
+      "D4",
+      "J7"
+    ],
+    [
+      "F9",
+      "F7"
+    ],
+    [
+      "B1",
+      "C5"
+    ],
+    [
+      "F1",
+      "H1"
+    ],
+    [
+      "D9",
+      "A1"
+    ],
+    [
+      "C8",
+      "A9"
+    ],
+    [
+      "G2",
+      "F4"
+    ],
+    [
+      "F5",
+      "C8"
+    ],
+    [
+      "B8",
+      "J9"
+    ],
+    [
+      "C1",
+      "B6"
+    ],
+    [
+      "G1",
+      "D3"
+    ],
+    [
+      "E8",
+      "A4"
+    ],
+    [
+      "J6",
+      "A9"
+    ],
+    [
+      "D8",
+      "H5"
+    ],
+    [
+      "A8",
+      "G2"
+    ],
+    [
+      "H8",
+      "H4"
+    ],
+    [
+      "J8",
+      "G1"
+    ],
+    [
+      "F3",
+      "H4"
+    ],
+    [
+      "C1",
+      "F9"
+    ],
+    [
+      "D6",
+      "A6"
+    ],
+    [
+      "E7",
+      "H6"
+    ],
+    [
+      "J6",
+      "B8"
+    ],
+    [
+      "E7",
+      "A4"
+    ],
+    [
+      "C4",
+      "E9"
+    ],
+    [
+      "G2",
+      "B7"
+    ],
+    [
+      "A6",
+      "F8"
+    ]
+  ],
+  "opponent": "eval/gumbel_search/control.json",
+  "opponent_cpuct": 1.5,
+  "opponent_simulations": 16,
+  "purpose": "Registered extended Gumbel versus PUCT primary panel,32 fixed openings with paired colors; official KataGo independently referees every board and completed score.",
+  "referee_config": "eval/katago_9x9_smoke.cfg",
+  "schema_version": 1,
+  "size": 9
+}

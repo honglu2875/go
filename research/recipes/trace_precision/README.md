@@ -1,0 +1,11 @@
+# High-precision equal-work trace control
+
+This complete clone of `trace_throughput` tests the numerical-path explanation for its failed multi-host bfloat16 qualification. The failed run is retained under `research/studies/trace_throughput`. Its 17 behavior-mode and 28 known-policy-mode game streams first diverged after an incremental step, with no observed packet-root first divergence. The records do not retain logits, so they do not prove the numerical cause.
+
+The only model-execution interventions are float32 activations and `jax_default_matmul_precision=highest`, including head matrix products. Model source, trained parameter elements, draws, board validation and the exact-work native implementation are unchanged. Training used bfloat16; this recipe explicitly records both the training and execution precision and permits that single architecture-check exception. No weights are updated. The combined intervention is a precision control, not an isolation of the responsible operation.
+
+Sequential, learned-behavior k=4, and known-policy joint k=1 modes must match event streams and final native states on their actual devices. CPU qualification uses four games and 64 moves/game; TPU qualification uses 64 games/host and 128 moves/game. A separate timing configuration uses 1,024 moves/game and three counterbalanced orders. Registration and successful qualification precede timing. Every timing repetition independently rechecks exact execution. A failure stops promotion and remains part of the evidence.
+
+Complete packet-loop wall time includes required scheduling, transfers and native state advancement. Compilation, final-state inspection, event reconstruction and archive writes are excluded from segment timing and included in total attempt cost. Pod throughput uses the slowest host per segment. Logical byte and compiler cost counters are not hardware traffic or measured MFU. The optional host-0 trace runs after all timing and must preserve its reference prefix.
+
+The fixed weak 9x9 student failed its real-KataGo strength criterion. These policy-only execution controls do not implement MCTS decisions, establish learning efficiency, justify student retraining, or qualify production. The resolver is serial; persistent Rust worker scaling remains a separate intervention.

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "workers": 4,
+  "matches": [
+    {
+      "id": "candidate-v1-p0",
+      "group": "candidate-v1",
+      "spec": "eval/score_utility/candidate-v1-p0.json"
+    },
+    {
+      "id": "candidate-v1-p1",
+      "group": "candidate-v1",
+      "spec": "eval/score_utility/candidate-v1-p1.json"
+    },
+    {
+      "id": "candidate-v16-p0",
+      "group": "candidate-v16",
+      "spec": "eval/score_utility/candidate-v16-p0.json"
+    },
+    {
+      "id": "candidate-v16-p1",
+      "group": "candidate-v16",
+      "spec": "eval/score_utility/candidate-v16-p1.json"
+    }
+  ]
+}

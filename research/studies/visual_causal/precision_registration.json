@@ -1,0 +1,18 @@
+{
+  "config_sha256": "0066094c7a748c693595b8ed5117d41897671c48ae69f63079bbf6dd0fa6fde1",
+  "hypothesis": "BF16 forward dots emit FP32; JAX transpose dots mix their FP32 cotangent with BF16 saved operands. Highest precision may add avoidable matrix passes in backward. DEFAULT changes this numerical contract and needs measured gradient error and subsequent learning/recovery qualification.",
+  "kind": "visual_mixed_gradient_precision_profile",
+  "maximum_attempts": 2,
+  "maximum_seconds_per_attempt": 600,
+  "primary_screen": {
+    "maximum_forward_loss_absolute_difference": 1e-05,
+    "maximum_gradient_relative_l2": 0.02,
+    "minimum_gradient_cosine": 0.999,
+    "minimum_median_critical_path_speedup": 1.2
+  },
+  "primary_source": "Installed pinned JAX 0.11.1 jax/_src/lax/lax.py Precision documentation and reproduced JAXPR; Google TPU peak reference https://docs.cloud.google.com/tpu/docs/v4",
+  "registered_at": "2026-09-12T03:50:56.792666+00:00",
+  "schema_version": 1,
+  "scope": "One pinned real complete-history global batch of 128 sequences and 233M parameters, both globally reduced gradients, five interleaved timing pairs. No optimizer or learning-quality equivalence claim. Existing registered early-exit arms remain on their original precision.",
+  "snapshot_id": "b33f8edacb461934d7ebcac002ddda47c8270d4144a8fb8f07f1b5b58e480533"
+}

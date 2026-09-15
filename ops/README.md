@@ -1,0 +1,25 @@
+Configured hosts are controlled through SSH and `pdsh -R ssh` running one frozen SPMD entrypoint. Copy [hosts.example.json](hosts.example.json) to the ignored `hosts.json` and supply your own SSH targets. Match the recipe's distributed shape to the selected deployment.
+
+`pod_run.py` stages one verified snapshot and content-addressed `uv` binary on every host. `prepare_host.py` constructs a lock-verified Python environment outside frozen source. `run_host.py` verifies provenance, binds the controller to a declared CPU set, executes the frozen trainer, and records terminal status. Timeout and signal handling address only the attempt's child process group. Per-host logs are collected even after failure.
+
+New snapshots containing `cancel_host.py` use one supervised `pdsh` launcher per rank. The first rank failure publishes an atomic attempt/snapshot cancellation token on all hosts. Host wrappers poll it, terminate their private process groups, escalate after a grace period, and record cancellation separately from timeout. A token arriving before rank startup prevents trainer launch. Controller and supervisor hashes, launcher logs and a supervisor receipt are retained. Older snapshots retain bounded-timeout execution. Local failure/descendant/isolation tests passed. In the actual multi-host CPU fault injection, peers stopped within 0.95 seconds of the injected rank failure and every recorded descendant was absent. See the qualification receipt (external or omitted experiment artifact). Network partitions can prevent token delivery, so independent rank deadlines remain mandatory; interrupted learner recovery remains separate work.
+
+JAX distributed initialization occurs before device enumeration or compilation. **JAX process ranks are not hostname suffixes.** `GOZERO_HOST_RANK` identifies operational paths; trainers use discovered `jax.process_index()` for distributed data ownership. This also matches [rig's mesh helper](https://github.com/honglu2875/rig/blob/main/rig/mesh.py). All controllers follow the same collective order.
+
+The launcher uses declared fanout, bounded connection timeouts, strict host-key checking, and explicit SSH options. Python, snapshot, attempt, and environment paths are explicit. Record exact launch arguments and package receipts privately for each deployment.
+
+```bash
+uv sync --frozen --extra tpu
+uv run --frozen gozero snapshot research/recipes/runtime_probe --config research/recipes/runtime_probe/smoke.json
+uv run --frozen python ops/pod_run.py --snapshot .gozero/snapshots/<sha256> --timeout 240
+```
+
+The initial runtime qualification is retained under `runs/pod-20260911T031751Z-cb3a78f4`. Native deployment, real self-play learning and exact fresh-process checkpoint continuation have since passed on all configured hosts. Multi-host operation alone does not establish a Multislice topology.
+
+For a native training recipe, freeze its configuration, run `ops/build_native.py --snapshot <snapshot> --artifacts-root <workspace>`, and pass the resulting `--native-receipt` to `pod_run.py`. Both controller and hosts check the source identity and binary hash. Configure actor and controller CPU sets for your environment. The controller CPU bound currently covers the entire child process CPU set, including native workers. JAX and actor CPU sets are not yet fully isolated.
+
+`--resume-attempt <pod-attempt-id> --resume-turn <turn>` selects the matching rank-local checkpoint from a previous attempt. The source/configuration must match; the trainer validates group identity, native hash, JAX rank and world size. `--stop-after-turn` permits a bounded segment without changing the scientific horizon. Every restart gets a new attempt directory. Checkpoint group publication is atomic per local filesystem and requires all rank receipts; durable remote replication and automatic checkpoint selection remain work.
+
+Actual interrupted learning recovery is also qualified (external or omitted experiment artifact) on unchanged disks/topology. `run_failure_probe.py` armed `inject_failure.py` at pod launch; the injector waited for checkpoint48, verified its group and trainer PID/start-time/session identity, then sent one SIGKILL through a pidfd. Resuming that actual interrupted checkpoint matched all240 final arrays and431 subsequent games from uninterrupted96-turn Gumbel training. `compare_resume.py --resume-origin` verifies a distinct checkpoint-origin attempt at the resume boundary as well as final continuation. The retained missed manual trigger and every attempt window are included in the qualification ledger.
+
+`paired_study.py` executes a frozen registered systems-study schedule, capturing each pod attempt separately. `compare_study.py` checks all saved arrays, actor states, counters and game files before reporting timing changes. Both are executed from source snapshots and pin their input ledgers. Independent experiment groups, actor/learner role partitioning, fast peer cancellation, changed-topology recovery, storage retention and sustained production operation still require qualification.

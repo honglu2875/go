@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "kind": "gumbel_alphazero_extended_pilot",
+  "registered_unix": 1789117637.0065203,
+  "control_snapshot": "7836ad14eb3f9ccc26642bfb9c3f02c808dcc999814a7a7c7226b50b29c524e6",
+  "candidate_snapshot": "3750f1f428dced41601ca8db566027ca8d524d396c707296a7301f5b50eaec36",
+  "cpu_qualification_snapshot": "a7bc602431e0e4c21f7adeefff646471ff0758aabfafdf48fcb1156383c327b6",
+  "mctx_reference_revision": "88f92056a420c2673bed282f5a0c00211f126e78",
+  "mctx_comparison_sha256": "e366df6de2a21016875b540578179398d14ad595ddf9b5077580a03987b4031d",
+  "cpu_resume_sha256": "55dc917ee4e913205b7c39a85fb7a06933d23ef253b1e5b69edd20eca485e293",
+  "gtp_qualification_sha256": "3a5e745982c24c5a3d05ad7f94a3ec5babbc90d7144e537acb271f9ddc99a929",
+  "hypothesis": "At small search budgets, sequential halving and completed-Q policy targets produce stronger policy iteration than PUCT visitation targets.",
+  "intervention": "Full native Gumbel AlphaZero versus PUCT with FPU0.2, Dirichlet0.25 alpha0.15 and temperature1 for30 moves. Both use the same full CNN initialization, ownership1.5/score1 losses, score utility factor0, optimizer and self-play/replay budgets. Gumbel uses at most16 considered actions, value scale0.1, offset50, Q-range scaling, training perturbation1 and deterministic evaluation.",
+  "budget": {
+    "seed": 27,
+    "selfplay_turns": 32768,
+    "global_real_moves_per_arm": 16777216,
+    "simulations_excluding_root": 16,
+    "maximum_training_attempts": 2,
+    "timeout_seconds_per_attempt": 1800,
+    "prepare_timeout_seconds": 180,
+    "order": [
+      "control",
+      "candidate"
+    ],
+    "checkpoint_every": 8192,
+    "minimum_free_bytes_before_launch": 8589934592,
+    "maximum_total_eval_seconds": 2400
+  },
+  "primary_metric": {
+    "name": "paired candidate score against the fresh matched PUCT checkpoint",
+    "games": 64,
+    "openings": [
+      [
+        "B7",
+        "A9"
+      ],
+      [
+        "D5",
+        "H1"
+      ],
+      [
+        "G6",
+        "F7"
+      ],
+      [
+        "J1",
+        "A6"
+      ],
+      [
+        "E1",
+        "H7"
+      ],
+      [
+        "D6",
+        "C4"
+      ],
+      [
+        "D4",
+        "J7"
+      ],
+      [
+        "F9",
+        "F7"
+      ],
+      [
+        "B1",
+        "C5"
+      ],
+      [
+        "F1",
+        "H1"
+      ],
+      [
+        "D9",
+        "A1"
+      ],
+      [
+        "C8",
+        "A9"
+      ],
+      [
+        "G2",
+        "F4"
+      ],
+      [
+        "F5",
+        "C8"
+      ],
+      [
+        "B8",
+        "J9"
+      ],
+      [
+        "C1",
+        "B6"
+      ],
+      [
+        "G1",
+        "D3"
+      ],
+      [
+        "E8",
+        "A4"
+      ],
+      [
+        "J6",
+        "A9"
+      ],
+      [
+        "D8",
+        "H5"
+      ],
+      [
+        "A8",
+        "G2"
+      ],
+      [
+        "H8",
+        "H4"
+      ],
+      [
+        "J8",
+        "G1"
+      ],
+      [
+        "F3",
+        "H4"
+      ],
+      [
+        "C1",
+        "F9"
+      ],
+      [
+        "D6",
+        "A6"
+      ],
+      [
+        "E7",
+        "H6"
+      ],
+      [
+        "J6",
+        "B8"
+      ],
+      [
+        "E7",
+        "A4"
+      ],
+      [
+        "C4",
+        "E9"
+      ],
+      [
+        "G2",
+        "B7"
+      ],
+      [
+        "A6",
+        "F8"
+      ]
+    ],
+    "opening_seed": 913927,
+    "candidate_simulations": 16,
+    "opponent_simulations": 16,
+    "candidate_cpuct": 0.0,
+    "opponent_cpuct": 1.5,
+    "komi": 7.5,
+    "size": 9,
+    "max_game_moves": 1296,
+    "game_timeout_seconds": 180,
+    "referee": "Pinned official KataGo verifies every played board and complete score; it chooses no moves.",
+    "qualification": "Run the complete fixed panel; move caps have no assigned outcome and invalidate the paired qualification. Stop on actual board/rule/score inconsistencies. This larger cap is declared for a new study, not a reinterpretation of the earlier incomplete FPU panel."
+  },
+  "absolute_metric": {
+    "opponent_sha256": "a1298ce1adc1dad7bd868ca962b2384cc8388ed373a00e6bae1114fa6f9e2d61",
+    "katago_visits": [
+      1,
+      16
+    ],
+    "openings": [
+      [],
+      [
+        "C3",
+        "G7"
+      ]
+    ],
+    "games_per_arm": 8,
+    "candidate_simulations": 16,
+    "max_game_moves": 324,
+    "game_timeout_seconds": 360,
+    "scope": "Continue the pinned absolute anchor; report zero-win floors and incomplete games without ranking them."
+  },
+  "secondary_metrics": [
+    "actual active neural evaluations and neural slots",
+    "self-play completed games, truncations and eligible rows",
+    "learner exposures and replay reuse",
+    "reserved attempt windows and CPU/wall time, with overlap noted",
+    "control at8192 compared with the earlier score-factor-zero run to detect execution regressions"
+  ],
+  "promotion": "Exploratory promising flag only if the primary panel is complete, paired score>=0.65 and conservative paired95 lower bound>0.5, with all board/score checks passed. No production promotion or algorithmic sample-efficiency claim from one seed. Finalists need independent seeds, larger absolute anchors and board-size transfer.",
+  "limitations": [
+    "Both search systems are under-tuned at16 simulations; this is not full KataGo or original-scale AlphaZero reproduction.",
+    "The longer fixed horizon calibrates a more informative learning stage after several shorter zero-win screens.",
+    "Architecture and objectives are fixed; search allocation, played-action rule, root perturbation and policy target are an algorithm bundle.",
+    "No Elo claim from the small deterministic opening panel.",
+    "Compression affects storage and wall time but not scientific arrays; its writer was checked on a real9x9 checkpoint.",
+    "Unknown allocation duration and durable bucket still limit sustained production planning; this is bounded research."
+  ],
+  "lineage": "Both arms from scratch. No KataGo labels or weights enter training."
+}

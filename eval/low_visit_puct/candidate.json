@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "training_snapshot": "4c4bf211a9fac41209a42653789f26d9aa3956529ea6bbf708063e216c0022dc",
+  "model_export_path": "runs/pod-20260911T070939Z-92921ba6/rank-0/artifacts/model_export.npz",
+  "model_export_sha256": "aa06e5568bbad82bb0ea2d0c300e035b91324372f57dce086084fd25adc7cc6a",
+  "training_result_path": "runs/pod-20260911T070939Z-92921ba6/rank-0/artifacts/result.json",
+  "training_result_sha256": "3e34640580a68c66a736c2803ef3d9437973aaaa0d71353e7feb7a701e98a0d6",
+  "network_version": 8092,
+  "training_lineage": "from scratch; fixed 0.2 network-value FPU; official KataGo weights used only for evaluation"
+}

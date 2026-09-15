@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "workers": 4,
+  "matches": [
+    {
+      "id": "strong-on-0",
+      "group": "on-v1",
+      "spec": "eval/endgame_search/strong-on-0.json"
+    },
+    {
+      "id": "strong-off-0",
+      "group": "off-v1",
+      "spec": "eval/endgame_search/strong-off-0.json"
+    },
+    {
+      "id": "strong-on-1",
+      "group": "on-v16",
+      "spec": "eval/endgame_search/strong-on-1.json"
+    },
+    {
+      "id": "strong-off-1",
+      "group": "off-v16",
+      "spec": "eval/endgame_search/strong-off-1.json"
+    }
+  ]
+}

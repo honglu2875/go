@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "candidate": "eval/low_visit_puct/candidate.json",
+  "opponent": "eval/ownership_aux/candidate.json",
+  "referee_config": "eval/katago_9x9_smoke.cfg",
+  "candidate_simulations": 16,
+  "opponent_simulations": 16,
+  "candidate_cpuct": 1.5,
+  "opponent_cpuct": 1.5,
+  "size": 9,
+  "komi": 7.5,
+  "max_game_moves": 648,
+  "game_timeout_seconds": 180,
+  "cpu_groups": [
+    {
+      "candidate": [
+        64,
+        65,
+        66,
+        67
+      ],
+      "opponent": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "referee": [
+        72
+      ]
+    },
+    {
+      "candidate": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "opponent": [
+        77,
+        78,
+        79,
+        80
+      ],
+      "referee": [
+        81
+      ]
+    },
+    {
+      "candidate": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "opponent": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "referee": [
+        90
+      ]
+    },
+    {
+      "candidate": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "opponent": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "referee": [
+        99
+      ]
+    }
+  ],
+  "openings": [
+    [
+      "F1",
+      "A3"
+    ],
+    [
+      "F5",
+      "J7"
+    ],
+    [
+      "J4",
+      "B9"
+    ],
+    [
+      "G9",
+      "G3"
+    ],
+    [
+      "G9",
+      "H7"
+    ],
+    [
+      "E3",
+      "G2"
+    ],
+    [
+      "F6",
+      "C7"
+    ],
+    [
+      "G6",
+      "D6"
+    ],
+    [
+      "D1",
+      "E7"
+    ],
+    [
+      "A6",
+      "J8"
+    ],
+    [
+      "H5",
+      "A7"
+    ],
+    [
+      "C6",
+      "B7"
+    ],
+    [
+      "E7",
+      "A6"
+    ],
+    [
+      "E9",
+      "D1"
+    ],
+    [
+      "B1",
+      "G6"
+    ],
+    [
+      "C4",
+      "E3"
+    ]
+  ],
+  "purpose": "Exploratory relative FPU versus reused control screen on sixteen independently generated two-move openings, paired colors. KataGo adjudicates every board and final score but does not choose moves. Does not replace registered absolute KataGo results."
+}

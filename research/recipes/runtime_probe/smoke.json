@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "expected_processes": 4,
+  "expected_devices": 16,
+  "global_batch": 256,
+  "input_width": 64,
+  "output_width": 16,
+  "steps": 4,
+  "learning_rate": 0.01,
+  "momentum": 0.9,
+  "matmul_size": 2048,
+  "matmul_repeats": 12
+}

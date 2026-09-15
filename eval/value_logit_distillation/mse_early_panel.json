@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "workers": 4,
+  "matches": [
+    {
+      "id": "mse-early-0",
+      "group": "mse",
+      "spec": "eval/value_logit_distillation/mse-early-0.json"
+    },
+    {
+      "id": "mse-early-1",
+      "group": "mse",
+      "spec": "eval/value_logit_distillation/mse-early-1.json"
+    },
+    {
+      "id": "mse-early-2",
+      "group": "mse",
+      "spec": "eval/value_logit_distillation/mse-early-2.json"
+    },
+    {
+      "id": "mse-early-3",
+      "group": "mse",
+      "spec": "eval/value_logit_distillation/mse-early-3.json"
+    }
+  ]
+}

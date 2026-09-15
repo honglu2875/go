@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "State-validated speculative decoding can reduce equal-prefix rollout wall time after charging additional device work and native/host overhead.",
+  "id": "trace_precision",
+  "kind": "equal_work_high_precision_trace_benchmark",
+  "parent": {
+    "recipe": "research/recipes/trace_throughput",
+    "source_sha256": "6b3dda944a04ea7334430ef05e8c9a362625e1cae5f1c3e47e367835f94ffbd4"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

@@ -1,0 +1,64 @@
+{
+  "candidate": "eval/board_state_distillation/exact.json",
+  "candidate_cpuct": 0.0,
+  "candidate_cpus": [
+    72,
+    73,
+    74,
+    75
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "causal_inference": "eval/endgame_search/search_off.json",
+  "game_timeout_seconds": 120,
+  "inference_native_binary_sha256": "6bf12686b663316658d323eae90a056f6ad18928f862fc5946d0ea12476ed8af",
+  "inference_native_snapshot": "1bc92cbd36c8de3afe5e64987f9b08a2c4ed29320de3395c46c96a85442b6441",
+  "katago_config": "eval/ownership_aux/katago_visits_1.cfg",
+  "katago_cpus": [
+    76,
+    77,
+    78,
+    79
+  ],
+  "katago_max_visits": 1,
+  "katago_weights": "eval/katago_early/level-3.json",
+  "komi": 7.5,
+  "max_game_moves": 256,
+  "openings": [
+    [
+      "A6",
+      "D7"
+    ],
+    [
+      "C5",
+      "B4"
+    ],
+    [
+      "A2",
+      "E1"
+    ],
+    [
+      "H8",
+      "G5"
+    ],
+    [
+      "A1",
+      "J6"
+    ],
+    [
+      "E3",
+      "H7"
+    ],
+    [
+      "E7",
+      "B6"
+    ],
+    [
+      "J3",
+      "H8"
+    ]
+  ],
+  "purpose": "Fresh fixed-model value-rescaling ablation; all other inference settings, openings and external seeds are paired between arms.",
+  "schema_version": 1,
+  "seed_prefix": "endgame-rescale-91268027-early-0",
+  "size": 9
+}

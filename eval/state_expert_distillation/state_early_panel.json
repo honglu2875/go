@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "state",
+      "id": "state-early-0",
+      "spec": "eval/state_expert_distillation/state-early-0.json"
+    },
+    {
+      "group": "state",
+      "id": "state-early-1",
+      "spec": "eval/state_expert_distillation/state-early-1.json"
+    },
+    {
+      "group": "state",
+      "id": "state-early-2",
+      "spec": "eval/state_expert_distillation/state-early-2.json"
+    },
+    {
+      "group": "state",
+      "id": "state-early-3",
+      "spec": "eval/state_expert_distillation/state-early-3.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

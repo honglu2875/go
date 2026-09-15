@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Amortizing identical learned-network evaluations changes transport latency; measure numerical changes explicitly before learning comparisons.",
+  "id": "inference_numerics",
+  "kind": "fixed_input_inference_probe",
+  "parent": {
+    "recipe": "research/recipes/root_prefetch",
+    "source_sha256": "d69d7b791247ade6e5891dd7be2e4403d840a01538c70d9036ca71b617e03b3c"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

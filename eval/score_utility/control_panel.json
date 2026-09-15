@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "workers": 4,
+  "matches": [
+    {
+      "id": "control-v1-p0",
+      "group": "control-v1",
+      "spec": "eval/score_utility/control-v1-p0.json"
+    },
+    {
+      "id": "control-v1-p1",
+      "group": "control-v1",
+      "spec": "eval/score_utility/control-v1-p1.json"
+    },
+    {
+      "id": "control-v16-p0",
+      "group": "control-v16",
+      "spec": "eval/score_utility/control-v16-p0.json"
+    },
+    {
+      "id": "control-v16-p1",
+      "group": "control-v16",
+      "spec": "eval/score_utility/control-v16-p1.json"
+    }
+  ]
+}

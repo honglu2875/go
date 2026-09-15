@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "level-2",
+      "id": "control-level-2-chunk-0",
+      "spec": "eval/katago_ladder_confirmation/control-level-2-chunk-0.json"
+    },
+    {
+      "group": "level-2",
+      "id": "control-level-2-chunk-1",
+      "spec": "eval/katago_ladder_confirmation/control-level-2-chunk-1.json"
+    },
+    {
+      "group": "level-3",
+      "id": "control-level-3-chunk-0",
+      "spec": "eval/katago_ladder_confirmation/control-level-3-chunk-0.json"
+    },
+    {
+      "group": "level-3",
+      "id": "control-level-3-chunk-1",
+      "spec": "eval/katago_ladder_confirmation/control-level-3-chunk-1.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

@@ -1,0 +1,12 @@
+{
+  "model": "kata9x9-b18c384nbt-20231025",
+  "url": "https://github.com/lightvector/KataGo/releases/download/v1.13.2-kata9x9/kata9x9-b18c384nbt-20231025.bin.gz",
+  "sha256": "a1298ce1adc1dad7bd868ca962b2384cc8388ed373a00e6bae1114fa6f9e2d61",
+  "bytes": 97878277,
+  "path": ".gozero/external/models/a1298ce1adc1dad7bd868ca962b2384cc8388ed373a00e6bae1114fa6f9e2d61/kata9x9-b18c384nbt-20231025.bin.gz",
+  "board_sizes": [
+    9
+  ],
+  "role": "evaluation_only",
+  "reference_page": "https://github.com/lightvector/KataGo/releases/tag/v1.13.2-kata9x9"
+}

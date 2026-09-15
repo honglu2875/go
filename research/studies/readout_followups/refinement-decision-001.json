@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "kind": "refinement_screen_decision",
+  "created_unix": 1789443718.5478036,
+  "contrast_sha256": "f7dbe01dc5e14adb4f1601898b992bd0e77d211b85b15ac16524c87aacd2fb3a",
+  "checkpoint_replica_sha256": "dfab6359ff86bb13c417fc4dc6c442b91efdeaa1e1cb822115d394a904109427",
+  "relative_endpoint_gain": -0.016132165693550027,
+  "relative_last_three_mean_gain": -0.027278720400285783,
+  "replicate": false,
+  "selected_parent": "rank64_first_pass_auxiliary",
+  "next_intervention": "larger_fixed_strong9_comparison",
+  "interpretation": "The extra spatial query did not improve the paired endpoint or last-three-validation mean. All three planned readout screens are closed; retain the established bilinear rank64 architecture. Both training-probe and validation losses continue to fall, with no sustained overfit flag."
+}

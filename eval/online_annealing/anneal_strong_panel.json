@@ -1,0 +1,16 @@
+{
+  "matches": [
+    {
+      "group": "anneal-strong",
+      "id": "anneal-strong-0",
+      "spec": "eval/online_annealing/anneal-strong-0.json"
+    },
+    {
+      "group": "anneal-strong",
+      "id": "anneal-strong-1",
+      "spec": "eval/online_annealing/anneal-strong-1.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 2
+}

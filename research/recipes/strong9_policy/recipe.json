@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Larger fixed strong-teacher 9x9 policy comparison",
+  "hypothesis": "Compare the selected causal transformer and KataGo CNN on the same larger raw-teacher corpus, with complete histories and both natural and family-aware validation.",
+  "requires_native": false
+}

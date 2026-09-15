@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Diagnose whether Gumbel value rescaling changes pass decisions under the same frozen student and 16-simulation budget. The complete parent trainer remains cloneable; this stage trains no model.",
+  "id": "endgame_search",
+  "kind": "board_causal_training_with_endgame_diagnostic",
+  "parent": {
+    "recipe": "research/recipes/board_state_distillation",
+    "source_sha256": "5d0e75a1b7d3d196b0ffb4829bbc752102b82dd05097b3fb026af048dd2fa6d1"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

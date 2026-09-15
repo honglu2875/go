@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "kind": "fixed_network_batch_shape_qualification",
+  "registered_unix": 1789111352.6689851,
+  "snapshots": {
+    "batch128": "fe11ab58fb833b5bd265d651ab08720cf953bf30a6ddc4513e4703a3f3926891",
+    "batch1024": "17439aadba7b40c0f68e6ce15bfdeb7f4f3963c84cd6d198ad12abb42b880fb6"
+  },
+  "cpu_qualification": "runs/qualification/rollout-batching-cpu-comparison.json",
+  "cpu_qualification_sha256": "7abdcef1f62b8370118580ed6b5220a1fdbcaea04d2bba378517abc89f605fad",
+  "hypothesis": "Batch 1024 reduces eight serialized inference dispatches to one for identical pending games. Exact native work must survive different batch-shaped JAX executables.",
+  "constants": {
+    "games_per_host": 1024,
+    "hosts": 4,
+    "local_tpu_chips": 4,
+    "workers_per_host": 32,
+    "model_export_sha256": "b20748c9aad12e6e100dcbcff861200f7a4fd756d728690c308162505ab15870",
+    "simulations_excluding_root": 16,
+    "warmup_turns": 32,
+    "measured_turns": 128,
+    "seed": 27,
+    "worker_cpus": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ]
+  },
+  "budget": {
+    "timeout_per_attempt_seconds": 600,
+    "maximum_attempts": 4,
+    "order": [
+      128,
+      1024
+    ]
+  },
+  "required_validation": "Frozen compare.py requires identical feature requests, targets, game records, complete actor state except diagnostic root values (absolute tolerance 1e-5), and useful work counters on all four hosts. Any mismatch is a failure, not evidence of speedup.",
+  "timing_interpretation": "Qualification includes trace hashing and can overlap the FPU KataGo evaluation on disjoint physical CPUs64-95. Timing is diagnostic only. Formal timing follows only after parity, with hashing disabled, registered repetitions, and no other evaluation workload."
+}

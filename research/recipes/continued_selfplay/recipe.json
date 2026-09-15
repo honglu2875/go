@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "id": "continued_selfplay",
+  "kind": "complete_checkpoint_fork_training",
+  "native_dependency": "Frozen config pins an independently qualified native receipt and binary; no implicit rebuild.",
+  "parent": {
+    "model_sha256": "776f775862a57d2f88fe1168a471c7d172b372868159b5f7e4f39d2f1515ed66",
+    "recipe": "research/recipes/gumbel_attention"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

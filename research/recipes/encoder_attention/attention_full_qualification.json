@@ -1,0 +1,76 @@
+{
+  "checkpoint_every": 4,
+  "dataset": {
+    "bucket_probabilities": [
+      0.8449186562433975,
+      0.14958799915487006,
+      0.005493344601732516
+    ],
+    "buckets": [
+      128,
+      256,
+      384
+    ],
+    "manifest_sha256": "fc4f37a4cc0837af59e3bb3684c424e9dc85e48c2c5d5fe2afe9b0b99667ca25",
+    "path": "/workspace/go/.gozero/datasets/katago-v7-12e944b6",
+    "warmup_buckets": [
+      128,
+      256,
+      384
+    ]
+  },
+  "eval_every": 4,
+  "evaluation": {
+    "games_per_bucket": 4,
+    "run_test": false
+  },
+  "expected_devices": 16,
+  "expected_processes": 4,
+  "kind": "fixed_policy_learning",
+  "learner": {
+    "augmentation": "d4",
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "end_learning_rate": 0.0003,
+    "epsilon": 1e-08,
+    "games_per_host": 32,
+    "learning_rate": 0.001,
+    "max_grad_norm": 1.0,
+    "warmup_steps": 2,
+    "weight_decay": 0.01
+  },
+  "log_every": 1,
+  "model": {
+    "architecture": "causal_visual_policy",
+    "attention_backend": "splash",
+    "connector_channels": 64,
+    "dtype": "bfloat16",
+    "encoder_attention_blocks": 4,
+    "encoder_attention_heads": 12,
+    "encoder_attention_mlp_hidden": 1024,
+    "encoder_blocks": 24,
+    "encoder_expansion": 4,
+    "encoder_layer_scale": 1e-06,
+    "encoder_passes": 2,
+    "encoder_rematerialize": true,
+    "encoder_rope_theta": 10000.0,
+    "encoder_width": 768,
+    "heads": 12,
+    "kv_heads": 4,
+    "layers": 18,
+    "max_board_size": 9,
+    "max_positions": 512,
+    "mlp_hidden": 2048,
+    "norm_epsilon": 1e-06,
+    "policy_context_dim": 64,
+    "policy_spatial_bias": true,
+    "rematerialize": true,
+    "rope_theta": 10000.0,
+    "width": 768
+  },
+  "platform": "tpu",
+  "profile_decode": true,
+  "schema_version": 1,
+  "seed": 91312427,
+  "steps": 4
+}

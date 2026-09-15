@@ -1,0 +1,36 @@
+{
+  "release": "v1.18.1",
+  "commit": "92ee95c0a4b25fec214da00951ab69e97e207729",
+  "source_url": "https://codeload.github.com/lightvector/KataGo/tar.gz/92ee95c0a4b25fec214da00951ab69e97e207729",
+  "source_archive_sha256": "8be2d4053c02dcb2e3e98eff02ba3df8d007718fb140b487fb34eda6a174bc21",
+  "source_path": ".gozero/external/katago-source/92ee95c0a4b25fec214da00951ab69e97e207729/KataGo-92ee95c0a4b25fec214da00951ab69e97e207729",
+  "backend": "EIGEN",
+  "avx2": true,
+  "eigen": {
+    "version": "3.4.0",
+    "url": "https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz",
+    "archive_sha256": "8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72",
+    "path": ".gozero/external/eigen/8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72/eigen-3.4.0"
+  },
+  "cmake_version": "3.31.6",
+  "configure_arguments": [
+    "-S",
+    ".gozero/external/katago-source/92ee95c0a4b25fec214da00951ab69e97e207729/KataGo-92ee95c0a4b25fec214da00951ab69e97e207729/cpp",
+    "-B",
+    ".gozero/build/katago-92ee95c0",
+    "-DUSE_BACKEND=EIGEN",
+    "-DUSE_AVX2=1",
+    "-DBUILD_DISTRIBUTED=0",
+    "-DNO_GIT_REVISION=1",
+    "-DKATAGO_AUTO_FETCH_DEPS=OFF",
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DEIGEN3_INCLUDE_DIRS=/workspace/go/.gozero/external/eigen/8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72/eigen-3.4.0"
+  ],
+  "compiler": "c++ (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0",
+  "binary_path": ".gozero/build/katago-92ee95c0/katago",
+  "binary_sha256": "1ae1ed2108caa025bba853634b7f1aad3a29baa0ba27b4a298759ca6b172d104",
+  "version_output": "KataGo v1.18.1\nGit revision: <omitted>\nCompile Time: Sep 11 2026 03:46:38\nUsing Eigen(CPU) backend\nCompiled with AVX2 and FMA instructions\n",
+  "dynamic_dependencies": "\tlinux-vdso.so.1 (0x00007fffd24da000)\n\t/usr/lib/x86_64-linux-gnu/libtcmalloc.so.4 (0x00007faf3c8da000)\n\tlibz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x00007faf3c8b5000)\n\tlibpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007faf3c892000)\n\tlibstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007faf3c6b0000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007faf3c561000)\n\tlibgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007faf3c546000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007faf3c352000)\n\tlibunwind.so.8 => /lib/x86_64-linux-gnu/libunwind.so.8 (0x00007faf3c335000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007faf3d2ec000)\n\tliblzma.so.5 => /lib/x86_64-linux-gnu/liblzma.so.5 (0x00007faf3c30c000)\n",
+  "build_parallelism": 16,
+  "cmake_binary_sha256": "57452fa01ed0f69552c06d3e25edd0d9375347b982dfb709393526cb45396d6b"
+}

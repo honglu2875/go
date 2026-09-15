@@ -1,0 +1,29 @@
+{
+  "candidate": "eval/root_prefetch_learning_27/candidate.json",
+  "candidate_cpuct": 0.0,
+  "candidate_cpus": [
+    64,
+    65,
+    66,
+    67
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "game_timeout_seconds": 360,
+  "katago_config": "eval/ownership_aux/katago_visits_1.cfg",
+  "katago_cpus": [
+    68,
+    69,
+    70,
+    71
+  ],
+  "katago_max_visits": 1,
+  "komi": 7.5,
+  "max_game_moves": 324,
+  "openings": [
+    []
+  ],
+  "purpose": "Required strong KataGo anchor for the independent-seed attention replication.",
+  "schema_version": 1,
+  "seed_prefix": "gozero-gumbel-extended-pilot-27-p0",
+  "size": 9
+}

@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "At 16 simulations, network-value FPU prevents zero-valued unvisited actions from dominating losing roots and improves policy-improvement signal. Compare None and fixed reduction 0.2 with the ownership loss held at 1.5.",
+  "id": "low_visit_puct",
+  "kind": "low_visit_puct_training",
+  "parent": {
+    "recipe": "research/recipes/ownership_aux",
+    "source_sha256": "df1687d3dc32f25e4a5f7b92646463d13a59357cfddeaeb15544b9bf77461cb4"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

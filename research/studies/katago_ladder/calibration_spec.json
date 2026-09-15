@@ -1,0 +1,119 @@
+{
+  "arms": {
+    "candidate": {
+      "descriptor": "eval/gumbel_search/candidate.json",
+      "descriptor_sha256": "c7c1cb24c4164eb2012be58ef14acbe888999af3dd3ecf0419f0584c63ac9579",
+      "panel": "eval/katago_early/candidate_panel.json",
+      "panel_sha256": "d0c72f67a26662e9d67acf6f0676757ffe7f3f2051adee1a25d60da7d60f1e2a"
+    },
+    "control": {
+      "descriptor": "eval/gumbel_search/control.json",
+      "descriptor_sha256": "7d7bac899c3784cc58ebd0e8dc2cbd33c614fd256dce41796809606532c6094b",
+      "panel": "eval/katago_early/control_panel.json",
+      "panel_sha256": "f4264d348f556a276e59b5a31e7bf929bf5247b960b848fada9f9a9281f1bdb1"
+    }
+  },
+  "budget": {
+    "candidate_simulations": 16,
+    "game_timeout_seconds": 180,
+    "games_per_arm_per_level": 4,
+    "katago_visits": 1,
+    "max_game_moves": 648,
+    "maximum_games": 32,
+    "maximum_total_eval_seconds": 1800,
+    "order": [
+      "control",
+      "candidate"
+    ],
+    "training_attempts": 0
+  },
+  "evaluation_snapshot": "23df99cd272fcf74cd4823175302c1dc612eb97d42b13d0b49062f8022ca6f55",
+  "katago_binary_sha256": "1ae1ed2108caa025bba853634b7f1aad3a29baa0ba27b4a298759ca6b172d104",
+  "kind": "official_early_katago_ladder_calibration",
+  "levels": [
+    {
+      "board_sizes": [
+        9
+      ],
+      "bytes": 5077550,
+      "descriptor_sha256": "330de4c2a1f905c80ca45f66dac3d6c84f646cfbb58952277b9a530a5a446f33",
+      "model": "kata1-b6c96-s938496-d1208807",
+      "path": ".gozero/external/models/d07ae856740d284494325661d7cbcde0d1aa3ece3ede6b54c70f2fa5da9e0c09/kata1-b6c96-s938496-d1208807.txt.gz",
+      "reference_page": "https://katagotraining.org/networks/",
+      "role": "evaluation_only",
+      "sha256": "d07ae856740d284494325661d7cbcde0d1aa3ece3ede6b54c70f2fa5da9e0c09",
+      "url": "https://media.katagotraining.org/uploaded/networks/models/kata1/kata1-b6c96-s938496-d1208807.txt.gz"
+    },
+    {
+      "board_sizes": [
+        9
+      ],
+      "bytes": 4991481,
+      "descriptor_sha256": "a13cac2a0a43a76027e15186b69423d611950b86ddf5ad0ec74eaf47b24cf935",
+      "model": "kata1-b6c96-s10014464-d2201128",
+      "path": ".gozero/external/models/760206c686a481e83bbb859c8b0062177c4717742c76ca81d8b23f960a54bfa7/kata1-b6c96-s10014464-d2201128.txt.gz",
+      "reference_page": "https://katagotraining.org/networks/",
+      "role": "evaluation_only",
+      "sha256": "760206c686a481e83bbb859c8b0062177c4717742c76ca81d8b23f960a54bfa7",
+      "url": "https://media.katagotraining.org/uploaded/networks/models/kata1/kata1-b6c96-s10014464-d2201128.txt.gz"
+    },
+    {
+      "board_sizes": [
+        9
+      ],
+      "bytes": 4980520,
+      "descriptor_sha256": "ff860a0cde7f61632bcde5d1344d1778721fd2672b213aadf989e22f66fecbb3",
+      "model": "kata1-b6c96-s16525312-d2925067",
+      "path": ".gozero/external/models/d37e7501e498c9bc754d869438d8d3b4a736619fe9d7055022426aaff5dd6470/kata1-b6c96-s16525312-d2925067.txt.gz",
+      "reference_page": "https://katagotraining.org/networks/",
+      "role": "evaluation_only",
+      "sha256": "d37e7501e498c9bc754d869438d8d3b4a736619fe9d7055022426aaff5dd6470",
+      "url": "https://media.katagotraining.org/uploaded/networks/models/kata1/kata1-b6c96-s16525312-d2925067.txt.gz"
+    },
+    {
+      "board_sizes": [
+        9
+      ],
+      "bytes": 4975306,
+      "descriptor_sha256": "1ed86e4e86e41b54a14a3fb2e59a46ebfb477aafec258b9fbff586ddd1223e83",
+      "model": "kata1-b6c96-s24455424-d3879081",
+      "path": ".gozero/external/models/36420d10c6a4bbf243d991b4a2920dc6ff42f6c2d0a1cfaa438a4daf2b0254ac/kata1-b6c96-s24455424-d3879081.txt.gz",
+      "reference_page": "https://katagotraining.org/networks/",
+      "role": "evaluation_only",
+      "sha256": "36420d10c6a4bbf243d991b4a2920dc6ff42f6c2d0a1cfaa438a4daf2b0254ac",
+      "url": "https://media.katagotraining.org/uploaded/networks/models/kata1/kata1-b6c96-s24455424-d3879081.txt.gz"
+    }
+  ],
+  "limitations": [
+    "Four games per arm per level provide coarse calibration only.",
+    "The official site ratings were obtained in other conditions and are not 9x9 or human ratings.",
+    "The early networks are approximately one million parameters and use historical training; beating them does not establish superiority over current KataGo.",
+    "The strong pinned 9x9 anchor remains required for all research candidates.",
+    "CPU evaluation overlaps the seed-28 training attempt on separate physical cores."
+  ],
+  "official_index_sha256": "58e4c82f859f5473d28bd76f626c3c3df6a3fe8cfae4243e14db39ac9e91c6fd",
+  "openings": [
+    [],
+    [
+      "C3",
+      "G7"
+    ]
+  ],
+  "purpose": "Select an informative lower-strength absolute anchor for future learning curves. This calibration provides no recipe promotion or sample-efficiency claim.",
+  "registered_unix": 1789126177.184233,
+  "required_checks": [
+    "Frozen source, native, model and configuration identities",
+    "Every board agrees with real KataGo",
+    "Every complete final score agrees with KataGo",
+    "Caps and crashes have no assigned outcome"
+  ],
+  "rules": {
+    "ko": "positional",
+    "komi": 7.5,
+    "scoring": "pass_alive_area",
+    "size": 9,
+    "suicide": true
+  },
+  "schema_version": 1,
+  "selection_rule": "Report all levels and arms. An informative candidate level has all four games completed and an observed score strictly between zero and one. If several qualify, carry all qualifying levels to a fresh larger panel; do not select by the gap between training recipes. If none qualify, report the floor or ceiling without extrapolated Elo."
+}

@@ -1,0 +1,34 @@
+{
+  "budget": {
+    "maximum_attempts": 2,
+    "minimum_free_bytes": 8589934592,
+    "order": [
+      "continuous96",
+      "resume48to96"
+    ],
+    "prepare_timeout_seconds": 180,
+    "reserved_chips": 16,
+    "timeout_seconds_per_attempt": 180
+  },
+  "claims_failure_injection": false,
+  "claims_strength": false,
+  "cnn_regression": {
+    "path": "runs/qualification/gumbel-attention-cnn-c458f549-r2/regression.json",
+    "sha256": "ddd114f04cac33d88eefb29e2b88c0b907423b5dabbf318760c5507fe97f9612"
+  },
+  "cpu_resume": {
+    "path": "runs/qualification/gumbel-attention-0f2cf041/comparison.json",
+    "sha256": "891d1921336a5a16c3ef1ed38096579b1f0bd491ea8feabd5142a9334464a472"
+  },
+  "kind": "gumbel_attention_tpu_training_qualification",
+  "native_sha256": "ac20425bfbd66610d769782a24814becfa532bb3991eb5d12ac718d7c9393a6b",
+  "purpose": "Qualify the combined search/architecture trainer on the supplied topology before a larger registered architecture study.",
+  "registered_unix": 1789126467.5353725,
+  "required": [
+    "Complete 96 turns on all four hosts",
+    "Resume a committed checkpoint at turn48 in fresh processes",
+    "Compare all final arrays, actors, non-timing scientific state and every subsequent game"
+  ],
+  "schema_version": 1,
+  "snapshot_id": "23df99cd272fcf74cd4823175302c1dc612eb97d42b13d0b49062f8022ca6f55"
+}

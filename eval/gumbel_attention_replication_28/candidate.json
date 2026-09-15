@@ -1,0 +1,10 @@
+{
+  "model_export_path": "runs/pod-20260911T124618Z-3c7697c4/rank-0/artifacts/model_export.npz",
+  "model_export_sha256": "e163aa0cbbd87a16d659a4394d357f3aa05f48e79c3c966e79c2d1a4a9913db0",
+  "network_version": 32687,
+  "schema_version": 1,
+  "training_lineage": "Independent seed28 Gumbel attention replication, 16,777,216 real moves. No KataGo labels or weights in training.",
+  "training_result_path": "runs/pod-20260911T124618Z-3c7697c4/rank-0/artifacts/result.json",
+  "training_result_sha256": "ecfacfb10b8675d930603165ed6b9e320ade2bf85113d180599423d214a34895",
+  "training_snapshot": "01fd1303a7719f5c8e50a8736d896f60b9d1e150ef902e9ee37685a1137da836"
+}

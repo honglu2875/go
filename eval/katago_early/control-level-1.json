@@ -1,0 +1,34 @@
+{
+  "candidate": "eval/gumbel_search/control.json",
+  "candidate_cpuct": 1.5,
+  "candidate_cpus": [
+    72,
+    73,
+    74,
+    75
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "game_timeout_seconds": 180,
+  "katago_config": "eval/ownership_aux/katago_visits_1.cfg",
+  "katago_cpus": [
+    76,
+    77,
+    78,
+    79
+  ],
+  "katago_max_visits": 1,
+  "katago_weights": "eval/katago_early/level-1.json",
+  "komi": 7.5,
+  "max_game_moves": 648,
+  "openings": [
+    [],
+    [
+      "C3",
+      "G7"
+    ]
+  ],
+  "purpose": "Fixed early-checkpoint ladder calibration; no algorithm promotion or human-rank estimate.",
+  "schema_version": 1,
+  "seed_prefix": "gozero-early-kata-calibration-27",
+  "size": 9
+}

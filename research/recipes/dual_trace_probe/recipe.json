@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "id": "dual_trace_probe",
+  "kind": "paired_causal_policy_qualification",
+  "requires_native": true,
+  "claims_go_strength": false,
+  "hypothesis": "Two player views and parallel opponent forecasts can resolve multiple authoritative moves per device dispatch while preserving a sequential causal policy's actions. This untrained execution probe does not produce MCTS targets or measure learning."
+}

@@ -1,0 +1,64 @@
+{
+  "candidate": "eval/value_logit_distillation/bce2.json",
+  "candidate_cpuct": 0.0,
+  "candidate_cpus": [
+    88,
+    89,
+    90,
+    91
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "causal_inference": "eval/causal_student/search.json",
+  "game_timeout_seconds": 120,
+  "inference_native_binary_sha256": "6bf12686b663316658d323eae90a056f6ad18928f862fc5946d0ea12476ed8af",
+  "inference_native_snapshot": "1bc92cbd36c8de3afe5e64987f9b08a2c4ed29320de3395c46c96a85442b6441",
+  "katago_config": "eval/ownership_aux/katago_visits_1.cfg",
+  "katago_cpus": [
+    92,
+    93,
+    94,
+    95
+  ],
+  "katago_max_visits": 1,
+  "katago_weights": "eval/katago_early/level-3.json",
+  "komi": 7.5,
+  "max_game_moves": 256,
+  "openings": [
+    [
+      "B8",
+      "E6"
+    ],
+    [
+      "B2",
+      "C2"
+    ],
+    [
+      "E8",
+      "C4"
+    ],
+    [
+      "D1",
+      "A2"
+    ],
+    [
+      "B6",
+      "F6"
+    ],
+    [
+      "D5",
+      "J1"
+    ],
+    [
+      "B7",
+      "B5"
+    ],
+    [
+      "D7",
+      "G9"
+    ]
+  ],
+  "purpose": "Paired fixed-final-checkpoint MSE/BCE2 training ablation; all inference settings and external seeds are matched.",
+  "schema_version": 1,
+  "seed_prefix": "value-logit-91310041-early-3",
+  "size": 9
+}

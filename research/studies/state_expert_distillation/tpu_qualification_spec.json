@@ -1,0 +1,54 @@
+{
+  "arms": {
+    "history": {
+      "config_sha256": "7b4292eabaff44bca7ac40ef4bb31a7988dceb4c27f24ee5f07d301685633207",
+      "expected_parameters": 894208,
+      "expected_recovery_arrays": 708,
+      "snapshot": "d95b5799ffd3ea7073d94cecc0c11e1fb1a4b11fbb63ccaf2bb432749e3ce077"
+    },
+    "state": {
+      "config_sha256": "abb8d0213d6f7bed29d4621f7c839e00ec4cc24fb3d5e9f7575f0e725aba7dd8",
+      "expected_parameters": 909174,
+      "expected_recovery_arrays": 912,
+      "snapshot": "7c60d59a3f26a5d7c3c1be332284a205f2fc71ef62b53a361867c8ab5b6cdc2d"
+    }
+  },
+  "cpu_qualified_code_sha256": {
+    "research/recipes/state_expert_distillation/config.py": "3f30574b9d9b6969604a32861167f99269d87854060a790c2401029605a8999e",
+    "research/recipes/state_expert_distillation/data.py": "d3728cd275dd697836b6d79b1400bdcb2cc9f509cfa1d3d9d4efc4d3c4eb6a45",
+    "research/recipes/state_expert_distillation/history_model.py": "77a0b4f04fb35065783f588e10e7b6407e733843d61bd9d9685653c19d361559",
+    "research/recipes/state_expert_distillation/model.py": "c798f0229cc1298d6571edefee94feaf647c0f713f4350cd83bd4ff31473d07e",
+    "research/recipes/state_expert_distillation/qualify_recovery.py": "d8897887238b4c9805280844a8eb23d0d5dffa96eb912dc8d34e4a16b248c51c",
+    "research/recipes/state_expert_distillation/run_cpu_qualification.py": "61632516653c04e15ec5f302498a9af28edc7d56f73aec3b2fba1a70e8352f37",
+    "research/recipes/state_expert_distillation/spatial_model.py": "3b471ad6183660515fbd66cb75fd335f95466644c491b7a34b5ac88108904079",
+    "research/recipes/state_expert_distillation/state_features.py": "1332a08c992d1cc066b4570b5431801fb842cdb2e74f03a91d13a52e58174efe",
+    "research/recipes/state_expert_distillation/test_model.py": "c0bef10a062d7be5852c050f7d1a15a8101e0960cdf01739c3286daf4796f7db",
+    "research/recipes/state_expert_distillation/test_native_features.py": "9ffbb2e0cb9a96c8305cca3e37d96f51d07d128f73c649a1c17cc689779e866c",
+    "research/recipes/state_expert_distillation/train.py": "217d5f83aeb46dda04a5adbbe5cd115f80ace48d492a989ba078ae7107405bcf"
+  },
+  "expected_devices": 16,
+  "expected_hosts": 4,
+  "kind": "state_expert_tpu_recovery_qualification",
+  "limitations": [
+    "Same disks/topology only; no host-loss or external durability claim.",
+    "Uninterrupted and resumed attempts are qualification, not independent seeds or timing replicates.",
+    "Training and inference cost estimates do not establish strength or measured MFU."
+  ],
+  "maximum_attempts": 4,
+  "maximum_seconds_per_attempt": 600,
+  "output": "runs/qualification/state-expert-tpu-6a69ed81",
+  "preflight_maximum_age_seconds": 1800,
+  "prepare_timeout_seconds": 180,
+  "prerequisites_sha256": {
+    "research/studies/state_expert_distillation/cpu_result.json": "114e42161cc8bb5f4d74fb9500fe1e31046c9b2814e20e5e4cc4fb487c66befd",
+    "research/studies/state_expert_distillation/gtp_result.json": "cdf78850cb9bd8328910e3dc90ab848bf6d9b718ad08c4f0f54ed507b458e46e",
+    "research/studies/state_expert_distillation/model_inspection.json": "457afef3f63d6e80898091df0a18dd9b3adc8d81e5fa3fcbe5d4510432b7cb64",
+    "runs/qualification/state-expert-host-preflight-d95b5799/result.json": "77a0baec0012a53148dcf59fbb47fd3d3bd761bfa5f2063313ba4298a08440cf"
+  },
+  "primary": "Both architectures complete sixteen updates; fresh-process continuation from checkpoint eight exactly matches every saved parameter, Adam moment, sampler state, non-timing counter, final metric and exported model across four hosts. Stop on any failed attempt; no scientific retry.",
+  "registered_unix": 1789165415.8666885,
+  "resume_turn": 8,
+  "runner_snapshot": "6a69ed8105960677f2506fb2c4b9ac3f37cc3d7eb708c1680873e3edeba26f79",
+  "schema_version": 1,
+  "steps": 16
+}

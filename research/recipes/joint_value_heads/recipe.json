@@ -1,0 +1,1 @@
+{"schema_version":1,"name":"Joint-study value head qualification","hypothesis":"A pure JAX value branch can match pinned KataGo arithmetic and support correctly normalized signed-value metrics for complete histories.","requires_native":false}

@@ -1,0 +1,11 @@
+{
+  "release": "v1.18.1",
+  "release_url": "https://github.com/lightvector/KataGo/releases/tag/v1.18.1",
+  "backend": "eigenavx2",
+  "archive_url": "https://github.com/lightvector/KataGo/releases/download/v1.18.1/katago-v1.18.1-eigenavx2-linux-x64.zip",
+  "archive_sha256": "33e79780dbe3bf6ee859e16f64952cdfc90f7210c8f71ad978ffcba85ad20d79",
+  "binary_path": ".gozero/external/katago/33e79780dbe3bf6ee859e16f64952cdfc90f7210c8f71ad978ffcba85ad20d79/katago",
+  "binary_sha256": "05c3450274bb8008e57e3011a7c80eb6e370ea395d29ab49c400bda9473766b1",
+  "status": "not_used",
+  "reason": "Prebuilt AppImage needs unavailable FUSE/libssl.so.3 on this host; qualified locally compiled official source is recorded in katago_build.json."
+}

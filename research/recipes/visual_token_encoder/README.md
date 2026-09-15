@@ -1,0 +1,15 @@
+This clone studies convolutional encoder depth and within-board attention on the fixed V7 policy dataset. It does not run self-play or establish Go strength.
+
+The inherited control is two stride-1, SAME-padded 3×3 convolutions with per-location RMSNorm and SiLU, followed by 36 overlapping 2×2 patches on a 9×9 board. The decoder retains width 768, 34 layers, 12 query heads / 4 KV heads, a SwiGLU FFN, full move history, and one tied policy head. There is no batch normalization.
+
+Prepared interventions are isolated: four convolutions instead of two; or bidirectional attention among the known board patches and policy-readout token inside each observation. The latter retains causality between moves and never exposes the current action to its policy. The default configuration is bitwise equivalent to the inherited model, including gradients. A combined intervention is prepared but is not an automatic learning commitment.
+
+Four 3×3 convolutions increase the nominal receptive field from 5×5 to 9×9. This is a local-structure hypothesis, informed by [Early Convolutions Help Transformers See Better](https://arxiv.org/abs/2106.14881) and [CoAtNet](https://arxiv.org/abs/2106.04803); their image-classification findings do not demonstrate a Go benefit. The observation attention mask is inspired by the image-prefix attention in [PaliGemma](https://arxiv.org/html/2407.07726v2), generalized here to repeated observation/action frames.
+
+Every candidate must pass independent forward/gradient checks, future-action and future-board leakage tests, ragged cache equivalence, complete logical decoding-FLOP accounting, and a full TPU qualification before learning. The custom Splash mask additionally needs a TPU forward/backward comparison to transparent attention. Logical arithmetic matching is checked at 9×9, batch128, 128 previous moves; other histories, board sizes, physical compiler padding and measured time remain separate observations.
+
+The dataset, exact sampled games/D4 transforms, optimizer controls, 1024 updates, 11,469,333 training-position exposures and full validation population remain fixed. Learning rates are registered before each bounded run. Test games remain closed. The primary comparison is the final validation policy KL at equal exposure; time and phase-stratified KL are also reported.
+
+Temporary-checkpoint mode explicitly keeps new experimental arrays in /dev/shm and persists metadata and hashes on disk. A selected checkpoint can be promoted losslessly into preallocated byte fragments across the pod disks, then restored to the standard four-file format. RAM-only checkpoints are not durable, and automatic production restart from this experimental storage layout is not claimed.
+
+A later prepared ablation adds the mean of the current board soft tokens to the learned policy-readout token, before the causal trunk. This gives the current observation a direct residual path independent of attention over history. It adds no parameters; complete traced pooling work is included in its separate budget. This is a code-derived hypothesis, not a claimed learning result.

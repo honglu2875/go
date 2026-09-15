@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "training_snapshot": "7a7745037997ddad53162a92d2fbead438bc9a6235b240e9e973142772618b66",
+  "model_export_path": "runs/pod-20260911T051928Z-a9a51f16/rank-0/artifacts/model_export.npz",
+  "model_export_sha256": "cdf6a6ece4f6cae578a1de5a8e5a404c07239597406682a97e5894f9cf0fa643",
+  "training_result_path": "runs/pod-20260911T051928Z-a9a51f16/rank-0/artifacts/result.json",
+  "training_result_sha256": "ac66d644b406947cefa931eada25e61d8a56316fe96bf299971e2b771b1aadc6",
+  "network_version": 418,
+  "training_lineage": "from scratch; official KataGo weights are evaluation-only"
+}

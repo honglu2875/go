@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "history-v1",
+      "id": "history-strong-v1-0",
+      "spec": "eval/state_expert_distillation/history-strong-v1-0.json"
+    },
+    {
+      "group": "history-v1",
+      "id": "history-strong-v1-1",
+      "spec": "eval/state_expert_distillation/history-strong-v1-1.json"
+    },
+    {
+      "group": "history-v16",
+      "id": "history-strong-v16-0",
+      "spec": "eval/state_expert_distillation/history-strong-v16-0.json"
+    },
+    {
+      "group": "history-v16",
+      "id": "history-strong-v16-1",
+      "spec": "eval/state_expert_distillation/history-strong-v16-1.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

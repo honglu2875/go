@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "kind": "offline_corpus_transform",
+  "release": "/dev/shm/go9x9-release-v1/publish",
+  "release_id": "6a26ffa743f3c7be95d783102f6b3596e0ce69893c5a8e28dcca154dc54f05f4",
+  "worker_receipt": "/workspace/go/.gozero/build/katago-v7-12e944b6/receipt.json",
+  "worker_receipt_sha256": "9e7d8d4757c4214e25ea34a8ff3cbe57e1817abd7daf535117e0850eb0a6bd07",
+  "trajectory_audit": "/workspace/go/research/studies/strong9_scaling/trajectory-audit-001",
+  "feature_qualification": "/workspace/go/research/studies/strong9_scaling/feature-qualification-001.json",
+  "size": 9,
+  "komi": 7.5,
+  "chunk_games": 256,
+  "minimum_free_shm_gib": 64,
+  "minimum_memory_available_gib": 96,
+  "splits": [
+    "train",
+    "validation"
+  ],
+  "release_manifest_sha256": "68b05a2dca33859a9d0b3b9ee89d4ed242c45d427d0e3233c8093c91f3f16096",
+  "feature_qualification_sha256": "701da699ead94001d9765ee06dc5636d1164f1e10052156354868eb9cfbd4afd",
+  "trajectory_audit_sha256": "fa75401074d56cf562f841e4011a65d40f0c829c21750dda2105548a55138c41"
+}

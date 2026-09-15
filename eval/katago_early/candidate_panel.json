@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "level-0",
+      "id": "candidate-level-0",
+      "spec": "eval/katago_early/candidate-level-0.json"
+    },
+    {
+      "group": "level-1",
+      "id": "candidate-level-1",
+      "spec": "eval/katago_early/candidate-level-1.json"
+    },
+    {
+      "group": "level-2",
+      "id": "candidate-level-2",
+      "spec": "eval/katago_early/candidate-level-2.json"
+    },
+    {
+      "group": "level-3",
+      "id": "candidate-level-3",
+      "spec": "eval/katago_early/candidate-level-3.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

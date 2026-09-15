@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "training_snapshot": "a7bc602431e0e4c21f7adeefff646471ff0758aabfafdf48fcb1156383c327b6",
+  "model_export_path": "runs/qualification/gumbel-a7bc6024/continuous/model_export.npz",
+  "model_export_sha256": "a7ae37650f47f3098c488a31caa7b04aac4d21364ec604a2b4fddf7f285e627e",
+  "training_result_path": "runs/qualification/gumbel-a7bc6024/continuous/result.json",
+  "training_result_sha256": "1fa7ec70a20eb3ea9a93341024ad43678e8fe47b13b42098c4ba5b3777a888da",
+  "network_version": 87,
+  "training_lineage": "CPU from-scratch Gumbel self-play qualification; no external labels"
+}

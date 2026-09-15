@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "candidate": "eval/ownership_aux/candidate.json",
+  "katago_config": "eval/katago_9x9_smoke.cfg",
+  "openings": [
+    [
+      "C3",
+      "G7"
+    ]
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "candidate_cpuct": 1.5,
+  "katago_max_visits": 16,
+  "size": 9,
+  "komi": 7.5,
+  "max_game_moves": 324,
+  "game_timeout_seconds": 360,
+  "candidate_cpus": [
+    88,
+    89,
+    90,
+    91
+  ],
+  "katago_cpus": [
+    92,
+    93,
+    94,
+    95
+  ],
+  "seed_prefix": "gozero-ownership-pilot-27-p1",
+  "purpose": "Registered one-seed ownership component pilot; absolute real KataGo screen with matched profiles, paired colors and separate declared visit levels. No strength promotion."
+}

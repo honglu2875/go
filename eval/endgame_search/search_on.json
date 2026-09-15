@@ -1,0 +1,20 @@
+{
+  "cpuct": 0.0,
+  "fpu_reduction": null,
+  "gumbel": {
+    "gumbel_scale": 0.0,
+    "max_considered_actions": 16,
+    "maxvisit_init": 50.0,
+    "rescale_values": true,
+    "value_scale": 0.1
+  },
+  "history": 4,
+  "kind": "causal_mcts_inference",
+  "komi": 7.5,
+  "max_game_moves": 256,
+  "max_search_edges": 1000000,
+  "schema_version": 1,
+  "scoring": "pass_alive_area",
+  "simulations": 16,
+  "size": 9
+}

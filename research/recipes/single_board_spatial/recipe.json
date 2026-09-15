@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "One spatially shared linear correction exposes the existing encoder feature map directly to the single policy distribution, preserving one historical board token and the encoder/trunk allocation. Zero initialization preserves the baseline starting policy and all shared weights.",
+  "id": "single_board_spatial",
+  "kind": "sequential_policy_learnability",
+  "parent": {
+    "recipe": "research/recipes/single_board_shared",
+    "snapshot_id": "ee830175ff81ffd3e24abfb717cb4fbcd3dc3fcb69ac9bda48cf12bcdb9fd390"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

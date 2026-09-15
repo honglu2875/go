@@ -1,0 +1,46 @@
+{
+  "actors": {
+    "history": 4,
+    "komi": 7.5,
+    "max_game_moves": 324,
+    "root_legal_mask": true,
+    "scoring": "pass_alive_area",
+    "size": 9
+  },
+  "candidate": "eval/board_state_distillation/exact.json",
+  "expected_devices": 16,
+  "expected_processes": 4,
+  "games": 64,
+  "horizon": 4,
+  "matmul_precision": "highest",
+  "model": {
+    "behavior_temperature": 1.0,
+    "blocks": 4,
+    "board_blocks": 2,
+    "board_mode": "exact",
+    "board_width": 32,
+    "dtype": "float32",
+    "expert_temperature": 1.0,
+    "heads": 4,
+    "komi": 7.5,
+    "max_tokens": 329,
+    "size": 9,
+    "width": 128
+  },
+  "orders": [
+    [
+      "sequential",
+      "behavior",
+      "joint"
+    ]
+  ],
+  "platform": "tpu",
+  "profile": false,
+  "profile_moves_per_game": 32,
+  "qualification_moves_per_game": 128,
+  "samples": 4,
+  "schema_version": 1,
+  "seed": 73,
+  "timed_moves_per_game": 128,
+  "warmup_calls": 2
+}

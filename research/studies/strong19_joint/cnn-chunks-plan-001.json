@@ -1,0 +1,22 @@
+{
+  "kind": "bounded_cnn_training_preparation",
+  "created": 1789449949.3101354,
+  "parent_source_archive_sha256": "3177865d198d22ac12ecc1c80b9f1ed60d4b5f6133fb73007f56630804c1f27d",
+  "hypothesis": "Merge centered per-chunk trunk moments, then recompute bounded trunk chunks and immediately emit joint readouts. Preserve globally normalized helper and coupled gradients without retaining all wide history activations.",
+  "inference_change": false,
+  "parameter_change": false,
+  "training_work_change": "Additional trunk pass and its rematerialized gradient; quantify actual differentiated work before use.",
+  "numerical_change": "Stable centered moment merges reorder floating-point sums; equivalence is tolerance-based, not bit identity.",
+  "planned_cpu_gates": [
+    "Centered moments and variance gradients against float64 reference",
+    "Policy/value outputs and global statistics on chunk sizes 1, 3, 32",
+    "Every joint gradient against materialized helper at atol 1e-5 / rtol 1e-3",
+    "Four simulated devices with two empty shards",
+    "All-empty population gives exact zero finite loss and gradients"
+  ],
+  "full_size_gates": [
+    "Abstract differentiated matrix work and largest array shapes at 128/512/1536 positions, chunk 8/16/32",
+    "Real TPU output/gradient/optimizer equivalence and peak memory/latency before adoption"
+  ],
+  "scope": "Preparation only; the running strong9 protocol and queue remain unchanged."
+}

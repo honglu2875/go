@@ -1,0 +1,121 @@
+model,tensor,shape,parameters,dtype
+katago_cnn,conv_spatial.weight,3 x 3 x 22 x 768,152064,float32
+katago_cnn,cycles.a.blockstack.0.normactconv1.conv.weight,13 x 3 x 3 x 384 x 384,17252352,float32
+katago_cnn,cycles.a.blockstack.0.normactconv1.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.a.blockstack.0.normactconv1.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.a.blockstack.0.normactconv2.conv.weight,13 x 3 x 3 x 384 x 384,17252352,float32
+katago_cnn,cycles.a.blockstack.0.normactconv2.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.a.blockstack.0.normactconv2.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.a.blockstack.1.normactconv1.conv.weight,13 x 3 x 3 x 384 x 384,17252352,float32
+katago_cnn,cycles.a.blockstack.1.normactconv1.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.a.blockstack.1.normactconv1.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.a.blockstack.1.normactconv2.conv.weight,13 x 3 x 3 x 384 x 384,17252352,float32
+katago_cnn,cycles.a.blockstack.1.normactconv2.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.a.blockstack.1.normactconv2.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.a.normactconvp.conv.weight,13 x 1 x 1 x 768 x 384,3833856,float32
+katago_cnn,cycles.a.normactconvp.norm.beta,13 x 768,9984,float32
+katago_cnn,cycles.a.normactconvp.norm.gamma,13 x 768,9984,float32
+katago_cnn,cycles.a.normactconvq.conv.weight,13 x 1 x 1 x 384 x 768,3833856,float32
+katago_cnn,cycles.a.normactconvq.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.a.normactconvq.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.b.blockstack.0.normactconv1.conv.weight,13 x 3 x 3 x 384 x 384,17252352,float32
+katago_cnn,cycles.b.blockstack.0.normactconv1.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.b.blockstack.0.normactconv1.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.b.blockstack.0.normactconv2.conv.weight,13 x 3 x 3 x 384 x 384,17252352,float32
+katago_cnn,cycles.b.blockstack.0.normactconv2.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.b.blockstack.0.normactconv2.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.b.blockstack.1.normactconv1.conv.weight,13 x 3 x 3 x 384 x 384,17252352,float32
+katago_cnn,cycles.b.blockstack.1.normactconv1.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.b.blockstack.1.normactconv1.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.b.blockstack.1.normactconv2.conv.weight,13 x 3 x 3 x 384 x 384,17252352,float32
+katago_cnn,cycles.b.blockstack.1.normactconv2.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.b.blockstack.1.normactconv2.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.b.normactconvp.conv.weight,13 x 1 x 1 x 768 x 384,3833856,float32
+katago_cnn,cycles.b.normactconvp.norm.beta,13 x 768,9984,float32
+katago_cnn,cycles.b.normactconvp.norm.gamma,13 x 768,9984,float32
+katago_cnn,cycles.b.normactconvq.conv.weight,13 x 1 x 1 x 384 x 768,3833856,float32
+katago_cnn,cycles.b.normactconvq.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.b.normactconvq.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.g.blockstack.0.normactconv1.convpool.conv1g.weight,13 x 3 x 3 x 384 x 128,5750784,float32
+katago_cnn,cycles.g.blockstack.0.normactconv1.convpool.conv1r.weight,13 x 3 x 3 x 384 x 256,11501568,float32
+katago_cnn,cycles.g.blockstack.0.normactconv1.convpool.linear_g.weight,13 x 384 x 256,1277952,float32
+katago_cnn,cycles.g.blockstack.0.normactconv1.convpool.normg.beta,13 x 128,1664,float32
+katago_cnn,cycles.g.blockstack.0.normactconv1.convpool.normg.gamma,13 x 128,1664,float32
+katago_cnn,cycles.g.blockstack.0.normactconv1.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.g.blockstack.0.normactconv1.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.g.blockstack.0.normactconv2.conv.weight,13 x 3 x 3 x 256 x 384,11501568,float32
+katago_cnn,cycles.g.blockstack.0.normactconv2.norm.beta,13 x 256,3328,float32
+katago_cnn,cycles.g.blockstack.0.normactconv2.norm.gamma,13 x 256,3328,float32
+katago_cnn,cycles.g.blockstack.1.normactconv1.conv.weight,13 x 3 x 3 x 384 x 384,17252352,float32
+katago_cnn,cycles.g.blockstack.1.normactconv1.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.g.blockstack.1.normactconv1.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.g.blockstack.1.normactconv2.conv.weight,13 x 3 x 3 x 384 x 384,17252352,float32
+katago_cnn,cycles.g.blockstack.1.normactconv2.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.g.blockstack.1.normactconv2.norm.gamma,13 x 384,4992,float32
+katago_cnn,cycles.g.normactconvp.conv.weight,13 x 1 x 1 x 768 x 384,3833856,float32
+katago_cnn,cycles.g.normactconvp.norm.beta,13 x 768,9984,float32
+katago_cnn,cycles.g.normactconvp.norm.gamma,13 x 768,9984,float32
+katago_cnn,cycles.g.normactconvq.conv.weight,13 x 1 x 1 x 384 x 768,3833856,float32
+katago_cnn,cycles.g.normactconvq.norm.beta,13 x 384,4992,float32
+katago_cnn,cycles.g.normactconvq.norm.gamma,13 x 384,4992,float32
+katago_cnn,intermediate_policy_head.bias2.beta,128,128,float32
+katago_cnn,intermediate_policy_head.biasg.beta,128,128,float32
+katago_cnn,intermediate_policy_head.conv1g.weight,1 x 1 x 768 x 128,98304,float32
+katago_cnn,intermediate_policy_head.conv1p.weight,1 x 1 x 768 x 128,98304,float32
+katago_cnn,intermediate_policy_head.conv2p.weight,1 x 1 x 128 x 1,128,float32
+katago_cnn,intermediate_policy_head.linear_g.weight,384 x 128,49152,float32
+katago_cnn,intermediate_policy_head.linear_pass.bias,128,128,float32
+katago_cnn,intermediate_policy_head.linear_pass.weight,384 x 128,49152,float32
+katago_cnn,intermediate_policy_head.linear_pass2.weight,128 x 1,128,float32
+katago_cnn,linear_global.weight,19 x 768,14592,float32
+katago_cnn,norm_intermediate_trunkfinal.beta,768,768,float32
+katago_cnn,norm_intermediate_trunkfinal.gamma,768,768,float32
+katago_cnn,norm_trunkfinal.beta,768,768,float32
+katago_cnn,policy_head.bias2.beta,128,128,float32
+katago_cnn,policy_head.biasg.beta,128,128,float32
+katago_cnn,policy_head.conv1g.weight,1 x 1 x 768 x 128,98304,float32
+katago_cnn,policy_head.conv1p.weight,1 x 1 x 768 x 128,98304,float32
+katago_cnn,policy_head.conv2p.weight,1 x 1 x 128 x 1,128,float32
+katago_cnn,policy_head.linear_g.weight,384 x 128,49152,float32
+katago_cnn,policy_head.linear_pass.bias,128,128,float32
+katago_cnn,policy_head.linear_pass.weight,384 x 128,49152,float32
+katago_cnn,policy_head.linear_pass2.weight,128 x 1,128,float32
+katago_cnn,tail.0.blockstack.0.normactconv1.conv.weight,3 x 3 x 384 x 384,1327104,float32
+katago_cnn,tail.0.blockstack.0.normactconv1.norm.beta,384,384,float32
+katago_cnn,tail.0.blockstack.0.normactconv1.norm.gamma,384,384,float32
+katago_cnn,tail.0.blockstack.0.normactconv2.conv.weight,3 x 3 x 384 x 384,1327104,float32
+katago_cnn,tail.0.blockstack.0.normactconv2.norm.beta,384,384,float32
+katago_cnn,tail.0.blockstack.0.normactconv2.norm.gamma,384,384,float32
+katago_cnn,tail.0.blockstack.1.normactconv1.conv.weight,3 x 3 x 384 x 384,1327104,float32
+katago_cnn,tail.0.blockstack.1.normactconv1.norm.beta,384,384,float32
+katago_cnn,tail.0.blockstack.1.normactconv1.norm.gamma,384,384,float32
+katago_cnn,tail.0.blockstack.1.normactconv2.conv.weight,3 x 3 x 384 x 384,1327104,float32
+katago_cnn,tail.0.blockstack.1.normactconv2.norm.beta,384,384,float32
+katago_cnn,tail.0.blockstack.1.normactconv2.norm.gamma,384,384,float32
+katago_cnn,tail.0.normactconvp.conv.weight,1 x 1 x 768 x 384,294912,float32
+katago_cnn,tail.0.normactconvp.norm.beta,768,768,float32
+katago_cnn,tail.0.normactconvp.norm.gamma,768,768,float32
+katago_cnn,tail.0.normactconvq.conv.weight,1 x 1 x 384 x 768,294912,float32
+katago_cnn,tail.0.normactconvq.norm.beta,384,384,float32
+katago_cnn,tail.0.normactconvq.norm.gamma,384,384,float32
+cnn_encoder_transformer,blocks.attn_norm.scale,34 x 768,26112,float32
+cnn_encoder_transformer,blocks.down.weight,34 x 2304 x 768,60162048,float32
+cnn_encoder_transformer,blocks.gate.weight,34 x 768 x 2304,60162048,float32
+cnn_encoder_transformer,blocks.kv.weight,34 x 768 x 512,13369344,float32
+cnn_encoder_transformer,blocks.mlp_norm.scale,34 x 768,26112,float32
+cnn_encoder_transformer,blocks.out.weight,34 x 768 x 768,20054016,float32
+cnn_encoder_transformer,blocks.q.weight,34 x 768 x 768,20054016,float32
+cnn_encoder_transformer,blocks.up.weight,34 x 768 x 2304,60162048,float32
+cnn_encoder_transformer,encoder.col.weight,19 x 768,14592,float32
+cnn_encoder_transformer,encoder.global.weight,19 x 768,14592,float32
+cnn_encoder_transformer,encoder.patch.bias,768,768,float32
+cnn_encoder_transformer,encoder.patch.weight,256 x 768,196608,float32
+cnn_encoder_transformer,encoder.row.weight,19 x 768,14592,float32
+cnn_encoder_transformer,encoder.stem0.scale,64,64,float32
+cnn_encoder_transformer,encoder.stem0.weight,3 x 3 x 22 x 64,12672,float32
+cnn_encoder_transformer,encoder.stem1.scale,64,64,float32
+cnn_encoder_transformer,encoder.stem1.weight,3 x 3 x 64 x 64,36864,float32
+cnn_encoder_transformer,head.actions.weight,362 x 768,278016,float32
+cnn_encoder_transformer,head.norm.scale,768,768,float32
+cnn_encoder_transformer,readout,768,768,float32
+cnn_encoder_transformer,token_types.weight,3 x 768,2304,float32

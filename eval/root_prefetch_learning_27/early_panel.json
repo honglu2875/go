@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "early",
+      "id": "early-chunk-0",
+      "spec": "eval/root_prefetch_learning_27/early-chunk-0.json"
+    },
+    {
+      "group": "early",
+      "id": "early-chunk-1",
+      "spec": "eval/root_prefetch_learning_27/early-chunk-1.json"
+    },
+    {
+      "group": "early",
+      "id": "early-chunk-2",
+      "spec": "eval/root_prefetch_learning_27/early-chunk-2.json"
+    },
+    {
+      "group": "early",
+      "id": "early-chunk-3",
+      "spec": "eval/root_prefetch_learning_27/early-chunk-3.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

@@ -1,0 +1,23 @@
+The first strict Tromp–Taylor Rust engine passed internal differential checks and a real KataGo game on 2026-09-11. This establishes a foundation for search and learning; it does not establish playing strength or finish the research objective.
+
+The independent test oracle uses unpadded grids, flood fills, full board copies, and exact position sets. It checked 8,308,582 move proposals, including 2,970,115 committed legal moves, across sizes 1, 2, 3, 5, 7, 9, 13, 19, 25, and 37. Checks include complete legal-action sets on sampled positions, exact board/turn/history comparisons, chain/liberty/hash invariants, randomized deep undo, and scoring. Curated fixtures exercise captures, ko, pass exemption, terminal passes, multi-stone suicide, hash-collision filtering, dimensions, and history-preserving commit. The first release-mode run took 27.08 seconds on host 0; timing includes the slow oracle and is not native rollout throughput.
+
+For external qualification, official KataGo 1.18.1 with the pinned 9×9 b18c384 checkpoint played both colors at 16 visits per move. Rust independently accepted each move and matched every resulting board. The 73-ply game ended with two passes; both engines scored W+10.5. Total attempt time was 68.61 seconds including a frozen-source Rust build and engine startup. katago_result.json (external or omitted experiment artifact) records the moves and identities; katago_artifacts.json (external or omitted experiment artifact) pins the SGF, transcripts, stderr, and build log under `runs/qualification/katago-8a402469`.
+
+The exact external-check snapshot is `8a4024699d4e475a5082f3b6f8a391bcb51d135d5a863d3ee738deec859008ec`. Failed setup attempts are retained separately: one used an incomplete logging configuration and another exposed KataGo's requirement for a resignation threshold even when resignation is disabled. The successful configuration explicitly controls passing, resignation, noise, temperature, rules, and search budget; other defaults are pinned by the source commit.
+
+`ops/qualify_rules.py` compiles a specified frozen snapshot, reruns the independent qualification, and records native worker-scaling measurements with physical-core selection, process CPU time, warmup, repeated order rotation, and separate legal-move/mask/proposal counts. Its workload uses worker-owned mutable boards and no hot shared counters. It is a synthetic baseline for later actor profiling; batch encoding, queues, MCTS, JAX transfer/inference, replay, SGF round trips, broader tactical fixtures, and a paired learned-engine match runner remain work to complete.
+
+The first measured systems ablation replaces temporary play/undo during legality queries with an exact check using existing chain liberties, captured/removed chain hashes, and packed-position comparison on history-hash matches. It leaves move advancement and superko semantics intact. Both source snapshots passed the complete independent qualification. The registered specification (external or omitted experiment artifact), result (external or omitted experiment artifact), baseline measurements (external or omitted experiment artifact), candidate measurements (external or omitted experiment artifact), and longer confirmation (external or omitted experiment artifact) are retained.
+
+The first measurements lasted only 0.01–0.3 seconds per case and showed an apparent 16-core advancement regression. A follow-up interleaved the pinned binaries over longer, identical workloads. Three repetitions gave these median rates:
+
+| Workload | Baseline | Candidate | Ratio |
+|---|---:|---:|---:|
+| 9×9 full legal masks, one core | 171,686 masks/s | 903,807 masks/s | 5.26× |
+| 19×19 full legal masks, one core | 42,649 masks/s | 273,516 masks/s | 6.41× |
+| 19×19 advancement only, 16 cores | 19.29M legal moves/s | 20.38M legal moves/s | 1.06× |
+
+Mask rates include the workload's random move proposals and actual legal advancements. Workload counters matched exactly across both binaries. The longer multicore test used about 15–16 CPU cores and did not reproduce the apparent regression; its modest speed difference should not be attributed to a change in move advancement. CPU sets used distinct physical cores on socket 0; threads could migrate within the declared set. These measurements do not establish cache-miss causes or substitute for worker-pinned, NUMA-aware MCTS profiling.
+
+The candidate clears the declared promotion threshold for further pipeline testing. This is an engine implementation improvement, not an algorithmic/sample-efficiency result or evidence of improved Go strength. The complete actor/learner system must measure how much of this gain survives its other costs.

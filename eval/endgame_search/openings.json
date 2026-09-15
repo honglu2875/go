@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "seed": 91268027,
+  "exclusion": "Two-stone openings in existing workspace eval configurations at generation.",
+  "early": [
+    [
+      "A6",
+      "D7"
+    ],
+    [
+      "C5",
+      "B4"
+    ],
+    [
+      "A2",
+      "E1"
+    ],
+    [
+      "H8",
+      "G5"
+    ],
+    [
+      "A1",
+      "J6"
+    ],
+    [
+      "E3",
+      "H7"
+    ],
+    [
+      "E7",
+      "B6"
+    ],
+    [
+      "J3",
+      "H8"
+    ],
+    [
+      "G4",
+      "J6"
+    ],
+    [
+      "J9",
+      "E1"
+    ],
+    [
+      "B3",
+      "H5"
+    ],
+    [
+      "J1",
+      "G8"
+    ],
+    [
+      "C8",
+      "H4"
+    ],
+    [
+      "E7",
+      "J5"
+    ],
+    [
+      "A3",
+      "G4"
+    ],
+    [
+      "F7",
+      "J1"
+    ]
+  ],
+  "strong": [
+    [
+      "D7",
+      "J5"
+    ],
+    [
+      "B6",
+      "A9"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Native terminal ownership supervision improves Go learning at fixed self-play and learner budgets; compare coefficient 0 and the pinned KataGo ownership coefficient 1.5.",
+  "id": "ownership_aux",
+  "kind": "ownership_aux_training",
+  "parent": {
+    "recipe": "research/recipes/local_inference",
+    "source_sha256": "541507ae5756fae06d462bca3af97d1d385db52eb93858dc1baab7551d2114c8"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

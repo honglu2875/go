@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "sizes": [9, 19],
+  "workers": [1, 4, 16],
+  "repeats": 3,
+  "seed": 1,
+  "proposal_cases": [
+    {"proposals_per_worker": 1000000, "mask_every": 0},
+    {"proposals_per_worker": 10000, "mask_every": 1}
+  ],
+  "per_command_timeout_seconds": 180
+}

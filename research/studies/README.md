@@ -1,0 +1,1 @@
+Study records will declare hypotheses, controls, seed and compute budgets, external opponent manifests, primary metrics, and promotion criteria. Store analyses and negative results with immutable run/attempt IDs. The initial study design is in [MULTISTEP_SEARCH.md](../../MULTISTEP_SEARCH.md); broad baseline and transfer decisions are in [DESIGN.md](../../DESIGN.md).

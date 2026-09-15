@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "platform": "cpu",
+  "expected_processes": 1,
+  "expected_devices": 1,
+  "seed": 91312001,
+  "model": {
+    "max_board_size": 19,
+    "patch_size": 3,
+    "input_channels": 6,
+    "width": 32,
+    "heads": 4,
+    "kv_heads": 2,
+    "layers": 2,
+    "mlp_hidden": 64,
+    "max_positions": 8,
+    "rope_theta": 10000,
+    "norm_epsilon": 0.000001,
+    "dtype": "float32",
+    "attention_backend": "xla",
+    "rematerialize": false,
+    "behavior_updates_trunk": true
+  },
+  "probe": {
+    "board_size": 5,
+    "sequences_per_host": 2,
+    "positions": 2,
+    "draft_plies": 3,
+    "repetitions": 2,
+    "gradient_check": true,
+    "cache_tolerance": 0.00003
+  }
+}

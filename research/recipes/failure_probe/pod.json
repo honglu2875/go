@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "expected_hosts": 4,
+  "failure_rank": 2,
+  "failure_after_seconds": 3,
+  "maximum_wait_seconds": 60,
+  "cpus": [0, 1]
+}

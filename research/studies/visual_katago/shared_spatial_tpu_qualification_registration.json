@@ -1,0 +1,27 @@
+{
+  "buckets": [
+    128,
+    256,
+    384
+  ],
+  "cpu_budget": "research/studies/visual_katago/shared_spatial_cpu_budget_002.json",
+  "cpu_budget_sha256": "ac9d79d4de3ced58cd35c77fb3b5f699fd291835a53da9a455c6cd21093b4dbd",
+  "cpu_tests_log": "research/studies/visual_katago/shared_spatial_cpu_tests_001.log",
+  "cpu_tests_log_sha256": "8e5434c975c18fb7c6442c77ce0587ab686e7704788ab840992029cf11d519c8",
+  "cpu_tests_passed": 9,
+  "created_at": "2026-09-13T14:37:22.252682+00:00",
+  "criteria": [
+    "All four hosts complete finite updates in all three history buckets",
+    "Initial and trained full/cached inference pass unchanged tolerances",
+    "Exact sample draw, replica and persistent checkpoint audit",
+    "Initial common parameters match original model seed; added projection starts at zero",
+    "Traced complete decoder FLOPs and parameter count within 1% of CNN"
+  ],
+  "global_games": 128,
+  "kind": "spatial_readout_tpu_qualification_registration",
+  "maximum_seconds": 1800,
+  "next": "After qualification and completed LR selection, freeze and run 1024 updates at selected peak LR.",
+  "scope": "Full-shape qualification only; not an LR or learnability result.",
+  "snapshot": "7678c2848d86a5951215dab60d02d66289c752acdb37ff62a5d20d5964b55f43",
+  "steps": 4
+}

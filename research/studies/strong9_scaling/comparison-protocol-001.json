@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "kind": "strong9_fixed_corpus_comparison_protocol",
+  "created_unix": 1789442457.0179815,
+  "scope": "Policy learnability and measured compute/latency on fixed data; no RL-speed or Go-strength conclusion",
+  "prerequisite": {
+    "path": "research/studies/readout_followups/refinement-registration-001.json",
+    "sha256": "60782725865c2a6e0fc3150fa05044dc52963a68f8473c0f08e2149e6c5fad1b",
+    "selection": "Finish the registered refinement screen and any eligible replication first. Select refinement only if its registered replicated criterion passes; otherwise retain bilinear rank64 with first-pass auxiliary supervision."
+  },
+  "data": {
+    "path": "/dev/shm/gozero-datasets/strong9-v7-0f78b62d",
+    "manifest_sha256": "37244b2e743b3b7f80e0b14eccddfc2942aa4d81120c31aab10c4b3b4f733fc2",
+    "training_games": 183645,
+    "training_positions": 17401565,
+    "validation_games": 15440,
+    "validation_positions": 1387635,
+    "policy_target": "Original fixed 9x9 teacher raw_policy on every pre-action position; targets are not played moves or MCTS labels",
+    "teacher_sha256": "a1298ce1adc1dad7bd868ca962b2384cc8388ed373a00e6bae1114fa6f9e2d61",
+    "view": "All released train and validation games; no trajectory deduplication or opening-family cap",
+    "sampling": "One synchronized length bucket per update, probabilities proportional to game counts; uniform complete games with replacement within that bucket; position-normalized batch loss",
+    "sampling_limit": "This length-stratified game sampler is shared by both arms; it is not exactly uniform sampling of all corpus positions",
+    "augmentation": "One D4 transform for an entire game, including boards/actions/policy/legal; identical draw streams between architectures",
+    "history": "Complete causal prefix; lengths covered by 128/256 buckets; test arrays absent"
+  },
+  "training": {
+    "steps": 4096,
+    "seeds": [
+      91312427,
+      91312428
+    ],
+    "global_games": 128,
+    "learner": {
+      "augmentation": "d4",
+      "beta1": 0.9,
+      "beta2": 0.95,
+      "end_learning_rate": 0.0003,
+      "epsilon": 1e-08,
+      "games_per_host": 32,
+      "learning_rate": 0.001,
+      "max_grad_norm": 1.0,
+      "warmup_steps": 64,
+      "weight_decay": 0.01
+    },
+    "from_scratch": true,
+    "order": [
+      "CNN qualification",
+      "CNN seed1",
+      "selected transformer qualification",
+      "selected transformer seed1",
+      "CNN seed2",
+      "selected transformer seed2"
+    ],
+    "replication": "Both architectures receive the second paired seed; stop only for failed numerical/resource gates, documenting any amendment",
+    "horizon": "Fixed 4096 updates for each arm; do not shorten one architecture after viewing its curve"
+  },
+  "evaluation": {
+    "every_updates": 256,
+    "full_validation": true,
+    "fixed_train_probe_games": 4096,
+    "population_receipt": {
+      "path": "research/studies/strong9_scaling/full-evaluation-populations-001.json",
+      "sha256": "7408b4ba217bf5621ed75279f1e58343075bc96c381d467e9d8d957cb702f426"
+    },
+    "primary_metrics": [
+      "position-weighted policy KL",
+      "equal-opening-family policy KL"
+    ],
+    "diagnostics": [
+      "policy CE",
+      "target entropy",
+      "top1",
+      "opponent-stratified policy KL",
+      "move-phase policy KL",
+      "fixed training-probe KL"
+    ],
+    "overfit": {
+      "patience": 3,
+      "relative_margin": 0.005,
+      "metrics": [
+        "expert_kl",
+        "family_kl"
+      ],
+      "action": "Diagnostic only during this fixed comparison; a sustained divergence triggers a separately registered paired horizon or data-view study",
+      "reason": "The fixed training and validation mixtures differ, so use within-series trends rather than the absolute train-validation gap"
+    },
+    "no_test_selection": true
+  },
+  "decision": {
+    "reference": "KataGo nested-bottleneck CNN b40c768nbt pure-JAX policy port",
+    "co_primary": "Claim an improvement only if both paired seeds improve both endpoint KL metrics and the seed-mean relative gain reaches 0.5% on both; require no last-three-validation-mean regression",
+    "curves": "Report every registered validation point, plus best observed turn as a diagnostic; endpoint remains primary",
+    "mixed": "Report mixed or negative results explicitly; do not collapse family and position metrics or choose by the more favorable one",
+    "subsequent": "Proceed to the 19x19 joint policy/value study after interpreting both seeds and any necessary overfit follow-up"
+  },
+  "accounting": {
+    "width": 768,
+    "decode_batch_sequences": 128,
+    "reference_history_moves": 128,
+    "tolerance": 0.01,
+    "matched": [
+      "trainable parameters",
+      "complete cached inference multiply-add FLOPs",
+      "unit-cost floating-operation tally"
+    ],
+    "included": "Board encoder, retained-grid readout, projections, transformer, pass policy and contextual head; CNN inference helper excluded from inference FLOPs but all trainable parameters counted",
+    "training": "Also report actual positions, differentiated/padded training arithmetic, wall time and reserved chip-hours; matched inference FLOPs do not imply matched training work",
+    "normalization": "Our transformer has no batch normalization. The frozen KataGo control retains its training-only helper normalization."
+  },
+  "gates": [
+    "Existing real-corpus CPU harness audits",
+    "Full-shape CPU parameter/FLOP trace",
+    "Four-update all-host TPU qualification exercising both buckets",
+    "Cached/full and draft equivalence for transformer",
+    "Independent population/metric audit and checkpoint replication"
+  ],
+  "storage": {
+    "arrays": "RAM, uncompressed checkpoint arrays with verified peer replicas",
+    "minimum_shm_free_bytes": 68719476736,
+    "minimum_memory_available_bytes": 103079215104,
+    "final": "Promote selected inference parameters durably; preserve exact full-state peer copies while the pod remains active",
+    "qualification_eviction": "Only closed short-qualification arrays are eligible for the existing two-peer cache operator"
+  },
+  "prepared_evidence": {
+    "prepared-manifest-001.json": {
+      "path": "research/studies/strong9_scaling/prepared-manifest-001.json",
+      "sha256": "37244b2e743b3b7f80e0b14eccddfc2942aa4d81120c31aab10c4b3b4f733fc2"
+    },
+    "full-evaluation-populations-001.json": {
+      "path": "research/studies/strong9_scaling/full-evaluation-populations-001.json",
+      "sha256": "7408b4ba217bf5621ed75279f1e58343075bc96c381d467e9d8d957cb702f426"
+    },
+    "full-loader-qualification-001.json": {
+      "path": "research/studies/strong9_scaling/full-loader-qualification-001.json",
+      "sha256": "972f96c9bd0d8ae71cc6d14c95c42bc50fd81b280391d21e4b4e5aa0c13258e9"
+    },
+    "cpu-harness-result-001.json": {
+      "path": "research/studies/strong9_scaling/cpu-harness-result-001.json",
+      "sha256": "c4f561c99727e9a91c541b1aa29624af13584274379307ea80e6b6f0ba7565da"
+    },
+    "cnn-cpu-budget-001.json": {
+      "path": "research/studies/strong9_scaling/cnn-cpu-budget-001.json",
+      "sha256": "e210fb8f3b5189a46dade054f96a4a9fe5c1afe0aae1b4eed55e2ae67cc46093"
+    },
+    "cnn-snapshots-001.json": {
+      "path": "research/studies/strong9_scaling/cnn-snapshots-001.json",
+      "sha256": "f954164746c4e3b8f348b8bfe7d420a4ab8b734cdcf391d1cebea23e868d74cb"
+    }
+  },
+  "config_sha256": {
+    "cnn_4096.json": "7954d5269863d58324f3e69751c14a4b996e74e21f7816ac663848bc61945f63",
+    "cnn_qualification.json": "903c67accb0a347c6e96444e3290d0231b90cc2844f02cf533cb88138170bf4a",
+    "cnn_seed2.json": "ed27b89a556223cac172bfeb3829f764b2e6e557ac403c2b483d9455068b0bc9",
+    "transformer_parent_4096.json": "29deb9db71bde3b0461f8b5e1467640ea92ff8ab545a7e19a78aa999734a5be5",
+    "transformer_parent_qualification.json": "1035070aa047d6755566a36085acf6b3bd46567c279306c79f6c6a302d6bb4c7",
+    "transformer_parent_seed2.json": "3a5af1eac73fe461bb5e00922e29cde5d97ed7e83f6d49a5c3f06d03c8fe4074",
+    "transformer_refinement_4096.json": "07fadf277264c4d7c7cc48eff8eca90c36f4e4ead9fa5dacc662d52f2694562c",
+    "transformer_refinement_qualification.json": "4228a0311776c6db710d32840db5757d817c5ebaa29fe92c0c8bb532048798dd",
+    "transformer_refinement_seed2.json": "af7a603cfe99c7b90224d47740d9a607e5ad3a719f7b8c49d7e0da9ee33cb008"
+  },
+  "numerical_source_sha256": {
+    "audit_learning.py": "ae9fa55adfc74e3f0510fcefc543233e961c36b9129dd4dfc41342d88a86b78c",
+    "audit_population.py": "613bae2116f8e6327a2835bc87d82ad072f53d9d9254618c39e85e6a600c1039",
+    "audit_qualification.py": "82f6d431db7fd19bf62392d57618e36d641770f6f803ea1338373698fc6ec97a",
+    "causal.py": "61e35438829a330188ed7e46aa2f00abcf3555fe3742c9188efb3008641197f3",
+    "compare_auxiliary.py": "28ed7f3f024a6f720acefba4c16262f6bc18dd370c0b6b3fbb72e1657e75d908",
+    "compare_context.py": "0fdbcce4ba24b52037e874c4de9233127ed24f85bbabdfc4c0560292b8117a71",
+    "compare_learning.py": "cacd368a49e6cf6aed35a270dc44305103e9f606392b0c9609193e47dfd280a1",
+    "compare_lr.py": "69b2cb31ccece0319f2ecc5b30f8b21cf4ce6a9b8830b9a4489ffc020892865c",
+    "compare_replication.py": "b916c645cac1ebc1366b58978959281c69894767a374f80f7f59326682b2eda5",
+    "compare_spatial.py": "7024bd5c3a7c95b3ba33413d01d654238ef253adfc4b9309053279d97fe98905",
+    "compute_budget.py": "36f650d9ac931597763c5028c4d27b60ab0aedff805b6bb7155155eb7eef9169",
+    "draft_mask.py": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44",
+    "draft_model.py": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3",
+    "encoder.py": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad",
+    "inspect_refinement.py": "2df96c03bef1488609e8da0cda2ae9a431d779bb420ff924bbb95055bde82100",
+    "katago.py": "d280ec84b3e1ecfe5af2a26b3292e617daa3e6444c5351e14d2099ac24375898",
+    "observation_attention.py": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544",
+    "plot_learning.py": "64ee9eb0fa74dac9ce53edf076f09b114c81c633ee47e3f9943e283b547d1f9f",
+    "policy_config.py": "152846974b7f3d3072c27ecc5cabb328ee5b5f6f54a086e0b138fcc61405d696",
+    "policy_model.py": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2",
+    "policy_optimizer.py": "9a01c84001577f729c30a551954de388633ace255a81927896c7bdb497a3cfd9",
+    "profile_causal.py": "b1ec763b9baf1be40d132ce9f924836e73d0fc44596699985cf777f860ff5cc6",
+    "profile_cnn.py": "471c0177f92be497ae8651228db40b17ef4103c41240b3031dd906beee69032d",
+    "profile_draft.py": "0ec08bb61a62a4230c2d894bad4b25be274c633aa0c7518760f7fe879d55c5b1",
+    "qualify_cnn.py": "37e30215e8cdad286c5d82e158aa0c02e023a6723e63f2783eff153d248eb4c6",
+    "qualify_draft_runtime.py": "d857070aabc9e380098ba7a7266f1537eb2bef1d710d35521029202217e035db",
+    "qualify_shared.py": "93e463d16c18def3b8f6b650fbe5e5b6f2bf30c0f217b962d69500cd00eff3e3",
+    "reference_draft.py": "f5df6abd3cf73753d20bbde072b0db0c000401c35f1927b1943598abaa57409f",
+    "report_comparison.py": "e951f67c71fd9998736bdcce321acdb4463d4e7792b91d11e7fd8ba55e4cbb90",
+    "spatial_readout.py": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9",
+    "test_draft.py": "b4b606fef048f348aaf19b78d22659b37b03724b34e107676a08af17a4ce7600",
+    "test_metrics.py": "f5c97399f139b9793e27c5c19b51099344f108cba12d22a5509b1f04b0ae1320",
+    "test_readout.py": "d70c7c6d9915150f54dc8b485bff12494e3e813b67e097a2a4be65a3ac0a8fcc",
+    "test_shared.py": "cf9a21b18f68e158005d39888d0836d3cfa4550e107ef75d0706c392f55f940b",
+    "test_training_probe.py": "432848b3ce46fb1c10b6d0fd05cfe8175cccdbad8994da7e0daeab5267ba08d0",
+    "train.py": "77067729746639ba4baccf1cb08e133396120928ae777b5ce18f5ffcd33c2d54",
+    "train_policy.py": "e9dacf3da9c59e1b4235627ade469aff271bf95c971cc16af1cc3b6487f82bd5",
+    "training_arithmetic.py": "7e0c6fa14d75fe5cada0876fdcaef52e47963b637bdecca45220ef03bae938db",
+    "training_probe.py": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "matches": [
+    {
+      "group": "inherit-strong",
+      "id": "inherit-strong-0",
+      "spec": "eval/online_annealing/inherit-strong-0.json"
+    },
+    {
+      "group": "inherit-strong",
+      "id": "inherit-strong-1",
+      "spec": "eval/online_annealing/inherit-strong-1.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 2
+}

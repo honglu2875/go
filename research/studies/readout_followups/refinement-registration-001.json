@@ -1,0 +1,81 @@
+{
+  "accounting": "Complete cached decoding at 128 historical moves; encoder, projections and heads included; parameters and multiply-add FLOPs each within 1% of the frozen CNN",
+  "after_screen": "Finish this planned third intervention, replicate only if eligible, then proceed to the larger fixed strong-teacher corpus. Do not automatically queue more small-data architecture screens.",
+  "checkpoint_io_change": "Uncompressed NPZ in bounded RAM; identical array representation and ordinary reader. Preserves 64 GiB free. No numerical training change.",
+  "checkpoint_io_tests": {
+    "path": "research/studies/strong9_scaling/harness-cpu-tests-001.json",
+    "sha256": "a5551a58b10d69904197b90c8be3bcdc4486f05e3405631a624bea1254d44250"
+  },
+  "claims": "Fixed-data policy learnability only; no Go-strength, RL-speed or MFU claim",
+  "comparison": "Identical old expert histories, bucket/episode/D4 draws and one expert-policy target; same auxiliary weight .25",
+  "comparison_operator": "Verify sole policy_refinement_dim=128 model delta, all unchanged initialized arrays, initial policy and exact episode/D4 draws.",
+  "cpu_budget": {
+    "path": "research/studies/readout_followups/refinement-cpu-budget-001.json",
+    "sha256": "baade9f624adef25bac2b3d3c8e866358c3beed6efed6e704fcb3a23ceffec70"
+  },
+  "cpu_tests": {
+    "path": "research/studies/readout_followups/cpu-tests-001.json",
+    "sha256": "e0822d90bd4ad841e32d24c340d514b99122442825098b03646ca27b68eb5c36"
+  },
+  "created_unix": 1789440229.869519,
+  "decisions": {
+    "first_seed_replication_min_relative_endpoint_gain": 0.005,
+    "replicated_mean_min_relative_endpoint_gain": 0.005,
+    "require_improvement_in_both_seeds": true,
+    "require_no_last_three_validation_mean_regression": true,
+    "runtime": "Report absolute qualified latency; historical timing used different CPU allocations and is not a contemporary matched runtime control",
+    "subsequent_parent": "Review both seeds before using a changed parent; retain rank64 if the criterion fails"
+  },
+  "hypothesis": "Let the temporal query read the current retained spatial grid once before policy scoring, so the readout can resolve global context using location-specific evidence.",
+  "initialization": "All parent arrays are identical. A separate folded key initializes the rank-128 refinement, whose output projection is zero. The report hashes every parameter except the new refinement against the complete parent initialization.",
+  "intervention": "single_spatial_query_refinement_rank128",
+  "kind": "sequential_readout_screen",
+  "overfit": {
+    "action": "diagnostic only; keep this registered horizon",
+    "every_updates": 128,
+    "patience": 3,
+    "probe_games": 1024,
+    "relative_margin": 0.005
+  },
+  "parent": "First-pass auxiliary, contextual rank 64",
+  "preceding_decision": {
+    "path": "research/studies/readout_followups/additive-decision-001.json",
+    "sha256": "6df912688f2796fed07dc12b5818b0c63560bb56c227ea80bc65b26b1701e45b"
+  },
+  "references": [
+    {
+      "path": "runs/spatial-followups-auxiliary-001/first_seed-audit.json",
+      "sha256": "2b9fcfd3e0dd201262c7642448d8f8d93d865f34c73d288439357734315f6fb0"
+    },
+    {
+      "path": "runs/spatial-followups-auxiliary-001/second_seed-audit.json",
+      "sha256": "c001d6cd888f01b7ffba8cbf900b3133d9b45d0d752d5bf73d67084a3722f957"
+    }
+  ],
+  "schema_version": 1,
+  "snapshots": {
+    "first_seed": "e25f5b5b760d1adf1bc7b9417cb0c5d1f4a7ee4dea8a401be82d7cff87a4c2ea",
+    "qualification": "e69a84808143016480245f477e36d7a3bfd0964214702e95ca2577939bae75f5",
+    "second_seed": "45bba80c72d01551f6f5a1c9ca599d8c2974a22c33130f9e9310612e8f4ce0d8"
+  },
+  "storage": {
+    "checkpoints": "temporary RAM with two verified host copies",
+    "maximum_new_attempts": 3,
+    "minimum_memory_available_bytes": 103079215104,
+    "minimum_shm_free_bytes": 68719476736,
+    "selected_final": "promote to persistent storage"
+  },
+  "test_set": "closed",
+  "training": {
+    "end_learning_rate": 0.0003,
+    "global_games": 128,
+    "learning_rate": 0.001,
+    "seeds": [
+      91312427,
+      91312428
+    ],
+    "steps": 1024,
+    "warmup_steps": 64
+  },
+  "unchanged_model_tests_verified": true
+}

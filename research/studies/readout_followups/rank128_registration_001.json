@@ -1,0 +1,67 @@
+{
+  "accounting": "Complete cached decoding at 128 historical moves; encoder, projections and heads included; parameters and multiply-add FLOPs each within 1% of the frozen CNN",
+  "claims": "Fixed-data policy learnability only; no Go-strength, RL-speed or MFU claim",
+  "comparison": "Identical old expert histories, bucket/episode/D4 draws and one expert-policy target; same auxiliary weight .25",
+  "cpu_budget": {
+    "path": "research/studies/readout_followups/rank128_cpu_budget_001.json",
+    "sha256": "b13f21ba5855d25956b548a1ec99ef16521385b7e4b1754cbfcfa09a7bd04bbd"
+  },
+  "cpu_tests": {
+    "path": "research/studies/readout_followups/cpu-tests-001.json",
+    "sha256": "e0822d90bd4ad841e32d24c340d514b99122442825098b03646ca27b68eb5c36"
+  },
+  "created_unix": 1789432962.712485,
+  "decisions": {
+    "first_seed_replication_min_relative_endpoint_gain": 0.005,
+    "replicated_mean_min_relative_endpoint_gain": 0.005,
+    "require_improvement_in_both_seeds": true,
+    "require_no_last_three_validation_mean_regression": true,
+    "runtime": "Report absolute qualified latency; historical timing used different CPU allocations and is not a contemporary matched runtime control",
+    "subsequent_parent": "Review both seeds before using a changed parent; retain rank64 if the criterion fails"
+  },
+  "intervention": "context_rank_128",
+  "kind": "sequential_readout_screen",
+  "overfit": {
+    "action": "diagnostic only; keep this registered horizon",
+    "every_updates": 128,
+    "patience": 3,
+    "probe_games": 1024,
+    "relative_margin": 0.005
+  },
+  "parent": "First-pass auxiliary, contextual rank 64",
+  "references": [
+    {
+      "path": "runs/spatial-followups-auxiliary-001/first_seed-audit.json",
+      "sha256": "2b9fcfd3e0dd201262c7642448d8f8d93d865f34c73d288439357734315f6fb0"
+    },
+    {
+      "path": "runs/spatial-followups-auxiliary-001/second_seed-audit.json",
+      "sha256": "c001d6cd888f01b7ffba8cbf900b3133d9b45d0d752d5bf73d67084a3722f957"
+    }
+  ],
+  "schema_version": 1,
+  "snapshots": {
+    "first_seed": "179e8938031a5a7df7caf2345c99b45ac0c4a3c2824b8e2ed51c8b4b3ceaaa2f",
+    "qualification": "0cc474a0a3b5938c3c80e29ba93db376b074d64a655152532fdc0ac892ae5638",
+    "second_seed": "839c474e00f8e66672e5e0af99cc120d40317086ee340082c43cfba8ebf1a0d6"
+  },
+  "storage": {
+    "checkpoints": "temporary RAM with two verified host copies",
+    "maximum_new_attempts": 3,
+    "minimum_memory_available_bytes": 103079215104,
+    "minimum_shm_free_bytes": 68719476736,
+    "selected_final": "promote to persistent storage"
+  },
+  "test_set": "closed",
+  "training": {
+    "end_learning_rate": 0.0003,
+    "global_games": 128,
+    "learning_rate": 0.001,
+    "seeds": [
+      91312427,
+      91312428
+    ],
+    "steps": 1024,
+    "warmup_steps": 64
+  }
+}

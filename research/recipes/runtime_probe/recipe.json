@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "id": "runtime_probe",
+  "kind": "runtime_qualification",
+  "hypothesis": "All four controllers can execute the same frozen plain-JAX update on the verified TPU mesh.",
+  "claims_go_strength": false
+}

@@ -1,0 +1,4 @@
+# Qualification-only reference, never imported by the JAX trainer.
+torch==2.8.0+cpu
+numpy==2.5.3
+packaging==25.0

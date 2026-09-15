@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Keeping one committed history per game and only short speculative branch deltas reduces dense-cache memory work and improves complete exact-work throughput.",
+  "id": "trace_compact",
+  "kind": "equal_work_shared_history_delta_kv_trace_benchmark",
+  "parent": {
+    "recipe": "research/recipes/trace_cache",
+    "source_sha256": "4859a4fdb2ebd2679348f49e42bcf9e214573b87feedf46eabd746cba7391c7c"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

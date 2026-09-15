@@ -1,0 +1,10 @@
+{
+  "model_export_path": "runs/pod-20260911T094436Z-43759b05/rank-0/artifacts/model_export.npz",
+  "model_export_sha256": "d2023675f760e8af0cd9efc797f7d59604f3e71655184b359d3a35dcb9541dea",
+  "network_version": 32695,
+  "schema_version": 1,
+  "training_lineage": "Fresh Gumbel AlphaZero candidate, 16.8M real moves; no KataGo labels or weights in training.",
+  "training_result_path": "runs/pod-20260911T094436Z-43759b05/rank-0/artifacts/result.json",
+  "training_result_sha256": "fa1f2ca8dd4d4526bc043db1196053fe429ad7ef53c1e1c102a59fe3a6135d5f",
+  "training_snapshot": "3750f1f428dced41601ca8db566027ca8d524d396c707296a7301f5b50eaec36"
+}

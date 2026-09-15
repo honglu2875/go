@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "workers": 4,
+  "matches": [
+    {
+      "id": "early-on-0",
+      "group": "on",
+      "spec": "eval/endgame_search/early-on-0.json"
+    },
+    {
+      "id": "early-off-0",
+      "group": "off",
+      "spec": "eval/endgame_search/early-off-0.json"
+    },
+    {
+      "id": "early-on-1",
+      "group": "on",
+      "spec": "eval/endgame_search/early-on-1.json"
+    },
+    {
+      "id": "early-off-1",
+      "group": "off",
+      "spec": "eval/endgame_search/early-off-1.json"
+    }
+  ]
+}

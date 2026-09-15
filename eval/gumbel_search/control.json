@@ -1,0 +1,10 @@
+{
+  "model_export_path": "runs/pod-20260911T090815Z-4015ecb2/rank-0/artifacts/model_export.npz",
+  "model_export_sha256": "b261e42ceabcd3916398ee9ca3ac2cb24663e87fefd6ddf495907ffdf7b7d6b4",
+  "network_version": 32668,
+  "schema_version": 1,
+  "training_lineage": "Fresh PUCT control, 16.8M real moves; no KataGo labels or weights in training.",
+  "training_result_path": "runs/pod-20260911T090815Z-4015ecb2/rank-0/artifacts/result.json",
+  "training_result_sha256": "6f2f8c0ac6ecb1d8b2f7bf02e07f68a06cd34f665e5414fc6c378015c60901f4",
+  "training_snapshot": "7836ad14eb3f9ccc26642bfb9c3f02c808dcc999814a7a7c7226b50b29c524e6"
+}

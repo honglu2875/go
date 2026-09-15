@@ -1,0 +1,215 @@
+{
+  "candidate": "eval/root_prefetch_learning_27/candidate.json",
+  "candidate_cpuct": 0.0,
+  "candidate_simulations": 16,
+  "cpu_groups": [
+    {
+      "candidate": [
+        64,
+        65,
+        66,
+        67
+      ],
+      "opponent": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "referee": [
+        72
+      ]
+    },
+    {
+      "candidate": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "opponent": [
+        77,
+        78,
+        79,
+        80
+      ],
+      "referee": [
+        81
+      ]
+    },
+    {
+      "candidate": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "opponent": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "referee": [
+        90
+      ]
+    },
+    {
+      "candidate": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "opponent": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "referee": [
+        99
+      ]
+    }
+  ],
+  "game_timeout_seconds": 120,
+  "komi": 7.5,
+  "max_game_moves": 1296,
+  "openings": [
+    [
+      "G3",
+      "D3"
+    ],
+    [
+      "D7",
+      "B1"
+    ],
+    [
+      "E6",
+      "G7"
+    ],
+    [
+      "G9",
+      "D1"
+    ],
+    [
+      "G4",
+      "B5"
+    ],
+    [
+      "F6",
+      "E6"
+    ],
+    [
+      "D9",
+      "G8"
+    ],
+    [
+      "E1",
+      "F1"
+    ],
+    [
+      "B2",
+      "J4"
+    ],
+    [
+      "E8",
+      "J9"
+    ],
+    [
+      "F1",
+      "G5"
+    ],
+    [
+      "C9",
+      "A4"
+    ],
+    [
+      "H3",
+      "C8"
+    ],
+    [
+      "E2",
+      "H6"
+    ],
+    [
+      "H8",
+      "J1"
+    ],
+    [
+      "H9",
+      "C1"
+    ],
+    [
+      "E7",
+      "G7"
+    ],
+    [
+      "J6",
+      "H5"
+    ],
+    [
+      "B7",
+      "C7"
+    ],
+    [
+      "J7",
+      "C9"
+    ],
+    [
+      "B4",
+      "H4"
+    ],
+    [
+      "B3",
+      "J7"
+    ],
+    [
+      "E5",
+      "D1"
+    ],
+    [
+      "G4",
+      "H2"
+    ],
+    [
+      "J2",
+      "A1"
+    ],
+    [
+      "E2",
+      "A9"
+    ],
+    [
+      "G5",
+      "H7"
+    ],
+    [
+      "B7",
+      "A2"
+    ],
+    [
+      "B7",
+      "C8"
+    ],
+    [
+      "E6",
+      "C4"
+    ],
+    [
+      "E4",
+      "A6"
+    ],
+    [
+      "J7",
+      "G9"
+    ]
+  ],
+  "opponent": "eval/root_prefetch_learning_27/control.json",
+  "opponent_cpuct": 0.0,
+  "opponent_simulations": 16,
+  "purpose": "Registered wide-prefetch learning validation against the unchanged seed27 Gumbel CNN.",
+  "referee_config": "eval/katago_9x9_smoke.cfg",
+  "schema_version": 1,
+  "size": 9
+}

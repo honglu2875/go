@@ -1,0 +1,29 @@
+{
+  "candidate": "eval/gumbel_search/candidate.json",
+  "candidate_cpuct": 0.0,
+  "candidate_cpus": [
+    80,
+    81,
+    82,
+    83
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "game_timeout_seconds": 360,
+  "katago_config": "eval/katago_9x9_smoke.cfg",
+  "katago_cpus": [
+    84,
+    85,
+    86,
+    87
+  ],
+  "katago_max_visits": 16,
+  "komi": 7.5,
+  "max_game_moves": 324,
+  "openings": [
+    []
+  ],
+  "purpose": "Registered extended Gumbel search study: candidate absolute KataGo anchor.",
+  "schema_version": 1,
+  "seed_prefix": "gozero-gumbel-extended-pilot-27-p0",
+  "size": 9
+}

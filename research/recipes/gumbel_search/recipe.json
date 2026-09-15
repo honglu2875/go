@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "At a fixed small search budget, root sequential halving and a completed-Q policy target improve policy iteration relative to PUCT visit targets. Keep the CNN and auxiliary objectives fixed; qualify native selection against pinned Mctx before a registered pilot.",
+  "id": "gumbel_search",
+  "kind": "gumbel_alphazero_training",
+  "parent": {
+    "recipe": "research/recipes/score_utility",
+    "source_sha256": "5d0f9cbae5dc7b90a7e70e0afa44ca88e4fb4c61086c285856386fb52120ec1f"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

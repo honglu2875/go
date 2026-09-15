@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "history",
+      "id": "history-early-0",
+      "spec": "eval/state_expert_distillation/history-early-0.json"
+    },
+    {
+      "group": "history",
+      "id": "history-early-1",
+      "spec": "eval/state_expert_distillation/history-early-1.json"
+    },
+    {
+      "group": "history",
+      "id": "history-early-2",
+      "spec": "eval/state_expert_distillation/history-early-2.json"
+    },
+    {
+      "group": "history",
+      "id": "history-early-3",
+      "spec": "eval/state_expert_distillation/history-early-3.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

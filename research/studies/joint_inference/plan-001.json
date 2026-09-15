@@ -1,0 +1,25 @@
+{
+  "kind": "joint_v7_inference_preparation",
+  "created": 1789450542.4298637,
+  "parent_model_source_archive_sha256": "c6d7afb8282f26c46a50a5013de066cbb369f380841dea9b00f299747059d513",
+  "promoted_v7_client": {
+    "source": "research/recipes/v7_inference/client.py",
+    "target": "packages/gozero/src/gozero/v7_replay.py",
+    "sha256": "c6430e997420037fe296fb591b90f20a85f74885fefa8ca73dd15f807d057d38"
+  },
+  "feature_binary_sha256": "f2fd5e4b00ba3daa76fd5f2f67c09f37f65bafb9a20d8be972f47b172c526676",
+  "rust_native": {
+    "receipt": ".gozero/native/7527dae25b6dac79bb6396ce5bc570eb53ac33088c31f357ffb88ced46805f3c/receipt.json",
+    "receipt_sha256": "d1360629cb1ebcde270057253fb53ef4e76cd1fd7e0284c8b91684694fac19e1",
+    "binary_sha256": "b31e2be3a16e720a93dc0d4900a712ee558ed59999ff25ed06519e56eb4ab394",
+    "all_30_rust_source_and_lock_files_match_workspace": true
+  },
+  "scope": "Inference boundary and cache/search qualification only, no new training or strength claim. The active strong9 queue is unchanged.",
+  "planned_gates": [
+    "Cross-check C++ V7 replay with independent Rust stones/legality on 30 real19 training histories",
+    "Convert native pending-leaf audit features into a canonical board-state identity",
+    "Joint full-history vs cached outputs on legal19 branches, passes, prefix hits and rewinds",
+    "Rust MCTS pending-leaf evaluation uses correct player-to-move values and legal policies",
+    "Later full-size TPU serving, model export and real KataGo matches"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "workers": 4,
+  "matches": [
+    {
+      "id": "bce2-strong-v1-0",
+      "group": "bce2-v1",
+      "spec": "eval/value_logit_distillation/bce2-strong-v1-0.json"
+    },
+    {
+      "id": "bce2-strong-v1-1",
+      "group": "bce2-v1",
+      "spec": "eval/value_logit_distillation/bce2-strong-v1-1.json"
+    },
+    {
+      "id": "bce2-strong-v16-0",
+      "group": "bce2-v16",
+      "spec": "eval/value_logit_distillation/bce2-strong-v16-0.json"
+    },
+    {
+      "id": "bce2-strong-v16-1",
+      "group": "bce2-v16",
+      "spec": "eval/value_logit_distillation/bce2-strong-v16-1.json"
+    }
+  ]
+}

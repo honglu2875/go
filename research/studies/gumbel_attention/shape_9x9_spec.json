@@ -1,0 +1,20 @@
+{
+  "budget": {
+    "global_real_moves": 131072,
+    "maximum_attempts": 1,
+    "minimum_free_bytes": 8589934592,
+    "prepare_timeout_seconds": 180,
+    "selfplay_turns": 256,
+    "timeout_seconds": 180
+  },
+  "kind": "gumbel_attention_9x9_shape_qualification",
+  "registered_unix": 1789126868.431243,
+  "required": [
+    "All four ranks complete the declared real-move count",
+    "Finite nonzero learner updates and identical final exported weights across ranks",
+    "Retain actual inference, native, learner, CPU and wall times plus compiler cost estimates"
+  ],
+  "schema_version": 1,
+  "scope": "Qualify the intended 9x9 model and replay shapes and estimate a bounded pilot timeout. Short startup and warmup effects make this unsuitable for a sustained throughput or MFU claim. No strength claim and no reuse of the resulting weights in the architecture pilot.",
+  "snapshot_id": "0684e9a20e5b58eb15355c0338033691928f23d5c37cf4c54e7814fd9b541136"
+}

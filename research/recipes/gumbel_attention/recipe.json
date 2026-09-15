@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Global board attention may improve sample efficiency under the qualified Gumbel search bundle. CNN and attention arms share all losses, optimizer and real-move budgets; architecture-specific tuning and external evaluation are required before a production decision.",
+  "id": "gumbel_attention",
+  "kind": "gumbel_attention_architecture_training",
+  "parent": {
+    "recipe": "research/recipes/attention_control",
+    "source_sha256": "a1b8204d85fd4e0ac5ccbaf3b6fe20f0ac7d58ced3a692b94bc3252307af1bdd"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

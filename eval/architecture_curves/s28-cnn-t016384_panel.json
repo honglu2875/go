@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "s28-cnn-t016384",
+      "id": "s28-cnn-t016384-chunk-0",
+      "spec": "eval/architecture_curves/s28-cnn-t016384-chunk-0.json"
+    },
+    {
+      "group": "s28-cnn-t016384",
+      "id": "s28-cnn-t016384-chunk-1",
+      "spec": "eval/architecture_curves/s28-cnn-t016384-chunk-1.json"
+    },
+    {
+      "group": "s28-cnn-t016384",
+      "id": "s28-cnn-t016384-chunk-2",
+      "spec": "eval/architecture_curves/s28-cnn-t016384-chunk-2.json"
+    },
+    {
+      "group": "s28-cnn-t016384",
+      "id": "s28-cnn-t016384-chunk-3",
+      "spec": "eval/architecture_curves/s28-cnn-t016384-chunk-3.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

@@ -1,0 +1,28 @@
+{
+  "candidate_snapshot": "2550203e973000d6c7cb59541d2fe474b0884008ac99e8af76f3a94588c6aebd",
+  "control_snapshot": "1fdac75473f24f8426827a075a12037c3b1a1e51144410ea44502ae18b28ac12",
+  "games": 4,
+  "horizon": 4,
+  "hypothesis": "Applying the exact known root legal mask in both decoder views reduces avoidable forecast mismatch and improves resolved moves per dispatch without changing the sequential legal-policy action stream.",
+  "kind": "known_root_legality_trace_probe",
+  "limitations": [
+    "Untrained3x3 policy-only model; no MCTS, learning or strength claim.",
+    "Fixed packet counts reach different lengths of the same action stream, so these are execution diagnostics, not controlled speed estimates.",
+    "CPU times include compilation/instrumentation and concurrent TPU training; no throughput or MFU promotion.",
+    "Only root legality is supplied. Hypothetical later states still require authoritative Rust validation."
+  ],
+  "maximum_cpu_runs": 2,
+  "metrics": [
+    "moves per game per dispatch",
+    "legality corrections",
+    "complete real moves",
+    "output bytes",
+    "stop reasons"
+  ],
+  "packets": 64,
+  "qualification": "Both variants must preserve every compared sequential event prefix, including resets and terminal scores. Their sequential streams must also agree. Initial parameter exports must be identical.",
+  "registered_unix": 1789123782.163323,
+  "samples": 4,
+  "schema_version": 1,
+  "seed": 27
+}

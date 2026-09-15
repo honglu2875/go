@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "registered_unix": 1789110189.9512146,
+  "kind": "low_visit_puct_learning_pilot",
+  "candidate_snapshot": "4c4bf211a9fac41209a42653789f26d9aa3956529ea6bbf708063e216c0022dc",
+  "control_snapshot": "fefd18f7bb02e817c3ca497432b0a381681af2259b681e2f5c0edfa994befb5d",
+  "reused_control_attempt": "pod-20260911T062948Z-37b16099",
+  "reused_control_panel": "runs/eval/ownership-pilot-6168b13c/result.json",
+  "control_panel_sha256": "0c3fc00744f9b72774d8e232c5822439391032de854e67248ce75194b814031d",
+  "hypothesis": "A fixed 0.2 reduction from the current node network value improves the 16-simulation policy-improvement signal and reduces unproductive exploration at losing roots.",
+  "intervention": "Zero FPU versus network-value FPU with reduction 0.2. Ownership coefficient stays 1.5. Model, seed, rule profile and all other configured training budgets are unchanged.",
+  "budget": {
+    "seed": 27,
+    "selfplay_turns": 8192,
+    "global_real_moves": 4194304,
+    "simulations_excluding_root": 16,
+    "updates_per_turn_after_warmup": 1,
+    "timeout_seconds": 900,
+    "maximum_attempts": 2
+  },
+  "qualification": "Frozen 3x3 CPU trainer and native FPU-allocation regression passed at b4a7107b; implementation files are identical to that qualification.",
+  "primary_metric": "Paired-color wins/draws/losses and incomplete games versus pinned official KataGo at 1 and 16 visits, openings [] and [C3,G7], move cap 324, per-game timeout 360 seconds, candidate 16 simulations and cpuct 1.5.",
+  "secondary_metrics": [
+    "eligible terminal rows",
+    "truncated games",
+    "useful neural evaluations",
+    "learner updates",
+    "training wall time and CPU time",
+    "root visit allocation diagnostics"
+  ],
+  "interpretation": "Exploratory one-seed follow-up chosen after seeing the ownership pilot. Reuses its already measured control and charges its full compute. Not a fresh confirmatory comparison. Warmup onset may change with game lengths; actual update counts are reported. No superiority claim from a zero-win floor or incomplete pairs."
+}

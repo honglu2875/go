@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Compact retained-grid training path",
+  "hypothesis": "Project independent spatial readout features inside bounded frame chunks; preserve the selected model and exact full/draft objective while reducing retained activations.",
+  "requires_native": false
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "strong9_registered_conclusion_operator",
+  "created": 1789452784.5589955,
+  "registration_sha256": "600b818e0ffc6649351e3fcaa50756c7c80c8f6bfed9b91c720c3beda908e96e",
+  "protocol_sha256": "dfe09a30164a4106603ca649bf9dab26b6db39bff3fcbbd0c6016f6fab237dde",
+  "compare_operator_sha256": "e72466eb00549394a046ba956b46d9b3502ed16381572eda29980b22da3ef75e",
+  "operator_sha256": "9dc55ccd5d3bf84aab10edc264336c4792a6fc2ab8ee60d54aa89ca8e47b3ae3",
+  "qualification_sha256": "d4c7b7c19784d22943ec0f0026622320339147198f27beb58ca3af7f55040550",
+  "seeds": [
+    91312427,
+    91312428
+  ],
+  "threshold": 0.005,
+  "relative_gain_aggregation": "arithmetic mean of per-seed relative endpoint gains",
+  "tail_gate": "each seed and each primary metric must have nonnegative last-three-mean gain",
+  "interpretation": "Explicit implementation of the existing prose criterion, prepared before first transformer training. Neither primary metric or paired seed may be hidden by averaging. Failure of the criterion does not establish CNN superiority.",
+  "scope": "Reproduce the two pinned paired contrasts from their audits, report registered endpoint and all validation/probe points, then apply the existing decision. No scheduling, test evaluation, checkpoint selection by best validation turn, or 19x19 registration.",
+  "active_queue_unchanged": true
+}

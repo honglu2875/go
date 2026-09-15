@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "anneal-primary",
+      "id": "anneal-primary-0",
+      "spec": "eval/online_annealing/anneal-primary-0.json"
+    },
+    {
+      "group": "anneal-primary",
+      "id": "anneal-primary-1",
+      "spec": "eval/online_annealing/anneal-primary-1.json"
+    },
+    {
+      "group": "anneal-primary",
+      "id": "anneal-primary-2",
+      "spec": "eval/online_annealing/anneal-primary-2.json"
+    },
+    {
+      "group": "anneal-primary",
+      "id": "anneal-primary-3",
+      "spec": "eval/online_annealing/anneal-primary-3.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

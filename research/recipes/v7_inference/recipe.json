@@ -1,0 +1,1 @@
+{"schema_version":1,"name":"Exact streaming V7 inference features","hypothesis":"Persistent native feature replay can supply complete and branch-suffix observations matching offline training inputs.","requires_native":false}

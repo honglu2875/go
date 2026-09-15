@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "training_snapshot": "ae21743f2fb27ab8cd48a92bcaa1ad4daf477b1ab8d0fe56a2f030ab25dbf39b",
+  "model_export_path": "runs/qualification/score-utility-ae21743f/continuous/model_export.npz",
+  "model_export_sha256": "4bab49e37314e017554463b5620a1c1de1db8f9ede4ff34ad48331058dc53e05",
+  "training_result_path": "runs/qualification/score-utility-ae21743f/continuous/result.json",
+  "training_result_sha256": "60a436f2d87932bc38632ce0f2d94cdd45a266c9fe32553b897d3b2ca5282458",
+  "network_version": 86,
+  "training_lineage": "From-scratch 3x3 CPU qualification only; no strength claim"
+}

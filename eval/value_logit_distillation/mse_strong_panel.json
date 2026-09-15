@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "workers": 4,
+  "matches": [
+    {
+      "id": "mse-strong-v1-0",
+      "group": "mse-v1",
+      "spec": "eval/value_logit_distillation/mse-strong-v1-0.json"
+    },
+    {
+      "id": "mse-strong-v1-1",
+      "group": "mse-v1",
+      "spec": "eval/value_logit_distillation/mse-strong-v1-1.json"
+    },
+    {
+      "id": "mse-strong-v16-0",
+      "group": "mse-v16",
+      "spec": "eval/value_logit_distillation/mse-strong-v16-0.json"
+    },
+    {
+      "id": "mse-strong-v16-1",
+      "group": "mse-v16",
+      "spec": "eval/value_logit_distillation/mse-strong-v16-1.json"
+    }
+  ]
+}

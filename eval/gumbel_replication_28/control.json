@@ -1,0 +1,10 @@
+{
+  "model_export_path": "runs/pod-20260911T103213Z-80d07495/rank-0/artifacts/model_export.npz",
+  "model_export_sha256": "171300fc3c1d5353bad638d14069e0760a60cb48fd478a0f5db5c42ffa840e17",
+  "network_version": 32647,
+  "schema_version": 1,
+  "training_lineage": "Fresh PUCT control, independent seed 28, 16,777,216 real moves; no KataGo labels or weights in training.",
+  "training_result_path": "runs/pod-20260911T103213Z-80d07495/rank-0/artifacts/result.json",
+  "training_result_sha256": "b0ac1e0a5d46da64b82498025bd88e4973dc32e18a41f8add05f1243656f9eef",
+  "training_snapshot": "d6dcc348e9dcec2bf13bc269aa9b801d40f50c94a8721a9a9a7a48f7d2c49e4d"
+}

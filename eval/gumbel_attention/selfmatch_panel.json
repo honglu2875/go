@@ -1,0 +1,215 @@
+{
+  "candidate": "eval/gumbel_attention/candidate.json",
+  "candidate_cpuct": 0.0,
+  "candidate_simulations": 16,
+  "cpu_groups": [
+    {
+      "candidate": [
+        64,
+        65,
+        66,
+        67
+      ],
+      "opponent": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "referee": [
+        72
+      ]
+    },
+    {
+      "candidate": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "opponent": [
+        77,
+        78,
+        79,
+        80
+      ],
+      "referee": [
+        81
+      ]
+    },
+    {
+      "candidate": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "opponent": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "referee": [
+        90
+      ]
+    },
+    {
+      "candidate": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "opponent": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "referee": [
+        99
+      ]
+    }
+  ],
+  "game_timeout_seconds": 180,
+  "komi": 7.5,
+  "max_game_moves": 1296,
+  "openings": [
+    [
+      "D7",
+      "B3"
+    ],
+    [
+      "E9",
+      "H4"
+    ],
+    [
+      "J7",
+      "E7"
+    ],
+    [
+      "H3",
+      "H7"
+    ],
+    [
+      "J4",
+      "D5"
+    ],
+    [
+      "D8",
+      "F3"
+    ],
+    [
+      "J6",
+      "F5"
+    ],
+    [
+      "J5",
+      "J3"
+    ],
+    [
+      "D7",
+      "D5"
+    ],
+    [
+      "D8",
+      "A5"
+    ],
+    [
+      "E8",
+      "E6"
+    ],
+    [
+      "G8",
+      "H8"
+    ],
+    [
+      "B4",
+      "G8"
+    ],
+    [
+      "E4",
+      "H1"
+    ],
+    [
+      "H3",
+      "C5"
+    ],
+    [
+      "G2",
+      "B6"
+    ],
+    [
+      "F4",
+      "D5"
+    ],
+    [
+      "H5",
+      "C1"
+    ],
+    [
+      "B1",
+      "E2"
+    ],
+    [
+      "A2",
+      "C9"
+    ],
+    [
+      "J6",
+      "F3"
+    ],
+    [
+      "G3",
+      "J8"
+    ],
+    [
+      "D2",
+      "D4"
+    ],
+    [
+      "E5",
+      "H2"
+    ],
+    [
+      "J9",
+      "C9"
+    ],
+    [
+      "J9",
+      "J1"
+    ],
+    [
+      "C9",
+      "F8"
+    ],
+    [
+      "C1",
+      "G2"
+    ],
+    [
+      "E4",
+      "E3"
+    ],
+    [
+      "G5",
+      "H3"
+    ],
+    [
+      "H5",
+      "D8"
+    ],
+    [
+      "A5",
+      "C8"
+    ]
+  ],
+  "opponent": "eval/gumbel_attention/control.json",
+  "opponent_cpuct": 0.0,
+  "opponent_simulations": 16,
+  "purpose": "Registered attention architecture pilot at fixed real moves against the reused Gumbel CNN checkpoint.",
+  "referee_config": "eval/katago_9x9_smoke.cfg",
+  "schema_version": 1,
+  "size": 9
+}

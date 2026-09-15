@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "pass_value_rescaling_diagnostic",
+  "source_audit": "research/studies/board_state_distillation/result.json",
+  "source_audit_sha256": "7dcbf47e914e73c63a2c49a38dc696219b07aa5d28f40a213bb390bab92cbece",
+  "candidate": "eval/board_state_distillation/exact.json",
+  "inference": "eval/causal_student/search.json",
+  "native_snapshot": "1bc92cbd36c8de3afe5e64987f9b08a2c4ed29320de3395c46c96a85442b6441",
+  "teacher_dataset_manifest": ".gozero/datasets/causal-5c5f2c0d/manifest.json",
+  "teacher_dataset_manifest_sha256": "9a4ef7a1034897f0991e197b5c92f5303d777a5cfb8a23bfa6dcbbd3b7c8f0b6",
+  "teacher_shard_index": 0,
+  "selection_seed": 912673,
+  "control_positions": 128,
+  "qualification_positions": 12,
+  "worker_cpus": [
+    [
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71
+    ],
+    [
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79
+    ],
+    [
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ],
+    [
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+    ]
+  ],
+  "maximum_worker_seconds": 900
+}

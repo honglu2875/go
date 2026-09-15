@@ -1,0 +1,9 @@
+[package]
+name = "go-gtp"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+go-core = { path = "../go-core" }
+

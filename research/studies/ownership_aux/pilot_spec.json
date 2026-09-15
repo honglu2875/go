@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "registered_unix": 1789107719.3818994,
+  "kind": "ownership_aux_learning_pilot",
+  "control_snapshot": "49abc650a32a2964e916d0ae72f3be401914b05678d155ff1001dbd12036439e",
+  "candidate_snapshot": "fefd18f7bb02e817c3ca497432b0a381681af2259b681e2f5c0edfa994befb5d",
+  "seed": 27,
+  "planned_sequence": [
+    "control",
+    "candidate"
+  ],
+  "maximum_attempts_per_arm": 2,
+  "timeout_seconds_per_attempt": 900,
+  "hypothesis": "KataGo-style terminal ownership supervision improves Go strength per real self-play move and useful neural evaluation.",
+  "intervention": "Only ownership coefficient: 0.0 vs 1.5. Identical initial parameter trees, scoring, model, root searches, replay, learner schedule and CPU sets.",
+  "budget_per_arm": {
+    "selfplay_turns": 8192,
+    "global_real_moves": 4194304,
+    "global_games_in_flight": 512,
+    "simulations_excluding_root": 16,
+    "maximum_global_learner_updates": 8192
+  },
+  "primary_evidence": "Paired-color real matches versus the pinned official 9x9 KataGo checkpoint at 1 and 16 visits after the fixed training budget. Each level uses openings [] and [C3,G7] (4 games per level per arm). Always retain failures, draw scores, exact boards and point margins.",
+  "secondary_evidence": [
+    "training loss curves (different self-play distributions; diagnostic only)",
+    "ownership error on fresh self-play",
+    "useful neural evaluations, real moves and terminal rows",
+    "wall time and process CPU time; compiler FLOP estimates are not MFU"
+  ],
+  "interpretation": "One-seed exploratory pilot, not a statistical confirmation or sample-efficiency claim. Two opening pairs are only a functional strength screen; a zero-win floor is inconclusive. Follow with independent seeds and expanded paired panels before selecting an algorithm.",
+  "scoring_qualification": "runs/qualification/scoring-3b3e372f/result.json",
+  "cpu_recovery_qualification": "runs/qualification/ownership-3b3e372f/comparison.json",
+  "scope": "Ownership is a KataGo component control; this does not reproduce its complete training procedure. No KataGo weights or evaluation labels enter training."
+}

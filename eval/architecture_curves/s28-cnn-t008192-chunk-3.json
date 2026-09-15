@@ -1,0 +1,61 @@
+{
+  "candidate": "eval/architecture_curves/s28-cnn-t008192.json",
+  "candidate_cpuct": 0.0,
+  "candidate_cpus": [
+    88,
+    89,
+    90,
+    91
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "game_timeout_seconds": 60,
+  "katago_config": "eval/ownership_aux/katago_visits_1.cfg",
+  "katago_cpus": [
+    92,
+    93,
+    94,
+    95
+  ],
+  "katago_max_visits": 1,
+  "katago_weights": "eval/katago_early/level-3.json",
+  "komi": 7.5,
+  "max_game_moves": 648,
+  "openings": [
+    [
+      "D4",
+      "B9"
+    ],
+    [
+      "D3",
+      "G8"
+    ],
+    [
+      "E3",
+      "D9"
+    ],
+    [
+      "C9",
+      "G3"
+    ],
+    [
+      "B1",
+      "A4"
+    ],
+    [
+      "F8",
+      "B4"
+    ],
+    [
+      "D2",
+      "H3"
+    ],
+    [
+      "F6",
+      "D2"
+    ]
+  ],
+  "purpose": "Registered sample-budget learning curves; no KataGo data enters training.",
+  "schema_version": 1,
+  "seed_prefix": "gozero-architecture-curves-19450231-chunk-3",
+  "size": 9
+}

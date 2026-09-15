@@ -1,0 +1,50 @@
+{
+  "budget": {
+    "maximum_attempts": 1,
+    "minimum_free_bytes": 8589934592,
+    "orders": [
+      [
+        "serial",
+        "queued",
+        "wide"
+      ],
+      [
+        "wide",
+        "queued",
+        "serial"
+      ],
+      [
+        "queued",
+        "serial",
+        "wide"
+      ]
+    ],
+    "positions_per_host": 2048,
+    "prepare_timeout_seconds": 180,
+    "timed_iterations_per_mode": 50,
+    "timeout_seconds": 300,
+    "training_steps": 0,
+    "warmup_iterations_per_mode": 3
+  },
+  "cpu_qualification": {
+    "path": "runs/qualification/inference-numerics-f078bd4c/result.json",
+    "sha256": "3dc253a4c9f45bf6702c228e66797fcb25d8025e3df5c8e051eab7c91c72066d"
+  },
+  "kind": "fixed_input_inference_transport_numerics",
+  "limitations": [
+    "One training checkpoint and one fixed sampled input set per host. Three timing orders are diagnostics, not across-workload confidence intervals.",
+    "No padding, native search, learner updates or concurrent role interference in the measured loops.",
+    "CPU evaluation and verified archival can overlap on separate physical CPU cores; shared host memory bandwidth is not isolated.",
+    "A numerical microbenchmark does not establish learning equivalence or production speedup."
+  ],
+  "primary": "Transfer-inclusive latency for identical learned CNN predictions: serial small batches, queued same executable, and one wide executable. Report per-repetition slowest-host time and paired ratios; no rollout or MFU claim.",
+  "qualification": [
+    "All four host artifacts present and finite; source/config/checkpoint/input hashes exact.",
+    "Queued outputs exactly equal serial outputs on every tested position.",
+    "Every timed repetition reproduces its own mode output exactly.",
+    "Report wide policy KL, total variation, top-action disagreements and absolute value/logit errors, with raw arrays. Wide execution may differ."
+  ],
+  "registered_unix": 1789132506.217377,
+  "schema_version": 1,
+  "source_snapshot": "712bbefded39d970e424a626f3fc1fc390a5fd898845e9529db5ad042f510f7e"
+}

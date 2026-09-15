@@ -1,0 +1,1 @@
+{"claims_go_strength":false,"hypothesis":"Partition the unchanged trained decoder inside each four-chip host to reduce latency at fixed batch128.","id":"visual_parallel","kind":"visual_causal_research","parent":{"recipe":"research/recipes/visual_draft","source_sha256":"beaaf64dc8a484d85cf113eb0891c2db39a3ca37fe976a0bb93a3f3a2b853584"},"requires_native":false,"schema_version":1}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "kind": "dispatch_followup_qualification",
+  "registered_unix": 1789111936.0730014,
+  "motivation": "Wide batch128-to1024 trace parity failed; preserve that failed result and test dispatch-only approaches that keep each chip microbatch shape. Measure direct wide numerical differences on identical real positions.",
+  "previous_failure_path": "research/studies/rollout_batching/qualification_failed.json",
+  "previous_failure_sha256": "9269a4552ebecb65e9657b189794ed19bc2b4f92ef225d63aefea14ec2b633c6",
+  "baseline_attempt": "pod-20260911T072328Z-ca9b177d",
+  "snapshots": {
+    "async": "6721c1e7025a9ba93d06b85554b04d0825c8537bf5503c48ed77d398b475ad5d",
+    "scan": "2d92dc8148cb5ae011b6cb752d879ad90a677776e0a8568a1ea89c6bdae0d488",
+    "wide_probe": "e5adc5d0d9f2f33d9717152e8e2e90daddce694d636d189b06bb4e1a36a81c11"
+  },
+  "order": [
+    "async",
+    "scan",
+    "wide_probe"
+  ],
+  "maximum_attempts": 3,
+  "timeout_seconds_per_attempt": 180,
+  "required_validation": "Async and scan require exact request/target/game traces and actor states against original serial batch128; root values tolerance remains 1e-5. Also compare both model outputs with serial calls on every actual pending input. Wide probe records numerical differences and a first differing input/output fixture; it is diagnostic.",
+  "timing_interpretation": "All follow-up runs include duplicate reference inference and trace hashes. No formal timing conclusions; a later timing study must disable both diagnostics after qualification."
+}

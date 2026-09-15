@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "A cloneable synchronous AlphaZero-style control supports exact CPU continuation and shared data-parallel TPU updates.",
+  "id": "az_reference",
+  "kind": "az_reference_training",
+  "parent": {
+    "recipe": "research/recipes/learning_probe",
+    "source_sha256": "980b4ad6903549bf02abf10173b7613b23f9b461a8cdc4cc47969546c8c88cf9"
+  },
+  "schema_version": 1,
+  "requires_native": true
+}

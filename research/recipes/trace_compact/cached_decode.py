@@ -1,0 +1,139 @@
+"""One committed KV per game plus short per-branch hypothetical append deltas."""
+import math
+import jax
+import jax.numpy as jnp
+from model import prefill,append,historical_counts,head_outputs,board_features,embedding,linear,norm
+
+
+def empty_cache(c,games,samples,*,horizon=4):
+    shape=(games,c['max_tokens'],c['heads'],c['width']//c['heads'])
+    delta_shape=(games,2*samples,horizon,c['heads'],c['width']//c['heads'])
+    dtype={'float32':jnp.float32,'bfloat16':jnp.bfloat16}[c['dtype']]
+    return {'kv':tuple((jnp.zeros(shape,dtype),jnp.zeros(shape,dtype))for _ in range(c['blocks'])),
+            'delta':tuple((jnp.zeros(delta_shape,dtype),jnp.zeros(delta_shape,dtype))for _ in range(c['blocks'])),
+            'counts':jnp.zeros((games,2,c['size']**2+1),jnp.float32)}
+
+
+def rebuild_cache(p,tokens,lengths,c,*,samples,horizon=4):
+    """Cold reconstruction from canonical histories; no speculative provenance."""
+    _,kv=prefill(p,tokens,lengths,c)
+    counts=historical_counts(tokens,lengths,c['size']**2+1)[jnp.arange(tokens.shape[0]),lengths]
+    empty=empty_cache(c,tokens.shape[0],samples,horizon=horizon)
+    return {'kv':kv,'delta':empty['delta'],'counts':counts}
+
+
+def append_delta(p,base,delta,tokens,root_positions,depth,c):
+    """Attend to shared committed KV and branch-local KV without expanding it.
+
+    The joint softmax spans two masked score blocks. Delta slot zero is unused:
+    the root input is already part of the shared base. Splitting the value
+    reduction changes floating-point evaluation order and needs qualification.
+    """
+    games,branches=tokens.shape;heads=c['heads'];width=c['width'];dim=width//heads
+    dtype={'float32':jnp.float32,'bfloat16':jnp.bfloat16}[c['dtype']]
+    positions=root_positions[:,None]+depth
+    x=embedding(p,tokens,positions,c);updated=[];scale=1/math.sqrt(c['blocks'])
+    time=base[0][0].shape[1];horizon=delta[0][0].shape[2]
+    past=jnp.arange(time)[None,None,None,:]<=root_positions[:,None,None,None]
+    future=(jnp.arange(horizon)>0)&(jnp.arange(horizon)<=depth)
+    mask=jnp.concatenate((jnp.broadcast_to(past,(games,1,1,time)),
+        jnp.broadcast_to(future,(games,1,1,horizon))),axis=-1)
+    for block,(keys,values),(dk,dv)in zip(p['blocks'],base,delta):
+        qkv=linear(norm(x,block['n1']),block['qkv'],c).reshape(games,branches,3,heads,dim).astype(dtype)
+        q,k,v=(qkv[:,:,i]for i in range(3))
+        dk=dk.at[:,:,depth].set(k);dv=dv.at[:,:,depth].set(v)
+        scores_base=jnp.einsum('gnhd,gshd->gnhs',q,keys,precision=jax.lax.Precision.HIGHEST,
+            preferred_element_type=jnp.float32)
+        scores_delta=jnp.einsum('gnhd,gnshd->gnhs',q,dk,precision=jax.lax.Precision.HIGHEST,
+            preferred_element_type=jnp.float32)
+        scores=jnp.concatenate((scores_base,scores_delta),axis=-1)/math.sqrt(dim)
+        weights=jax.nn.softmax(jnp.where(mask,scores,-1e9),axis=-1).astype(dtype)
+        y=jnp.einsum('gnhs,gshd->gnhd',weights[...,:time],values,precision=jax.lax.Precision.HIGHEST,
+            preferred_element_type=jnp.float32)
+        y=y+jnp.einsum('gnhs,gnshd->gnhd',weights[...,time:],dv,precision=jax.lax.Precision.HIGHEST,
+            preferred_element_type=jnp.float32)
+        x=x+scale*linear(y.reshape(games,branches,width),block['out'],c)
+        x=x+scale*linear(jax.nn.gelu(linear(norm(x,block['n2']),block['mlp_in'],c)),block['mlp_out'],c)
+        updated.append((dk,dv))
+    return norm(x,p['norm']),tuple(updated)
+
+
+def decode_cached(p,retained,controls,lengths,episodes,key,root_stones,c,*,horizon,samples,
+                  coupling='independent',oracle_behavior=False,root_legal=None):
+    """Commit only validated deltas, append the actual root token and decode.
+
+    Only the four policy/resolver arrays are fetched by the host. The returned
+    carry stays on device. Entries at or beyond the actual root token are
+    erased before append; inactive game carries remain bitwise unchanged. No
+    full-history KV is duplicated across views/samples or mutated in the scan.
+    """
+    games=lengths.shape[0];actions=c['size']**2+1
+    active=controls[:,0].astype(jnp.bool_);reset=controls[:,1].astype(jnp.bool_)
+    positions=jnp.where(active,lengths,0);selector=controls[:,2];last_tokens=controls[:,3]
+    past=(jnp.arange(c['max_tokens'])[None,:]<positions[:,None])&(~reset[:,None])
+    committed=controls[:,5:5+horizon];count=controls[:,4]
+    depths=jnp.arange(horizon)[None,:]
+    valid_delta=active[:,None]&(~reset[:,None])&(depths>0)&(depths<count[:,None])
+    indices=jnp.where(valid_delta,positions[:,None]-count[:,None]+depths,c['max_tokens'])
+    def commit_delta(base,delta):
+        selected=delta[jnp.arange(games),selector]
+        base=base.at[jnp.arange(games)[:,None],indices].set(selected,mode='drop')
+        return jnp.where(past[:,:,None,None],base,0)
+    base=jax.tree.map(commit_delta,retained['kv'],retained['delta'])
+    root_h,root_kv=append(p,base,last_tokens,positions,c)
+    valid=jnp.arange(horizon)[None,:]<count[:,None]
+    player=(positions[:,None]-count[:,None]+jnp.arange(horizon)[None,:])%2
+    increments=jnp.einsum('gdc,gda->gca',jax.nn.one_hot(player,2),
+        jax.nn.one_hot(committed,actions)*valid[...,None])
+    root_counts=jnp.where(reset[:,None,None],0,retained['counts']+increments)
+    def expand(x):return jnp.broadcast_to(x[:,None,None],(games,2,samples,*x.shape[1:])).reshape(games*2*samples,*x.shape[1:])
+    h=expand(root_h);counts=expand(root_counts);stones=expand(root_stones)
+    cache=jax.tree.map(jnp.zeros_like,retained['delta']);root_positions=positions
+    positions=expand(positions);views=jnp.broadcast_to(jnp.arange(2)[None,:,None],(games,2,samples)).reshape(-1)
+    legal=None if root_legal is None else expand(root_legal)
+    game_keys=jax.vmap(lambda game,episode:jax.random.fold_in(jax.random.fold_in(key,game),episode))(jnp.arange(games,dtype=jnp.uint32),episodes)
+    plies=lengths[:,None]+jnp.arange(horizon)[None,:]
+    keys=jax.vmap(lambda k,ps:jax.vmap(lambda t:jax.random.fold_in(k,t))(ps))(game_keys,plies)
+    base_noise=jax.vmap(jax.vmap(lambda k:jax.random.gumbel(k,(actions,),jnp.float32)))(keys)
+    own_noise=base_noise*c['expert_temperature']
+    behavior_temperature=c['expert_temperature']if oracle_behavior else c['behavior_temperature']
+    if coupling=='shared':
+        opponent_noise=jnp.broadcast_to(base_noise[:,None,None],(games,2,samples,horizon,actions))*behavior_temperature
+    elif coupling=='independent':
+        branch_ids=jnp.arange(2*samples,dtype=jnp.uint32)
+        def branch_noise(game_key,ps):
+            return jax.vmap(lambda branch:jax.vmap(lambda ply:jax.random.gumbel(
+                jax.random.fold_in(jax.random.fold_in(jax.random.fold_in(game_key,0xBEEF17),branch),ply),
+                (actions,),jnp.float32))(ps))(branch_ids)
+        opponent_noise=jax.vmap(branch_noise)(game_keys,plies).reshape(games,2,samples,horizon,actions)*behavior_temperature
+    else:raise ValueError('Unknown sampling coupling')
+    own_expanded=jnp.broadcast_to(own_noise[:,None,None],(games,2,samples,horizon,actions)).reshape(-1,horizon,actions)
+    opponent_noise=opponent_noise.reshape(-1,horizon,actions)
+    def step(carry,depth):
+        h,cache,counts,stones=carry;player=(positions+depth)%2
+        context=counts[jnp.arange(h.shape[0]),player]
+        board=board_features(p,stones,player+1,c)
+        play,behavior,_=head_outputs(p,h,context,board)
+        if oracle_behavior:behavior=play
+        logits=jnp.where((player==views)[:,None],play,behavior)
+        if legal is not None:logits=jnp.where((depth!=0)|legal,logits,-jnp.inf)
+        noise=jnp.where((player==views)[:,None],own_expanded[:,depth],opponent_noise[:,depth])
+        chosen=jnp.argmax(logits+noise,-1).astype(jnp.int32)
+        counts=counts.at[jnp.arange(h.shape[0]),player,chosen].add(1.)
+        def advance(pair):
+            state,delta=append_delta(p,root_kv,pair[1],chosen.reshape(games,2*samples),root_positions,depth+1,c)
+            return state.reshape(games*2*samples,c['width']),delta
+        h,cache=jax.lax.cond(depth+1<horizon,advance,lambda pair:pair,(h,cache))
+        used_stones=stones;index=jnp.minimum(chosen,actions-2);old=stones[jnp.arange(stones.shape[0]),index]
+        color=jnp.where(chosen<actions-1,player+1,old).astype(jnp.uint8)
+        stones=stones.at[jnp.arange(stones.shape[0]),index].set(color)
+        return (h,cache,counts,stones),(chosen,play,used_stones)
+    (_,cache,_,_),(chosen,play,used_stones)=jax.lax.scan(step,(h,cache,counts,stones),jnp.arange(horizon))
+    def retain(new,old):
+        return jnp.where(active.reshape(games,*([1]*(new.ndim-1))),new,old)
+    retained={'kv':jax.tree.map(retain,root_kv,retained['kv']),
+        'delta':jax.tree.map(retain,cache,retained['delta']),
+        'counts':jnp.where(active[:,None,None],root_counts,retained['counts'])}
+    return (chosen.T.reshape(games,2,samples,horizon),
+        jnp.transpose(play,(1,0,2)).reshape(games,2,samples,horizon,actions),own_noise,
+        jnp.transpose(used_stones,(1,0,2)).reshape(games,2,samples,horizon,actions-1),retained)

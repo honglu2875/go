@@ -1,0 +1,61 @@
+{
+  "candidate": "eval/root_prefetch_learning_27/candidate.json",
+  "candidate_cpuct": 0.0,
+  "candidate_cpus": [
+    64,
+    65,
+    66,
+    67
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "game_timeout_seconds": 90,
+  "katago_config": "eval/ownership_aux/katago_visits_1.cfg",
+  "katago_cpus": [
+    68,
+    69,
+    70,
+    71
+  ],
+  "katago_max_visits": 1,
+  "katago_weights": "eval/katago_early/level-3.json",
+  "komi": 7.5,
+  "max_game_moves": 1296,
+  "openings": [
+    [
+      "D6",
+      "E3"
+    ],
+    [
+      "E1",
+      "A9"
+    ],
+    [
+      "E3",
+      "A7"
+    ],
+    [
+      "D7",
+      "E2"
+    ],
+    [
+      "D9",
+      "J9"
+    ],
+    [
+      "F7",
+      "C3"
+    ],
+    [
+      "A1",
+      "D5"
+    ],
+    [
+      "A7",
+      "H6"
+    ]
+  ],
+  "purpose": "Registered wide-prefetch learned-model historical KataGo anchor.",
+  "schema_version": 1,
+  "seed_prefix": "wide-prefetch-learning-19450271-early-0",
+  "size": 9
+}

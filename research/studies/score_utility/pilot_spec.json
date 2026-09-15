@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "kind": "static_score_utility_learning_pilot",
+  "registered_unix": 1789113899.5871103,
+  "control_snapshot": "3b851efa5a3dcb2da7061b93bbc90f62b93681ea255887ec7b07468f56694998",
+  "candidate_snapshot": "e3a963a3e41e9f1b0800dd785951cf75a10acc9a5cd72b6552fc267c92a8bc77",
+  "cpu_qualification_snapshot": "ae21743f2fb27ab8cd48a92bcaa1ad4daf477b1ab8d0fe56a2f030ab25dbf39b",
+  "cpu_resume_comparison": "runs/qualification/score-utility-ae21743f/comparison.json",
+  "cpu_resume_comparison_sha256": "05c235b40ab40750bc47b0be544f171f81184d95d026603ae37329cf200a644d",
+  "hypothesis": "A learned graded terminal-score preference improves low-visit policy improvement and endgame behavior where win/loss estimates provide little distinction. Prior long games motivate this test but do not establish the cause.",
+  "intervention": "Both arms train an additional E[(2/pi)*atan(current_player_margin/(2*board_size))] head by MSE at weight1.0, retaining ownership weight1.5 and separate true win/loss targets. Control utility factor0; candidate factor0.3. Normalize neural and terminal utilities, PUCT exploration and FPU reduction by1+factor. No other configured training choice differs.",
+  "control": "Fresh factor-zero training, not reused historical weights. Identical full initial parameter tree in both arms.",
+  "budget": {
+    "seed": 27,
+    "selfplay_turns": 8192,
+    "global_real_moves_per_arm": 4194304,
+    "simulations_excluding_root": 16,
+    "timeout_seconds_per_attempt": 900,
+    "maximum_training_attempts": 2,
+    "order": [
+      "control",
+      "candidate"
+    ]
+  },
+  "primary_metric": "Separate paired-color outcomes and incomplete games against pinned official9x9 KataGo at1 and16 visits, candidate16 simulations, openings[] and[C3,G7], cap324 moves and360 seconds/game. Eight games per arm, exploratory screen only.",
+  "secondary_metrics": [
+    "eligible terminal training rows",
+    "completed/truncated self-play games",
+    "learner updates and sample exposures",
+    "training wall time and CPU time",
+    "root visit support and predicted score-value calibration diagnostics"
+  ],
+  "promotion": "No superiority, equivalence or sample-efficiency claim from an observed zero-win floor or incomplete paired panel. A promising result needs fresh training seeds and larger complete external panels. No production promotion from this pilot.",
+  "limitations": [
+    "Score utility is a component control, not full KataGo reproduction.",
+    "The head learns expected bounded score directly, rather than KataGo score-distribution and dynamic utility machinery.",
+    "One initialization; actual update counts can differ with replay warmup.",
+    "Do not equate more terminal rows or lower self-play losses with stronger play.",
+    "Both configured utility and the implied exploration normalization are part of the intervention."
+  ],
+  "lineage": "From scratch. Official KataGo weights and evaluation records do not enter training."
+}

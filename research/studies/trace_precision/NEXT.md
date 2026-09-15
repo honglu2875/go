@@ -1,0 +1,19 @@
+# Next independent execution intervention
+
+Keep the fixed student's failed KataGo strength result and the failed bfloat16 trace qualification in the lineage. A successful float32 policy-execution result would qualify the measured execution mechanism only. MCTS decisions, learning and production remain separate validations.
+
+The current decoder rebuilds a padded 329-token history and its KV cache at every dispatch. It then copies that cache across two views and k branches. The next candidate is persistent device KV for the committed history, with explicit commit records from Rust. This should remove repeated prefill and host history uploads. It may expose CPU or device memory bandwidth as the next bottleneck; reduced arithmetic is not itself evidence of higher throughput or utilization.
+
+Clone the complete recipe before implementing this candidate. Retain the current full-prefix sequential and speculative executables as numerical references. Start every new episode from BOS with an empty cache. Key retained state by stable game ID, episode, network identity and committed ply. Invalidate on a network change, reset, stale ticket, cancelled request or unsupported continuation. Keep the exact action tape and board state in Rust for independent replay and recovery.
+
+For a validated packet, select the view/sample behind the final consumed own-policy row. The native resolver already requires that row's prior action prefix to match the committed history. Its history-only KV entries through that input position are therefore eligible for retention. Board features are separate and must always use the exact new root board. Mask all speculative KV entries beyond the committed prefix. The final actual move may differ from the proposed move after legal filtering: append that actual move on the next invocation, never assume the branch's final proposal was accepted. A stopped game with zero accepted work keeps its previous cache and episode untouched.
+
+Keep retained KV and branch caches on device. Transfer only policy-resolution data and the small per-game commit selection needed by the next graph. Account for duplicate views, discarded forecasts, cache reads/writes, inactive slots and all remaining host copies. First compare a cached one-step control against a cached paired decoder; separately compare both against the full-prefix reference. If arithmetic changes actions, retain the mismatch and qualify the new numerical contract explicitly rather than silently weakening an existing gate.
+
+Tests should exercise heterogeneous accepted depths, branch changes, final-move legality correction, captures, terminal/cap resets, inactive games, model-version invalidation and fresh-process reconstruction. Use real native states and event prefixes. Then register a bounded multi-host numerical check, followed by fresh counterbalanced matched-work timing only if its criterion passes.
+
+A smaller independent candidate removes the redundant second view in known-policy self-play when both actual policies and draws are available. This changes batch shapes and arithmetic, so it needs numerical qualification too. It must remain distinct from predicting an unknown or weaker opponent.
+
+After measurement identifies substantial native time, adapt the existing persistent Rust worker implementation to fixed game shards and reusable queues/buffers. Sweep worker count and batch size, record process CPU time and available hardware counters, and preserve exact traces. Queue padding or the language choice does not establish cache efficiency. Do not combine this change with KV retention in one ablation.
+
+For learning, the separate next diagnostic remains pass/endgame behavior and value calibration against the fixed teacher and real KataGo. Execution throughput does not overcome the student's failed external strength criterion or authorize promoting it into a long run.

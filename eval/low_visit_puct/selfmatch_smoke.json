@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "candidate": "eval/low_visit_puct/candidate.json",
+  "opponent": "eval/ownership_aux/candidate.json",
+  "referee_config": "eval/katago_9x9_smoke.cfg",
+  "candidate_simulations": 16,
+  "opponent_simulations": 16,
+  "candidate_cpuct": 1.5,
+  "opponent_cpuct": 1.5,
+  "size": 9,
+  "komi": 7.5,
+  "max_game_moves": 648,
+  "game_timeout_seconds": 180,
+  "cpu_groups": [
+    {
+      "candidate": [
+        64,
+        65,
+        66,
+        67
+      ],
+      "opponent": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "referee": [
+        72
+      ]
+    }
+  ],
+  "openings": [
+    []
+  ],
+  "purpose": "Two-game integration qualification of learned-checkpoint matches with independent pinned KataGo rules/scoring referee. No strength claim."
+}

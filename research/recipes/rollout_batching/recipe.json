@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "rollout_batching",
+  "kind": "fixed_network_rollout_batching",
+  "requires_native": true,
+  "claims_go_strength": false,
+  "parent_model_sha256": "89f3df7dcdc0bd2c26c2f7b7c09c3dfbecf9f32aea583a5788686cf4e5d1ed0f",
+  "hypothesis": "Larger inference batches reduce dispatch overhead for the same set of native games and fixed learned model."
+}

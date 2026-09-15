@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Joint policy and value integration",
+  "hypothesis": "Reuse each qualified backbone for policy and signed-value readouts without a second encoder pass.",
+  "requires_native": false
+}

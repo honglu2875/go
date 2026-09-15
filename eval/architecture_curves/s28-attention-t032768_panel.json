@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "s28-attention-t032768",
+      "id": "s28-attention-t032768-chunk-0",
+      "spec": "eval/architecture_curves/s28-attention-t032768-chunk-0.json"
+    },
+    {
+      "group": "s28-attention-t032768",
+      "id": "s28-attention-t032768-chunk-1",
+      "spec": "eval/architecture_curves/s28-attention-t032768-chunk-1.json"
+    },
+    {
+      "group": "s28-attention-t032768",
+      "id": "s28-attention-t032768-chunk-2",
+      "spec": "eval/architecture_curves/s28-attention-t032768-chunk-2.json"
+    },
+    {
+      "group": "s28-attention-t032768",
+      "id": "s28-attention-t032768-chunk-3",
+      "spec": "eval/architecture_curves/s28-attention-t032768-chunk-3.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

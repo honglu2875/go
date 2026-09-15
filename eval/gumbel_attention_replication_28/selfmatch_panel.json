@@ -1,0 +1,215 @@
+{
+  "candidate": "eval/gumbel_attention_replication_28/candidate.json",
+  "candidate_cpuct": 0.0,
+  "candidate_simulations": 16,
+  "cpu_groups": [
+    {
+      "candidate": [
+        64,
+        65,
+        66,
+        67
+      ],
+      "opponent": [
+        68,
+        69,
+        70,
+        71
+      ],
+      "referee": [
+        72
+      ]
+    },
+    {
+      "candidate": [
+        73,
+        74,
+        75,
+        76
+      ],
+      "opponent": [
+        77,
+        78,
+        79,
+        80
+      ],
+      "referee": [
+        81
+      ]
+    },
+    {
+      "candidate": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "opponent": [
+        86,
+        87,
+        88,
+        89
+      ],
+      "referee": [
+        90
+      ]
+    },
+    {
+      "candidate": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "opponent": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "referee": [
+        99
+      ]
+    }
+  ],
+  "game_timeout_seconds": 180,
+  "komi": 7.5,
+  "max_game_moves": 1296,
+  "openings": [
+    [
+      "J2",
+      "D6"
+    ],
+    [
+      "F3",
+      "C7"
+    ],
+    [
+      "H3",
+      "H6"
+    ],
+    [
+      "C1",
+      "F8"
+    ],
+    [
+      "F9",
+      "F4"
+    ],
+    [
+      "B4",
+      "A2"
+    ],
+    [
+      "F1",
+      "H2"
+    ],
+    [
+      "H3",
+      "C9"
+    ],
+    [
+      "C6",
+      "D7"
+    ],
+    [
+      "B8",
+      "H9"
+    ],
+    [
+      "H2",
+      "D5"
+    ],
+    [
+      "E1",
+      "J1"
+    ],
+    [
+      "A1",
+      "A5"
+    ],
+    [
+      "C9",
+      "G7"
+    ],
+    [
+      "E2",
+      "B3"
+    ],
+    [
+      "J5",
+      "H8"
+    ],
+    [
+      "J3",
+      "A2"
+    ],
+    [
+      "J9",
+      "B2"
+    ],
+    [
+      "C9",
+      "F9"
+    ],
+    [
+      "H9",
+      "C4"
+    ],
+    [
+      "B8",
+      "D8"
+    ],
+    [
+      "E1",
+      "J4"
+    ],
+    [
+      "A3",
+      "F5"
+    ],
+    [
+      "F3",
+      "H8"
+    ],
+    [
+      "H5",
+      "G2"
+    ],
+    [
+      "J6",
+      "J7"
+    ],
+    [
+      "D4",
+      "A7"
+    ],
+    [
+      "D1",
+      "E2"
+    ],
+    [
+      "E3",
+      "H6"
+    ],
+    [
+      "G1",
+      "J1"
+    ],
+    [
+      "C3",
+      "J5"
+    ],
+    [
+      "G8",
+      "B6"
+    ]
+  ],
+  "opponent": "eval/gumbel_attention_replication_28/control.json",
+  "opponent_cpuct": 0.0,
+  "opponent_simulations": 16,
+  "purpose": "Registered independent-seed attention replication against the matched seed28 Gumbel CNN.",
+  "referee_config": "eval/katago_9x9_smoke.cfg",
+  "schema_version": 1,
+  "size": 9
+}

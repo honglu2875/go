@@ -1,0 +1,1 @@
+{"cache_positions":8,"cpuct":1.5,"fpu_reduction":null,"gumbel":null,"kind":"visual_mcts_inference","komi":0.5,"max_game_moves":4,"max_search_edges":1000,"native_receipt_sha256":"28c34bf7ecfc96fff92a22270fe245ec758cc718ca3d3acbdb031b459f8ee3f0","schema_version":1,"scoring":"pass_alive_area","simulations":2,"size":3}

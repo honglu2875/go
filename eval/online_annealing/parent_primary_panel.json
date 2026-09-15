@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "parent-primary",
+      "id": "parent-primary-0",
+      "spec": "eval/online_annealing/parent-primary-0.json"
+    },
+    {
+      "group": "parent-primary",
+      "id": "parent-primary-1",
+      "spec": "eval/online_annealing/parent-primary-1.json"
+    },
+    {
+      "group": "parent-primary",
+      "id": "parent-primary-2",
+      "spec": "eval/online_annealing/parent-primary-2.json"
+    },
+    {
+      "group": "parent-primary",
+      "id": "parent-primary-3",
+      "spec": "eval/online_annealing/parent-primary-3.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

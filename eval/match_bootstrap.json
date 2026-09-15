@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "candidate": "eval/candidate_9x9_bootstrap.json",
+  "katago_config": "eval/katago_9x9_smoke.cfg",
+  "openings": [[], ["C3", "G7"]],
+  "candidate_simulations_excluding_root": 16,
+  "candidate_cpuct": 1.5,
+  "katago_max_visits": 16,
+  "size": 9,
+  "komi": 7.5,
+  "max_game_moves": 324,
+  "game_timeout_seconds": 180,
+  "candidate_cpus": [48, 49, 50, 51, 52, 53, 54, 55],
+  "katago_cpus": [64, 65, 66, 67, 68, 69, 70, 71],
+  "seed_prefix": "gozero-bootstrap-eval-1",
+  "purpose": "Paired-color external match qualification; not a strength promotion or algorithmic comparison."
+}

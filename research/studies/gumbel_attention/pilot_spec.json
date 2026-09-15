@@ -1,0 +1,234 @@
+{
+  "absolute_anchor": {
+    "candidate_cpuct": 0.0,
+    "candidate_simulations": 16,
+    "game_timeout_seconds": 360,
+    "katago_visits": [
+      1,
+      16
+    ],
+    "max_game_moves": 324,
+    "new_candidate_games": 8,
+    "openings": [
+      [],
+      [
+        "C3",
+        "G7"
+      ]
+    ],
+    "opponent_sha256": "a1298ce1adc1dad7bd868ca962b2384cc8388ed373a00e6bae1114fa6f9e2d61",
+    "reused_control_result": "runs/eval/gumbel-candidate-857ccbc5/result.json",
+    "reused_control_result_sha256": "56cd1b5cc15d17c26a8de420beec0286f30b9473243e734be482d1cb41ec8c00"
+  },
+  "budget": {
+    "checkpoint_every": 8192,
+    "global_real_moves": 16777216,
+    "maximum_new_eval_seconds": 2400,
+    "maximum_new_training_attempts": 1,
+    "minimum_free_bytes": 8589934592,
+    "prepare_timeout_seconds": 180,
+    "seed": 27,
+    "selfplay_turns": 32768,
+    "simulations": 16,
+    "timeout_seconds": 2400
+  },
+  "candidate_snapshot": "08b8996848f5f08ace154f1d99fe4ed9f37c4cb8c2965a4a96b15f726f483295",
+  "control_attempt": "pod-20260911T094436Z-43759b05",
+  "control_model_sha256": "d2023675f760e8af0cd9efc797f7d59604f3e71655184b359d3a35dcb9541dea",
+  "control_reuse": "Reuse the completed seed-27 Gumbel CNN run. All non-model scientific settings and the full trainer are identical. The new recipe CNN branch reproduced 60 CPU arrays and all 55 games; the attention model was qualified separately. No fresh CNN training cost is hidden.",
+  "control_snapshot": "3750f1f428dced41601ca8db566027ca8d524d396c707296a7301f5b50eaec36",
+  "hypothesis": "Global board attention improves learning under the same Gumbel search bundle and real-move budget as the qualified CNN.",
+  "intervention": {
+    "candidate": {
+      "architecture": "attention",
+      "blocks": 6,
+      "dtype": "bfloat16",
+      "groups": 8,
+      "heads": 4,
+      "max_board_size": 26,
+      "mlp_ratio": 4,
+      "score_scale": 2.0,
+      "score_utility_factor": 0.0,
+      "value_hidden": 64,
+      "width": 64
+    },
+    "control": {
+      "blocks": 4,
+      "dtype": "bfloat16",
+      "groups": 8,
+      "score_scale": 2.0,
+      "score_utility_factor": 0.0,
+      "value_hidden": 64,
+      "width": 64
+    },
+    "parameter_counts": [
+      307461,
+      311425
+    ]
+  },
+  "kind": "gumbel_attention_architecture_pilot",
+  "limitations": [
+    "One seed and a reused control selected after the search discovery. New openings are frozen before candidate training.",
+    "Parameter counts differ by about 1.3%; neither FLOPs nor optimal hyperparameters are matched.",
+    "The same SGD settings are a controlled screen, not an equal-budget architecture-specific tuning result.",
+    "The simple attention trunk is an ablation control; current official KataGo already uses more advanced transformer models.",
+    "Timing may overlap CPU evaluations on separate physical cores and is not an isolated systems claim.",
+    "The two early KataGo levels are being calibrated independently; no optional ladder result can replace the declared primary or strong anchor."
+  ],
+  "primary_metric": {
+    "candidate_cpuct": 0.0,
+    "candidate_simulations": 16,
+    "game_timeout_seconds": 180,
+    "games": 64,
+    "komi": 7.5,
+    "max_game_moves": 1296,
+    "name": "Paired score against the reused Gumbel CNN checkpoint",
+    "opening_seed": 33991281,
+    "openings": [
+      [
+        "D7",
+        "B3"
+      ],
+      [
+        "E9",
+        "H4"
+      ],
+      [
+        "J7",
+        "E7"
+      ],
+      [
+        "H3",
+        "H7"
+      ],
+      [
+        "J4",
+        "D5"
+      ],
+      [
+        "D8",
+        "F3"
+      ],
+      [
+        "J6",
+        "F5"
+      ],
+      [
+        "J5",
+        "J3"
+      ],
+      [
+        "D7",
+        "D5"
+      ],
+      [
+        "D8",
+        "A5"
+      ],
+      [
+        "E8",
+        "E6"
+      ],
+      [
+        "G8",
+        "H8"
+      ],
+      [
+        "B4",
+        "G8"
+      ],
+      [
+        "E4",
+        "H1"
+      ],
+      [
+        "H3",
+        "C5"
+      ],
+      [
+        "G2",
+        "B6"
+      ],
+      [
+        "F4",
+        "D5"
+      ],
+      [
+        "H5",
+        "C1"
+      ],
+      [
+        "B1",
+        "E2"
+      ],
+      [
+        "A2",
+        "C9"
+      ],
+      [
+        "J6",
+        "F3"
+      ],
+      [
+        "G3",
+        "J8"
+      ],
+      [
+        "D2",
+        "D4"
+      ],
+      [
+        "E5",
+        "H2"
+      ],
+      [
+        "J9",
+        "C9"
+      ],
+      [
+        "J9",
+        "J1"
+      ],
+      [
+        "C9",
+        "F8"
+      ],
+      [
+        "C1",
+        "G2"
+      ],
+      [
+        "E4",
+        "E3"
+      ],
+      [
+        "G5",
+        "H3"
+      ],
+      [
+        "H5",
+        "D8"
+      ],
+      [
+        "A5",
+        "C8"
+      ]
+    ],
+    "opponent_cpuct": 0.0,
+    "opponent_simulations": 16,
+    "referee_binary_sha256": "1ae1ed2108caa025bba853634b7f1aad3a29baa0ba27b4a298759ca6b172d104",
+    "referee_weights_sha256": "a1298ce1adc1dad7bd868ca962b2384cc8388ed373a00e6bae1114fa6f9e2d61",
+    "size": 9
+  },
+  "promotion": "Exploratory architecture follow-up only if all 64 direct games complete, every KataGo board/score check passes, paired score is at least 0.65 and conservative paired 95% lower bound exceeds 0.5. No production promotion. Strong absolute anchor remains required.",
+  "qualification_sha256": "c2c807ab4197bac06d7d2a649c859f4734e4245bd7da12cbce207def57753773",
+  "registered_unix": 1789127359.1630034,
+  "schema_version": 1,
+  "secondary_metrics": [
+    "Color-specific win rates and early double-pass frequency",
+    "Terminal rows, completed games and truncations",
+    "Active neural evaluations, slots and learner exposures",
+    "Inference, learner, native, CPU and wall times; same reservation denominator"
+  ],
+  "shape_qualification_sha256": "d597ee3f7a065a4cd5dc89762ab76277de9af42eac23d7eb573f5269c3a0659a"
+}

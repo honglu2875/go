@@ -1,0 +1,9 @@
+{
+  "kind": "cached_ragged_paged_kernel_qualification",
+  "maximum_attempts": 2,
+  "maximum_seconds_per_attempt": 300,
+  "reference_model_source": "735256814f58a9cc3db4f3ea47f17888faba10ec159c09312a58972423ff6ab9",
+  "registered_at": "2026-09-12T02:32:13.940956+00:00",
+  "schema_version": 1,
+  "scope": "Qualify pinned JAX 0.11.1 RPA packing and dynamic causal prefixes on TPU. All cache packing, padding and copies included. CPU native reference agrees at 2e-6. Preserve failures; no trained rollouts or MFU claim. After small qualification, separately register full-model matched kernel comparison and compute-counter diagnostic."
+}

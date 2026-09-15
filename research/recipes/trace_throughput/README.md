@@ -1,0 +1,13 @@
+# Equal-prefix speculative rollout timing
+
+This complete execution recipe clones `board_trace` and reuses its fixed exact-board student and byte-identical model/decoder. It does not train a model. The student's failed real KataGo strength criterion remains part of its lineage.
+
+A dedicated native bounded batch accepts an active-game mask and a per-game remaining-move allowance. Inactive games retain their terminal/capped state and episode identity. Active games advance at most their allowance, with terminal and game-cap outcomes taking precedence over the work limit. Every consumed policy prediction must still match the actual action prefix, board input and model/context ticket.
+
+Each mode consumes exactly the same number of real moves per game, including resets. A one-step control, learned-behavior four-sample/four-ply decoder, and known-policy joint one-sample/four-ply decoder use identical parameter elements and counter-based draws. Greedy/stochastic correctness of the parent is CPU evidence only; this recipe independently checks numerical equivalence on its actual devices. Full event streams and final native states must match before timing and after every timing repetition. A mismatch fails the run and preserves the evidence.
+
+Inference uses a local-device JAX mesh. Global barriers separate segments and do not appear inside the rollout loop. Each repeated order contains every mode; repetition-specific streams vary the games while preserving pairing. The measured interval includes the full packet loop and required Python/native coordination. It excludes compilation, final-state inspection, post-run event reconstruction and artifact serialization; those costs remain inside total attempt time. Per-host maximum elapsed times define pod throughput, including the effect of slower hosts.
+
+Counters cover real moves, dispatches, inactive game slots, padded/active history tokens, decoder appends, board-encoder rows, logical input/output payload, native/frame parsing time, device execution/materialization time and process CPU time. Logical tensor bytes are not measured hardware-link traffic. An optional host-0 JAX trace samples the behavior mode after timing; its action prefix is checked against the timed reference. Compiler cost estimates and a captured trace do not by themselves establish MFU.
+
+`cpu_qualification.json` is a small one-host integration check. `tpu_qualification.json` uses 64 games per host over four hosts and a single timing order. `tpu_timing.json` uses three counterbalanced orders and longer equal-work windows, plus profiling. TPU executions and their thresholds must be registered before launch. The native resolver is currently serial; persistent worker scaling is a separate subsequent intervention.

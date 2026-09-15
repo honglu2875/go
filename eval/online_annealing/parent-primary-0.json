@@ -1,0 +1,61 @@
+{
+  "candidate": "eval/online_annealing/parent.json",
+  "candidate_cpuct": 0.0,
+  "candidate_cpus": [
+    64,
+    65,
+    66,
+    67
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "game_timeout_seconds": 180,
+  "katago_config": "eval/continued_selfplay/katago_v16_single_thread.cfg",
+  "katago_cpus": [
+    68,
+    69,
+    70,
+    71
+  ],
+  "katago_max_visits": 16,
+  "katago_weights": "eval/katago_early/level-3.json",
+  "komi": 7.5,
+  "max_game_moves": 648,
+  "openings": [
+    [
+      "J3",
+      "E3"
+    ],
+    [
+      "F2",
+      "D1"
+    ],
+    [
+      "H1",
+      "G8"
+    ],
+    [
+      "B9",
+      "B5"
+    ],
+    [
+      "J4",
+      "B8"
+    ],
+    [
+      "B3",
+      "E5"
+    ],
+    [
+      "H4",
+      "C4"
+    ],
+    [
+      "B4",
+      "H5"
+    ]
+  ],
+  "purpose": "Registered final-checkpoint online learning-rate pilot; parent is a contemporaneous baseline. Fixed CPU/search conditions; no KataGo targets in training.",
+  "schema_version": 1,
+  "seed_prefix": "online-annealing-91310301-primary-0",
+  "size": 9
+}

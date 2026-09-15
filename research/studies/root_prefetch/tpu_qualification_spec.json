@@ -1,0 +1,42 @@
+{
+  "budget": {
+    "checkpoint_every": 128,
+    "global_real_moves_per_continuous_arm": 131072,
+    "maximum_training_attempts": 4,
+    "minimum_free_bytes": 8589934592,
+    "order": [
+      "off",
+      "queued",
+      "queued-resume",
+      "wide"
+    ],
+    "prepare_timeout_seconds": 180,
+    "resume_turn": 128,
+    "selfplay_turns": 256,
+    "simulations": 16,
+    "timeout_seconds": 240
+  },
+  "cpu_qualification_sha256": "ce51e1e19265be5e1396dcd516d76782e5f36fa80d3b6dd2ecc0aaa16fa1612c",
+  "followup": "If exact queued and recovery qualifications pass, register useful-sized counterbalanced systems timing. Wide requires fixed-input numerical validation and actual learning comparisons.",
+  "kind": "root_prefetch_four_host_9x9_qualification",
+  "limitations": [
+    "Small execution qualification, not sample efficiency or Go strength.",
+    "Three continuous runs plus one continuation maximum, no automatic retry.",
+    "Timing can overlap the attention pilot CPU benchmark on different physical cores.",
+    "Observed allocation is 16 chips on four hosts; broader reserved engineering and idle time remains charged separately."
+  ],
+  "qualification": [
+    "All four hosts pass and export identical replicated parameters within each arm",
+    "Off and queued: all saved arrays, game records and scientific actor/trainer state match exactly except source/config/native identity, systems counters and transport round numbers",
+    "Queued continuation128\u2192256: every final array, complete actor, scientific state and subsequent game matches uninterrupted queued",
+    "Wide: finite valid state and full completion; report differences from off without presuming equality"
+  ],
+  "registered_unix": 1789129378.0163348,
+  "schema_version": 1,
+  "sources": {
+    "off": "e76733703be3d4c7bb6214dd04f9f9f080e60af12fa7451f02a28976c17f1355",
+    "queued": "9797920ad63b62aee2ae95a35399c6bbfca72a1112034fd04e20ce917de31819",
+    "wide": "20f2d0d0b0fde43bb53b71b784c053bdcd2dbe972c8ac62ab0c175c09f44c6d5"
+  },
+  "work_accounting": "Record actual active neural outputs, padded slots, forward executable dispatches, host synchronizations and used/unused cache entries. Include full training segment and complete attempt chip-hours; no speed claim from one short unbalanced repetition."
+}

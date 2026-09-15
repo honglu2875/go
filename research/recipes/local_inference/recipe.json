@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Removing global completion reductions from inference, while retaining identical global learner batches and root network versions, improves throughput without changing self-play or learning.",
+  "id": "local_inference",
+  "kind": "local_inference_training",
+  "parent": {
+    "recipe": "research/recipes/az_reference",
+    "source_sha256": "256bf57ec0a58c292023dcbb40375f419c9723e2271f95203bd053b0b267b34d"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

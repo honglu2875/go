@@ -1,0 +1,5 @@
+This cloneable qualification recipe uses plain JAX for a distributed linear model and explicit momentum SGD. It initializes the provided pod before querying devices, requires four processes and the configured TPU devices, checks the sharded update against a full-batch NumPy oracle, and verifies exact continuation after saving and restoring parameters, momentum, step, and seed.
+
+Each host records both its operational label and its discovered JAX process rank. The latter determines input ownership. The recipe also measures synchronized, warmed-up bfloat16 batched matrix multiplication. That result is synthetic aggregate throughput, not Go-model MFU or a learning improvement.
+
+The successful 2026-09-11 attempt used snapshot `1c6cced617946d90e8d3a2a6cfe2e421a021fe60c6ba6caee1ed302517ac879f`. All parameter, momentum, and counter arrays matched across hosts; maximum parameter error versus NumPy was 1.862645149230957e-9, and the resumed next update was identical to uninterrupted execution. Full artifacts are in `runs/pod-20260911T031751Z-cb3a78f4`.

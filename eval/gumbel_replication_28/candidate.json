@@ -1,0 +1,10 @@
+{
+  "model_export_path": "runs/pod-20260911T111515Z-fd49f349/rank-0/artifacts/model_export.npz",
+  "model_export_sha256": "b94eec1c3ee548ab5a4b90b52db4ceb9a03a5d6c2cb2d268ba1b262845dc79a8",
+  "network_version": 32741,
+  "schema_version": 1,
+  "training_lineage": "Fresh Gumbel candidate, independent seed 28, 16,777,216 real moves; no KataGo labels or weights in training.",
+  "training_result_path": "runs/pod-20260911T111515Z-fd49f349/rank-0/artifacts/result.json",
+  "training_result_sha256": "475be60a22214a69dd4554081a64b805b2184baaefabb66e63f2e764a6bd94e8",
+  "training_snapshot": "5cc18cbaee669a67ab0e77ce1c3addaa6f031bc92fa3674ef8d6e311e53219ec"
+}

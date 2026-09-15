@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "platform": "tpu",
+  "expected_processes": 4,
+  "expected_devices": 16,
+  "seed": 91312001,
+  "model": {
+    "max_board_size": 19,
+    "patch_size": 3,
+    "input_channels": 6,
+    "width": 1024,
+    "heads": 16,
+    "kv_heads": 4,
+    "layers": 18,
+    "mlp_hidden": 3328,
+    "max_positions": 512,
+    "rope_theta": 10000,
+    "norm_epsilon": 0.000001,
+    "dtype": "bfloat16",
+    "attention_backend": "splash",
+    "rematerialize": true,
+    "behavior_updates_trunk": true
+  },
+  "probe": {
+    "board_size": 9,
+    "sequences_per_host": 4,
+    "positions": 32,
+    "draft_plies": 8,
+    "repetitions": 3,
+    "gradient_check": true,
+    "cache_tolerance": 0.08
+  }
+}

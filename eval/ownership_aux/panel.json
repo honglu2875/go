@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "workers": 8,
+  "matches": [
+    {
+      "id": "control-v1-p0",
+      "group": "control-v1",
+      "spec": "eval/ownership_aux/control-v1-p0.json"
+    },
+    {
+      "id": "control-v1-p1",
+      "group": "control-v1",
+      "spec": "eval/ownership_aux/control-v1-p1.json"
+    },
+    {
+      "id": "control-v16-p0",
+      "group": "control-v16",
+      "spec": "eval/ownership_aux/control-v16-p0.json"
+    },
+    {
+      "id": "control-v16-p1",
+      "group": "control-v16",
+      "spec": "eval/ownership_aux/control-v16-p1.json"
+    },
+    {
+      "id": "candidate-v1-p0",
+      "group": "candidate-v1",
+      "spec": "eval/ownership_aux/candidate-v1-p0.json"
+    },
+    {
+      "id": "candidate-v1-p1",
+      "group": "candidate-v1",
+      "spec": "eval/ownership_aux/candidate-v1-p1.json"
+    },
+    {
+      "id": "candidate-v16-p0",
+      "group": "candidate-v16",
+      "spec": "eval/ownership_aux/candidate-v16-p0.json"
+    },
+    {
+      "id": "candidate-v16-p1",
+      "group": "candidate-v16",
+      "spec": "eval/ownership_aux/candidate-v16-p1.json"
+    }
+  ]
+}

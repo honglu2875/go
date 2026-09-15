@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "platform": "cpu",
+  "seed": 27,
+  "expected_processes": 1,
+  "expected_devices": 1,
+  "actors": {
+    "size": 3,
+    "komi": 0.5,
+    "history": 2,
+    "games": 32,
+    "workers": 2,
+    "worker_cpus": [
+      8,
+      9
+    ],
+    "simulations": 8,
+    "cpuct": 1.5,
+    "max_search_edges": 10000,
+    "max_game_moves": 36,
+    "dirichlet_alpha": 0.3,
+    "dirichlet_fraction": 0.25,
+    "temperature_early": 1.0,
+    "temperature_late": 0.0,
+    "temperature_moves": 12,
+    "seed": 27,
+    "actor_offset": 0,
+    "scoring": "pass_alive_area",
+    "fpu_reduction": null
+  },
+  "model": {
+    "width": 16,
+    "blocks": 2,
+    "groups": 4,
+    "value_hidden": 16,
+    "dtype": "float32"
+  },
+  "model_artifact": null,
+  "inference_batch": 8,
+  "warmup_turns": 4,
+  "measured_turns": 12,
+  "verify_trace": true
+}

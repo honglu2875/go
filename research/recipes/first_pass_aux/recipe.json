@@ -1,0 +1,14 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Supervise a one-pass current-board draft using the full-pass historical context and a shared expert-policy readout, with independent main-policy evaluation.",
+  "id": "first_pass_aux",
+  "kind": "sequential_policy_learnability",
+  "parent": {
+    "recipe": "research/recipes/encoder_attention",
+    "scope": "Research parent with >=5% paired validation KL improvement in both seeds under the explicit adaptive follow-up; original joint latency screen failed and is retained. No production or MFU promotion.",
+    "selection_record_sha256": "7c7023ad090b26fc89de8b7c44e5cf75529efd8abc43a73ac06134869100178f",
+    "snapshot_id": "b82799be5078566bbd28aa6879c7f87d1bb5c34e71cfba8c70e6d0e59b50a8f2"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

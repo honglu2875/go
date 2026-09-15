@@ -1,0 +1,33 @@
+{
+  "budget": {
+    "cpu_attempts": 4,
+    "games_per_turn": 8,
+    "max_seconds_per_attempt": 180,
+    "resume_turn": 48,
+    "simulations": 8,
+    "tpu_attempts": 0,
+    "turns": 96
+  },
+  "kind": "root_prefetch_cpu_qualification",
+  "limitations": [
+    "CPU float32 qualification does not establish TPU bfloat16 equivalence, throughput, MFU, learning efficiency or Go strength.",
+    "Queued uses the original executable and actor-to-slot mapping, dispatching branches before one host fetch. Wide uses a different batch shape.",
+    "Cache proposals are not guaranteed search choices. Exact sequential selection and fallback remain authoritative."
+  ],
+  "registered_unix": 1789128861.2679698,
+  "required": [
+    "Rust reference comparison: complete games, targets, actor RNG and recovery under five search budgets and extreme logits",
+    "Native dimension/staleness/nonfinite rejection is atomic",
+    "Off reproduces the qualified legacy CNN CPU arrays and games",
+    "Queued matches off parameters, momentum, replay, game records and scientific actor state exactly; transport rounds and systems counters are explicit exceptions",
+    "Queued continuation from turn48 matches uninterrupted final arrays, full actors, scientific state and subsequent games",
+    "Wide execution has valid finite arrays and complete recoverable state; numerical differences are measured rather than silently declared exact"
+  ],
+  "schema_version": 1,
+  "sources": {
+    "off": "46c448d65da8bb6e900a1e71580a3f9be25f1ae4180bcd8d4ace83b01da77e5a",
+    "queued": "414f976d0a9e1a1a5dc045e3f4ec972c3179efdba2df4a072478e9cbcfd352ea",
+    "wide": "7cdbbb900c5cbc6bef803bfa712a582b2f20954b2995cfb03fa115c528844d4c"
+  },
+  "work_accounting": "active_neural_evaluations counts every actual nonpadding output, including unused root predictions; simulations and replay NN metadata retain actual sequential search counts. prefetch_evaluations minus cache_hits is wasted work at commit boundaries. Padded slots and host fetches are separate."
+}

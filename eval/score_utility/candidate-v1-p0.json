@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "candidate": "eval/score_utility/candidate.json",
+  "katago_config": "eval/ownership_aux/katago_visits_1.cfg",
+  "openings": [
+    []
+  ],
+  "candidate_simulations_excluding_root": 16,
+  "candidate_cpuct": 1.5,
+  "katago_max_visits": 1,
+  "size": 9,
+  "komi": 7.5,
+  "max_game_moves": 324,
+  "game_timeout_seconds": 360,
+  "candidate_cpus": [
+    64,
+    65,
+    66,
+    67
+  ],
+  "katago_cpus": [
+    68,
+    69,
+    70,
+    71
+  ],
+  "seed_prefix": "gozero-score-utility-pilot-27-p0",
+  "purpose": "Registered static score-utility component pilot; factor0.3 candidate; paired colors and separately declared KataGo visit levels."
+}

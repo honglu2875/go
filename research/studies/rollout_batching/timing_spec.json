@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "kind": "fixed_work_dispatch_timing",
+  "registered_unix": 1789112422.1946273,
+  "variants": {
+    "serial": {
+      "snapshot": "4888871d83bf5564d4d3eb9682a2cabd677bb1ee125878be3c6b80d9b51464f4"
+    },
+    "async": {
+      "snapshot": "045936d411499e7cc300de62b38262e2e5573e3fb01b75539aab5e3fa69149ba",
+      "qualification_path": "research/studies/rollout_batching/async_qualification.json",
+      "qualification_sha256": "d2c813fb37f1430d046c9af48425b0837a6d3c136cf644d23dc5a860a046458d"
+    }
+  },
+  "order": [
+    "serial",
+    "async",
+    "async",
+    "serial",
+    "serial",
+    "async"
+  ],
+  "timeout_seconds_per_attempt": 180,
+  "minimum_median_segment_speedup": 1.2,
+  "primary_metric": "Median across three counterbalanced repetitions of slowest-host complete measured rollout segment speedup, with every repetition faster and all native useful-work counters equal.",
+  "secondary_metrics": [
+    "inference time",
+    "native time",
+    "process CPU seconds per wall second",
+    "dispatch and materialization calls"
+  ],
+  "scope": "Fixed network and fixed 1024 games/host, 32 warmup turns and 128 measured turns, 16 simulations. Each dispatch has128 positions/host. All source/model/native/config identities pinned. Includes completed and unfinished games in the same early-to-mid-game measurement window. No learner is present.",
+  "exclusions": "No trace hashing or duplicate reference inference during measurement; no other benchmark, native build or evaluation workload launched concurrently. Runtime thread affinity broadening is recorded, not assumed absent.",
+  "selection": "Async is the only follow-up passing the required exact TPU trace gate. Scan and direct-wide numerical differences remain separate experimental results, not measured as equivalent-work optimizations here.",
+  "failure_policy": "Stop on any attempt or native-work mismatch and retain all records. No replacement samples in this protocol.",
+  "budget": "Six bounded attempts; charge all stage/compile/prepare/execute windows and keep total reserved allocation accounting separate."
+}

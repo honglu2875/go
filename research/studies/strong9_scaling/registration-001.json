@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "kind": "strong9_selected_architecture_registration",
+  "created_unix": 1789443718.54946,
+  "protocol": {
+    "path": "research/studies/strong9_scaling/comparison-protocol-001.json",
+    "sha256": "dfe09a30164a4106603ca649bf9dab26b6db39bff3fcbbd0c6016f6fab237dde"
+  },
+  "objective_details": {
+    "path": "research/studies/strong9_scaling/objective-details-001.json",
+    "sha256": "6dbf47ba4f1c5f5fdf0b8abb49a67420be88421dfdc26c745e11101fe2f41f22"
+  },
+  "preceding_decision": {
+    "path": "research/studies/readout_followups/refinement-decision-001.json",
+    "sha256": "5b1eb3994bb86f12dc45bb1486b9aa62b48741867121264e137cb2fd68260b6d"
+  },
+  "selection": "rank64_first_pass_auxiliary",
+  "models": {
+    "cnn": {
+      "architecture": "katago_nested_policy",
+      "dtype": "bfloat16",
+      "gpool_width": 128,
+      "layers": 40,
+      "max_board_size": 19,
+      "max_positions": 512,
+      "microbatch": 32,
+      "mid_width": 384,
+      "norm_epsilon": 0.0001,
+      "policy_width": 128,
+      "rematerialize": true,
+      "width": 768
+    },
+    "transformer": {
+      "architecture": "causal_visual_policy",
+      "attention_backend": "splash",
+      "connector_channels": 64,
+      "dtype": "bfloat16",
+      "encoder_attention_blocks": 4,
+      "encoder_attention_heads": 12,
+      "encoder_attention_mlp_hidden": 1024,
+      "encoder_blocks": 24,
+      "encoder_expansion": 4,
+      "encoder_layer_scale": 1e-06,
+      "encoder_passes": 2,
+      "encoder_rematerialize": true,
+      "encoder_rope_theta": 10000.0,
+      "encoder_width": 768,
+      "first_pass_aux_weight": 0.25,
+      "heads": 12,
+      "kv_heads": 4,
+      "layers": 18,
+      "max_board_size": 9,
+      "max_positions": 512,
+      "mlp_hidden": 2048,
+      "norm_epsilon": 1e-06,
+      "policy_context_dim": 64,
+      "policy_spatial_bias": true,
+      "rematerialize": true,
+      "rope_theta": 10000.0,
+      "width": 768
+    }
+  },
+  "snapshots": {
+    "cnn": {
+      "qualification": "ed15249055a11bac5b86806505d0d14ae75a4aee2ea327e86b6a422e49a7259c",
+      "seed1": "dff1847445bc363e1dd81d6a824972676070a6036213e0bab1a9f5968e1d7011",
+      "seed2": "3e9dca597a594ac0bb1e35667f07d9e8ccbca7f0f3d725699595b435deb32d89"
+    },
+    "transformer": {
+      "qualification": "213893a66d715bec9cffb4755460d590e999ff7f6390c04f4278b632110f734e",
+      "seed1": "23c9dfe60c0a4c1c376e74f634b568fd1c85f3b13a0c7fef9172859ad38a40fb",
+      "seed2": "47bb3410a1a6c100c1e005db246f925b73b08bb6ad833ed76be64d54de87848d"
+    }
+  },
+  "shared_library_sha256": {
+    "packages/gozero/src/gozero/__init__.py": "83e83857cf7b15e0da52c3a354bae09e1bda00b55a2eba72524197d23aa14393",
+    "packages/gozero/src/gozero/__main__.py": "8e020d9cf7417a24187c9eb2e9adb1d4f9e6e841797bf694f165983a52f87f8b",
+    "packages/gozero/src/gozero/board_sequence_batches.py": "e477fbbb6b3647114368c9e517a2222c260872311c67d8c9342cb73299dd58e7",
+    "packages/gozero/src/gozero/causal_artifacts.py": "a6560847ede8efd25fef6598808d2ba2c1254f23a04e10024f9319a4afaf9221",
+    "packages/gozero/src/gozero/checkpoint_archive.py": "43b4cffc2830d73c3e0b349394e237ee4a2130b1a844160678969d5aa27f928b",
+    "packages/gozero/src/gozero/checkpoint_archives.py": "a08fe92ad8365924063dcf61cc43e7c7702a5eef9050e09bc479ceca5dd5b5b2",
+    "packages/gozero/src/gozero/checkpoint_forks.py": "aa1d0ef736061410d231b86930acd3af5481a28ed89351b518da61cb92057dac",
+    "packages/gozero/src/gozero/checkpoint_parts.py": "4bf0a56e7dc0472c8bab7f7e22c07407101f62a7908c288c187ff65d384cc5c7",
+    "packages/gozero/src/gozero/checkpoint_stage.py": "15d582102dbd95278fe90aa910aa059b433d491091f5d55da58ca6f5ebee7632",
+    "packages/gozero/src/gozero/checkpoints.py": "dc7ec467a9cda2a981bc508b3f1f7c6d3df46d5a14fa37257f76dc868f7b037a",
+    "packages/gozero/src/gozero/corpus_format.py": "22126f25e2872cde9b3b3cce98de1e94e367660fbc86a1c36b0256b46ee22562",
+    "packages/gozero/src/gozero/corpus_sequence_batches.py": "70777220e54347c916f93c2db3f60ae1f7b98f10f2a3cd8c9f305d57cca734be",
+    "packages/gozero/src/gozero/evaluation_inputs.py": "46ed22b8a82805c254a4d1c53405f4ff3935323df170cdd526450570230a08bb",
+    "packages/gozero/src/gozero/game_archives.py": "d103088a84aa74e06cfe95deb884b988788521467379b80626266d559c089c0b",
+    "packages/gozero/src/gozero/gtp.py": "3c315929d4bf61dceb7947d7d44e5317bc2370b64ea23d6344395cb7f3544416",
+    "packages/gozero/src/gozero/jax_go.py": "7f12f34b27270d0c9fc78fb7f75e52556fb1edd0cf30a9e27f5ebc5bba858dd1",
+    "packages/gozero/src/gozero/jaxpr_cost.py": "095f14a494b92801a294153d6aaab855662c4e18a6886417c192257f26c4bd1b",
+    "packages/gozero/src/gozero/katago_sequence_batches.py": "24c866347e4ea1529da6f1eb9bf41886c2187f874a016d639236c12422d4c625",
+    "packages/gozero/src/gozero/model_artifacts.py": "8f44b19bf6eb16294c467f6984eac9a7e945106609e626f518d88d69cf16aeb0",
+    "packages/gozero/src/gozero/native.py": "ea07e53de479d8968e0ddb198a087afa8f9326d270146f80bc8293f5f1c82402",
+    "packages/gozero/src/gozero/pod.py": "37d60781531fe78af290c78f9aa190c20d0ff3eea5c3b2caac2c3f80eb7346e6",
+    "packages/gozero/src/gozero/ram_checkpoints.py": "cfe84f21f11b9644ab6edfee29b635dd497f09018a01fac0e11cc2dcd494dede",
+    "packages/gozero/src/gozero/scoring.py": "c22c62294d58dba4d8156fbd7782a8a709d3aee80b53f0c6c25c74c1aebd7a03",
+    "packages/gozero/src/gozero/sequence_batches.py": "bc93182aa7933a08dcc050c0ce5a7e31be9a39350c3f4973edb7b9955b30121d",
+    "packages/gozero/src/gozero/sequence_data.py": "95b4c31c897b06a45f35d097627d73fbcba3f92b05ec129cf08f1cf5e761a613",
+    "packages/gozero/src/gozero/sequence_symmetry.py": "07bf85c664a201256ad562a874b3be484cb10c6d0e493d57a66058aae8da7510",
+    "packages/gozero/src/gozero/snapshots.py": "bf05c821c35e7e911a3fa9ce5dfb65ce3c442e893bc9ee88beb8c1af4428d649",
+    "packages/gozero/src/gozero/visual_artifacts.py": "772f11d6d004f9d6b5ff0f6ecd4f8c6ed9cc6d12d035deff9977804d3ff04f44",
+    "packages/gozero/src/gozero/visual_history.py": "b95691614f6fbb46727b88cce606c9e1758af612e772cb93628e9260d0f191e8",
+    "packages/gozero/src/gozero/visual_rpc.py": "7b780141dd97c4cf7d0a424874b9df7c639ff7484f525fde9ac06cdabc8ae71f",
+    "packages/gozero/src/gozero/visual_sequence_batches.py": "3a2861b17caf3ea19628de0db4b293a3899269c01f4a510b20244729e62d0ac4"
+  },
+  "cpu_budgets": {
+    "cnn": {
+      "path": "research/studies/strong9_scaling/cnn-cpu-budget-001.json",
+      "sha256": "e210fb8f3b5189a46dade054f96a4a9fe5c1afe0aae1b4eed55e2ae67cc46093"
+    },
+    "transformer": {
+      "path": "research/studies/strong9_scaling/transformer-parent-cpu-budget-001.json",
+      "sha256": "649c5d324c4d71774e9109950eced545e75d0dcb18f5789f51ef99088d296637"
+    }
+  },
+  "timing": "After the final small-data decision and before any larger-data full-shape TPU attempt"
+}

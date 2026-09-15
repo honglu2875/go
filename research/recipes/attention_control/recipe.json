@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Global board attention after a local convolutional stem may improve low-data planning. Parameter-matched CNN and attention controls share all objectives and require comparable tuning budgets; no strength claim before qualification and registered evaluation.",
+  "id": "attention_control",
+  "kind": "attention_architecture_training",
+  "parent": {
+    "recipe": "research/recipes/score_utility",
+    "source_sha256": "39f7dbeb177761cbb11e6ef17498da4619d12122e9a955fd8504c3bdf9b6e7b8"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

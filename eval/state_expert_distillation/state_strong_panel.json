@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "state-v1",
+      "id": "state-strong-v1-0",
+      "spec": "eval/state_expert_distillation/state-strong-v1-0.json"
+    },
+    {
+      "group": "state-v1",
+      "id": "state-strong-v1-1",
+      "spec": "eval/state_expert_distillation/state-strong-v1-1.json"
+    },
+    {
+      "group": "state-v16",
+      "id": "state-strong-v16-0",
+      "spec": "eval/state_expert_distillation/state-strong-v16-0.json"
+    },
+    {
+      "group": "state-v16",
+      "id": "state-strong-v16-1",
+      "spec": "eval/state_expert_distillation/state-strong-v16-1.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

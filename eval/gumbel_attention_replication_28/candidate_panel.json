@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "candidate-v1",
+      "id": "candidate-v1-p0",
+      "spec": "eval/gumbel_attention_replication_28/candidate-v1-p0.json"
+    },
+    {
+      "group": "candidate-v1",
+      "id": "candidate-v1-p1",
+      "spec": "eval/gumbel_attention_replication_28/candidate-v1-p1.json"
+    },
+    {
+      "group": "candidate-v16",
+      "id": "candidate-v16-p0",
+      "spec": "eval/gumbel_attention_replication_28/candidate-v16-p0.json"
+    },
+    {
+      "group": "candidate-v16",
+      "id": "candidate-v16-p1",
+      "spec": "eval/gumbel_attention_replication_28/candidate-v16-p1.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

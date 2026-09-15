@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "A learned static arctangent score utility gives search a graded preference among similar win/loss estimates. Both arms train the same score head; compare factor0 versus0.3 at scale2.0 and fixed unnormalized PUCT/FPU parameters.",
+  "id": "score_utility",
+  "kind": "static_score_utility_training",
+  "parent": {
+    "recipe": "research/recipes/low_visit_puct",
+    "source_sha256": "06282465ae4c03e4c6c1075cf00b7c6012233c7fe721c42b163d689e763a86de"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

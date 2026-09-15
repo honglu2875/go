@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "id": "failure_probe",
+  "kind": "distributed_failure_qualification",
+  "requires_native": false,
+  "claims_go_strength": false,
+  "hypothesis": "One deliberate rank failure promptly cancels peers and leaves no live attempt-owned descendants. This CPU control-plane probe never initializes JAX or a TPU."
+}

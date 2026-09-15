@@ -1,0 +1,13 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Four within-board attention blocks mix distant points before one-token compression, retaining the shared encoder passes and complete model budgets.",
+  "id": "encoder_attention",
+  "kind": "sequential_policy_learnability",
+  "parent": {
+    "paired_seed2_snapshot_id": "d91ebf5226faefd3459250966754a640465e38ebf2a482b4587bee828a550dcd",
+    "recipe": "research/recipes/context_spatial",
+    "snapshot_id": "aee857e7db076a499fc40588d5103445445ef7233c4c24c446bd50433767bb30"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "workers": 4,
+  "matches": [
+    {
+      "id": "bce2-early-0",
+      "group": "bce2",
+      "spec": "eval/value_logit_distillation/bce2-early-0.json"
+    },
+    {
+      "id": "bce2-early-1",
+      "group": "bce2",
+      "spec": "eval/value_logit_distillation/bce2-early-1.json"
+    },
+    {
+      "id": "bce2-early-2",
+      "group": "bce2",
+      "spec": "eval/value_logit_distillation/bce2-early-2.json"
+    },
+    {
+      "id": "bce2-early-3",
+      "group": "bce2",
+      "spec": "eval/value_logit_distillation/bce2-early-3.json"
+    }
+  ]
+}

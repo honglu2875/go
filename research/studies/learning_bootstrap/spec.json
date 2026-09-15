@@ -1,0 +1,37 @@
+{
+  "board_size": 9,
+  "claims_algorithmic_gain": false,
+  "claims_hyperparameters_confirmed": false,
+  "claims_katago_reproduction": false,
+  "global_games": 512,
+  "kind": "bounded_training_and_evaluation_bootstrap",
+  "komi": 7.5,
+  "limitations": "single seed bootstrap, not a tuned baseline or a strength promotion study; baseline and KataGo search count conventions and model costs differ",
+  "match_plan": {
+    "candidate_simulations_excluding_root": 16,
+    "colors_per_opening": 2,
+    "katago_max_visits": 16,
+    "max_game_moves": 324,
+    "openings": [
+      [],
+      [
+        "C3",
+        "G7"
+      ]
+    ],
+    "opponent": "pinned official kata9x9-b18c384nbt-20231025, KataGo 1.18.1 Eigen",
+    "resignation": false,
+    "timeout_per_game_seconds": 180
+  },
+  "max_training_and_restart_attempts": 3,
+  "network": "4 residual blocks, width 64, group norm, bf16, plain JAX",
+  "primary_outcome": "complete data-parallel native self-play, training, full checkpoint continuation and real learned-engine KataGo matches",
+  "registered_unix": 1789103817.3816564,
+  "rules": "strict Tromp-Taylor",
+  "schema_version": 1,
+  "seed": 27,
+  "selfplay_turns": 512,
+  "simulations_per_move_excluding_root": 16,
+  "snapshot_id": "7a7745037997ddad53162a92d2fbead438bc9a6235b240e9e973142772618b66",
+  "training_attempt_timeout_seconds": 900
+}

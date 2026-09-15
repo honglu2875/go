@@ -1,0 +1,11 @@
+# Exact state plus canonical causal history
+
+This complete plain-JAX recipe tests explicit pre-action board observations against empty-board inputs in the same architecture. Both conditions retain identical history tokens, teacher games, targets, splits, sampler, initialization, optimizer and schedule. The new dataset is a checksummed overlay on the existing causal teacher dataset; the original arrays are unchanged. Rust bulk replay verifies every expert legal mask and terminal label and every behavior terminal/cap flag before publication.
+
+The history transformer remains a function of past actions only. A small residual convolutional encoder processes each position's board independently. Its features and history queries supply expert policy/value corrections. Separate private behavior projections consume stopped gradients from both encoders and learn observed actions, including weaker players' actual decisions. Behavior losses cannot train the board encoder, history trunk or expert heads.
+
+The empty condition supplies empty board codes through the same runtime input shapes and initialized parameter tree. Both arms have the same total parameter count. Effective information and parameter use differ, so no equal-learning-compute or capacity claim follows without measurement. Data sampling does not draw any new RNG values for the board overlay.
+
+Board observations are immediately before each target action. Future position states do not affect earlier predictions, and padding has no target masks. This trainer evaluates exact states at every prediction. A future speculative decoder must validate its per-step predicted board inputs against Rust; reusing the original root state would change the policy. This recipe deliberately has no unsupported speculative decode entry point.
+
+`cpu_smoke.json` and `tpu_qualification.json` qualify complete optimizer/sampler checkpoint recovery. `pilot_41_empty.json` and `pilot_41_exact.json` specify the controlled model study. All use immutable parent/overlay manifests. The pure-JAX model, AdamW learner, schedule, checkpoint loop and recovery analyzer are owned by this recipe; no mutable trainer is imported from another recipe. Training and external benchmarking must be preregistered before executing the pilot.

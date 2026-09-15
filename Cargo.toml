@@ -1,0 +1,13 @@
+[workspace]
+members = ["crates/go-core", "crates/go-search", "crates/go-actors", "crates/go-bridge", "crates/go-gtp"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+debug = 1

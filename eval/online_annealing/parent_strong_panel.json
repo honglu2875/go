@@ -1,0 +1,16 @@
+{
+  "matches": [
+    {
+      "group": "parent-strong",
+      "id": "parent-strong-0",
+      "spec": "eval/online_annealing/parent-strong-0.json"
+    },
+    {
+      "group": "parent-strong",
+      "id": "parent-strong-1",
+      "spec": "eval/online_annealing/parent-strong-1.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 2
+}

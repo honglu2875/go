@@ -1,0 +1,77 @@
+{
+  "actors": {
+    "actor_offset": 0,
+    "cpuct": 0.0,
+    "dirichlet_alpha": 0.15,
+    "dirichlet_fraction": 0.0,
+    "fpu_reduction": null,
+    "games": 128,
+    "gumbel": {
+      "gumbel_scale": 1.0,
+      "max_considered_actions": 16,
+      "maxvisit_init": 50.0,
+      "rescale_values": true,
+      "value_scale": 0.1
+    },
+    "history": 4,
+    "komi": 7.5,
+    "max_game_moves": 324,
+    "max_search_edges": 20000,
+    "score_utility": {
+      "factor": 0.0,
+      "scale": 2.0
+    },
+    "scoring": "pass_alive_area",
+    "seed": 28,
+    "simulations": 16,
+    "size": 9,
+    "temperature_early": 0.0,
+    "temperature_late": 0.0,
+    "temperature_moves": 0,
+    "worker_cpus": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "workers": 8
+  },
+  "checkpoint_every": 8192,
+  "expected_devices": 16,
+  "expected_processes": 4,
+  "learner": {
+    "augment_symmetries": true,
+    "batch_size": 256,
+    "l2": 0.0001,
+    "learning_rate": 0.02,
+    "max_grad_norm": 5.0,
+    "momentum": 0.9,
+    "ownership_weight": 1.5,
+    "replay_capacity": 65536,
+    "score_weight": 1.0,
+    "updates_per_turn": 1,
+    "warmup_rows": 1024
+  },
+  "log_every": 2048,
+  "model": {
+    "blocks": 4,
+    "dtype": "bfloat16",
+    "groups": 8,
+    "score_scale": 2.0,
+    "score_utility_factor": 0.0,
+    "value_hidden": 64,
+    "width": 64
+  },
+  "platform": "tpu",
+  "root_prefetch": {
+    "limit": 16,
+    "mode": "off"
+  },
+  "schema_version": 1,
+  "seed": 28,
+  "selfplay_turns": 32768
+}

@@ -1,0 +1,10 @@
+{
+  "model_export_path": "runs/pod-20260911T114924Z-22e7c207/rank-0/artifacts/model_export.npz",
+  "model_export_sha256": "5807610da1f829a925c895a28fdc4a7dc484a5ecd6792228cebfd6a8463b4f2c",
+  "network_version": 32701,
+  "schema_version": 1,
+  "training_lineage": "Registered seed-27 Gumbel attention architecture pilot, 16,777,216 global real moves; no KataGo labels or weights in training.",
+  "training_result_path": "runs/pod-20260911T114924Z-22e7c207/rank-0/artifacts/result.json",
+  "training_result_sha256": "c08f164607dcde149ea9ae131228fe7fc2ea56462ad9c61024699d707dba296e",
+  "training_snapshot": "08b8996848f5f08ace154f1d99fe4ed9f37c4cb8c2965a4a96b15f726f483295"
+}

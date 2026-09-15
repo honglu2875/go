@@ -1,0 +1,1 @@
+{"files":{"runs/pod-20260912T045939Z-3573261b/rank-0/artifacts/result.json":{"bytes":38681,"sha256":"15963e64d96053e592cddf5f276a72d56be7a26ddd2bb0a4055464188fe1c9fe"}},"kind":"visual_inference_assets","purpose":"Complete augmented candidate validation requires its pinned owner training result on every inference host. Checkpoint closure already staged.","schema_version":1}

@@ -1,0 +1,11 @@
+[package]
+name = "go-search"
+version.workspace = true
+edition.workspace = true
+license = "MIT AND Apache-2.0"
+
+[dependencies]
+go-core = { path = "../go-core" }
+
+[dev-dependencies]
+serde_json = "1.0"

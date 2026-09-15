@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "platform": "cpu",
+  "seed": 27,
+  "games": 4,
+  "packets": 64,
+  "horizon": 4,
+  "samples": 4,
+  "actors": {
+    "size": 3,
+    "komi": 0.5,
+    "history": 2,
+    "scoring": "pass_alive_area",
+    "max_game_moves": 36,
+    "root_legal_mask": true
+  },
+  "model": {
+    "size": 3,
+    "komi": 0.5,
+    "width": 32,
+    "heads": 4,
+    "blocks": 2,
+    "max_tokens": 41,
+    "dtype": "float32",
+    "expert_temperature": 1.0,
+    "behavior_temperature": 1.0
+  }
+}

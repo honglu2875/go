@@ -1,0 +1,12 @@
+{
+  "claims_go_strength": false,
+  "hypothesis": "Batch neural evaluation of predicted initial root children, then consume cached results only when unchanged sequential search requests them. Compare original-executable queued and wide-batch execution, charging all unused work.",
+  "id": "root_prefetch",
+  "kind": "gumbel_root_prefetch",
+  "parent": {
+    "recipe": "research/recipes/gumbel_search",
+    "source_sha256": "580e65e5a7c3e5b90fd960ca5cf3ba99a5b3bdad29f797cf670ee0009cf8512e"
+  },
+  "requires_native": true,
+  "schema_version": 1
+}

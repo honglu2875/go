@@ -1,0 +1,26 @@
+{
+  "matches": [
+    {
+      "group": "control-v1",
+      "id": "control-v1-p0",
+      "spec": "eval/gumbel_replication_28/control-v1-p0.json"
+    },
+    {
+      "group": "control-v1",
+      "id": "control-v1-p1",
+      "spec": "eval/gumbel_replication_28/control-v1-p1.json"
+    },
+    {
+      "group": "control-v16",
+      "id": "control-v16-p0",
+      "spec": "eval/gumbel_replication_28/control-v16-p0.json"
+    },
+    {
+      "group": "control-v16",
+      "id": "control-v16-p1",
+      "spec": "eval/gumbel_replication_28/control-v16-p1.json"
+    }
+  ],
+  "schema_version": 1,
+  "workers": 4
+}

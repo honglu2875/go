@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "training_snapshot": "e3a963a3e41e9f1b0800dd785951cf75a10acc9a5cd72b6552fc267c92a8bc77",
+  "model_export_path": "runs/pod-20260911T081344Z-122172a7/rank-0/artifacts/model_export.npz",
+  "model_export_sha256": "8b19bffa21ddf889dc12f0fb4658bb46f12f942e12cd466078d3494b0b9cc6f9",
+  "training_result_path": "runs/pod-20260911T081344Z-122172a7/rank-0/artifacts/result.json",
+  "training_result_sha256": "fc15f1dbc1ad87452ca4ccb0aae4c59f90e166d3886394a65d46677993e82814",
+  "network_version": 8093,
+  "training_lineage": "From scratch, static score head trained at weight1 and utility factor0.3; official KataGo weights used only for evaluation"
+}

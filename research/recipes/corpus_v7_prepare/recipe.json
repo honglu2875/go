@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Lossless strong-teacher corpus preparation",
+  "hypothesis": "Pinned KataGo V7 features can be replayed exactly and stored as bit-packed RAM arrays without changing policy/value targets.",
+  "requires_native": false
+}
