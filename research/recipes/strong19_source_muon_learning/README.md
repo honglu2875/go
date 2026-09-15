@@ -1,0 +1,3 @@
+This scientific recipe clones the qualified joint source-Muon learner. The only executable change permits `training.purpose = learning`; the existing data guard still rejects execution-fixture corpora for learning. Model, loss, optimizer, schedule equations, checkpoint codec and runtime are unchanged.
+
+Scientific cohort, expected position-batch reference, source sample clock, norm-observation cadence, epoch/Lookahead boundaries, validation and training horizon must be registered explicitly. Full-size execution qualification is tracked separately in `research/studies/strong19_source_muon/`. Its short fixture schedule does not define scientific hyperparameters or reproduce the exact historical settings of a published KataGo checkpoint.

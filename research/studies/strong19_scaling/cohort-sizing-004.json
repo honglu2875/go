@@ -1,0 +1,72 @@
+{
+  "kind": "scientific19_metadata_planning_observation",
+  "created": 1789493695.197626,
+  "inventory_sha256": "f848c48e1b87f2fad4b00eb258abd10564016632f0a662d3423ce7faff6bd54c",
+  "splits": {
+    "train": {
+      "games": 2254,
+      "positions": 934046,
+      "families": 2074,
+      "largest_family": 9,
+      "max_length": 645,
+      "opponent_games": {
+        "0": 226,
+        "1": 249,
+        "2": 263,
+        "3": 239,
+        "4": 293,
+        "5": 353,
+        "6": 386,
+        "7": 245
+      }
+    },
+    "validation": {
+      "games": 125,
+      "positions": 51560,
+      "families": 117,
+      "largest_family": 3,
+      "max_length": 613,
+      "opponent_games": {
+        "0": 14,
+        "1": 17,
+        "2": 16,
+        "3": 8,
+        "4": 11,
+        "5": 21,
+        "6": 28,
+        "7": 10
+      }
+    },
+    "test": {
+      "games": 121,
+      "positions": 51699,
+      "families": 117,
+      "largest_family": 3,
+      "max_length": 646,
+      "opponent_games": {
+        "0": 23,
+        "1": 17,
+        "2": 10,
+        "3": 10,
+        "4": 17,
+        "5": 17,
+        "6": 17,
+        "7": 10
+      }
+    }
+  },
+  "nominal_complete_game_batch": 128,
+  "expected_live_positions_per_update": 53042.54125998225,
+  "approximate_source_epoch_updates": 19,
+  "lookahead_aligned_epoch_updates": 18,
+  "expected_positions_per_aligned_epoch": 954765.7426796806,
+  "source_print_cadence_updates": 100,
+  "norm_snapshots_with_blind_default_transfer": 0,
+  "raw_packed_train_validation_position_bytes": 2533993026,
+  "expected_positions_at_128_updates": 6789445.281277728,
+  "expected_training_population_passes_at_128_updates": 7.2688553682342505,
+  "scientific_population_frozen": false,
+  "scientific_settings_selected": false,
+  "test_policy_value_targets_decoded": false,
+  "scope": "Metadata-only sizing, not a training registration. Source epoch, print/norm and reference-position batch need explicit whole-game adaptations. Counts are from completed terminal games only."
+}

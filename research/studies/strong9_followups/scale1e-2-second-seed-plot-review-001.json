@@ -1,0 +1,8 @@
+{
+  "kind": "encoder_confirmation_plot_review",
+  "status": "passed",
+  "created": 1789502444.3390417,
+  "plot_sha256": "af6d8bc8774cd8e8ad612ca7a667d88df9e1c45b03a4b94f308024cafded1753",
+  "csv_sha256": "92c421d2790a6f86181c3159687bced501a3f341cdd0d60cdb15f67a8df16dc8",
+  "review": "Visually inspected. All three arms have complete full and post-warmup validation/probe curves; labels/legend/footer readable. No sustained train/validation divergence; final decision also uses audited endpoint/tail values."
+}

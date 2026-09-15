@@ -1,0 +1,17 @@
+{
+  "kind": "closed_research_plot_review",
+  "status": "passed",
+  "created": 1789494859.223451,
+  "operator_sha256": "054a224c54fcc3b66514f9b518741a972a2f1f06dc6d65567637c0b14464e393",
+  "inputs": {
+    "research/studies/strong9_followups/scale1e-2/seed1-contrast-001.json": "40626af8ce283034f2b18148ddcdc0ef5d42f6b0cd75d4178843a2b16eb2d23f"
+  },
+  "image_sha256": "8cd2b7617b9fd7ddab50f8db70bb5666c14915189fc010021e81651b388ced09",
+  "csv_sha256": "b6982e098d4a05e6730b46393f82317e0dd22632d18e95428b5ce4880950ebed",
+  "image_path": "research/studies/strong9_followups/scale1e-2/seed1-final-001.png",
+  "csv_path": "research/studies/strong9_followups/scale1e-2/seed1-final-001.csv",
+  "visually_inspected": true,
+  "labels_legible": true,
+  "caption_clear_of_axes": true,
+  "live_pinned_plotter_modified": false
+}

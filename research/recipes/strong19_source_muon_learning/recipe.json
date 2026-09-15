@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Joint19 fixed-data source Muon learning",
+  "hypothesis": "Compare a source-derived CNN optimizer with the paired fixed-data transformer and AdamW CNN, using explicit position-exposure schedule adaptation.",
+  "requires_native": false
+}

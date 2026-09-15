@@ -1,0 +1,45 @@
+{
+  "change": {
+    "training.chunk_frames": [
+      32,
+      16
+    ]
+  },
+  "cpu_16_frame_recovery_sha256": "0cab9d71e6aa105c7189bf0569cd573150698c8005ad2228d23ca5d3ebcad7e5",
+  "created": 1789502937.6430209,
+  "failure_review_sha256": "41da6604e1fc817d3dd6223a5b6c7c91809b3b0a23e0edfac5d3b1b13465d8d5",
+  "kind": "joint_source_muon_full_size_preparation",
+  "nonexecuted_operational_metadata_changes": {
+    "added": [
+      "ops/cold_checkpoint_storage/additive-evict-002.json",
+      "ops/cold_checkpoint_storage/additive-evict-002.verified.json",
+      "ops/cold_checkpoint_storage/additive-inspect-002.json",
+      "ops/cold_checkpoint_storage/additive-inspect-002.verified.json",
+      "ops/cold_checkpoint_storage/additive-third-copy-002.json",
+      "ops/cold_checkpoint_storage/eligible_v2.py",
+      "ops/cold_checkpoint_storage/lr15-evict-002.json",
+      "ops/cold_checkpoint_storage/lr15-evict-002.verified.json",
+      "ops/cold_checkpoint_storage/lr15-inspect-002.json",
+      "ops/cold_checkpoint_storage/lr15-inspect-002.verified.json",
+      "ops/cold_checkpoint_storage/lr15-third-copy-002.json",
+      "ops/cold_checkpoint_storage/plan-002.json",
+      "ops/cold_checkpoint_storage/rank128-evict-002.json",
+      "ops/cold_checkpoint_storage/rank128-evict-002.verified.json",
+      "ops/cold_checkpoint_storage/rank128-inspect-002.json",
+      "ops/cold_checkpoint_storage/rank128-inspect-002.verified.json",
+      "ops/cold_checkpoint_storage/rank128-third-copy-002.json",
+      "ops/cold_checkpoint_storage/replicate_v2.py",
+      "ops/cold_checkpoint_storage/result-002.json",
+      "ops/cold_checkpoint_storage/storage_v2.py"
+    ],
+    "changed": [
+      "ops/STATUS.md"
+    ]
+  },
+  "numerical_recipe_and_shared_runtime_sources_unchanged": true,
+  "parent_preparation_sha256": "87817845d15c05f854db4a887e4dd6c87e34bf52194d4b1b08da4fd8b0a9a67e",
+  "parent_snapshot": "49412bc1b88b99bd800d0081481836a8ceaa3a2133a1ff9b580110c95def9497",
+  "scope": "Configuration-only numerical retry using the CPU-qualified 16-frame chunk. Full-size TPU execution/recovery still required; model, game batch, data, optimizer, clocks and objective unchanged. Frozen housekeeping metadata differs, separately inventoried.",
+  "snapshot": "e86f23f814ee39abc9dada34bc534b401462cc359cadcf743d39c99bd09b3ff4",
+  "status": "prepared"
+}

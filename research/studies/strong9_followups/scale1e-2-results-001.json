@@ -1,0 +1,91 @@
+{
+  "kind": "confirmed_encoder_scale_result",
+  "status": "passed",
+  "created": 1789502444.3383975,
+  "intervention": "encoder_layer_scale: 1e-6 -> 0.01",
+  "outcome_sha256": "681c55c07e741b9a6aee76b81576d099a7fb2bc4228b13b950c9eba6721fbbe8",
+  "parameters": 231181121,
+  "decode_flops": 37428121728,
+  "seeds": [
+    {
+      "seed": 91312427,
+      "attempt": "pod-20260915T153543Z-fd6be13a",
+      "audit_sha256": "4611955e2dcad56c5b2761af166a1ac0e4a8b4a554c9584a1b2950e5d1e238b1",
+      "contrast_sha256": "40626af8ce283034f2b18148ddcdc0ef5d42f6b0cd75d4178843a2b16eb2d23f",
+      "expert_positions": 49753641,
+      "learning_seconds": 5937.934026188625,
+      "reserved_chip_hours": 32.912860536575316,
+      "gain": {
+        "expert_kl": {
+          "parent_endpoint": 0.13349390029907227,
+          "candidate_endpoint": 0.13197600841522217,
+          "relative_endpoint_gain": 0.011370496183342405,
+          "parent_last_three_mean": 0.13635174433390299,
+          "candidate_last_three_mean": 0.13442492485046387,
+          "relative_last_three_gain": 0.01413124190564552
+        },
+        "family_kl": {
+          "parent_endpoint": 0.09345388412475586,
+          "candidate_endpoint": 0.09282946586608887,
+          "relative_endpoint_gain": 0.00668156561404587,
+          "parent_last_three_mean": 0.09516676266988118,
+          "candidate_last_three_mean": 0.09499200185139973,
+          "relative_last_three_gain": 0.0018363640159502204
+        }
+      },
+      "cnn_endpoint": {
+        "expert_kl": 0.12994647026062012,
+        "family_kl": 0.08986163139343262
+      },
+      "relative_gap_to_cnn": {
+        "expert_kl": 0.015618263047327163,
+        "family_kl": 0.03302671481293795
+      }
+    },
+    {
+      "seed": 91312428,
+      "attempt": "pod-20260915T174032Z-58f17601",
+      "audit_sha256": "c20ad2421c475af80f599dfc208d465c0c0a51dc05a67740499726f7590e98e3",
+      "contrast_sha256": "c3dc4837b1eee5ff0140043a76cbea4d884aa6757d12d68ef4224353c6233254",
+      "expert_positions": 49789538,
+      "learning_seconds": 5940.0194981588575,
+      "reserved_chip_hours": 32.91489596472846,
+      "gain": {
+        "expert_kl": {
+          "parent_endpoint": 0.1348280906677246,
+          "candidate_endpoint": 0.13112306594848633,
+          "relative_endpoint_gain": 0.027479620165868024,
+          "parent_last_three_mean": 0.1370555559794108,
+          "candidate_last_three_mean": 0.13574512799580893,
+          "relative_last_three_gain": 0.00956129048718557
+        },
+        "family_kl": {
+          "parent_endpoint": 0.09425640106201172,
+          "candidate_endpoint": 0.0927116870880127,
+          "relative_endpoint_gain": 0.01638842515303285,
+          "parent_last_three_mean": 0.0957643985748291,
+          "candidate_last_three_mean": 0.09501091639200847,
+          "relative_last_three_gain": 0.007868082440176005
+        }
+      },
+      "cnn_endpoint": {
+        "expert_kl": 0.12851834297180176,
+        "family_kl": 0.09000468254089355
+      },
+      "relative_gap_to_cnn": {
+        "expert_kl": 0.02026732462039349,
+        "family_kl": 0.03007626348650483
+      }
+    }
+  ],
+  "mean_relative_gain": {
+    "expert_kl": 0.019425058174605214,
+    "family_kl": 0.01153499538353936
+  },
+  "mean_relative_gap_to_cnn": {
+    "expert_kl": 0.017942793833860327,
+    "family_kl": 0.03155148914972139
+  },
+  "decision": "Retain 0.01 initialization as the confirmed transformer parent for subsequent work. No architecture or playing-strength superiority claim.",
+  "scope": "Same fixed larger9 data and draws; both registered seeds passed endpoint and last-three rules, with no sustained overfit. CNN remains ahead at equal updates. Learning-time comparisons are separate."
+}

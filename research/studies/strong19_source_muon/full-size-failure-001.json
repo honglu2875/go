@@ -1,0 +1,20 @@
+{
+  "all_four_ranks_same_error": true,
+  "attempt": "pod-20260915T195815Z-80393d6b",
+  "completed_updates": 0,
+  "created": 1789502842.65571,
+  "error": "RESOURCE_EXHAUSTED: jit_update HLO temporaries 31.95G exceed available HBM 30.75G",
+  "failed_bucket": 512,
+  "kind": "joint_source_muon_full_size_failure_review",
+  "reason": "Whole-chunk rematerialization retains the full trunk backward working set for 32 frames. Halve this existing runtime chunk without changing game batch, model, objective or optimizer. The passed small source-optimizer CPU recovery already used 16-frame chunks.",
+  "reserved_chip_hours": 0.8286082087622748,
+  "result_sha256": "4eff0d8d7a281ec5a5d6aa4e4477fc52b8ac47ca3a107ddad290677cad879fbb",
+  "selected_change": {
+    "training.chunk_frames": [
+      32,
+      16
+    ]
+  },
+  "snapshot": "49412bc1b88b99bd800d0081481836a8ceaa3a2133a1ff9b580110c95def9497",
+  "status": "reviewed"
+}

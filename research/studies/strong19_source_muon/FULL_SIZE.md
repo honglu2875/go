@@ -53,3 +53,13 @@ offset, short epoch and Lookahead period remain execution fixtures. They do
 not select scientific 19×19 batch size, optimizer settings, training horizon
 or historical KataGo equivalence. Transformer execution uses its separately
 prepared joint model and will follow the completed architecture decision.
+
+The first actual full-size attempt is now closed with an HBM compilation
+failure at the 512-position update: 31.95G requested versus 30.75G available,
+before any update. The immutable retry keeps all numerical sources and settings
+except `training.chunk_frames: 32 -> 16`, matching the chunk size already
+used by the passed CPU recovery. Its first full-size update has passed; the
+long-shape compile and complete recovery sequence are still pending at this
+checkpoint. See `full-size-failure-001.json`, `full-size-preparation-002.json`
+and `full-size-execution-plan-002.json`. The earlier no-launch paragraphs
+describe the original preparation state.

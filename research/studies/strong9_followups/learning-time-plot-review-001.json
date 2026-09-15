@@ -1,0 +1,17 @@
+{
+  "kind": "closed_research_plot_review",
+  "status": "passed",
+  "created": 1789494859.2243168,
+  "operator_sha256": "4610b9439b9907988ca7c95cd33b299c813b1fe29947344194c97f0e4fd6f82b",
+  "inputs": {
+    "research/studies/strong9_followups/learning-time-001.json": "b176b3c975e381a729dab9b1f15424d2dd2eaa0246f6e4ef7b7d4d34252e652a"
+  },
+  "image_sha256": "e4b1d54aa43be321f3cb97d7726e5968e9fc89d61df6549f430108547f2eba68",
+  "csv_sha256": "7c7551f35e37bd65d2ce4de64d1d8a76a5eb816d9348ca635cec68d7f0db7170",
+  "image_path": "research/studies/strong9_followups/learning-time-001.png",
+  "csv_path": "research/studies/strong9_followups/learning-time-001.csv",
+  "visually_inspected": true,
+  "labels_legible": true,
+  "caption_clear_of_axes": true,
+  "live_pinned_plotter_modified": false
+}

@@ -1,0 +1,39 @@
+{
+  "audit_python": "/workspace/go/.gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "checkpoint_reserve_bytes": 2850000000,
+  "created": 1789502937.6433244,
+  "disk_floor_bytes": 1073741824,
+  "failure_review_sha256": "41da6604e1fc817d3dd6223a5b6c7c91809b3b0a23e0edfac5d3b1b13465d8d5",
+  "horizon": 4,
+  "kind": "joint_source_muon_full_size_execution",
+  "memory_floor_bytes": 103079215104,
+  "operators": {
+    "research/studies/strong19_source_muon/distributed_recovery.py": "1f3059d88f3bc248356c17673ee1706ec8511456fecc97084a2d734563b86afd",
+    "research/studies/strong19_source_muon/execute_full_size.py": "bd32ecf06c542ff91b64602293a04df7f6ba8f85c9fa1aa9c0cac3878220cf1d",
+    "research/studies/strong19_source_muon/replicate_full_size.py": "5ad8480692a675dd21de41fda9342d8023031d005d50c793a624d15548eac5df"
+  },
+  "output_directory": "full-size-execution-002",
+  "preceding_failed_attempt": "pod-20260915T195815Z-80393d6b",
+  "preceding_intervention": {
+    "outcome": "research/studies/strong9_followups/scale1e-2-continuation/outcome-001.json",
+    "registration": "research/studies/strong9_followups/scale1e-2-registration-001.json",
+    "registration_sha256": "1e2260d9d9f82e465f0ad6ab67b54347289772c45ef8c819d9af3cb22466ae0b"
+  },
+  "prefix_turn": 2,
+  "prerequisites": {
+    "research/studies/strong19_source_muon/distributed-recovery-cpu-001.json": "60847e265d68e124f52d70a40247404a3d54acf6a6762e5680688de8491d5490",
+    "research/studies/strong19_source_muon/full-size-preparation-002.json": "3eaa990e91f1d0ab87c41f6d0753bf3e2ae3a2814bca7bbef41608aaffc883d6",
+    "research/studies/strong19_source_muon/full-size-trace-001.json": "3f728d14046cfff4367576696c7e4b7522207eaf35dcd79e132ad7275432d7ad",
+    "research/studies/strong19_source_muon/harness-result-001.json": "0cab9d71e6aa105c7189bf0569cd573150698c8005ad2228d23ca5d3ebcad7e5"
+  },
+  "producer_growth_reserve_bytes": 2147483648,
+  "scope": "Three fresh full-size real-data execution processes, including exact recovery across every rank and actual memory/timing observations. Qualification only; does not select scientific batch, horizon or architecture. Starts only after the complete preceding 9x9 intervention closes. Checkpoints retained on owner and peer; prefix arrays additionally staged across peers for continuation. Retry uses the CPU-qualified 16-frame chunk after a closed 32-frame HBM failure. The earlier abstract trace is a model/state/input-size reference, not a peak-memory qualification for this retry.",
+  "shm_floor_bytes": 68719476736,
+  "snapshot": "e86f23f814ee39abc9dada34bc534b401462cc359cadcf743d39c99bd09b3ff4",
+  "stage_timeout_seconds": 1800,
+  "stages": [
+    "full",
+    "prefix",
+    "resumed"
+  ]
+}

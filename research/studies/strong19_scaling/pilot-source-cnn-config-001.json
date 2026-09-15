@@ -1,0 +1,105 @@
+{
+  "checkpoint_every": 108,
+  "checkpoint_temporary": true,
+  "checkpoint_temporary_uncompressed": true,
+  "dataset": {
+    "bucket_probabilities": [
+      0.881169324221716,
+      0.11883067577828398
+    ],
+    "buckets": [
+      512,
+      768
+    ],
+    "manifest_sha256": "2d39f7647a463e2e718844b19d45c35052d88f9ab9d8b2b222f5cd6c1f791def",
+    "path": "/dev/shm/gozero-datasets/strong19-scientific-002",
+    "warmup_buckets": [
+      512,
+      768
+    ]
+  },
+  "eval_every": 9,
+  "evaluation": {
+    "games_per_bucket": 200000,
+    "run_test": false,
+    "training_probe_games": 128
+  },
+  "expected_devices": 16,
+  "expected_processes": 4,
+  "kind": "fixed_joint_learning",
+  "learner": {
+    "augmentation": "d4",
+    "games_per_host": 32,
+    "gradient_units": "actual_global_position_sum",
+    "source_runtime": {
+      "effective_lr_scale": 1.0,
+      "epochs": [
+        [
+          18
+        ],
+        [
+          18
+        ],
+        [
+          18
+        ],
+        [
+          18
+        ],
+        [
+          18
+        ],
+        [
+          18
+        ]
+      ],
+      "factors": {
+        "gnorm_clip_scale": 1.0,
+        "head_lr_factor": 0.5,
+        "input_wd_factor": 1.0,
+        "muon_adam_lr_factor": 1.0,
+        "noreg_lr_factor": 1.0,
+        "normal_attn_wd_factor": 1.0,
+        "normal_wd_factor": 1.0
+      },
+      "initial_samples": 0,
+      "lookahead": {
+        "alpha": 0.5,
+        "k": 6
+      },
+      "no_lr_warmup": false,
+      "print_every": 1,
+      "reference_batch_positions": 53028
+    }
+  },
+  "log_every": 1,
+  "model": {
+    "architecture": "katago_nested_policy",
+    "dtype": "bfloat16",
+    "gpool_width": 128,
+    "layers": 40,
+    "max_board_size": 19,
+    "max_positions": 1536,
+    "microbatch": 32,
+    "mid_width": 384,
+    "norm_epsilon": 0.0001,
+    "policy_width": 128,
+    "rematerialize": true,
+    "width": 768
+  },
+  "platform": "tpu",
+  "schema_version": 1,
+  "seed": 91312427,
+  "steps": 108,
+  "training": {
+    "chunk_frames": 16,
+    "optimizer": "muon_source_runtime",
+    "path": "bounded",
+    "purpose": "learning",
+    "value_weight": 0.7
+  },
+  "value_model": {
+    "hidden": 256,
+    "spatial_channels": 256
+  }
+}

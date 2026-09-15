@@ -4366,8 +4366,8 @@
       "sha256": "44e89f43fbe2ac4ccc50a19d5008e19bdc50a67f1750177e8e574c38979f53d5"
     },
     "ops/STATUS.md": {
-      "bytes": 1335,
-      "sha256": "85edb515e37fcce298374b03dfdf0b89a3f600b85cb2db25d1671006dfc9e9a1"
+      "bytes": 899,
+      "sha256": "c2f953bf4bfff03dbc42b1c76305364bb239de77230d2ef6370c9702803407cb"
     },
     "ops/analyze_visual_xplane.py": {
       "bytes": 4473,
@@ -8298,6 +8298,146 @@
       "sha256": "0a23240091836b3cfcbdbdb397c06bf14d4e73ac72555bffab91a5e166710034"
     },
     "research/recipes/strong19_source_muon/training_probe.py": {
+      "bytes": 1954,
+      "sha256": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5"
+    },
+    "research/recipes/strong19_source_muon_learning/KATAGO_LICENSE.md": {
+      "bytes": 2616,
+      "sha256": "ead22455d923920cd152546d89e4f415c94d6b580aa109fda3b57a69c57c32e0"
+    },
+    "research/recipes/strong19_source_muon_learning/MUON_LICENSE.md": {
+      "bytes": 1070,
+      "sha256": "8c8d17398ecce3dd3fcb1bb77b5d268a427f8250f364ac655c9b38df5b693f6b"
+    },
+    "research/recipes/strong19_source_muon_learning/README.md": {
+      "bytes": 744,
+      "sha256": "2febd5cf420038a7f0e7a9490647a57a92d2afe15c1c60bda3c52da3f2415c5e"
+    },
+    "research/recipes/strong19_source_muon_learning/causal.py": {
+      "bytes": 17533,
+      "sha256": "4a4dcd9984b7c2c402c0a07efc4b3495e47c39f566354f41f903dc518484aecc"
+    },
+    "research/recipes/strong19_source_muon_learning/cnn_chunks.py": {
+      "bytes": 5177,
+      "sha256": "9f5ea9909b52058ba793110ae54c5277df67666bebf1ba41d6e518f0059e359d"
+    },
+    "research/recipes/strong19_source_muon_learning/compact.py": {
+      "bytes": 6766,
+      "sha256": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1"
+    },
+    "research/recipes/strong19_source_muon_learning/draft_mask.py": {
+      "bytes": 1096,
+      "sha256": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44"
+    },
+    "research/recipes/strong19_source_muon_learning/draft_model.py": {
+      "bytes": 3118,
+      "sha256": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3"
+    },
+    "research/recipes/strong19_source_muon_learning/encoder.py": {
+      "bytes": 7847,
+      "sha256": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad"
+    },
+    "research/recipes/strong19_source_muon_learning/evaluation.py": {
+      "bytes": 4486,
+      "sha256": "af1681b4b28271173b383ab7843d4529d0f521a22e53f5d7b66339096795633f"
+    },
+    "research/recipes/strong19_source_muon_learning/heads.py": {
+      "bytes": 5399,
+      "sha256": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa"
+    },
+    "research/recipes/strong19_source_muon_learning/host_metrics.py": {
+      "bytes": 1574,
+      "sha256": "d020e95421bbdeba8174f235bb453ca841d52440763daeda13a8f8bd19a06144"
+    },
+    "research/recipes/strong19_source_muon_learning/inference.py": {
+      "bytes": 13492,
+      "sha256": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2"
+    },
+    "research/recipes/strong19_source_muon_learning/joint.py": {
+      "bytes": 6157,
+      "sha256": "56d1ad999aebd3982d62103f86628310f4ea6c7926bd0fb5a5e77673314194d9"
+    },
+    "research/recipes/strong19_source_muon_learning/katago.py": {
+      "bytes": 10164,
+      "sha256": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29"
+    },
+    "research/recipes/strong19_source_muon_learning/learner.py": {
+      "bytes": 4438,
+      "sha256": "a850ea6b352a12d1a83a1bfbeb6b86120e65e4d4578798fe5e69a5a14a9a209a"
+    },
+    "research/recipes/strong19_source_muon_learning/lookahead.py": {
+      "bytes": 2661,
+      "sha256": "d7dae1d699f0da453bf35572da01ecb096828f7c636a72e14f481d241593fbc7"
+    },
+    "research/recipes/strong19_source_muon_learning/lookahead_state_io.py": {
+      "bytes": 2797,
+      "sha256": "902d38d2a9cd43da6f2b7a18c6336caff8a2b30ceec1d258c0a97b73879710e6"
+    },
+    "research/recipes/strong19_source_muon_learning/muon.py": {
+      "bytes": 6929,
+      "sha256": "6da070c54458aee9cec0173df889f6ceffce5affddf8f3439c61f2eb87fe5b10"
+    },
+    "research/recipes/strong19_source_muon_learning/muon_groups.py": {
+      "bytes": 1749,
+      "sha256": "803b0dc4c4f8e1970977657b9c5479a8256f6e3be8badfaf3ff6a9f36d4657b3"
+    },
+    "research/recipes/strong19_source_muon_learning/muon_state_io.py": {
+      "bytes": 4406,
+      "sha256": "2bad0483b0390c00a7e8e373710c1f03cfc97c506870572b752c6006b82dd9b4"
+    },
+    "research/recipes/strong19_source_muon_learning/observation_attention.py": {
+      "bytes": 1778,
+      "sha256": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544"
+    },
+    "research/recipes/strong19_source_muon_learning/optimizer.py": {
+      "bytes": 2900,
+      "sha256": "50ac2d00314f58d22859a27811508b3f81403ffd474e3ff98d07db0ce7fcc5ec"
+    },
+    "research/recipes/strong19_source_muon_learning/optimizer_io.py": {
+      "bytes": 3133,
+      "sha256": "2c629aca03003bf644f170a85c4521be27c600ab4b1df467175932964e422f71"
+    },
+    "research/recipes/strong19_source_muon_learning/policy_config.py": {
+      "bytes": 4644,
+      "sha256": "df3bc12e7bb42c4cb449b1b03aab506fd4c5375e80efc78cd1f849844d135cd1"
+    },
+    "research/recipes/strong19_source_muon_learning/policy_model.py": {
+      "bytes": 4929,
+      "sha256": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2"
+    },
+    "research/recipes/strong19_source_muon_learning/qualify_evaluation.py": {
+      "bytes": 9440,
+      "sha256": "376bb447beffda37a5c41fe0d614a89b7a132c9746c8ca5c0a45aa4180a6b08a"
+    },
+    "research/recipes/strong19_source_muon_learning/recipe.json": {
+      "bytes": 273,
+      "sha256": "94a8abcb7dc61a3d4611ad2ccd43a1e6f702e793e596eccce3e65edc5a042a61"
+    },
+    "research/recipes/strong19_source_muon_learning/source_runtime.py": {
+      "bytes": 8506,
+      "sha256": "28a60e64e4c07f5e856deb12129ff0dd62500135820dd2e928194e173441e823"
+    },
+    "research/recipes/strong19_source_muon_learning/source_schedule.py": {
+      "bytes": 4230,
+      "sha256": "08411f1ecd2f562369890a5991b310461d2e2f4200e404e7ac785e8aec7cb6f8"
+    },
+    "research/recipes/strong19_source_muon_learning/spatial_readout.py": {
+      "bytes": 1881,
+      "sha256": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9"
+    },
+    "research/recipes/strong19_source_muon_learning/train.py": {
+      "bytes": 748,
+      "sha256": "6f20ec5741187e40ef4cc2fd4428fca4451849ab9620680591a7d02693157335"
+    },
+    "research/recipes/strong19_source_muon_learning/train_config.py": {
+      "bytes": 2095,
+      "sha256": "a8288542ba48ede7f892564a642abde81182549b0ef59ebfbc67edb4ea151ed6"
+    },
+    "research/recipes/strong19_source_muon_learning/train_joint.py": {
+      "bytes": 27306,
+      "sha256": "0a23240091836b3cfcbdbdb397c06bf14d4e73ac72555bffab91a5e166710034"
+    },
+    "research/recipes/strong19_source_muon_learning/training_probe.py": {
       "bytes": 1954,
       "sha256": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5"
     },
@@ -13021,6 +13161,30 @@
       "bytes": 1255,
       "sha256": "d1b08c995e5cef1fabd3b24482d7320cb65832c23cb3c512acfcbf4b54440b0d"
     },
+    "research/studies/katago_cpu_batching/run-002/case-00-c8/analysis.cfg": {
+      "bytes": 660,
+      "sha256": "1bd2e263cb39e1590ae600b1e1dee817cbbf21275b609e0a46aff5759dbd6b0e"
+    },
+    "research/studies/katago_cpu_batching/run-002/case-01-c16/analysis.cfg": {
+      "bytes": 662,
+      "sha256": "8f8de27de4efcac673fcbaafba2e1ebe21896fc4ee7b31313b4c8a9df2167494"
+    },
+    "research/studies/katago_cpu_batching/run-002/case-02-c32/analysis.cfg": {
+      "bytes": 662,
+      "sha256": "9a71fbcce03425c6ff961a70fc780616e6a9b81ae74c1670c2773779482d0efb"
+    },
+    "research/studies/katago_cpu_batching/run-002/case-03-c32/analysis.cfg": {
+      "bytes": 662,
+      "sha256": "9a71fbcce03425c6ff961a70fc780616e6a9b81ae74c1670c2773779482d0efb"
+    },
+    "research/studies/katago_cpu_batching/run-002/case-04-c16/analysis.cfg": {
+      "bytes": 662,
+      "sha256": "8f8de27de4efcac673fcbaafba2e1ebe21896fc4ee7b31313b4c8a9df2167494"
+    },
+    "research/studies/katago_cpu_batching/run-002/case-05-c8/analysis.cfg": {
+      "bytes": 660,
+      "sha256": "1bd2e263cb39e1590ae600b1e1dee817cbbf21275b609e0a46aff5759dbd6b0e"
+    },
     "research/studies/katago_cpu_batching/startup-failure-001.json": {
       "bytes": 662,
       "sha256": "21e02b6bfe56a36cf12092ce62abe23b9236038f02cf95f08fbc2ddecad35620"
@@ -13633,13 +13797,37 @@
       "bytes": 1641,
       "sha256": "b9164f70c4c4157286543df0428adb0eefbde64505a6806312d5558e91911190"
     },
+    "research/studies/strong19_scaling/INVENTORY_004.md": {
+      "bytes": 1986,
+      "sha256": "1db659caf84efa438a1f226ed47642908ddccf2697317c948c6da13a55e03648"
+    },
     "research/studies/strong19_scaling/LEARNING_DESIGN.md": {
       "bytes": 3778,
       "sha256": "6abd8f270b5570dc7ca257cf94fee48ee3a294c0dbe82cdcd1a696dfd1105db9"
     },
+    "research/studies/strong19_scaling/PILOT_DESIGN.md": {
+      "bytes": 5134,
+      "sha256": "68547799ec8d415d9641bcc7bee82e95aba7f2c2bb1f88a13dea1b6b1e75ea4f"
+    },
     "research/studies/strong19_scaling/README.md": {
       "bytes": 1404,
       "sha256": "6c7ce8bc16faffb40faa1adf0adb32a587ca76649574636093231eb87ca5925d"
+    },
+    "research/studies/strong19_scaling/cohort-manifest-002.json": {
+      "bytes": 616424,
+      "sha256": "31ecf482e801aa2837a1a8cea86c5ce7eba420678de47e6e32362c56e4c4e22f"
+    },
+    "research/studies/strong19_scaling/cohort-result-002.json": {
+      "bytes": 1566,
+      "sha256": "e2978d8118f1da6cc0d82e10fc43db6310cbb51ee5a4c12028079f2564a28bb5"
+    },
+    "research/studies/strong19_scaling/cohort-sizing-004.json": {
+      "bytes": 2006,
+      "sha256": "f75fa30819741b26ca2a54cbfdf3c3d389142201051b7303baaf724da3fa09cf"
+    },
+    "research/studies/strong19_scaling/cohort-source-001.json": {
+      "bytes": 7216,
+      "sha256": "de9981ae871cc7cc4e6f77a3a5df5120300ec83f6c2cfe1bf68eb6c1ddcbe675"
     },
     "research/studies/strong19_scaling/inventory-002.json": {
       "bytes": 946398,
@@ -13653,17 +13841,61 @@
       "bytes": 3970,
       "sha256": "450364a6781057d00eaa9411dc250c84a74f145a1cebeb5c87bcd6963bffff9e"
     },
+    "research/studies/strong19_scaling/pilot-cnn-adamw-config-001.json": {
+      "bytes": 1586,
+      "sha256": "4d016e74064f958dac25f3bc1071339a0195ac0c132fe21e51812e0834441062"
+    },
+    "research/studies/strong19_scaling/pilot-draw-replay-001.json": {
+      "bytes": 305430,
+      "sha256": "a62dab042b0c8394284d8e040a7e15ec072a440eca542fdd678405c2e9420fbb"
+    },
+    "research/studies/strong19_scaling/pilot-settings-001.json": {
+      "bytes": 2149,
+      "sha256": "b6da37f6bf879b958eacee98a8a17c7da43a7db4e47e99f8af786889a7524d7e"
+    },
+    "research/studies/strong19_scaling/pilot-source-cnn-config-001.json": {
+      "bytes": 2201,
+      "sha256": "0df851732a497ccfbe07dcb443aae2cc2876a03c2de57b39b0071b705b1a08cd"
+    },
+    "research/studies/strong19_scaling/pilot-transformer-config-001.json": {
+      "bytes": 2062,
+      "sha256": "719836184d3a95cd6416b3c51eb38e18c52749e5c5c5c15eef5a8fecec1584d8"
+    },
     "research/studies/strong19_scaling/planning.md": {
       "bytes": 1856,
       "sha256": "9f53b8443096cc14d4d04055c188bec8b510b67190f5535e51522ee525af0eba"
+    },
+    "research/studies/strong19_scaling/prepare_cohort.py": {
+      "bytes": 16342,
+      "sha256": "a6d0e2d4ef4613e2f156a9a2e44d2624080daa1f602218f36861b9a9fab275b7"
+    },
+    "research/studies/strong19_scaling/prepare_pilot.py": {
+      "bytes": 7660,
+      "sha256": "2d92680212a6d2f9b73411714bbb2af618360b4a5bf6109e69757f0fc669a35e"
     },
     "research/studies/strong19_scaling/qualify_features.py": {
       "bytes": 8744,
       "sha256": "fdc3cfd5ea9425e7d57bbb579815e471e7c59afffde199ff3b01a95ff9faeb4b"
     },
+    "research/studies/strong19_scaling/source-recipe-clone-001.json": {
+      "bytes": 3989,
+      "sha256": "99c19f106717fe9e69331299aa3c6acd9641484947217e29ef5c3a2eb3dba424"
+    },
+    "research/studies/strong19_scaling/stage_cohort.py": {
+      "bytes": 7183,
+      "sha256": "f4615ebe6242c4c0f9e058c44e01eb3273d928b6c7026a6fb3401a6083b3eea9"
+    },
+    "research/studies/strong19_scaling/tpu-transformer-execution-config-001.json": {
+      "bytes": 2025,
+      "sha256": "82fb1d82434c25839d5b6c30c625f75ffffb86dde3c05a0b3a161a305f365e32"
+    },
+    "research/studies/strong19_scaling/transformer-execution-preparation-001.json": {
+      "bytes": 9181,
+      "sha256": "7b153240e94140bca53f3382f1839f7fdafa7c504381316263848db907547fdc"
+    },
     "research/studies/strong19_source_muon/FULL_SIZE.md": {
-      "bytes": 3300,
-      "sha256": "540f0285756348e65a7777a2b30f8b23817c79d8f07f38784810cd84d1fcc7d5"
+      "bytes": 3952,
+      "sha256": "c131e1e5c7985f71ad1697fca2bfcaef330084080285d3e3821577708b600391"
     },
     "research/studies/strong19_source_muon/PLAN.md": {
       "bytes": 1808,
@@ -13693,9 +13925,21 @@
       "bytes": 2403,
       "sha256": "38700edb6c72961867ebc3ada8d813ad29e8559c61b8d5ab52059b042f265cee"
     },
+    "research/studies/strong19_source_muon/full-size-execution-plan-002.json": {
+      "bytes": 2756,
+      "sha256": "0f953b725626cce4b2924712471e40da3d09cb13475d7ed324d92cb496e05f1c"
+    },
+    "research/studies/strong19_source_muon/full-size-failure-001.json": {
+      "bytes": 916,
+      "sha256": "7337a41aec38fc9a4238a8aa652a8f18361307885c7acd0292fcff25ea4da0cb"
+    },
     "research/studies/strong19_source_muon/full-size-preparation-001.json": {
       "bytes": 10848,
       "sha256": "ec84178c5f0d783a6381092bf1217a412401e8fc2bf9400ad77de61fc7b270cf"
+    },
+    "research/studies/strong19_source_muon/full-size-preparation-002.json": {
+      "bytes": 2338,
+      "sha256": "bf6e55556bbda9479885c78355ce0b12496a0b4d0bcb37350d7bd079ac1aad1e"
     },
     "research/studies/strong19_source_muon/full-size-trace-001.json": {
       "bytes": 1733,
@@ -13760,6 +14004,10 @@
     "research/studies/strong19_source_muon/tpu-full-size-config-001.json": {
       "bytes": 1997,
       "sha256": "509e715f69564e47f99b6cd866febfc185ce7bd984beedd16a3715723a9d2101"
+    },
+    "research/studies/strong19_source_muon/tpu-full-size-config-002.json": {
+      "bytes": 1997,
+      "sha256": "9e9d70899cc10101b70e245e8d05a9693e1384c63eacee8ff0e6899ebaffbcda"
     },
     "research/studies/strong19_source_muon/trace_full_size.py": {
       "bytes": 6128,
@@ -13913,9 +14161,21 @@
       "bytes": 2228,
       "sha256": "e2c5c017d3c05adbf49fd536964e98ff1a4073ea368b2a185ae23aa95e93625c"
     },
+    "research/studies/strong9_followups/ENCODER_SCALE_RESULTS.md": {
+      "bytes": 1749,
+      "sha256": "99de77d6b08e7cd608a70418c7ebb19638a08aa2bb392ff6d02675fbb612e731"
+    },
     "research/studies/strong9_followups/HARNESS.md": {
       "bytes": 3373,
       "sha256": "5125ad34df0110e3921978338426fbee0cee825f070b73e8a88cd3afd3a42384"
+    },
+    "research/studies/strong9_followups/LEARNING_TIME.md": {
+      "bytes": 1972,
+      "sha256": "f0329ed805008d58d9c1efd57527c369a8a9024a192a4c72c19b9984b508ac5d"
+    },
+    "research/studies/strong9_followups/PARENT_TRANSFER.md": {
+      "bytes": 1551,
+      "sha256": "5196e7597fed6809a12e2ec0c30440f89d1d780b7d05e77ab0aa8a45c9fec010"
     },
     "research/studies/strong9_followups/PLAN.md": {
       "bytes": 3214,
@@ -13997,6 +14257,22 @@
       "bytes": 9170,
       "sha256": "647c8368d5408c218a04f3587bdf9955f37848bf2a9a284329e731ccae63ab51"
     },
+    "research/studies/strong9_followups/learning-time-001.csv": {
+      "bytes": 9452,
+      "sha256": "7c7551f35e37bd65d2ce4de64d1d8a76a5eb816d9348ca635cec68d7f0db7170"
+    },
+    "research/studies/strong9_followups/learning-time-001.json": {
+      "bytes": 59865,
+      "sha256": "b176b3c975e381a729dab9b1f15424d2dd2eaa0246f6e4ef7b7d4d34252e652a"
+    },
+    "research/studies/strong9_followups/learning-time-plot-review-001.json": {
+      "bytes": 789,
+      "sha256": "8720f969479b06a0356eb308eae06644d9462ba7783b6b5a186837436f27ab69"
+    },
+    "research/studies/strong9_followups/learning_time.py": {
+      "bytes": 7077,
+      "sha256": "dd6f43c2c94175319d6b5118c74c36c87fbcf39710014a072b3dfeb73f609e2b"
+    },
     "research/studies/strong9_followups/lr-comparison-cpu-001.json": {
       "bytes": 1128,
       "sha256": "bf615b8bf195452e70ccdd3369800d54b66217e43d19368d425dd361489a6c7b"
@@ -14008,6 +14284,18 @@
     "research/studies/strong9_followups/lr-source-cpu-001.json": {
       "bytes": 1051,
       "sha256": "dc4a3ae3802a7f1d1ce79428baba1cbd93e689bfcdffc3d7bb794ace2db78f41"
+    },
+    "research/studies/strong9_followups/lr15/seed1-final-002.csv": {
+      "bytes": 10470,
+      "sha256": "7c504e910c64acdee84253883990f93629b26e83a92525ba79e7f658a204ae61"
+    },
+    "research/studies/strong9_followups/lr15/seed1-final.csv": {
+      "bytes": 10198,
+      "sha256": "934cebef8d13ef51034c1566f1a307b46cd92a872a7013fcddd56df2d293f055"
+    },
+    "research/studies/strong9_followups/lr15/seed1-progress.csv": {
+      "bytes": 9987,
+      "sha256": "213ebb0ca15f32b4e815b38de6ac99259658fdad51757272ae6681050251d082"
     },
     "research/studies/strong9_followups/lr15-plot-report-002.json": {
       "bytes": 765,
@@ -14029,18 +14317,6 @@
       "bytes": 1211,
       "sha256": "ef30843d0299e2257112953bb149ba1b683d8dd8615a5fa5cdff6bb298c8524b"
     },
-    "research/studies/strong9_followups/lr15/seed1-final-002.csv": {
-      "bytes": 10470,
-      "sha256": "7c504e910c64acdee84253883990f93629b26e83a92525ba79e7f658a204ae61"
-    },
-    "research/studies/strong9_followups/lr15/seed1-final.csv": {
-      "bytes": 10198,
-      "sha256": "934cebef8d13ef51034c1566f1a307b46cd92a872a7013fcddd56df2d293f055"
-    },
-    "research/studies/strong9_followups/lr15/seed1-progress.csv": {
-      "bytes": 9987,
-      "sha256": "213ebb0ca15f32b4e815b38de6ac99259658fdad51757272ae6681050251d082"
-    },
     "research/studies/strong9_followups/lr_compare.py": {
       "bytes": 7670,
       "sha256": "db1fc92ac0e8a53fa9149bcc9a9092f65ecaa92da83fc0aaaa6af6bce0c7d0ce"
@@ -14052,6 +14328,10 @@
     "research/studies/strong9_followups/plot_architecture_gap.py": {
       "bytes": 3506,
       "sha256": "c64c3a7bcab508120d6600c7ae1afb495b9afa20521afd5599e219db949af507"
+    },
+    "research/studies/strong9_followups/plot_learning_time.py": {
+      "bytes": 3392,
+      "sha256": "4610b9439b9907988ca7c95cd33b299c813b1fe29947344194c97f0e4fd6f82b"
     },
     "research/studies/strong9_followups/plot_time.py": {
       "bytes": 3553,
@@ -14093,17 +14373,53 @@
       "bytes": 3276,
       "sha256": "df3eb81d18acb0f4dac9e0056fbdc196372c7e5596522d7ea0ed8b6d5109b8e5"
     },
+    "research/studies/strong9_followups/scale1e-2/seed1-final-001.csv": {
+      "bytes": 10531,
+      "sha256": "b6982e098d4a05e6730b46393f82317e0dd22632d18e95428b5ce4880950ebed"
+    },
+    "research/studies/strong9_followups/scale1e-2/seed1-final.csv": {
+      "bytes": 10531,
+      "sha256": "b6982e098d4a05e6730b46393f82317e0dd22632d18e95428b5ce4880950ebed"
+    },
+    "research/studies/strong9_followups/scale1e-2/seed1-progress.csv": {
+      "bytes": 10531,
+      "sha256": "b6982e098d4a05e6730b46393f82317e0dd22632d18e95428b5ce4880950ebed"
+    },
+    "research/studies/strong9_followups/scale1e-2/seed2-final-001.csv": {
+      "bytes": 10471,
+      "sha256": "92c421d2790a6f86181c3159687bced501a3f341cdd0d60cdb15f67a8df16dc8"
+    },
+    "research/studies/strong9_followups/scale1e-2/seed2-final.csv": {
+      "bytes": 10539,
+      "sha256": "c130a03f28f3737d1c70ca0cdc96d41176618dc377ba854f4195a201455d415b"
+    },
+    "research/studies/strong9_followups/scale1e-2/seed2-progress.csv": {
+      "bytes": 10539,
+      "sha256": "c130a03f28f3737d1c70ca0cdc96d41176618dc377ba854f4195a201455d415b"
+    },
+    "research/studies/strong9_followups/scale1e-2-first-seed-plot-review-001.json": {
+      "bytes": 815,
+      "sha256": "8333b5b3845ca6f23edd0f7d1e9292c555b9ec64ea09beac285450de9e78ee47"
+    },
+    "research/studies/strong9_followups/scale1e-2-first-seed-results-001.md": {
+      "bytes": 1344,
+      "sha256": "d9436e6776bd1803eb6e8f6a3f273416b408d8c3765a190de422481eb692454f"
+    },
     "research/studies/strong9_followups/scale1e-2-registration-001.json": {
       "bytes": 4531,
       "sha256": "64ff3c98b7d9d2020c83a9e3957e12ece4e6f23d4c13d135343369cf4a295b22"
+    },
+    "research/studies/strong9_followups/scale1e-2-results-001.json": {
+      "bytes": 3710,
+      "sha256": "cd9a817e1699fa38307c9a469c361105516fc65d765b214e9ea501b37f646a08"
     },
     "research/studies/strong9_followups/scale1e-2-review-001.json": {
       "bytes": 2840,
       "sha256": "120f823b5f3ebaca4e5550eac82181304bc3080605caf0ca175c1ae47d324d0d"
     },
-    "research/studies/strong9_followups/scale1e-2/seed1-progress.csv": {
-      "bytes": 9874,
-      "sha256": "db0c8e31e272397a0998158b31eb7e1cf6c82f2c36fcd11daa1c48684d6021a9"
+    "research/studies/strong9_followups/scale1e-2-second-seed-plot-review-001.json": {
+      "bytes": 511,
+      "sha256": "e51c1569511329c3e4bd61372ab0e43336926a3a61da297cbf7527c0b67580e2"
     },
     "research/studies/strong9_followups/seed1-through-2816-001.json": {
       "bytes": 154898,
@@ -15003,5 +15319,5 @@
     }
   },
   "kind": "sanitized_public_source_manifest",
-  "updated": 1789492751.4643548
+  "updated": 1789504258.096101
 }

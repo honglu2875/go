@@ -1,0 +1,176 @@
+{
+  "kind": "scientific19_preparation_source_bundle",
+  "sha256": "42720a5e06545ec5248fb6d88d887a2a29d91a92aecc6692ddcf610612e09d85",
+  "archive_bytes": 6287360,
+  "files": {
+    "packages/gozero/src/gozero/checkpoint_archives.py": {
+      "sha256": "a08fe92ad8365924063dcf61cc43e7c7702a5eef9050e09bc479ceca5dd5b5b2",
+      "bytes": 6901
+    },
+    "packages/gozero/src/gozero/jax_go.py": {
+      "sha256": "7f12f34b27270d0c9fc78fb7f75e52556fb1edd0cf30a9e27f5ebc5bba858dd1",
+      "bytes": 6520
+    },
+    "packages/gozero/src/gozero/snapshots.py": {
+      "sha256": "bf05c821c35e7e911a3fa9ce5dfb65ce3c442e893bc9ee88beb8c1af4428d649",
+      "bytes": 9723
+    },
+    "packages/gozero/src/gozero/jaxpr_cost.py": {
+      "sha256": "095f14a494b92801a294153d6aaab855662c4e18a6886417c192257f26c4bd1b",
+      "bytes": 4113
+    },
+    "packages/gozero/src/gozero/native.py": {
+      "sha256": "ea07e53de479d8968e0ddb198a087afa8f9326d270146f80bc8293f5f1c82402",
+      "bytes": 6014
+    },
+    "packages/gozero/src/gozero/v7_state.py": {
+      "sha256": "cafac3658f30b9e254cc4a0ec9e516f91e67b7d9731accca09408730c6e9e9ab",
+      "bytes": 2465
+    },
+    "packages/gozero/src/gozero/sequence_data.py": {
+      "sha256": "95b4c31c897b06a45f35d097627d73fbcba3f92b05ec129cf08f1cf5e761a613",
+      "bytes": 12181
+    },
+    "packages/gozero/src/gozero/gtp.py": {
+      "sha256": "3c315929d4bf61dceb7947d7d44e5317bc2370b64ea23d6344395cb7f3544416",
+      "bytes": 6714
+    },
+    "packages/gozero/src/gozero/katago_sequence_batches.py": {
+      "sha256": "24c866347e4ea1529da6f1eb9bf41886c2187f874a016d639236c12422d4c625",
+      "bytes": 4855
+    },
+    "packages/gozero/src/gozero/scoring.py": {
+      "sha256": "c22c62294d58dba4d8156fbd7782a8a709d3aee80b53f0c6c25c74c1aebd7a03",
+      "bytes": 1426
+    },
+    "packages/gozero/src/gozero/visual_artifacts.py": {
+      "sha256": "772f11d6d004f9d6b5ff0f6ecd4f8c6ed9cc6d12d035deff9977804d3ff04f44",
+      "bytes": 4661
+    },
+    "packages/gozero/src/gozero/evaluation_inputs.py": {
+      "sha256": "46ed22b8a82805c254a4d1c53405f4ff3935323df170cdd526450570230a08bb",
+      "bytes": 3155
+    },
+    "packages/gozero/src/gozero/visual_history.py": {
+      "sha256": "b95691614f6fbb46727b88cce606c9e1758af612e772cb93628e9260d0f191e8",
+      "bytes": 3678
+    },
+    "packages/gozero/src/gozero/__init__.py": {
+      "sha256": "83e83857cf7b15e0da52c3a354bae09e1bda00b55a2eba72524197d23aa14393",
+      "bytes": 99
+    },
+    "packages/gozero/src/gozero/joint_resume.py": {
+      "sha256": "210d33e1c9e56b9cfa789d34440cb72d0cc4b647ef851853a03f8db1f4a9d0cc",
+      "bytes": 5640
+    },
+    "packages/gozero/src/gozero/joint_artifacts.py": {
+      "sha256": "ab5bc3590eef3640f2ff6beef56790aff075e7943f65a97a3a10d6107f130431",
+      "bytes": 15594
+    },
+    "packages/gozero/src/gozero/visual_rpc.py": {
+      "sha256": "7b780141dd97c4cf7d0a424874b9df7c639ff7484f525fde9ac06cdabc8ae71f",
+      "bytes": 7478
+    },
+    "packages/gozero/src/gozero/__main__.py": {
+      "sha256": "8e020d9cf7417a24187c9eb2e9adb1d4f9e6e841797bf694f165983a52f87f8b",
+      "bytes": 1660
+    },
+    "packages/gozero/src/gozero/sequence_batches.py": {
+      "sha256": "bc93182aa7933a08dcc050c0ce5a7e31be9a39350c3f4973edb7b9955b30121d",
+      "bytes": 4924
+    },
+    "packages/gozero/src/gozero/model_artifacts.py": {
+      "sha256": "8f44b19bf6eb16294c467f6984eac9a7e945106609e626f518d88d69cf16aeb0",
+      "bytes": 5115
+    },
+    "packages/gozero/src/gozero/game_archives.py": {
+      "sha256": "d103088a84aa74e06cfe95deb884b988788521467379b80626266d559c089c0b",
+      "bytes": 16806
+    },
+    "packages/gozero/src/gozero/causal_artifacts.py": {
+      "sha256": "a6560847ede8efd25fef6598808d2ba2c1254f23a04e10024f9319a4afaf9221",
+      "bytes": 5603
+    },
+    "packages/gozero/src/gozero/joint_rpc.py": {
+      "sha256": "4aa72d05d583b70ba407366b199fe9d7d0a92b1d44f74d738d9e7ae48f0ed9f1",
+      "bytes": 3718
+    },
+    "packages/gozero/src/gozero/checkpoint_stage.py": {
+      "sha256": "15d582102dbd95278fe90aa910aa059b433d491091f5d55da58ca6f5ebee7632",
+      "bytes": 3084
+    },
+    "packages/gozero/src/gozero/checkpoint_parts.py": {
+      "sha256": "4bf0a56e7dc0472c8bab7f7e22c07407101f62a7908c288c187ff65d384cc5c7",
+      "bytes": 10451
+    },
+    "packages/gozero/src/gozero/sequence_symmetry.py": {
+      "sha256": "07bf85c664a201256ad562a874b3be484cb10c6d0e493d57a66058aae8da7510",
+      "bytes": 1895
+    },
+    "packages/gozero/src/gozero/checkpoint_archive.py": {
+      "sha256": "43b4cffc2830d73c3e0b349394e237ee4a2130b1a844160678969d5aa27f928b",
+      "bytes": 9939
+    },
+    "packages/gozero/src/gozero/board_sequence_batches.py": {
+      "sha256": "e477fbbb6b3647114368c9e517a2222c260872311c67d8c9342cb73299dd58e7",
+      "bytes": 2913
+    },
+    "packages/gozero/src/gozero/checkpoint_forks.py": {
+      "sha256": "aa1d0ef736061410d231b86930acd3af5481a28ed89351b518da61cb92057dac",
+      "bytes": 12163
+    },
+    "packages/gozero/src/gozero/corpus_format.py": {
+      "sha256": "22126f25e2872cde9b3b3cce98de1e94e367660fbc86a1c36b0256b46ee22562",
+      "bytes": 1189
+    },
+    "packages/gozero/src/gozero/ram_checkpoints.py": {
+      "sha256": "cfe84f21f11b9644ab6edfee29b635dd497f09018a01fac0e11cc2dcd494dede",
+      "bytes": 4038
+    },
+    "packages/gozero/src/gozero/visual_sequence_batches.py": {
+      "sha256": "3a2861b17caf3ea19628de0db4b293a3899269c01f4a510b20244729e62d0ac4",
+      "bytes": 6446
+    },
+    "packages/gozero/src/gozero/v7_replay.py": {
+      "sha256": "c6430e997420037fe296fb591b90f20a85f74885fefa8ca73dd15f807d057d38",
+      "bytes": 5746
+    },
+    "packages/gozero/src/gozero/checkpoints.py": {
+      "sha256": "dc7ec467a9cda2a981bc508b3f1f7c6d3df46d5a14fa37257f76dc868f7b037a",
+      "bytes": 4974
+    },
+    "packages/gozero/src/gozero/corpus_sequence_batches.py": {
+      "sha256": "70777220e54347c916f93c2db3f60ae1f7b98f10f2a3cd8c9f305d57cca734be",
+      "bytes": 6930
+    },
+    "packages/gozero/src/gozero/pod.py": {
+      "sha256": "37d60781531fe78af290c78f9aa190c20d0ff3eea5c3b2caac2c3f80eb7346e6",
+      "bytes": 5307
+    },
+    "research/studies/strong19_scaling/prepare_cohort.py": {
+      "sha256": "ccf13735f71f995175b7311a0ac3449d5464c038314c47c51212852585e48209",
+      "bytes": 16002
+    },
+    "research/studies/strong19_scaling/qualify_features.py": {
+      "sha256": "37926ea42330c19aa42f8bf42c1eab7d9a48a48d61612c3a15324d145f72e099",
+      "bytes": 8757
+    },
+    "research/studies/strong19_scaling/inventory-005.json": {
+      "sha256": "5fc43316a14ceced5c11d927065297f64c9be57e63a260a1a045edb082f2020f",
+      "bytes": 2892010
+    },
+    "research/studies/strong19_scaling/cohort-plan-001.json": {
+      "sha256": "71346f64d8d9c1922588c565d726b70de6e7f074be639171cbecc64b401cbc3a",
+      "bytes": 2312785
+    },
+    ".gozero/build/katago-v7-12e944b6/receipt.json": {
+      "sha256": "9e7d8d4757c4214e25ea34a8ff3cbe57e1817abd7daf535117e0850eb0a6bd07",
+      "bytes": 4818
+    },
+    ".gozero/build/katago-v7-12e944b6/feature_worker": {
+      "sha256": "a380059106a3a7dd92f24e75805777f29855452785679273a7e80a3f1d84bab9",
+      "bytes": 754712
+    }
+  },
+  "plan_sha256": "71346f64d8d9c1922588c565d726b70de6e7f074be639171cbecc64b401cbc3a"
+}

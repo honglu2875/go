@@ -1,0 +1,1524 @@
+{
+  "kind": "closed9_learning_time_observation",
+  "status": "passed",
+  "created": 1789494356.3884838,
+  "operator_sha256": "dd6f43c2c94175319d6b5118c74c36c87fbcf39710014a072b3dfeb73f609e2b",
+  "inputs": {
+    "research/studies/strong9_followups/lr15-registration-001.json": "c043ba1894c5d85ea6ddef128935ef773c673ebcdad9cf3409f56d52c1862b0d",
+    "research/studies/strong9_scaling/cnn-seed1-audit-001.json": "226cf79338c1f6fcaa363a38708fd88bb70d727b4b2900168b67470f1e9daaae",
+    "research/studies/strong9_scaling/transformer-seed1-audit-001.json": "060c15a033eeec9ffa2169ffc23304fb304d17faef107c7a1cfe551e5f3ac28f",
+    "research/studies/strong9_scaling/cnn-seed2-audit-001.json": "8003ebb2cccd58761ace388c5fb97fd575da786fe8088d0950057eb05dd74e1f",
+    "research/studies/strong9_scaling/transformer-seed2-audit-001.json": "34971ce106609c2ad9e8b7155689cdaea5bababd381a5aa1badd9e8ce27822d2",
+    "research/studies/strong9_followups/scale1e-2/seed1-contrast-001.json": "40626af8ce283034f2b18148ddcdc0ef5d42f6b0cd75d4178843a2b16eb2d23f",
+    "research/studies/strong9_followups/scale1e-2/seed1-audit-001.json": "4611955e2dcad56c5b2761af166a1ac0e4a8b4a554c9584a1b2950e5d1e238b1"
+  },
+  "arms": {
+    "seed1/CNN": {
+      "snapshot": "dff1847445bc363e1dd81d6a824972676070a6036213e0bab1a9f5968e1d7011",
+      "attempt": "pod-20260915T035557Z-c34403f3",
+      "seed": 91312427,
+      "curve": [
+        {
+          "turn": 0,
+          "minimum_rank_learning_seconds": 0.0,
+          "maximum_rank_learning_seconds": 0.0,
+          "rank_learning_seconds": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "policy_kl": 2.0178277492523193,
+          "family_kl": 1.4997551441192627,
+          "position_exposures": 0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 256,
+          "minimum_rank_learning_seconds": 477.08096026376006,
+          "maximum_rank_learning_seconds": 482.4464554338774,
+          "rank_learning_seconds": [
+            477.08096026376006,
+            482.4464554338774,
+            479.2934766286053,
+            481.576334268786
+          ],
+          "policy_kl": 0.4617292881011963,
+          "family_kl": 0.3312351703643799,
+          "position_exposures": 3159548.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 512,
+          "minimum_rank_learning_seconds": 932.5436854907894,
+          "maximum_rank_learning_seconds": 938.4755040427845,
+          "rank_learning_seconds": [
+            932.5436854907894,
+            938.4755040427845,
+            933.9977860416402,
+            937.7625795706117
+          ],
+          "policy_kl": 0.32443809509277344,
+          "family_kl": 0.22706007957458496,
+          "position_exposures": 6226307.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 768,
+          "minimum_rank_learning_seconds": 1392.2104439916147,
+          "maximum_rank_learning_seconds": 1399.4400212244946,
+          "rank_learning_seconds": [
+            1392.2104439916147,
+            1399.4400212244946,
+            1393.8451064987166,
+            1398.6622060704976
+          ],
+          "policy_kl": 0.26962780952453613,
+          "family_kl": 0.1896669864654541,
+          "position_exposures": 9314964.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1024,
+          "minimum_rank_learning_seconds": 1853.221557726618,
+          "maximum_rank_learning_seconds": 1861.4451463445148,
+          "rank_learning_seconds": [
+            1853.221557726618,
+            1861.4451463445148,
+            1855.850928283442,
+            1860.7816054162104
+          ],
+          "policy_kl": 0.2584429979324341,
+          "family_kl": 0.17949318885803223,
+          "position_exposures": 12411861.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1280,
+          "minimum_rank_learning_seconds": 2324.007614810602,
+          "maximum_rank_learning_seconds": 2332.9014925185475,
+          "rank_learning_seconds": [
+            2324.007614810602,
+            2332.9014925185475,
+            2327.1111761123757,
+            2332.361614687863
+          ],
+          "policy_kl": 0.21756815910339355,
+          "family_kl": 0.15303635597229004,
+          "position_exposures": 15550133.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1536,
+          "minimum_rank_learning_seconds": 2775.9549702634104,
+          "maximum_rank_learning_seconds": 2785.698107807577,
+          "rank_learning_seconds": [
+            2775.9549702634104,
+            2785.698107807577,
+            2779.4320809698547,
+            2784.8506264739553
+          ],
+          "policy_kl": 0.20752954483032227,
+          "family_kl": 0.14226031303405762,
+          "position_exposures": 18600993.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1792,
+          "minimum_rank_learning_seconds": 3242.021716609277,
+          "maximum_rank_learning_seconds": 3252.72764973453,
+          "rank_learning_seconds": [
+            3242.021716609277,
+            3252.72764973453,
+            3246.370530778717,
+            3251.182952479896
+          ],
+          "policy_kl": 0.1941002607345581,
+          "family_kl": 0.13611626625061035,
+          "position_exposures": 21723452.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2048,
+          "minimum_rank_learning_seconds": 3697.0946400960383,
+          "maximum_rank_learning_seconds": 3708.688835106499,
+          "rank_learning_seconds": [
+            3697.0946400960383,
+            3708.688835106499,
+            3701.891186627967,
+            3706.2750893950288
+          ],
+          "policy_kl": 0.17938601970672607,
+          "family_kl": 0.12443709373474121,
+          "position_exposures": 24788738.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2304,
+          "minimum_rank_learning_seconds": 4166.443968816806,
+          "maximum_rank_learning_seconds": 4178.80666221134,
+          "rank_learning_seconds": [
+            4166.443968816806,
+            4178.80666221134,
+            4171.655884619948,
+            4175.514628034172
+          ],
+          "policy_kl": 0.17472636699676514,
+          "family_kl": 0.12048673629760742,
+          "position_exposures": 27919219.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2560,
+          "minimum_rank_learning_seconds": 4626.301542320201,
+          "maximum_rank_learning_seconds": 4639.260161623213,
+          "rank_learning_seconds": [
+            4626.301542320201,
+            4639.260161623213,
+            4632.350397156784,
+            4635.142902064166
+          ],
+          "policy_kl": 0.16278648376464844,
+          "family_kl": 0.11301374435424805,
+          "position_exposures": 31008348.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2816,
+          "minimum_rank_learning_seconds": 5090.890730973304,
+          "maximum_rank_learning_seconds": 5104.098663320212,
+          "rank_learning_seconds": [
+            5090.890730973304,
+            5104.098663320212,
+            5097.110950662463,
+            5100.376228419045
+          ],
+          "policy_kl": 0.1525801420211792,
+          "family_kl": 0.10569930076599121,
+          "position_exposures": 34114038.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3072,
+          "minimum_rank_learning_seconds": 5565.823916651425,
+          "maximum_rank_learning_seconds": 5578.6096482949215,
+          "rank_learning_seconds": [
+            5565.823916651425,
+            5578.6096482949215,
+            5572.005703513569,
+            5575.277468822256
+          ],
+          "policy_kl": 0.14665043354034424,
+          "family_kl": 0.10270500183105469,
+          "position_exposures": 37262583.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3328,
+          "minimum_rank_learning_seconds": 6034.58647567741,
+          "maximum_rank_learning_seconds": 6047.002937938843,
+          "rank_learning_seconds": [
+            6034.58647567741,
+            6047.002937938843,
+            6039.920110465726,
+            6043.604024621251
+          ],
+          "policy_kl": 0.14245402812957764,
+          "family_kl": 0.09919333457946777,
+          "position_exposures": 40389061.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3584,
+          "minimum_rank_learning_seconds": 6502.901950571308,
+          "maximum_rank_learning_seconds": 6515.092023551086,
+          "rank_learning_seconds": [
+            6502.901950571308,
+            6515.092023551086,
+            6508.056124276714,
+            6511.695011609263
+          ],
+          "policy_kl": 0.1365269422531128,
+          "family_kl": 0.09416747093200684,
+          "position_exposures": 43514480.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3840,
+          "minimum_rank_learning_seconds": 6976.096204724308,
+          "maximum_rank_learning_seconds": 6987.842912777356,
+          "rank_learning_seconds": [
+            6976.096204724308,
+            6987.842912777356,
+            6980.954055891023,
+            6984.238768264971
+          ],
+          "policy_kl": 0.1316847801208496,
+          "family_kl": 0.09112000465393066,
+          "position_exposures": 46660588.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 4096,
+          "minimum_rank_learning_seconds": 7438.128148950986,
+          "maximum_rank_learning_seconds": 7449.535159535677,
+          "rank_learning_seconds": [
+            7438.128148950986,
+            7449.535159535677,
+            7442.565287741134,
+            7445.906517980882
+          ],
+          "policy_kl": 0.12994647026062012,
+          "family_kl": 0.08986163139343262,
+          "position_exposures": 49753641.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        }
+      ]
+    },
+    "seed1/Transformer": {
+      "snapshot": "23c9dfe60c0a4c1c376e74f634b568fd1c85f3b13a0c7fef9172859ad38a40fb",
+      "attempt": "pod-20260915T063331Z-58464407",
+      "seed": 91312427,
+      "curve": [
+        {
+          "turn": 0,
+          "minimum_rank_learning_seconds": 0.0,
+          "maximum_rank_learning_seconds": 0.0,
+          "rank_learning_seconds": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "policy_kl": 2.161144971847534,
+          "family_kl": 1.628530502319336,
+          "position_exposures": 0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 256,
+          "minimum_rank_learning_seconds": 379.81905241386266,
+          "maximum_rank_learning_seconds": 388.8918804474524,
+          "rank_learning_seconds": [
+            379.81905241386266,
+            386.849277653062,
+            387.7762389589625,
+            388.8918804474524
+          ],
+          "policy_kl": 0.49916625022888184,
+          "family_kl": 0.35453009605407715,
+          "position_exposures": 3159548.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 512,
+          "minimum_rank_learning_seconds": 741.3705876971944,
+          "maximum_rank_learning_seconds": 750.6226574105385,
+          "rank_learning_seconds": [
+            741.3705876971944,
+            748.4139976550359,
+            749.488923932251,
+            750.6226574105385
+          ],
+          "policy_kl": 0.366274356842041,
+          "family_kl": 0.2587106227874756,
+          "position_exposures": 6226307.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 768,
+          "minimum_rank_learning_seconds": 1107.4194462943997,
+          "maximum_rank_learning_seconds": 1116.3124628717487,
+          "rank_learning_seconds": [
+            1107.4194462943997,
+            1114.1572421982128,
+            1115.0590279854368,
+            1116.3124628717487
+          ],
+          "policy_kl": 0.30177295207977295,
+          "family_kl": 0.21312570571899414,
+          "position_exposures": 9314964.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1024,
+          "minimum_rank_learning_seconds": 1475.3866644801456,
+          "maximum_rank_learning_seconds": 1483.553075154894,
+          "rank_learning_seconds": [
+            1475.3866644801456,
+            1481.0405085930834,
+            1482.1427138466097,
+            1483.553075154894
+          ],
+          "policy_kl": 0.2666078805923462,
+          "family_kl": 0.18985342979431152,
+          "position_exposures": 12411861.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1280,
+          "minimum_rank_learning_seconds": 1852.1163642482425,
+          "maximum_rank_learning_seconds": 1858.611578920536,
+          "rank_learning_seconds": [
+            1852.1163642482425,
+            1856.041014852206,
+            1857.9298809304892,
+            1858.611578920536
+          ],
+          "policy_kl": 0.23174893856048584,
+          "family_kl": 0.16458845138549805,
+          "position_exposures": 15550133.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1536,
+          "minimum_rank_learning_seconds": 2211.517134775553,
+          "maximum_rank_learning_seconds": 2217.612834560161,
+          "rank_learning_seconds": [
+            2211.517134775553,
+            2214.9372048003424,
+            2216.720836566383,
+            2217.612834560161
+          ],
+          "policy_kl": 0.2166353464126587,
+          "family_kl": 0.15411019325256348,
+          "position_exposures": 18600993.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1792,
+          "minimum_rank_learning_seconds": 2583.749074850639,
+          "maximum_rank_learning_seconds": 2588.919791794062,
+          "rank_learning_seconds": [
+            2583.749074850639,
+            2586.3890071804635,
+            2587.986419077468,
+            2588.919791794062
+          ],
+          "policy_kl": 0.2030484676361084,
+          "family_kl": 0.14242124557495117,
+          "position_exposures": 21723452.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2048,
+          "minimum_rank_learning_seconds": 2946.1045549047412,
+          "maximum_rank_learning_seconds": 2950.690032239072,
+          "rank_learning_seconds": [
+            2946.1045549047412,
+            2948.185529508366,
+            2949.8441161794763,
+            2950.690032239072
+          ],
+          "policy_kl": 0.18816351890563965,
+          "family_kl": 0.1318662166595459,
+          "position_exposures": 24788738.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2304,
+          "minimum_rank_learning_seconds": 3320.442469009751,
+          "maximum_rank_learning_seconds": 3324.705588112236,
+          "rank_learning_seconds": [
+            3320.442469009751,
+            3322.3732590300497,
+            3323.7237694792275,
+            3324.705588112236
+          ],
+          "policy_kl": 0.17425906658172607,
+          "family_kl": 0.12256169319152832,
+          "position_exposures": 27919219.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2560,
+          "minimum_rank_learning_seconds": 3685.831207600626,
+          "maximum_rank_learning_seconds": 3690.309583295224,
+          "rank_learning_seconds": [
+            3685.831207600626,
+            3688.1308840519923,
+            3689.4452715178195,
+            3690.309583295224
+          ],
+          "policy_kl": 0.1670464277267456,
+          "family_kl": 0.11620235443115234,
+          "position_exposures": 31008348.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2816,
+          "minimum_rank_learning_seconds": 4055.5450958956208,
+          "maximum_rank_learning_seconds": 4060.054144098074,
+          "rank_learning_seconds": [
+            4055.5450958956208,
+            4057.631915554928,
+            4059.207250610867,
+            4060.054144098074
+          ],
+          "policy_kl": 0.15609776973724365,
+          "family_kl": 0.10939431190490723,
+          "position_exposures": 34114038.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3072,
+          "minimum_rank_learning_seconds": 4433.2823236366385,
+          "maximum_rank_learning_seconds": 4437.981820368237,
+          "rank_learning_seconds": [
+            4433.2823236366385,
+            4435.418289483088,
+            4437.356342329003,
+            4437.981820368237
+          ],
+          "policy_kl": 0.14883363246917725,
+          "family_kl": 0.1054849624633789,
+          "position_exposures": 37262583.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3328,
+          "minimum_rank_learning_seconds": 4805.714556799736,
+          "maximum_rank_learning_seconds": 4810.879699844372,
+          "rank_learning_seconds": [
+            4805.714556799736,
+            4807.9679580133525,
+            4810.181229404785,
+            4810.879699844372
+          ],
+          "policy_kl": 0.14549100399017334,
+          "family_kl": 0.1007988452911377,
+          "position_exposures": 40389061.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3584,
+          "minimum_rank_learning_seconds": 5178.383782154968,
+          "maximum_rank_learning_seconds": 5183.679353168147,
+          "rank_learning_seconds": [
+            5178.383782154968,
+            5179.954328444786,
+            5182.9000196388515,
+            5183.679353168147
+          ],
+          "policy_kl": 0.14078092575073242,
+          "family_kl": 0.09785723686218262,
+          "position_exposures": 43514480.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3840,
+          "minimum_rank_learning_seconds": 5555.237949012051,
+          "maximum_rank_learning_seconds": 5560.27905674369,
+          "rank_learning_seconds": [
+            5555.237949012051,
+            5556.397981773887,
+            5559.707007824996,
+            5560.27905674369
+          ],
+          "policy_kl": 0.1347804069519043,
+          "family_kl": 0.09418916702270508,
+          "position_exposures": 46660588.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 4096,
+          "minimum_rank_learning_seconds": 5922.694254274014,
+          "maximum_rank_learning_seconds": 5927.112590880424,
+          "rank_learning_seconds": [
+            5922.694254274014,
+            5923.72960701026,
+            5927.078235997062,
+            5927.112590880424
+          ],
+          "policy_kl": 0.13349390029907227,
+          "family_kl": 0.09345388412475586,
+          "position_exposures": 49753641.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        }
+      ]
+    },
+    "seed2/CNN": {
+      "snapshot": "3e9dca597a594ac0bb1e35667f07d9e8ccbca7f0f3d725699595b435deb32d89",
+      "attempt": "pod-20260915T083834Z-0f6ca1e9",
+      "seed": 91312428,
+      "curve": [
+        {
+          "turn": 0,
+          "minimum_rank_learning_seconds": 0.0,
+          "maximum_rank_learning_seconds": 0.0,
+          "rank_learning_seconds": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "policy_kl": 2.015233278274536,
+          "family_kl": 1.500084638595581,
+          "position_exposures": 0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 256,
+          "minimum_rank_learning_seconds": 461.9311226280988,
+          "maximum_rank_learning_seconds": 485.3204167939548,
+          "rank_learning_seconds": [
+            461.9311226280988,
+            481.50402163213585,
+            485.3204167939548,
+            485.2829729007499
+          ],
+          "policy_kl": 0.4380214214324951,
+          "family_kl": 0.3142740726470947,
+          "position_exposures": 3096705.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 512,
+          "minimum_rank_learning_seconds": 923.9087956945878,
+          "maximum_rank_learning_seconds": 947.0156601880735,
+          "rank_learning_seconds": [
+            923.9087956945878,
+            943.2662407931639,
+            947.0156601880735,
+            946.9451265289972
+          ],
+          "policy_kl": 0.31920313835144043,
+          "family_kl": 0.2283027172088623,
+          "position_exposures": 6184993.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 768,
+          "minimum_rank_learning_seconds": 1398.2705184918595,
+          "maximum_rank_learning_seconds": 1421.3631450479152,
+          "rank_learning_seconds": [
+            1398.2705184918595,
+            1417.7165635821584,
+            1421.3631450479152,
+            1421.2328930517542
+          ],
+          "policy_kl": 0.2726224660873413,
+          "family_kl": 0.1903693675994873,
+          "position_exposures": 9330113.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1024,
+          "minimum_rank_learning_seconds": 1855.4668881328835,
+          "maximum_rank_learning_seconds": 1878.2006850744365,
+          "rank_learning_seconds": [
+            1855.4668881328835,
+            1874.5172360340366,
+            1878.2006850744365,
+            1878.0634008915222
+          ],
+          "policy_kl": 0.24944186210632324,
+          "family_kl": 0.1789555549621582,
+          "position_exposures": 12405982.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1280,
+          "minimum_rank_learning_seconds": 2317.124868441955,
+          "maximum_rank_learning_seconds": 2339.7888106083847,
+          "rank_learning_seconds": [
+            2317.124868441955,
+            2336.096294116782,
+            2339.7888106083847,
+            2339.44042088461
+          ],
+          "policy_kl": 0.22270357608795166,
+          "family_kl": 0.15564680099487305,
+          "position_exposures": 15503819.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1536,
+          "minimum_rank_learning_seconds": 2788.492111455853,
+          "maximum_rank_learning_seconds": 2810.8778746002645,
+          "rank_learning_seconds": [
+            2788.492111455853,
+            2807.4026247169822,
+            2810.8778746002645,
+            2810.5327662767086
+          ],
+          "policy_kl": 0.20054888725280762,
+          "family_kl": 0.14116477966308594,
+          "position_exposures": 18640523.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1792,
+          "minimum_rank_learning_seconds": 3250.06749771093,
+          "maximum_rank_learning_seconds": 3272.7329351497465,
+          "rank_learning_seconds": [
+            3250.06749771093,
+            3269.1345363573346,
+            3272.7329351497465,
+            3272.1628106767894
+          ],
+          "policy_kl": 0.1881955862045288,
+          "family_kl": 0.13419294357299805,
+          "position_exposures": 21733791.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2048,
+          "minimum_rank_learning_seconds": 3719.8390568519826,
+          "maximum_rank_learning_seconds": 3742.252440429671,
+          "rank_learning_seconds": [
+            3719.8390568519826,
+            3738.6457284964563,
+            3742.252440429671,
+            3741.6442320569477
+          ],
+          "policy_kl": 0.177911639213562,
+          "family_kl": 0.12455916404724121,
+          "position_exposures": 24868052.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2304,
+          "minimum_rank_learning_seconds": 4177.17643745782,
+          "maximum_rank_learning_seconds": 4199.289695303538,
+          "rank_learning_seconds": [
+            4177.17643745782,
+            4195.523763028323,
+            4199.289695303538,
+            4198.4415932218835
+          ],
+          "policy_kl": 0.16973161697387695,
+          "family_kl": 0.11736440658569336,
+          "position_exposures": 27945642.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2560,
+          "minimum_rank_learning_seconds": 4647.270130528515,
+          "maximum_rank_learning_seconds": 4668.692539790733,
+          "rank_learning_seconds": [
+            4647.270130528515,
+            4665.062290607428,
+            4668.692539790733,
+            4667.921455268661
+          ],
+          "policy_kl": 0.16317832469940186,
+          "family_kl": 0.11238360404968262,
+          "position_exposures": 31072336.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2816,
+          "minimum_rank_learning_seconds": 5117.705840739654,
+          "maximum_rank_learning_seconds": 5138.230351379811,
+          "rank_learning_seconds": [
+            5117.705840739654,
+            5134.606709229411,
+            5138.230351379811,
+            5137.483032185468
+          ],
+          "policy_kl": 0.15850889682769775,
+          "family_kl": 0.1078484058380127,
+          "position_exposures": 34199728.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3072,
+          "minimum_rank_learning_seconds": 5578.57237229569,
+          "maximum_rank_learning_seconds": 5598.463022956043,
+          "rank_learning_seconds": [
+            5578.57237229569,
+            5594.74304858761,
+            5598.463022956043,
+            5597.497057196597
+          ],
+          "policy_kl": 0.14692676067352295,
+          "family_kl": 0.1016840934753418,
+          "position_exposures": 37289899.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3328,
+          "minimum_rank_learning_seconds": 6050.478327648685,
+          "maximum_rank_learning_seconds": 6069.637000738236,
+          "rank_learning_seconds": [
+            6050.478327648685,
+            6066.020260886551,
+            6069.637000738236,
+            6068.5314165945165
+          ],
+          "policy_kl": 0.14039373397827148,
+          "family_kl": 0.096832275390625,
+          "position_exposures": 40426395.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3584,
+          "minimum_rank_learning_seconds": 6516.127691770525,
+          "maximum_rank_learning_seconds": 6534.595362500113,
+          "rank_learning_seconds": [
+            6516.127691770525,
+            6530.850324701401,
+            6534.595362500113,
+            6533.288779442402
+          ],
+          "policy_kl": 0.13769936561584473,
+          "family_kl": 0.09434628486633301,
+          "position_exposures": 43531412.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3840,
+          "minimum_rank_learning_seconds": 6986.3949467808125,
+          "maximum_rank_learning_seconds": 7004.232330373139,
+          "rank_learning_seconds": [
+            6986.3949467808125,
+            7000.328731534362,
+            7004.232330373139,
+            7002.877062781568
+          ],
+          "policy_kl": 0.13153457641601562,
+          "family_kl": 0.09153223037719727,
+          "position_exposures": 46660864.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 4096,
+          "minimum_rank_learning_seconds": 7454.645759501698,
+          "maximum_rank_learning_seconds": 7472.188079483341,
+          "rank_learning_seconds": [
+            7454.645759501698,
+            7468.0663395173615,
+            7472.188079483341,
+            7470.649610063003
+          ],
+          "policy_kl": 0.12851834297180176,
+          "family_kl": 0.09000468254089355,
+          "position_exposures": 49789538.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        }
+      ]
+    },
+    "seed2/Transformer": {
+      "snapshot": "47bb3410a1a6c100c1e005db246f925b73b08bb6ad833ed76be64d54de87848d",
+      "attempt": "pod-20260915T110728Z-aa30a909",
+      "seed": 91312428,
+      "curve": [
+        {
+          "turn": 0,
+          "minimum_rank_learning_seconds": 0.0,
+          "maximum_rank_learning_seconds": 0.0,
+          "rank_learning_seconds": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "policy_kl": 2.2068824768066406,
+          "family_kl": 1.716614007949829,
+          "position_exposures": 0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 256,
+          "minimum_rank_learning_seconds": 367.87888305514934,
+          "maximum_rank_learning_seconds": 376.87532979316893,
+          "rank_learning_seconds": [
+            367.87888305514934,
+            373.94420222204644,
+            373.94560510566225,
+            376.87532979316893
+          ],
+          "policy_kl": 0.4940047264099121,
+          "family_kl": 0.3583250045776367,
+          "position_exposures": 3096705.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 512,
+          "minimum_rank_learning_seconds": 735.6655377463612,
+          "maximum_rank_learning_seconds": 744.5287558390992,
+          "rank_learning_seconds": [
+            735.6655377463612,
+            740.7874749252514,
+            740.983566835901,
+            744.5287558390992
+          ],
+          "policy_kl": 0.36985278129577637,
+          "family_kl": 0.2662312984466553,
+          "position_exposures": 6184993.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 768,
+          "minimum_rank_learning_seconds": 1114.0908313592954,
+          "maximum_rank_learning_seconds": 1122.2720094419783,
+          "rank_learning_seconds": [
+            1114.0908313592954,
+            1118.5799188395904,
+            1118.9620068848308,
+            1122.2720094419783
+          ],
+          "policy_kl": 0.3112446069717407,
+          "family_kl": 0.21988916397094727,
+          "position_exposures": 9330113.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1024,
+          "minimum_rank_learning_seconds": 1477.3907704743615,
+          "maximum_rank_learning_seconds": 1485.1647896878421,
+          "rank_learning_seconds": [
+            1477.3907704743615,
+            1481.2250520875386,
+            1481.82601099342,
+            1485.1647896878421
+          ],
+          "policy_kl": 0.2631014585494995,
+          "family_kl": 0.18761754035949707,
+          "position_exposures": 12405982.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1280,
+          "minimum_rank_learning_seconds": 1845.133494495618,
+          "maximum_rank_learning_seconds": 1852.1960063478327,
+          "rank_learning_seconds": [
+            1845.133494495618,
+            1848.1126769445837,
+            1848.8180794185027,
+            1852.1960063478327
+          ],
+          "policy_kl": 0.23863589763641357,
+          "family_kl": 0.16607666015625,
+          "position_exposures": 15503819.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1536,
+          "minimum_rank_learning_seconds": 2221.4909092365124,
+          "maximum_rank_learning_seconds": 2227.4241963017557,
+          "rank_learning_seconds": [
+            2221.4909092365124,
+            2223.2933808364032,
+            2223.9208600641286,
+            2227.4241963017557
+          ],
+          "policy_kl": 0.2160642147064209,
+          "family_kl": 0.15363192558288574,
+          "position_exposures": 18640523.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1792,
+          "minimum_rank_learning_seconds": 2589.5842680913047,
+          "maximum_rank_learning_seconds": 2594.619158117828,
+          "rank_learning_seconds": [
+            2589.5842680913047,
+            2590.11019699162,
+            2591.0703568219033,
+            2594.619158117828
+          ],
+          "policy_kl": 0.1959061622619629,
+          "family_kl": 0.14107704162597656,
+          "position_exposures": 21733791.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2048,
+          "minimum_rank_learning_seconds": 2963.853350531077,
+          "maximum_rank_learning_seconds": 2968.69103423701,
+          "rank_learning_seconds": [
+            2964.3676121612953,
+            2963.853350531077,
+            2964.90852815393,
+            2968.69103423701
+          ],
+          "policy_kl": 0.1899867057800293,
+          "family_kl": 0.13365888595581055,
+          "position_exposures": 24868052.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2304,
+          "minimum_rank_learning_seconds": 3326.712815553823,
+          "maximum_rank_learning_seconds": 3331.6865046510648,
+          "rank_learning_seconds": [
+            3327.8493775932293,
+            3326.712815553823,
+            3328.017265863251,
+            3331.6865046510648
+          ],
+          "policy_kl": 0.17577672004699707,
+          "family_kl": 0.12470531463623047,
+          "position_exposures": 27945642.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2560,
+          "minimum_rank_learning_seconds": 3700.362562341179,
+          "maximum_rank_learning_seconds": 3705.8081915729854,
+          "rank_learning_seconds": [
+            3702.1378966952034,
+            3700.362562341179,
+            3701.907027238165,
+            3705.8081915729854
+          ],
+          "policy_kl": 0.17129969596862793,
+          "family_kl": 0.11974763870239258,
+          "position_exposures": 31072336.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2816,
+          "minimum_rank_learning_seconds": 4074.126010177948,
+          "maximum_rank_learning_seconds": 4079.898622905195,
+          "rank_learning_seconds": [
+            4076.7770312148787,
+            4074.126010177948,
+            4075.738397293113,
+            4079.898622905195
+          ],
+          "policy_kl": 0.1586703062057495,
+          "family_kl": 0.11085700988769531,
+          "position_exposures": 34199728.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3072,
+          "minimum_rank_learning_seconds": 4439.92493586184,
+          "maximum_rank_learning_seconds": 4445.651271324285,
+          "rank_learning_seconds": [
+            4443.6169079159445,
+            4439.92493586184,
+            4441.658949020028,
+            4445.651271324285
+          ],
+          "policy_kl": 0.15398192405700684,
+          "family_kl": 0.10605311393737793,
+          "position_exposures": 37289899.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3328,
+          "minimum_rank_learning_seconds": 4815.106873139826,
+          "maximum_rank_learning_seconds": 4820.826576154475,
+          "rank_learning_seconds": [
+            4819.628355050663,
+            4815.106873139826,
+            4816.891789285961,
+            4820.826576154475
+          ],
+          "policy_kl": 0.14669060707092285,
+          "family_kl": 0.10159492492675781,
+          "position_exposures": 40426395.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3584,
+          "minimum_rank_learning_seconds": 5185.000065825239,
+          "maximum_rank_learning_seconds": 5190.694300743198,
+          "rank_learning_seconds": [
+            5190.027366965573,
+            5185.000065825239,
+            5186.8207022470015,
+            5190.694300743198
+          ],
+          "policy_kl": 0.14057660102844238,
+          "family_kl": 0.09820413589477539,
+          "position_exposures": 43531412.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3840,
+          "minimum_rank_learning_seconds": 5558.983855931059,
+          "maximum_rank_learning_seconds": 5564.638633467373,
+          "rank_learning_seconds": [
+            5564.638633467373,
+            5558.983855931059,
+            5560.689178150875,
+            5564.616512996057
+          ],
+          "policy_kl": 0.13576197624206543,
+          "family_kl": 0.0948326587677002,
+          "position_exposures": 46660864.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 4096,
+          "minimum_rank_learning_seconds": 5931.741248029168,
+          "maximum_rank_learning_seconds": 5937.838763768465,
+          "rank_learning_seconds": [
+            5937.838763768465,
+            5931.741248029168,
+            5933.166000881756,
+            5937.147127555014
+          ],
+          "policy_kl": 0.1348280906677246,
+          "family_kl": 0.09425640106201172,
+          "position_exposures": 49789538.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        }
+      ]
+    },
+    "seed1/Transformer scale0.01": {
+      "snapshot": "6402810f220e661526fbb89b639f80d7b045b8c87b3431791170856b5436224f",
+      "attempt": "pod-20260915T153543Z-fd6be13a",
+      "seed": 91312427,
+      "curve": [
+        {
+          "turn": 0,
+          "minimum_rank_learning_seconds": 0.0,
+          "maximum_rank_learning_seconds": 0.0,
+          "rank_learning_seconds": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "policy_kl": 2.1673803329467773,
+          "family_kl": 1.6331291198730469,
+          "position_exposures": 0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 256,
+          "minimum_rank_learning_seconds": 379.78394946613116,
+          "maximum_rank_learning_seconds": 388.0579605179664,
+          "rank_learning_seconds": [
+            379.78394946613116,
+            387.4535069009289,
+            388.0579605179664,
+            387.79913156628027
+          ],
+          "policy_kl": 0.5011541843414307,
+          "family_kl": 0.36093664169311523,
+          "position_exposures": 3159548.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 512,
+          "minimum_rank_learning_seconds": 742.143038484588,
+          "maximum_rank_learning_seconds": 749.8299435837835,
+          "rank_learning_seconds": [
+            742.143038484588,
+            749.1133908018237,
+            749.8299435837835,
+            749.4112114795425
+          ],
+          "policy_kl": 0.3539576530456543,
+          "family_kl": 0.25873780250549316,
+          "position_exposures": 6226307.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 768,
+          "minimum_rank_learning_seconds": 1109.1840932386403,
+          "maximum_rank_learning_seconds": 1116.017189217906,
+          "rank_learning_seconds": [
+            1109.1840932386403,
+            1115.0207221027813,
+            1116.017189217906,
+            1115.4355012908927
+          ],
+          "policy_kl": 0.2923119068145752,
+          "family_kl": 0.2083907127380371,
+          "position_exposures": 9314964.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1024,
+          "minimum_rank_learning_seconds": 1477.5153924956103,
+          "maximum_rank_learning_seconds": 1483.4508633410733,
+          "rank_learning_seconds": [
+            1477.5153924956103,
+            1482.3214577715553,
+            1483.4508633410733,
+            1482.7173759889556
+          ],
+          "policy_kl": 0.26207971572875977,
+          "family_kl": 0.18820953369140625,
+          "position_exposures": 12411861.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1280,
+          "minimum_rank_learning_seconds": 1854.1445570916403,
+          "maximum_rank_learning_seconds": 1859.0086029892263,
+          "rank_learning_seconds": [
+            1854.1445570916403,
+            1857.8769376956625,
+            1859.0086029892263,
+            1858.2384269258764
+          ],
+          "policy_kl": 0.23486328125,
+          "family_kl": 0.16894173622131348,
+          "position_exposures": 15550133.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1536,
+          "minimum_rank_learning_seconds": 2214.597302565642,
+          "maximum_rank_learning_seconds": 2218.194216483418,
+          "rank_learning_seconds": [
+            2214.597302565642,
+            2217.099545588484,
+            2218.194216483418,
+            2217.4919432272145
+          ],
+          "policy_kl": 0.21144747734069824,
+          "family_kl": 0.15237855911254883,
+          "position_exposures": 18600993.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 1792,
+          "minimum_rank_learning_seconds": 2587.1084532654495,
+          "maximum_rank_learning_seconds": 2589.6823382744915,
+          "rank_learning_seconds": [
+            2587.1084532654495,
+            2588.3408285915793,
+            2589.6823382744915,
+            2588.913794396387
+          ],
+          "policy_kl": 0.20023655891418457,
+          "family_kl": 0.14110207557678223,
+          "position_exposures": 21723452.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2048,
+          "minimum_rank_learning_seconds": 2950.2502050593903,
+          "maximum_rank_learning_seconds": 2951.5570537135354,
+          "rank_learning_seconds": [
+            2950.2502050593903,
+            2950.2721413365216,
+            2951.5570537135354,
+            2950.9199105552398
+          ],
+          "policy_kl": 0.1873992681503296,
+          "family_kl": 0.13215088844299316,
+          "position_exposures": 24788738.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2304,
+          "minimum_rank_learning_seconds": 3324.5103059353714,
+          "maximum_rank_learning_seconds": 3325.898725069361,
+          "rank_learning_seconds": [
+            3325.749586193182,
+            3324.5103059353714,
+            3325.898725069361,
+            3325.2817011669686
+          ],
+          "policy_kl": 0.17232155799865723,
+          "family_kl": 0.12380599975585938,
+          "position_exposures": 27919219.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2560,
+          "minimum_rank_learning_seconds": 3690.607964537252,
+          "maximum_rank_learning_seconds": 3692.843816622015,
+          "rank_learning_seconds": [
+            3692.843816622015,
+            3690.607964537252,
+            3691.985252733575,
+            3691.400037218991
+          ],
+          "policy_kl": 0.16368961334228516,
+          "family_kl": 0.11615157127380371,
+          "position_exposures": 31008348.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 2816,
+          "minimum_rank_learning_seconds": 4060.6570454503235,
+          "maximum_rank_learning_seconds": 4064.1339285087306,
+          "rank_learning_seconds": [
+            4064.1339285087306,
+            4060.6570454503235,
+            4062.2675765464955,
+            4061.59939504895
+          ],
+          "policy_kl": 0.15440356731414795,
+          "family_kl": 0.10941481590270996,
+          "position_exposures": 34114038.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3072,
+          "minimum_rank_learning_seconds": 4438.771062452492,
+          "maximum_rank_learning_seconds": 4443.276136698725,
+          "rank_learning_seconds": [
+            4443.276136698725,
+            4438.771062452492,
+            4440.6652436423465,
+            4439.872410006734
+          ],
+          "policy_kl": 0.14803385734558105,
+          "family_kl": 0.10495829582214355,
+          "position_exposures": 37262583.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3328,
+          "minimum_rank_learning_seconds": 4811.615511032665,
+          "maximum_rank_learning_seconds": 4816.994242881396,
+          "rank_learning_seconds": [
+            4816.994242881396,
+            4811.615511032665,
+            4813.71754715743,
+            4812.840247452725
+          ],
+          "policy_kl": 0.14425063133239746,
+          "family_kl": 0.1004633903503418,
+          "position_exposures": 40389061.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3584,
+          "minimum_rank_learning_seconds": 5184.9032121817,
+          "maximum_rank_learning_seconds": 5191.401188549236,
+          "rank_learning_seconds": [
+            5191.401188549236,
+            5184.9032121817,
+            5186.722407212423,
+            5185.848284322798
+          ],
+          "policy_kl": 0.1375824213027954,
+          "family_kl": 0.09780430793762207,
+          "position_exposures": 43514480.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 3840,
+          "minimum_rank_learning_seconds": 5562.398327681032,
+          "maximum_rank_learning_seconds": 5569.45668249164,
+          "rank_learning_seconds": [
+            5569.45668249164,
+            5562.398327681032,
+            5563.492074226524,
+            5563.325936489011
+          ],
+          "policy_kl": 0.13371634483337402,
+          "family_kl": 0.09434223175048828,
+          "position_exposures": 46660588.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        },
+        {
+          "turn": 4096,
+          "minimum_rank_learning_seconds": 5930.214131948946,
+          "maximum_rank_learning_seconds": 5937.934026188625,
+          "rank_learning_seconds": [
+            5937.934026188625,
+            5930.214131948946,
+            5931.1065303297655,
+            5931.266750678944
+          ],
+          "policy_kl": 0.13197600841522217,
+          "family_kl": 0.09282946586608887,
+          "position_exposures": 49753641.0,
+          "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+        }
+      ],
+      "scope": "First-seed screen only; second-seed confirmation pending"
+    }
+  },
+  "contrasts": {
+    "seed1": {
+      "transformer_final": {
+        "turn": 4096,
+        "minimum_rank_learning_seconds": 5922.694254274014,
+        "maximum_rank_learning_seconds": 5927.112590880424,
+        "rank_learning_seconds": [
+          5922.694254274014,
+          5923.72960701026,
+          5927.078235997062,
+          5927.112590880424
+        ],
+        "policy_kl": 0.13349390029907227,
+        "family_kl": 0.09345388412475586,
+        "position_exposures": 49753641.0,
+        "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+      },
+      "cnn_before": {
+        "turn": 3072,
+        "minimum_rank_learning_seconds": 5565.823916651425,
+        "maximum_rank_learning_seconds": 5578.6096482949215,
+        "rank_learning_seconds": [
+          5565.823916651425,
+          5578.6096482949215,
+          5572.005703513569,
+          5575.277468822256
+        ],
+        "policy_kl": 0.14665043354034424,
+        "family_kl": 0.10270500183105469,
+        "position_exposures": 37262583.0,
+        "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+      },
+      "cnn_after": {
+        "turn": 3328,
+        "minimum_rank_learning_seconds": 6034.58647567741,
+        "maximum_rank_learning_seconds": 6047.002937938843,
+        "rank_learning_seconds": [
+          6034.58647567741,
+          6047.002937938843,
+          6039.920110465726,
+          6043.604024621251
+        ],
+        "policy_kl": 0.14245402812957764,
+        "family_kl": 0.09919333457946777,
+        "position_exposures": 40389061.0,
+        "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+      },
+      "metrics": {
+        "policy_kl": {
+          "transformer": 0.13349390029907227,
+          "cnn_before": 0.14665043354034424,
+          "cnn_after": 0.14245402812957764,
+          "relative_gain_against_cnn_after": 0.0628983816614519
+        },
+        "family_kl": {
+          "transformer": 0.09345388412475586,
+          "cnn_before": 0.10270500183105469,
+          "cnn_after": 0.09919333457946777,
+          "relative_gain_against_cnn_after": 0.05786125125286323
+        }
+      },
+      "transformer_uses_less_learning_time_and_has_lower_both_kls_than_cnn_after": true,
+      "equal_update_gate_changed": false,
+      "scope": "Observed checkpoint comparison. The CNN after point has already spent more learning time on every rank. No interpolation or claim about the unobserved exact-budget checkpoint. Transformer uses more training positions. Learning-only clocks exclude data preparation, compilation, evaluation, checkpointing and generation cost."
+    },
+    "seed2": {
+      "transformer_final": {
+        "turn": 4096,
+        "minimum_rank_learning_seconds": 5931.741248029168,
+        "maximum_rank_learning_seconds": 5937.838763768465,
+        "rank_learning_seconds": [
+          5937.838763768465,
+          5931.741248029168,
+          5933.166000881756,
+          5937.147127555014
+        ],
+        "policy_kl": 0.1348280906677246,
+        "family_kl": 0.09425640106201172,
+        "position_exposures": 49789538.0,
+        "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+      },
+      "cnn_before": {
+        "turn": 3072,
+        "minimum_rank_learning_seconds": 5578.57237229569,
+        "maximum_rank_learning_seconds": 5598.463022956043,
+        "rank_learning_seconds": [
+          5578.57237229569,
+          5594.74304858761,
+          5598.463022956043,
+          5597.497057196597
+        ],
+        "policy_kl": 0.14692676067352295,
+        "family_kl": 0.1016840934753418,
+        "position_exposures": 37289899.0,
+        "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+      },
+      "cnn_after": {
+        "turn": 3328,
+        "minimum_rank_learning_seconds": 6050.478327648685,
+        "maximum_rank_learning_seconds": 6069.637000738236,
+        "rank_learning_seconds": [
+          6050.478327648685,
+          6066.020260886551,
+          6069.637000738236,
+          6068.5314165945165
+        ],
+        "policy_kl": 0.14039373397827148,
+        "family_kl": 0.096832275390625,
+        "position_exposures": 40426395.0,
+        "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+      },
+      "metrics": {
+        "policy_kl": {
+          "transformer": 0.1348280906677246,
+          "cnn_before": 0.14692676067352295,
+          "cnn_after": 0.14039373397827148,
+          "relative_gain_against_cnn_after": 0.0396431033838609
+        },
+        "family_kl": {
+          "transformer": 0.09425640106201172,
+          "cnn_before": 0.1016840934753418,
+          "cnn_after": 0.096832275390625,
+          "relative_gain_against_cnn_after": 0.026601402458241385
+        }
+      },
+      "transformer_uses_less_learning_time_and_has_lower_both_kls_than_cnn_after": true,
+      "equal_update_gate_changed": false,
+      "scope": "Observed checkpoint comparison. The CNN after point has already spent more learning time on every rank. No interpolation or claim about the unobserved exact-budget checkpoint. Transformer uses more training positions. Learning-only clocks exclude data preparation, compilation, evaluation, checkpointing and generation cost."
+    },
+    "seed1_scale0.01": {
+      "transformer_final": {
+        "turn": 4096,
+        "minimum_rank_learning_seconds": 5930.214131948946,
+        "maximum_rank_learning_seconds": 5937.934026188625,
+        "rank_learning_seconds": [
+          5937.934026188625,
+          5930.214131948946,
+          5931.1065303297655,
+          5931.266750678944
+        ],
+        "policy_kl": 0.13197600841522217,
+        "family_kl": 0.09282946586608887,
+        "position_exposures": 49753641.0,
+        "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+      },
+      "cnn_before": {
+        "turn": 3072,
+        "minimum_rank_learning_seconds": 5565.823916651425,
+        "maximum_rank_learning_seconds": 5578.6096482949215,
+        "rank_learning_seconds": [
+          5565.823916651425,
+          5578.6096482949215,
+          5572.005703513569,
+          5575.277468822256
+        ],
+        "policy_kl": 0.14665043354034424,
+        "family_kl": 0.10270500183105469,
+        "position_exposures": 37262583.0,
+        "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+      },
+      "cnn_after": {
+        "turn": 3328,
+        "minimum_rank_learning_seconds": 6034.58647567741,
+        "maximum_rank_learning_seconds": 6047.002937938843,
+        "rank_learning_seconds": [
+          6034.58647567741,
+          6047.002937938843,
+          6039.920110465726,
+          6043.604024621251
+        ],
+        "policy_kl": 0.14245402812957764,
+        "family_kl": 0.09919333457946777,
+        "position_exposures": 40389061.0,
+        "validation_population_sha256": "b2a3fe3746763a723391a48b45e1dffee3a1dc3422c1a5f318320aaf21b8dd89"
+      },
+      "metrics": {
+        "policy_kl": {
+          "transformer": 0.13197600841522217,
+          "cnn_before": 0.14665043354034424,
+          "cnn_after": 0.14245402812957764,
+          "relative_gain_against_cnn_after": 0.07355369203617435
+        },
+        "family_kl": {
+          "transformer": 0.09282946586608887,
+          "cnn_before": 0.10270500183105469,
+          "cnn_after": 0.09919333457946777,
+          "relative_gain_against_cnn_after": 0.0641562131201523
+        }
+      },
+      "transformer_uses_less_learning_time_and_has_lower_both_kls_than_cnn_after": true,
+      "equal_update_gate_changed": false,
+      "scope": "Observed checkpoint comparison. The CNN after point has already spent more learning time on every rank. No interpolation or claim about the unobserved exact-budget checkpoint. Transformer uses more training positions. Learning-only clocks exclude data preparation, compilation, evaluation, checkpointing and generation cost."
+    }
+  },
+  "clock": "Cumulative measured learning-update seconds; minimum/maximum intervals over all four ranks.",
+  "scope": "Post-hoc descriptive throughput/learnability tradeoff. No intervention selection criterion changed; not equal position exposure, full job time, RL efficiency or playing strength."
+}

@@ -1,0 +1,68 @@
+{
+  "all_native_boards_legal_and_packed_features_equal": true,
+  "all_source_targets_preserved": true,
+  "buckets": {
+    "train": {
+      "512": 2321,
+      "768": 313
+    },
+    "validation": {
+      "512": 137,
+      "768": 9
+    }
+  },
+  "created": 1789503591.520817,
+  "games": 2780,
+  "kind": "real19_scientific_cohort",
+  "manifest_sha256": "2d39f7647a463e2e718844b19d45c35052d88f9ab9d8b2b222f5cd6c1f791def",
+  "operator_sha256": "f1fdef47ea8ed2af4bc86577ede53db51607ec566b8427105e6f1f20e06be4b6",
+  "original_splits_preserved": true,
+  "packed_array_bytes": 2961177738,
+  "plan_sha256": "9270f03a2080e19e3036d30d3d184dd6d56fdfeb4309824f87c64046350bc5f6",
+  "populations": {
+    "train": {
+      "buckets": {
+        "512": 2321,
+        "768": 313
+      },
+      "families": 2409,
+      "games": 2634,
+      "opponents": {
+        "0": 267,
+        "1": 288,
+        "2": 305,
+        "3": 278,
+        "4": 347,
+        "5": 410,
+        "6": 446,
+        "7": 293
+      },
+      "positions": 1091214
+    },
+    "validation": {
+      "buckets": {
+        "512": 137,
+        "768": 9
+      },
+      "families": 134,
+      "games": 146,
+      "opponents": {
+        "0": 17,
+        "1": 18,
+        "2": 19,
+        "3": 8,
+        "4": 13,
+        "5": 28,
+        "6": 33,
+        "7": 10
+      },
+      "positions": 60284
+    }
+  },
+  "positions": 1151498,
+  "seconds": 126.6354359179968,
+  "status": "passed",
+  "target": "/dev/shm/gozero-datasets/strong19-scientific-002",
+  "test_targets_read": false,
+  "train_validation_trajectory_overlap": false
+}
