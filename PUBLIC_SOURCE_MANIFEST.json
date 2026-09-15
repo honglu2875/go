@@ -4366,8 +4366,8 @@
       "sha256": "44e89f43fbe2ac4ccc50a19d5008e19bdc50a67f1750177e8e574c38979f53d5"
     },
     "ops/STATUS.md": {
-      "bytes": 1358,
-      "sha256": "4c35f061ecd4ff164b855c5d2865e43c67851be4b008955a4a8c49f930259370"
+      "bytes": 1677,
+      "sha256": "1c979a0b6f27f6dd0471388e90684fa2b501ca50f0dc0687dbea7b5cde95e4c1"
     },
     "ops/analyze_visual_xplane.py": {
       "bytes": 4473,
@@ -13601,6 +13601,10 @@
       "bytes": 2611,
       "sha256": "bbc3cb88127d6a54bde204bcfdd258a9aa9d7cd2e1b0139927d6aa4ef41f28e0"
     },
+    "research/studies/strong19_scaling/INVENTORY_003.md": {
+      "bytes": 1641,
+      "sha256": "b9164f70c4c4157286543df0428adb0eefbde64505a6806312d5558e91911190"
+    },
     "research/studies/strong19_scaling/README.md": {
       "bytes": 1404,
       "sha256": "6c7ce8bc16faffb40faa1adf0adb32a587ca76649574636093231eb87ca5925d"
@@ -13608,6 +13612,10 @@
     "research/studies/strong19_scaling/inventory-002.json": {
       "bytes": 946398,
       "sha256": "c7188947a3fb2443af54f5a001aa83e7b0f507263d21411b5b2d081b8981399c"
+    },
+    "research/studies/strong19_scaling/inventory-003.json": {
+      "bytes": 2050632,
+      "sha256": "53f9066390c4f991b4a285b488975e05f23042241f86cab489fb1811e21461d3"
     },
     "research/studies/strong19_scaling/inventory.py": {
       "bytes": 3970,
@@ -13821,6 +13829,10 @@
       "bytes": 5809,
       "sha256": "3565a3b69b44e44e9f332ff9a89d269277f63c6a61db39c45120e829911929dd"
     },
+    "research/studies/strong9_followups/ENCODER_PREPARATION.md": {
+      "bytes": 2228,
+      "sha256": "e2c5c017d3c05adbf49fd536964e98ff1a4073ea368b2a185ae23aa95e93625c"
+    },
     "research/studies/strong9_followups/HARNESS.md": {
       "bytes": 3373,
       "sha256": "5125ad34df0110e3921978338426fbee0cee825f070b73e8a88cd3afd3a42384"
@@ -13829,9 +13841,17 @@
       "bytes": 3214,
       "sha256": "0a24febdce428cbd67cf05db22d58e6104f8e93560b6dabdd5345fd99693fa58"
     },
+    "research/studies/strong9_followups/SCALAR_HARNESS.md": {
+      "bytes": 2973,
+      "sha256": "daa00303fedddd86e6435e12ae13ce4249b101a8b003ce449a621d8b7bfb6756"
+    },
     "research/studies/strong9_followups/continue_lr.py": {
       "bytes": 12221,
       "sha256": "9ac5e7cb81428993e5f12725918161ca01574a73826c42382e9c2fcd4417d1a5"
+    },
+    "research/studies/strong9_followups/continue_scalar.py": {
+      "bytes": 12287,
+      "sha256": "1318802dbd5382766ed0536590a07fbc8809e08856ad5f2928a32d56eb1ec78b"
     },
     "research/studies/strong9_followups/diagnose.py": {
       "bytes": 9339,
@@ -13849,13 +13869,33 @@
       "bytes": 707,
       "sha256": "a235d5c9b9befc400934c20a22fff59e36cf3f3cfc1a7736217742ad5511c8c0"
     },
+    "research/studies/strong9_followups/encoder-scale-preparation-001.json": {
+      "bytes": 3586,
+      "sha256": "dacf9a15bc23c8b8cb2594d395377f738e736984a266f5becb64a7e175567fd7"
+    },
+    "research/studies/strong9_followups/encoder-scales-001.json": {
+      "bytes": 36437,
+      "sha256": "a50b03a45fec4b061577510b6ad0166d8b93b228bad2042f6af8faa7f25ba251"
+    },
     "research/studies/strong9_followups/finalize_lr.py": {
       "bytes": 4499,
       "sha256": "b32a2d384c49402abe758a7b60dd5015ee5b3175992e8025b19911a9c04f4be5"
     },
+    "research/studies/strong9_followups/finalize_scalar.py": {
+      "bytes": 4528,
+      "sha256": "a94b19085b24376d3e958f243fed94bcc83fff7bc792e51967a02484543383e1"
+    },
+    "research/studies/strong9_followups/inspect_encoder_scales.py": {
+      "bytes": 4746,
+      "sha256": "40f0d1b7ec1504545699d4fe42e224233abf37f122c7eb051e4513bdc7a61e4c"
+    },
     "research/studies/strong9_followups/launch_lr.py": {
       "bytes": 7869,
       "sha256": "827c5d5c0463ae962532570603177df151155bd56a62f84e9900c362a8c5dbbe"
+    },
+    "research/studies/strong9_followups/launch_scalar.py": {
+      "bytes": 9170,
+      "sha256": "647c8368d5408c218a04f3587bdf9955f37848bf2a9a284329e731ccae63ab51"
     },
     "research/studies/strong9_followups/lr-comparison-cpu-001.json": {
       "bytes": 1128,
@@ -13869,9 +13909,25 @@
       "bytes": 1051,
       "sha256": "dc4a3ae3802a7f1d1ce79428baba1cbd93e689bfcdffc3d7bb794ace2db78f41"
     },
+    "research/studies/strong9_followups/lr15/seed1-final-002.csv": {
+      "bytes": 10470,
+      "sha256": "7c504e910c64acdee84253883990f93629b26e83a92525ba79e7f658a204ae61"
+    },
+    "research/studies/strong9_followups/lr15/seed1-final.csv": {
+      "bytes": 10198,
+      "sha256": "934cebef8d13ef51034c1566f1a307b46cd92a872a7013fcddd56df2d293f055"
+    },
+    "research/studies/strong9_followups/lr15/seed1-progress.csv": {
+      "bytes": 9987,
+      "sha256": "213ebb0ca15f32b4e815b38de6ac99259658fdad51757272ae6681050251d082"
+    },
     "research/studies/strong9_followups/lr15-registration-001.json": {
       "bytes": 3791,
       "sha256": "6adef0d5b4f7bdca52633bc925596f967a4c1229fd2ba930146df3847205adff"
+    },
+    "research/studies/strong9_followups/lr15-results-001.md": {
+      "bytes": 2247,
+      "sha256": "cd4b4282f2bbe25d38d76955ea7dfa7e37044adb3be0d43440c361781426916f"
     },
     "research/studies/strong9_followups/lr15-review-001.json": {
       "bytes": 1907,
@@ -13880,10 +13936,6 @@
     "research/studies/strong9_followups/lr15-review-001.md": {
       "bytes": 1211,
       "sha256": "ef30843d0299e2257112953bb149ba1b683d8dd8615a5fa5cdff6bb298c8524b"
-    },
-    "research/studies/strong9_followups/lr15/seed1-progress.csv": {
-      "bytes": 8934,
-      "sha256": "f7b90f32d4e1d9249c562eda0a15aa1691a59f41b512e98b1f578dd7eb91a0a6"
     },
     "research/studies/strong9_followups/lr_compare.py": {
       "bytes": 7670,
@@ -13901,6 +13953,10 @@
       "bytes": 3582,
       "sha256": "c54f83348eee839a79f8ed0ad7f6a152e16c5a17956429f84abae3303cb36bb9"
     },
+    "research/studies/strong9_followups/prepare_encoder_scales.py": {
+      "bytes": 5606,
+      "sha256": "6d914750ce89c5dbcc4b3b37767422002272471b79cbd397deb1da08de944caa"
+    },
     "research/studies/strong9_followups/qualify_lr_compare.py": {
       "bytes": 3345,
       "sha256": "b5d77c050e3e207f9a99d48c231f7c09785d053742d862b9a109f7b54215e7a8"
@@ -13908,6 +13964,38 @@
     "research/studies/strong9_followups/qualify_lr_source.py": {
       "bytes": 4054,
       "sha256": "97c43f8182b4fb89f61cce1b4f949062fdb1b293c3e5ba0a98fc89ea905edc47"
+    },
+    "research/studies/strong9_followups/qualify_scalar.py": {
+      "bytes": 7600,
+      "sha256": "4d7832dcb33fc1907efe8cd08d559517d8e8ee175b763e4cf532661091789461"
+    },
+    "research/studies/strong9_followups/register_scalar.py": {
+      "bytes": 4767,
+      "sha256": "4a3ef8814613203f606804895ac357e5f7fc1f80caacedb66e65bb4ae9ca9890"
+    },
+    "research/studies/strong9_followups/scalar-cpu-001.json": {
+      "bytes": 3891,
+      "sha256": "628be93c84607ed6512e3db9c66cff10662be9ed649fee9e52024cba92f4a9c1"
+    },
+    "research/studies/strong9_followups/scalar_compare.py": {
+      "bytes": 5924,
+      "sha256": "458c5aea8640f603e70e58e16870d77515986c0d802fcc326446e110a47dd996"
+    },
+    "research/studies/strong9_followups/scalar_source.py": {
+      "bytes": 3276,
+      "sha256": "df3eb81d18acb0f4dac9e0056fbdc196372c7e5596522d7ea0ed8b6d5109b8e5"
+    },
+    "research/studies/strong9_followups/scale1e-2/seed1-progress.csv": {
+      "bytes": 7260,
+      "sha256": "969302b43f96f6649f6aa482b492ae0d418f7cf661b622b357e9724bfe3bda4e"
+    },
+    "research/studies/strong9_followups/scale1e-2-registration-001.json": {
+      "bytes": 4531,
+      "sha256": "64ff3c98b7d9d2020c83a9e3957e12ece4e6f23d4c13d135343369cf4a295b22"
+    },
+    "research/studies/strong9_followups/scale1e-2-review-001.json": {
+      "bytes": 2840,
+      "sha256": "120f823b5f3ebaca4e5550eac82181304bc3080605caf0ca175c1ae47d324d0d"
     },
     "research/studies/strong9_followups/seed1-through-2816-001.json": {
       "bytes": 154898,

@@ -1,0 +1,96 @@
+{
+  "candidate_label": "Transformer scale 1e-2",
+  "candidate_value": 0.01,
+  "cnn_controls": {
+    "seed1": {
+      "path": "research/studies/strong9_scaling/cnn-seed1-audit-001.json",
+      "sha256": "226cf79338c1f6fcaa363a38708fd88bb70d727b4b2900168b67470f1e9daaae"
+    },
+    "seed2": {
+      "path": "research/studies/strong9_scaling/cnn-seed2-audit-001.json",
+      "sha256": "8003ebb2cccd58761ace388c5fb97fd575da786fe8088d0950057eb05dd74e1f"
+    }
+  },
+  "comparison_operator_sha256": "458c5aea8640f603e70e58e16870d77515986c0d802fcc326446e110a47dd996",
+  "created": 1789486407.2293224,
+  "decision": "Run seed1 first. Replicate only if both endpoint KL metrics gain at least0.5%, neither last-three mean regresses and no sustained overfit appears. Both paired seeds must pass before accepting the intervention. Review before any further experiment.",
+  "finalize_operator_sha256": "a94b19085b24376d3e958f243fed94bcc83fff7bc792e51967a02484543383e1",
+  "initialization_preparation": {
+    "path": "research/studies/strong9_followups/encoder-scale-preparation-001.json",
+    "sha256": "c8e9e9d0b80fc69c3ca43e13e05f073118d8ea0e129c2d89e487e83db183f7eb"
+  },
+  "invariants": [
+    "Only the declared scalar changes; all frozen source files remain identical within each seed.",
+    "Same complete4096-update horizon,64-update warmup, complete games/D4 draws, teacher targets and fixed evaluation populations.",
+    "Same width, parameter schema, encoder-plus-decoder arithmetic and closed test targets.",
+    "Retain complete learning state with verified peer copy and explicit RAM/growth reserves."
+  ],
+  "kind": "strong9_scalar_intervention",
+  "launch_operator_sha256": "c0d9d826e169ee7db86ce8341c9440b6ae3b61bc9a145793a432c67c4bd913b3",
+  "mechanism": "encoder_scale",
+  "paired_helper_sha256": "db1fc92ac0e8a53fa9149bcc9a9092f65ecaa92da83fc0aaaa6af6bce0c7d0ce",
+  "parent_label": "Transformer scale 1e-6",
+  "preceding_conclusion": {
+    "path": "research/studies/strong9_scaling/conclusion-001.json",
+    "sha256": "ab3b44ad04ea533c81ebb31d9de0b22fcc408ef385710a5e8c1a8ec43d6c397f"
+  },
+  "preceding_outcome": {
+    "path": "research/studies/strong9_followups/lr15-continuation/outcome-001.json",
+    "sha256": "e6b957dd382b8992b04b7b31de705d124dd798d264d50d65cac32216308f7d7d"
+  },
+  "qualification": {
+    "path": "research/studies/strong9_scaling/transformer-qualification-audit-001.json",
+    "sha256": "4b798d5e9d7a4ab28cc23ff715c48c964d55c867fcb1130856cde0d08df20b7d"
+  },
+  "registration_operator_sha256": "4a3ef8814613203f606804895ac357e5f7fc1f80caacedb66e65bb4ae9ca9890",
+  "review": {
+    "path": "research/studies/strong9_followups/scale1e-2-review-001.json",
+    "sha256": "120f823b5f3ebaca4e5550eac82181304bc3080605caf0ca175c1ae47d324d0d"
+  },
+  "scalar_qualification": {
+    "path": "research/studies/strong9_followups/scalar-cpu-001.json",
+    "sha256": "628be93c84607ed6512e3db9c66cff10662be9ed649fee9e52024cba92f4a9c1"
+  },
+  "scope": "A sequential fixed-data supervised scalar experiment. This is not a claim of global optimality or playing strength.",
+  "screen_min_relative_gain": 0.005,
+  "source_helper_sha256": "df3eb81d18acb0f4dac9e0056fbdc196372c7e5596522d7ea0ed8b6d5109b8e5",
+  "stages": {
+    "seed1": {
+      "change": {
+        "candidate_value": 0.01,
+        "mechanism": "encoder_scale",
+        "parent_value": 1e-06,
+        "path": [
+          "model",
+          "encoder_layer_scale"
+        ]
+      },
+      "parent_audit": {
+        "path": "research/studies/strong9_scaling/transformer-seed1-audit-001.json",
+        "sha256": "060c15a033eeec9ffa2169ffc23304fb304d17faef107c7a1cfe551e5f3ac28f"
+      },
+      "parent_snapshot": "23c9dfe60c0a4c1c376e74f634b568fd1c85f3b13a0c7fef9172859ad38a40fb",
+      "snapshot": "6402810f220e661526fbb89b639f80d7b045b8c87b3431791170856b5436224f",
+      "source_files": 1310
+    },
+    "seed2": {
+      "change": {
+        "candidate_value": 0.01,
+        "mechanism": "encoder_scale",
+        "parent_value": 1e-06,
+        "path": [
+          "model",
+          "encoder_layer_scale"
+        ]
+      },
+      "parent_audit": {
+        "path": "research/studies/strong9_scaling/transformer-seed2-audit-001.json",
+        "sha256": "34971ce106609c2ad9e8b7155689cdaea5bababd381a5aa1badd9e8ce27822d2"
+      },
+      "parent_snapshot": "47bb3410a1a6c100c1e005db246f925b73b08bb6ad833ed76be64d54de87848d",
+      "snapshot": "f0fdf76299495abc92d054b495dec5ef811284795b1efc60f51b0cd1936b1a87",
+      "source_files": 1310
+    }
+  },
+  "trial": "scale1e-2"
+}

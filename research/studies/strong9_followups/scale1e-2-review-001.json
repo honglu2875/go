@@ -1,0 +1,51 @@
+{
+  "kind": "scalar_scientific_review",
+  "status": "completed",
+  "created": 1789486343.3468192,
+  "trial": "scale1e-2",
+  "mechanism": "encoder_scale",
+  "candidate_value": 0.01,
+  "parent_label": "Transformer scale 1e-6",
+  "candidate_label": "Transformer scale 1e-2",
+  "preceding_outcome": {
+    "path": "research/studies/strong9_followups/lr15-continuation/outcome-001.json",
+    "sha256": "e6b957dd382b8992b04b7b31de705d124dd798d264d50d65cac32216308f7d7d"
+  },
+  "preceding_outcome_sha256": "e6b957dd382b8992b04b7b31de705d124dd798d264d50d65cac32216308f7d7d",
+  "preceding_contrast_sha256": "1d282bd60540359eadf2edecb5f2185b0e2189ab8d30e0d5ec00975ccff29b3c",
+  "parent_audits": {
+    "seed1": {
+      "path": "research/studies/strong9_scaling/transformer-seed1-audit-001.json",
+      "sha256": "060c15a033eeec9ffa2169ffc23304fb304d17faef107c7a1cfe551e5f3ac28f"
+    },
+    "seed2": {
+      "path": "research/studies/strong9_scaling/transformer-seed2-audit-001.json",
+      "sha256": "34971ce106609c2ad9e8b7155689cdaea5bababd381a5aa1badd9e8ce27822d2"
+    }
+  },
+  "preceding_result": {
+    "expert_kl": {
+      "parent_endpoint": 0.13349390029907227,
+      "candidate_endpoint": 0.13475024700164795,
+      "relative_endpoint_gain": -0.009411266730247947,
+      "parent_last_three_mean": 0.13635174433390299,
+      "candidate_last_three_mean": 0.1381282409032186,
+      "relative_last_three_gain": -0.013028777724803264
+    },
+    "family_kl": {
+      "parent_endpoint": 0.09345388412475586,
+      "candidate_endpoint": 0.0946967601776123,
+      "relative_endpoint_gain": -0.013299351487598754,
+      "parent_last_three_mean": 0.09516676266988118,
+      "candidate_last_three_mean": 0.09708690643310547,
+      "relative_last_three_gain": -0.02017662164137035
+    }
+  },
+  "rationale": [
+    "The1.5x rate scale improved some early points but failed both registered endpoint measures and both last-three means. Its first-seed screen closed without confirmation.",
+    "Keep the stronger existing1e-3 to3e-4 schedule. Both training probe and validation still improve, so there is no sustained-overfit evidence for reducing the dataset or horizon.",
+    "Test whether starting the spatial encoder residual branches at1e-2 improves optimization. The current1e-6 initialization grows to median magnitudes around0.03\u20130.05 in both completed seeds; those observations motivate a moderate startup probe without establishing an optimum.",
+    "Only encoder initialization changes. Width, depth, spatial attention, shared passes, soft-token connector, readout, auxiliary objective, parameter count and complete decoding FLOPs stay fixed."
+  ],
+  "scope": "A selected isolated encoder initialization probe, to be registered before learning. It is not a claim that the transformer already beats CNN or that larger residual scales are better."
+}

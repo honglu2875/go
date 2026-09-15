@@ -1,0 +1,92 @@
+{
+  "budget": {
+    "attention_key_extent": 257,
+    "batch_size": 128,
+    "board_size": 9,
+    "cache_scope": "Previous policy readout cached; pending actual action processed in this graph.",
+    "elementwise_operations": "Separate traced counts; static dense attention includes masked matrix entries.",
+    "fma_flops": 2,
+    "inference_parameters": 231181121,
+    "multiply_add_flops_by_component": {
+      "attention": 3638034432,
+      "encoder": 4728114315264,
+      "head": 1065172992,
+      "trunk_linear": 57982058496
+    },
+    "multiply_add_flops_per_batch": 4790799581184,
+    "multiply_add_flops_per_move": 37428121728.0,
+    "new_tokens": 2,
+    "past_moves": 128,
+    "trainable_parameters": 231181121,
+    "visual_tokens": 1
+  },
+  "cases": [
+    {
+      "changed_arrays": [],
+      "complete_decoding_budget_equal": true,
+      "full_size_schema_equal": true,
+      "gradient_norm": 0.02028529862124092,
+      "loss": 4.4097723960876465,
+      "non_scale_parameter_arrays_exact": true,
+      "scale": 1e-06,
+      "small_forward_backward_stablehlo_identical": true
+    },
+    {
+      "changed_arrays": [
+        "encoder.attention.attn.gamma",
+        "encoder.attention.mlp.gamma",
+        "encoder.blocks.gamma"
+      ],
+      "complete_decoding_budget_equal": true,
+      "full_size_schema_equal": true,
+      "gradient_norm": 0.020286952404546078,
+      "loss": 4.409771919250488,
+      "non_scale_parameter_arrays_exact": true,
+      "scale": 0.001,
+      "small_forward_backward_stablehlo_identical": true
+    },
+    {
+      "changed_arrays": [
+        "encoder.attention.attn.gamma",
+        "encoder.attention.mlp.gamma",
+        "encoder.blocks.gamma"
+      ],
+      "complete_decoding_budget_equal": true,
+      "full_size_schema_equal": true,
+      "gradient_norm": 0.02030384943938817,
+      "loss": 4.409769058227539,
+      "non_scale_parameter_arrays_exact": true,
+      "scale": 0.01,
+      "small_forward_backward_stablehlo_identical": true
+    },
+    {
+      "changed_arrays": [
+        "encoder.attention.attn.gamma",
+        "encoder.attention.mlp.gamma",
+        "encoder.blocks.gamma"
+      ],
+      "complete_decoding_budget_equal": true,
+      "full_size_schema_equal": true,
+      "gradient_norm": 0.02075983109693804,
+      "loss": 4.409726619720459,
+      "non_scale_parameter_arrays_exact": true,
+      "scale": 0.1,
+      "small_forward_backward_stablehlo_identical": true
+    }
+  ],
+  "created": 1789483992.325756,
+  "jax_version": "0.11.1",
+  "kind": "encoder_scale_initialization_preparation",
+  "operator_sha256": "6d914750ce89c5dbcc4b3b37767422002272471b79cbd397deb1da08de944caa",
+  "parent_snapshot": "23c9dfe60c0a4c1c376e74f634b568fd1c85f3b13a0c7fef9172859ad38a40fb",
+  "scope": "Numerical preparation only: full-size parameter/schema and complete cached decoding arithmetic, small float32 initialization isolation and identical forward/backward HLO with finite gradients. No scientific rate/scale selection, learning registration, new snapshot, TPU dispatch, or performance claim.",
+  "seconds": 23.790246443997603,
+  "small_forward_backward_stablehlo_sha256": "48807d290171c57c56d9816f18e86281f7f7467f404a0b56a2aa8c6555368f1c",
+  "source_files": {
+    "causal.py": "61e35438829a330188ed7e46aa2f00abcf3555fe3742c9188efb3008641197f3",
+    "compute_budget.py": "36f650d9ac931597763c5028c4d27b60ab0aedff805b6bb7155155eb7eef9169",
+    "encoder.py": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad",
+    "policy_model.py": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2"
+  },
+  "status": "passed"
+}

@@ -1,0 +1,105 @@
+{
+  "kind": "scalar_intervention_cpu_qualification",
+  "status": "passed",
+  "created": 1789484898.5458736,
+  "parent_snapshot": "23c9dfe60c0a4c1c376e74f634b568fd1c85f3b13a0c7fef9172859ad38a40fb",
+  "unchanged_snapshot_reproduced": true,
+  "cases": [
+    {
+      "mechanism": "encoder_scale",
+      "numerical_fixture_value": 0.01,
+      "temporary_snapshot": "6402810f220e661526fbb89b639f80d7b045b8c87b3431791170856b5436224f",
+      "isolation": {
+        "source_files": 1310,
+        "change": {
+          "mechanism": "encoder_scale",
+          "path": [
+            "model",
+            "encoder_layer_scale"
+          ],
+          "parent_value": 1e-06,
+          "candidate_value": 0.01
+        }
+      }
+    },
+    {
+      "mechanism": "lr_floor",
+      "numerical_fixture_value": 0.0001,
+      "temporary_snapshot": "848596f8ad385dab3ca68e6629ff16b13023990f9c32471a19668dd910801929",
+      "isolation": {
+        "source_files": 1310,
+        "change": {
+          "mechanism": "lr_floor",
+          "path": [
+            "learner",
+            "end_learning_rate"
+          ],
+          "parent_value": 0.0003,
+          "candidate_value": 0.0001
+        }
+      }
+    }
+  ],
+  "rejected_fixtures": [
+    "encoder_scale:seed",
+    "encoder_scale:horizon",
+    "encoder_scale:data",
+    "encoder_scale:warmup",
+    "encoder_scale:decay",
+    "encoder_scale:peak",
+    "encoder_scale:width",
+    "encoder_scale:probe",
+    "encoder_scale:test",
+    "encoder_scale:second_scalar",
+    "encoder_scale:invalid:0",
+    "encoder_scale:invalid:-1",
+    "encoder_scale:invalid:nan",
+    "encoder_scale:invalid:True",
+    "lr_floor:seed",
+    "lr_floor:horizon",
+    "lr_floor:data",
+    "lr_floor:warmup",
+    "lr_floor:decay",
+    "lr_floor:peak",
+    "lr_floor:width",
+    "lr_floor:probe",
+    "lr_floor:test",
+    "lr_floor:second_scalar",
+    "lr_floor:invalid:0",
+    "lr_floor:invalid:-1",
+    "lr_floor:invalid:nan",
+    "lr_floor:invalid:True",
+    "source_mutation",
+    "floor_changed_initialization",
+    "scale_unchanged_initialization",
+    "rank_disagreement",
+    "missing_rank",
+    "wrong_stage",
+    "false_flag",
+    "wrong_registration",
+    "nonfinite_gain"
+  ],
+  "decision_fixtures": [
+    "exact_threshold_passed",
+    "expert_kl:relative_endpoint_gain:stopped",
+    "expert_kl:relative_last_three_gain:stopped",
+    "family_kl:relative_endpoint_gain:stopped",
+    "family_kl:relative_last_three_gain:stopped",
+    "overfit_stopped"
+  ],
+  "initialization_semantics_passed": true,
+  "source_sha256": {
+    "qualify_scalar.py": "4d7832dcb33fc1907efe8cd08d559517d8e8ee175b763e4cf532661091789461",
+    "scalar_source.py": "df3eb81d18acb0f4dac9e0056fbdc196372c7e5596522d7ea0ed8b6d5109b8e5",
+    "scalar_compare.py": "458c5aea8640f603e70e58e16870d77515986c0d802fcc326446e110a47dd996",
+    "launch_scalar.py": "c0d9d826e169ee7db86ce8341c9440b6ae3b61bc9a145793a432c67c4bd913b3",
+    "finalize_scalar.py": "a94b19085b24376d3e958f243fed94bcc83fff7bc792e51967a02484543383e1",
+    "continue_scalar.py": "65702755d71ff82c631befaafd2c3197ef8e5512441a6327008655ac14770258",
+    "lr_compare.py": "db1fc92ac0e8a53fa9149bcc9a9092f65ecaa92da83fc0aaaa6af6bce0c7d0ce",
+    "lr_source.py": "5818bad714e6011b7c4b9faec68eb9608d279e04d734a1ee730038be2603a2c9"
+  },
+  "inherited_paired_comparison_qualification_sha256": "bf615b8bf195452e70ccdd3369800d54b66217e43d19368d425dd361489a6c7b",
+  "initialization_preparation_sha256": "c8e9e9d0b80fc69c3ca43e13e05f073118d8ea0e129c2d89e487e83db183f7eb",
+  "seconds": 2.832163880986627,
+  "scope": "Source/config cloning and new initialization/decision checks only. Temporary scalar configurations and decision records are synthetic fixtures and were removed. No scientific scalar selected, learning registration, launch or actual stage finalization. The real-plan launch/continuation inspect remains required after the current LR outcome exists."
+}
