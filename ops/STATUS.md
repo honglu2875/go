@@ -1,27 +1,21 @@
-The larger fixed-data 9x9 comparison is complete on both paired seeds.
-The transformer did not meet the registered improvement criterion: mean final
-policy KL was 3.82% higher per position and 4.36% higher with equal opening-family
-weights. Its measured learning time was about 20% lower. Both validation and
-fixed training probes continued improving without sustained overfit. These
-results compare supervised learning under the registered settings; they do not
-establish playing strength or RL efficiency.
+The larger fixed-data 9×9 CNN/transformer comparison is complete on both paired
+seeds. Transformer endpoint policy KL is 3.82% higher per position and 4.36%
+higher per opening family, with about 20% less measured learning time. Both
+training probes and validation continued to improve without sustained overfit.
+See research/studies/strong9_scaling/conclusion-001.md and the exported curves.
 
-The next intervention changes only the transformer learning rate: peak 1.5e-3,
-end 4.5e-4, with the same architecture, initialization, data draws, 4,096-update
-horizon and 64-update warmup. Its first seed is running. The registered
-continuation records validation/probe curves and permits a second seed only
-after both endpoint KL measures improve by at least 0.5%, neither final-three
-mean regresses, and no sustained overfit appears. A new evidence review is
-required before another rate or encoder. See research/studies/strong9_followups/.
+A registered LR-only transformer intervention is running at peak 1.5e-3
+and final 4.5e-4, with unchanged data, architecture, initialization and horizon.
+Its conditional continuation owns audit and the replication gate. Its early
+improvement does not establish the endpoint outcome.
 
-The separate Lookahead component matches the pinned KataGo source on 812 tensor
-comparisons and preserves complete state across fresh-process continuation.
-The retained first failure identified aliased fast/slow storage at an epoch
-boundary; the correction matches the source copy semantics. This remains a
-small CPU component qualification. Integration with the joint Muon learner,
-source norm/schedule cadence and full-size accelerator qualification remains
-open before the scientific 19x19 policy/value and playing-strength comparison.
+The combined source-Muon/AuxAdam, Lookahead and norm/schedule integration now
+passes small real-19×19 neural training, exact fresh-process recovery and
+trained native-search inference. Eleven uninterrupted updates match six plus
+five fresh-process updates across all 275 checkpoint arrays and deterministic
+trainer state. Scientific training settings and full-size TPU execution remain
+separate requirements. See research/studies/strong19_source_muon/README.md.
 
-This source backup excludes credentials, private deployment inventories,
-operational logs, datasets, model weights and binary evidence. Machine and
-resource examples are anonymized; see PUBLICATION.md.
+The 9×9 dataset release is complete and archived; 19×19 mixed-strength
+collection continues in the background. No learned playing-strength gain or
+faster reinforcement-learning improvement has yet been established.

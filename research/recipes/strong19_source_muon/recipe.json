@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Joint19 source Muon and Lookahead integration",
+  "hypothesis": "The source schedule, print-norm cadence and Lookahead combine with the qualified joint neural learner and preserve complete continuation state.",
+  "requires_native": false
+}

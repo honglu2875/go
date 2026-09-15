@@ -1,0 +1,33 @@
+{
+  "kind": "joint_source_muon_neural_continuation_plan",
+  "created": 1789481549.890229,
+  "snapshot_id": "3a34720e97f82b7026e18c5247804e8e591145823368c6c89b2eb8e0169aba3b",
+  "operator_sha256": "4db9cd00baf19c516799ceb0779980ce1b0a1406cf06bfc69404e7341eb01846",
+  "recovery_audit": {
+    "path": "research/studies/strong19_source_muon/recovery_audit.py",
+    "sha256": "0f4ce31d1d10f349e3290cc6f2de401844ba62d30d5a89a66563c1ddae8981e3"
+  },
+  "dataset_sha256": "da627b1968dbb353acbf3b630a9feb84cf30080957a5660c8bc4125917fbe0ae",
+  "runtime_qualification_sha256": "26d4f9d22e1ebd613f6e1a361ffe1e3fe736b06ae1064075b8346ff9367b4aaa",
+  "run_directory": "research/studies/strong19_source_muon/harness-cpu-001",
+  "unchanged_parent_numerical_sources": {
+    "joint.py": "56d1ad999aebd3982d62103f86628310f4ea6c7926bd0fb5a5e77673314194d9",
+    "heads.py": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa",
+    "katago.py": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29",
+    "cnn_chunks.py": "9f5ea9909b52058ba793110ae54c5277df67666bebf1ba41d6e518f0059e359d",
+    "policy_model.py": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2",
+    "evaluation.py": "af1681b4b28271173b383ab7843d4529d0f521a22e53f5d7b66339096795633f",
+    "host_metrics.py": "d020e95421bbdeba8174f235bb453ca841d52440763daeda13a8f8bd19a06144",
+    "muon.py": "6da070c54458aee9cec0173df889f6ceffce5affddf8f3439c61f2eb87fe5b10",
+    "muon_groups.py": "803b0dc4c4f8e1970977657b9c5479a8256f6e3be8badfaf3ff6a9f36d4657b3",
+    "muon_state_io.py": "2bad0483b0390c00a7e8e373710c1f03cfc97c506870572b752c6006b82dd9b4",
+    "learner.py": "a850ea6b352a12d1a83a1bfbeb6b86120e65e4d4578798fe5e69a5a14a9a209a"
+  },
+  "required": [
+    "11 uninterrupted versus fresh-process6+5 exact complete checkpoint",
+    "Resume immediately before a Lookahead sync, then cross both subepoch and epoch boundaries",
+    "Exact fast/slow/moments/scalars, host schedule state, all draws/counters and regular plus epoch validation/probe histories",
+    "Actual globally live positions advance samples; reference-position batch remains explicitly separate"
+  ],
+  "scope": "Execution fixture, not a scientific hyperparameter choice or full-size training result."
+}

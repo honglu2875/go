@@ -1,4 +1,5 @@
 {
+  "created": 1789483483.2235086,
   "files": {
     ".gitignore": {
       "bytes": 372,
@@ -4365,8 +4366,8 @@
       "sha256": "44e89f43fbe2ac4ccc50a19d5008e19bdc50a67f1750177e8e574c38979f53d5"
     },
     "ops/STATUS.md": {
-      "bytes": 1795,
-      "sha256": "cda46e13478a361082f2f3baeb56dd991c640ef6d15487991eb23b25fd8cc3b3"
+      "bytes": 1358,
+      "sha256": "4c35f061ecd4ff164b855c5d2865e43c67851be4b008955a4a8c49f930259370"
     },
     "ops/analyze_visual_xplane.py": {
       "bytes": 4473,
@@ -8157,6 +8158,146 @@
       "sha256": "b2ac54e7efb3c5e21c5a3a615aa2a8048935530273e9566699d24381fff530d4"
     },
     "research/recipes/strong19_muon/training_probe.py": {
+      "bytes": 1954,
+      "sha256": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5"
+    },
+    "research/recipes/strong19_source_muon/KATAGO_LICENSE.md": {
+      "bytes": 2616,
+      "sha256": "ead22455d923920cd152546d89e4f415c94d6b580aa109fda3b57a69c57c32e0"
+    },
+    "research/recipes/strong19_source_muon/MUON_LICENSE.md": {
+      "bytes": 1070,
+      "sha256": "8c8d17398ecce3dd3fcb1bb77b5d268a427f8250f364ac655c9b38df5b693f6b"
+    },
+    "research/recipes/strong19_source_muon/README.md": {
+      "bytes": 1463,
+      "sha256": "deb185aff4664fe0beec83f3a71233a0dd96387367c88b9da2b79928ae50d8d7"
+    },
+    "research/recipes/strong19_source_muon/causal.py": {
+      "bytes": 17533,
+      "sha256": "4a4dcd9984b7c2c402c0a07efc4b3495e47c39f566354f41f903dc518484aecc"
+    },
+    "research/recipes/strong19_source_muon/cnn_chunks.py": {
+      "bytes": 5177,
+      "sha256": "9f5ea9909b52058ba793110ae54c5277df67666bebf1ba41d6e518f0059e359d"
+    },
+    "research/recipes/strong19_source_muon/compact.py": {
+      "bytes": 6766,
+      "sha256": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1"
+    },
+    "research/recipes/strong19_source_muon/draft_mask.py": {
+      "bytes": 1096,
+      "sha256": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44"
+    },
+    "research/recipes/strong19_source_muon/draft_model.py": {
+      "bytes": 3118,
+      "sha256": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3"
+    },
+    "research/recipes/strong19_source_muon/encoder.py": {
+      "bytes": 7847,
+      "sha256": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad"
+    },
+    "research/recipes/strong19_source_muon/evaluation.py": {
+      "bytes": 4486,
+      "sha256": "af1681b4b28271173b383ab7843d4529d0f521a22e53f5d7b66339096795633f"
+    },
+    "research/recipes/strong19_source_muon/heads.py": {
+      "bytes": 5399,
+      "sha256": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa"
+    },
+    "research/recipes/strong19_source_muon/host_metrics.py": {
+      "bytes": 1574,
+      "sha256": "d020e95421bbdeba8174f235bb453ca841d52440763daeda13a8f8bd19a06144"
+    },
+    "research/recipes/strong19_source_muon/inference.py": {
+      "bytes": 13492,
+      "sha256": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2"
+    },
+    "research/recipes/strong19_source_muon/joint.py": {
+      "bytes": 6157,
+      "sha256": "56d1ad999aebd3982d62103f86628310f4ea6c7926bd0fb5a5e77673314194d9"
+    },
+    "research/recipes/strong19_source_muon/katago.py": {
+      "bytes": 10164,
+      "sha256": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29"
+    },
+    "research/recipes/strong19_source_muon/learner.py": {
+      "bytes": 4438,
+      "sha256": "a850ea6b352a12d1a83a1bfbeb6b86120e65e4d4578798fe5e69a5a14a9a209a"
+    },
+    "research/recipes/strong19_source_muon/lookahead.py": {
+      "bytes": 2661,
+      "sha256": "d7dae1d699f0da453bf35572da01ecb096828f7c636a72e14f481d241593fbc7"
+    },
+    "research/recipes/strong19_source_muon/lookahead_state_io.py": {
+      "bytes": 2797,
+      "sha256": "902d38d2a9cd43da6f2b7a18c6336caff8a2b30ceec1d258c0a97b73879710e6"
+    },
+    "research/recipes/strong19_source_muon/muon.py": {
+      "bytes": 6929,
+      "sha256": "6da070c54458aee9cec0173df889f6ceffce5affddf8f3439c61f2eb87fe5b10"
+    },
+    "research/recipes/strong19_source_muon/muon_groups.py": {
+      "bytes": 1749,
+      "sha256": "803b0dc4c4f8e1970977657b9c5479a8256f6e3be8badfaf3ff6a9f36d4657b3"
+    },
+    "research/recipes/strong19_source_muon/muon_state_io.py": {
+      "bytes": 4406,
+      "sha256": "2bad0483b0390c00a7e8e373710c1f03cfc97c506870572b752c6006b82dd9b4"
+    },
+    "research/recipes/strong19_source_muon/observation_attention.py": {
+      "bytes": 1778,
+      "sha256": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544"
+    },
+    "research/recipes/strong19_source_muon/optimizer.py": {
+      "bytes": 2900,
+      "sha256": "50ac2d00314f58d22859a27811508b3f81403ffd474e3ff98d07db0ce7fcc5ec"
+    },
+    "research/recipes/strong19_source_muon/optimizer_io.py": {
+      "bytes": 3133,
+      "sha256": "2c629aca03003bf644f170a85c4521be27c600ab4b1df467175932964e422f71"
+    },
+    "research/recipes/strong19_source_muon/policy_config.py": {
+      "bytes": 4644,
+      "sha256": "df3bc12e7bb42c4cb449b1b03aab506fd4c5375e80efc78cd1f849844d135cd1"
+    },
+    "research/recipes/strong19_source_muon/policy_model.py": {
+      "bytes": 4929,
+      "sha256": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2"
+    },
+    "research/recipes/strong19_source_muon/qualify_evaluation.py": {
+      "bytes": 9440,
+      "sha256": "376bb447beffda37a5c41fe0d614a89b7a132c9746c8ca5c0a45aa4180a6b08a"
+    },
+    "research/recipes/strong19_source_muon/recipe.json": {
+      "bytes": 276,
+      "sha256": "927b6deef1ac7ebaa74afdc5bde95167a232e8706d54f0288c1eb25fab22f94b"
+    },
+    "research/recipes/strong19_source_muon/source_runtime.py": {
+      "bytes": 8506,
+      "sha256": "28a60e64e4c07f5e856deb12129ff0dd62500135820dd2e928194e173441e823"
+    },
+    "research/recipes/strong19_source_muon/source_schedule.py": {
+      "bytes": 4230,
+      "sha256": "08411f1ecd2f562369890a5991b310461d2e2f4200e404e7ac785e8aec7cb6f8"
+    },
+    "research/recipes/strong19_source_muon/spatial_readout.py": {
+      "bytes": 1881,
+      "sha256": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9"
+    },
+    "research/recipes/strong19_source_muon/train.py": {
+      "bytes": 748,
+      "sha256": "6f20ec5741187e40ef4cc2fd4428fca4451849ab9620680591a7d02693157335"
+    },
+    "research/recipes/strong19_source_muon/train_config.py": {
+      "bytes": 2076,
+      "sha256": "2054f7b409a80488bad6cf46dec5f7d8c29cc9a951263da8b88351c2efb03637"
+    },
+    "research/recipes/strong19_source_muon/train_joint.py": {
+      "bytes": 27306,
+      "sha256": "0a23240091836b3cfcbdbdb397c06bf14d4e73ac72555bffab91a5e166710034"
+    },
+    "research/recipes/strong19_source_muon/training_probe.py": {
       "bytes": 1954,
       "sha256": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5"
     },
@@ -13480,6 +13621,66 @@
       "bytes": 8744,
       "sha256": "fdc3cfd5ea9425e7d57bbb579815e471e7c59afffde199ff3b01a95ff9faeb4b"
     },
+    "research/studies/strong19_source_muon/PLAN.md": {
+      "bytes": 1808,
+      "sha256": "41a1f0e6e3e6a7a6bbea9e6c0706f2a0194d183bbe9feccdb1d17dde032d1c7b"
+    },
+    "research/studies/strong19_source_muon/README.md": {
+      "bytes": 2684,
+      "sha256": "c06b122de778914eea7cf812a19006aac96b92fac2a17a12fb4f4bb30a428dc8"
+    },
+    "research/studies/strong19_source_muon/cpu-config-001.json": {
+      "bytes": 1952,
+      "sha256": "e5fdf85786f156a4131ef2a52d799b3c337b745a9168fdd3662fe430fe6e6a9f"
+    },
+    "research/studies/strong19_source_muon/harness-plan-001.json": {
+      "bytes": 2251,
+      "sha256": "28818d474d8bbc9a0c57fac565400aa5e3439aef4c62b526971e292e8d2c114a"
+    },
+    "research/studies/strong19_source_muon/harness-plan-002.json": {
+      "bytes": 2685,
+      "sha256": "b1b2ea49339bd344230f9cde3e09a4f2ac483149bfe8d6f3f30bdc323e94693e"
+    },
+    "research/studies/strong19_source_muon/harness-result-001.json": {
+      "bytes": 11094,
+      "sha256": "0cab9d71e6aa105c7189bf0569cd573150698c8005ad2228d23ca5d3ebcad7e5"
+    },
+    "research/studies/strong19_source_muon/inference-cpu-config-001.json": {
+      "bytes": 1155,
+      "sha256": "76667442463b3d46df818a34e740a04bc66111992a7229602917485ef6bafde0"
+    },
+    "research/studies/strong19_source_muon/inference-cpu-plan-001.json": {
+      "bytes": 1091,
+      "sha256": "afe394d4e6bbb84c938940a8db76c043495539a52a04602c42d6ecc52c8c2498"
+    },
+    "research/studies/strong19_source_muon/prepare_inference.py": {
+      "bytes": 4001,
+      "sha256": "eef0cc1424d4f41b05dc9b2bdc512162cd2ca24924cb305de2a826ff2490b3d0"
+    },
+    "research/studies/strong19_source_muon/qualify_harness.py": {
+      "bytes": 7452,
+      "sha256": "489062ea400e13727b4482757ed1904217d41dd9b1b7775de1183a22d1516587"
+    },
+    "research/studies/strong19_source_muon/qualify_runtime.py": {
+      "bytes": 5898,
+      "sha256": "6e56e2bd54f419d1981340ff3c6d22a9ba90197d60373979d36db1859991f46f"
+    },
+    "research/studies/strong19_source_muon/recovery_audit.py": {
+      "bytes": 7351,
+      "sha256": "0f4ce31d1d10f349e3290cc6f2de401844ba62d30d5a89a66563c1ddae8981e3"
+    },
+    "research/studies/strong19_source_muon/runtime-cpu-001.json": {
+      "bytes": 1221,
+      "sha256": "26d4f9d22e1ebd613f6e1a361ffe1e3fe736b06ae1064075b8346ff9367b4aaa"
+    },
+    "research/studies/strong19_source_muon/seal_source.py": {
+      "bytes": 4715,
+      "sha256": "f5d98b875bc7f189e2934883f98cd809c55b7943ea91ea6bfa4c8c5a64093536"
+    },
+    "research/studies/strong19_source_muon/source-copies-001.json": {
+      "bytes": 3628,
+      "sha256": "66479a249bf447315ddd84426a29d5f69773728158194f7da647edaa0ab65f29"
+    },
     "research/studies/strong19_train/README.md": {
       "bytes": 7866,
       "sha256": "b76d6af075b768d78f0f13fe31dfa5f9196f1a6c00eb496129f07cfe42ba18a5"
@@ -13636,6 +13837,10 @@
       "bytes": 9339,
       "sha256": "d8387d507b52751ae74d9a8338b182c8d5735befc1e2d9c90c9ecf8916bcb7b7"
     },
+    "research/studies/strong9_followups/diagnose_lr.py": {
+      "bytes": 5363,
+      "sha256": "8c60b95633930a4fc61dfe91526a25990ce7388ea219f911e994fcd587967b1a"
+    },
     "research/studies/strong9_followups/diagnose_v2.py": {
       "bytes": 10156,
       "sha256": "587d386619a5460870ea35b64477b59583ac0a713af30730bac8992606025c01"
@@ -13677,8 +13882,8 @@
       "sha256": "ef30843d0299e2257112953bb149ba1b683d8dd8615a5fa5cdff6bb298c8524b"
     },
     "research/studies/strong9_followups/lr15/seed1-progress.csv": {
-      "bytes": 6830,
-      "sha256": "3a3f31f31c42f1cab97a207448bf5aab6d723340f0917aa0c9ce842c2fa4b5dd"
+      "bytes": 8934,
+      "sha256": "f7b90f32d4e1d9249c562eda0a15aa1691a59f41b512e98b1f578dd7eb91a0a6"
     },
     "research/studies/strong9_followups/lr_compare.py": {
       "bytes": 7670,
@@ -13788,9 +13993,17 @@
       "bytes": 5476,
       "sha256": "5f76db63720bfd216f7c95de9e7d385ed6ed2c6296bc8723b7bff55c4e6b20a0"
     },
+    "research/studies/strong9_scaling/plot-report-002.json": {
+      "bytes": 890,
+      "sha256": "6463c4e60abcd1ca45e815b7fb1204a36563e2ffd9d81591ab1035465dff666f"
+    },
     "research/studies/strong9_scaling/plot_progress.py": {
       "bytes": 3484,
       "sha256": "bcf59cd7734f485a5b49a291a2805748b377a584ac490270cf18e068590a0cac"
+    },
+    "research/studies/strong9_scaling/plot_report.py": {
+      "bytes": 3769,
+      "sha256": "054a224c54fcc3b66514f9b518741a972a2f1f06dc6d65567637c0b14464e393"
     },
     "research/studies/strong9_scaling/plot_review.py": {
       "bytes": 3548,
@@ -13816,6 +14029,10 @@
       "bytes": 6460,
       "sha256": "6b0d14027eccd836113b8d21839faa13270d793be1bb49056941883b3deba7fa"
     },
+    "research/studies/strong9_scaling/seed1-final-002.csv": {
+      "bytes": 6460,
+      "sha256": "6b0d14027eccd836113b8d21839faa13270d793be1bb49056941883b3deba7fa"
+    },
     "research/studies/strong9_scaling/seed1-progress.csv": {
       "bytes": 6460,
       "sha256": "bff4a55691fe705270cec7d18adeda5b95cbd71485d59e0e5ba24e390f012953"
@@ -13829,6 +14046,10 @@
       "sha256": "311d58cc1cb1b911474ffbeb235452311411038cf6bfc2c5b0b7287feb95ca5e"
     },
     "research/studies/strong9_scaling/seed2-final-001.csv": {
+      "bytes": 6461,
+      "sha256": "7ef47a89f81fa49dcd19ca77e7f26c333d3864630056f98756c71545d625b474"
+    },
+    "research/studies/strong9_scaling/seed2-final-002.csv": {
       "bytes": 6461,
       "sha256": "7ef47a89f81fa49dcd19ca77e7f26c333d3864630056f98756c71545d625b474"
     },
@@ -14585,7 +14806,5 @@
       "sha256": "7e12df7ffb7eb7dddd3747d4b2b27f804383466826776b4225d558582ef11a4d"
     }
   },
-  "kind": "sanitized_public_source_manifest",
-  "schema_version": 1,
-  "scope": "Hashes of the actual public files; deployment-specific source edits and omission of private runtime artifacts are described in PUBLICATION.md. This manifest excludes itself."
+  "kind": "sanitized_public_source_manifest"
 }

@@ -1,0 +1,14 @@
+{
+  "kind": "closed_comparison_report_plots",
+  "status": "passed",
+  "created": 1789480256.5177412,
+  "files": {
+    "research/studies/strong9_scaling/plot_report.py": "054a224c54fcc3b66514f9b518741a972a2f1f06dc6d65567637c0b14464e393",
+    "research/studies/strong9_scaling/seed1-final-002.png": "2d6c6805655d5b7d4d933adec6ef5aa1c23b923391e11b78fd9f0014a7696813",
+    "research/studies/strong9_scaling/seed1-final-002.csv": "6b0d14027eccd836113b8d21839faa13270d793be1bb49056941883b3deba7fa",
+    "research/studies/strong9_scaling/seed2-final-002.png": "670fb1ee3e1ba8a665c7c1ab90c6916f4d5633b4e7e30f8e167a392c6c774d19",
+    "research/studies/strong9_scaling/seed2-final-002.csv": "7ef47a89f81fa49dcd19ca77e7f26c333d3864630056f98756c71545d625b474"
+  },
+  "all_curve_csv_bytes_identical": true,
+  "change": "Reserve a bottom margin for the mixture caption; live pinned plotter unchanged."
+}

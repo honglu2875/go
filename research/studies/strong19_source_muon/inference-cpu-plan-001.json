@@ -1,0 +1,25 @@
+{
+  "created": 1789483070.0274346,
+  "kind": "joint_source_muon_trained_inference_cpu_plan",
+  "numerical_modules_unchanged": [
+    "causal.py",
+    "compact.py",
+    "draft_mask.py",
+    "draft_model.py",
+    "encoder.py",
+    "heads.py",
+    "inference.py",
+    "joint.py",
+    "katago.py",
+    "observation_attention.py",
+    "policy_model.py",
+    "spatial_readout.py"
+  ],
+  "operator_sha256": "eef0cc1424d4f41b05dc9b2bdc512162cd2ca24924cb305de2a826ff2490b3d0",
+  "parent_inference_snapshot": "741a7c0f89b771e9281334d05dde68b8dc6fab81faa470d8fdbbab389095aeb3",
+  "recovery_receipt_sha256": "0cab9d71e6aa105c7189bf0569cd573150698c8005ad2228d23ca5d3ebcad7e5",
+  "scope": "Trained combined source-optimizer checkpoint export, cached policy/value inference and native Rust search. CPU execution qualification only.",
+  "snapshot_id": "2c2b102a31cf140f076dba8cb92c858d333167c47a8eaf4f0d8a59db9e343f2d",
+  "training_result_sha256": "42de2b6578a054b979ca909e1018c47c0f4fc91752d2673c6c77478af9df24eb",
+  "training_snapshot": "3bd93c2a8fb2ee67fa8c071ebd435b9325bb921eae3a218c14d8092ad2f9cb70"
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "joint_source_runtime_cadence_qualification",
+  "status": "passed",
+  "created": 1789481352.442956,
+  "operator_sha256": "6e56e2bd54f419d1981340ff3c6d22a9ba90197d60373979d36db1859991f46f",
+  "runtime_sha256": "28a60e64e4c07f5e856deb12129ff0dd62500135820dd2e928194e173441e823",
+  "source_sha256": "991cbfb2d5cea8180cd3daf818ef2a516aca048e0ae0eab68865e9a125967e9e",
+  "events": 76,
+  "cases": [
+    {
+      "initial_samples": 249000,
+      "updates": 11,
+      "refreshes": 3,
+      "source_update_calls": [
+        {
+          "samples": 252532,
+          "batch": 5
+        }
+      ]
+    },
+    {
+      "initial_samples": 200000001,
+      "updates": 65,
+      "refreshes": 3,
+      "source_update_calls": [
+        {
+          "samples": 200045383,
+          "batch": 50
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    "sample count",
+    "epoch counter",
+    "stale settings tamper",
+    "missing norm",
+    "nonfinite baseline"
+  ],
+  "source_ast_lines": [
+    1546,
+    1644,
+    1646,
+    1697
+  ],
+  "scope": "Actual pinned source print/sample/refresh statements, including both sides of the200M cadence threshold, irregular subepochs and lagged norm snapshots. No neural or playing-strength result."
+}
