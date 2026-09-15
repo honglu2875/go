@@ -1,0 +1,8 @@
+{
+  "configuration_sha256": "31599eb369dc01f8571691ed2e58d1f3b1723a29033f8982a5cccbfe7533ef76",
+  "created": 1789471903.246123,
+  "kind": "katago_muon_schedule_cpu_plan",
+  "reference_sha256": "5c351c84186f43caf40a3213748382c90bdab38804b46e22eb9e27b32947123f",
+  "scope": "Only source-extracted scalar equations; no JAX backend, model or training.",
+  "snapshot": "bddb832e7958c0a946fd5c46cc1a9bec5c95a32d60cee80073bff3d8c75ba012"
+}

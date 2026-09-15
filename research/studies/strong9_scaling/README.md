@@ -1,7 +1,10 @@
 This stage compares the selected transformer and the KataGo CNN on the finalized
 strong-teacher 9×9 corpus. Architecture selection remains in the preceding
-readout study. The first paired seed is complete and audited; the second
-paired seed is still needed before closing the registered comparison.
+readout study. The first paired seed and the second CNN seed are complete and
+audited. Transformer seed 2 is running; its audit and paired contrast are still
+needed before closing the registered comparison. CNN seed-2 endpoint KL is
+0.12851834 by position and 0.09000468 by equal opening family, with no sustained
+overfit. The registered scientific protocol remains unchanged.
 
 The source is `quintic/go9x9`, revision
 `4f579b0a21c456f3bb568174d384056351124cd5`, release ID

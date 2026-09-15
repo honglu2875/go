@@ -1,0 +1,7 @@
+{
+  "kind": "katago_muon_schedule_qualification",
+  "reference": {
+    "path": "research/studies/katago_muon_schedule/reference-001.json",
+    "sha256": "5c351c84186f43caf40a3213748382c90bdab38804b46e22eb9e27b32947123f"
+  }
+}

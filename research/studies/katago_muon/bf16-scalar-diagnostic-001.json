@@ -1,0 +1,67 @@
+{
+  "kind": "scalar_bf16_reference_diagnostic",
+  "created": 1789469066.0595174,
+  "reference_sha256": "2109aec0299eaa95e6c683be4d29a4f14ff12f1251a3820c8c431413c28dc624",
+  "results": [
+    {
+      "coefficient": 3.4445,
+      "implicit": {
+        "differing": 32,
+        "maximum_absolute_error": 0.03125
+      },
+      "precast": {
+        "differing": 32,
+        "maximum_absolute_error": 0.03125
+      },
+      "opmath": {
+        "differing": 0,
+        "maximum_absolute_error": 0.0
+      }
+    },
+    {
+      "coefficient": -4.775,
+      "implicit": {
+        "differing": 14,
+        "maximum_absolute_error": 0.0625
+      },
+      "precast": {
+        "differing": 14,
+        "maximum_absolute_error": 0.0625
+      },
+      "opmath": {
+        "differing": 0,
+        "maximum_absolute_error": 0.0
+      }
+    },
+    {
+      "coefficient": 2.0315,
+      "implicit": {
+        "differing": 1,
+        "maximum_absolute_error": 0.0078125
+      },
+      "precast": {
+        "differing": 1,
+        "maximum_absolute_error": 0.0078125
+      },
+      "opmath": {
+        "differing": 0,
+        "maximum_absolute_error": 0.0
+      }
+    },
+    {
+      "coefficient": 0.66332495807108,
+      "implicit": {
+        "differing": 13,
+        "maximum_absolute_error": 0.0078125
+      },
+      "precast": {
+        "differing": 13,
+        "maximum_absolute_error": 0.0078125
+      },
+      "opmath": {
+        "differing": 0,
+        "maximum_absolute_error": 0.0
+      }
+    }
+  ]
+}

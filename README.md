@@ -94,3 +94,11 @@ do not treat the sanitized files as the original audit inputs. Details are in
 
 Upstream attribution and component-specific licenses remain alongside the
 derived code; see [third-party notices](THIRD_PARTY_NOTICES.md).
+
+The [Muon reference study](research/studies/katago_muon/README.md) and
+[surrounding schedule equations](research/studies/katago_muon_schedule/README.md)
+prepare a later KataGo-informed baseline. The functional numerical port is JAX;
+reference-only export tools use the pinned upstream implementation. These are
+numerical checks, with neural-learner integration and full-size throughput still
+to be qualified. The LR follow-up helpers preserve the complete frozen source
+while changing only the learning-rate schedule scale.

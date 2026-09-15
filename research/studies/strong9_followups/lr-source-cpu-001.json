@@ -1,0 +1,29 @@
+{
+  "kind": "strong9_lr_source_qualification",
+  "status": "passed",
+  "created": 1789470789.6765006,
+  "parent_snapshot": "23c9dfe60c0a4c1c376e74f634b568fd1c85f3b13a0c7fef9172859ad38a40fb",
+  "temporary_fixture_snapshot": "95e50be039398139c8a26c034a6d11051843ab961149d0cffc88f765ccff0d33",
+  "unchanged_snapshot_reproduced": true,
+  "identical_source_files": 1310,
+  "rejected_confounders": [
+    "horizon",
+    "seed",
+    "data",
+    "sampling",
+    "encoder",
+    "normalization",
+    "warmup",
+    "optimizer",
+    "decay",
+    "end_ratio",
+    "evaluation",
+    "test_targets",
+    "nonfinite_rate",
+    "source_mutation"
+  ],
+  "operator_sha256": "97c43f8182b4fb89f61cce1b4f949062fdb1b293c3e5ba0a98fc89ea905edc47",
+  "source_operator_sha256": "5818bad714e6011b7c4b9faec68eb9608d279e04d734a1ee730038be2603a2c9",
+  "seconds": 1.7462393890018575,
+  "scope": "Source/config cloning and intervention-isolation checks only. The temporary 1.5e-3 fixture was removed; no research rate was selected, no registration created and no training launched."
+}

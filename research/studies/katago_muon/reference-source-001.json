@@ -1,0 +1,15 @@
+{
+  "kind": "katago_muon_reference_source",
+  "created": 1789468849.7993238,
+  "revision": "92ee95c0a4b25fec214da00951ab69e97e207729",
+  "source": ".gozero/external/katago-source/92ee95c0a4b25fec214da00951ab69e97e207729/KataGo-92ee95c0a4b25fec214da00951ab69e97e207729",
+  "files": {
+    "python/muon/muon.py": "550d1d015dcd2e30990c4a0ac4141c6187f869e6c86c68083bb495a41ca5b644",
+    "python/muon/LICENSE": "8c8d17398ecce3dd3fcb1bb77b5d268a427f8250f364ac655c9b38df5b693f6b",
+    "python/train.py": "991cbfb2d5cea8180cd3daf818ef2a516aca048e0ae0eab68865e9a125967e9e",
+    "python/katago/train/model_pytorch.py": "83f08d446a8383597329ef51d36e6cf997d3864c169996e267aa6b4b697b451f",
+    "python/katago/train/modelconfigs.py": "4ced5464586c18492247033cb9f9b5aa66e9d41e335d10baebe83ec1e68a9d2e",
+    "python/katago/train/trainloop_helpers.py": "cc16929bd450424da4366a1f117fcd1e1a716536a6e055eb6e7f25799046ab5b"
+  },
+  "scope": "Pinned current source reference; the published b40 numerical schedule and run-specific settings remain unknown."
+}

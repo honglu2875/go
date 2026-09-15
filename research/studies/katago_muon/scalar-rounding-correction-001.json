@@ -1,0 +1,9 @@
+{
+  "after_sha256": "0e3630ab8ecf7cdbc4e1c80796b28f687789308fda3c3591abc57412885882a8",
+  "before_sha256": "a476adf067ef7f720fb963685099334467c0b93f955883a07e3d1786c35f29ed",
+  "created": 1789469481.2852736,
+  "diagnostic_sha256": "5db2204183ccfae5a538ebb27c49fe391f61da38458877e2662a1ac7bd657ab1",
+  "kind": "bf16_scalar_rounding_correction",
+  "reason": "Torch scalar multiplication preserves FP32 coefficient/opmath before rounding BF16 output. JAX implicit/pre-rounded scalars differed; explicit opmath matched every diagnostic element.",
+  "scope": "Correction made before the full frozen CPU optimizer qualification; reference algorithm/tolerances unchanged."
+}

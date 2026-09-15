@@ -58,3 +58,9 @@ open. Later scientific matches require selected full-size trained checkpoints,
 a useful pinned opponent/search level, registered opening families and enough
 pairs for uncertainty estimates. Scientific 19×19 training settings remain
 unregistered; the larger-9×9 comparison and LR-only review still come first.
+
+`source-bundle-001.json` seals 199 source/evidence members in `source-001.tar`
+(3,768,320 bytes), including small portable trained fixtures and the retained
+failure and success records. Every archive member was read back. The parent
+training bundle remains separately retained. This local archive contains private
+operational paths and is separate from the sanitized GitHub source publication.

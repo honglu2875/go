@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "KataGo standard Muon surrounding schedule equations",
+  "hypothesis": "Explicit scalar LR, adaptive decay and clipping settings reproduce the actual pinned FSON source without importing its trainer.",
+  "requires_native": false
+}

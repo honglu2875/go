@@ -29,8 +29,8 @@
       "sha256": "c27167f78b257198f5c98f0ffa89320518c9874d44be3efe29ff3233c42085b6"
     },
     "README.md": {
-      "bytes": 4906,
-      "sha256": "e6e278b073e800ce0b03d21272ea02eb02c4c0fdef4df448a74ba7a17568c02f"
+      "bytes": 5431,
+      "sha256": "11968cc988ab65d554fd8215539174b2f8f9bb1718a864280b964dc2b865c990"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 661,
@@ -4365,8 +4365,8 @@
       "sha256": "44e89f43fbe2ac4ccc50a19d5008e19bdc50a67f1750177e8e574c38979f53d5"
     },
     "ops/STATUS.md": {
-      "bytes": 1133,
-      "sha256": "16dad3b2595faea1dd589fe0e2055c511730428d4cab81d2dc027b275c3f960c"
+      "bytes": 854,
+      "sha256": "84c388073fe3630e72904d5af1f43d05cd0b4a7f3ed766cd34f409378a4a3058"
     },
     "ops/analyze_visual_xplane.py": {
       "bytes": 4473,
@@ -6551,6 +6551,70 @@
     "research/recipes/joint_value_heads/recipe.json": {
       "bytes": 243,
       "sha256": "902159154d2f125c301740d693360c91056eedc75488d70593374f389d27156f"
+    },
+    "research/recipes/katago_muon/KATAGO_LICENSE.md": {
+      "bytes": 2616,
+      "sha256": "ead22455d923920cd152546d89e4f415c94d6b580aa109fda3b57a69c57c32e0"
+    },
+    "research/recipes/katago_muon/MUON_LICENSE.md": {
+      "bytes": 1070,
+      "sha256": "8c8d17398ecce3dd3fcb1bb77b5d268a427f8250f364ac655c9b38df5b693f6b"
+    },
+    "research/recipes/katago_muon/export_reference.py": {
+      "bytes": 7637,
+      "sha256": "8be3d9ca6cca5753d0d16e19fc7a1abf97cf3b96f512bf6486c4543277bbbe34"
+    },
+    "research/recipes/katago_muon/groups.py": {
+      "bytes": 1661,
+      "sha256": "0232fea95457f638b6fbf61d4a8a06d0f96e4e30b72cacca94b02b2e280f26ee"
+    },
+    "research/recipes/katago_muon/heads.py": {
+      "bytes": 5399,
+      "sha256": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa"
+    },
+    "research/recipes/katago_muon/katago.py": {
+      "bytes": 10164,
+      "sha256": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29"
+    },
+    "research/recipes/katago_muon/muon.py": {
+      "bytes": 6929,
+      "sha256": "6da070c54458aee9cec0173df889f6ceffce5affddf8f3439c61f2eb87fe5b10"
+    },
+    "research/recipes/katago_muon/qualify.py": {
+      "bytes": 12436,
+      "sha256": "e8a45612f07ddc1b31b53fd22eeef55a85a9d4d989b00e5ebdc4992abaf6d780"
+    },
+    "research/recipes/katago_muon/recipe.json": {
+      "bytes": 273,
+      "sha256": "8f1a1d5c45c859cb8f123fdb13c6651dc5b5f0047f2c47a4ab7c2d51ddf93320"
+    },
+    "research/recipes/katago_muon/state_io.py": {
+      "bytes": 4406,
+      "sha256": "2bad0483b0390c00a7e8e373710c1f03cfc97c506870572b752c6006b82dd9b4"
+    },
+    "research/recipes/katago_muon/train.py": {
+      "bytes": 729,
+      "sha256": "9a5fa86fb6b21aa0653a55c8ce09e8461bac8f57396fd72aaceb8f6bcb7d09d4"
+    },
+    "research/recipes/katago_muon_schedule/KATAGO_LICENSE.md": {
+      "bytes": 2616,
+      "sha256": "ead22455d923920cd152546d89e4f415c94d6b580aa109fda3b57a69c57c32e0"
+    },
+    "research/recipes/katago_muon_schedule/export_reference.py": {
+      "bytes": 5693,
+      "sha256": "1580ce4adf4928fe224d46ffdda3cab1be24160d2c788931f8f9cd83dda26714"
+    },
+    "research/recipes/katago_muon_schedule/recipe.json": {
+      "bytes": 266,
+      "sha256": "c2ea016f919cbc22c51acb93b8f83cd57ebff039572b7294c9cc97adece8e381"
+    },
+    "research/recipes/katago_muon_schedule/schedule.py": {
+      "bytes": 4230,
+      "sha256": "08411f1ecd2f562369890a5991b310461d2e2f4200e404e7ac785e8aec7cb6f8"
+    },
+    "research/recipes/katago_muon_schedule/train.py": {
+      "bytes": 3612,
+      "sha256": "ab331c385c9f6224255b44b280d8876bc36cb52307b816ad2dd88417d6476c83"
     },
     "research/recipes/learned_trace/README.md": {
       "bytes": 2687,
@@ -12652,6 +12716,106 @@
       "bytes": 5129,
       "sha256": "713416d25c37912cac72ce2b96cba89eebeebe69f5ea174db182c19ac249af13"
     },
+    "research/studies/katago_muon/PLAN.md": {
+      "bytes": 2583,
+      "sha256": "e5da8c003cf74a5f8cd58009a5bd38d6377d9f93b67419be14149089bd2a3c0c"
+    },
+    "research/studies/katago_muon/README.md": {
+      "bytes": 2793,
+      "sha256": "db78b43444a22d2a7743ab06640d235af6fa08e15fe6d371216111b9c52f5373"
+    },
+    "research/studies/katago_muon/bf16-scalar-diagnostic-001.json": {
+      "bytes": 1489,
+      "sha256": "5db2204183ccfae5a538ebb27c49fe391f61da38458877e2662a1ac7bd657ab1"
+    },
+    "research/studies/katago_muon/cpu-001.json": {
+      "bytes": 280,
+      "sha256": "627528a8a7a5cefe4bb6e336c28336fe96c947f9f547050339a82be25c6bae25"
+    },
+    "research/studies/katago_muon/cpu-002.json": {
+      "bytes": 280,
+      "sha256": "627528a8a7a5cefe4bb6e336c28336fe96c947f9f547050339a82be25c6bae25"
+    },
+    "research/studies/katago_muon/cpu-plan-001.json": {
+      "bytes": 697,
+      "sha256": "6a232744e041b4507f152dabce6dfc55bd306d3659076a73b3c71d9f5764d8ac"
+    },
+    "research/studies/katago_muon/cpu-plan-002.json": {
+      "bytes": 796,
+      "sha256": "d2f164a21b582ad5924127f5cce789cc09961474f6466f8ff2c0a3901dd42fcc"
+    },
+    "research/studies/katago_muon/diagnose_barriers.py": {
+      "bytes": 1556,
+      "sha256": "395e53d1041e1fbe01f9d9e898c88f479e2dcce26df2eb0dccbbe99a590974c2"
+    },
+    "research/studies/katago_muon/diagnose_polar.py": {
+      "bytes": 4072,
+      "sha256": "c110fb0b02e86f517bf967a245a391e1decd3bbc8586197eacd62c2af0d8e027"
+    },
+    "research/studies/katago_muon/model-source-copies-001.json": {
+      "bytes": 646,
+      "sha256": "e1925a7b543cdfc3a28a99894bc872232b2e624aec96befcc60c03525544378c"
+    },
+    "research/studies/katago_muon/muon-before-scalar-correction-001.py": {
+      "bytes": 5971,
+      "sha256": "a476adf067ef7f720fb963685099334467c0b93f955883a07e3d1786c35f29ed"
+    },
+    "research/studies/katago_muon/muon-before-stage-boundary-correction-001.py": {
+      "bytes": 6679,
+      "sha256": "0e3630ab8ecf7cdbc4e1c80796b28f687789308fda3c3591abc57412885882a8"
+    },
+    "research/studies/katago_muon/polar-diagnostic-001.json": {
+      "bytes": 42915,
+      "sha256": "e4b916d9f16f240cd32b6e3a851b77684f2675782079a8fc0151733b99188da2"
+    },
+    "research/studies/katago_muon/polar-diagnostic-002.json": {
+      "bytes": 14900,
+      "sha256": "020490cb3cf6979a7aebb12ad56521ebdf87e0bdc5700de9fae90365b550e97f"
+    },
+    "research/studies/katago_muon/polar-trace-reference-001.json": {
+      "bytes": 392,
+      "sha256": "af4aaab0ce5ddcbdd63ea00ee87ee4427a46d903c1dc99615c818feb0537b6ad"
+    },
+    "research/studies/katago_muon/reference-source-001.json": {
+      "bytes": 1034,
+      "sha256": "163b5c2873e184c4c29201baf540e339a0b2917b848fc35f1d6f56ab7b2d65b0"
+    },
+    "research/studies/katago_muon/scalar-rounding-correction-001.json": {
+      "bytes": 668,
+      "sha256": "016d22f0a14edab04564ea4bab14ca5b02162f2c9efe4a441caff0f9d31293ab"
+    },
+    "research/studies/katago_muon/seal_source.py": {
+      "bytes": 4034,
+      "sha256": "3b66cd9fc3226ff85c69ba2204c8044ca01d515d0fb34cb1bd6ea30afd5b0507"
+    },
+    "research/studies/katago_muon/stage-boundary-correction-001.json": {
+      "bytes": 963,
+      "sha256": "dacf51a1f6db627d4eb8ca5bc7c46559e6c0722fbd10ed8bc69ac9c128887a46"
+    },
+    "research/studies/katago_muon_schedule/PLAN.md": {
+      "bytes": 1574,
+      "sha256": "83495577c82e1a99c06c039553779bcf86fb8ba8ef72910750ceeccefe1c15aa"
+    },
+    "research/studies/katago_muon_schedule/README.md": {
+      "bytes": 1929,
+      "sha256": "c36b6a5d3978a96eb27d4668d02d71ded3c2b613298407291f83d5a507fbfcb4"
+    },
+    "research/studies/katago_muon_schedule/cpu-001.json": {
+      "bytes": 226,
+      "sha256": "b2996d0afc62525ca16f9a43b83654d16e7fb01206a696dd7aab0cd5e9157f3c"
+    },
+    "research/studies/katago_muon_schedule/cpu-plan-001.json": {
+      "bytes": 433,
+      "sha256": "7f871d554346a3d6778b6665d2a85099321b0f59fec4c225a571b342d7bb772a"
+    },
+    "research/studies/katago_muon_schedule/execution-001.json": {
+      "bytes": 695,
+      "sha256": "bdf48604a4316af6dbc39e1e9cf36a2bd5bda59a7bd99287738a29b46ec7344a"
+    },
+    "research/studies/katago_muon_schedule/reference-001.json": {
+      "bytes": 520010,
+      "sha256": "5c351c84186f43caf40a3213748382c90bdab38804b46e22eb9e27b32947123f"
+    },
     "research/studies/learned_trace/README.md": {
       "bytes": 4461,
       "sha256": "793bd4f70f3cd26e26c4705039fb3036bd8ba981859b48943ed1b799d0378557"
@@ -12905,8 +13069,8 @@
       "sha256": "f27e55d36f48202275682c89616361c3f5eda5e656bfedbab0eacb29fb0f627b"
     },
     "research/studies/strong19_eval/README.md": {
-      "bytes": 4920,
-      "sha256": "bdc0149651a09bb2654e886a0f8bcb278d254e9e370813c1d1ebe209fe29bdee"
+      "bytes": 5315,
+      "sha256": "58736407e4eaecee517fc476cdcb07f0c6a99ded0f5abfbd212c4b6b2f299579"
     },
     "research/studies/strong19_eval/artifact-cpu-001.json": {
       "bytes": 715,
@@ -13205,8 +13369,8 @@
       "sha256": "0091ee2199eb7952725f2128ff57c2842cb5174c4349d426aee04795fe0b3204"
     },
     "research/studies/strong9_followups/DIAGNOSTIC_NOTES.md": {
-      "bytes": 5269,
-      "sha256": "247d17181056084f3b9e4c41606310da4fe85d4a14065963d5484f9a24920711"
+      "bytes": 5809,
+      "sha256": "3565a3b69b44e44e9f332ff9a89d269277f63c6a61db39c45120e829911929dd"
     },
     "research/studies/strong9_followups/PLAN.md": {
       "bytes": 3214,
@@ -13224,6 +13388,14 @@
       "bytes": 707,
       "sha256": "a235d5c9b9befc400934c20a22fff59e36cf3f3cfc1a7736217742ad5511c8c0"
     },
+    "research/studies/strong9_followups/lr-source-cpu-001.json": {
+      "bytes": 1051,
+      "sha256": "dc4a3ae3802a7f1d1ce79428baba1cbd93e689bfcdffc3d7bb794ace2db78f41"
+    },
+    "research/studies/strong9_followups/lr_source.py": {
+      "bytes": 3733,
+      "sha256": "5818bad714e6011b7c4b9faec68eb9608d279e04d734a1ee730038be2603a2c9"
+    },
     "research/studies/strong9_followups/plot_time.py": {
       "bytes": 3553,
       "sha256": "fdcbf83f717e0666d92d04f8bb3e9be10e0149ebd2000374e762fdbbe1b87959"
@@ -13231,6 +13403,10 @@
     "research/studies/strong9_followups/plot_time_review.py": {
       "bytes": 3582,
       "sha256": "c54f83348eee839a79f8ed0ad7f6a152e16c5a17956429f84abae3303cb36bb9"
+    },
+    "research/studies/strong9_followups/qualify_lr_source.py": {
+      "bytes": 4054,
+      "sha256": "97c43f8182b4fb89f61cce1b4f949062fdb1b293c3e5ba0a98fc89ea905edc47"
     },
     "research/studies/strong9_followups/seed1-through-2816-001.json": {
       "bytes": 154898,
@@ -13253,8 +13429,8 @@
       "sha256": "24afbd016482c81efed7735e707d275f47d1e949e61ea60852752809ae354360"
     },
     "research/studies/strong9_scaling/README.md": {
-      "bytes": 6455,
-      "sha256": "b429cc44fca34e8fa967fef50f8d7aece36363debe3de168702e0986529d0dd0"
+      "bytes": 6689,
+      "sha256": "c40c87951cec0fbb42e07664b26894db5b218f5fec88b7412ebc3662bafd44cb"
     },
     "research/studies/strong9_scaling/audit_trajectories.py": {
       "bytes": 5548,
@@ -13263,6 +13439,10 @@
     "research/studies/strong9_scaling/cnn-seed1-audit-001.json": {
       "bytes": 188878,
       "sha256": "88a482aec39c7a1150a05d9fc0c33a27bc442d6294c56480e125e709f73fd0d0"
+    },
+    "research/studies/strong9_scaling/cnn-seed2-audit-001.json": {
+      "bytes": 188910,
+      "sha256": "5c6ab00ecb1cfb078da4cc94391dad25b284e342ef13f0c8ebbdddfd263065f8"
     },
     "research/studies/strong9_scaling/compare.py": {
       "bytes": 6925,
@@ -13333,8 +13513,8 @@
       "sha256": "734f0ee4456a5471c47491c1cd5b9cdc9d5fcd0592a84a04592d97eb4df9da8b"
     },
     "research/studies/strong9_scaling/seed2-progress.csv": {
-      "bytes": 2047,
-      "sha256": "87b8ab2fbe3a041a44083e7a226ded1be454ec7b31a4890d9d5b7416d5ae46cc"
+      "bytes": 3706,
+      "sha256": "2d0432d6d638b34fc2ce37223e0b84efcdb9e27013c8a816e4bef14743e72373"
     },
     "research/studies/strong9_scaling/test_conclude.py": {
       "bytes": 3881,

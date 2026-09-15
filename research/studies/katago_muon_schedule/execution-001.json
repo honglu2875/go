@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "returncode": 0,
+  "seconds": 0.21439233899582177,
+  "plan_sha256": "ba792867e5c1c0ec6b5ad37449b78895eff5e4182865285ec930aef01c1c5b46",
+  "argv": [
+    "taskset",
+    "-c",
+    "0,1",
+    "/workspace/go/.venv/bin/python",
+    "-B",
+    "/workspace/go/.gozero/snapshots/bddb832e7958c0a946fd5c46cc1a9bec5c95a32d60cee80073bff3d8c75ba012/research/recipes/katago_muon_schedule/train.py",
+    "--workspace-root",
+    "/workspace/go",
+    "--config",
+    "/workspace/go/.gozero/snapshots/bddb832e7958c0a946fd5c46cc1a9bec5c95a32d60cee80073bff3d8c75ba012/resolved_config.json",
+    "--output",
+    "/workspace/go/research/studies/katago_muon_schedule/cpu-result-001.json"
+  ]
+}

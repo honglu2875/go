@@ -1,0 +1,15 @@
+{
+  "files": {
+    "research/recipes/katago_muon/heads.py": {
+      "sha256": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa",
+      "source": "research/recipes/strong19_train/heads.py",
+      "source_sha256": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa"
+    },
+    "research/recipes/katago_muon/katago.py": {
+      "sha256": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29",
+      "source": "research/recipes/strong19_train/katago.py",
+      "source_sha256": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29"
+    }
+  },
+  "kind": "qualified_cnn_schema_source_copies"
+}

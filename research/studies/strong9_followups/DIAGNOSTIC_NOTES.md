@@ -84,3 +84,11 @@ seen more examples at this common learning-time boundary and its cosine
 schedule is further along. A fixed-wall-budget comparison with a prospectively
 matched schedule would be a separate experiment. This result leaves the
 registered equal-update endpoint failure intact and awaits seed-2 replication.
+
+The LR source-isolation preparation passed in `lr-source-cpu-001.json`. It
+re-freezes the unchanged retained parent to the same content identity, preserves
+all 1,310 source files when changing only the peak/final LR values, and rejects
+14 source/configuration confounders. The temporary fixture used only to exercise
+this operator was removed. No research rate has been selected or registered.
+A full 4,096-update intervention can reuse the existing paired controls; a
+shortened horizon would still require its own fresh matched controls.

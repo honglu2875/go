@@ -1,0 +1,12 @@
+{
+  "configuration_sha256": "998bbcf3cccac695f81aa3ca506a090115d229a995b23621a19969585de63680",
+  "correction_receipt_sha256": "a095052d6a3d5b35477616b74bda16e9a648260ea96c7a9d835d89612add859c",
+  "created": 1789470387.2182944,
+  "kind": "katago_muon_cpu_plan",
+  "maximum_seconds": 600,
+  "python": ".gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "reference_sha256": "2109aec0299eaa95e6c683be4d29a4f14ff12f1251a3820c8c431413c28dc624",
+  "scope": "No neural-loss training and no TPU use; reference optimizer, grouping and complete optimizer-state continuation only.",
+  "snapshot": "890e0a320861bd0acda457287ac25c3c1b1cc8cacb82083d6b728d3ad32b51f3",
+  "source_pin_sha256": "163b5c2873e184c4c29201baf540e339a0b2917b848fc35f1d6f56ab7b2d65b0"
+}

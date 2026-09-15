@@ -1,0 +1,1887 @@
+{
+  "kind": "muon_first_difference_diagnostic",
+  "created": 1789470234.3241405,
+  "operator_sha256": "c110fb0b02e86f517bf967a245a391e1decd3bbc8586197eacd62c2af0d8e027",
+  "muon_sha256": "0e3630ab8ecf7cdbc4e1c80796b28f687789308fda3c3591abc57412885882a8",
+  "reference_trace_sha256": "708506436c38df0071c72a29b69415d4690f1fb50724b6e182e3f2b40799ee6e",
+  "trace_vs_original": {
+    "different": 0,
+    "total": 288,
+    "maximum": 0.0,
+    "relative": 0.0
+  },
+  "variants": [
+    {
+      "options": {
+        "stable_lerp": false,
+        "float_div": false,
+        "barriers": false
+      },
+      "mode": "eager",
+      "stages": {
+        "A0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cast": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "momentum": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "nesterov": {
+          "different": 268,
+          "total": 288,
+          "maximum": 2.2351741790771484e-08,
+          "relative": 3.636564288634183e-07
+        },
+        "norm": {
+          "different": 0,
+          "total": 3,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "normalized": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "scaled": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": false,
+        "float_div": false,
+        "barriers": false
+      },
+      "mode": "jit_all",
+      "stages": {
+        "A0": {
+          "different": 61,
+          "total": 192,
+          "maximum": 0.001953125,
+          "relative": 0.003054315021262474
+        },
+        "A1": {
+          "different": 129,
+          "total": 192,
+          "maximum": 0.0078125,
+          "relative": 0.005317263569056407
+        },
+        "A2": {
+          "different": 186,
+          "total": 192,
+          "maximum": 0.03125,
+          "relative": 0.01930625224188722
+        },
+        "A3": {
+          "different": 186,
+          "total": 192,
+          "maximum": 0.0625,
+          "relative": 0.04124916445506987
+        },
+        "A4": {
+          "different": 179,
+          "total": 192,
+          "maximum": 0.12890625,
+          "relative": 0.05961383233365982
+        },
+        "B0": {
+          "different": 61,
+          "total": 192,
+          "maximum": 0.0078125,
+          "relative": 0.003503662128530876
+        },
+        "B1": {
+          "different": 124,
+          "total": 192,
+          "maximum": 0.0234375,
+          "relative": 0.005610767168159888
+        },
+        "B2": {
+          "different": 162,
+          "total": 192,
+          "maximum": 0.0625,
+          "relative": 0.013511689688915862
+        },
+        "B3": {
+          "different": 181,
+          "total": 192,
+          "maximum": 0.125,
+          "relative": 0.022321519193801938
+        },
+        "B4": {
+          "different": 184,
+          "total": 192,
+          "maximum": 0.1875,
+          "relative": 0.03193218426995465
+        },
+        "X0": {
+          "different": 88,
+          "total": 288,
+          "maximum": 0.00390625,
+          "relative": 0.0036196504492153796
+        },
+        "X1": {
+          "different": 188,
+          "total": 288,
+          "maximum": 0.015625,
+          "relative": 0.014249553387163747
+        },
+        "X2": {
+          "different": 238,
+          "total": 288,
+          "maximum": 0.03125,
+          "relative": 0.025406273719975423
+        },
+        "X3": {
+          "different": 242,
+          "total": 288,
+          "maximum": 0.04296875,
+          "relative": 0.03487553823499634
+        },
+        "X4": {
+          "different": 255,
+          "total": 288,
+          "maximum": 0.05078125,
+          "relative": 0.04294041282252773
+        },
+        "ax0": {
+          "different": 76,
+          "total": 288,
+          "maximum": 0.00390625,
+          "relative": 0.002310828787556875
+        },
+        "ax1": {
+          "different": 133,
+          "total": 288,
+          "maximum": 0.0234375,
+          "relative": 0.0043372546296058835
+        },
+        "ax2": {
+          "different": 187,
+          "total": 288,
+          "maximum": 0.0546875,
+          "relative": 0.014526214952309479
+        },
+        "ax3": {
+          "different": 238,
+          "total": 288,
+          "maximum": 0.109375,
+          "relative": 0.02557913189924879
+        },
+        "ax4": {
+          "different": 242,
+          "total": 288,
+          "maximum": 0.1484375,
+          "relative": 0.03475642610532427
+        },
+        "bx0": {
+          "different": 100,
+          "total": 288,
+          "maximum": 0.001953125,
+          "relative": 0.0032085184224751352
+        },
+        "bx1": {
+          "different": 199,
+          "total": 288,
+          "maximum": 0.015625,
+          "relative": 0.005579508854154373
+        },
+        "bx2": {
+          "different": 259,
+          "total": 288,
+          "maximum": 0.0625,
+          "relative": 0.021178591042326486
+        },
+        "bx3": {
+          "different": 276,
+          "total": 288,
+          "maximum": 0.1328125,
+          "relative": 0.0408723647244004
+        },
+        "bx4": {
+          "different": 277,
+          "total": 288,
+          "maximum": 0.19921875,
+          "relative": 0.058354275889484546
+        },
+        "cA0": {
+          "different": 59,
+          "total": 192,
+          "maximum": 0.00390625,
+          "relative": 0.0030151646518334066
+        },
+        "cA1": {
+          "different": 127,
+          "total": 192,
+          "maximum": 0.015625,
+          "relative": 0.005510793653017503
+        },
+        "cA2": {
+          "different": 186,
+          "total": 192,
+          "maximum": 0.0625,
+          "relative": 0.019191084171379283
+        },
+        "cA3": {
+          "different": 186,
+          "total": 192,
+          "maximum": 0.125,
+          "relative": 0.041106210504487935
+        },
+        "cA4": {
+          "different": 178,
+          "total": 192,
+          "maximum": 0.265625,
+          "relative": 0.05991985210929735
+        },
+        "cast": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "momentum": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "nesterov": {
+          "different": 261,
+          "total": 288,
+          "maximum": 1.4901161193847656e-08,
+          "relative": 2.587277641542149e-07
+        },
+        "norm": {
+          "different": 0,
+          "total": 3,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "normalized": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "scaled": {
+          "different": 252,
+          "total": 288,
+          "maximum": 0.0361328125,
+          "relative": 0.04300527110827948
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": false,
+        "float_div": false,
+        "barriers": false
+      },
+      "mode": "jit_final",
+      "stages": {
+        "scaled": {
+          "different": 252,
+          "total": 288,
+          "maximum": 0.0361328125,
+          "relative": 0.04300527110827948
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": false,
+        "float_div": true,
+        "barriers": false
+      },
+      "mode": "eager",
+      "stages": {
+        "A0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cast": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "momentum": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "nesterov": {
+          "different": 268,
+          "total": 288,
+          "maximum": 2.2351741790771484e-08,
+          "relative": 3.636564288634183e-07
+        },
+        "norm": {
+          "different": 0,
+          "total": 3,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "normalized": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "scaled": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": false,
+        "float_div": true,
+        "barriers": false
+      },
+      "mode": "jit_all",
+      "stages": {
+        "A0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A1": {
+          "different": 83,
+          "total": 192,
+          "maximum": 0.00390625,
+          "relative": 0.0020406566025157192
+        },
+        "A2": {
+          "different": 175,
+          "total": 192,
+          "maximum": 0.02734375,
+          "relative": 0.015440705104600216
+        },
+        "A3": {
+          "different": 189,
+          "total": 192,
+          "maximum": 0.0390625,
+          "relative": 0.03008891853680033
+        },
+        "A4": {
+          "different": 187,
+          "total": 192,
+          "maximum": 0.05859375,
+          "relative": 0.04853844105601535
+        },
+        "B0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B1": {
+          "different": 74,
+          "total": 192,
+          "maximum": 0.0234375,
+          "relative": 0.003688870412711236
+        },
+        "B2": {
+          "different": 146,
+          "total": 192,
+          "maximum": 0.046875,
+          "relative": 0.010921293863293798
+        },
+        "B3": {
+          "different": 177,
+          "total": 192,
+          "maximum": 0.0625,
+          "relative": 0.01706684817041279
+        },
+        "B4": {
+          "different": 179,
+          "total": 192,
+          "maximum": 0.09375,
+          "relative": 0.025958819871631823
+        },
+        "X0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X1": {
+          "different": 161,
+          "total": 288,
+          "maximum": 0.015625,
+          "relative": 0.011307995402426456
+        },
+        "X2": {
+          "different": 220,
+          "total": 288,
+          "maximum": 0.015625,
+          "relative": 0.019681773080481083
+        },
+        "X3": {
+          "different": 243,
+          "total": 288,
+          "maximum": 0.0234375,
+          "relative": 0.028761756331406027
+        },
+        "X4": {
+          "different": 247,
+          "total": 288,
+          "maximum": 0.03125,
+          "relative": 0.03379324860074823
+        },
+        "ax0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax1": {
+          "different": 72,
+          "total": 288,
+          "maximum": 0.015625,
+          "relative": 0.0027159147169576346
+        },
+        "ax2": {
+          "different": 159,
+          "total": 288,
+          "maximum": 0.0625,
+          "relative": 0.011443907141016691
+        },
+        "ax3": {
+          "different": 221,
+          "total": 288,
+          "maximum": 0.0546875,
+          "relative": 0.01984527405109787
+        },
+        "ax4": {
+          "different": 243,
+          "total": 288,
+          "maximum": 0.0859375,
+          "relative": 0.028875788503552283
+        },
+        "bx0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx1": {
+          "different": 134,
+          "total": 288,
+          "maximum": 0.0078125,
+          "relative": 0.002950561849258969
+        },
+        "bx2": {
+          "different": 249,
+          "total": 288,
+          "maximum": 0.0703125,
+          "relative": 0.017141556872888028
+        },
+        "bx3": {
+          "different": 268,
+          "total": 288,
+          "maximum": 0.07421875,
+          "relative": 0.03109834763218421
+        },
+        "bx4": {
+          "different": 274,
+          "total": 288,
+          "maximum": 0.1015625,
+          "relative": 0.04738210101978334
+        },
+        "cA0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA1": {
+          "different": 83,
+          "total": 192,
+          "maximum": 0.0078125,
+          "relative": 0.0020105689404140968
+        },
+        "cA2": {
+          "different": 175,
+          "total": 192,
+          "maximum": 0.0625,
+          "relative": 0.015702654821266714
+        },
+        "cA3": {
+          "different": 189,
+          "total": 192,
+          "maximum": 0.078125,
+          "relative": 0.03014985611257786
+        },
+        "cA4": {
+          "different": 187,
+          "total": 192,
+          "maximum": 0.1171875,
+          "relative": 0.048902836624436556
+        },
+        "cast": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "momentum": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "nesterov": {
+          "different": 261,
+          "total": 288,
+          "maximum": 1.4901161193847656e-08,
+          "relative": 2.587277641542149e-07
+        },
+        "norm": {
+          "different": 0,
+          "total": 3,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "normalized": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "scaled": {
+          "different": 249,
+          "total": 288,
+          "maximum": 0.021484375,
+          "relative": 0.03410193873983243
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": false,
+        "float_div": true,
+        "barriers": false
+      },
+      "mode": "jit_final",
+      "stages": {
+        "scaled": {
+          "different": 249,
+          "total": 288,
+          "maximum": 0.021484375,
+          "relative": 0.03410193873983243
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": true,
+        "float_div": true,
+        "barriers": false
+      },
+      "mode": "eager",
+      "stages": {
+        "A0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cast": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "momentum": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "nesterov": {
+          "different": 276,
+          "total": 288,
+          "maximum": 7.450580596923828e-09,
+          "relative": 1.1580415088487425e-07
+        },
+        "norm": {
+          "different": 0,
+          "total": 3,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "normalized": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "scaled": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": true,
+        "float_div": true,
+        "barriers": false
+      },
+      "mode": "jit_all",
+      "stages": {
+        "A0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A1": {
+          "different": 83,
+          "total": 192,
+          "maximum": 0.00390625,
+          "relative": 0.0020406566025157192
+        },
+        "A2": {
+          "different": 175,
+          "total": 192,
+          "maximum": 0.02734375,
+          "relative": 0.015440705104600216
+        },
+        "A3": {
+          "different": 189,
+          "total": 192,
+          "maximum": 0.0390625,
+          "relative": 0.03008891853680033
+        },
+        "A4": {
+          "different": 187,
+          "total": 192,
+          "maximum": 0.05859375,
+          "relative": 0.04853844105601535
+        },
+        "B0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B1": {
+          "different": 74,
+          "total": 192,
+          "maximum": 0.0234375,
+          "relative": 0.003688870412711236
+        },
+        "B2": {
+          "different": 146,
+          "total": 192,
+          "maximum": 0.046875,
+          "relative": 0.010921293863293798
+        },
+        "B3": {
+          "different": 177,
+          "total": 192,
+          "maximum": 0.0625,
+          "relative": 0.01706684817041279
+        },
+        "B4": {
+          "different": 179,
+          "total": 192,
+          "maximum": 0.09375,
+          "relative": 0.025958819871631823
+        },
+        "X0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X1": {
+          "different": 161,
+          "total": 288,
+          "maximum": 0.015625,
+          "relative": 0.011307995402426456
+        },
+        "X2": {
+          "different": 220,
+          "total": 288,
+          "maximum": 0.015625,
+          "relative": 0.019681773080481083
+        },
+        "X3": {
+          "different": 243,
+          "total": 288,
+          "maximum": 0.0234375,
+          "relative": 0.028761756331406027
+        },
+        "X4": {
+          "different": 247,
+          "total": 288,
+          "maximum": 0.03125,
+          "relative": 0.03379324860074823
+        },
+        "ax0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax1": {
+          "different": 72,
+          "total": 288,
+          "maximum": 0.015625,
+          "relative": 0.0027159147169576346
+        },
+        "ax2": {
+          "different": 159,
+          "total": 288,
+          "maximum": 0.0625,
+          "relative": 0.011443907141016691
+        },
+        "ax3": {
+          "different": 221,
+          "total": 288,
+          "maximum": 0.0546875,
+          "relative": 0.01984527405109787
+        },
+        "ax4": {
+          "different": 243,
+          "total": 288,
+          "maximum": 0.0859375,
+          "relative": 0.028875788503552283
+        },
+        "bx0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx1": {
+          "different": 134,
+          "total": 288,
+          "maximum": 0.0078125,
+          "relative": 0.002950561849258969
+        },
+        "bx2": {
+          "different": 249,
+          "total": 288,
+          "maximum": 0.0703125,
+          "relative": 0.017141556872888028
+        },
+        "bx3": {
+          "different": 268,
+          "total": 288,
+          "maximum": 0.07421875,
+          "relative": 0.03109834763218421
+        },
+        "bx4": {
+          "different": 274,
+          "total": 288,
+          "maximum": 0.1015625,
+          "relative": 0.04738210101978334
+        },
+        "cA0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA1": {
+          "different": 83,
+          "total": 192,
+          "maximum": 0.0078125,
+          "relative": 0.0020105689404140968
+        },
+        "cA2": {
+          "different": 175,
+          "total": 192,
+          "maximum": 0.0625,
+          "relative": 0.015702654821266714
+        },
+        "cA3": {
+          "different": 189,
+          "total": 192,
+          "maximum": 0.078125,
+          "relative": 0.03014985611257786
+        },
+        "cA4": {
+          "different": 187,
+          "total": 192,
+          "maximum": 0.1171875,
+          "relative": 0.048902836624436556
+        },
+        "cast": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "momentum": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "nesterov": {
+          "different": 288,
+          "total": 288,
+          "maximum": 7.450580596923828e-09,
+          "relative": 1.1509598604151914e-07
+        },
+        "norm": {
+          "different": 0,
+          "total": 3,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "normalized": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "scaled": {
+          "different": 249,
+          "total": 288,
+          "maximum": 0.021484375,
+          "relative": 0.03410193873983243
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": true,
+        "float_div": true,
+        "barriers": false
+      },
+      "mode": "jit_final",
+      "stages": {
+        "scaled": {
+          "different": 249,
+          "total": 288,
+          "maximum": 0.021484375,
+          "relative": 0.03410193873983243
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": true,
+        "float_div": true,
+        "barriers": true
+      },
+      "mode": "eager",
+      "stages": {
+        "A0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cast": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "momentum": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "nesterov": {
+          "different": 276,
+          "total": 288,
+          "maximum": 7.450580596923828e-09,
+          "relative": 1.1580415088487425e-07
+        },
+        "norm": {
+          "different": 0,
+          "total": 3,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "normalized": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "scaled": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": true,
+        "float_div": true,
+        "barriers": true
+      },
+      "mode": "jit_all",
+      "stages": {
+        "A0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "A4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "B4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "X4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "ax4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx0": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx1": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx2": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx3": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "bx4": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA0": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA1": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA2": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA3": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cA4": {
+          "different": 0,
+          "total": 192,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "cast": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "momentum": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "nesterov": {
+          "different": 288,
+          "total": 288,
+          "maximum": 7.450580596923828e-09,
+          "relative": 1.1509598604151914e-07
+        },
+        "norm": {
+          "different": 0,
+          "total": 3,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "normalized": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        },
+        "scaled": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        }
+      }
+    },
+    {
+      "options": {
+        "stable_lerp": true,
+        "float_div": true,
+        "barriers": true
+      },
+      "mode": "jit_final",
+      "stages": {
+        "scaled": {
+          "different": 0,
+          "total": 288,
+          "maximum": 0.0,
+          "relative": 0.0
+        }
+      }
+    }
+  ]
+}

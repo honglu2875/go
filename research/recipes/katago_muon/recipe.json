@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "KataGo Muon plus auxiliary Adam reference port",
+  "hypothesis": "Preserve the published optimizer algorithm and semantic parameter groups through a functional JAX update with batched independent matrices.",
+  "requires_native": false
+}

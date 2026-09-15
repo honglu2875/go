@@ -1,0 +1,7 @@
+{
+  "kind": "first_failed_leaf_polar_trace",
+  "created": 1789469686.8443267,
+  "reference_sha256": "2109aec0299eaa95e6c683be4d29a4f14ff12f1251a3820c8c431413c28dc624",
+  "arrays_sha256": "708506436c38df0071c72a29b69415d4690f1fb50724b6e182e3f2b40799ee6e",
+  "scope": "The first failing stacked 1x1 convolution; exactly the reference scalar equations, shown as independent batched matrices."
+}

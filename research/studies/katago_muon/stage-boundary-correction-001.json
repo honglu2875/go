@@ -1,0 +1,13 @@
+{
+  "after_sha256": "6da070c54458aee9cec0173df889f6ceffce5affddf8f3439c61f2eb87fe5b10",
+  "before_sha256": "0e3630ab8ecf7cdbc4e1c80796b28f687789308fda3c3591abc57412885882a8",
+  "created": 1789470386.9204285,
+  "diagnostics": {
+    "polar-diagnostic-001.json": "e4b916d9f16f240cd32b6e3a851b77684f2675782079a8fc0151733b99188da2",
+    "polar-diagnostic-002.json": "020490cb3cf6979a7aebb12ad56521ebdf87e0bdc5700de9fae90365b550e97f"
+  },
+  "failed_qualification_sha256": "bcde2dac94f0963440e90a1d8627597def4221e222b11b45dd0d2d0b0e0ceddd",
+  "finding": "Eager stages match the actual scalar reference exactly after the BF16 cast. JIT removes rounding boundaries before polynomial matmuls; explicit optimization barriers restore every BF16 stage on the first failed leaf. Barrier-only isolation passes without changing momentum or division equations. Full qualification remains required.",
+  "kind": "muon_bf16_stage_boundary_correction",
+  "tolerance_changed": false
+}

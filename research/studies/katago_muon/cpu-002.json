@@ -1,0 +1,10 @@
+{
+  "expected_devices": 4,
+  "expected_processes": 1,
+  "kind": "katago_muon_cpu_qualification",
+  "platform": "cpu",
+  "reference": {
+    "path": "research/studies/katago_muon/reference-001",
+    "sha256": "2109aec0299eaa95e6c683be4d29a4f14ff12f1251a3820c8c431413c28dc624"
+  }
+}
