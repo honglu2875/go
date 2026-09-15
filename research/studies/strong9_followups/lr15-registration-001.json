@@ -1,0 +1,66 @@
+{
+  "cnn_controls": {
+    "seed1": {
+      "path": "research/studies/strong9_scaling/cnn-seed1-audit-001.json",
+      "sha256": "226cf79338c1f6fcaa363a38708fd88bb70d727b4b2900168b67470f1e9daaae"
+    },
+    "seed2": {
+      "path": "research/studies/strong9_scaling/cnn-seed2-audit-001.json",
+      "sha256": "8003ebb2cccd58761ace388c5fb97fd575da786fe8088d0950057eb05dd74e1f"
+    }
+  },
+  "comparison_operator_sha256": "db1fc92ac0e8a53fa9149bcc9a9092f65ecaa92da83fc0aaaa6af6bce0c7d0ce",
+  "comparison_qualification_sha256": "bf615b8bf195452e70ccdd3369800d54b66217e43d19368d425dd361489a6c7b",
+  "created": 1789478093.819762,
+  "decision": "Run seed1 first. Confirm with seed2 only if both position and equal-family endpoint KL improve by at least0.5% against that seed's existing1e-3 transformer parent, neither last-three mean regresses, and no sustained-overfit flag appears. Both seeds must meet this rule to accept the intervention. Review before another LR or any encoder change.",
+  "end_learning_rate": 0.00045,
+  "finalize_operator_sha256": "b32a2d384c49402abe758a7b60dd5015ee5b3175992e8025b19911a9c04f4be5",
+  "invariants": [
+    "Same complete4096-update horizon and64-update warmup; final/peak ratio0.3",
+    "Same architecture, width, parameter count and complete encoder-plus-decoder FLOPs",
+    "Same initializer, raw teacher targets, complete-game/D4 draws, validation and fixed probe",
+    "AdamW beta1/beta2, epsilon, decay, clipping and every other configuration/source byte unchanged",
+    "Test targets stay closed; no partial-horizon control reuse",
+    "Retain complete learning checkpoints with verified peer copy; enforce RAM floors and growth reserve"
+  ],
+  "kind": "strong9_learning_rate_intervention",
+  "launch_operator_sha256": "44bb9aba72bfb35025a614bc258903f9c3e78979ae393eae18d2f1661cc86331",
+  "peak_learning_rate": 0.0015,
+  "preceding_conclusion": {
+    "path": "research/studies/strong9_scaling/conclusion-001.json",
+    "sha256": "ab3b44ad04ea533c81ebb31d9de0b22fcc408ef385710a5e8c1a8ec43d6c397f"
+  },
+  "qualification": {
+    "path": "research/studies/strong9_scaling/transformer-qualification-audit-001.json",
+    "sha256": "4b798d5e9d7a4ab28cc23ff715c48c964d55c867fcb1130856cde0d08df20b7d"
+  },
+  "review": {
+    "path": "research/studies/strong9_followups/lr15-review-001.json",
+    "sha256": "a9be075d01fcd2a4dca587f888e20df6a9643ea7b0995487568a95e83dced322"
+  },
+  "scope": "A sequential supervised LR-only intervention on the larger fixed9 corpus. Compare to the existing CNN descriptively after tuning; this does not prove global architecture superiority, optimality or Go strength.",
+  "screen_min_relative_gain": 0.005,
+  "source_helper_sha256": "5818bad714e6011b7c4b9faec68eb9608d279e04d734a1ee730038be2603a2c9",
+  "source_isolation_qualification_sha256": "dc4a3ae3802a7f1d1ce79428baba1cbd93e689bfcdffc3d7bb794ace2db78f41",
+  "stages": {
+    "seed1": {
+      "identical_source_files": 1310,
+      "parent_audit": {
+        "path": "research/studies/strong9_scaling/transformer-seed1-audit-001.json",
+        "sha256": "060c15a033eeec9ffa2169ffc23304fb304d17faef107c7a1cfe551e5f3ac28f"
+      },
+      "parent_snapshot": "23c9dfe60c0a4c1c376e74f634b568fd1c85f3b13a0c7fef9172859ad38a40fb",
+      "snapshot": "95e50be039398139c8a26c034a6d11051843ab961149d0cffc88f765ccff0d33"
+    },
+    "seed2": {
+      "identical_source_files": 1310,
+      "parent_audit": {
+        "path": "research/studies/strong9_scaling/transformer-seed2-audit-001.json",
+        "sha256": "34971ce106609c2ad9e8b7155689cdaea5bababd381a5aa1badd9e8ce27822d2"
+      },
+      "parent_snapshot": "47bb3410a1a6c100c1e005db246f925b73b08bb6ad833ed76be64d54de87848d",
+      "snapshot": "34abcd0bb9a881aceb5398401a1be0c4d597d1f2d39bc6053f509f750f51ebb6"
+    }
+  },
+  "trial": "lr15"
+}

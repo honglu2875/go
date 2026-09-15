@@ -1,0 +1,9 @@
+{
+  "created": 1789476634.1422095,
+  "kind": "lookahead_cpu_continuation_plan",
+  "operator_sha256": "a69224ba8eade4ed85414d8a4003f0c640aaa8d4ee9030e2a195d1dacc74aea7",
+  "reference_sha256": "07794f410ea4f34f6c7df133200c3f9c7cd09222083440d42d71a4a26c4046d2",
+  "required": "Original Torch source within preset tolerance, exact donated fresh-process fast/slow/clock recovery across an unsynchronized boundary",
+  "run_directory": "research/studies/katago_lookahead/cpu-001",
+  "snapshot_id": "7d9bc6bc2235c0b5d88a01ba042ef8117f8e0a461cd6d6a72ca5d608039bc9c7"
+}

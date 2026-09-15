@@ -1,0 +1,11 @@
+{
+  "atol": 2e-07,
+  "checkpoint_event": 12,
+  "kind": "katago_lookahead_cpu_qualification",
+  "platform": "cpu",
+  "reference": {
+    "path": "research/studies/katago_lookahead/reference-001/manifest.json",
+    "sha256": "07794f410ea4f34f6c7df133200c3f9c7cd09222083440d42d71a4a26c4046d2"
+  },
+  "rtol": 2e-06
+}

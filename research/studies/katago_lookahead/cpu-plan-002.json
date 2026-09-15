@@ -1,0 +1,15 @@
+{
+  "changed_source_files": [
+    "research/recipes/katago_lookahead/lookahead.py",
+    "research/recipes/katago_lookahead/train.py"
+  ],
+  "correction": "Copy slow values to independent fast storage at the host epoch boundary, matching original copy_ storage semantics; numeric equations and tolerances unchanged.",
+  "created": 1789476851.9223182,
+  "kind": "lookahead_cpu_continuation_plan",
+  "operator_sha256": "a69224ba8eade4ed85414d8a4003f0c640aaa8d4ee9030e2a195d1dacc74aea7",
+  "preceding_failure_sha256": "c0c316b4efe88e211f162f4ce9e22a07fc6bb30606ec30ee55d5692e09091390",
+  "reference_sha256": "07794f410ea4f34f6c7df133200c3f9c7cd09222083440d42d71a4a26c4046d2",
+  "required": "Original Torch source within unchanged preset tolerance, exact donated fresh-process fast/slow/clock recovery across an unsynchronized boundary; invalid configuration/state rejection",
+  "run_directory": "research/studies/katago_lookahead/cpu-002",
+  "snapshot_id": "7f996718dcc8195562f0adfafd242b1a67c7a495c553fbdb7bf4f6f4b882474d"
+}

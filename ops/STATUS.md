@@ -1,18 +1,27 @@
-The larger fixed-data 9×9 comparison is completing its registered paired seeds.
-Both CNN seeds and the first transformer seed are audited. Review the complete
-comparison before selecting an LR-only intervention; no follow-up rate is
-registered yet. The source-isolation and paired-comparison helpers are checked,
-and a guarded launch operator is prepared.
+The larger fixed-data 9x9 comparison is complete on both paired seeds.
+The transformer did not meet the registered improvement criterion: mean final
+policy KL was 3.82% higher per position and 4.36% higher with equal opening-family
+weights. Its measured learning time was about 20% lower. Both validation and
+fixed training probes continued improving without sustained overfit. These
+results compare supervised learning under the registered settings; they do not
+establish playing strength or RL efficiency.
 
-Standard Muon/AuxAdam now runs the unchanged small joint CNN policy/value
-learner on real 19×19 histories. Complete fresh-process continuation matches
-all model/optimizer arrays, sampler RNGs, exposure counters and validation
-histories. Trained parameter export, cached policy/value inference and native
-Rust search also pass. These are CPU execution qualifications with explicit
-fixture settings, not a learning comparison or playing-strength result.
+The next intervention changes only the transformer learning rate: peak 1.5e-3,
+end 4.5e-4, with the same architecture, initialization, data draws, 4,096-update
+horizon and 64-update warmup. Its first seed is running. The registered
+continuation records validation/probe curves and permits a second seed only
+after both endpoint KL measures improve by at least 0.5%, neither final-three
+mean regresses, and no sustained overfit appears. A new evidence review is
+required before another rate or encoder. See research/studies/strong9_followups/.
 
-Source-derived schedule/norm cadence and Lookahead state still need integration,
-followed by full-size accelerator qualification and a registered paired 19×19
-learning/strength study. Mixed-strength data generation continues separately.
-Deployment inventories, live process receipts, private paths, credentials and
-binary artifacts are excluded from this source backup. See PUBLICATION.md.
+The separate Lookahead component matches the pinned KataGo source on 812 tensor
+comparisons and preserves complete state across fresh-process continuation.
+The retained first failure identified aliased fast/slow storage at an epoch
+boundary; the correction matches the source copy semantics. This remains a
+small CPU component qualification. Integration with the joint Muon learner,
+source norm/schedule cadence and full-size accelerator qualification remains
+open before the scientific 19x19 policy/value and playing-strength comparison.
+
+This source backup excludes credentials, private deployment inventories,
+operational logs, datasets, model weights and binary evidence. Machine and
+resource examples are anonymized; see PUBLICATION.md.

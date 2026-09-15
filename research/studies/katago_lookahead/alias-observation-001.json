@@ -1,0 +1,92 @@
+{
+  "kind": "lookahead_alias_observation",
+  "created": 1789476789.8723726,
+  "source": "7d9bc6bc2235c0b5d88a01ba042ef8117f8e0a461cd6d6a72ca5d608039bc9c7",
+  "trace": [
+    {
+      "event": 0,
+      "op": "begin_subepoch",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 1,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 2,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 3,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 4,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 5,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 6,
+      "op": "begin_subepoch",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 7,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 8,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 9,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 10,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 11,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 12,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 13,
+      "op": "step",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 14,
+      "op": "end_epoch",
+      "before_aliased_keys": []
+    },
+    {
+      "event": 15,
+      "op": "begin_subepoch",
+      "before_aliased_keys": [
+        "bias",
+        "conv",
+        "matrix",
+        "norm"
+      ]
+    }
+  ]
+}

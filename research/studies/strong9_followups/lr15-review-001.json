@@ -1,0 +1,29 @@
+{
+  "choice": "A moderate50% upward rate scale tests the user-authorized optimization hypothesis while keeping the complete schedule shape and all other settings fixed. This is the first probe, not an optimal-rate claim.",
+  "created": 1789478091.9181533,
+  "diagnostics": {
+    "research/studies/strong9_followups/seed1-through-4096-002.json": "d3065101e52e9a44f6dcb51ea50b0b66b6e044826594fcc9e2836bc3bf5b7db3",
+    "research/studies/strong9_followups/seed2-through-4096-001.json": "ee5b5496a79b1502d2a083b1cdc0a121953be07915119bdbce8311454c5bce45"
+  },
+  "findings": {
+    "last512_clipping_both_arms_both_seeds": 0,
+    "mean_transformer_family_kl_excess": 0.04360711884431945,
+    "mean_transformer_position_kl_excess": 0.038197625435723914,
+    "optimization_interpretation": "Both validation and fixed training probes continue falling, but both are higher for the transformer. Nonzero group gradients/updates and no late clipping support a rate-scale probe; they do not establish the cause of the gap.",
+    "overfit": false,
+    "time_interpretation": "Transformer learning time is about20% lower in both seeds. Equal-step and measured-time results answer different questions; no fixed-wall-budget or RL/strength claim."
+  },
+  "kind": "strong9_completed_comparison_intervention_review",
+  "next_intervention": "learning_rate_only",
+  "peak_learning_rate": 0.0015,
+  "preceding_conclusion_sha256": "ab3b44ad04ea533c81ebb31d9de0b22fcc408ef385710a5e8c1a8ec43d6c397f",
+  "reviewed_evidence": [
+    "all17 full validation points per seed/model",
+    "all17 fixed training-probe points per seed/model",
+    "both co-primary populations and endpoint/last-three gains",
+    "warmup/early/last512 gradient clipping and group gradient/update norms",
+    "phase/opponent cohort decompositions; descriptive only",
+    "exact paired draw/population audits and checkpoint replicas"
+  ],
+  "status": "completed"
+}

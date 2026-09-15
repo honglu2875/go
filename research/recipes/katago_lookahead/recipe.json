@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "KataGo Lookahead state and boundary qualification",
+  "hypothesis": "Functional JAX slow weights, counters and epoch boundaries match executed original trainer statements and survive exact fresh-process continuation.",
+  "requires_native": false
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "strong9_lr_continuation_decision_qualification",
+  "status": "passed",
+  "created": 1789479323.7858398,
+  "operator_sha256": "b0f30e6a29e558ab972a3aabbd928035d7dada61bacef738c61072818f708779",
+  "checks": [
+    "exact threshold accepted",
+    "endpoint below threshold prevents confirmation",
+    "family endpoint below threshold prevents confirmation",
+    "tail regression prevents confirmation",
+    "sustained overfit prevents confirmation",
+    "false screen flag rejected",
+    "wrong source rejected",
+    "nonfinite gain rejected",
+    "missing primary rejected",
+    "wrong stage rejected"
+  ],
+  "scope": "Synthetic decision cases only; no experimental learning result."
+}
