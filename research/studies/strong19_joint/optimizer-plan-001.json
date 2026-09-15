@@ -1,0 +1,36 @@
+{
+  "kind": "joint_optimizer_preparation",
+  "created": 1789455158.5638914,
+  "parent_optimizer_sha256": "9a01c84001577f729c30a551954de388633ace255a81927896c7bdb497a3cfd9",
+  "parent_inference_archive_sha256": "9e731c56a0dee15b45badc762a0cb3867ca44e2928eaa9e001c545c895da58ff",
+  "scope": "Qualify an AdamW optimizer fixture, global joint updates, bounded-vs-materialized update agreement, and optimizer-state continuation before full-size TPU memory/latency tests. This does not register the 19x19 learning optimizer or infer the published KataGo Muon schedule.",
+  "fixture_optimizer": {
+    "learning_rate": 0.001,
+    "end_learning_rate": 0.0003,
+    "warmup_steps": 2,
+    "horizon_steps": 8,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "epsilon": 1e-08,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0
+  },
+  "fixture_value_coefficient": 0.7,
+  "numerical_gates": {
+    "loss_atol": 1e-05,
+    "loss_rtol": 0.001,
+    "gradient_atol": 1e-05,
+    "gradient_rtol": 0.001,
+    "parameter_atol": 3e-06,
+    "parameter_rtol": 1e-05,
+    "whole_update_relative_l2": 0.003
+  },
+  "required": [
+    "Same precomputed-gradient AdamW update as previous qualified policy optimizer",
+    "Complete small CNN/transformer updates agree across bounded and materialized encoder paths",
+    "Four-device unequal-count updates match unsplit global population",
+    "Empty global batches and nonfinite updates preserve parameters and all optimizer state",
+    "Checkpoint parameter/moment/step round-trip and continued updates match a fresh process",
+    "Reject altered configuration, source identity, shape or missing optimizer state"
+  ]
+}

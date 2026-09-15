@@ -1,0 +1,11 @@
+{
+  "plan_sha256": "a6c7845fd7e0d051894826db38fb1b621cfb239ccc83b0a9f1f69f97e47a3a5d",
+  "created": 1789459101.236084,
+  "destination": {
+    "node_sha256": "3e5d0901602e61838b7cd081d8590aad33f9cd1f4cc379b7160df3e741dac17b",
+    "files": 54,
+    "bytes": 4969566646,
+    "path": "/dev/shm/go9x9-release-v1/publish",
+    "status": "passed"
+  }
+}

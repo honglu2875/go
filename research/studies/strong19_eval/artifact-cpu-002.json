@@ -1,0 +1,13 @@
+{
+  "created": 1789465300.2950218,
+  "kind": "joint_parameter_artifact_cpu_qualification",
+  "log_sha256": "f826f4f0b30a63dd321d78252a1f05e73f54dd437181bd25e6ae54465f71ab43",
+  "scope": "Original artifact checks plus explicit feature-provider compatibility evidence; model arithmetic qualification is separate.",
+  "seconds": 0.5652716949989554,
+  "source_sha256": {
+    "packages/gozero/src/gozero/joint_artifacts.py": "4b7f8769fbb59d97de2075fad27d7d7111911312cec130c5f2a1defe21102fc0",
+    "tests/test_joint_artifacts.py": "e308c760620a4042d06d56a31931c64370482d88579b22d446984689ee8696b0"
+  },
+  "status": "passed",
+  "tests": 8
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "joint_bounded_evaluation_plan",
+  "created": 1789457138.980571,
+  "parent_qualification": {
+    "path": "research/studies/strong19_joint/optimizer-cpu-001.json",
+    "sha256": "8a5ee4bac0c16555acea397ca9012b21f154ab59343efdaa566581f964824f20"
+  },
+  "provenance": {
+    "path": "research/studies/strong19_train/provenance-001.json",
+    "sha256": "fc53e7ae3b2ecf4f9b4cf0d6dbbeefdcfd216af3fd9353042c68b8a9022d391d"
+  },
+  "output_atol": 1e-05,
+  "output_rtol": 0.001,
+  "chunks": [
+    1,
+    3,
+    32
+  ],
+  "dtype": "float32",
+  "required": [
+    "Complete policy, value logits and signed values match the qualified main path",
+    "No future/other-game leakage",
+    "Policy CE and signed-value MSE match independent NumPy means, including fractional family mass",
+    "Four-device unequal-count global totals match unsplit",
+    "Empty global population has finite zero totals"
+  ],
+  "scope": "Validation memory preparation, no change to the running larger9 comparison or new learning registration"
+}

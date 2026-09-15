@@ -1,0 +1,85 @@
+{
+  "checkpoint_every": 2,
+  "dataset": {
+    "bucket_probabilities": [
+      0.8,
+      0.2
+    ],
+    "buckets": [
+      512,
+      1536
+    ],
+    "manifest_sha256": "da627b1968dbb353acbf3b630a9feb84cf30080957a5660c8bc4125917fbe0ae",
+    "path": "/dev/shm/gozero-datasets/joint19-execution-001",
+    "warmup_buckets": [
+      512,
+      1536
+    ]
+  },
+  "eval_every": 2,
+  "evaluation": {
+    "games_per_bucket": 2,
+    "run_test": false,
+    "training_probe_games": 4
+  },
+  "expected_devices": 4,
+  "expected_processes": 1,
+  "kind": "fixed_joint_learning",
+  "learner": {
+    "augmentation": "d4",
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "end_learning_rate": 0.0003,
+    "epsilon": 1e-08,
+    "games_per_host": 4,
+    "learning_rate": 0.001,
+    "max_grad_norm": 1.0,
+    "warmup_steps": 2,
+    "weight_decay": 0.01
+  },
+  "log_every": 1,
+  "model": {
+    "architecture": "causal_visual_policy",
+    "attention_backend": "xla",
+    "connector_channels": 4,
+    "dtype": "float32",
+    "encoder_attention_blocks": 1,
+    "encoder_attention_heads": 2,
+    "encoder_attention_mlp_hidden": 24,
+    "encoder_blocks": 2,
+    "encoder_expansion": 2,
+    "encoder_layer_scale": 0.1,
+    "encoder_passes": 2,
+    "encoder_rematerialize": true,
+    "encoder_rope_theta": 10000.0,
+    "encoder_width": 16,
+    "first_pass_aux_weight": 0.25,
+    "heads": 2,
+    "kv_heads": 1,
+    "layers": 2,
+    "max_board_size": 19,
+    "max_positions": 1536,
+    "mlp_hidden": 24,
+    "norm_epsilon": 1e-06,
+    "policy_context_dim": 4,
+    "policy_spatial_bias": true,
+    "rematerialize": true,
+    "rope_theta": 10000.0,
+    "width": 16
+  },
+  "platform": "cpu",
+  "schema_version": 1,
+  "seed": 91312427,
+  "steps": 4,
+  "training": {
+    "chunk_frames": 16,
+    "optimizer": "adamw",
+    "path": "bounded",
+    "purpose": "qualification",
+    "value_weight": 0.7
+  },
+  "value_model": {
+    "hidden": 7,
+    "spatial_channels": 5
+  }
+}

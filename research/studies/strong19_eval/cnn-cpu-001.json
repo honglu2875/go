@@ -1,0 +1,21 @@
+{
+  "expected_devices": 4,
+  "expected_processes": 1,
+  "feature_binary": {
+    "path": ".gozero/build/katago-v7-stream-001/feature_stream",
+    "sha256": "f2fd5e4b00ba3daa76fd5f2f67c09f37f65bafb9a20d8be972f47b172c526676"
+  },
+  "kind": "joint_trained_inference_qualification",
+  "native": {
+    "all_30_rust_source_and_lock_files_match_workspace": true,
+    "binary_sha256": "b31e2be3a16e720a93dc0d4900a712ee558ed59999ff25ed06519e56eb4ab394",
+    "receipt": ".gozero/native/7527dae25b6dac79bb6396ce5bc570eb53ac33088c31f357ffb88ced46805f3c/receipt.json",
+    "receipt_sha256": "d1360629cb1ebcde270057253fb53ef4e76cd1fd7e0284c8b91684694fac19e1"
+  },
+  "platform": "cpu",
+  "training_result": {
+    "path": "research/studies/strong19_train/harness-real19-cpu-001/cnn/full/artifacts/result.json",
+    "sha256": "c1123822863666b90159129d5242357407463106a623d6c463650000f555e6e7"
+  },
+  "training_snapshot": "f906ff4dced2bdc19b80a0dc55a36deb495692fffc37b14c051ce2d7c2265b74"
+}

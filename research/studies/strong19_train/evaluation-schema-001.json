@@ -1,0 +1,1419 @@
+{
+  "kind": "joint_bounded_validation_abstract_qualification",
+  "status": "passed",
+  "created": 1789457987.8431818,
+  "seconds": 1.9658832979912404,
+  "qualification_sha256": "c9a623d527b7da1eacf8cf4abba8810326b0d12b16c610cc02991804ff7fb4c0",
+  "reference_sha256": "3c25f4957d2c14c2b5b0580a500baaaf5dc17a8a1b0fd0b00095472ea4567724",
+  "operator_sha256": "fd745f249494ff1ddb891ae90cc3b7a013bce3b671a760ca5bc14a33da9305d1",
+  "cases": [
+    {
+      "architecture": "cnn",
+      "positions": 128,
+      "local_sequences": 8,
+      "chunk_frames": 32,
+      "reference": {
+        "matrix_flops": {
+          "convolutions": 170580879081472,
+          "outside_splash_matrices": 3252944896
+        },
+        "total_matrix_flops": 170584132026368,
+        "splash_calls": [],
+        "primitive_occurrences": {
+          "iota": 33,
+          "broadcast_in_dim": 16659,
+          "lt": 1,
+          "reshape": 8,
+          "jit": 8107,
+          "convert_element_type": 17157,
+          "pad": 2,
+          "scan": 33,
+          "remat2": 480,
+          "slice": 36,
+          "conv_general_dilated": 8132,
+          "dot_general": 453,
+          "add": 39637,
+          "mul": 34062,
+          "rsqrt": 1280,
+          "custom_jvp_call": 8102,
+          "max": 8521,
+          "sub": 8942,
+          "ne": 8102,
+          "abs": 8102,
+          "neg": 8102,
+          "exp": 8103,
+          "log1p": 8102,
+          "select_n": 8105,
+          "tanh": 8102,
+          "reduce_sum": 838,
+          "div": 839,
+          "reduce_max": 418,
+          "sqrt": 418,
+          "concatenate": 419,
+          "integer_pow": 1,
+          "gt": 1,
+          "stop_gradient": 1,
+          "squeeze": 2
+        }
+      },
+      "bounded": {
+        "matrix_flops": {
+          "convolutions": 170580879081472,
+          "outside_splash_matrices": 3252944896
+        },
+        "total_matrix_flops": 170584132026368,
+        "splash_calls": [],
+        "primitive_occurrences": {
+          "reshape": 42,
+          "jit": 8324,
+          "convert_element_type": 17188,
+          "pad": 2,
+          "scan": 33,
+          "slice": 160,
+          "conv_general_dilated": 8256,
+          "dot_general": 608,
+          "broadcast_in_dim": 17062,
+          "add": 40288,
+          "iota": 33,
+          "remat2": 448,
+          "mul": 34496,
+          "rsqrt": 1280,
+          "custom_jvp_call": 8288,
+          "max": 8800,
+          "sub": 9376,
+          "ne": 8288,
+          "abs": 8288,
+          "neg": 8288,
+          "exp": 8320,
+          "log1p": 8288,
+          "select_n": 8322,
+          "tanh": 8288,
+          "reduce_sum": 1024,
+          "div": 1056,
+          "reduce_max": 480,
+          "sqrt": 480,
+          "concatenate": 512,
+          "integer_pow": 32,
+          "gt": 32,
+          "stop_gradient": 32,
+          "squeeze": 64,
+          "lt": 1
+        }
+      },
+      "reference_largest_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            32,
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 1135607808
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            1024,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 1135607808
+        },
+        {
+          "primitive": "div",
+          "shape": [
+            1024,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 1135607808
+        },
+        {
+          "primitive": "add",
+          "shape": [
+            1024,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 1135607808
+        },
+        {
+          "primitive": "mul",
+          "shape": [
+            1024,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 1135607808
+        }
+      ],
+      "bounded_largest_arrays": [
+        {
+          "primitive": "conv_general_dilated",
+          "shape": [
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 35487744
+        },
+        {
+          "primitive": "add",
+          "shape": [
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 35487744
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 35487744
+        },
+        {
+          "primitive": "remat2",
+          "shape": [
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 35487744
+        },
+        {
+          "primitive": "mul",
+          "shape": [
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 35487744
+        }
+      ]
+    },
+    {
+      "architecture": "cnn",
+      "positions": 512,
+      "local_sequences": 8,
+      "chunk_frames": 32,
+      "reference": {
+        "matrix_flops": {
+          "convolutions": 682323516325888,
+          "outside_splash_matrices": 13011779584
+        },
+        "total_matrix_flops": 682336528105472,
+        "splash_calls": [],
+        "primitive_occurrences": {
+          "iota": 129,
+          "broadcast_in_dim": 66579,
+          "lt": 1,
+          "reshape": 8,
+          "jit": 32395,
+          "convert_element_type": 68613,
+          "pad": 2,
+          "scan": 129,
+          "remat2": 1920,
+          "slice": 132,
+          "conv_general_dilated": 32516,
+          "dot_general": 1797,
+          "add": 158485,
+          "mul": 136206,
+          "rsqrt": 5120,
+          "custom_jvp_call": 32390,
+          "max": 34057,
+          "sub": 35726,
+          "ne": 32390,
+          "abs": 32390,
+          "neg": 32390,
+          "exp": 32391,
+          "log1p": 32390,
+          "select_n": 32393,
+          "tanh": 32390,
+          "reduce_sum": 3334,
+          "div": 3335,
+          "reduce_max": 1666,
+          "sqrt": 1666,
+          "concatenate": 1667,
+          "integer_pow": 1,
+          "gt": 1,
+          "stop_gradient": 1,
+          "squeeze": 2
+        }
+      },
+      "bounded": {
+        "matrix_flops": {
+          "convolutions": 682323516325888,
+          "outside_splash_matrices": 13011779584
+        },
+        "total_matrix_flops": 682336528105472,
+        "splash_calls": [],
+        "primitive_occurrences": {
+          "reshape": 138,
+          "jit": 33284,
+          "convert_element_type": 68740,
+          "pad": 2,
+          "scan": 129,
+          "slice": 640,
+          "conv_general_dilated": 33024,
+          "dot_general": 2432,
+          "broadcast_in_dim": 68230,
+          "add": 161152,
+          "iota": 129,
+          "remat2": 1792,
+          "mul": 137984,
+          "rsqrt": 5120,
+          "custom_jvp_call": 33152,
+          "max": 35200,
+          "sub": 37504,
+          "ne": 33152,
+          "abs": 33152,
+          "neg": 33152,
+          "exp": 33280,
+          "log1p": 33152,
+          "select_n": 33282,
+          "tanh": 33152,
+          "reduce_sum": 4096,
+          "div": 4224,
+          "reduce_max": 1920,
+          "sqrt": 1920,
+          "concatenate": 2048,
+          "integer_pow": 128,
+          "gt": 128,
+          "stop_gradient": 128,
+          "squeeze": 256,
+          "lt": 1
+        }
+      },
+      "reference_largest_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            128,
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 4542431232
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            4096,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 4542431232
+        },
+        {
+          "primitive": "div",
+          "shape": [
+            4096,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 4542431232
+        },
+        {
+          "primitive": "add",
+          "shape": [
+            4096,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 4542431232
+        },
+        {
+          "primitive": "mul",
+          "shape": [
+            4096,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 4542431232
+        }
+      ],
+      "bounded_largest_arrays": [
+        {
+          "primitive": "reshape",
+          "shape": [
+            4096,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 130121728
+        },
+        {
+          "primitive": "jit",
+          "shape": [
+            4096,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 130121728
+        },
+        {
+          "primitive": "pad",
+          "shape": [
+            4096,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 130121728
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            128,
+            32,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 130121728
+        },
+        {
+          "primitive": "conv_general_dilated",
+          "shape": [
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 35487744
+        }
+      ]
+    },
+    {
+      "architecture": "cnn",
+      "positions": 1536,
+      "local_sequences": 8,
+      "chunk_frames": 32,
+      "reference": {
+        "matrix_flops": {
+          "convolutions": 2046970548977664,
+          "outside_splash_matrices": 39035338752
+        },
+        "total_matrix_flops": 2047009584316416,
+        "splash_calls": [],
+        "primitive_occurrences": {
+          "iota": 385,
+          "broadcast_in_dim": 199699,
+          "lt": 1,
+          "reshape": 8,
+          "jit": 97163,
+          "convert_element_type": 205829,
+          "pad": 2,
+          "scan": 385,
+          "remat2": 5760,
+          "slice": 388,
+          "conv_general_dilated": 97540,
+          "dot_general": 5381,
+          "add": 475413,
+          "mul": 408590,
+          "rsqrt": 15360,
+          "custom_jvp_call": 97158,
+          "max": 102153,
+          "sub": 107150,
+          "ne": 97158,
+          "abs": 97158,
+          "neg": 97158,
+          "exp": 97159,
+          "log1p": 97158,
+          "select_n": 97161,
+          "tanh": 97158,
+          "reduce_sum": 9990,
+          "div": 9991,
+          "reduce_max": 4994,
+          "sqrt": 4994,
+          "concatenate": 4995,
+          "integer_pow": 1,
+          "gt": 1,
+          "stop_gradient": 1,
+          "squeeze": 2
+        }
+      },
+      "bounded": {
+        "matrix_flops": {
+          "convolutions": 2046970548977664,
+          "outside_splash_matrices": 39035338752
+        },
+        "total_matrix_flops": 2047009584316416,
+        "splash_calls": [],
+        "primitive_occurrences": {
+          "reshape": 394,
+          "jit": 99844,
+          "convert_element_type": 206212,
+          "pad": 2,
+          "scan": 385,
+          "slice": 1920,
+          "conv_general_dilated": 99072,
+          "dot_general": 7296,
+          "broadcast_in_dim": 204678,
+          "add": 483456,
+          "iota": 385,
+          "remat2": 5376,
+          "mul": 413952,
+          "rsqrt": 15360,
+          "custom_jvp_call": 99456,
+          "max": 105600,
+          "sub": 112512,
+          "ne": 99456,
+          "abs": 99456,
+          "neg": 99456,
+          "exp": 99840,
+          "log1p": 99456,
+          "select_n": 99842,
+          "tanh": 99456,
+          "reduce_sum": 12288,
+          "div": 12672,
+          "reduce_max": 5760,
+          "sqrt": 5760,
+          "concatenate": 6144,
+          "integer_pow": 384,
+          "gt": 384,
+          "stop_gradient": 384,
+          "squeeze": 768,
+          "lt": 1
+        }
+      },
+      "reference_largest_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            384,
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 13627293696
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            12288,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 13627293696
+        },
+        {
+          "primitive": "div",
+          "shape": [
+            12288,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 13627293696
+        },
+        {
+          "primitive": "add",
+          "shape": [
+            12288,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 13627293696
+        },
+        {
+          "primitive": "mul",
+          "shape": [
+            12288,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 13627293696
+        }
+      ],
+      "bounded_largest_arrays": [
+        {
+          "primitive": "reshape",
+          "shape": [
+            12288,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 390365184
+        },
+        {
+          "primitive": "jit",
+          "shape": [
+            12288,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 390365184
+        },
+        {
+          "primitive": "pad",
+          "shape": [
+            12288,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 390365184
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            384,
+            32,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 390365184
+        },
+        {
+          "primitive": "conv_general_dilated",
+          "shape": [
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 35487744
+        }
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "positions": 128,
+      "local_sequences": 8,
+      "chunk_frames": 32,
+      "reference": {
+        "matrix_flops": {
+          "convolutions": 316834578432,
+          "outside_splash_matrices": 171251905200128,
+          "splash_fwd": 115964116992
+        },
+        "total_matrix_flops": 171684703895552,
+        "splash_calls": [
+          {
+            "name": "splash_mha_fwd_no_residuals",
+            "multiplicity": 18,
+            "q_shape": [
+              8,
+              12,
+              512,
+              64
+            ],
+            "square_tile": 512,
+            "active_blocks_per_head": 1,
+            "observation_stride": 0,
+            "matrix_products_per_block": 2,
+            "tile_body_jaxpr_flops": 67108864,
+            "dense_mac_flops": 115964116992
+          }
+        ],
+        "primitive_occurrences": {
+          "iota": 73,
+          "broadcast_in_dim": 701,
+          "lt": 5,
+          "reshape": 194,
+          "convert_element_type": 1034,
+          "conv_general_dilated": 41,
+          "add": 584,
+          "reduce_sum": 163,
+          "div": 242,
+          "sub": 137,
+          "mul": 953,
+          "rsqrt": 96,
+          "integer_pow": 41,
+          "tanh": 42,
+          "scan": 11,
+          "remat2": 66,
+          "dot_general": 270,
+          "neg": 53,
+          "pow": 52,
+          "slice": 227,
+          "cos": 136,
+          "sin": 136,
+          "stack": 68,
+          "concatenate": 19,
+          "reduce_max": 9,
+          "max": 10,
+          "stop_gradient": 9,
+          "exp": 10,
+          "transpose": 81,
+          "jit": 103,
+          "logistic": 26,
+          "select_n": 8,
+          "gather": 3,
+          "squeeze": 40,
+          "pad": 54,
+          "custom_vjp_call": 18,
+          "pallas_call": 18,
+          "custom_jvp_call": 1,
+          "ne": 1,
+          "abs": 1,
+          "log1p": 1
+        }
+      },
+      "bounded": {
+        "matrix_flops": {
+          "convolutions": 316834578432,
+          "outside_splash_matrices": 171251905200128,
+          "splash_fwd": 115964116992
+        },
+        "total_matrix_flops": 171684703895552,
+        "splash_calls": [
+          {
+            "name": "splash_mha_fwd_no_residuals",
+            "multiplicity": 18,
+            "q_shape": [
+              8,
+              12,
+              512,
+              64
+            ],
+            "square_tile": 512,
+            "active_blocks_per_head": 1,
+            "observation_stride": 0,
+            "matrix_products_per_block": 2,
+            "tile_body_jaxpr_flops": 67108864,
+            "dense_mac_flops": 115964116992
+          }
+        ],
+        "primitive_occurrences": {
+          "reshape": 3304,
+          "jit": 353,
+          "convert_element_type": 18458,
+          "pad": 56,
+          "scan": 322,
+          "broadcast_in_dim": 16509,
+          "conv_general_dilated": 1312,
+          "add": 13852,
+          "reduce_sum": 4007,
+          "div": 4830,
+          "sub": 3175,
+          "mul": 19119,
+          "rsqrt": 1894,
+          "integer_pow": 1312,
+          "tanh": 1313,
+          "remat2": 1536,
+          "dot_general": 5137,
+          "iota": 1064,
+          "neg": 549,
+          "pow": 548,
+          "slice": 3203,
+          "cos": 2120,
+          "sin": 2120,
+          "stack": 1061,
+          "concatenate": 514,
+          "reduce_max": 257,
+          "max": 258,
+          "stop_gradient": 257,
+          "exp": 258,
+          "transpose": 329,
+          "logistic": 274,
+          "squeeze": 167,
+          "lt": 4,
+          "select_n": 8,
+          "gather": 3,
+          "custom_vjp_call": 18,
+          "pallas_call": 18,
+          "custom_jvp_call": 1,
+          "ne": 1,
+          "abs": 1,
+          "log1p": 1
+        }
+      },
+      "reference_largest_arrays": [
+        {
+          "primitive": "dot_general",
+          "shape": [
+            1024,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 6405537792
+        },
+        {
+          "primitive": "div",
+          "shape": [
+            1024,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 6405537792
+        },
+        {
+          "primitive": "sub",
+          "shape": [
+            1024,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 6405537792
+        },
+        {
+          "primitive": "exp",
+          "shape": [
+            1024,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 6405537792
+        },
+        {
+          "primitive": "dot_general",
+          "shape": [
+            1024,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "float32",
+          "bytes": 4542431232
+        }
+      ],
+      "bounded_largest_arrays": [
+        {
+          "primitive": "dot_general",
+          "shape": [
+            32,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 200173056
+        },
+        {
+          "primitive": "div",
+          "shape": [
+            32,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 200173056
+        },
+        {
+          "primitive": "sub",
+          "shape": [
+            32,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 200173056
+        },
+        {
+          "primitive": "exp",
+          "shape": [
+            32,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 200173056
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            4,
+            5,
+            3072,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 188743680
+        }
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "positions": 512,
+      "local_sequences": 8,
+      "chunk_frames": 32,
+      "reference": {
+        "matrix_flops": {
+          "convolutions": 1267338313728,
+          "outside_splash_matrices": 685007620800512,
+          "splash_fwd": 347892350976
+        },
+        "total_matrix_flops": 686622851465216,
+        "splash_calls": [
+          {
+            "name": "splash_mha_fwd_no_residuals",
+            "multiplicity": 18,
+            "q_shape": [
+              8,
+              12,
+              1024,
+              64
+            ],
+            "square_tile": 512,
+            "active_blocks_per_head": 3,
+            "observation_stride": 0,
+            "matrix_products_per_block": 2,
+            "tile_body_jaxpr_flops": 67108864,
+            "dense_mac_flops": 347892350976
+          }
+        ],
+        "primitive_occurrences": {
+          "iota": 73,
+          "broadcast_in_dim": 701,
+          "lt": 5,
+          "reshape": 194,
+          "convert_element_type": 1034,
+          "conv_general_dilated": 41,
+          "add": 584,
+          "reduce_sum": 163,
+          "div": 242,
+          "sub": 137,
+          "mul": 953,
+          "rsqrt": 96,
+          "integer_pow": 41,
+          "tanh": 42,
+          "scan": 11,
+          "remat2": 66,
+          "dot_general": 270,
+          "neg": 53,
+          "pow": 52,
+          "slice": 209,
+          "cos": 136,
+          "sin": 136,
+          "stack": 68,
+          "concatenate": 19,
+          "reduce_max": 9,
+          "max": 10,
+          "stop_gradient": 9,
+          "exp": 10,
+          "transpose": 81,
+          "jit": 103,
+          "logistic": 26,
+          "select_n": 8,
+          "gather": 3,
+          "squeeze": 40,
+          "pad": 54,
+          "custom_vjp_call": 18,
+          "pallas_call": 18,
+          "custom_jvp_call": 1,
+          "ne": 1,
+          "abs": 1,
+          "log1p": 1
+        }
+      },
+      "bounded": {
+        "matrix_flops": {
+          "convolutions": 1267338313728,
+          "outside_splash_matrices": 685007620800512,
+          "splash_fwd": 347892350976
+        },
+        "total_matrix_flops": 686622851465216,
+        "splash_calls": [
+          {
+            "name": "splash_mha_fwd_no_residuals",
+            "multiplicity": 18,
+            "q_shape": [
+              8,
+              12,
+              1024,
+              64
+            ],
+            "square_tile": 512,
+            "active_blocks_per_head": 3,
+            "observation_stride": 0,
+            "matrix_products_per_block": 2,
+            "tile_body_jaxpr_flops": 67108864,
+            "dense_mac_flops": 347892350976
+          }
+        ],
+        "primitive_occurrences": {
+          "reshape": 12904,
+          "jit": 1121,
+          "convert_element_type": 72410,
+          "pad": 56,
+          "scan": 1282,
+          "broadcast_in_dim": 65469,
+          "conv_general_dilated": 5248,
+          "add": 54940,
+          "reduce_sum": 15911,
+          "div": 19038,
+          "sub": 12583,
+          "mul": 75375,
+          "rsqrt": 7462,
+          "integer_pow": 5248,
+          "tanh": 5249,
+          "remat2": 6144,
+          "dot_general": 20209,
+          "iota": 4136,
+          "neg": 2085,
+          "pow": 2084,
+          "slice": 12401,
+          "cos": 8264,
+          "sin": 8264,
+          "stack": 4133,
+          "concatenate": 2050,
+          "reduce_max": 1025,
+          "max": 1026,
+          "stop_gradient": 1025,
+          "exp": 1026,
+          "transpose": 1097,
+          "logistic": 1042,
+          "squeeze": 551,
+          "lt": 4,
+          "select_n": 8,
+          "gather": 3,
+          "custom_vjp_call": 18,
+          "pallas_call": 18,
+          "custom_jvp_call": 1,
+          "ne": 1,
+          "abs": 1,
+          "log1p": 1
+        }
+      },
+      "reference_largest_arrays": [
+        {
+          "primitive": "dot_general",
+          "shape": [
+            4096,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 25622151168
+        },
+        {
+          "primitive": "div",
+          "shape": [
+            4096,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 25622151168
+        },
+        {
+          "primitive": "sub",
+          "shape": [
+            4096,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 25622151168
+        },
+        {
+          "primitive": "exp",
+          "shape": [
+            4096,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 25622151168
+        },
+        {
+          "primitive": "dot_general",
+          "shape": [
+            4096,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "float32",
+          "bytes": 18169724928
+        }
+      ],
+      "bounded_largest_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            128,
+            32,
+            19,
+            19,
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 378535936
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            4096,
+            19,
+            19,
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 378535936
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            8,
+            512,
+            19,
+            19,
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 378535936
+        },
+        {
+          "primitive": "dot_general",
+          "shape": [
+            32,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 200173056
+        },
+        {
+          "primitive": "div",
+          "shape": [
+            32,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 200173056
+        }
+      ]
+    },
+    {
+      "architecture": "transformer",
+      "positions": 1536,
+      "local_sequences": 8,
+      "chunk_frames": 32,
+      "reference": {
+        "matrix_flops": {
+          "convolutions": 3802014941184,
+          "outside_splash_matrices": 2055022862401536,
+          "splash_fwd": 2435246456832
+        },
+        "total_matrix_flops": 2061260123799552,
+        "splash_calls": [
+          {
+            "name": "splash_mha_fwd_no_residuals",
+            "multiplicity": 18,
+            "q_shape": [
+              8,
+              12,
+              3072,
+              64
+            ],
+            "square_tile": 512,
+            "active_blocks_per_head": 21,
+            "observation_stride": 0,
+            "matrix_products_per_block": 2,
+            "tile_body_jaxpr_flops": 67108864,
+            "dense_mac_flops": 2435246456832
+          }
+        ],
+        "primitive_occurrences": {
+          "iota": 73,
+          "broadcast_in_dim": 701,
+          "lt": 5,
+          "reshape": 194,
+          "convert_element_type": 1034,
+          "conv_general_dilated": 41,
+          "add": 584,
+          "reduce_sum": 163,
+          "div": 242,
+          "sub": 137,
+          "mul": 953,
+          "rsqrt": 96,
+          "integer_pow": 41,
+          "tanh": 42,
+          "scan": 11,
+          "remat2": 66,
+          "dot_general": 270,
+          "neg": 53,
+          "pow": 52,
+          "slice": 209,
+          "cos": 136,
+          "sin": 136,
+          "stack": 68,
+          "concatenate": 19,
+          "reduce_max": 9,
+          "max": 10,
+          "stop_gradient": 9,
+          "exp": 10,
+          "transpose": 81,
+          "jit": 103,
+          "logistic": 26,
+          "select_n": 8,
+          "gather": 3,
+          "squeeze": 40,
+          "pad": 54,
+          "custom_vjp_call": 18,
+          "pallas_call": 18,
+          "custom_jvp_call": 1,
+          "ne": 1,
+          "abs": 1,
+          "log1p": 1
+        }
+      },
+      "bounded": {
+        "matrix_flops": {
+          "convolutions": 3802014941184,
+          "outside_splash_matrices": 2055022862401536,
+          "splash_fwd": 2435246456832
+        },
+        "total_matrix_flops": 2061260123799552,
+        "splash_calls": [
+          {
+            "name": "splash_mha_fwd_no_residuals",
+            "multiplicity": 18,
+            "q_shape": [
+              8,
+              12,
+              3072,
+              64
+            ],
+            "square_tile": 512,
+            "active_blocks_per_head": 21,
+            "observation_stride": 0,
+            "matrix_products_per_block": 2,
+            "tile_body_jaxpr_flops": 67108864,
+            "dense_mac_flops": 2435246456832
+          }
+        ],
+        "primitive_occurrences": {
+          "reshape": 38504,
+          "jit": 3169,
+          "convert_element_type": 216282,
+          "pad": 56,
+          "scan": 3842,
+          "broadcast_in_dim": 196029,
+          "conv_general_dilated": 15744,
+          "add": 164508,
+          "reduce_sum": 47655,
+          "div": 56926,
+          "sub": 37671,
+          "mul": 225391,
+          "rsqrt": 22310,
+          "integer_pow": 15744,
+          "tanh": 15745,
+          "remat2": 18432,
+          "dot_general": 60401,
+          "iota": 12328,
+          "neg": 6181,
+          "pow": 6180,
+          "slice": 36977,
+          "cos": 24648,
+          "sin": 24648,
+          "stack": 12325,
+          "concatenate": 6146,
+          "reduce_max": 3073,
+          "max": 3074,
+          "stop_gradient": 3073,
+          "exp": 3074,
+          "transpose": 3145,
+          "logistic": 3090,
+          "squeeze": 1575,
+          "lt": 4,
+          "select_n": 8,
+          "gather": 3,
+          "custom_vjp_call": 18,
+          "pallas_call": 18,
+          "custom_jvp_call": 1,
+          "ne": 1,
+          "abs": 1,
+          "log1p": 1
+        }
+      },
+      "reference_largest_arrays": [
+        {
+          "primitive": "dot_general",
+          "shape": [
+            12288,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 76866453504
+        },
+        {
+          "primitive": "div",
+          "shape": [
+            12288,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 76866453504
+        },
+        {
+          "primitive": "sub",
+          "shape": [
+            12288,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 76866453504
+        },
+        {
+          "primitive": "exp",
+          "shape": [
+            12288,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 76866453504
+        },
+        {
+          "primitive": "dot_general",
+          "shape": [
+            12288,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "float32",
+          "bytes": 54509174784
+        }
+      ],
+      "bounded_largest_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            384,
+            32,
+            19,
+            19,
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 1135607808
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            12288,
+            19,
+            19,
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 1135607808
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            8,
+            1536,
+            19,
+            19,
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 1135607808
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            12288,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 390365184
+        },
+        {
+          "primitive": "jit",
+          "shape": [
+            12288,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 390365184
+        }
+      ]
+    }
+  ],
+  "scope": "Both full-size 19x19 main policy/value graphs at three history extents. Logical matrix work is unchanged; individual array shapes are not peak-HBM or measured latency. No TPU execution or MFU claim."
+}

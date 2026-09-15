@@ -42,6 +42,8 @@ Relevant starting points:
 - [Readout follow-up results](research/studies/readout_followups/RESULTS.md)
 - [Larger fixed-data comparison](research/studies/strong9_scaling/README.md)
 - [Joint policy/value preparation](research/studies/strong19_joint/README.md)
+- [Joint training and exact continuation checks](research/studies/strong19_train/README.md)
+- [Trained export, serving and KataGo interoperability](research/studies/strong19_eval/README.md)
 - [Native features and cached search inference](research/studies/joint_inference/README.md)
 - [KataGo evaluation](eval/README.md)
 

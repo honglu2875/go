@@ -1,0 +1,16 @@
+{
+  "kind": "joint_checkpoint_closure_cpu_qualification",
+  "status": "passed",
+  "created": 1789460888.066942,
+  "tests_run": 7,
+  "seconds": 0.319,
+  "command": "PYTHONPATH=packages/gozero/src OPENBLAS_NUM_THREADS=1 .venv/bin/python -B -m unittest discover -s tests -p test_joint_resume.py -v",
+  "source_sha256": {
+    "packages/gozero/src/gozero/joint_resume.py": "210d33e1c9e56b9cfa789d34440cb72d0cc4b647ef851853a03f8db1f4a9d0cc",
+    "ops/stage_joint_checkpoint.py": "b7e114915e1fd266b518bba9af1a1528d477e1a3e9b11a92c389ecc2b2703450",
+    "ops/pod_run.py": "dc65df96dd917c2bd84bf6a4344b9c39e3dadf53144b2df40f1eca14d10d6466",
+    "ops/run_host.py": "17a5a49a36d47247d1499134180f634e95a610413178f609124e38e5533b7453",
+    "tests/test_joint_resume.py": "041a889fb77a2e65d168ddbd3bd504eb6d8f26f3891a24c88975271cbcfbdb2b"
+  },
+  "scope": "Regular and RAM owner checkpoint closure, actual checkpoint-reader arguments for four ranks, corruption/missing files/source and path rejection. CLI syntax parsed. Network staging and distributed execution are not qualified by these unit tests."
+}

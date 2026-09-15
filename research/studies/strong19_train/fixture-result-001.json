@@ -1,0 +1,44 @@
+{
+  "all_boards_and_legal_masks_equal": true,
+  "all_loaded_inputs_and_targets_exact": true,
+  "buckets": {
+    "train": {
+      "1536": 2,
+      "512": 8
+    },
+    "validation": {
+      "1536": 1,
+      "512": 8
+    }
+  },
+  "created": 1789460389.930636,
+  "games": 19,
+  "kind": "real19_execution_fixture",
+  "manifest_sha256": "da627b1968dbb353acbf3b630a9feb84cf30080957a5660c8bc4125917fbe0ae",
+  "max_game_moves": 602,
+  "min_game_moves": 2,
+  "original_splits_preserved": true,
+  "packed_array_bytes": 20552525,
+  "plan_sha256": "1bffd0cd508dda7e042503b763d61e288748fc0f64a1a4a5ffb5045dd459e0f2",
+  "populations": {
+    "train": {
+      "games": 10,
+      "positions": 4096
+    },
+    "validation": {
+      "games": 9,
+      "positions": 3896
+    }
+  },
+  "positions": 7992,
+  "qualification_only": true,
+  "scope": "Small complete real19 train/validation execution fixture. No gameplay or training was run by this preparation operator. Not a final learning corpus, architecture comparison or strength result.",
+  "seconds": 10.868489932996454,
+  "source_sha256": {
+    "research/studies/strong19_scaling/qualify_features.py": "37926ea42330c19aa42f8bf42c1eab7d9a48a48d61612c3a15324d145f72e099",
+    "research/studies/strong19_train/prepare_fixture.py": "4d9eb8dc894e882fcd0bc39f3fd7a8e3811d852d09fa429327760770a9012431"
+  },
+  "status": "passed",
+  "target": "/dev/shm/gozero-datasets/joint19-execution-001",
+  "test_targets_read": false
+}

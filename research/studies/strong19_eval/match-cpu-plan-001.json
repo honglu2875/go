@@ -1,0 +1,34 @@
+{
+  "case": "001",
+  "configurations": {
+    "cnn": {
+      "path": "research/studies/strong19_eval/cnn-match-cpu-001.json",
+      "sha256": "ddc75a104e99bc4e85cfbd2f30f342100f67394749b7d6896ef5e53d14aa784d"
+    },
+    "transformer": {
+      "path": "research/studies/strong19_eval/transformer-match-cpu-001.json",
+      "sha256": "e1ada2b9d1649d17f2cd05652f5a99b4499266330871f8b709296c8e139fd85f"
+    }
+  },
+  "cpu_placement": [
+    0,
+    1
+  ],
+  "created": 1789467075.599389,
+  "kind": "joint_trained_katago_cpu_plan",
+  "operator_sha256": "9eaa67fa99885c5ad0212d85101a77ac665a9de78e3d537b6211c7e8b3bfe2a6",
+  "python": ".gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "requirements": [
+    "Two colors per trained model against pinned real KataGo",
+    "Exact board agreement after every move",
+    "Terminal scores checked; move caps stay unresolved",
+    "Independent full JAX checks at prespecified native history lengths",
+    "No new training, no competing TPU use, no architecture strength claim"
+  ],
+  "rpc_qualification_sha256": "3999c18bd230e63cedbefb95ef438c8a274a29db2e9d3d1b71778d95d564948f",
+  "snapshots": {
+    "cnn": "df9230b131ece933045c383ebce14392898a243fea132594506a44276a507adc",
+    "transformer": "24744dae65baa9390e1e4d092dd3c33f3295c7d11259301ac5d90eeccaa247d6"
+  },
+  "trained_inference_qualification_sha256": "11ae55c1b62f71db8d66d20efd55f7d67de6b039de7db051a6a38a43bad18bd4"
+}

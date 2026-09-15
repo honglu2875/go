@@ -1,0 +1,23 @@
+{
+  "candidate": "research/recipes/strong19_eval/candidate-transformer-001.json",
+  "candidate_cpus": [
+    0
+  ],
+  "game_timeout_seconds": 900,
+  "katago_build": "eval/katago_build.json",
+  "katago_config": "research/recipes/strong19_eval/katago-early19-001.cfg",
+  "katago_cpus": [
+    1
+  ],
+  "katago_max_visits": 2,
+  "katago_weights": "research/recipes/strong19_eval/katago-early19-001.json",
+  "kind": "joint_v7_paired_katago_matches",
+  "native_receipt": ".gozero/native/7527dae25b6dac79bb6396ce5bc570eb53ac33088c31f357ffb88ced46805f3c/receipt.json",
+  "openings": [
+    []
+  ],
+  "purpose": "qualification",
+  "schema_version": 1,
+  "search": "research/recipes/strong19_eval/search-transformer-match-001.json",
+  "seed_prefix": "joint19-execution-001"
+}

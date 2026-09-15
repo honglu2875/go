@@ -1,0 +1,22 @@
+{
+  "kind": "completed_release_mirror_post_relocation_audit",
+  "status": "passed",
+  "created": 1789459236.7049038,
+  "plan_sha256": "a6c7845fd7e0d051894826db38fb1b621cfb239ccc83b0a9f1f69f97e47a3a5d",
+  "receipt_sha256": "f9df8da8f7e658faafd5b9b5ca64a7c4697cd4e66e9058cad691316c4f2f7f60",
+  "retirement_journal_sha256": "a859ecaed459549349cda2b5aca7946ec244b22518e35e6f5e7e7cc9f28170fd",
+  "locator_sha256": "164f795b403be5bd75f762c408425e19fb18e5107a92c47c634ab071bc0c7bb6",
+  "remote": {
+    "files": 54,
+    "bytes": 4969566646,
+    "status": "passed"
+  },
+  "source_planned_paths_absent": 62,
+  "owner_shm_free": 84603330560,
+  "operator_exit": {
+    "returncode": 1,
+    "phase": "locator metadata after verified copy and source retirement",
+    "error": "ValueError: relative receipt path was passed to relative_to with an absolute workspace root"
+  },
+  "repair": "Published the missing locator after verifying the successful receipt, exact retirement journal, every source absence and all destination file hashes. No copy or deletion was repeated."
+}

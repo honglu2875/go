@@ -1,0 +1,13 @@
+{
+  "created": 1789466110.413955,
+  "kind": "joint_parameter_artifact_cpu_qualification",
+  "log_sha256": "c2d9799a6271de3184ac2e37a126e1e45d0cf129641372d5210e20b12ba60f80",
+  "scope": "Artifact checks plus feature-provider compatibility and frozen candidate identity/context binding; GTP/model execution is separate.",
+  "seconds": 0.6154656489961781,
+  "source_sha256": {
+    "packages/gozero/src/gozero/joint_artifacts.py": "ab5bc3590eef3640f2ff6beef56790aff075e7943f65a97a3a10d6107f130431",
+    "tests/test_joint_artifacts.py": "a2afaecac14d6b01e3ddaaad061e9d426c57f75b6b7100b176b1b0a68c2002a8"
+  },
+  "status": "passed",
+  "tests": 9
+}

@@ -1,0 +1,460 @@
+{
+  "kind": "joint_full_size_optimizer_schema_qualification",
+  "status": "passed",
+  "created": 1789456519.8621776,
+  "seconds": 9.89733159201569,
+  "qualification_sha256": "8a5ee4bac0c16555acea397ca9012b21f154ab59343efdaa566581f964824f20",
+  "reference_sha256": "3c25f4957d2c14c2b5b0580a500baaaf5dc17a8a1b0fd0b00095472ea4567724",
+  "plan_sha256": "626dee82dda80b1538e8e72f285ff4b9a8beb2e325eb37a8a4cdc4eb5c54b7aa",
+  "operator_sha256": "b9b093566ada0de572031674ae9c212fc18d08e405b4330642ffa9317c9fa758",
+  "jax_version": "0.11.1",
+  "cases": [
+    {
+      "architecture": "cnn",
+      "local_sequences": 8,
+      "positions": 128,
+      "chunk_frames": 32,
+      "master_parameter_bytes": 932883480,
+      "optimizer_state_bytes": 1865766964,
+      "input_batch_bytes": 34469920,
+      "parameter_leaves": 111,
+      "metric_scalars": 32,
+      "largest_update_graph_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            13,
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 461340672
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            13,
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "bfloat16",
+          "bytes": 230670336
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            13,
+            32,
+            19,
+            19,
+            384
+          ],
+          "dtype": "float32",
+          "bytes": 230670336
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            13,
+            32,
+            19,
+            19,
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 153780224
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            13,
+            32,
+            19,
+            19,
+            384
+          ],
+          "dtype": "bfloat16",
+          "bytes": 115335168
+        }
+      ],
+      "trace_seconds": 1.9612424089864362
+    },
+    {
+      "architecture": "cnn",
+      "local_sequences": 8,
+      "positions": 512,
+      "chunk_frames": 32,
+      "master_parameter_bytes": 932883480,
+      "optimizer_state_bytes": 1865766964,
+      "input_batch_bytes": 137879584,
+      "parameter_leaves": 111,
+      "metric_scalars": 32,
+      "largest_update_graph_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            13,
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 461340672
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            13,
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "bfloat16",
+          "bytes": 230670336
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            13,
+            32,
+            19,
+            19,
+            384
+          ],
+          "dtype": "float32",
+          "bytes": 230670336
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            13,
+            32,
+            19,
+            19,
+            256
+          ],
+          "dtype": "float32",
+          "bytes": 153780224
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            4096,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 130121728
+        }
+      ],
+      "trace_seconds": 1.678388714994071
+    },
+    {
+      "architecture": "cnn",
+      "local_sequences": 8,
+      "positions": 1536,
+      "chunk_frames": 32,
+      "master_parameter_bytes": 932883480,
+      "optimizer_state_bytes": 1865766964,
+      "input_batch_bytes": 413638688,
+      "parameter_leaves": 111,
+      "metric_scalars": 32,
+      "largest_update_graph_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            13,
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 461340672
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            12288,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 390365184
+        },
+        {
+          "primitive": "jit",
+          "shape": [
+            12288,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 390365184
+        },
+        {
+          "primitive": "pad",
+          "shape": [
+            12288,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 390365184
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            384,
+            32,
+            19,
+            19,
+            22
+          ],
+          "dtype": "float32",
+          "bytes": 390365184
+        }
+      ],
+      "trace_seconds": 1.7497063989867456
+    },
+    {
+      "architecture": "transformer",
+      "local_sequences": 8,
+      "positions": 128,
+      "chunk_frames": 32,
+      "master_parameter_bytes": 928046160,
+      "optimizer_state_bytes": 1856092324,
+      "input_batch_bytes": 34469920,
+      "parameter_leaves": 53,
+      "metric_scalars": 26,
+      "largest_update_graph_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            4,
+            5,
+            32,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "float32",
+          "bytes": 2839019520
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            4,
+            5,
+            32,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "bfloat16",
+          "bytes": 1419509760
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            4,
+            32,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 800692224
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            4,
+            5,
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 709754880
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            5,
+            32,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "float32",
+          "bytes": 709754880
+        }
+      ],
+      "trace_seconds": 1.6131916320009623
+    },
+    {
+      "architecture": "transformer",
+      "local_sequences": 8,
+      "positions": 512,
+      "chunk_frames": 32,
+      "master_parameter_bytes": 928046160,
+      "optimizer_state_bytes": 1856092324,
+      "input_batch_bytes": 137879584,
+      "parameter_leaves": 53,
+      "metric_scalars": 26,
+      "largest_update_graph_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            4,
+            5,
+            32,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "float32",
+          "bytes": 2839019520
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            4,
+            5,
+            32,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "bfloat16",
+          "bytes": 1419509760
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            4,
+            32,
+            12,
+            361,
+            361
+          ],
+          "dtype": "float32",
+          "bytes": 800692224
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            4,
+            5,
+            32,
+            19,
+            19,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 709754880
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            5,
+            32,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "float32",
+          "bytes": 709754880
+        }
+      ],
+      "trace_seconds": 1.082992464012932
+    },
+    {
+      "architecture": "transformer",
+      "local_sequences": 8,
+      "positions": 1536,
+      "chunk_frames": 32,
+      "master_parameter_bytes": 928046160,
+      "optimizer_state_bytes": 1856092324,
+      "input_batch_bytes": 413638688,
+      "parameter_leaves": 53,
+      "metric_scalars": 26,
+      "largest_update_graph_arrays": [
+        {
+          "primitive": "scan",
+          "shape": [
+            4,
+            5,
+            32,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "float32",
+          "bytes": 2839019520
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            18,
+            8,
+            4608,
+            768
+          ],
+          "dtype": "float32",
+          "bytes": 2038431744
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            4,
+            5,
+            32,
+            19,
+            19,
+            3072
+          ],
+          "dtype": "bfloat16",
+          "bytes": 1419509760
+        },
+        {
+          "primitive": "scan",
+          "shape": [
+            384,
+            32,
+            19,
+            19,
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 1135607808
+        },
+        {
+          "primitive": "reshape",
+          "shape": [
+            12288,
+            19,
+            19,
+            64
+          ],
+          "dtype": "float32",
+          "bytes": 1135607808
+        }
+      ],
+      "trace_seconds": 1.4757967960031237
+    }
+  ],
+  "scope": "Abstract complete optimizer updates for qualified full-size 19x19 models, local batch 8 and histories through 1536. Includes both moments, master parameters, finite-update gate and scalar diagnostics. No full arrays allocated, no TPU compilation/execution, peak-HBM, latency or MFU measurement. Replication and transient buffer overlap are not summed into a peak-memory estimate."
+}

@@ -1,0 +1,125 @@
+{
+  "created": 1789461550.3843474,
+  "hosts": [
+    {
+      "files": 22,
+      "host": 0,
+      "roles": [
+        {
+          "arrays": 4,
+          "role": 0,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 1,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 2,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 3,
+          "state_exact": true
+        }
+      ],
+      "snapshot": "d439c3f25ac7cd20257177c3c88df376fb4326451608c2a8bc039c999df5e5f2",
+      "status": "passed"
+    },
+    {
+      "files": 22,
+      "host": 1,
+      "roles": [
+        {
+          "arrays": 4,
+          "role": 0,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 1,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 2,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 3,
+          "state_exact": true
+        }
+      ],
+      "snapshot": "d439c3f25ac7cd20257177c3c88df376fb4326451608c2a8bc039c999df5e5f2",
+      "status": "passed"
+    },
+    {
+      "files": 22,
+      "host": 2,
+      "roles": [
+        {
+          "arrays": 4,
+          "role": 0,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 1,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 2,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 3,
+          "state_exact": true
+        }
+      ],
+      "snapshot": "d439c3f25ac7cd20257177c3c88df376fb4326451608c2a8bc039c999df5e5f2",
+      "status": "passed"
+    },
+    {
+      "files": 22,
+      "host": 3,
+      "roles": [
+        {
+          "arrays": 4,
+          "role": 0,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 1,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 2,
+          "state_exact": true
+        },
+        {
+          "arrays": 0,
+          "role": 3,
+          "state_exact": true
+        }
+      ],
+      "snapshot": "d439c3f25ac7cd20257177c3c88df376fb4326451608c2a8bc039c999df5e5f2",
+      "status": "passed"
+    }
+  ],
+  "kind": "joint_resume_four_host_transfer_qualification",
+  "plan_sha256": "1210a5a769025f1ad0681bde6bd89b136bbd9d42cc94868900131fee01bcc37e",
+  "scope": "Synthetic four-rank checkpoint transport and exact reader validation only. No model training, JAX distributed initialization or TPU allocation.",
+  "seconds": 7.985116408002796,
+  "snapshot": "d439c3f25ac7cd20257177c3c88df376fb4326451608c2a8bc039c999df5e5f2",
+  "staging_receipt_sha256": "bfcaea5d7e4bf1d66b85f53b072ff17f4fc069885d1a0a75ecc6704044292202",
+  "status": "passed",
+  "tpu_jobs_launched": false
+}

@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Fixed-data joint policy/value training harness",
+  "hypothesis": "Integrate qualified joint backbones and memory paths with complete-history sampling, regular policy/value validation and exact checkpoint continuation. Scientific learning settings require their own registration.",
+  "requires_native": false
+}

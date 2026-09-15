@@ -1,0 +1,11 @@
+{
+  "kind": "owned_joint_trainer_clone",
+  "created": 1789457432.2299807,
+  "parent_snapshot": "23c9dfe60c0a4c1c376e74f634b568fd1c85f3b13a0c7fef9172859ad38a40fb",
+  "parent_train_sha256": "e9dacf3da9c59e1b4235627ade469aff271bf95c971cc16af1cc3b6487f82bd5",
+  "generated_files": {
+    "train_joint.py": "0269d0678bebb29ed425e7cd8b7c1c98d2b37cb1061a2d26b9bd6874e60152b0",
+    "policy_config.py": "152846974b7f3d3072c27ecc5cabb328ee5b5f6f54a086e0b138fcc61405d696"
+  },
+  "scope": "New joint integration over qualified checkpoint/sampling transport; requires complete CPU and TPU continuation qualification"
+}

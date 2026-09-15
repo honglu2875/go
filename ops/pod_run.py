@@ -225,6 +225,20 @@ def main():
             with (attempt / 'match_inputs.log').open('w') as log:
                 subprocess.run(argv, stdout=log, stderr=subprocess.STDOUT, check=True, timeout=args.prepare_timeout)
         if args.resume_attempt is not None:
+            if config.get('kind') == 'fixed_joint_learning':
+                phase = 'resume_inputs'
+                if args.controller_cpu_list is None:
+                    raise ValueError('Joint resume requires explicit staging CPU placement')
+                if remote != root:
+                    raise ValueError('Joint checkpoint paths require identical artifact roots')
+                group = root / 'runs' / args.resume_attempt / 'rank-0/artifacts/checkpoints' / ('turn-%09d.group.json' % args.resume_turn)
+                argv = [sys.executable, '-B', str(snapshot / 'ops/stage_joint_checkpoint.py'),
+                    '--workspace-root', str(root), '--manifest', str(group),
+                    '--expected-sha256', hashlib.sha256(group.read_bytes()).hexdigest(),
+                    '--cpu-list', args.controller_cpu_list,
+                    '--output', str(attempt / 'resume_inputs')]
+                with (attempt / 'resume_inputs.log').open('w') as log:
+                    subprocess.run(argv, stdout=log, stderr=subprocess.STDOUT, check=True, timeout=args.prepare_timeout)
             if config.get('kind') in ('visual_causal_distillation', 'fixed_policy_learning'):
                 phase = 'resume_inputs'
                 if remote != root:

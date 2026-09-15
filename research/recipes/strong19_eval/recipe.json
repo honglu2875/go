@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Trained joint policy/value evaluation",
+  "hypothesis": "Preserve trained main parameter bytes and exact policy/value predictions through portable export, native V7 cached scoring and Rust MCTS.",
+  "requires_native": false
+}

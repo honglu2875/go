@@ -1,22 +1,18 @@
-This source publication captures an ongoing research program. It is not a live
-deployment status page.
+The larger fixed-data 9×9 comparison is still in progress. Its first paired
+seed favors CNN on same-update policy KL; the transformer uses less measured
+learning time. The registered second seed must close before selecting the
+next learning-rate-only intervention. See ../research/studies/strong9_scaling/
+and ../research/studies/strong9_followups/.
 
-The small fixed-data readout screens are complete. Increasing contextual rank,
-adding nonlinear scoring and adding a spatial query refinement did not pass
-their registered improvement screens; the rank-64 contextual readout remains
-the parent for the larger comparison. See
-`research/studies/readout_followups/RESULTS.md`.
+Small complete joint policy/value models now pass CPU training, exact
+fresh-process continuation, portable trained-parameter export, cached inference,
+concurrent GTP/Rust search checks, and real KataGo interoperability. The separate
+19×19 execution fixture and tiny trained weights do not establish learnability,
+playing strength or full-size TPU performance. See
+../research/studies/strong19_train/ and ../research/studies/strong19_eval/.
 
-The larger fixed-data CNN/transformer comparison is registered for two paired
-seeds with full validation and a fixed training probe. A conclusion requires
-both primary KL metrics and the registered consistency checks; see
-`research/studies/strong9_scaling/CONCLUSION.md`.
-
-Joint policy/value models, bounded training activation paths and cached native
-search integration have passed their documented CPU preparation checks.
-Full-size accelerator memory/optimizer qualification, 19×19 learning and
-real playing-strength evaluation remain open. CPU and abstract tracing results
-do not establish accelerator throughput or MFU improvements.
-
-Private job identifiers, operational receipts, machine inventories and live
-schedules are deliberately outside this Git publication.
+Full-size joint training and serving, the scientific 19×19 configuration,
+selected-checkpoint strength evaluation and sustained production RL remain open.
+Private live process, deployment and storage records are excluded from this
+source publication. Configure a new deployment and freeze new source snapshots
+before running these tools.

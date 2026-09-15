@@ -1,0 +1,34 @@
+{
+  "artifact_qualification_sha256": "531002b907a842856f7d39d5cf5adada721b4064abb253f5d17d4f8d6f00e4c2",
+  "configurations": {
+    "cnn": {
+      "path": "research/studies/strong19_eval/cnn-cpu-001.json",
+      "sha256": "d00a40319e70fbf9e65f6fea0c68b31e72c1055438b52c16582c23060187ce12"
+    },
+    "transformer": {
+      "path": "research/studies/strong19_eval/transformer-cpu-001.json",
+      "sha256": "64db63b7d3f97701f6fcb24700185d9b6b4d75d3cc92a0377a1d9003f3529c89"
+    }
+  },
+  "cpu_placement": [
+    0,
+    1
+  ],
+  "created": 1789464893.8782678,
+  "kind": "trained_joint_inference_cpu_plan",
+  "operator_sha256": "7e6430b2e6d62adb80ae01a9af21d4975460898b8030fe16a880d3c850c5d2d0",
+  "python": ".gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "required": [
+    "Exact main FP32 parameter export/read-back with helper/optimizer omission",
+    "Policy and value parameters demonstrably changed from initialization",
+    "Loaded full predictions match the complete original checkpoint",
+    "Cached predictions and prefix/branch reuse match full outputs",
+    "Actual Rust MCTS histories, boards, value perspective and work counts match"
+  ],
+  "scope": "Small trained19 execution qualification only; no TPU job or scientific learning/strength claim.",
+  "snapshots": {
+    "cnn": "19d7e4d1db608a1c81412420e85dd6a23bc3614b5a84881e6122f68ecf21bf23",
+    "transformer": "71b136a169e91bb5b5b0a557f6392e7e401951f90d7157a04f1a6b8177529734"
+  },
+  "training_harness_sha256": "3c666756d4beb671a6f4bf7796838934ac1c3f60c363158eccbf2835cad8e6f0"
+}

@@ -1,0 +1,70 @@
+{
+  "checkpoint_every": 2,
+  "dataset": {
+    "bucket_probabilities": [
+      0.8,
+      0.2
+    ],
+    "buckets": [
+      512,
+      1536
+    ],
+    "manifest_sha256": "da627b1968dbb353acbf3b630a9feb84cf30080957a5660c8bc4125917fbe0ae",
+    "path": "/dev/shm/gozero-datasets/joint19-execution-001",
+    "warmup_buckets": [
+      512,
+      1536
+    ]
+  },
+  "eval_every": 2,
+  "evaluation": {
+    "games_per_bucket": 2,
+    "run_test": false,
+    "training_probe_games": 4
+  },
+  "expected_devices": 4,
+  "expected_processes": 1,
+  "kind": "fixed_joint_learning",
+  "learner": {
+    "augmentation": "d4",
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "end_learning_rate": 0.0003,
+    "epsilon": 1e-08,
+    "games_per_host": 4,
+    "learning_rate": 0.001,
+    "max_grad_norm": 1.0,
+    "warmup_steps": 2,
+    "weight_decay": 0.01
+  },
+  "log_every": 1,
+  "model": {
+    "architecture": "katago_nested_policy",
+    "dtype": "float32",
+    "gpool_width": 2,
+    "layers": 2,
+    "max_board_size": 19,
+    "max_positions": 1536,
+    "microbatch": 8,
+    "mid_width": 8,
+    "norm_epsilon": 0.0001,
+    "policy_width": 4,
+    "rematerialize": true,
+    "width": 16
+  },
+  "platform": "cpu",
+  "schema_version": 1,
+  "seed": 91312427,
+  "steps": 4,
+  "training": {
+    "chunk_frames": 16,
+    "optimizer": "adamw",
+    "path": "bounded",
+    "purpose": "qualification",
+    "value_weight": 0.7
+  },
+  "value_model": {
+    "hidden": 7,
+    "spatial_channels": 5
+  }
+}

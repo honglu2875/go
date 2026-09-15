@@ -1,0 +1,16 @@
+{
+  "created": 1789462950.2267444,
+  "kind": "joint_recovery_pod_regression",
+  "log_sha256": "bb872c49a43c2cd5c583ce3a21cd9d85a8d8460cef3d1fb45b0852653eee4fe5",
+  "returncode": 0,
+  "scope": "Existing controller/rank supervision, cancellation, source isolation, invocation quoting and bounded timeout regression. Does not run TPU or multi-process model continuation.",
+  "seconds": 2.1194702519860584,
+  "source_sha256": {
+    "ops/pod_run.py": "c474d645ebd7ecf6263388a51a36141b371f115f1726e4cb266055dbe465d93c",
+    "ops/run_host.py": "17a5a49a36d47247d1499134180f634e95a610413178f609124e38e5533b7453",
+    "packages/gozero/src/gozero/joint_resume.py": "210d33e1c9e56b9cfa789d34440cb72d0cc4b647ef851853a03f8db1f4a9d0cc",
+    "packages/gozero/src/gozero/pod.py": "37d60781531fe78af290c78f9aa190c20d0ff3eea5c3b2caac2c3f80eb7346e6",
+    "tests/test_pod.py": "483d66adfd175ff63e37cd4f494c8531f61c4f13c792e432bdfa105fca9fe433"
+  },
+  "status": "passed"
+}

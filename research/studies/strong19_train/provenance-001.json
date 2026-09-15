@@ -1,0 +1,80 @@
+{
+  "kind": "joint_training_harness_provenance",
+  "created": 1789456930.9047227,
+  "parent_bundle_sha256": "ac4afd1143b2ba4f7f20c3b4af998fcc0fb27f4a132f3bad20dff002e5d656a9",
+  "files": {
+    "adamw.py": {
+      "source": "research/recipes/strong19_joint/adamw.py",
+      "sha256": "f940987ad3b4a54ecabe18c284f4dfc51159bc84d66df467e98d34ef5968c374"
+    },
+    "learner.py": {
+      "source": "research/recipes/strong19_joint/learner.py",
+      "sha256": "659dcef33f7a4ca27346969425c509feb85b50431227ccd3ceafb984a5734aa9"
+    },
+    "optimizer_io.py": {
+      "source": "research/recipes/strong19_joint/optimizer_io.py",
+      "sha256": "a50990bd5bc69efd3ca030d99ecd732c4b173e71c30417e706508adb149e3221"
+    },
+    "joint.py": {
+      "source": "research/recipes/strong19_joint/joint.py",
+      "sha256": "56d1ad999aebd3982d62103f86628310f4ea6c7926bd0fb5a5e77673314194d9"
+    },
+    "policy_model.py": {
+      "source": "research/recipes/strong19_joint/policy_model.py",
+      "sha256": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2"
+    },
+    "katago.py": {
+      "source": "research/recipes/strong19_joint/katago.py",
+      "sha256": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29"
+    },
+    "causal.py": {
+      "source": "research/recipes/strong19_joint/causal.py",
+      "sha256": "4a4dcd9984b7c2c402c0a07efc4b3495e47c39f566354f41f903dc518484aecc"
+    },
+    "encoder.py": {
+      "source": "research/recipes/strong19_joint/encoder.py",
+      "sha256": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad"
+    },
+    "heads.py": {
+      "source": "research/recipes/strong19_joint/heads.py",
+      "sha256": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa"
+    },
+    "compact.py": {
+      "source": "research/recipes/strong19_joint/compact.py",
+      "sha256": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1"
+    },
+    "cnn_chunks.py": {
+      "source": "research/recipes/strong19_joint/cnn_chunks.py",
+      "sha256": "9f5ea9909b52058ba793110ae54c5277df67666bebf1ba41d6e518f0059e359d"
+    },
+    "draft_model.py": {
+      "source": "research/recipes/strong19_joint/draft_model.py",
+      "sha256": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3"
+    },
+    "draft_mask.py": {
+      "source": "research/recipes/strong19_joint/draft_mask.py",
+      "sha256": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44"
+    },
+    "observation_attention.py": {
+      "source": "research/recipes/strong19_joint/observation_attention.py",
+      "sha256": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544"
+    },
+    "spatial_readout.py": {
+      "source": "research/recipes/strong19_joint/spatial_readout.py",
+      "sha256": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9"
+    },
+    "inference.py": {
+      "source": "research/recipes/strong19_joint/inference.py",
+      "sha256": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2"
+    },
+    "KATAGO_LICENSE.md": {
+      "source": "research/recipes/strong19_joint/KATAGO_LICENSE.md",
+      "sha256": "ead22455d923920cd152546d89e4f415c94d6b580aa109fda3b57a69c57c32e0"
+    },
+    "training_probe.py": {
+      "source": "research/recipes/strong9_policy/training_probe.py",
+      "sha256": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5"
+    }
+  },
+  "scope": "Exact qualified model/optimizer clone plus deterministic training-probe helper. Trainer and bounded main-only evaluation are new integration work; this is not a learning registration."
+}

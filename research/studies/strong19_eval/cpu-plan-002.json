@@ -1,0 +1,38 @@
+{
+  "amendment": "Offline feature_worker and live feature_stream are distinct protocol wrappers. Require a pinned compatibility receipt: same verified KataGo core objects and all7992 fixture spatial/global/legal rows bit-exact. Numerical model modules, trained checkpoints and inference cases are unchanged.",
+  "artifact_qualification_sha256": "9d79818f246f5d2c82443a1d83d59fad3b02a973fc52ed5d0e6e2f80e020ed3a",
+  "case": "002",
+  "configurations": {
+    "cnn": {
+      "path": "research/studies/strong19_eval/cnn-cpu-002.json",
+      "sha256": "f3330e88abd1dc3b14d285e727b77c7921bbe1bd4f480e552c3a5efa3a378990"
+    },
+    "transformer": {
+      "path": "research/studies/strong19_eval/transformer-cpu-002.json",
+      "sha256": "739266302228ad938ebfe653a77841e7131b96ee8e943d10a15ba4a975823e56"
+    }
+  },
+  "cpu_placement": [
+    0,
+    1
+  ],
+  "created": 1789465352.1307933,
+  "feature_equivalence_sha256": "199b37fc95593f8e8907220e2e63a3337430639df86a09b42d226364bfc70f41",
+  "kind": "trained_joint_inference_cpu_plan",
+  "operator_sha256": "851a18afc9a4e307d6f89110d9dd871fa4841e3acfa35960102269f29c1ebe4b",
+  "preceding_failure_sha256": "d4e27de9f8258d6e3beb8f996948604fcdcd05bc95034f2c6bbb5ee5645cf934",
+  "python": ".gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "required": [
+    "Exact main FP32 parameter export/read-back with helper/optimizer omission",
+    "Policy and value parameters demonstrably changed from initialization",
+    "Loaded full predictions match the complete original checkpoint",
+    "Cached predictions and prefix/branch reuse match full outputs",
+    "Actual Rust MCTS histories, boards, value perspective and work counts match"
+  ],
+  "scope": "Small trained19 execution qualification only; no TPU job or scientific learning/strength claim.",
+  "snapshots": {
+    "cnn": "9f0c19fd619d80b36200510583220d75042f14b87419b7c1445e2f0c4c2db016",
+    "transformer": "1057a5b5a052ed72c3168b1da62a60b5eae84709aca6c1fb8b4978d735f7178a"
+  },
+  "training_harness_sha256": "3c666756d4beb671a6f4bf7796838934ac1c3f60c363158eccbf2835cad8e6f0"
+}

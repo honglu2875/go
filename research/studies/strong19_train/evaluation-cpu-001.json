@@ -1,0 +1,89 @@
+{
+  "kind": "joint_bounded_evaluation_cpu_qualification",
+  "status": "passed",
+  "created": 1789457231.7960665,
+  "seconds": 69.15136957800132,
+  "tests_run": 5,
+  "test_names": [
+    "__main__.Qualification.test_01_complete_outputs_match_across_chunk_boundaries",
+    "__main__.Qualification.test_02_future_and_other_games_do_not_change_current_outputs",
+    "__main__.Qualification.test_03_policy_value_means_match_independent_numpy",
+    "__main__.Qualification.test_04_four_device_global_totals_match_unsplit",
+    "__main__.Qualification.test_05_empty_global_population_has_finite_zero_totals"
+  ],
+  "failures": [],
+  "source_sha256": {
+    "research/recipes/strong19_train/training_probe.py": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5",
+    "research/recipes/strong19_train/learner.py": "659dcef33f7a4ca27346969425c509feb85b50431227ccd3ceafb984a5734aa9",
+    "research/recipes/strong19_train/evaluation.py": "af1681b4b28271173b383ab7843d4529d0f521a22e53f5d7b66339096795633f",
+    "research/recipes/strong19_train/cnn_chunks.py": "9f5ea9909b52058ba793110ae54c5277df67666bebf1ba41d6e518f0059e359d",
+    "research/recipes/strong19_train/policy_model.py": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2",
+    "research/recipes/strong19_train/inference.py": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2",
+    "research/recipes/strong19_train/adamw.py": "f940987ad3b4a54ecabe18c284f4dfc51159bc84d66df467e98d34ef5968c374",
+    "research/recipes/strong19_train/causal.py": "4a4dcd9984b7c2c402c0a07efc4b3495e47c39f566354f41f903dc518484aecc",
+    "research/recipes/strong19_train/draft_model.py": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3",
+    "research/recipes/strong19_train/encoder.py": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad",
+    "research/recipes/strong19_train/joint.py": "56d1ad999aebd3982d62103f86628310f4ea6c7926bd0fb5a5e77673314194d9",
+    "research/recipes/strong19_train/qualify_evaluation.py": "376bb447beffda37a5c41fe0d614a89b7a132c9746c8ca5c0a45aa4180a6b08a",
+    "research/recipes/strong19_train/compact.py": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1",
+    "research/recipes/strong19_train/spatial_readout.py": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9",
+    "research/recipes/strong19_train/katago.py": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29",
+    "research/recipes/strong19_train/optimizer_io.py": "a50990bd5bc69efd3ca030d99ecd732c4b173e71c30417e706508adb149e3221",
+    "research/recipes/strong19_train/heads.py": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa",
+    "research/recipes/strong19_train/observation_attention.py": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544",
+    "research/recipes/strong19_train/draft_mask.py": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44"
+  },
+  "source_stable": true,
+  "plan_sha256": "6ea7e2233cf501ef7ca860ff48c75da924bdfc5c7065126514f08d3a3e1643aa",
+  "observations": [
+    {
+      "check": "main_outputs",
+      "model": "cnn",
+      "chunk_frames": 1,
+      "max_abs": 1.0803341865539551e-07
+    },
+    {
+      "check": "main_outputs",
+      "model": "cnn",
+      "chunk_frames": 3,
+      "max_abs": 5.960464477539063e-08
+    },
+    {
+      "check": "main_outputs",
+      "model": "cnn",
+      "chunk_frames": 32,
+      "max_abs": 0.0
+    },
+    {
+      "check": "main_outputs",
+      "model": "transformer",
+      "chunk_frames": 1,
+      "max_abs": 1.430511474609375e-06
+    },
+    {
+      "check": "main_outputs",
+      "model": "transformer",
+      "chunk_frames": 3,
+      "max_abs": 1.3113021850585938e-06
+    },
+    {
+      "check": "main_outputs",
+      "model": "transformer",
+      "chunk_frames": 32,
+      "max_abs": 0.0
+    },
+    {
+      "check": "global_totals",
+      "model": "cnn",
+      "max_abs": 1.9073486328125e-06
+    },
+    {
+      "check": "global_totals",
+      "model": "transformer",
+      "max_abs": 1.1444091796875e-05
+    }
+  ],
+  "jax_version": "0.11.1",
+  "device_count": 4,
+  "scope": "Small complete models on exact real 19x19 prefixes; float32 reference outputs, no future/game leakage, independent policy/value means and four-device global totals. Not full-size TPU BF16 equivalence or measured memory."
+}

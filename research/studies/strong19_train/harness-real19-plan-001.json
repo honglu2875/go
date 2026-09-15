@@ -1,0 +1,19 @@
+{
+  "created": 1789460949.4733806,
+  "dataset_sha256": "da627b1968dbb353acbf3b630a9feb84cf30080957a5660c8bc4125917fbe0ae",
+  "fixture_receipt_sha256": "6aca3ff6b6caa907db3866b9c00b84bb0a2cb427f7db291ac393bd4f6a4c9275",
+  "kind": "real19_joint_training_cpu_continuation_plan",
+  "operator_sha256": "88389cf66f567a2610430c98f2a23218432b492dd0276b115be626459751e2a9",
+  "required": [
+    "All parameters, Adam moments and step match exactly after4 versus fresh2+2 updates",
+    "All game/bucket/D4 RNGs, exposure counters and validation/probe/overfit histories match",
+    "Independent sampling replay matches both architectures",
+    "Complete19x19 games, including pass and512/1536 padded runtime shapes; no truncation"
+  ],
+  "run_directory": "research/studies/strong19_train/harness-real19-cpu-001",
+  "scope": "Small complete models on the real19 execution fixture, four simulated CPU devices in one process. Not architecture learnability, full-size TPU memory/latency, or multi-process recovery.",
+  "snapshots": {
+    "cnn": "f906ff4dced2bdc19b80a0dc55a36deb495692fffc37b14c051ce2d7c2265b74",
+    "transformer": "4c62fa3a71f1b0b5a64578ec8828e38142e36012adce4f45490c95007043b480"
+  }
+}

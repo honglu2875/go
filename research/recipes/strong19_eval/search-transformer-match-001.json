@@ -1,0 +1,15 @@
+{
+  "cache_positions": 1536,
+  "cpuct": 1.5,
+  "fpu_reduction": null,
+  "gumbel": null,
+  "kind": "joint_v7_mcts_inference",
+  "komi": 7.5,
+  "max_game_moves": 1444,
+  "max_search_edges": 10000,
+  "native_receipt_sha256": "d1360629cb1ebcde270057253fb53ef4e76cd1fd7e0284c8b91684694fac19e1",
+  "schema_version": 1,
+  "scoring": "pass_alive_area",
+  "simulations": 2,
+  "size": 19
+}

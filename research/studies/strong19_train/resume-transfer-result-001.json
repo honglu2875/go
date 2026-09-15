@@ -1,0 +1,10 @@
+{
+  "kind": "joint_resume_four_host_transfer_qualification",
+  "status": "failed",
+  "created": 1789461522.9421964,
+  "snapshot": "36f73f02c88b779942bcfdcac04083d739f679718fff13a6b6198ad83ec11b7e",
+  "staging_receipt_sha256": "66c1948e44ae951bed7d61491f929796de983d90b22e5dfa6e655051737c2aaa",
+  "phase": "rsync payload staging",
+  "reason": "Rsync attempted to preserve timestamps on implied system parent directories; unprivileged peers returned exit23. Host0 verified its existing copy. No TPU job launched.",
+  "correction": "Preserve file permissions while disabling implied-directory attributes and directory timestamp updates. A new case and snapshot will qualify the correction."
+}

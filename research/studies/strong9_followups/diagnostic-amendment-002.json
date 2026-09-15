@@ -1,0 +1,10 @@
+{
+  "kind": "matched_prefix_diagnostic_amendment",
+  "created": 1789461994.7130709,
+  "status": "corrected_before_result",
+  "previous_operator_sha256": "d8387d507b52751ae74d9a8338b182c8d5735befc1e2d9c90c9ecf8916bcb7b7",
+  "operator_sha256": "587d386619a5460870ea35b64477b59583ac0a713af30730bac8992606025c01",
+  "reason": "The complete transformer log adds one registered draft_heldout row at4096. The main-prefix reader previously rejected it as an extra evaluation; no endpoint diagnostic was published. V2 explicitly validates and separately accounts for this auxiliary row while retaining all required main validation/probe checks.",
+  "original_operator_preserved": true,
+  "training_changed": false
+}

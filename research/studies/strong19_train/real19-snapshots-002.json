@@ -1,0 +1,61 @@
+{
+  "configurations": {
+    "tpu_cnn": {
+      "path": "research/studies/strong19_train/tpu-real19-cnn-qualification-001.json",
+      "sha256": "d12c41107d79141a4f9f434396998f177bf9bbc28e9c1a6af3be75f8dacd2837"
+    },
+    "tpu_transformer": {
+      "path": "research/studies/strong19_train/tpu-real19-transformer-qualification-001.json",
+      "sha256": "1b32810506856d36376e2cc645122aa0ae0ce9489ec0ad7598c26017773129be"
+    }
+  },
+  "created": 1789463159.0872693,
+  "evidence": {
+    "harness-real19-result-001.json": "3c666756d4beb671a6f4bf7796838934ac1c3f60c363158eccbf2835cad8e6f0",
+    "pod-regression-001.json": "080e1409af14e7d87d51fe959eeb39113978d41eab1f5fd0e16b87839eab15b8",
+    "resume-transfer-result-002.json": "c4267a77d11ab664f77e57c44ba122757a6cd74ca62a49a1d4ffe91706c83d91"
+  },
+  "kind": "real19_execution_preparation_snapshots",
+  "operator_sha256": "fcda88ee28536f91c6f922d4b33f7cebf7d0e858860189ad1779b86e94715420",
+  "recipe_sources_equal_to_real19_cpu_harness": {
+    "research/recipes/strong19_train/adamw.py": "f940987ad3b4a54ecabe18c284f4dfc51159bc84d66df467e98d34ef5968c374",
+    "research/recipes/strong19_train/causal.py": "4a4dcd9984b7c2c402c0a07efc4b3495e47c39f566354f41f903dc518484aecc",
+    "research/recipes/strong19_train/cnn_chunks.py": "9f5ea9909b52058ba793110ae54c5277df67666bebf1ba41d6e518f0059e359d",
+    "research/recipes/strong19_train/compact.py": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1",
+    "research/recipes/strong19_train/draft_mask.py": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44",
+    "research/recipes/strong19_train/draft_model.py": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3",
+    "research/recipes/strong19_train/encoder.py": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad",
+    "research/recipes/strong19_train/evaluation.py": "af1681b4b28271173b383ab7843d4529d0f521a22e53f5d7b66339096795633f",
+    "research/recipes/strong19_train/heads.py": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa",
+    "research/recipes/strong19_train/host_metrics.py": "d020e95421bbdeba8174f235bb453ca841d52440763daeda13a8f8bd19a06144",
+    "research/recipes/strong19_train/inference.py": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2",
+    "research/recipes/strong19_train/joint.py": "56d1ad999aebd3982d62103f86628310f4ea6c7926bd0fb5a5e77673314194d9",
+    "research/recipes/strong19_train/katago.py": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29",
+    "research/recipes/strong19_train/learner.py": "659dcef33f7a4ca27346969425c509feb85b50431227ccd3ceafb984a5734aa9",
+    "research/recipes/strong19_train/observation_attention.py": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544",
+    "research/recipes/strong19_train/optimizer_io.py": "a50990bd5bc69efd3ca030d99ecd732c4b173e71c30417e706508adb149e3221",
+    "research/recipes/strong19_train/policy_config.py": "152846974b7f3d3072c27ecc5cabb328ee5b5f6f54a086e0b138fcc61405d696",
+    "research/recipes/strong19_train/policy_model.py": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2",
+    "research/recipes/strong19_train/qualify_evaluation.py": "376bb447beffda37a5c41fe0d614a89b7a132c9746c8ca5c0a45aa4180a6b08a",
+    "research/recipes/strong19_train/spatial_readout.py": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9",
+    "research/recipes/strong19_train/train.py": "6f20ec5741187e40ef4cc2fd4428fca4451849ab9620680591a7d02693157335",
+    "research/recipes/strong19_train/train_config.py": "9859c7d5366beaba19bcd77cf240f5359cb939a5c7f464bc481e644ca9250790",
+    "research/recipes/strong19_train/train_joint.py": "6507b1c5dff68c6b573d2e09911466f159d56cdeb379ba1bc99d6e7837a64c19",
+    "research/recipes/strong19_train/training_probe.py": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5"
+  },
+  "recovery_sources_equal_to_four_host_transfer": {
+    "ops/pod_run.py": "c474d645ebd7ecf6263388a51a36141b371f115f1726e4cb266055dbe465d93c",
+    "ops/run_host.py": "17a5a49a36d47247d1499134180f634e95a610413178f609124e38e5533b7453",
+    "ops/stage_joint_checkpoint.py": "eca4e4ac6e022854c3eef6b14fe294091d730b438e498b7515b57c72b5c17b94",
+    "packages/gozero/src/gozero/checkpoints.py": "dc7ec467a9cda2a981bc508b3f1f7c6d3df46d5a14fa37257f76dc868f7b037a",
+    "packages/gozero/src/gozero/joint_resume.py": "210d33e1c9e56b9cfa789d34440cb72d0cc4b647ef851853a03f8db1f4a9d0cc"
+  },
+  "scope": "Qualification sources only. Numerical recipe matches the passed real19 CPU continuation harness; recovery matches the passed four-host transport case. No full-size TPU memory, timing or distributed continuation claim. The registered larger9 comparison retains accelerator ownership; scientific19 data and hyperparameters remain unregistered.",
+  "snapshots": {
+    "tpu_cnn": "3d33b7b8e3d255de5acad1e63c81513f8b89421bc654d3a0e1989e4cdc62b194",
+    "tpu_transformer": "62f1b2506cc1b8f22bdc7824a4bc5c2b549a0c3a2bf644f9bb049ce0e86e94a3"
+  },
+  "status": "prepared",
+  "supersedes_preparation_sha256": "b860cd15dca963623df2957feeae68de9ccc4fb5eabd6a0cc137fb58bab5928b",
+  "tpu_jobs_launched": false
+}

@@ -1,0 +1,20 @@
+{
+  "input_contract": {
+    "feature_version": 7,
+    "feature_worker_binary_sha256": "a380059106a3a7dd92f24e75805777f29855452785679273a7e80a3f1d84bab9",
+    "global_channels": 19,
+    "komi": 7.5,
+    "size": 19,
+    "spatial_channels": 22
+  },
+  "kind": "joint_policy_value_candidate",
+  "max_positions": 1536,
+  "network_version": 4,
+  "parameters": {
+    "manifest_sha256": "d7d2c2493cca691a01f5f3f8d17ae677d8813f637539c6087e778dde7c45c6c6",
+    "path": "research/studies/strong19_eval/cpu-002/cnn/candidate"
+  },
+  "schema_version": 1,
+  "training_purpose": "qualification",
+  "training_snapshot": "f906ff4dced2bdc19b80a0dc55a36deb495692fffc37b14c051ce2d7c2265b74"
+}

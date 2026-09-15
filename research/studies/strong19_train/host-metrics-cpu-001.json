@@ -1,0 +1,56 @@
+{
+  "kind": "joint_host_metric_normalization_qualification",
+  "status": "passed",
+  "created": 1789457903.0437882,
+  "seconds": 1.7083534240082372,
+  "cases": [
+    {
+      "counts": [
+        4,
+        3,
+        1,
+        0
+      ],
+      "metric_count": 167,
+      "max_abs": 7.947285984855057e-08
+    },
+    {
+      "counts": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "metric_count": 167,
+      "max_abs": 2.459380752384277e-07
+    },
+    {
+      "counts": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "metric_count": 167,
+      "max_abs": 0.0
+    },
+    {
+      "counts": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "metric_count": 167,
+      "max_abs": 9.458204841550355e-08
+    }
+  ],
+  "rejections": 3,
+  "max_abs": 2.459380752384277e-07,
+  "source_sha256": {
+    "research/studies/strong19_train/qualify_host_metrics.py": "9cf79233daedebe781bf50f332d3dfb204d488601455d0eb3f0a7919076de429",
+    "research/recipes/strong19_train/host_metrics.py": "d020e95421bbdeba8174f235bb453ca841d52440763daeda13a8f8bd19a06144",
+    "research/recipes/strong19_train/evaluation.py": "af1681b4b28271173b383ab7843d4529d0f521a22e53f5d7b66339096795633f"
+  },
+  "scope": "Scalar policy/value population normalization, including fractional family mass and empty groups, against qualified JAX equations. Host normalization dispatches no JAX operations."
+}

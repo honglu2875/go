@@ -82,6 +82,10 @@ def main():
                '--output', str(rank_dir / 'artifacts')]
     if args.resume_attempt is not None:
         checkpoint = args.resume_attempt / ('rank-%d' % host.rank) / 'artifacts/checkpoints' / ('turn-%09d' % args.resume_turn)
+        if read_json(args.snapshot / 'resolved_config.json').get('kind') == 'fixed_joint_learning':
+            from gozero.joint_resume import resume_path
+            checkpoint = resume_path(args.resume_attempt.parent.parent, args.resume_attempt,
+                                     host.rank, args.resume_turn, manifest['snapshot_id'])
         command.extend(['--resume', str(checkpoint)])
     if args.stop_after_turn is not None:
         command.extend(['--stop-after-turn', str(args.stop_after_turn)])

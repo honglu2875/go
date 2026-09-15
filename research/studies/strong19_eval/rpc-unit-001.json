@@ -1,0 +1,14 @@
+{
+  "kind": "joint_single_policy_rpc_unit_qualification",
+  "status": "passed",
+  "created": 1789465619.8041005,
+  "seconds": 0.26457693401607685,
+  "tests": 2,
+  "source_sha256": {
+    "packages/gozero/src/gozero/joint_rpc.py": "4aa72d05d583b70ba407366b199fe9d7d0a92b1d44f74d738d9e7ae48f0ed9f1",
+    "packages/gozero/src/gozero/visual_rpc.py": "7b780141dd97c4cf7d0a424874b9df7c639ff7484f525fde9ac06cdabc8ae71f",
+    "tests/test_joint_rpc.py": "f691022070996eab0c92ef7e371c2680dc17574e11f88ae9346970a26fb7edc7"
+  },
+  "log_sha256": "1d32342945b04421866dff51f9d1481f394361f81126e2b493685704ee00d717",
+  "scope": "Concurrent local Unix clients, exact digest/order/slot transport, separate protocol identity and prediction-shape/value guards. Earlier sandbox bind restriction ran no socket scenario; this execution permits local Unix sockets. Real model/GTP integration is separate."
+}

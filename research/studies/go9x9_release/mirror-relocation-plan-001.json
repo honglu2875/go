@@ -1,0 +1,795 @@
+{
+  "kind": "completed_release_mirror_relocation",
+  "created": 1789458631.9145007,
+  "source": "/dev/shm/go9x9-release-v1/publish",
+  "destination_host": 3,
+  "destination": "/dev/shm/go9x9-release-v1/publish",
+  "stage": ".incoming-release-6a26ffa743f3",
+  "files": {
+    "README.md": {
+      "bytes": 8808,
+      "sha256": "f8f8fe7b27296ad9f1309b941a4e3f8cf0dfdff72796776c56794cbbc7f3ff48"
+    },
+    "SHA256SUMS": {
+      "bytes": 4851,
+      "sha256": "05910a9908a23657cce222a1d41b504fab85c5fdc6c10a46d181275e6cf86d28"
+    },
+    "contract.json": {
+      "bytes": 3908,
+      "sha256": "e12361f4e22429d36c73f90795250a6fb82f70bd46c53a322c55406726c71bd7"
+    },
+    "data/host-0-00000.tar": {
+      "bytes": 276029440,
+      "sha256": "1f82e231a6682e037ceb22149e949026784c0d11895f760d9e9fe47a12fec392"
+    },
+    "data/host-0-00001.tar": {
+      "bytes": 276776960,
+      "sha256": "8326baf604188f1f9dbe6d12a2733bc81061c7b988477d61fc0a461479ac74b9"
+    },
+    "data/host-0-00002.tar": {
+      "bytes": 277893120,
+      "sha256": "7e93b597b3d2762937f720036d5d2ade9a0cb0ae3b028430c7bfeff0d6ef1ea1"
+    },
+    "data/host-0-00003.tar": {
+      "bytes": 278159360,
+      "sha256": "035ba5076534b40a11f39bb1f56e8d499d425851b4eff8ff9371c24e007b4f54"
+    },
+    "data/host-0-00004.tar": {
+      "bytes": 123627520,
+      "sha256": "83476a8f21016d0756ae167a7c3ac6873b084d277e01f77fb8c54c91f945cc86"
+    },
+    "data/host-1-00000.tar": {
+      "bytes": 275998720,
+      "sha256": "c19815efd9b02e6b500f10c4b9264ab351e0044ce2b10c096c300d7e8ac902ee"
+    },
+    "data/host-1-00001.tar": {
+      "bytes": 276797440,
+      "sha256": "60524b60b9766dd6d4dbe9cd7fce57d0fa53cfb0dabcc05e8da0bb0ca2c442e0"
+    },
+    "data/host-1-00002.tar": {
+      "bytes": 277913600,
+      "sha256": "895afe77b8dacb9e565136d7f7fa4cc0fea764b59678a6cf2744775c79eac323"
+    },
+    "data/host-1-00003.tar": {
+      "bytes": 278179840,
+      "sha256": "fc6687c1b3119ea77b2085068500083ca5ca463b3188ba78c8b4ec1061907b9e"
+    },
+    "data/host-1-00004.tar": {
+      "bytes": 121917440,
+      "sha256": "aea51af009804b779b95001ed0550d875574bc00616da0cce149d78fdc4fc466"
+    },
+    "data/host-2-00000.tar": {
+      "bytes": 275988480,
+      "sha256": "59c1e2dcfbf65498cca445aa92dd7edfdf287ace6517dd1964f26265b401c306"
+    },
+    "data/host-2-00001.tar": {
+      "bytes": 276797440,
+      "sha256": "0b627f1d87dbdc661d9593a8fc3ca46ea2219a2b554451c83e5738db42838bd8"
+    },
+    "data/host-2-00002.tar": {
+      "bytes": 277913600,
+      "sha256": "c801da1c0b20a60254bcf1f5227b72eb75a3257a9aff5d102399d9a176c7568c"
+    },
+    "data/host-2-00003.tar": {
+      "bytes": 278179840,
+      "sha256": "22ae56ad7f5eaed4ba0f415ca44e5a126815113ee1b5c3feb159bede1f4266ba"
+    },
+    "data/host-2-00004.tar": {
+      "bytes": 127283200,
+      "sha256": "efe30f623d4d0c321504aa9fc34df7197d9717e0b549352c1997f7d328abf43a"
+    },
+    "data/host-3-00000.tar": {
+      "bytes": 275998720,
+      "sha256": "c5c11eba888f9cf1e9c3d6454afd876775a6d7402e5a70343e710ece45140287"
+    },
+    "data/host-3-00001.tar": {
+      "bytes": 276787200,
+      "sha256": "fbb74103252dbcad03cb368d188d989a8acad87b1b00409c0b05f165b023ff6a"
+    },
+    "data/host-3-00002.tar": {
+      "bytes": 277893120,
+      "sha256": "e1e4f39c9e1fb1ca5799f89ec393a7ef395d3a74d1fc02b0fc550fb112e237cc"
+    },
+    "data/host-3-00003.tar": {
+      "bytes": 278169600,
+      "sha256": "ed7a17842cadddbab9c9d42204c1dff5fecde77d302655714db7909e735d249b"
+    },
+    "data/host-3-00004.tar": {
+      "bytes": 132802560,
+      "sha256": "6ee848b5410362dfa7b9641e8d4f9b48127157266e55d000a1b93d4fbd5ebea3"
+    },
+    "index/host-0.jsonl.gz": {
+      "bytes": 7064572,
+      "sha256": "45406ac68798df5b41fbb4b472a4b0657cef593725c24223bb2540a2126f523e"
+    },
+    "index/host-1.jsonl.gz": {
+      "bytes": 7053193,
+      "sha256": "c949af89004d2984a83a67fca82a6bd187bb8cd344a15526ed5371efb3bd7efa"
+    },
+    "index/host-2.jsonl.gz": {
+      "bytes": 7084028,
+      "sha256": "ce184c5d2bf8668197f2b72f605bbc1e575ad9704d6ce31ff29e7a0910f0a8af"
+    },
+    "index/host-3.jsonl.gz": {
+      "bytes": 7116354,
+      "sha256": "14078b29c658dd8c58044c35223098b8d7a17a05f1c085fc7e0da8b0e59f843f"
+    },
+    "manifest.json": {
+      "bytes": 7616,
+      "sha256": "68b05a2dca33859a9d0b3b9ee89d4ed242c45d427d0e3233c8093c91f3f16096"
+    },
+    "provenance/host-0-audit.json": {
+      "bytes": 2653,
+      "sha256": "8bcd81fe21ff957073b2229add9ff7fd9d526a7c5d4939d4a3ae16cfccd7a4fd"
+    },
+    "provenance/host-0-config.json": {
+      "bytes": 5968,
+      "sha256": "af49e7f2c9689fbe5d4f7698853796aac294cbf497af1cc83a41495a3019494c"
+    },
+    "provenance/host-0-stopped.json": {
+      "bytes": 74,
+      "sha256": "147df138cd4891cc5b9f1edd16a41518174122f362bc37779cd2f838450b8ffa"
+    },
+    "provenance/host-1-audit.json": {
+      "bytes": 2654,
+      "sha256": "d563cbb498fdfd3e40897454b9e8a0f6d321f91d9e9975c84d7d0a98a7b3beff"
+    },
+    "provenance/host-1-config.json": {
+      "bytes": 5968,
+      "sha256": "f87bb03a338162a6797e3dce8c53e425fe70535499abe9846bac102870930ad5"
+    },
+    "provenance/host-1-stopped.json": {
+      "bytes": 75,
+      "sha256": "4ab8e4393b181647355c39ee296e5ec03d4f52325297340a4b6508c23461e19e"
+    },
+    "provenance/host-2-audit.json": {
+      "bytes": 2651,
+      "sha256": "ca6ca6367f128f42bba25aaeb7de053b48bb0d2d8ba27ae306bd95512ec4c35d"
+    },
+    "provenance/host-2-config.json": {
+      "bytes": 5968,
+      "sha256": "5e351406adfd03e5c7bb6da33b8ddb7c38386f2da8f0302e8cd1f7ff30d63665"
+    },
+    "provenance/host-2-stopped.json": {
+      "bytes": 75,
+      "sha256": "e8b44a3049dc7449986ef0593a193b813fcd819b6909b37aa662f05c506c9754"
+    },
+    "provenance/host-3-audit.json": {
+      "bytes": 2653,
+      "sha256": "c05344ec6dabc5e4e1123810df1243446aae47f2bd61b922bf39c7c3a892661c"
+    },
+    "provenance/host-3-config.json": {
+      "bytes": 5968,
+      "sha256": "29999c6e5540f42acb4ee7d8c3906e0a927b37f0da9933fee25c18001ae43b67"
+    },
+    "provenance/host-3-stopped.json": {
+      "bytes": 74,
+      "sha256": "14d70523170a83f3b9b2a94adb8819aa2fa3e83cddba85b7f54892586d470cea"
+    },
+    "provenance/package_host.py": {
+      "bytes": 7376,
+      "sha256": "77434b9248d1795bc28393da3c48dcda14bcbdb66b4b55b36b0accd02f2701bf"
+    },
+    "provenance/producer-snapshot.json": {
+      "bytes": 181,
+      "sha256": "9558a684ce367a847d8ffc83f7700bbff24ec11d1d09f41950ab423a1e596cd5"
+    },
+    "provenance/producer/data/corpus.py": {
+      "bytes": 5335,
+      "sha256": "12843a274bcb3449bc6eb35516be1b683ff7a5feb282cacf40c5074a8e683f23"
+    },
+    "provenance/producer/data/generate.py": {
+      "bytes": 7731,
+      "sha256": "3a2f23dcf47eb6d280d72fba5bc8001c1f39fa0cb8a024432d18d32267a9e2bc"
+    },
+    "provenance/producer/data/katago.py": {
+      "bytes": 6284,
+      "sha256": "3055addd14ba8ba5828857ba444a4dad28a4deff1d5c4b856049ac636d553e17"
+    },
+    "provenance/producer/data/label.py": {
+      "bytes": 2345,
+      "sha256": "782a4e2e189befc38139e56a42cb8fd142177d514bffba12169bb47ac4e71da0"
+    },
+    "provenance/producer/data/service.py": {
+      "bytes": 4845,
+      "sha256": "c8dd42d0941158ebc4b0b6d17dbab152b6f283da2377a489f1e6357ee9274ad6"
+    },
+    "provenance/producer/go.py": {
+      "bytes": 8631,
+      "sha256": "de519a8bb3b0dd9d3c1188b691271b18b6146744b463730e41ed6d70b6cd10ef"
+    },
+    "provenance/producer/gtp.py": {
+      "bytes": 8291,
+      "sha256": "522e6cc6d6cc29677295459f0379b950bb49e60c95ea4962b895aae4086213ec"
+    },
+    "provenance/producer/runtime.py": {
+      "bytes": 2215,
+      "sha256": "04da2a30bf0c3b195c54cbd161c7aa8bbf29610761e006fbd85b8c7326fca47e"
+    },
+    "provenance/producer/storage.py": {
+      "bytes": 5862,
+      "sha256": "aadb8ad431309311fa3c7ebe69a6a2e8793d57299e7f75b5ff4f98ffb542359b"
+    },
+    "provenance/stop-requests.json": {
+      "bytes": 2397,
+      "sha256": "658448f0e62aa3cc5e785278496a5cbf92d28c63bfadbc6cb78cc1aec9c619b4"
+    },
+    "provenance/stopped-hosts.json": {
+      "bytes": 18109,
+      "sha256": "4cce30ca075a52c028a5daa562f7055e044e2e37a387dfa338c404c1d25d181c"
+    },
+    "read_games.py": {
+      "bytes": 1733,
+      "sha256": "068090427330b246be724f9118a7cf500bed167184135d885361a635b4eaa8c2"
+    }
+  },
+  "bytes": 4969566646,
+  "removals": {
+    "/dev/shm/go9x9-release-v1/publish/README.md": {
+      "device": 24,
+      "inode": 168920,
+      "bytes": 8808,
+      "mtime_ns": 1789431945862119825,
+      "blocks": 12288,
+      "links": 1,
+      "sha256": "f8f8fe7b27296ad9f1309b941a4e3f8cf0dfdff72796776c56794cbbc7f3ff48"
+    },
+    "/dev/shm/go9x9-release-v1/publish/SHA256SUMS": {
+      "device": 24,
+      "inode": 168891,
+      "bytes": 4851,
+      "mtime_ns": 1789431945862119825,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "05910a9908a23657cce222a1d41b504fab85c5fdc6c10a46d181275e6cf86d28"
+    },
+    "/dev/shm/go9x9-release-v1/publish/contract.json": {
+      "device": 24,
+      "inode": 168903,
+      "bytes": 3908,
+      "mtime_ns": 1789430816470105942,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "e12361f4e22429d36c73f90795250a6fb82f70bd46c53a322c55406726c71bd7"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-0-00000.tar": {
+      "device": 24,
+      "inode": 168766,
+      "bytes": 276029440,
+      "mtime_ns": 1789430116234097266,
+      "blocks": 276029440,
+      "links": 2,
+      "sha256": "1f82e231a6682e037ceb22149e949026784c0d11895f760d9e9fe47a12fec392"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-0-00001.tar": {
+      "device": 24,
+      "inode": 168824,
+      "bytes": 276776960,
+      "mtime_ns": 1789430170950097943,
+      "blocks": 276779008,
+      "links": 2,
+      "sha256": "8326baf604188f1f9dbe6d12a2733bc81061c7b988477d61fc0a461479ac74b9"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-0-00002.tar": {
+      "device": 24,
+      "inode": 168713,
+      "bytes": 277893120,
+      "mtime_ns": 1789430217522098519,
+      "blocks": 277893120,
+      "links": 2,
+      "sha256": "7e93b597b3d2762937f720036d5d2ade9a0cb0ae3b028430c7bfeff0d6ef1ea1"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-0-00003.tar": {
+      "device": 24,
+      "inode": 168823,
+      "bytes": 278159360,
+      "mtime_ns": 1789430262894099080,
+      "blocks": 278159360,
+      "links": 2,
+      "sha256": "035ba5076534b40a11f39bb1f56e8d499d425851b4eff8ff9371c24e007b4f54"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-0-00004.tar": {
+      "device": 24,
+      "inode": 168720,
+      "bytes": 123627520,
+      "mtime_ns": 1789430282238099320,
+      "blocks": 123629568,
+      "links": 2,
+      "sha256": "83476a8f21016d0756ae167a7c3ac6873b084d277e01f77fb8c54c91f945cc86"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-1-00000.tar": {
+      "device": 24,
+      "inode": 168876,
+      "bytes": 275998720,
+      "mtime_ns": 1789430117441661649,
+      "blocks": 276000768,
+      "links": 1,
+      "sha256": "c19815efd9b02e6b500f10c4b9264ab351e0044ce2b10c096c300d7e8ac902ee"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-1-00001.tar": {
+      "device": 24,
+      "inode": 168867,
+      "bytes": 276797440,
+      "mtime_ns": 1789430173057556291,
+      "blocks": 276799488,
+      "links": 1,
+      "sha256": "60524b60b9766dd6d4dbe9cd7fce57d0fa53cfb0dabcc05e8da0bb0ca2c442e0"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-1-00002.tar": {
+      "device": 24,
+      "inode": 168839,
+      "bytes": 277913600,
+      "mtime_ns": 1789430220773465899,
+      "blocks": 277913600,
+      "links": 1,
+      "sha256": "895afe77b8dacb9e565136d7f7fa4cc0fea764b59678a6cf2744775c79eac323"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-1-00003.tar": {
+      "device": 24,
+      "inode": 168730,
+      "bytes": 278179840,
+      "mtime_ns": 1789430267153378038,
+      "blocks": 278179840,
+      "links": 1,
+      "sha256": "fc6687c1b3119ea77b2085068500083ca5ca463b3188ba78c8b4ec1061907b9e"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-1-00004.tar": {
+      "device": 24,
+      "inode": 168768,
+      "bytes": 121917440,
+      "mtime_ns": 1789430286813340794,
+      "blocks": 121917440,
+      "links": 1,
+      "sha256": "aea51af009804b779b95001ed0550d875574bc00616da0cce149d78fdc4fc466"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-2-00000.tar": {
+      "device": 24,
+      "inode": 168807,
+      "bytes": 275988480,
+      "mtime_ns": 1789430117451406091,
+      "blocks": 275988480,
+      "links": 1,
+      "sha256": "59c1e2dcfbf65498cca445aa92dd7edfdf287ace6517dd1964f26265b401c306"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-2-00001.tar": {
+      "device": 24,
+      "inode": 168791,
+      "bytes": 276797440,
+      "mtime_ns": 1789430173119351744,
+      "blocks": 276799488,
+      "links": 1,
+      "sha256": "0b627f1d87dbdc661d9593a8fc3ca46ea2219a2b554451c83e5738db42838bd8"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-2-00002.tar": {
+      "device": 24,
+      "inode": 168778,
+      "bytes": 277913600,
+      "mtime_ns": 1789430219459306504,
+      "blocks": 277913600,
+      "links": 1,
+      "sha256": "c801da1c0b20a60254bcf1f5227b72eb75a3257a9aff5d102399d9a176c7568c"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-2-00003.tar": {
+      "device": 24,
+      "inode": 168600,
+      "bytes": 278179840,
+      "mtime_ns": 1789430265539261518,
+      "blocks": 278179840,
+      "links": 1,
+      "sha256": "22ae56ad7f5eaed4ba0f415ca44e5a126815113ee1b5c3feb159bede1f4266ba"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-2-00004.tar": {
+      "device": 24,
+      "inode": 168509,
+      "bytes": 127283200,
+      "mtime_ns": 1789430285579241954,
+      "blocks": 127283200,
+      "links": 1,
+      "sha256": "efe30f623d4d0c321504aa9fc34df7197d9717e0b549352c1997f7d328abf43a"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-3-00000.tar": {
+      "device": 24,
+      "inode": 168866,
+      "bytes": 275998720,
+      "mtime_ns": 1789430118546093405,
+      "blocks": 276000768,
+      "links": 1,
+      "sha256": "c5c11eba888f9cf1e9c3d6454afd876775a6d7402e5a70343e710ece45140287"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-3-00001.tar": {
+      "device": 24,
+      "inode": 168578,
+      "bytes": 276787200,
+      "mtime_ns": 1789430173846039984,
+      "blocks": 276787200,
+      "links": 1,
+      "sha256": "fbb74103252dbcad03cb368d188d989a8acad87b1b00409c0b05f165b023ff6a"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-3-00002.tar": {
+      "device": 24,
+      "inode": 168704,
+      "bytes": 277893120,
+      "mtime_ns": 1789430221189994249,
+      "blocks": 277893120,
+      "links": 1,
+      "sha256": "e1e4f39c9e1fb1ca5799f89ec393a7ef395d3a74d1fc02b0fc550fb112e237cc"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-3-00003.tar": {
+      "device": 24,
+      "inode": 168745,
+      "bytes": 278169600,
+      "mtime_ns": 1789430267717949301,
+      "blocks": 278171648,
+      "links": 1,
+      "sha256": "ed7a17842cadddbab9c9d42204c1dff5fecde77d302655714db7909e735d249b"
+    },
+    "/dev/shm/go9x9-release-v1/publish/data/host-3-00004.tar": {
+      "device": 24,
+      "inode": 168898,
+      "bytes": 132802560,
+      "mtime_ns": 1789430288645929085,
+      "blocks": 132804608,
+      "links": 1,
+      "sha256": "6ee848b5410362dfa7b9641e8d4f9b48127157266e55d000a1b93d4fbd5ebea3"
+    },
+    "/dev/shm/go9x9-release-v1/publish/index/host-0.jsonl.gz": {
+      "device": 24,
+      "inode": 168787,
+      "bytes": 7064572,
+      "mtime_ns": 1789430282238099320,
+      "blocks": 7065600,
+      "links": 2,
+      "sha256": "45406ac68798df5b41fbb4b472a4b0657cef593725c24223bb2540a2126f523e"
+    },
+    "/dev/shm/go9x9-release-v1/publish/index/host-1.jsonl.gz": {
+      "device": 24,
+      "inode": 168634,
+      "bytes": 7053193,
+      "mtime_ns": 1789430286813340794,
+      "blocks": 7053312,
+      "links": 1,
+      "sha256": "c949af89004d2984a83a67fca82a6bd187bb8cd344a15526ed5371efb3bd7efa"
+    },
+    "/dev/shm/go9x9-release-v1/publish/index/host-2.jsonl.gz": {
+      "device": 24,
+      "inode": 168792,
+      "bytes": 7084028,
+      "mtime_ns": 1789430285579241954,
+      "blocks": 7086080,
+      "links": 1,
+      "sha256": "ce184c5d2bf8668197f2b72f605bbc1e575ad9704d6ce31ff29e7a0910f0a8af"
+    },
+    "/dev/shm/go9x9-release-v1/publish/index/host-3.jsonl.gz": {
+      "device": 24,
+      "inode": 168899,
+      "bytes": 7116354,
+      "mtime_ns": 1789430288645929085,
+      "blocks": 7118848,
+      "links": 1,
+      "sha256": "14078b29c658dd8c58044c35223098b8d7a17a05f1c085fc7e0da8b0e59f843f"
+    },
+    "/dev/shm/go9x9-release-v1/publish/manifest.json": {
+      "device": 24,
+      "inode": 168919,
+      "bytes": 7616,
+      "mtime_ns": 1789430818542105967,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "68b05a2dca33859a9d0b3b9ee89d4ed242c45d427d0e3233c8093c91f3f16096"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-0-audit.json": {
+      "device": 24,
+      "inode": 168751,
+      "bytes": 2653,
+      "mtime_ns": 1789430805894105810,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "8bcd81fe21ff957073b2229add9ff7fd9d526a7c5d4939d4a3ae16cfccd7a4fd"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-0-config.json": {
+      "device": 24,
+      "inode": 168753,
+      "bytes": 5968,
+      "mtime_ns": 1789430283058099330,
+      "blocks": 8192,
+      "links": 2,
+      "sha256": "af49e7f2c9689fbe5d4f7698853796aac294cbf497af1cc83a41495a3019494c"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-0-stopped.json": {
+      "device": 24,
+      "inode": 168788,
+      "bytes": 74,
+      "mtime_ns": 1789430283058099330,
+      "blocks": 4096,
+      "links": 2,
+      "sha256": "147df138cd4891cc5b9f1edd16a41518174122f362bc37779cd2f838450b8ffa"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-1-audit.json": {
+      "device": 24,
+      "inode": 168884,
+      "bytes": 2654,
+      "mtime_ns": 1789430809458105855,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "d563cbb498fdfd3e40897454b9e8a0f6d321f91d9e9975c84d7d0a98a7b3beff"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-1-config.json": {
+      "device": 24,
+      "inode": 168882,
+      "bytes": 5968,
+      "mtime_ns": 1789430287637339233,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "f87bb03a338162a6797e3dce8c53e425fe70535499abe9846bac102870930ad5"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-1-stopped.json": {
+      "device": 24,
+      "inode": 168883,
+      "bytes": 75,
+      "mtime_ns": 1789430287637339233,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "4ab8e4393b181647355c39ee296e5ec03d4f52325297340a4b6508c23461e19e"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-2-audit.json": {
+      "device": 24,
+      "inode": 168624,
+      "bytes": 2651,
+      "mtime_ns": 1789430812938105898,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "ca6ca6367f128f42bba25aaeb7de053b48bb0d2d8ba27ae306bd95512ec4c35d"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-2-config.json": {
+      "device": 24,
+      "inode": 168875,
+      "bytes": 5968,
+      "mtime_ns": 1789430286403241149,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "5e351406adfd03e5c7bb6da33b8ddb7c38386f2da8f0302e8cd1f7ff30d63665"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-2-stopped.json": {
+      "device": 24,
+      "inode": 168892,
+      "bytes": 75,
+      "mtime_ns": 1789430286403241149,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "e8b44a3049dc7449986ef0593a193b813fcd819b6909b37aa662f05c506c9754"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-3-audit.json": {
+      "device": 24,
+      "inode": 168728,
+      "bytes": 2653,
+      "mtime_ns": 1789430816470105942,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "c05344ec6dabc5e4e1123810df1243446aae47f2bd61b922bf39c7c3a892661c"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-3-config.json": {
+      "device": 24,
+      "inode": 168900,
+      "bytes": 5968,
+      "mtime_ns": 1789430289469928289,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "29999c6e5540f42acb4ee7d8c3906e0a927b37f0da9933fee25c18001ae43b67"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/host-3-stopped.json": {
+      "device": 24,
+      "inode": 168901,
+      "bytes": 74,
+      "mtime_ns": 1789430289469928289,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "14d70523170a83f3b9b2a94adb8819aa2fa3e83cddba85b7f54892586d470cea"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/package_host.py": {
+      "device": 24,
+      "inode": 168918,
+      "bytes": 7376,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "77434b9248d1795bc28393da3c48dcda14bcbdb66b4b55b36b0accd02f2701bf"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/producer-snapshot.json": {
+      "device": 24,
+      "inode": 168915,
+      "bytes": 181,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "9558a684ce367a847d8ffc83f7700bbff24ec11d1d09f41950ab423a1e596cd5"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/producer/data/corpus.py": {
+      "device": 24,
+      "inode": 168910,
+      "bytes": 5335,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "12843a274bcb3449bc6eb35516be1b683ff7a5feb282cacf40c5074a8e683f23"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/producer/data/generate.py": {
+      "device": 24,
+      "inode": 168911,
+      "bytes": 7731,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "3a2f23dcf47eb6d280d72fba5bc8001c1f39fa0cb8a024432d18d32267a9e2bc"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/producer/data/katago.py": {
+      "device": 24,
+      "inode": 168912,
+      "bytes": 6284,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "3055addd14ba8ba5828857ba444a4dad28a4deff1d5c4b856049ac636d553e17"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/producer/data/label.py": {
+      "device": 24,
+      "inode": 168913,
+      "bytes": 2345,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "782a4e2e189befc38139e56a42cb8fd142177d514bffba12169bb47ac4e71da0"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/producer/data/service.py": {
+      "device": 24,
+      "inode": 168914,
+      "bytes": 4845,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "c8dd42d0941158ebc4b0b6d17dbab152b6f283da2377a489f1e6357ee9274ad6"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/producer/go.py": {
+      "device": 24,
+      "inode": 168905,
+      "bytes": 8631,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 12288,
+      "links": 1,
+      "sha256": "de519a8bb3b0dd9d3c1188b691271b18b6146744b463730e41ed6d70b6cd10ef"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/producer/gtp.py": {
+      "device": 24,
+      "inode": 168906,
+      "bytes": 8291,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 12288,
+      "links": 1,
+      "sha256": "522e6cc6d6cc29677295459f0379b950bb49e60c95ea4962b895aae4086213ec"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/producer/runtime.py": {
+      "device": 24,
+      "inode": 168907,
+      "bytes": 2215,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "04da2a30bf0c3b195c54cbd161c7aa8bbf29610761e006fbd85b8c7326fca47e"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/producer/storage.py": {
+      "device": 24,
+      "inode": 168908,
+      "bytes": 5862,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 8192,
+      "links": 1,
+      "sha256": "aadb8ad431309311fa3c7ebe69a6a2e8793d57299e7f75b5ff4f98ffb542359b"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/stop-requests.json": {
+      "device": 24,
+      "inode": 168916,
+      "bytes": 2397,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "658448f0e62aa3cc5e785278496a5cbf92d28c63bfadbc6cb78cc1aec9c619b4"
+    },
+    "/dev/shm/go9x9-release-v1/publish/provenance/stopped-hosts.json": {
+      "device": 24,
+      "inode": 168917,
+      "bytes": 18109,
+      "mtime_ns": 1789430818538105967,
+      "blocks": 20480,
+      "links": 1,
+      "sha256": "4cce30ca075a52c028a5daa562f7055e044e2e37a387dfa338c404c1d25d181c"
+    },
+    "/dev/shm/go9x9-release-v1/publish/read_games.py": {
+      "device": 24,
+      "inode": 168921,
+      "bytes": 1733,
+      "mtime_ns": 1789430818546105968,
+      "blocks": 4096,
+      "links": 1,
+      "sha256": "068090427330b246be724f9118a7cf500bed167184135d885361a635b4eaa8c2"
+    },
+    "/dev/shm/go9x9-release-v1/host-0/provenance/host-0-stopped.json": {
+      "device": 24,
+      "inode": 168788,
+      "bytes": 74,
+      "mtime_ns": 1789430283058099330,
+      "blocks": 4096,
+      "links": 2,
+      "sha256": "147df138cd4891cc5b9f1edd16a41518174122f362bc37779cd2f838450b8ffa"
+    },
+    "/dev/shm/go9x9-release-v1/host-0/provenance/host-0-config.json": {
+      "device": 24,
+      "inode": 168753,
+      "bytes": 5968,
+      "mtime_ns": 1789430283058099330,
+      "blocks": 8192,
+      "links": 2,
+      "sha256": "af49e7f2c9689fbe5d4f7698853796aac294cbf497af1cc83a41495a3019494c"
+    },
+    "/dev/shm/go9x9-release-v1/host-0/index/host-0.jsonl.gz": {
+      "device": 24,
+      "inode": 168787,
+      "bytes": 7064572,
+      "mtime_ns": 1789430282238099320,
+      "blocks": 7065600,
+      "links": 2,
+      "sha256": "45406ac68798df5b41fbb4b472a4b0657cef593725c24223bb2540a2126f523e"
+    },
+    "/dev/shm/go9x9-release-v1/host-0/data/host-0-00004.tar": {
+      "device": 24,
+      "inode": 168720,
+      "bytes": 123627520,
+      "mtime_ns": 1789430282238099320,
+      "blocks": 123629568,
+      "links": 2,
+      "sha256": "83476a8f21016d0756ae167a7c3ac6873b084d277e01f77fb8c54c91f945cc86"
+    },
+    "/dev/shm/go9x9-release-v1/host-0/data/host-0-00003.tar": {
+      "device": 24,
+      "inode": 168823,
+      "bytes": 278159360,
+      "mtime_ns": 1789430262894099080,
+      "blocks": 278159360,
+      "links": 2,
+      "sha256": "035ba5076534b40a11f39bb1f56e8d499d425851b4eff8ff9371c24e007b4f54"
+    },
+    "/dev/shm/go9x9-release-v1/host-0/data/host-0-00002.tar": {
+      "device": 24,
+      "inode": 168713,
+      "bytes": 277893120,
+      "mtime_ns": 1789430217522098519,
+      "blocks": 277893120,
+      "links": 2,
+      "sha256": "7e93b597b3d2762937f720036d5d2ade9a0cb0ae3b028430c7bfeff0d6ef1ea1"
+    },
+    "/dev/shm/go9x9-release-v1/host-0/data/host-0-00001.tar": {
+      "device": 24,
+      "inode": 168824,
+      "bytes": 276776960,
+      "mtime_ns": 1789430170950097943,
+      "blocks": 276779008,
+      "links": 2,
+      "sha256": "8326baf604188f1f9dbe6d12a2733bc81061c7b988477d61fc0a461479ac74b9"
+    },
+    "/dev/shm/go9x9-release-v1/host-0/data/host-0-00000.tar": {
+      "device": 24,
+      "inode": 168766,
+      "bytes": 276029440,
+      "mtime_ns": 1789430116234097266,
+      "blocks": 276029440,
+      "links": 2,
+      "sha256": "1f82e231a6682e037ceb22149e949026784c0d11895f760d9e9fe47a12fec392"
+    }
+  },
+  "expected_reclaimed_blocks": 4969660416,
+  "operator_sha256": "cd97cbbc0429e95b94d39ea6d08e8077c1c9a29845cf10cd3d6862af2cf976af",
+  "manifest_sha256": "68b05a2dca33859a9d0b3b9ee89d4ed242c45d427d0e3233c8093c91f3f16096",
+  "scope": "Exact RAM mirror relocation only. Original game NPZs, packed training arrays and every learning checkpoint are preserved.",
+  "destination_node_sha256": "3e5d0901602e61838b7cd081d8590aad33f9cd1f4cc379b7160df3e741dac17b",
+  "destination_preflight": {
+    "node_sha256": "3e5d0901602e61838b7cd081d8590aad33f9cd1f4cc379b7160df3e741dac17b"
+  }
+}

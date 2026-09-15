@@ -1,0 +1,42 @@
+{
+  "attempt": "/workspace/go/research/studies/strong19_train/transfer-fixture-002/workspace/runs/pod-20260915T083600Z-d439c3f2",
+  "created": 1789461542.5312023,
+  "group_path": "/workspace/go/research/studies/strong19_train/transfer-fixture-002/workspace/runs/pod-20260915T083600Z-d439c3f2/rank-0/artifacts/checkpoints/turn-000000002.group.json",
+  "group_sha256": "8ad14066805c233df5b21fc6b81b3ec101f30dcc7081823e15d33bea21be7268",
+  "kind": "joint_resume_transfer_fixture_plan",
+  "operator_sha256": "df993a4121d78584bc5424d383eda8c0f7fe135c4f55e9c65878c5944d8700b1",
+  "payload": {
+    "m_0000": {
+      "dtype": "float32",
+      "sha256": "98baa5ccd66e273fd4fabad4e0c0e4453b547bd8a6edb6c777b9956972d4c285",
+      "shape": [
+        7,
+        11
+      ]
+    },
+    "p_0000": {
+      "dtype": "float32",
+      "sha256": "62d8f48ededa89fc59a3f213ad8e85701a5b74e635a1e812e7ac75d59f63a224",
+      "shape": [
+        7,
+        11
+      ]
+    },
+    "step": {
+      "dtype": "int32",
+      "sha256": "26b25d457597a7b0463f9620f666dd10aa2c4373a505967c7c8d70922a2d6ece",
+      "shape": []
+    },
+    "v_0000": {
+      "dtype": "float32",
+      "sha256": "f4403f97cad992e55b93046a2b9bc3cfe55d35abdf7c2e66b1aec20d25151a9e",
+      "shape": [
+        7,
+        11
+      ]
+    }
+  },
+  "scope": "Synthetic four-rank checkpoint transport and exact reader validation only. No model training, JAX distributed initialization or TPU allocation.",
+  "snapshot": "d439c3f25ac7cd20257177c3c88df376fb4326451608c2a8bc039c999df5e5f2",
+  "workspace": "/workspace/go/research/studies/strong19_train/transfer-fixture-002/workspace"
+}

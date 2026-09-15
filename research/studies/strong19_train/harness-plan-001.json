@@ -1,0 +1,23 @@
+{
+  "kind": "joint_training_cpu_continuation_plan",
+  "created": 1789457732.3322499,
+  "snapshots": {
+    "cnn": "c3ae429eb5efc4581520b4f19a2c20cc914e819bc894f27919f7994b2ff49e06",
+    "transformer": "5970693ea03f4e278c4f88999acaf8abff4d42ce134a87f50063a6086dff501e"
+  },
+  "run_directory": "research/studies/strong19_train/harness-cpu-001",
+  "operator_sha256": "88389cf66f567a2610430c98f2a23218432b492dd0276b115be626459751e2a9",
+  "bounded_evaluation_qualification": {
+    "path": "research/studies/strong19_train/evaluation-cpu-001.json",
+    "sha256": "c9a623d527b7da1eacf8cf4abba8810326b0d12b16c610cc02991804ff7fb4c0"
+  },
+  "dataset_sha256": "37244b2e743b3b7f80e0b14eccddfc2942aa4d81120c31aab10c4b3b4f733fc2",
+  "required": [
+    "All parameter, first/second moment and step arrays match exactly",
+    "Complete rank state includes exact sampler/bucket/D4 RNGs, counters and validation/probe/overfit histories",
+    "Subsequent game draws and update metrics match exactly except wall-clock timings",
+    "Independent RNG replay reproduces every draw and position exposure",
+    "Both architectures use the same complete-history draws and supervision counts"
+  ],
+  "scope": "Use the existing immutable full 9x9 corpus to exercise the actual whole-history loader/sampler/validation transport with small joint models. Separate real19 output and full-size shape qualifications remain necessary; no 19x19 learning population is implied."
+}

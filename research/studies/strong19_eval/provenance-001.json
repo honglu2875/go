@@ -1,0 +1,21 @@
+{
+  "created": 1789464656.1326513,
+  "files": {
+    "causal.py": "4a4dcd9984b7c2c402c0a07efc4b3495e47c39f566354f41f903dc518484aecc",
+    "compact.py": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1",
+    "draft_mask.py": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44",
+    "draft_model.py": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3",
+    "encoder.py": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad",
+    "heads.py": "6769281569da76943061986f18aeaaefaa310eb68fbfcdb49d60aeb077bd48aa",
+    "inference.py": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2",
+    "joint.py": "56d1ad999aebd3982d62103f86628310f4ea6c7926bd0fb5a5e77673314194d9",
+    "katago.py": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29",
+    "observation_attention.py": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544",
+    "policy_model.py": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2",
+    "spatial_readout.py": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9"
+  },
+  "kind": "joint_evaluation_recipe_clone",
+  "local_import_closure_verified": true,
+  "scope": "Exact qualified inference/model module copies; no numerical change or new learning experiment.",
+  "training_snapshot": "f906ff4dced2bdc19b80a0dc55a36deb495692fffc37b14c051ce2d7c2265b74"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate": "research/recipes/strong19_eval/candidate-transformer-001.json",
+  "expected_devices": 4,
+  "expected_processes": 1,
+  "feature_binary": {
+    "path": ".gozero/build/katago-v7-stream-001/feature_stream",
+    "sha256": "f2fd5e4b00ba3daa76fd5f2f67c09f37f65bafb9a20d8be972f47b172c526676"
+  },
+  "feature_equivalence": {
+    "path": "research/studies/strong19_eval/feature-equivalence-001.json",
+    "sha256": "199b37fc95593f8e8907220e2e63a3337430639df86a09b42d226364bfc70f41"
+  },
+  "kind": "joint_gtp_cpu_qualification",
+  "native": {
+    "all_30_rust_source_and_lock_files_match_workspace": true,
+    "binary_sha256": "b31e2be3a16e720a93dc0d4900a712ee558ed59999ff25ed06519e56eb4ab394",
+    "receipt": ".gozero/native/7527dae25b6dac79bb6396ce5bc570eb53ac33088c31f357ffb88ced46805f3c/receipt.json",
+    "receipt_sha256": "d1360629cb1ebcde270057253fb53ef4e76cd1fd7e0284c8b91684694fac19e1"
+  },
+  "platform": "cpu",
+  "search": "research/recipes/strong19_eval/search-transformer-001.json"
+}

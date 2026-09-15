@@ -1,0 +1,9 @@
+{
+  "host": 3,
+  "path": "/dev/shm/go9x9-release-v1/publish",
+  "manifest_sha256": "68b05a2dca33859a9d0b3b9ee89d4ed242c45d427d0e3233c8093c91f3f16096",
+  "relocation_receipt": "research/studies/go9x9_release/mirror-relocation-result-001.json",
+  "relocation_receipt_sha256": "f9df8da8f7e658faafd5b9b5ca64a7c4697cd4e66e9058cad691316c4f2f7f60",
+  "files": 54,
+  "bytes": 4969566646
+}

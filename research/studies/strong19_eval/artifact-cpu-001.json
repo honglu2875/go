@@ -1,0 +1,13 @@
+{
+  "created": 1789464893.306056,
+  "kind": "joint_parameter_artifact_cpu_qualification",
+  "log_sha256": "dc95b2092d5d0f8e875a4a6f054754f51e53547df15f7bee2cb8df79e852b54a",
+  "scope": "Artifact integrity, provenance, coverage, shape/dtype/finiteness, helper omission, numerical compatibility and portable load after training-state removal. Real model arithmetic is a separate qualification.",
+  "seconds": 0.5149016790091991,
+  "source_sha256": {
+    "packages/gozero/src/gozero/joint_artifacts.py": "8b40ea3cfbefa4021955765fbb144b7ce6de55de7c3d8d6aa28e1d73aed7901b",
+    "tests/test_joint_artifacts.py": "6b9e725b97ff3822f612b535851a212564e0b9843dba1d3a03ab5c5790211f02"
+  },
+  "status": "passed",
+  "tests": 7
+}

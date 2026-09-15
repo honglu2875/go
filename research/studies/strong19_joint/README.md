@@ -82,3 +82,37 @@ transformer's compact grid optimization does not solve that separate
 requirement. The corpus supplies signed raw value, not all of KataGo's
 original auxiliary targets or three-way probabilities. Real KataGo strength
 checks follow trained checkpoint export and serving qualification.
+
+The AdamW fixture's complete-update qualification is now closed.
+`optimizer-cpu-001.json` passed seven tests in 258.89 seconds, under the
+prospective `optimizer-plan-001.json`. Both small complete backbones used exact
+V7 prefixes of three real 19×19 games, counts 4/3/1 plus an empty lane, and
+three fixed D4-augmented updates. This deliberately short numerical fixture
+does not truncate or select the later training corpus.
+
+The bounded and materialized encoder paths agree on every parameter gradient
+(maximum absolute differences 2.09e-7 for CNN and 5.67e-7 for transformer).
+Across full updates, including the four-device unequal-count case, the largest
+parameter difference is 1.20e-7 and whole-update relative L2 error is below
+4.30e-6, against the preregistered 0.003 limit. Parent-policy AdamW updates are
+bit-identical for the same gradients. Empty/nonfinite/exhausted updates preserve
+parameters, both moments and step exactly. Checkpoint continuation in a fresh
+process matches all parameter/moment/step arrays exactly for both models;
+wrong source/configuration/schema and missing or corrupt moments are rejected.
+
+`adamw.py`, `learner.py` and `optimizer_io.py` are the qualified functional
+prototype. AdamW and value weight 0.7 remain test fixtures, not selected 19×19
+hyperparameters or a claim to reproduce the published KataGo optimizer. These
+checkpoints contain optimizer state only: the full trainer must additionally
+save sampler/augmentation RNGs, data identity and progress. Full-size TPU
+memory, latency and continuation still need qualification after the current
+larger-9×9 queue releases the accelerator.
+
+`source-bundle-003.json` seals 110 read-back-verified source/evidence members
+in `source-003.tar` (839,680 bytes), extending the qualified inference source
+with the optimizer and its complete CPU qualification dependencies.
+`optimizer-schema-001.json` subsequently traced six complete full-size updates
+(both models at 128/512/1,536 positions). Parameter and moment schemas remain
+unchanged. FP32 parameters plus the two moments occupy about 2.80 GB for CNN
+and 2.78 GB for transformer per replicated copy; these totals exclude transient
+gradients, activations and compiler buffers and are not peak-memory estimates.

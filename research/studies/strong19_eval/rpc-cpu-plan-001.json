@@ -1,0 +1,36 @@
+{
+  "artifact_qualification_sha256": "78ca67d3bcb86b46fbac577e30552852f9de8d6e0eaf7e3b325655373147e5a1",
+  "case": "001",
+  "configurations": {
+    "cnn": {
+      "path": "research/studies/strong19_eval/cnn-rpc-cpu-001.json",
+      "sha256": "4ac51a77105080c0f68595ebffb34618d4519e0b2e3bb7cfa3ef7c2a9a71ee1e"
+    },
+    "transformer": {
+      "path": "research/studies/strong19_eval/transformer-rpc-cpu-001.json",
+      "sha256": "22e10ff794134f668eb7d85f905248e8b27abb944698330e5ac1bbfdbac14494"
+    }
+  },
+  "cpu_placement": [
+    0,
+    1
+  ],
+  "created": 1789466175.9466007,
+  "kind": "joint_trained_gtp_cpu_plan",
+  "operator_sha256": "d45d41e8115c51b5f743f7c429de3510c94b1622c9baae8e55c4a272354c5385",
+  "python": ".gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "required": [
+    "Two concurrent actual GTP subprocesses per trained model",
+    "One policy/value protocol with source/candidate/search identity handshake",
+    "Every request matches full JAX policy/value and native V7 state",
+    "Independent Rust MCTS searches reproduce GTP moves, work, values and boards",
+    "Clear-board reuse, explicit pass history and terminal-score handling"
+  ],
+  "rpc_qualification_sha256": "53ee9e15926db6ac4ec6fc4b8f5b6c61fa67b05715229bc05d9e3f916df18c4a",
+  "scope": "Small trained19 execution checks, no new training or TPU slot and no KataGo strength claim.",
+  "snapshots": {
+    "cnn": "23c21dcb98acd03db8b06f764534475a209b8d7ea66dc9b259457dc554ca269d",
+    "transformer": "a52a0ec9189402b6b6a34325ca440140a91fd461b95216ffba534a7ffd53a4f6"
+  },
+  "trained_inference_qualification_sha256": "11ae55c1b62f71db8d66d20efd55f7d67de6b039de7db051a6a38a43bad18bd4"
+}

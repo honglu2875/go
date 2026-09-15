@@ -1,0 +1,31 @@
+{
+  "configurations": {
+    "cpu_cnn": {
+      "path": "research/studies/strong19_train/cpu-real19-cnn-qualification-001.json",
+      "sha256": "4fab97684211708a2d1acf138a2e1a50461aaef155f95dd61da1a702c6e5b60c"
+    },
+    "cpu_transformer": {
+      "path": "research/studies/strong19_train/cpu-real19-transformer-qualification-001.json",
+      "sha256": "709fd2fc584f0b851500ca26fe48d1b616624e2c0beb698eb2a753560ceaf517"
+    },
+    "tpu_cnn": {
+      "path": "research/studies/strong19_train/tpu-real19-cnn-qualification-001.json",
+      "sha256": "d12c41107d79141a4f9f434396998f177bf9bbc28e9c1a6af3be75f8dacd2837"
+    },
+    "tpu_transformer": {
+      "path": "research/studies/strong19_train/tpu-real19-transformer-qualification-001.json",
+      "sha256": "1b32810506856d36376e2cc645122aa0ae0ce9489ec0ad7598c26017773129be"
+    }
+  },
+  "cpu_plan_sha256": "738b76968c40b7f702e9aab82c46f88e70bf51e7523721ebebff404cfa920e09",
+  "created": 1789460949.4735713,
+  "kind": "real19_execution_preparation_snapshots",
+  "scope": "Execution qualification only. TPU configurations are preparation artifacts, not an authorized queue replacement or scientific learning registration.",
+  "snapshots": {
+    "cpu_cnn": "f906ff4dced2bdc19b80a0dc55a36deb495692fffc37b14c051ce2d7c2265b74",
+    "cpu_transformer": "4c62fa3a71f1b0b5a64578ec8828e38142e36012adce4f45490c95007043b480",
+    "tpu_cnn": "5b301bdf572e5720dfede985a36f6d113dcba154236f21cbe414dbd5b13e6e58",
+    "tpu_transformer": "6d79bd388100c291b8fe763fc3723cc5e15f65131d67ed2351edb5b125bce97b"
+  },
+  "tpu_jobs_launched": false
+}

@@ -1,6 +1,7 @@
 This stage compares the selected transformer and the KataGo CNN on the finalized
 strong-teacher 9×9 corpus. Architecture selection remains in the preceding
-readout study; no larger-data learning result is available yet.
+readout study. The first paired seed is complete and audited; the second
+paired seed is still needed before closing the registered comparison.
 
 The source is `quintic/go9x9`, revision
 `4f579b0a21c456f3bb568174d384056351124cd5`, release ID
@@ -49,9 +50,53 @@ no larger-data result can affect that choice. CNN source/config snapshots are fr
 `pod-20260915T034236Z-4377451c` completed four updates on all hosts; its checkpoint
 replication and independent qualification audit precede the full learning run.
 
-The qualification passed its independent audit. CNN seed 1 is running as
+The qualification passed its independent audit. CNN seed 1 completed as
 `pod-20260915T035557Z-c34403f3`, using the registered 4,096-update horizon.
+Its independent audit passed (`cnn-seed1-audit-001.json`), covering 49,753,641
+training-position exposures. Endpoint validation position KL is 0.12994647
+and equal-family KL is 0.08986163; the training probe has KL 0.07577860 and
+0.09130979 respectively. No registered sustained-overfit flag was raised.
 `seed1-progress.png` and its CSV show the recorded validation and training-probe
 curves; `monitor.py` records runtime estimates and overfit diagnostics without
-changing the run. The remaining registered order is transformer qualification,
-transformer seed 1, the paired contrast, CNN seed 2, and transformer seed 2.
+changing the run. Transformer seed 1 completed as
+`pod-20260915T063331Z-58464407` and passed its independent audit and checkpoint
+replication. `seed1-contrast-001.json` confirms identical training draws,
+49,753,641 position exposures, and validation/probe populations in both arms.
+
+| Seed-1 endpoint | CNN | Transformer |
+| --- | ---: | ---: |
+| Validation position KL | 0.12994647 | 0.13349390 |
+| Validation equal-family KL | 0.08986163 | 0.09345388 |
+| Training-probe position KL | 0.07577860 | 0.07980859 |
+| Training-probe equal-family KL | 0.09130979 | 0.09598577 |
+| Learning seconds | 7,438.13 | 5,922.69 |
+| Complete attempt seconds | 8,794.15 | 7,385.93 |
+
+The transformer is 2.73% worse on position KL and 4.00% worse on equal-family
+KL; its last-three-validation mean also trails both metrics. Neither model
+raised the registered sustained-overfit flag. The current candidate cannot
+meet a promotion rule requiring improvement in each seed after this first-seed
+result, but the committed second seed will finish to assess consistency.
+CNN seed 2 is running as `pod-20260915T083834Z-0f6ca1e9`.
+
+The transformer used 20.37% less measured learning time and 16.01% less complete
+attempt time in seed 1. Trained warm forward medians are 9.80 ms for cached
+transformer decoding and 16.30 ms for CNN at the registered batch/history shape.
+Both include the complete board encoder. The transformer benchmark uses actual
+game prefixes and the CNN benchmark repeats an actual board input; they do not
+use identical input boards. Feature construction, CPU rules, transfers and
+search are outside these timings. These are neither MFU nor strength results.
+
+The secondary learning-time plot is
+`../strong9_followups/seed1-time-001/curves-review-001.png`, with the exact
+observations in its CSV and the clock/threshold limitations in
+`../strong9_followups/DIAGNOSTIC_NOTES.md`. Faster learning time produces a more
+favorable transformer curve near the common time limit despite its worse
+same-update endpoint. The fixed-horizon schedules are at different stages
+there; this does not replace the registered comparison.
+
+The guarded continuation owns CNN seed 2, transformer seed 2 and their
+paired contrast. `conclude.py` derives the final registered decision after
+both independent contrasts are available. The user's later request for simple
+LR/encoder follow-ups is recorded in `../strong9_followups/PLAN.md`; it does not
+change this comparison's frozen numerical code, data, horizon or source pins.
