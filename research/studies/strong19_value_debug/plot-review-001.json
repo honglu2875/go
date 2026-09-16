@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "figure": "diagnosis-001.png",
+  "figure_sha256": "ea94376d99ed99bc38a10c4ccc8aabf3b89b2ac6279fc598f89e3e2c940304a6",
+  "analysis_sha256": "50c39c340584606d3185d749f6f5f926e9057d0fb935e82a4c7574d9475a94a6",
+  "repair_sha256": "8460e16561bbc8e4c5addeb270d5d5b1e820a8d0d760006b1a3de17be94800d5",
+  "visual_review": "Axes, titles, legend and caveat are visible; third-outcome dominance and both final train/validation gaps are represented. No hidden endpoint selection."
+}

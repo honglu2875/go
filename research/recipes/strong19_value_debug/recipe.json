@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Joint value-head diagnostic",
+  "hypothesis": "Read-only measurement of checkpoint logits and normalized causal latents on complete train and validation histories, including training/inference parity.",
+  "requires_native": false
+}

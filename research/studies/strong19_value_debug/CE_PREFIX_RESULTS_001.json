@@ -1,0 +1,253 @@
+{
+  "kind": "objective_only_value_prefix_comparison",
+  "status": "passed",
+  "created": 1789586434.725711,
+  "turn": 9,
+  "positions": 496462,
+  "parameters": 232011540,
+  "observations": {
+    "validation_history": {
+      "positions": 60284.0,
+      "episode_ids_sha256": "bec421033b4213d6fcf71b96566567461c5e09fbba2e6880e480b2e8a1a90a6a",
+      "metrics": {
+        "expert_kl": {
+          "original_mse": 2.1167352623363995,
+          "cross_entropy": 2.081377719030962,
+          "difference": -0.03535754330543739,
+          "ratio": 0.9832961901591744
+        },
+        "family_kl": {
+          "original_mse": 2.1558080195553906,
+          "cross_entropy": 2.1209412600255186,
+          "difference": -0.03486675952987195,
+          "ratio": 0.9838265934565626
+        },
+        "value_mse": {
+          "original_mse": 0.9215952005235116,
+          "cross_entropy": 0.6241675227490918,
+          "difference": -0.2974276777744198,
+          "ratio": 0.6772686342057053
+        },
+        "value_family_mse": {
+          "original_mse": 0.9143266725636002,
+          "cross_entropy": 0.6344355129920117,
+          "difference": -0.2798911595715885,
+          "ratio": 0.6938827576944395
+        },
+        "value_mean_prediction": {
+          "original_mse": 3.785038086732218e-05,
+          "cross_entropy": 0.3544437655740692,
+          "difference": 0.35440591519320186,
+          "ratio": 9364.338150691512
+        }
+      },
+      "probabilities": {
+        "logit_ce": 0.4912585170589678,
+        "logit_neutral_over_99": 0.0,
+        "logit_probability_loss": 0.32277628567229694,
+        "logit_probability_neutral": 5.4074075486046044e-06,
+        "logit_probability_win": 0.6772223130826588
+      }
+    },
+    "training_probe_history": {
+      "positions": 53743.0,
+      "episode_ids_sha256": "95e9221c6962ffe16d5e3c91dfa8a2527f05fe908042df820fdccab94b3781a6",
+      "metrics": {
+        "expert_kl": {
+          "original_mse": 2.0852057549936736,
+          "cross_entropy": 2.0435233643800124,
+          "difference": -0.04168239061366119,
+          "ratio": 0.980010418389725
+        },
+        "family_kl": {
+          "original_mse": 2.183536166236514,
+          "cross_entropy": 2.14343013460674,
+          "difference": -0.04010603162977411,
+          "ratio": 0.9816325315559578
+        },
+        "value_mse": {
+          "original_mse": 0.9253744564699123,
+          "cross_entropy": 0.6140986529641069,
+          "difference": -0.3112758035058054,
+          "ratio": 0.6636217897204014
+        },
+        "value_family_mse": {
+          "original_mse": 0.9127892085484096,
+          "cross_entropy": 0.6498454109070793,
+          "difference": -0.26294379764133036,
+          "ratio": 0.7119337135246323
+        },
+        "value_mean_prediction": {
+          "original_mse": 3.768853604623861e-05,
+          "cross_entropy": 0.3432754537327826,
+          "difference": 0.3432377651967364,
+          "ratio": 9108.219361761126
+        }
+      },
+      "probabilities": {
+        "logit_ce": 0.4825116214262788,
+        "logit_neutral_over_99": 0.0,
+        "logit_probability_loss": 0.32836050032824043,
+        "logit_probability_neutral": 5.356381098767997e-06,
+        "logit_probability_win": 0.6716380051093863
+      }
+    }
+  },
+  "input_sha256": {
+    "plan": "57a733110e6ecd78ef3980d6df195198c16a39f8d1491224c4e22a1553364744",
+    "controller": "d2767850b3c98173713f4943dec79596664bedab772aadf5731c707b592110fa",
+    "control_audit": "600fd8d8339720c5913b8cdc4cae708b2a9daab016de64af90875829a9d13781",
+    "candidate_audit": "e151ba0ba6d604b18643716812ee75d8e937619fcb7edebea0f6053732d8fdb4",
+    "original": "bee07a6c1e9d73ac872f16ccb64134d605f68e9ee7cf123384b623f1a336daa0",
+    "cross_entropy": "42ab3f6437d47f98616c7df40f6092a3910c94ea7ed17b3ac20a10b06e5989b7"
+  },
+  "initialization_identical": true,
+  "batches_and_schedule_independently_verified": true,
+  "curves": {
+    "original": [
+      {
+        "gradient_norm_value": 2.356534004211426,
+        "main_value_mse": 0.9610627889633179,
+        "policy_loss": 5.3580522537231445,
+        "turn": 1
+      },
+      {
+        "gradient_norm_value": 2.212918996810913,
+        "main_value_mse": 1.8876118659973145,
+        "policy_loss": 5.122366428375244,
+        "turn": 2
+      },
+      {
+        "gradient_norm_value": 0.00874231941998005,
+        "main_value_mse": 0.9111494421958923,
+        "policy_loss": 5.277817726135254,
+        "turn": 3
+      },
+      {
+        "gradient_norm_value": 0.0006856637774035335,
+        "main_value_mse": 0.9097365736961365,
+        "policy_loss": 5.302542686462402,
+        "turn": 4
+      },
+      {
+        "gradient_norm_value": 0.0005379676586017013,
+        "main_value_mse": 0.9004506468772888,
+        "policy_loss": 5.169602870941162,
+        "turn": 5
+      },
+      {
+        "gradient_norm_value": 0.0007554470212198794,
+        "main_value_mse": 0.904533863067627,
+        "policy_loss": 5.1480607986450195,
+        "turn": 6
+      },
+      {
+        "gradient_norm_value": 0.0008697954472154379,
+        "main_value_mse": 0.9003836512565613,
+        "policy_loss": 5.034397125244141,
+        "turn": 7
+      },
+      {
+        "gradient_norm_value": 0.000726602622307837,
+        "main_value_mse": 0.9003332853317261,
+        "policy_loss": 4.972956657409668,
+        "turn": 8
+      },
+      {
+        "gradient_norm_value": 0.0008364031673409045,
+        "main_value_mse": 0.9938185811042786,
+        "policy_loss": 4.808245658874512,
+        "turn": 9
+      }
+    ],
+    "cross_entropy": [
+      {
+        "gradient_norm_value": 5.448544502258301,
+        "main_value_mse": 0.9610627889633179,
+        "main_value_probability_loss": 0.44261634349823,
+        "main_value_probability_neutral": 0.3052690029144287,
+        "main_value_probability_win": 0.2521142363548279,
+        "policy_loss": 5.3580522537231445,
+        "turn": 1
+      },
+      {
+        "gradient_norm_value": 11.92092227935791,
+        "main_value_mse": 1.9450459480285645,
+        "main_value_probability_loss": 0.008069981820881367,
+        "main_value_probability_neutral": 1.1623206773947459e-05,
+        "main_value_probability_win": 0.9919171929359436,
+        "policy_loss": 5.176210880279541,
+        "turn": 2
+      },
+      {
+        "gradient_norm_value": 12.969594955444336,
+        "main_value_mse": 1.9093154668807983,
+        "main_value_probability_loss": 0.999401867389679,
+        "main_value_probability_neutral": 3.198456681730022e-07,
+        "main_value_probability_win": 0.0005964955198578537,
+        "policy_loss": 5.30371618270874,
+        "turn": 3
+      },
+      {
+        "gradient_norm_value": 8.463172912597656,
+        "main_value_mse": 1.2911325693130493,
+        "main_value_probability_loss": 0.13590429723262787,
+        "main_value_probability_neutral": 1.0573248800938018e-05,
+        "main_value_probability_win": 0.8640857934951782,
+        "policy_loss": 5.280952453613281,
+        "turn": 4
+      },
+      {
+        "gradient_norm_value": 11.097943305969238,
+        "main_value_mse": 1.7358810901641846,
+        "main_value_probability_loss": 0.9694541692733765,
+        "main_value_probability_neutral": 4.234216703480342e-06,
+        "main_value_probability_win": 0.03053995408117771,
+        "policy_loss": 5.230412483215332,
+        "turn": 5
+      },
+      {
+        "gradient_norm_value": 5.841235637664795,
+        "main_value_mse": 0.9167603850364685,
+        "main_value_probability_loss": 0.24618226289749146,
+        "main_value_probability_neutral": 8.426234671787824e-06,
+        "main_value_probability_win": 0.7538126707077026,
+        "policy_loss": 5.17635440826416,
+        "turn": 6
+      },
+      {
+        "gradient_norm_value": 8.818808555603027,
+        "main_value_mse": 1.282849907875061,
+        "main_value_probability_loss": 0.8722649812698364,
+        "main_value_probability_neutral": 6.684940217382973e-06,
+        "main_value_probability_win": 0.12772971391677856,
+        "policy_loss": 5.115191459655762,
+        "turn": 7
+      },
+      {
+        "gradient_norm_value": 2.4580605030059814,
+        "main_value_mse": 0.6037384867668152,
+        "main_value_probability_loss": 0.3878875970840454,
+        "main_value_probability_neutral": 6.9979741965653375e-06,
+        "main_value_probability_win": 0.612103283405304,
+        "policy_loss": 5.03856897354126,
+        "turn": 8
+      },
+      {
+        "gradient_norm_value": 4.095925331115723,
+        "main_value_mse": 0.551603376865387,
+        "main_value_probability_loss": 0.6692622900009155,
+        "main_value_probability_neutral": 5.8769373936229385e-06,
+        "main_value_probability_win": 0.3307332992553711,
+        "policy_loss": 4.8407111167907715,
+        "turn": 9
+      }
+    ]
+  },
+  "learning_seconds": {
+    "original": 704.8095972490264,
+    "cross_entropy": 704.9610063649016
+  },
+  "operator_sha256": "d45602012087dfe9477a0359d929d24966a7f9d353b92c594c47ba7bd8eac1f9",
+  "scope": "Nine-update single-seed objective screen with fixed complete validation; no final-horizon, architecture ranking, MFU or playing-strength claim."
+}

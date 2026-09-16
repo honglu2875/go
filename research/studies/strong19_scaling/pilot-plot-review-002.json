@@ -1,0 +1,12 @@
+{
+  "kind": "joint19_pilot_plot_review",
+  "status": "passed",
+  "created": 1789583600.4478273,
+  "image_sha256": "fe26d232ace88192cac88b9851bcbd5ae1438f3cd06bc44b5bbc0e80fb6e2036",
+  "results_sha256": "b3704ec12910cc9c207dce8040b186af87179e5e5bae4740b800387e29296d43",
+  "panels": 4,
+  "observations": 312,
+  "legend_and_panel_titles_separated": true,
+  "solid_validation_dashed_probe": true,
+  "single_seed_scope_visible": true
+}

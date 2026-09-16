@@ -1,0 +1,13 @@
+{
+  "checkpoint_manifest_sha256": "13bab6b1e065abb98f78b2c27ad0a0adc91a73793e12be8242b2a58bf4e2eef8",
+  "config_sha256": "342fb7dbbe467abbf79cbcdabd54e23e9ed8799953481200b560ea401ded8c3f",
+  "games": 16,
+  "head_sha256": "5ab5a6f446e35130b019e85c896f3551ddcc17dfe5638a00e8068e8f3b2c06f6",
+  "operator_sha256": "ff2c92756f96fed18e691e41f8a9288d7435460f2f487564f37da3ea5dccc1d5",
+  "parameters_sha256": "a26660cf453f78b93faa1d2de9027d82fb6615ed4ada49790095b432e209ffa0",
+  "positions": 6643,
+  "selection_rule": "Smallest game SHA within each of eight opponent strata, independently in train and validation; full histories; no test targets.",
+  "snapshot": "8a985a080fe13cf8322dd6dcb083a6368fff0f34e964d0b85c515da56802d9ae",
+  "status": "prepared",
+  "updates": 0
+}

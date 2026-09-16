@@ -1,0 +1,23 @@
+{
+  "kind": "joint19_pilot_plot",
+  "inputs": [
+    {
+      "label": "CNN source optimizer",
+      "sha256": "4b0a8b7724b82ab8913e449f4201bd5edb90614e6df132050f1cd83539f4ac49",
+      "snapshot": "8899a885fdfeb48328c447892c0b1b6dd0e22a3d21510204d7d7686a769edbf8"
+    },
+    {
+      "label": "CNN AdamW",
+      "sha256": "e03fb6498d71bcc88a4f67f7dd2a46fa103764daca9a657b2a0cdf0141f7e5cd",
+      "snapshot": "779336b7884695f35cfff4fa578b3779ade63515755cb873f0527d798c25b0f8"
+    },
+    {
+      "label": "Transformer AdamW",
+      "sha256": "600fd8d8339720c5913b8cdc4cae708b2a9daab016de64af90875829a9d13781",
+      "snapshot": "5e3978d62bc6d8611cd703f5ac894bb70a73289b7a6d62fe615c44e2727a5173"
+    }
+  ],
+  "provisional": false,
+  "validation_population_sha256": "bec421033b4213d6fcf71b96566567461c5e09fbba2e6880e480b2e8a1a90a6a",
+  "output_sha256": "beeb400c346b238b2356aa3bc526cbe23a43c779f3580aefc6ebb77f311e347e"
+}

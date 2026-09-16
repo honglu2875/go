@@ -1,0 +1,49 @@
+{
+  "changes": [
+    "value objective: signed MSE to CE against [(1+y)/2,(1-y)/2,0]",
+    "additional probability diagnostics"
+  ],
+  "checkpoint_reserve_bytes": 3221225472,
+  "config_sha256": "8cfcbe4f1760da9791baefeaf25258979c1bf2d8bac689351192ae9a4822c3d8",
+  "control_audit": "research/studies/strong19_scaling/pilot-transformer-001/audit.json",
+  "control_audit_sha256": "600fd8d8339720c5913b8cdc4cae708b2a9daab016de64af90875829a9d13781",
+  "created": 1789586591.433419,
+  "expected_positions": 5787025,
+  "hypothesis": "Cross-entropy supplies a restoring gradient after third-outcome saturation, preventing the early near-zero signed-value plateau.",
+  "initial_metric_atol": 0.0001,
+  "initial_metric_rtol": 1e-05,
+  "kind": "objective_only_joint_continuation",
+  "operators": {
+    "research/studies/strong19_source_muon/replicate_full_size.py": "5ad8480692a675dd21de41fda9342d8023031d005d50c793a624d15548eac5df",
+    "research/studies/strong19_value_debug/audit_continuation.py": "b02ada3ac6556687aefab20d2663bfe141702f8a6157622e4585fbac40010623",
+    "research/studies/strong19_value_debug/execute_continuation.py": "04c637421fda71eb5b7fe29e33cfcf9fd749d5872bba39ac862f98ec7517e354"
+  },
+  "original_schedule_horizon": 108,
+  "output_directory": "ce-continuation-001",
+  "prefix_attempt": "pod-20260916T190218Z-27ba000f",
+  "prefix_evidence": {
+    "research/studies/strong19_value_debug/CE_PREFIX_RESULTS_001.json": "d1dfc9f0d38d6e697a99169ef3ecfec97a543a2ef724ebbba41657c05d6a8dd9",
+    "research/studies/strong19_value_debug/ce-prefix-001/audit.json": "e151ba0ba6d604b18643716812ee75d8e937619fcb7edebea0f6053732d8fdb4",
+    "research/studies/strong19_value_debug/ce-prefix-001/replica.json": "c7c90b2c69e2c63773912816ad32b74829185da8b65b007beb648d57f230bfd7",
+    "research/studies/strong19_value_debug/ce-prefix-001/result.json": "d2767850b3c98173713f4943dec79596664bedab772aadf5731c707b592110fa",
+    "research/studies/strong19_value_debug/continuation-auditor-check-001.json": "e6e09dd2173d4198ca4f6105d66b430970fc477f470954596b32cc224190b211"
+  },
+  "prefix_turn": 9,
+  "python": "/workspace/go/.gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "qualification_sha256": "9bfbd2f6b429682b2e5f9808e3b620551526e94026541a7220f8b21833a2ca63",
+  "rationale": "Measured nine-update screen improved held-out value MSE by 32.27% and policy KL by 1.67%. Continue the same weights, sampler and original optimizer schedule to the matched 108-update endpoint.",
+  "replica_peer": 3,
+  "resume_staging_reserve_bytes": 3221225472,
+  "scope": "Exploratory single-seed objective repair continuation, not an architecture or playing-strength conclusion.",
+  "snapshot": "5eba4db502e1d3b39e1c9385db0f4ec6b2e7a85ea1b290a6eba2177b71972cc6",
+  "stop_turn": 108,
+  "timeout_seconds": 14400,
+  "unchanged": [
+    "model and initialization",
+    "policy/auxiliary objectives",
+    "value loss coefficient 0.7",
+    "batch 128 complete games",
+    "108-step optimizer schedule with 40 warmup steps",
+    "sampling, D4 and validation populations"
+  ]
+}

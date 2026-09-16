@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Signed-target cross-entropy value repair",
+  "hypothesis": "Replace signed-expectation MSE with a stable cross-entropy surrogate while preserving the model, parameter initialization, inference, data, policy objective and optimizer schedule.",
+  "requires_native": false
+}

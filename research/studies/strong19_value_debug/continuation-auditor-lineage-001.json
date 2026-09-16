@@ -1,0 +1,5 @@
+{
+  "parent_sha256": "f31deafae19ad6116ac3014e4f1f53b2a7edf2942ab48432e3df478862bebf4e",
+  "derived_sha256": "b02ada3ac6556687aefab20d2663bfe141702f8a6157622e4585fbac40010623",
+  "changes": "Combine contiguous prefix/continuation metrics by physical host; require the exact resume group, initial parameters, rank mapping and inherited evaluation histories; independently replay all draws to the final checkpoint."
+}

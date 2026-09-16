@@ -1,0 +1,39 @@
+{
+  "changes": [
+    "value objective: signed MSE to CE against [(1+y)/2,(1-y)/2,0]",
+    "additional probability diagnostics"
+  ],
+  "checkpoint_reserve_bytes": 3221225472,
+  "config_sha256": "8cfcbe4f1760da9791baefeaf25258979c1bf2d8bac689351192ae9a4822c3d8",
+  "control_audit": "research/studies/strong19_scaling/pilot-transformer-001/audit.json",
+  "control_audit_sha256": "600fd8d8339720c5913b8cdc4cae708b2a9daab016de64af90875829a9d13781",
+  "expected_positions": 496462,
+  "hypothesis": "Cross-entropy supplies a restoring gradient after third-outcome saturation, preventing the early near-zero signed-value plateau.",
+  "initial_metric_atol": 0.0001,
+  "initial_metric_rtol": 1e-05,
+  "kind": "objective_only_joint_prefix",
+  "operators": {
+    "research/studies/strong19_source_muon/replicate_full_size.py": "5ad8480692a675dd21de41fda9342d8023031d005d50c793a624d15548eac5df",
+    "research/studies/strong19_value_debug/audit_prefix.py": "f31deafae19ad6116ac3014e4f1f53b2a7edf2942ab48432e3df478862bebf4e",
+    "research/studies/strong19_value_debug/execute_prefix.py": "136507801571e0e36739be5926ab8db1c3740e1d73984615665557ac8bc93dbd"
+  },
+  "original_schedule_horizon": 108,
+  "output_directory": "ce-prefix-001",
+  "prelaunch_revision": "Compare the unchanged initial metrics, allowing stated numerical tolerance; the new diagnostic-only fields are additional.",
+  "python": "/workspace/go/.gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "qualification_sha256": "9bfbd2f6b429682b2e5f9808e3b620551526e94026541a7220f8b21833a2ca63",
+  "replica_peer": 3,
+  "scope": "Nine-update prefix from original initialization, compared with the already completed original control at turn 9; not full learning or strength evidence.",
+  "snapshot": "5eba4db502e1d3b39e1c9385db0f4ec6b2e7a85ea1b290a6eba2177b71972cc6",
+  "stop_turn": 9,
+  "supersedes": "ce-prefix-plan-001.json",
+  "timeout_seconds": 1800,
+  "unchanged": [
+    "model and initialization",
+    "policy/auxiliary objectives",
+    "value loss coefficient 0.7",
+    "batch 128 complete games",
+    "108-step optimizer schedule with 40 warmup steps",
+    "sampling, D4 and validation populations"
+  ]
+}

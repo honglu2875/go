@@ -1,0 +1,10 @@
+{
+  "status": "prepared",
+  "kind": "scientific19_owner_pull",
+  "manifest_sha256": "2d39f7647a463e2e718844b19d45c35052d88f9ab9d8b2b222f5cd6c1f791def",
+  "files": 697,
+  "bytes": 2961694767,
+  "required_reserve_after_pull": 73716960384,
+  "source_peer": 3,
+  "created": 1789506036.6251523
+}

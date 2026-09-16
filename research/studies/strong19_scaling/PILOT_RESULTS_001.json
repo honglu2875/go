@@ -1,0 +1,134 @@
+{
+  "kind": "joint19_pilot_results_review",
+  "status": "passed",
+  "created": 1789583540.0709903,
+  "sequence_result_sha256": "18215ab1102b5761ec56eef0f1642d002bdd0b40969310382e04a0c2d35cf386",
+  "finished_utc": "2026-09-16T03:34:53.312356+00:00",
+  "elapsed_hours": 6.144861520330111,
+  "arms": {
+    "source_cnn": {
+      "attempt": "pod-20260915T212613Z-681ce7a0",
+      "audit_sha256": "4b0a8b7724b82ab8913e449f4201bd5edb90614e6df132050f1cd83539f4ac49",
+      "steps": 108,
+      "positions": 5787025,
+      "endpoint": {
+        "expert_kl": 0.8016416954540175,
+        "family_kl": 0.823065845673606,
+        "value_family_mse": 0.16885146925554034,
+        "value_mse": 0.15781617609145163
+      },
+      "probe_endpoint": {
+        "expert_kl": 0.7774106918575443,
+        "family_kl": 0.8277197400934715,
+        "value_family_mse": 0.17108816673590582,
+        "value_mse": 0.14697066432827316
+      },
+      "sustained_overfit_flags": 0,
+      "wall_seconds": 6444.139102697372,
+      "learning_seconds": 5550.532999191986
+    },
+    "cnn_adamw": {
+      "attempt": "pod-20260915T231547Z-d4ee867f",
+      "audit_sha256": "e03fb6498d71bcc88a4f67f7dd2a46fa103764daca9a657b2a0cdf0141f7e5cd",
+      "steps": 108,
+      "positions": 5787025,
+      "endpoint": {
+        "expert_kl": 0.9898418967926812,
+        "family_kl": 1.0141815923693414,
+        "value_family_mse": 0.16738954281786245,
+        "value_mse": 0.15960292880706453
+      },
+      "probe_endpoint": {
+        "expert_kl": 0.9626995027259366,
+        "family_kl": 1.020517387242676,
+        "value_family_mse": 0.17828109676047807,
+        "value_mse": 0.1563539840919417
+      },
+      "sustained_overfit_flags": 0,
+      "wall_seconds": 6418.428299188614,
+      "learning_seconds": 5534.319477667072
+    },
+    "transformer": {
+      "attempt": "pod-20260916T010420Z-754c0b22",
+      "audit_sha256": "600fd8d8339720c5913b8cdc4cae708b2a9daab016de64af90875829a9d13781",
+      "steps": 108,
+      "positions": 5787025,
+      "endpoint": {
+        "expert_kl": 0.9657131537026826,
+        "family_kl": 0.9889828128390126,
+        "value_family_mse": 0.543563874179728,
+        "value_mse": 0.5422333737658676
+      },
+      "probe_endpoint": {
+        "expert_kl": 0.9419582477601733,
+        "family_kl": 0.99671148875403,
+        "value_family_mse": 0.5538313086070712,
+        "value_mse": 0.5465284614100906
+      },
+      "sustained_overfit_flags": 0,
+      "wall_seconds": 8952.133162975311,
+      "learning_seconds": 8175.380675567052
+    }
+  },
+  "comparisons": {
+    "source_cnn": {
+      "expert_kl": {
+        "cnn_adamw": 0.9898418967926812,
+        "relative_gain": 0.19013157752614462,
+        "value": 0.8016416954540175
+      },
+      "family_kl": {
+        "cnn_adamw": 1.0141815923693414,
+        "relative_gain": 0.18844332034192102,
+        "value": 0.823065845673606
+      },
+      "value_family_mse": {
+        "cnn_adamw": 0.16738954281786245,
+        "relative_gain": -0.008733678419019508,
+        "value": 0.16885146925554034
+      },
+      "value_mse": {
+        "cnn_adamw": 0.15960292880706453,
+        "relative_gain": 0.011194987015387459,
+        "value": 0.15781617609145163
+      }
+    },
+    "transformer": {
+      "expert_kl": {
+        "cnn_adamw": 0.9898418967926812,
+        "relative_gain": 0.02437636067758031,
+        "value": 0.9657131537026826
+      },
+      "family_kl": {
+        "cnn_adamw": 1.0141815923693414,
+        "relative_gain": 0.02484641776179264,
+        "value": 0.9889828128390126
+      },
+      "value_family_mse": {
+        "cnn_adamw": 0.16738954281786245,
+        "relative_gain": -2.247298875600509,
+        "value": 0.543563874179728
+      },
+      "value_mse": {
+        "cnn_adamw": 0.15960292880706453,
+        "relative_gain": -2.39738987134343,
+        "value": 0.5422333737658676
+      }
+    }
+  },
+  "transformer_value_diagnostic": {
+    "near_zero_baseline_observations": [
+      9,
+      18,
+      27,
+      36,
+      45,
+      54
+    ],
+    "final_mean_prediction": 0.4082528793236752,
+    "target_mean": 0.0011794861354426694,
+    "observation": "Value learning was nearly indistinguishable from the zero predictor during updates 9\u201354, then partially recovered with a large positive bias. Training-probe error remains similarly high; no sustained overfit flag.",
+    "hypothesis": "Investigate saturation/degeneracy in the three-softmax signed-value MSE head and its optimization before attributing the gap to backbone capacity. Logit probabilities have not yet been measured, so draw-class saturation is unconfirmed."
+  },
+  "scope": "Single seed, fixed 108-update supervised pilot on identical data and draws. No playing-strength measurement. The registered queue stopped for review; no new learning runs launched."
+}

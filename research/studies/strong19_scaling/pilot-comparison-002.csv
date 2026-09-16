@@ -1,0 +1,313 @@
+label,split,turn,metric,value
+CNN source optimizer,validation,0,expert_kl,2.42279964353622
+CNN source optimizer,validation,0,family_kl,2.4661592730314443
+CNN source optimizer,validation,0,value_mse,0.92998914026991
+CNN source optimizer,validation,0,value_family_mse,0.9225447082157319
+CNN source optimizer,validation,9,expert_kl,2.415991471747271
+CNN source optimizer,validation,9,family_kl,2.459376285903471
+CNN source optimizer,validation,9,value_mse,0.9064490496934302
+CNN source optimizer,validation,9,value_family_mse,0.8998533768461231
+CNN source optimizer,validation,18,expert_kl,2.4041846296021743
+CNN source optimizer,validation,18,family_kl,2.4475980381809346
+CNN source optimizer,validation,18,value_mse,0.8382355742713655
+CNN source optimizer,validation,18,value_family_mse,0.8342503386219887
+CNN source optimizer,validation,27,expert_kl,2.2099634808002535
+CNN source optimizer,validation,27,family_kl,2.252735618296159
+CNN source optimizer,validation,27,value_mse,0.6241567299223778
+CNN source optimizer,validation,27,value_family_mse,0.6347564421873457
+CNN source optimizer,validation,36,expert_kl,1.6874631788440966
+CNN source optimizer,validation,36,family_kl,1.7242780411524126
+CNN source optimizer,validation,36,value_mse,0.3037538891029725
+CNN source optimizer,validation,36,value_family_mse,0.3094005629639047
+CNN source optimizer,validation,45,expert_kl,1.3491318663275078
+CNN source optimizer,validation,45,family_kl,1.3771938868110731
+CNN source optimizer,validation,45,value_mse,0.3317702721603421
+CNN source optimizer,validation,45,value_family_mse,0.33789474803448083
+CNN source optimizer,validation,54,expert_kl,1.270029558656733
+CNN source optimizer,validation,54,family_kl,1.2968575022561155
+CNN source optimizer,validation,54,value_mse,0.4585113495016816
+CNN source optimizer,validation,54,value_family_mse,0.468548926402577
+CNN source optimizer,validation,63,expert_kl,1.0851380451539794
+CNN source optimizer,validation,63,family_kl,1.108908537837519
+CNN source optimizer,validation,63,value_mse,0.2803672783946352
+CNN source optimizer,validation,63,value_family_mse,0.29043560006105223
+CNN source optimizer,validation,72,expert_kl,0.9939623509917639
+CNN source optimizer,validation,72,family_kl,1.0163672572980387
+CNN source optimizer,validation,72,value_mse,0.20086763928813123
+CNN source optimizer,validation,72,value_family_mse,0.20894269992781825
+CNN source optimizer,validation,81,expert_kl,1.017834139759306
+CNN source optimizer,validation,81,family_kl,1.0418452214220357
+CNN source optimizer,validation,81,value_mse,0.2765321820790446
+CNN source optimizer,validation,81,value_family_mse,0.2901038183724159
+CNN source optimizer,validation,90,expert_kl,0.8920555820937146
+CNN source optimizer,validation,90,family_kl,0.9135058258753275
+CNN source optimizer,validation,90,value_mse,0.19819648909225498
+CNN source optimizer,validation,90,value_family_mse,0.207383504716197
+CNN source optimizer,validation,99,expert_kl,0.9422505122887084
+CNN source optimizer,validation,99,family_kl,0.9647691076937845
+CNN source optimizer,validation,99,value_mse,0.23279057203374728
+CNN source optimizer,validation,99,value_family_mse,0.24612239720398066
+CNN source optimizer,validation,108,expert_kl,0.8016416954540175
+CNN source optimizer,validation,108,family_kl,0.823065845673606
+CNN source optimizer,validation,108,value_mse,0.15781617609145163
+CNN source optimizer,validation,108,value_family_mse,0.16885146925554034
+CNN source optimizer,training_probe,0,expert_kl,2.3690091035111553
+CNN source optimizer,training_probe,0,family_kl,2.478385701848482
+CNN source optimizer,training_probe,0,value_mse,0.9314950573504922
+CNN source optimizer,training_probe,0,value_family_mse,0.9181358694510677
+CNN source optimizer,training_probe,9,expert_kl,2.3624144946783767
+CNN source optimizer,training_probe,9,family_kl,2.4718385308268607
+CNN source optimizer,training_probe,9,value_mse,0.9071360256364782
+CNN source optimizer,training_probe,9,value_family_mse,0.8956534968153144
+CNN source optimizer,training_probe,18,expert_kl,2.3509850992222248
+CNN source optimizer,training_probe,18,family_kl,2.4604518410550362
+CNN source optimizer,training_probe,18,value_mse,0.8361953642509257
+CNN source optimizer,training_probe,18,value_family_mse,0.8308227238641672
+CNN source optimizer,training_probe,27,expert_kl,2.161808718112126
+CNN source optimizer,training_probe,27,family_kl,2.2691717773707847
+CNN source optimizer,training_probe,27,value_mse,0.5615411451113401
+CNN source optimizer,training_probe,27,value_family_mse,0.5925193937431774
+CNN source optimizer,training_probe,36,expert_kl,1.6504597837160189
+CNN source optimizer,training_probe,36,family_kl,1.7420251160729512
+CNN source optimizer,training_probe,36,value_mse,0.2942624504586644
+CNN source optimizer,training_probe,36,value_family_mse,0.316483503799465
+CNN source optimizer,training_probe,45,expert_kl,1.3110123062538381
+CNN source optimizer,training_probe,45,family_kl,1.3798039253159473
+CNN source optimizer,training_probe,45,value_mse,0.3345934250666947
+CNN source optimizer,training_probe,45,value_family_mse,0.36166448526279876
+CNN source optimizer,training_probe,54,expert_kl,1.234620235426009
+CNN source optimizer,training_probe,54,family_kl,1.302503444296999
+CNN source optimizer,training_probe,54,value_mse,0.45920864566809866
+CNN source optimizer,training_probe,54,value_family_mse,0.4973669657432236
+CNN source optimizer,training_probe,63,expert_kl,1.0564793031185458
+CNN source optimizer,training_probe,63,family_kl,1.1137696607814491
+CNN source optimizer,training_probe,63,value_mse,0.2786626058967854
+CNN source optimizer,training_probe,63,value_family_mse,0.30845675342390844
+CNN source optimizer,training_probe,72,expert_kl,0.9662403708389933
+CNN source optimizer,training_probe,72,family_kl,1.0198751254299343
+CNN source optimizer,training_probe,72,value_mse,0.20538658972701967
+CNN source optimizer,training_probe,72,value_family_mse,0.23134158986970804
+CNN source optimizer,training_probe,81,expert_kl,0.9864302821995423
+CNN source optimizer,training_probe,81,family_kl,1.0444227630707785
+CNN source optimizer,training_probe,81,value_mse,0.26858768144078066
+CNN source optimizer,training_probe,81,value_family_mse,0.3052386983916018
+CNN source optimizer,training_probe,90,expert_kl,0.8649104592691144
+CNN source optimizer,training_probe,90,family_kl,0.9169808714501886
+CNN source optimizer,training_probe,90,value_mse,0.19143452630240798
+CNN source optimizer,training_probe,90,value_family_mse,0.21658598026840256
+CNN source optimizer,training_probe,99,expert_kl,0.9164820011443351
+CNN source optimizer,training_probe,99,family_kl,0.9698961724924375
+CNN source optimizer,training_probe,99,value_mse,0.23316162431909737
+CNN source optimizer,training_probe,99,value_family_mse,0.2674798401479103
+CNN source optimizer,training_probe,108,expert_kl,0.7774106918575443
+CNN source optimizer,training_probe,108,family_kl,0.8277197400934715
+CNN source optimizer,training_probe,108,value_mse,0.14697066432827316
+CNN source optimizer,training_probe,108,value_family_mse,0.17108816673590582
+CNN AdamW,validation,0,expert_kl,2.42279964353622
+CNN AdamW,validation,0,family_kl,2.4661592730314443
+CNN AdamW,validation,0,value_mse,0.92998914026991
+CNN AdamW,validation,0,value_family_mse,0.9225447082157319
+CNN AdamW,validation,9,expert_kl,2.31476682569691
+CNN AdamW,validation,9,family_kl,2.3602691428302776
+CNN AdamW,validation,9,value_mse,0.8825917553074303
+CNN AdamW,validation,9,value_family_mse,0.888108553984506
+CNN AdamW,validation,18,expert_kl,1.8639624008858076
+CNN AdamW,validation,18,family_kl,1.8984689584636834
+CNN AdamW,validation,18,value_mse,0.770605842955324
+CNN AdamW,validation,18,value_family_mse,0.7700951274459735
+CNN AdamW,validation,27,expert_kl,1.7266809659538604
+CNN AdamW,validation,27,family_kl,1.7617256710888634
+CNN AdamW,validation,27,value_mse,1.095702404128272
+CNN AdamW,validation,27,value_family_mse,1.1093632020613942
+CNN AdamW,validation,36,expert_kl,1.644961132540351
+CNN AdamW,validation,36,family_kl,1.6762549887663574
+CNN AdamW,validation,36,value_mse,0.6518302787379321
+CNN AdamW,validation,36,value_family_mse,0.6539062613315545
+CNN AdamW,validation,45,expert_kl,1.8102298048352385
+CNN AdamW,validation,45,family_kl,1.844642128949491
+CNN AdamW,validation,45,value_mse,0.6720856200896486
+CNN AdamW,validation,45,value_family_mse,0.6718612333289014
+CNN AdamW,validation,54,expert_kl,1.4297533828161284
+CNN AdamW,validation,54,family_kl,1.459775192207006
+CNN AdamW,validation,54,value_mse,0.589609944569662
+CNN AdamW,validation,54,value_family_mse,0.6034112851525594
+CNN AdamW,validation,63,expert_kl,1.3770169990949088
+CNN AdamW,validation,63,family_kl,1.406621656750613
+CNN AdamW,validation,63,value_mse,0.4001323646037661
+CNN AdamW,validation,63,value_family_mse,0.4124229002365724
+CNN AdamW,validation,72,expert_kl,1.2460012192289827
+CNN AdamW,validation,72,family_kl,1.2725655673501657
+CNN AdamW,validation,72,value_mse,0.27349188936689256
+CNN AdamW,validation,72,value_family_mse,0.28002132899695253
+CNN AdamW,validation,81,expert_kl,1.1742035938744113
+CNN AdamW,validation,81,family_kl,1.1997404354758698
+CNN AdamW,validation,81,value_mse,0.24758464232839558
+CNN AdamW,validation,81,value_family_mse,0.25221532135272634
+CNN AdamW,validation,90,expert_kl,1.0921097333299468
+CNN AdamW,validation,90,family_kl,1.1177275199644239
+CNN AdamW,validation,90,value_mse,0.21000262251514706
+CNN AdamW,validation,90,value_family_mse,0.2172841968140076
+CNN AdamW,validation,99,expert_kl,1.0456431517121043
+CNN AdamW,validation,99,family_kl,1.0712308019491337
+CNN AdamW,validation,99,value_mse,0.1825963832128025
+CNN AdamW,validation,99,value_family_mse,0.19044487374298788
+CNN AdamW,validation,108,expert_kl,0.9898418967926812
+CNN AdamW,validation,108,family_kl,1.0141815923693414
+CNN AdamW,validation,108,value_mse,0.15960292880706453
+CNN AdamW,validation,108,value_family_mse,0.16738954281786245
+CNN AdamW,training_probe,0,expert_kl,2.3690091035111553
+CNN AdamW,training_probe,0,family_kl,2.478385701848482
+CNN AdamW,training_probe,0,value_mse,0.9314950573504922
+CNN AdamW,training_probe,0,value_family_mse,0.9181358694510677
+CNN AdamW,training_probe,9,expert_kl,2.2629733465288506
+CNN AdamW,training_probe,9,family_kl,2.376972337578761
+CNN AdamW,training_probe,9,value_mse,0.8728156857346538
+CNN AdamW,training_probe,9,value_family_mse,0.8907833923671616
+CNN AdamW,training_probe,18,expert_kl,1.8369036141916162
+CNN AdamW,training_probe,18,family_kl,1.9244995868357373
+CNN AdamW,training_probe,18,value_mse,0.7693058754454069
+CNN AdamW,training_probe,18,value_family_mse,0.7735909868693804
+CNN AdamW,training_probe,27,expert_kl,1.6932481323149062
+CNN AdamW,training_probe,27,family_kl,1.7793576208701785
+CNN AdamW,training_probe,27,value_mse,1.0626017029252648
+CNN AdamW,training_probe,27,value_family_mse,1.1029085666634435
+CNN AdamW,training_probe,36,expert_kl,1.6132595175185607
+CNN AdamW,training_probe,36,family_kl,1.6899699384444853
+CNN AdamW,training_probe,36,value_mse,0.6373090249108023
+CNN AdamW,training_probe,36,value_family_mse,0.6478017977139443
+CNN AdamW,training_probe,45,expert_kl,1.7700652584987813
+CNN AdamW,training_probe,45,family_kl,1.8570311550642282
+CNN AdamW,training_probe,45,value_mse,0.6756795289037643
+CNN AdamW,training_probe,45,value_family_mse,0.6831750770082555
+CNN AdamW,training_probe,54,expert_kl,1.3903014113465941
+CNN AdamW,training_probe,54,family_kl,1.4634470369206314
+CNN AdamW,training_probe,54,value_mse,0.629091378124971
+CNN AdamW,training_probe,54,value_family_mse,0.6885603623811053
+CNN AdamW,training_probe,63,expert_kl,1.3411061963883668
+CNN AdamW,training_probe,63,family_kl,1.413800265401509
+CNN AdamW,training_probe,63,value_mse,0.3601411244836537
+CNN AdamW,training_probe,63,value_family_mse,0.3969816633404752
+CNN AdamW,training_probe,72,expert_kl,1.2098386650354467
+CNN AdamW,training_probe,72,family_kl,1.2752223035662689
+CNN AdamW,training_probe,72,value_mse,0.2819213855830643
+CNN AdamW,training_probe,72,value_family_mse,0.3120338391654744
+CNN AdamW,training_probe,81,expert_kl,1.1460514334424952
+CNN AdamW,training_probe,81,family_kl,1.2090785708433378
+CNN AdamW,training_probe,81,value_mse,0.27895747987310554
+CNN AdamW,training_probe,81,value_family_mse,0.3047528649493086
+CNN AdamW,training_probe,90,expert_kl,1.0625675960125043
+CNN AdamW,training_probe,90,family_kl,1.1249127246078063
+CNN AdamW,training_probe,90,value_mse,0.23052635765682566
+CNN AdamW,training_probe,90,value_family_mse,0.2568898693485099
+CNN AdamW,training_probe,99,expert_kl,1.0156670839690753
+CNN AdamW,training_probe,99,family_kl,1.0765038829114997
+CNN AdamW,training_probe,99,value_mse,0.21806162285542566
+CNN AdamW,training_probe,99,value_family_mse,0.24617246405414145
+CNN AdamW,training_probe,108,expert_kl,0.9626995027259366
+CNN AdamW,training_probe,108,family_kl,1.020517387242676
+CNN AdamW,training_probe,108,value_mse,0.1563539840919417
+CNN AdamW,training_probe,108,value_family_mse,0.17828109676047807
+Transformer AdamW,validation,0,expert_kl,2.574227773046123
+Transformer AdamW,validation,0,family_kl,2.6173902822268147
+Transformer AdamW,validation,0,value_mse,0.9869587257683423
+Transformer AdamW,validation,0,value_family_mse,0.9840257561523416
+Transformer AdamW,validation,9,expert_kl,2.1167352623363995
+Transformer AdamW,validation,9,family_kl,2.1558080195553906
+Transformer AdamW,validation,9,value_mse,0.9215952005235116
+Transformer AdamW,validation,9,value_family_mse,0.9143266725636002
+Transformer AdamW,validation,18,expert_kl,1.5970490492139295
+Transformer AdamW,validation,18,family_kl,1.628323133264753
+Transformer AdamW,validation,18,value_mse,0.9216022512969859
+Transformer AdamW,validation,18,value_family_mse,0.9143333874270683
+Transformer AdamW,validation,27,expert_kl,1.4292906965623131
+Transformer AdamW,validation,27,family_kl,1.4552629320619648
+Transformer AdamW,validation,27,value_mse,0.9216015709236697
+Transformer AdamW,validation,27,value_family_mse,0.9143328572126238
+Transformer AdamW,validation,36,expert_kl,1.3676070635450537
+Transformer AdamW,validation,36,family_kl,1.3939672670226697
+Transformer AdamW,validation,36,value_mse,0.92160316656109
+Transformer AdamW,validation,36,value_family_mse,0.9143343055165091
+Transformer AdamW,validation,45,expert_kl,1.272954094758767
+Transformer AdamW,validation,45,family_kl,1.2994294479792945
+Transformer AdamW,validation,45,value_mse,0.921601797714775
+Transformer AdamW,validation,45,value_family_mse,0.9143331027481719
+Transformer AdamW,validation,54,expert_kl,1.2402478366720442
+Transformer AdamW,validation,54,family_kl,1.2647701054933167
+Transformer AdamW,validation,54,value_mse,0.9215787014705913
+Transformer AdamW,validation,54,value_family_mse,0.9143107483378347
+Transformer AdamW,validation,63,expert_kl,1.16150536548877
+Transformer AdamW,validation,63,family_kl,1.1860942244729822
+Transformer AdamW,validation,63,value_mse,0.8883279584381324
+Transformer AdamW,validation,63,value_family_mse,0.8825506362267304
+Transformer AdamW,validation,72,expert_kl,1.1233747501409992
+Transformer AdamW,validation,72,family_kl,1.147323876746393
+Transformer AdamW,validation,72,value_mse,0.6816976832122226
+Transformer AdamW,validation,72,value_family_mse,0.6819354501135605
+Transformer AdamW,validation,81,expert_kl,1.0920173483532114
+Transformer AdamW,validation,81,family_kl,1.1172105857904548
+Transformer AdamW,validation,81,value_mse,0.6108444646187732
+Transformer AdamW,validation,81,value_family_mse,0.6106840196198987
+Transformer AdamW,validation,90,expert_kl,1.0516449191275878
+Transformer AdamW,validation,90,family_kl,1.0753118874377368
+Transformer AdamW,validation,90,value_mse,0.5545662416806543
+Transformer AdamW,validation,90,value_family_mse,0.55578590071684
+Transformer AdamW,validation,99,expert_kl,0.9983444411296944
+Transformer AdamW,validation,99,family_kl,1.0216664126144748
+Transformer AdamW,validation,99,value_mse,0.5435126436689254
+Transformer AdamW,validation,99,value_family_mse,0.5445612965119591
+Transformer AdamW,validation,108,expert_kl,0.9657131537026826
+Transformer AdamW,validation,108,family_kl,0.9889828128390126
+Transformer AdamW,validation,108,value_mse,0.5422333737658676
+Transformer AdamW,validation,108,value_family_mse,0.543563874179728
+Transformer AdamW,training_probe,0,expert_kl,2.5193004423250467
+Transformer AdamW,training_probe,0,family_kl,2.6285187857491628
+Transformer AdamW,training_probe,0,value_mse,0.9784845889813557
+Transformer AdamW,training_probe,0,value_family_mse,0.9698127867683531
+Transformer AdamW,training_probe,9,expert_kl,2.0852057549936736
+Transformer AdamW,training_probe,9,family_kl,2.183536166236514
+Transformer AdamW,training_probe,9,value_mse,0.9253744564699123
+Transformer AdamW,training_probe,9,value_family_mse,0.9127892085484096
+Transformer AdamW,training_probe,18,expert_kl,1.5607026365642969
+Transformer AdamW,training_probe,18,family_kl,1.6387656681121343
+Transformer AdamW,training_probe,18,value_mse,0.9253821246197179
+Transformer AdamW,training_probe,18,value_family_mse,0.9127962097289071
+Transformer AdamW,training_probe,27,expert_kl,1.3996060751516475
+Transformer AdamW,training_probe,27,family_kl,1.4646472628154448
+Transformer AdamW,training_probe,27,value_mse,0.9253813796099026
+Transformer AdamW,training_probe,27,value_family_mse,0.9127955361018105
+Transformer AdamW,training_probe,36,expert_kl,1.340724133549951
+Transformer AdamW,training_probe,36,family_kl,1.4071651034884982
+Transformer AdamW,training_probe,36,value_mse,0.9253829786553598
+Transformer AdamW,training_probe,36,value_family_mse,0.9127969590444414
+Transformer AdamW,training_probe,45,expert_kl,1.2413335007000907
+Transformer AdamW,training_probe,45,family_kl,1.3085675012497675
+Transformer AdamW,training_probe,45,value_mse,0.9253816703454404
+Transformer AdamW,training_probe,45,value_family_mse,0.9127957707359677
+Transformer AdamW,training_probe,54,expert_kl,1.2041315627732918
+Transformer AdamW,training_probe,54,family_kl,1.2629420265318854
+Transformer AdamW,training_probe,54,value_mse,0.9253578663732951
+Transformer AdamW,training_probe,54,value_family_mse,0.9127740557231601
+Transformer AdamW,training_probe,63,expert_kl,1.1269350993966656
+Transformer AdamW,training_probe,63,family_kl,1.1899428291926308
+Transformer AdamW,training_probe,63,value_mse,0.8923192795166347
+Transformer AdamW,training_probe,63,value_family_mse,0.8836152667091006
+Transformer AdamW,training_probe,72,expert_kl,1.0909130389655397
+Transformer AdamW,training_probe,72,family_kl,1.1493869357638888
+Transformer AdamW,training_probe,72,value_mse,0.682829415357
+Transformer AdamW,training_probe,72,value_family_mse,0.6924743349589999
+Transformer AdamW,training_probe,81,expert_kl,1.0615391553900042
+Transformer AdamW,training_probe,81,family_kl,1.1237844436887712
+Transformer AdamW,training_probe,81,value_mse,0.6063380220011211
+Transformer AdamW,training_probe,81,value_family_mse,0.6171236605871291
+Transformer AdamW,training_probe,90,expert_kl,1.0232233369345773
+Transformer AdamW,training_probe,90,family_kl,1.0800499083503845
+Transformer AdamW,training_probe,90,value_mse,0.5593665432300485
+Transformer AdamW,training_probe,90,value_family_mse,0.5666332509782579
+Transformer AdamW,training_probe,99,expert_kl,0.9726411680939844
+Transformer AdamW,training_probe,99,family_kl,1.0285704173738992
+Transformer AdamW,training_probe,99,value_mse,0.5504025851331802
+Transformer AdamW,training_probe,99,value_family_mse,0.5575889632815406
+Transformer AdamW,training_probe,108,expert_kl,0.9419582477601733
+Transformer AdamW,training_probe,108,family_kl,0.99671148875403
+Transformer AdamW,training_probe,108,value_mse,0.5465284614100906
+Transformer AdamW,training_probe,108,value_family_mse,0.5538313086070712

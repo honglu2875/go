@@ -1,0 +1,6 @@
+{
+  "parent": "research/studies/strong19_scaling/audit_run.py",
+  "parent_sha256": "013c6b63b26352aa242deeeb5df6055921af800d584ef12e951c943dc96a5352",
+  "derived_sha256": "f31deafae19ad6116ac3014e4f1f53b2a7edf2942ab48432e3df478862bebf4e",
+  "changes": "Require explicit AdamW stop boundary; audit prefix draws/counters/checkpoint while preserving full optimizer schedule in frozen configuration."
+}

@@ -40,7 +40,7 @@ def main():
         raise ValueError('Validation populations differ or no observations exist')
     plt.rcParams.update({'font.size':10, 'axes.spines.top':False, 'axes.spines.right':False})
     fig, axes = plt.subplots(2, 2, figsize=(12, 8), layout='constrained')
-    fig.get_layout_engine().set(rect=(0, .065, 1, .9))
+    fig.get_layout_engine().set(rect=(0, .065, 1, .86))
     handles = []; labels = []
     for (metric, title), axis in zip(PANELS, axes.flat):
         for index, source in enumerate(inputs):
