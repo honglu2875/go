@@ -1,0 +1,31 @@
+{
+  "status": "failed",
+  "tests": 6,
+  "sources": {
+    "train.py": "6f20ec5741187e40ef4cc2fd4428fca4451849ab9620680591a7d02693157335",
+    "host_metrics.py": "ca09a96510f26dc1135f58514a8fdf386631c63ae2b119b5b9e82765ac0a049b",
+    "training_probe.py": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5",
+    "learner.py": "08dd9fbada63b8859554503f845465003f9182d0f6cfc48afa332b025742db94",
+    "evaluation.py": "5f22ee880bf680db2a0e2fdf7242c1e40aea38d7b858c1b7448e7e861b199749",
+    "cnn_chunks.py": "1c5dffb60074ef8343d31b7c93c109f83895a41f9f7ed560fd1ac4a055e65f3a",
+    "policy_model.py": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2",
+    "inference.py": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2",
+    "adamw.py": "f940987ad3b4a54ecabe18c284f4dfc51159bc84d66df467e98d34ef5968c374",
+    "causal.py": "4a4dcd9984b7c2c402c0a07efc4b3495e47c39f566354f41f903dc518484aecc",
+    "draft_model.py": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3",
+    "encoder.py": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad",
+    "train_config.py": "bb7d1733960da6d5fa6e6e0da8a3699b4bba7a905e5fa0df68bf397661ec1303",
+    "joint.py": "eef1d09fe4a398719ce33eac2556730abb29b2e38bf3c5d08777ea325cd928df",
+    "qualify_value_ce.py": "a97a919a6a79e86336023bb8b155e7fd5eb69e97039ae29661a92e17902455ff",
+    "train_joint.py": "6507b1c5dff68c6b573d2e09911466f159d56cdeb379ba1bc99d6e7837a64c19",
+    "qualify_evaluation.py": "376bb447beffda37a5c41fe0d614a89b7a132c9746c8ca5c0a45aa4180a6b08a",
+    "compact.py": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1",
+    "policy_config.py": "152846974b7f3d3072c27ecc5cabb328ee5b5f6f54a086e0b138fcc61405d696",
+    "spatial_readout.py": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9",
+    "katago.py": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29",
+    "optimizer_io.py": "a50990bd5bc69efd3ca030d99ecd732c4b173e71c30417e706508adb149e3221",
+    "heads.py": "cd0a404ec4ba00972fa57bf7e8214f1c4153cfbc77b782763c2c73e7c3519d9d",
+    "observation_attention.py": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544",
+    "draft_mask.py": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44"
+  }
+}

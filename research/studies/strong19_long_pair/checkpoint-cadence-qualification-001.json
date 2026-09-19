@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "accepted": [
+    256,
+    512
+  ],
+  "rejected": [
+    0,
+    128,
+    300
+  ],
+  "source_sha256": "1578246ad13ce0fe11e712249282bd707ccf530167d73320f2f3238453d24aac"
+}

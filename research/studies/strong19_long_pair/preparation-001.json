@@ -1,0 +1,44 @@
+{
+  "arms": {
+    "cnn": {
+      "config_sha256": "e86783a4a1612f7cdae471851a36ace3b52e0d3499c3d23676631f8172545be1",
+      "parameters": 233220870,
+      "parent": "779336b7884695f35cfff4fa578b3779ade63515755cb873f0527d798c25b0f8",
+      "snapshot": "08ba4c9a0e6c723383e1e75f3eb4d6b179e67730183e2ee01b2944af54d6e90f"
+    },
+    "transformer": {
+      "config_sha256": "7655442986835bd7f9f17f916dd83bdad52b5da9f5f5885b292a290392d9c08a",
+      "parameters": 232011540,
+      "parent": "5eba4db502e1d3b39e1c9385db0f4ec6b2e7a85ea1b290a6eba2177b71972cc6",
+      "snapshot": "a1239d3c1d41b4765a13832b22525ef2f335d21e5eed0e3386d64307f42d0827"
+    }
+  },
+  "changes_from_pilot": [
+    "Common CE value objective",
+    "512-update cosine horizon from scratch",
+    "Evaluation every 16 updates; checkpoints at 256 and 512"
+  ],
+  "checkpoint_every": 256,
+  "created": 1789838537.4109516,
+  "draw_replay_sha256": "24d5e755f3e6db4824ca8e92ae11712f4a21c311930a6a5d8416135672812545",
+  "eval_every": 16,
+  "kind": "common_adamw_joint19_long_preparation",
+  "operator_sha256": "3e0e3aec2c53960809baa7078a71c110133e70f806f10e6a40b8a3c6b7a12ef9",
+  "position_exposures": 27217367,
+  "qualification": {
+    "config_sha256": "770e6dc9ed93e02c354dcbab3a45bc16746e1a5b98d7b4cfcb351f67b8404ca9",
+    "parameters": 233220870,
+    "snapshot": "70ea6d1813913dbb2ceb7d0e65bc5a146239de5eee5268bcadcf0cde5945e984"
+  },
+  "recipe": "research/recipes/strong19_long_ce",
+  "status": "prepared",
+  "steps": 512,
+  "test_targets_read": false,
+  "training_population_equivalent_passes": 24.942281715593825,
+  "unchanged": [
+    "Model shapes, parameters and deployment FLOPs",
+    "AdamW peak/end LR 0.001/0.0003 and 40-update warmup",
+    "Seed, frozen corpus, full histories, global batch 128 games and D4 draws",
+    "Validation population and fixed 128-game training probe"
+  ]
+}

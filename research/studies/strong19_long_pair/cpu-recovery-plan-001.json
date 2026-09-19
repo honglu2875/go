@@ -1,0 +1,8 @@
+{
+  "operator_sha256": "88389cf66f567a2610430c98f2a23218432b492dd0276b115be626459751e2a9",
+  "run_directory": "research/studies/strong19_long_pair/cpu-recovery-001",
+  "snapshots": {
+    "cnn": "cd7303189005c34313a0b111dc1801862ab458e079cd8ec3545c7fcc520c9469",
+    "transformer": "acc5890340c0c796fd80f114a332f98acc2263b9ae66341591ae0d51a599cbec"
+  }
+}

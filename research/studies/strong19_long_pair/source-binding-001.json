@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "created": 1789838800.9295816,
+  "bindings": {
+    "cnn": {
+      "recovery_snapshot": "cd7303189005c34313a0b111dc1801862ab458e079cd8ec3545c7fcc520c9469",
+      "learning_snapshot": "08ba4c9a0e6c723383e1e75f3eb4d6b179e67730183e2ee01b2944af54d6e90f",
+      "python_differences": [
+        "research/recipes/strong19_long_ce/policy_config.py"
+      ]
+    },
+    "transformer": {
+      "recovery_snapshot": "acc5890340c0c796fd80f114a332f98acc2263b9ae66341591ae0d51a599cbec",
+      "learning_snapshot": "a1239d3c1d41b4765a13832b22525ef2f335d21e5eed0e3386d64307f42d0827",
+      "python_differences": [
+        "research/recipes/strong19_long_ce/policy_config.py"
+      ]
+    }
+  },
+  "checkpoint_validator_qualification_sha256": "c16a9632b25a0222d2f0b224d7e31d55b694961a72ffc0e26ddb071310ce734d",
+  "scope": "All numerical and checkpoint implementation sources match passed recovery; only separately checked temporary cadence validation changed."
+}

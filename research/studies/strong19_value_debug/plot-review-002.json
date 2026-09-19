@@ -1,0 +1,11 @@
+{
+  "kind": "joint19_repair_plot_visual_review",
+  "created": "2026-09-19T16:45:29.203059+00:00",
+  "status": "passed",
+  "figure_sha256": "932542daa1717e8306de2d9fb5a14e5303de4ad5d8876ef24efcc0471375ef05",
+  "observations": [
+    "All four curves and both split styles are legible; no clipped labels.",
+    "Both update and measured learning-time clocks are displayed.",
+    "Caption names fixed populations and limits the figure to supervised loss."
+  ]
+}

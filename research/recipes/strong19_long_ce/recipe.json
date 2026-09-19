@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Longer common-objective joint19 comparison",
+  "hypothesis": "Compare CNN and causal transformer under the same AdamW optimizer and signed-target cross-entropy value objective over a longer fixed-data horizon.",
+  "requires_native": false
+}

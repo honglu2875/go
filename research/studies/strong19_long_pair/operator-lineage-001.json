@@ -1,0 +1,8 @@
+{
+  "source_study": "strong19_scaling",
+  "parent_sha256": {
+    "execute_run.py": "a771184591d5ede58ac78c21e76f763cd3fca5f6c34123f5a2c12a85c0647e61",
+    "audit_run.py": "013c6b63b26352aa242deeeb5df6055921af800d584ef12e951c943dc96a5352"
+  },
+  "change": "Runner admits an explicitly registered intermediate checkpoint cadence; auditor unchanged."
+}

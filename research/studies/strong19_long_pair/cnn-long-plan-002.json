@@ -1,0 +1,47 @@
+{
+  "additional_reserve_by_host": {
+    "0": 3221225472,
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "audit_python": "/workspace/go/.gozero/environments/a587255ebe0f78b1ec98bbb12ab1cb3315ec668424a08820c80da7353de40192/bin/python",
+  "checkpoint_every": 256,
+  "checkpoint_reserve_bytes": 3221225472,
+  "config_sha256": "e86783a4a1612f7cdae471851a36ace3b52e0d3499c3d23676631f8172545be1",
+  "created": 1789840002.4550533,
+  "disk_floor_bytes": 1073741824,
+  "expected_positions": 27217367,
+  "kind": "registered_joint19_run",
+  "memory_floor_bytes": 103079215104,
+  "operators": {
+    "research/studies/strong19_long_pair/audit_run.py": "013c6b63b26352aa242deeeb5df6055921af800d584ef12e951c943dc96a5352",
+    "research/studies/strong19_long_pair/execute_run.py": "f8764af5e0f0c7348948868d822893d42442421c7da0ccf7ed8b86565247df90",
+    "research/studies/strong19_source_muon/replicate_full_size.py": "5ad8480692a675dd21de41fda9342d8023031d005d50c793a624d15548eac5df"
+  },
+  "output_directory": "cnn-long-002",
+  "parameters": 233220870,
+  "prerequisites": {
+    "research/studies/strong19_long_pair/checkpoint-cadence-qualification-001.json": "c16a9632b25a0222d2f0b224d7e31d55b694961a72ffc0e26ddb071310ce734d",
+    "research/studies/strong19_long_pair/cpu-ce-qualification-002.json": "f7a427cb57d25f12297e185f42b8061e45ded92806639577d8b16a51ee4fb78f",
+    "research/studies/strong19_long_pair/cpu-recovery-result-001.json": "a0475ebfecb2b5fb12dd248a1663b8a861fd641b702177781626632b71d90a9c",
+    "research/studies/strong19_long_pair/preparation-001.json": "49a01853db65ee3bd18b50b683aa52bffbb15eba2fb65b1e0fabfb08ca52f305",
+    "research/studies/strong19_long_pair/registration-002.json": "d343a8960ad09bca2ca58205d3d53b5fec1efeee0f53bb0cdb29e72b65254d08",
+    "research/studies/strong19_long_pair/resume-cache-release-result-001.json": "2799b108339f4a543e8812a4906234b6dabce05d3cc6f85e9dbaccd5402f967d",
+    "research/studies/strong19_long_pair/sequence-002/qualification-review.json": "370bf982bec90423c424317b9e6f8104781a6a34fc0359dd4e577cb73ed78d31",
+    "research/studies/strong19_long_pair/source-binding-001.json": "b36c360dc064214e5bd47dcb86474279825eadfcafc4f6a7034cc795c0b58cd6",
+    "research/studies/strong19_long_pair/source-resume-release-result-001.json": "7d9d783de531f517ad36edeaa1faaf5e632f046dd8f58066274295f45ce39d53",
+    "research/studies/strong19_long_pair/storage-result-001.json": "e040c719380f60c5c87dd18e5a7685620ecfceaa0e39cb82d2b549cff1669c02",
+    "research/studies/strong19_scaling/pilot-cnn-adamw-001/audit.json": "e03fb6498d71bcc88a4f67f7dd2a46fa103764daca9a657b2a0cdf0141f7e5cd",
+    "research/studies/strong19_scaling/pilot-transformer-001/audit.json": "600fd8d8339720c5913b8cdc4cae708b2a9daab016de64af90875829a9d13781"
+  },
+  "producer_growth_reserve_bytes": 2147483648,
+  "purpose": "learning",
+  "replica_peer": 3,
+  "scope": "Common-objective AdamW architecture comparison. Two RAM checkpoints explicitly reserved; no test targets.",
+  "shm_floor_bytes": 68719476736,
+  "snapshot": "08ba4c9a0e6c723383e1e75f3eb4d6b179e67730183e2ee01b2944af54d6e90f",
+  "steps": 512,
+  "timeout_seconds": 60000,
+  "validation_positions": 60284
+}

@@ -35,6 +35,8 @@ probe. Supervised loss improvements and stronger Go play are evaluated separatel
 
 Relevant starting points:
 
+- [Completed value-objective repair](research/studies/strong19_value_debug/CE_RESULTS.md)
+- [Longer common-AdamW comparison](research/studies/strong19_long_pair/README.md)
 - [Research workflow](research/README.md)
 - [Architecture and infrastructure design](DESIGN.md)
 - [Expert/behavior heads and multi-step search](MULTISTEP_SEARCH.md)

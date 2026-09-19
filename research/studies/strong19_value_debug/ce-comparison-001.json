@@ -1,0 +1,10 @@
+{
+  "kind": "joint19_repair_comparison_plot",
+  "input_sha256": "869890d8556f879d406f2475257594f882f39a19274d004a15b31cb5e080baf4",
+  "operator_sha256": "0e10e75f0cee97fdfd4d230a6fffc65f9d73fa32affaa7efec322f5d0e3b118e",
+  "outputs": {
+    "ce-comparison-001.png": "932542daa1717e8306de2d9fb5a14e5303de4ad5d8876ef24efcc0471375ef05",
+    "ce-comparison-001.pdf": "bfc85a9f9cc43a6c7edfb73dbee4d3fdabfcef89ecd37f35ad69e98b48ae0ae0",
+    "ce-comparison-001.csv": "e364dffd48a19c806a6baf3ead5f134d9f3166fe692f1a9578f4b17974f7f1c0"
+  }
+}

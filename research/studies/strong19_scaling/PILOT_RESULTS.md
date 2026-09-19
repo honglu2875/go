@@ -1,4 +1,8 @@
-Follow-up: [the value-head diagnosis](../strong19_value_debug/README.md) confirms third-outcome saturation in the retained transformer. The original results below remain unchanged. The audited nine-update objective repair lowered held-out value MSE by 32.27% and policy KL by 1.67%; its full continuation is running.
+Latest follow-up: the objective-only transformer repair completed all 108
+updates and passed audit. Policy KL is 0.935420 and value MSE is 0.150406;
+the source-optimizer CNN still leads policy learning. See
+[the complete repair comparison](../strong19_value_debug/CE_RESULTS.md).
+The original pilot results below remain unchanged.
 
 All three fixed 19×19 pilot arms completed 108 updates and passed the complete
 all-rank, draw/population, checkpoint and retention audits. The sequence ended

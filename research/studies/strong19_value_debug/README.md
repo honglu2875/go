@@ -1,5 +1,11 @@
 # Value-head saturation diagnosis
 
+The full 108-update repair is complete. See [the endpoint comparison](CE_RESULTS.md):
+transformer policy KL improves from 0.965713 to 0.935420 and value MSE from
+0.542233 to 0.150406. The source-optimizer CNN still leads policy learning and
+uses less learning time. All complete-state audits and checkpoint replication
+passed. The sections below preserve the diagnosis and prefix evidence.
+
 The completed 19×19 transformer pilot learned policy but spent updates 9–54
 predicting nearly zero value. Final validation value MSE was 0.54223, versus
 0.15960 for the AdamW CNN; the training probe was similarly poor. All three
@@ -129,8 +135,9 @@ audited update-9 checkpoint to the original update-108 endpoint. It preserves
 the optimizer, sampler, full validation cadence and source snapshot. The
 continuation auditor checks complete accumulated state and both metric segments;
 it also passes the existing exact 2+2 real-19×19 CPU recovery experiment.
-Full-horizon results are pending. This decision follows the observed prefix
-results; it is not a retrospectively declared preregistered success criterion.
+Full-horizon results are recorded in `CE_RESULTS_001.json` and `CE_RESULTS.md`.
+This continuation decision followed the observed prefix results; it is not a
+retrospectively declared preregistered success criterion.
 
 ## Reproduction artifacts
 
@@ -141,6 +148,10 @@ results; it is not a retrospectively declared preregistered success criterion.
 - `probe_repair.py`, `head-repair-001.json`: paired frozen-feature test.
 - `ce-clone-001.json`, `ce-qualification-001.json`: repair source and CPU checks.
 - `ce-prefix-plan-002.json`, `ce-prefix-001/`: bounded full-model run and audit.
+- `ce-continuation-plan-001.json`, `ce-continuation-001/`: complete continuation,
+  all-rank state/sampling audit and retained checkpoint copies.
+- `compare_endpoint.py`, `CE_RESULTS_001.json`: final comparison and evidence pins.
+- `plot_endpoint.py`, `ce-comparison-001.{png,pdf,csv,json}`: reproducible curves.
 
 All diagnostic checkpoint reads are read-only. Existing final pilot checkpoints
 remain preserved. RAM and disk floors are checked before accelerator dispatch.
