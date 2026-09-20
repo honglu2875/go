@@ -30,8 +30,8 @@
       "sha256": "c27167f78b257198f5c98f0ffa89320518c9874d44be3efe29ff3233c42085b6"
     },
     "README.md": {
-      "bytes": 5603,
-      "sha256": "2866c73ff05b522dd77c5ffa7a5f3ed3c567702e00dd1b04b1d8fb6cc4d5e947"
+      "bytes": 5835,
+      "sha256": "807528c6d35652b864363d035a71e2f87ccfb6b64c250b8940c0fe4dec921373"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 661,
@@ -8042,8 +8042,8 @@
       "sha256": "ead22455d923920cd152546d89e4f415c94d6b580aa109fda3b57a69c57c32e0"
     },
     "research/recipes/strong19_long_ce/README.md": {
-      "bytes": 2308,
-      "sha256": "a22c752faba1cbe50752189b93eff003bb73c2ebedfa85fde36fb080a631f93a"
+      "bytes": 2600,
+      "sha256": "ec34919ebe5d36876b56b81b2b23ecca70a7a5ba55227b801ad7c63ca695ea15"
     },
     "research/recipes/strong19_long_ce/adamw.py": {
       "bytes": 2826,
@@ -14093,9 +14093,13 @@
       "bytes": 4995,
       "sha256": "b9b093566ada0de572031674ae9c212fc18d08e405b4330642ffa9317c9fa758"
     },
+    "research/studies/strong19_long_pair/ARCHITECTURE.md": {
+      "bytes": 7032,
+      "sha256": "d6f2c6197961b6baf5505c0f8d21c80b205c7778d1884af76f7c3bf1b8ca0b6f"
+    },
     "research/studies/strong19_long_pair/README.md": {
-      "bytes": 5617,
-      "sha256": "f5f3b06ead0920aabbd3793a99739c287c7ef7dcdb48f3e85a6a984dbff37ccb"
+      "bytes": 5711,
+      "sha256": "45cabc50365af8491629ec82a90c7143d1b98d0acdbcae4736cad2a8edb0a6f7"
     },
     "research/studies/strong19_long_pair/audit_run.py": {
       "bytes": 15225,
@@ -14196,6 +14200,10 @@
     "research/studies/strong19_long_pair/source-binding-001.json": {
       "bytes": 970,
       "sha256": "b36c360dc064214e5bd47dcb86474279825eadfcafc4f6a7034cc795c0b58cd6"
+    },
+    "research/studies/strong19_long_pair/transformer-architecture-001.json": {
+      "bytes": 13388,
+      "sha256": "e173e85d3127d22c6d5c542ea40761f2e4772b0b803603cd1b0c73948f696d64"
     },
     "research/studies/strong19_long_pair/transformer-config-001.json": {
       "bytes": 2116,
@@ -16047,5 +16055,5 @@
     }
   },
   "kind": "sanitized_public_source_manifest",
-  "updated": 1789840121.6738062
+  "updated": 1789902013.698862
 }

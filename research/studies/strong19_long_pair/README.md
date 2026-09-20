@@ -1,5 +1,7 @@
 # Longer fixed-data 19×19 CNN/transformer pair
 
+[Current transformer architecture, tensor shapes and parameter accounting](ARCHITECTURE.md).
+
 The user selected AdamW for both models to compare the architectures under a
 common optimizer. Both use the repaired signed-target CE value objective. Each
 model starts from its original seed and trains for 512 accepted updates, using

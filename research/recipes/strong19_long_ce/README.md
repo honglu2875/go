@@ -1,5 +1,10 @@
 # Longer common-objective CNN/transformer comparison
 
+The [current transformer architecture](../../studies/strong19_long_pair/ARCHITECTURE.md)
+documents the exact active model, tensor shapes, shared encoder, causal masks
+and contextual policy/value readouts. Its generated parameter inventory is
+checked against the immutable training snapshot.
+
 Cloned from the immutable transformer CE repair. Both bounded architectures
 optimize signed-target cross-entropy against `[(1+y)/2,(1-y)/2,0]`. This preserves
 the stored expectation but does not reconstruct the teacher's full WDL labels.

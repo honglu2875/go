@@ -1,0 +1,613 @@
+{
+  "kind": "active_transformer_architecture_schema",
+  "status": "passed",
+  "created": 1789901766.9857552,
+  "source_snapshot": "a1239d3c1d41b4765a13832b22525ef2f335d21e5eed0e3386d64307f42d0827",
+  "config_sha256": "7655442986835bd7f9f17f916dd83bdad52b5da9f5f5885b292a290392d9c08a",
+  "recipe": "research/recipes/strong19_long_ce",
+  "model": {
+    "architecture": "causal_visual_policy",
+    "attention_backend": "splash",
+    "connector_channels": 16,
+    "dtype": "bfloat16",
+    "encoder_attention_blocks": 4,
+    "encoder_attention_heads": 12,
+    "encoder_attention_mlp_hidden": 1024,
+    "encoder_blocks": 24,
+    "encoder_expansion": 4,
+    "encoder_layer_scale": 0.01,
+    "encoder_passes": 2,
+    "encoder_rematerialize": true,
+    "encoder_rope_theta": 10000.0,
+    "encoder_width": 768,
+    "first_pass_aux_weight": 0.25,
+    "heads": 12,
+    "kv_heads": 4,
+    "layers": 18,
+    "max_board_size": 19,
+    "max_positions": 1536,
+    "mlp_hidden": 2048,
+    "norm_epsilon": 1e-06,
+    "policy_context_dim": 64,
+    "policy_spatial_bias": true,
+    "rematerialize": true,
+    "rope_theta": 10000.0,
+    "width": 768
+  },
+  "value_model": {
+    "hidden": 256,
+    "spatial_channels": 256
+  },
+  "parameters": 232011540,
+  "parameter_groups": {
+    "policy_and_action_embeddings": 378625,
+    "temporal_blocks": 113273856,
+    "encoder": 118161424,
+    "value_head": 197635
+  },
+  "parameter_schema": [
+    {
+      "path": "action_type",
+      "shape": [
+        768
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    },
+    {
+      "path": "blocks.attn_norm.scale",
+      "shape": [
+        18,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 13824,
+      "inference": true
+    },
+    {
+      "path": "blocks.down.weight",
+      "shape": [
+        18,
+        2048,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 28311552,
+      "inference": true
+    },
+    {
+      "path": "blocks.gate.weight",
+      "shape": [
+        18,
+        768,
+        2048
+      ],
+      "dtype": "float32",
+      "elements": 28311552,
+      "inference": true
+    },
+    {
+      "path": "blocks.kv.weight",
+      "shape": [
+        18,
+        768,
+        512
+      ],
+      "dtype": "float32",
+      "elements": 7077888,
+      "inference": true
+    },
+    {
+      "path": "blocks.mlp_norm.scale",
+      "shape": [
+        18,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 13824,
+      "inference": true
+    },
+    {
+      "path": "blocks.out.weight",
+      "shape": [
+        18,
+        768,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 10616832,
+      "inference": true
+    },
+    {
+      "path": "blocks.q.weight",
+      "shape": [
+        18,
+        768,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 10616832,
+      "inference": true
+    },
+    {
+      "path": "blocks.up.weight",
+      "shape": [
+        18,
+        768,
+        2048
+      ],
+      "dtype": "float32",
+      "elements": 28311552,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.attn.gamma",
+      "shape": [
+        4,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.attn.norm.bias",
+      "shape": [
+        4,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.attn.norm.scale",
+      "shape": [
+        4,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.down.weight",
+      "shape": [
+        4,
+        1024,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 3145728,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.gate.weight",
+      "shape": [
+        4,
+        768,
+        1024
+      ],
+      "dtype": "float32",
+      "elements": 3145728,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.k.weight",
+      "shape": [
+        4,
+        768,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 2359296,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.mlp.gamma",
+      "shape": [
+        4,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.mlp.norm.bias",
+      "shape": [
+        4,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.mlp.norm.scale",
+      "shape": [
+        4,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.out.weight",
+      "shape": [
+        4,
+        768,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 2359296,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.q.weight",
+      "shape": [
+        4,
+        768,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 2359296,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.up.weight",
+      "shape": [
+        4,
+        768,
+        1024
+      ],
+      "dtype": "float32",
+      "elements": 3145728,
+      "inference": true
+    },
+    {
+      "path": "encoder.attention.v.weight",
+      "shape": [
+        4,
+        768,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 2359296,
+      "inference": true
+    },
+    {
+      "path": "encoder.blocks.depthwise.bias",
+      "shape": [
+        20,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 15360,
+      "inference": true
+    },
+    {
+      "path": "encoder.blocks.depthwise.weight",
+      "shape": [
+        20,
+        3,
+        3,
+        1,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 138240,
+      "inference": true
+    },
+    {
+      "path": "encoder.blocks.down.bias",
+      "shape": [
+        20,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 15360,
+      "inference": true
+    },
+    {
+      "path": "encoder.blocks.down.weight",
+      "shape": [
+        20,
+        3072,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 47185920,
+      "inference": true
+    },
+    {
+      "path": "encoder.blocks.gamma",
+      "shape": [
+        20,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 15360,
+      "inference": true
+    },
+    {
+      "path": "encoder.blocks.norm.bias",
+      "shape": [
+        20,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 15360,
+      "inference": true
+    },
+    {
+      "path": "encoder.blocks.norm.scale",
+      "shape": [
+        20,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 15360,
+      "inference": true
+    },
+    {
+      "path": "encoder.blocks.up.bias",
+      "shape": [
+        20,
+        3072
+      ],
+      "dtype": "float32",
+      "elements": 61440,
+      "inference": true
+    },
+    {
+      "path": "encoder.blocks.up.weight",
+      "shape": [
+        20,
+        768,
+        3072
+      ],
+      "dtype": "float32",
+      "elements": 47185920,
+      "inference": true
+    },
+    {
+      "path": "encoder.compress.bias",
+      "shape": [
+        16
+      ],
+      "dtype": "float32",
+      "elements": 16,
+      "inference": true
+    },
+    {
+      "path": "encoder.compress.weight",
+      "shape": [
+        768,
+        16
+      ],
+      "dtype": "float32",
+      "elements": 12288,
+      "inference": true
+    },
+    {
+      "path": "encoder.flat.bias",
+      "shape": [
+        768
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    },
+    {
+      "path": "encoder.flat.weight",
+      "shape": [
+        5776,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 4435968,
+      "inference": true
+    },
+    {
+      "path": "encoder.global.weight",
+      "shape": [
+        19,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 14592,
+      "inference": true
+    },
+    {
+      "path": "encoder.stem.bias",
+      "shape": [
+        768
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    },
+    {
+      "path": "encoder.stem.norm.bias",
+      "shape": [
+        768
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    },
+    {
+      "path": "encoder.stem.norm.scale",
+      "shape": [
+        768
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    },
+    {
+      "path": "encoder.stem.weight",
+      "shape": [
+        3,
+        3,
+        22,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 152064,
+      "inference": true
+    },
+    {
+      "path": "encoder.token.norm.bias",
+      "shape": [
+        768
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    },
+    {
+      "path": "encoder.token.norm.scale",
+      "shape": [
+        768
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    },
+    {
+      "path": "encoder.type",
+      "shape": [
+        768
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    },
+    {
+      "path": "head.actions.weight",
+      "shape": [
+        362,
+        768
+      ],
+      "dtype": "float32",
+      "elements": 278016,
+      "inference": true
+    },
+    {
+      "path": "head.context.k.weight",
+      "shape": [
+        768,
+        64
+      ],
+      "dtype": "float32",
+      "elements": 49152,
+      "inference": true
+    },
+    {
+      "path": "head.context.q.weight",
+      "shape": [
+        768,
+        64
+      ],
+      "dtype": "float32",
+      "elements": 49152,
+      "inference": true
+    },
+    {
+      "path": "head.local.bias",
+      "shape": [],
+      "dtype": "float32",
+      "elements": 1,
+      "inference": true
+    },
+    {
+      "path": "head.local.weight",
+      "shape": [
+        768,
+        1
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    },
+    {
+      "path": "head.norm.scale",
+      "shape": [
+        768
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    },
+    {
+      "path": "value_head.linear2.bias",
+      "shape": [
+        256
+      ],
+      "dtype": "float32",
+      "elements": 256,
+      "inference": true
+    },
+    {
+      "path": "value_head.linear2.weight",
+      "shape": [
+        768,
+        256
+      ],
+      "dtype": "float32",
+      "elements": 196608,
+      "inference": true
+    },
+    {
+      "path": "value_head.linear_valuehead.bias",
+      "shape": [
+        3
+      ],
+      "dtype": "float32",
+      "elements": 3,
+      "inference": true
+    },
+    {
+      "path": "value_head.linear_valuehead.weight",
+      "shape": [
+        256,
+        3
+      ],
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true
+    }
+  ],
+  "source_sha256": {
+    "adamw.py": "f940987ad3b4a54ecabe18c284f4dfc51159bc84d66df467e98d34ef5968c374",
+    "causal.py": "4a4dcd9984b7c2c402c0a07efc4b3495e47c39f566354f41f903dc518484aecc",
+    "cnn_chunks.py": "1c5dffb60074ef8343d31b7c93c109f83895a41f9f7ed560fd1ac4a055e65f3a",
+    "compact.py": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1",
+    "draft_mask.py": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44",
+    "draft_model.py": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3",
+    "encoder.py": "877fff933e5eccbd944135b0091db07c7480330144096e14aeaa11f9c85e70ad",
+    "evaluation.py": "5f22ee880bf680db2a0e2fdf7242c1e40aea38d7b858c1b7448e7e861b199749",
+    "heads.py": "cd0a404ec4ba00972fa57bf7e8214f1c4153cfbc77b782763c2c73e7c3519d9d",
+    "host_metrics.py": "ca09a96510f26dc1135f58514a8fdf386631c63ae2b119b5b9e82765ac0a049b",
+    "inference.py": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2",
+    "joint.py": "eef1d09fe4a398719ce33eac2556730abb29b2e38bf3c5d08777ea325cd928df",
+    "katago.py": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29",
+    "learner.py": "08dd9fbada63b8859554503f845465003f9182d0f6cfc48afa332b025742db94",
+    "observation_attention.py": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544",
+    "optimizer_io.py": "a50990bd5bc69efd3ca030d99ecd732c4b173e71c30417e706508adb149e3221",
+    "policy_config.py": "1578246ad13ce0fe11e712249282bd707ccf530167d73320f2f3238453d24aac",
+    "policy_model.py": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2",
+    "qualify_evaluation.py": "376bb447beffda37a5c41fe0d614a89b7a132c9746c8ca5c0a45aa4180a6b08a",
+    "qualify_value_ce.py": "70c9c73fa901f612f5b91454d77aa2c90a5ea8bd754af2eddf002a4bcc473631",
+    "spatial_readout.py": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9",
+    "train.py": "6f20ec5741187e40ef4cc2fd4428fca4451849ab9620680591a7d02693157335",
+    "train_config.py": "bb7d1733960da6d5fa6e6e0da8a3699b4bba7a905e5fa0df68bf397661ec1303",
+    "train_joint.py": "6507b1c5dff68c6b573d2e09911466f159d56cdeb379ba1bc99d6e7837a64c19",
+    "training_probe.py": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5"
+  },
+  "scope": "CPU shape-only inspection of the immutable active model. No tensor initialization, training, accelerator allocation or held-out data access."
+}

@@ -21,6 +21,10 @@ tests/              Shared infrastructure checks
 
 ## Research direction
 
+The [current 19×19 transformer](research/studies/strong19_long_pair/ARCHITECTURE.md)
+contains 232,011,540 parameters. Its architecture guide links the exact active
+configuration, full tensor inventory and pure-JAX implementation.
+
 The current causal candidate encodes a board into one soft token while retaining
 spatial features for its policy readout. A causal transformer processes the
 board/action history. The policy combines local board features with a query
