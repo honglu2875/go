@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Skipping padded encoder work preserves the shared conditional reference exactly across varied real batches and both sequence lengths, with bounded original-compiler numerical drift.",
+  "id": "strong19_padding_varied",
+  "name": "Joint19 varied-batch padding qualification",
+  "parent": {
+    "recipe": "research/recipes/strong19_throughput_diag",
+    "source_sha256": "b14cd12edefc1d2a555836cb0694eff62d08727d7c21018ae37d6a876a895758"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

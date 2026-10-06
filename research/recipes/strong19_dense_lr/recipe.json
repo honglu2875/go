@@ -1,0 +1,11 @@
+{
+  "hypothesis": "A modest change to the dense parent learning rate improves fixed-data early learning under the registered shared exposure budget.",
+  "id": "strong19_dense_lr",
+  "name": "Current-corpus dense learning-rate screen",
+  "parent": {
+    "recipe": "research/recipes/strong19_moe_comparison",
+    "source_sha256": "f667433b00897cab5bf0029dcf7aa98a2dbd81309d2aaea3afa048ff991a744e"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

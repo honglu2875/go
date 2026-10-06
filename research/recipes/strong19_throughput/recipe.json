@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Joint19 training throughput qualification",
+  "hypothesis": "Skip encoder work for completely padded chunks without changing live losses, gradients or optimizer updates.",
+  "requires_native": false
+}

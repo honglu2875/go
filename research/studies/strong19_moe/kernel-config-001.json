@@ -1,0 +1,43 @@
+{
+  "kind": "moe_kernel_qualification",
+  "platform": "tpu",
+  "schema_version": 1,
+  "repetitions": 10,
+  "cases": [
+    {
+      "tokens": 129,
+      "width": 256,
+      "hidden": 256,
+      "gated": false,
+      "collapsed": false
+    },
+    {
+      "tokens": 129,
+      "width": 256,
+      "hidden": 256,
+      "gated": true,
+      "collapsed": true
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 1536,
+      "gated": false,
+      "collapsed": false
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 512,
+      "gated": true,
+      "collapsed": false
+    },
+    {
+      "tokens": 12288,
+      "width": 768,
+      "hidden": 1024,
+      "gated": true,
+      "collapsed": false
+    }
+  ]
+}

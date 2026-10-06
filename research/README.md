@@ -1,3 +1,32 @@
+New 19x19 research uses [the tuned defaults](defaults/README.md): AdamW peak
+LR 1e-3 and 64 complete games per update. The [completed dense sweep](studies/strong19_dense_tuning_keepall/REVIEW-001.md)
+found 13.56% lower policy KL at batch 64 for 3.17% more recorded learning time
+than batch 128, at identical position exposure. The [next MoE ablation](studies/strong19_moe_batch64/README.md)
+compares temporal experts and weaker load balancing under these settings.
+Historical experiment configurations remain unchanged.
+
+Previous research milestones follow; earlier running/queue status is historical.
+
+The [matched CNN/dense/MoE comparison](studies/strong19_moe_comparison/sequence-001/RESULTS.md)
+is complete. On the current immutable 19×19 corpus, 128 matched updates gave
+policy KL 0.842229 for the 232M dense parent, 0.844658 for 317M temporal-only
+MoE, and 1.034096 for the 233M BN-free CNN. Temporal-only experts added 36.6%
+total parameters at matched active matrix FLOPs and 0.36% greater recorded
+learning time. Their value MSE was 1.52% better than dense, but top-one accuracy
+was 1.64 percentage points lower; the endpoint result is a near tie, not an
+established sparse-model win. No sustained overfit flags occurred. All
+sampler/state/checkpoint audits passed, and both endpoint states have verified
+disk peers. One seed and a partial schedule do not establish playing strength.
+
+The earlier [all-expert screen](studies/strong19_moe/balance010-001-RESULTS.md)
+remains a 64-update result: 421M parameters, policy KL improved 4.17%, value
+MSE worsened 15.16%, and recorded learning time increased 2.245×. Its common
+64-update comparison is included in the new report; no 128-update result is
+imputed. The pod has been released with no further runs queued.
+
+The preceding 256-update attention/flat transformer
+pair is [complete](studies/strong19_recovery/RESULTS-003.md).
+
 The [spatial-readout follow-up](studies/visual_katago/shared_spatial_study_20260913.md) is complete. LR 1e-3 improved the one-token control, then a zero-initialized spatial policy correction reduced KL by 3.7% and 3.9% in two independent paired seeds. Mean control/spatial KL is 0.530250/0.510096. The correction adds 769 parameters and stays within the matched decoding budget. Four full runs and one qualification passed their audits; all full checkpoints are persistent. The CNN still leads in accuracy and accuracy per learning minute. Spatial attention before compression and a four-token alternative remain analytic proposals, with no further training queued.
 
 The earlier [shared single-board-token study](studies/visual_katago/shared_encoder_study_20260913.md) completed two encoder/transformer allocation runs and an LR follow-up under the matched parameter and decoding-FLOP constraints. Its best shared model reached validation KL 0.564571, with 2.16x faster learning and 9.60x faster warm neural decoding than C128, whose KL remained lower at 0.521731. The completed follow-up above supersedes that LR choice. These are fixed-data learnability results; no model is promoted on this evidence.
@@ -14,7 +43,7 @@ Each real training recipe will contain `train.py`, model/optimizer helpers when 
 
 The first ownership pilot is [analyzed](studies/ownership_aux/README.md), with negative/incomplete external evidence retained. The [FPU follow-up](studies/low_visit_puct/README.md) also ran on TPU and did not establish stronger play against KataGo. [Queued inference](studies/rollout_batching/README.md) preserved tested work and measured a modest 1.18× rollout throughput gain, below its registered 1.20× screen. Wider and compiled-loop forms require numerical and learning validation. `score_utility` is the next independent component recipe, separating score prediction from win/loss targets; its [registered 9x9 pilot](studies/score_utility/README.md) completed without establishing stronger play. `attention_control` now contains a parameter-matched CNN/global-attention model pair, with CPU gradient and sharding checks passed; full CPU and multi-host TPU training/recovery passed. `gumbel_search` implements the full native search/target alternative and passed a 320-case audit against pinned Mctx; its longer fresh-control pilot is [analyzed](studies/gumbel_search/README.md). Gumbel won 62 of 64 direct games with complete KataGo adjudication, meeting the exploratory criterion, while both absolute anchors remained at a zero-win floor. Seed-28 replication also passed with 51/64 direct wins; both arms still recorded zero wins against the strong absolute anchor. The [official early KataGo ladder](studies/katago_ladder/README.md) now has a confirmed intermediate-score checkpoint for fresh learning curves. The combined [Gumbel attention pilot](studies/gumbel_attention/README.md) met its registered exploratory criterion with 55/64 direct wins against the Gumbel CNN, while remaining at zero wins against the strong KataGo anchor. The [paired causal trace prototype](studies/dual_trace_probe/README.md) also passed CPU action-stream equivalence with separate play and behavior heads; it is untrained and policy-only. [Root-child prefetch](studies/root_prefetch/README.md) now batches legal child observations in Rust and consumes cached predictions through unchanged sequential Gumbel search. Full CPU and multi-host 9x9 equivalence and recovery passed. Queued execution reduced synchronization but was slower in the short check; wide execution changed numerical training state and needs separate validation. [Current official KataGo transformer developments](KATAGO_2026_UPDATE.md) are included in the research context.
 
-The independent attention replication (external or omitted experiment artifact)
+The independent [attention replication](studies/gumbel_attention/replication_28_result.json)
 did not meet its direct-match criterion (39/64 wins); its strong anchor was
 eight losses. The [16-checkpoint learning curves](studies/architecture_curves/README.md)
 show a positive conservative average advantage against historical KataGo in
@@ -66,3 +95,9 @@ Every new panel registration should include `gozero.evaluation_inputs.collect(so
 The [fixed-student calibration diagnostic](studies/student_calibration/README.md) covered all 180,601 validation positions per model on four hosts. Original validation aggregates reproduced within 0.00000165. The exact-board student's early/middle-game value errors contrast with accurate late outcomes; a high MSE alone is not a calibration diagnosis. The resulting [MSE/BCE2 loss comparison](studies/value_logit_distillation/README.md) passed ten model/loss tests, exact CPU/multi-host continuation, matched 4,096-update training and an independent audit of all 144 fresh KataGo games. BCE2 increased outcome MSE by 2.08% and failed the external score-interval/completion criterion. All 14,757 boards and 135 completed scores matched; nine caps remain unresolved. No promotion. The next [state-expert comparison](studies/value_logit_distillation/NEXT.md) treats representation and full behavior-optimizer isolation as separate changes.
 
 That [state-expert comparison](studies/state_expert_distillation/README.md) is complete and negative. Fresh expert-only history and spatial models retain a separately pinned opponent observer; both passed ten model/native tests, GTP qualification and exact continuation (147 CPU / 1,620 TPU arrays). Matched 4,096-update training used 23,164,695 expert exposures per arm. Spatial validation value MSE improved 20.35%, but policy KL worsened 24.46%. The 144-game real-KataGo screen failed, with 25 caps and no process failures; every one of 20,484 boards and 119 completed scores matched. Six pod attempts used 2.245239 recorded chip-hours. Preserve the negative result and reusable components. The [next design](studies/state_expert_distillation/NEXT.md) prioritizes coherent online self-play/checkpoint extension and a targeted endgame/teacher diagnosis, while retaining the separate expert/observer paired-decoding direction.
+
+Current dense tuning: [initial LR grid](studies/strong19_dense_lr/README.md) and
+[bounded copy-only LR/batch continuation](studies/strong19_dense_tuning_keepall/README.md).
+The first round is running; follow-ups wait for its audited closure. New temporary
+trial states use RAM; selected endpoints have two disk copies. Existing checkpoint
+payloads are preserved. The earlier retirement-based registration was never launched.

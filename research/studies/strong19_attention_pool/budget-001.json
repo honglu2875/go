@@ -1,0 +1,211 @@
+{
+  "arms": {
+    "attention": {
+      "connector_parameters": 4460736,
+      "decodes": {
+        "1": {
+          "attention_positions": 1,
+          "encoder": 167061886464,
+          "executed_key_extent": 1,
+          "policy": 36742784,
+          "queries": 1,
+          "temporal_attention": 55296,
+          "temporal_dense": 226492416,
+          "total_matrix_flops": 167325571712,
+          "value": 394752
+        },
+        "128": {
+          "attention_positions": 128,
+          "encoder": 167061886464,
+          "executed_key_extent": 255,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 28200960,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167580209792,
+          "value": 394752
+        },
+        "1536": {
+          "attention_positions": 1536,
+          "encoder": 167061886464,
+          "executed_key_extent": 3071,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 339628032,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167891636864,
+          "value": 394752
+        },
+        "2": {
+          "attention_positions": 2,
+          "encoder": 167061886464,
+          "executed_key_extent": 3,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 331776,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167552340608,
+          "value": 394752
+        },
+        "256": {
+          "attention_positions": 256,
+          "encoder": 167061886464,
+          "executed_key_extent": 511,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 56512512,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167608521344,
+          "value": 394752
+        },
+        "512": {
+          "attention_positions": 512,
+          "encoder": 167061886464,
+          "executed_key_extent": 1023,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 113135616,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167665144448,
+          "value": 394752
+        },
+        "64": {
+          "attention_positions": 64,
+          "encoder": 167061886464,
+          "executed_key_extent": 127,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 14045184,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167566054016,
+          "value": 394752
+        },
+        "768": {
+          "attention_positions": 768,
+          "encoder": 167061886464,
+          "executed_key_extent": 1535,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 169758720,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167721767552,
+          "value": 394752
+        }
+      },
+      "encoder_parameters": 118173120,
+      "parameters": 232023236
+    },
+    "flat": {
+      "connector_parameters": 4449040,
+      "decodes": {
+        "1": {
+          "attention_positions": 1,
+          "encoder": 167057475072,
+          "executed_key_extent": 1,
+          "policy": 36742784,
+          "queries": 1,
+          "temporal_attention": 55296,
+          "temporal_dense": 226492416,
+          "total_matrix_flops": 167321160320,
+          "value": 394752
+        },
+        "128": {
+          "attention_positions": 128,
+          "encoder": 167057475072,
+          "executed_key_extent": 255,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 28200960,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167575798400,
+          "value": 394752
+        },
+        "1536": {
+          "attention_positions": 1536,
+          "encoder": 167057475072,
+          "executed_key_extent": 3071,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 339628032,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167887225472,
+          "value": 394752
+        },
+        "2": {
+          "attention_positions": 2,
+          "encoder": 167057475072,
+          "executed_key_extent": 3,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 331776,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167547929216,
+          "value": 394752
+        },
+        "256": {
+          "attention_positions": 256,
+          "encoder": 167057475072,
+          "executed_key_extent": 511,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 56512512,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167604109952,
+          "value": 394752
+        },
+        "512": {
+          "attention_positions": 512,
+          "encoder": 167057475072,
+          "executed_key_extent": 1023,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 113135616,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167660733056,
+          "value": 394752
+        },
+        "64": {
+          "attention_positions": 64,
+          "encoder": 167057475072,
+          "executed_key_extent": 127,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 14045184,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167561642624,
+          "value": 394752
+        },
+        "768": {
+          "attention_positions": 768,
+          "encoder": 167057475072,
+          "executed_key_extent": 1535,
+          "policy": 36742784,
+          "queries": 2,
+          "temporal_attention": 169758720,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167717356160,
+          "value": 394752
+        }
+      },
+      "encoder_parameters": 118161424,
+      "parameters": 232011540
+    }
+  },
+  "convention": "Multiply-add=2; complete encoder, connector, executed temporal attention, policy and value. Elementwise/cache costs excluded and documented.",
+  "delta": {
+    "decode_ratios": {
+      "1": 1.0000263648183623,
+      "128": 1.0000263247559738,
+      "1536": 1.0000262759241365,
+      "2": 1.0000263291347178,
+      "256": 1.0000263203092172,
+      "512": 1.000026311420209,
+      "64": 1.0000263269799157,
+      "768": 1.0000263025372031
+    },
+    "parameter_ratio": 1.0000504112855766,
+    "parameters": 11696
+  },
+  "status": "passed",
+  "supersedes": "CPU qualification provisional causal nonzero-attention count; this budget counts all executed masked attention entries."
+}

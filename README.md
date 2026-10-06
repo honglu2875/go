@@ -21,6 +21,11 @@ tests/              Shared infrastructure checks
 
 ## Research direction
 
+See the [current architecture and results](research/ARCHITECTURE_PROGRESS.md) for
+the dense transformer, temporal MoE implementation, completed matched ablations,
+and selected LR/batch defaults. The new batch-64 MoE comparison is registered;
+its learning results are pending.
+
 The [current 19×19 transformer](research/studies/strong19_long_pair/ARCHITECTURE.md)
 contains 232,011,540 parameters. Its architecture guide links the exact active
 configuration, full tensor inventory and pure-JAX implementation.

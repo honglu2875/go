@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Temporal sparse capacity improves matched-data learning efficiency relative to the established dense transformer and BN-free CNN controls.",
+  "id": "strong19_moe_comparison",
+  "name": "Matched current-corpus CNN and temporal-expert controls",
+  "parent": {
+    "recipe": "research/recipes/strong19_moe_temporal",
+    "source_snapshot": "aa32c6b9d7cd7d10d2d7a16980f43af554be6525c9a5e70c1d97e9ba256612b5"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

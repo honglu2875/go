@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Changing the physical game batch improves learning or throughput at a fixed complete-game exposure budget.",
+  "id": "strong19_dense_batch",
+  "name": "Dense matched-exposure batch screen",
+  "parent": {
+    "recipe": "research/recipes/strong19_dense_lr",
+    "source_sha256": "cd802eb6943534f67658a30ddec98960f85ceb712f0c075ac88c319020686111"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

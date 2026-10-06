@@ -1,0 +1,11 @@
+{
+  "hypothesis": "A modest change to the dense parent learning rate improves fixed-data early learning under the registered shared exposure budget. New provisional trial checkpoints use guarded RAM; existing checkpoint files are never retired.",
+  "id": "strong19_dense_lr_keepall",
+  "name": "Current-corpus dense learning-rate screen",
+  "parent": {
+    "recipe": "research/recipes/strong19_dense_lr",
+    "source_sha256": "cd802eb6943534f67658a30ddec98960f85ceb712f0c075ac88c319020686111"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

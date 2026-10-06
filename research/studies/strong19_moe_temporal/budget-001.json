@@ -1,0 +1,1819 @@
+{
+  "active_flop_ratio": 1.000001320013528,
+  "budgets": {
+    "all_experts": {
+      "decode": {
+        "0": {
+          "encoder": 167163938304,
+          "policy": 36742784,
+          "temporal_attention": 165888,
+          "temporal_dense": 453206016,
+          "total_matrix_flops": 167654447744,
+          "value": 394752
+        },
+        "128": {
+          "encoder": 167163938304,
+          "policy": 36742784,
+          "temporal_attention": 14321664,
+          "temporal_dense": 453206016,
+          "total_matrix_flops": 167668603520,
+          "value": 394752
+        },
+        "1534": {
+          "encoder": 167163938304,
+          "policy": 36742784,
+          "temporal_attention": 169814016,
+          "temporal_dense": 453206016,
+          "total_matrix_flops": 167824095872,
+          "value": 394752
+        },
+        "512": {
+          "encoder": 167163938304,
+          "policy": 36742784,
+          "temporal_attention": 56788992,
+          "temporal_dense": 453206016,
+          "total_matrix_flops": 167711070848,
+          "value": 394752
+        },
+        "768": {
+          "encoder": 167163938304,
+          "policy": 36742784,
+          "temporal_attention": 85100544,
+          "temporal_dense": 453206016,
+          "total_matrix_flops": 167739382400,
+          "value": 394752
+        }
+      },
+      "encoder_parameters": 222151696,
+      "expert_parameters": 377800704,
+      "parameters": 420991764,
+      "schema": [
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "action_type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.attn_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 7077888,
+          "inference": true,
+          "path": "blocks.kv.weight",
+          "shape": [
+            18,
+            768,
+            512
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.mlp_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 56623104,
+          "inference": true,
+          "path": "blocks.moe.down",
+          "shape": [
+            18,
+            4,
+            1024,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 56623104,
+          "inference": true,
+          "path": "blocks.moe.gate",
+          "shape": [
+            18,
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 55296,
+          "inference": true,
+          "path": "blocks.moe.router",
+          "shape": [
+            18,
+            768,
+            4
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 56623104,
+          "inference": true,
+          "path": "blocks.moe.up",
+          "shape": [
+            18,
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.out.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.q.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.k.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 6291456,
+          "inference": true,
+          "path": "encoder.attention.moe.down",
+          "shape": [
+            4,
+            4,
+            512,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 6291456,
+          "inference": true,
+          "path": "encoder.attention.moe.gate",
+          "shape": [
+            4,
+            4,
+            768,
+            512
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 12288,
+          "inference": true,
+          "path": "encoder.attention.moe.router",
+          "shape": [
+            4,
+            768,
+            4
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 6291456,
+          "inference": true,
+          "path": "encoder.attention.moe.up",
+          "shape": [
+            4,
+            4,
+            768,
+            512
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.out.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.q.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.v.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 138240,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.weight",
+          "shape": [
+            20,
+            3,
+            3,
+            1,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.gamma",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 94371840,
+          "inference": true,
+          "path": "encoder.blocks.moe.down",
+          "shape": [
+            20,
+            4,
+            1536,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 61440,
+          "inference": true,
+          "path": "encoder.blocks.moe.down_bias",
+          "shape": [
+            20,
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 61440,
+          "inference": true,
+          "path": "encoder.blocks.moe.router",
+          "shape": [
+            20,
+            768,
+            4
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 94371840,
+          "inference": true,
+          "path": "encoder.blocks.moe.up",
+          "shape": [
+            20,
+            4,
+            768,
+            1536
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 122880,
+          "inference": true,
+          "path": "encoder.blocks.moe.up_bias",
+          "shape": [
+            20,
+            4,
+            1536
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.scale",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 16,
+          "inference": true,
+          "path": "encoder.compress.bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 12288,
+          "inference": true,
+          "path": "encoder.compress.weight",
+          "shape": [
+            768,
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.flat.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 4435968,
+          "inference": true,
+          "path": "encoder.flat.weight",
+          "shape": [
+            5776,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 14592,
+          "inference": true,
+          "path": "encoder.global.weight",
+          "shape": [
+            19,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 152064,
+          "inference": true,
+          "path": "encoder.stem.weight",
+          "shape": [
+            3,
+            3,
+            22,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 278016,
+          "inference": true,
+          "path": "head.actions.weight",
+          "shape": [
+            362,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.k.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.q.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 1,
+          "inference": true,
+          "path": "head.local.bias",
+          "shape": []
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.local.weight",
+          "shape": [
+            768,
+            1
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 256,
+          "inference": true,
+          "path": "value_head.linear2.bias",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 196608,
+          "inference": true,
+          "path": "value_head.linear2.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3,
+          "inference": true,
+          "path": "value_head.linear_valuehead.bias",
+          "shape": [
+            3
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "value_head.linear_valuehead.weight",
+          "shape": [
+            256,
+            3
+          ]
+        }
+      ]
+    },
+    "dense": {
+      "decode": {
+        "0": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 165888,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167547763328,
+          "value": 394752
+        },
+        "128": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 14321664,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167561919104,
+          "value": 394752
+        },
+        "1534": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 169814016,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167717411456,
+          "value": 394752
+        },
+        "512": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 56788992,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167604386432,
+          "value": 394752
+        },
+        "768": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 85100544,
+          "temporal_dense": 452984832,
+          "total_matrix_flops": 167632697984,
+          "value": 394752
+        }
+      },
+      "encoder_parameters": 118161424,
+      "expert_parameters": 0,
+      "parameters": 232011540,
+      "schema": [
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "action_type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.attn_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 28311552,
+          "inference": true,
+          "path": "blocks.down.weight",
+          "shape": [
+            18,
+            2048,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 28311552,
+          "inference": true,
+          "path": "blocks.gate.weight",
+          "shape": [
+            18,
+            768,
+            2048
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 7077888,
+          "inference": true,
+          "path": "blocks.kv.weight",
+          "shape": [
+            18,
+            768,
+            512
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.mlp_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.out.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.q.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 28311552,
+          "inference": true,
+          "path": "blocks.up.weight",
+          "shape": [
+            18,
+            768,
+            2048
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.down.weight",
+          "shape": [
+            4,
+            1024,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.gate.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.k.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.out.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.q.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.up.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.v.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 138240,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.weight",
+          "shape": [
+            20,
+            3,
+            3,
+            1,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.down.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.down.weight",
+          "shape": [
+            20,
+            3072,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.gamma",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.scale",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 61440,
+          "inference": true,
+          "path": "encoder.blocks.up.bias",
+          "shape": [
+            20,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.up.weight",
+          "shape": [
+            20,
+            768,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 16,
+          "inference": true,
+          "path": "encoder.compress.bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 12288,
+          "inference": true,
+          "path": "encoder.compress.weight",
+          "shape": [
+            768,
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.flat.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 4435968,
+          "inference": true,
+          "path": "encoder.flat.weight",
+          "shape": [
+            5776,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 14592,
+          "inference": true,
+          "path": "encoder.global.weight",
+          "shape": [
+            19,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 152064,
+          "inference": true,
+          "path": "encoder.stem.weight",
+          "shape": [
+            3,
+            3,
+            22,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 278016,
+          "inference": true,
+          "path": "head.actions.weight",
+          "shape": [
+            362,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.k.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.q.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 1,
+          "inference": true,
+          "path": "head.local.bias",
+          "shape": []
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.local.weight",
+          "shape": [
+            768,
+            1
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 256,
+          "inference": true,
+          "path": "value_head.linear2.bias",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 196608,
+          "inference": true,
+          "path": "value_head.linear2.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3,
+          "inference": true,
+          "path": "value_head.linear_valuehead.bias",
+          "shape": [
+            3
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "value_head.linear_valuehead.weight",
+          "shape": [
+            256,
+            3
+          ]
+        }
+      ]
+    },
+    "temporal_experts": {
+      "decode": {
+        "0": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 165888,
+          "temporal_dense": 453206016,
+          "total_matrix_flops": 167547984512,
+          "value": 394752
+        },
+        "128": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 14321664,
+          "temporal_dense": 453206016,
+          "total_matrix_flops": 167562140288,
+          "value": 394752
+        },
+        "1534": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 169814016,
+          "temporal_dense": 453206016,
+          "total_matrix_flops": 167717632640,
+          "value": 394752
+        },
+        "512": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 56788992,
+          "temporal_dense": 453206016,
+          "total_matrix_flops": 167604607616,
+          "value": 394752
+        },
+        "768": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 85100544,
+          "temporal_dense": 453206016,
+          "total_matrix_flops": 167632919168,
+          "value": 394752
+        }
+      },
+      "encoder_parameters": 118161424,
+      "expert_parameters": 169924608,
+      "parameters": 317001492,
+      "schema": [
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "action_type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.attn_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 7077888,
+          "inference": true,
+          "path": "blocks.kv.weight",
+          "shape": [
+            18,
+            768,
+            512
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.mlp_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 56623104,
+          "inference": true,
+          "path": "blocks.moe.down",
+          "shape": [
+            18,
+            4,
+            1024,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 56623104,
+          "inference": true,
+          "path": "blocks.moe.gate",
+          "shape": [
+            18,
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 55296,
+          "inference": true,
+          "path": "blocks.moe.router",
+          "shape": [
+            18,
+            768,
+            4
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 56623104,
+          "inference": true,
+          "path": "blocks.moe.up",
+          "shape": [
+            18,
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.out.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.q.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.down.weight",
+          "shape": [
+            4,
+            1024,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.gate.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.k.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.out.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.q.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.up.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.v.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 138240,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.weight",
+          "shape": [
+            20,
+            3,
+            3,
+            1,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.down.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.down.weight",
+          "shape": [
+            20,
+            3072,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.gamma",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.scale",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 61440,
+          "inference": true,
+          "path": "encoder.blocks.up.bias",
+          "shape": [
+            20,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.up.weight",
+          "shape": [
+            20,
+            768,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 16,
+          "inference": true,
+          "path": "encoder.compress.bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 12288,
+          "inference": true,
+          "path": "encoder.compress.weight",
+          "shape": [
+            768,
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.flat.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 4435968,
+          "inference": true,
+          "path": "encoder.flat.weight",
+          "shape": [
+            5776,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 14592,
+          "inference": true,
+          "path": "encoder.global.weight",
+          "shape": [
+            19,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 152064,
+          "inference": true,
+          "path": "encoder.stem.weight",
+          "shape": [
+            3,
+            3,
+            22,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 278016,
+          "inference": true,
+          "path": "head.actions.weight",
+          "shape": [
+            362,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.k.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.q.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 1,
+          "inference": true,
+          "path": "head.local.bias",
+          "shape": []
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.local.weight",
+          "shape": [
+            768,
+            1
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 256,
+          "inference": true,
+          "path": "value_head.linear2.bias",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 196608,
+          "inference": true,
+          "path": "value_head.linear2.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3,
+          "inference": true,
+          "path": "value_head.linear_valuehead.bias",
+          "shape": [
+            3
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "value_head.linear_valuehead.weight",
+          "shape": [
+            256,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  "config_sha256": "e991d4e16c73e1ee4043f7b61482069c732b45e0f81f7463420cf4fcabe4f7dc",
+  "operator_sha256": "d7adf835b10f4641ebd8b4970e7f6fca42eca9297d28e98a60dba9e20a54b143",
+  "parameter_ratio": 1.3663177788484142,
+  "scope": "Logical cached-move matrix FLOPs including dense encoder passes, both temporal tokens, routers, attention and heads. Excludes sort, dispatch, activations, tile padding, and training-only auxiliary tokens. Not measured throughput or MFU.",
+  "status": "passed"
+}

@@ -1,0 +1,321 @@
+{
+  "cases": [
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 12288,
+      "width": 768
+    }
+  ],
+  "kind": "moe_kernel_qualification",
+  "partition_cases_by_rank": true,
+  "platform": "tpu",
+  "repetitions": 10,
+  "schema_version": 1
+}

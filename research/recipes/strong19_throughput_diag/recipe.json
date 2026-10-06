@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "name": "Joint19 padding numerical diagnosis",
+  "hypothesis": "Separate conditional compiler lowering from skipping padded encoder chunks using one shared executable and complete-state comparisons.",
+  "requires_native": false
+}

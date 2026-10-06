@@ -1,0 +1,1059 @@
+{
+  "cases": [
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": true,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        384,
+        384
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        512,
+        384,
+        384
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": true,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        384,
+        384
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": false,
+      "hidden": 1536,
+      "permutation_vjp": false,
+      "tiling": [
+        512,
+        384,
+        384
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": true,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        384,
+        384
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        512,
+        384,
+        384
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": true,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        384,
+        384
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 512,
+      "permutation_vjp": false,
+      "tiling": [
+        512,
+        384,
+        384
+      ],
+      "tokens": 2888,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": true,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        384,
+        384
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        512,
+        384,
+        384
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": true,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        384,
+        384
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        512,
+        384,
+        384
+      ],
+      "tokens": 12288,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": true,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        384,
+        384
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 2,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        512,
+        384,
+        384
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": true,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        384,
+        384
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 3,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        512,
+        384,
+        384
+      ],
+      "tokens": 18432,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": true,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        384,
+        384
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 0,
+      "backend": "pallas",
+      "collapsed": false,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        512,
+        384,
+        384
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        256
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        768,
+        768
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        256,
+        768
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": true,
+      "tiling": [
+        256,
+        512,
+        512
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        256,
+        384,
+        384
+      ],
+      "tokens": 8,
+      "width": 768
+    },
+    {
+      "assigned_rank": 1,
+      "backend": "pallas",
+      "collapsed": true,
+      "gated": true,
+      "hidden": 1024,
+      "permutation_vjp": false,
+      "tiling": [
+        512,
+        384,
+        384
+      ],
+      "tokens": 8,
+      "width": 768
+    }
+  ],
+  "kind": "moe_kernel_qualification",
+  "partition_by_assignment": true,
+  "platform": "tpu",
+  "repetitions": 10,
+  "schema_version": 1
+}

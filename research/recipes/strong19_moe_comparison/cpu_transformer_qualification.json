@@ -1,0 +1,86 @@
+{
+  "checkpoint_every": 2,
+  "dataset": {
+    "path": "/dev/shm/gozero-datasets/strong9-v7-0f78b62d",
+    "manifest_sha256": "37244b2e743b3b7f80e0b14eccddfc2942aa4d81120c31aab10c4b3b4f733fc2",
+    "buckets": [
+      128,
+      256
+    ],
+    "bucket_probabilities": [
+      0.8884804922540772,
+      0.11151950774592284
+    ],
+    "warmup_buckets": [
+      128,
+      256
+    ]
+  },
+  "eval_every": 2,
+  "evaluation": {
+    "games_per_bucket": 2,
+    "training_probe_games": 4,
+    "run_test": false
+  },
+  "expected_devices": 4,
+  "expected_processes": 1,
+  "kind": "fixed_joint_learning",
+  "learner": {
+    "augmentation": "d4",
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "end_learning_rate": 0.0003,
+    "epsilon": 1e-08,
+    "games_per_host": 4,
+    "learning_rate": 0.001,
+    "max_grad_norm": 1.0,
+    "warmup_steps": 2,
+    "weight_decay": 0.01
+  },
+  "log_every": 1,
+  "model": {
+    "architecture": "causal_visual_policy",
+    "width": 16,
+    "layers": 2,
+    "mlp_hidden": 24,
+    "heads": 2,
+    "kv_heads": 1,
+    "max_board_size": 9,
+    "max_positions": 256,
+    "dtype": "float32",
+    "rematerialize": true,
+    "norm_epsilon": 1e-06,
+    "rope_theta": 10000.0,
+    "attention_backend": "xla",
+    "encoder_width": 16,
+    "encoder_blocks": 2,
+    "encoder_passes": 2,
+    "encoder_expansion": 2,
+    "connector_channels": 4,
+    "encoder_rematerialize": true,
+    "encoder_layer_scale": 0.1,
+    "policy_spatial_bias": true,
+    "policy_context_dim": 4,
+    "encoder_attention_blocks": 1,
+    "encoder_attention_heads": 2,
+    "encoder_attention_mlp_hidden": 24,
+    "encoder_rope_theta": 10000.0,
+    "first_pass_aux_weight": 0.25
+  },
+  "platform": "cpu",
+  "schema_version": 1,
+  "seed": 91312427,
+  "steps": 4,
+  "value_model": {
+    "hidden": 7,
+    "spatial_channels": 5
+  },
+  "training": {
+    "purpose": "qualification",
+    "optimizer": "adamw",
+    "value_weight": 0.7,
+    "path": "bounded",
+    "chunk_frames": 16,
+    "value_objective": "signed_target_cross_entropy"
+  }
+}

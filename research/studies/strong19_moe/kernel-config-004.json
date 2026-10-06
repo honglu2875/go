@@ -1,0 +1,243 @@
+{
+  "kind": "moe_kernel_qualification",
+  "platform": "tpu",
+  "schema_version": 1,
+  "repetitions": 10,
+  "partition_cases_by_rank": true,
+  "cases": [
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 1536,
+      "gated": false,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 1536,
+      "gated": false,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        128,
+        512,
+        512
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 1536,
+      "gated": false,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        256,
+        512,
+        512
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 1536,
+      "gated": false,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 1536,
+      "gated": false,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        256,
+        1024,
+        1024
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 1536,
+      "gated": false,
+      "collapsed": false,
+      "backend": "ragged",
+      "tiling": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 512,
+      "gated": true,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 512,
+      "gated": true,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        128,
+        512,
+        512
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 512,
+      "gated": true,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        256,
+        512,
+        512
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 512,
+      "gated": true,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 512,
+      "gated": true,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        256,
+        1024,
+        1024
+      ]
+    },
+    {
+      "tokens": 2888,
+      "width": 768,
+      "hidden": 512,
+      "gated": true,
+      "collapsed": false,
+      "backend": "ragged",
+      "tiling": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "tokens": 12288,
+      "width": 768,
+      "hidden": 1024,
+      "gated": true,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        128,
+        128,
+        128
+      ]
+    },
+    {
+      "tokens": 12288,
+      "width": 768,
+      "hidden": 1024,
+      "gated": true,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        128,
+        512,
+        512
+      ]
+    },
+    {
+      "tokens": 12288,
+      "width": 768,
+      "hidden": 1024,
+      "gated": true,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        256,
+        512,
+        512
+      ]
+    },
+    {
+      "tokens": 12288,
+      "width": 768,
+      "hidden": 1024,
+      "gated": true,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "tokens": 12288,
+      "width": 768,
+      "hidden": 1024,
+      "gated": true,
+      "collapsed": false,
+      "backend": "pallas",
+      "tiling": [
+        256,
+        1024,
+        1024
+      ]
+    },
+    {
+      "tokens": 12288,
+      "width": 768,
+      "hidden": 1024,
+      "gated": true,
+      "collapsed": false,
+      "backend": "ragged",
+      "tiling": [
+        128,
+        128,
+        128
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "hypothesis": "A learned content-dependent board summary improves the one-token causal transformer at matched width, parameters, data and complete decoding FLOPs.",
+  "id": "strong19_attention_pool",
+  "name": "Joint19 single-query attention board pooling",
+  "parent": {
+    "recipe": "research/recipes/strong19_padding_varied",
+    "snapshot": "ca7319b9d19122619c7f357c88f2ff84fd3ce5c2dc93d66f0ad00da263e9cd2d"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

@@ -2,6 +2,25 @@
 
 [Current transformer architecture, tensor shapes and parameter accounting](ARCHITECTURE.md).
 
+## Completed comparison
+
+Both arms completed 512 updates and 27,217,367 matched position exposures.
+See [endpoint, tail and curve results](RESULTS.md). Transformer endpoint policy
+KL is 0.546668 versus CNN 0.558877; value MSE is 0.082739 versus 0.090402.
+Learning time is 638.97 versus 432.61 minutes. The transformer improves loss at
+the same exposure budget but uses 47.7% more learning time. This remains one
+paired supervised seed, with no playing-strength result.
+
+The automatic sequence summary stopped because it had retained two disk-full
+monitoring errors from before storage cleanup. Both training arms, full state
+audits and peer checkpoint replication had completed successfully. The
+[reconciliation](sequence-recovery-001/result.json) reran the registered
+comparison checks and audited-input hashes. The original failure and blocked
+review receipts remain unchanged. `recover_completed_pair.py` performs this
+bounded read-only reconciliation; `review_pair_v2.py` generates the original
+predeclared analysis from its explicit result. No learning was repeated or
+scientific setting changed. The complete PNG curves passed visual review.
+
 The user selected AdamW for both models to compare the architectures under a
 common optimizer. Both use the repaired signed-target CE value objective. Each
 model starts from its original seed and trains for 512 accepted updates, using

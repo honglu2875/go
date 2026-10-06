@@ -1,0 +1,1897 @@
+{
+  "budgets": {
+    "all_experts": {
+      "active_flop_ratio_to_dense": 1.00063668652502,
+      "decode_matrix_flops": 167668603520,
+      "parameters": 420991764
+    },
+    "cnn": {
+      "active_flop_ratio_to_dense": 0.9941761667733447,
+      "decode_matrix_flops": 166586066432.0,
+      "parameters": 233220870
+    },
+    "dense": {
+      "active_flop_ratio_to_dense": 1.0,
+      "decode_matrix_flops": 167561919104,
+      "parameters": 232011540
+    },
+    "temporal": {
+      "active_flop_ratio_to_dense": 1.000001320013528,
+      "decode_matrix_flops": 167562140288,
+      "parameters": 317001492
+    }
+  },
+  "cnn_cpu_sha256": "5e08efe2acf832e423f6c8af86ace77dc8c80b3bbeda557a30f2f4478784810c",
+  "cnn_schema": [
+    {
+      "dtype": "float32",
+      "elements": 152064,
+      "inference": true,
+      "path": "conv_spatial.weight",
+      "shape": [
+        3,
+        3,
+        22,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 17252352,
+      "inference": true,
+      "path": "cycles.a.blockstack.0.normactconv1.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.a.blockstack.0.normactconv1.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.a.blockstack.0.normactconv1.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 17252352,
+      "inference": true,
+      "path": "cycles.a.blockstack.0.normactconv2.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.a.blockstack.0.normactconv2.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.a.blockstack.0.normactconv2.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 17252352,
+      "inference": true,
+      "path": "cycles.a.blockstack.1.normactconv1.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.a.blockstack.1.normactconv1.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.a.blockstack.1.normactconv1.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 17252352,
+      "inference": true,
+      "path": "cycles.a.blockstack.1.normactconv2.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.a.blockstack.1.normactconv2.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.a.blockstack.1.normactconv2.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3833856,
+      "inference": true,
+      "path": "cycles.a.normactconvp.conv.weight",
+      "shape": [
+        13,
+        1,
+        1,
+        768,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 9984,
+      "inference": true,
+      "path": "cycles.a.normactconvp.norm.beta",
+      "shape": [
+        13,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 9984,
+      "inference": true,
+      "path": "cycles.a.normactconvp.norm.gamma",
+      "shape": [
+        13,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3833856,
+      "inference": true,
+      "path": "cycles.a.normactconvq.conv.weight",
+      "shape": [
+        13,
+        1,
+        1,
+        384,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.a.normactconvq.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.a.normactconvq.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 17252352,
+      "inference": true,
+      "path": "cycles.b.blockstack.0.normactconv1.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.b.blockstack.0.normactconv1.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.b.blockstack.0.normactconv1.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 17252352,
+      "inference": true,
+      "path": "cycles.b.blockstack.0.normactconv2.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.b.blockstack.0.normactconv2.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.b.blockstack.0.normactconv2.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 17252352,
+      "inference": true,
+      "path": "cycles.b.blockstack.1.normactconv1.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.b.blockstack.1.normactconv1.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.b.blockstack.1.normactconv1.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 17252352,
+      "inference": true,
+      "path": "cycles.b.blockstack.1.normactconv2.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.b.blockstack.1.normactconv2.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.b.blockstack.1.normactconv2.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3833856,
+      "inference": true,
+      "path": "cycles.b.normactconvp.conv.weight",
+      "shape": [
+        13,
+        1,
+        1,
+        768,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 9984,
+      "inference": true,
+      "path": "cycles.b.normactconvp.norm.beta",
+      "shape": [
+        13,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 9984,
+      "inference": true,
+      "path": "cycles.b.normactconvp.norm.gamma",
+      "shape": [
+        13,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3833856,
+      "inference": true,
+      "path": "cycles.b.normactconvq.conv.weight",
+      "shape": [
+        13,
+        1,
+        1,
+        384,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.b.normactconvq.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.b.normactconvq.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 5750784,
+      "inference": true,
+      "path": "cycles.g.blockstack.0.normactconv1.convpool.conv1g.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 11501568,
+      "inference": true,
+      "path": "cycles.g.blockstack.0.normactconv1.convpool.conv1r.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 1277952,
+      "inference": true,
+      "path": "cycles.g.blockstack.0.normactconv1.convpool.linear_g.weight",
+      "shape": [
+        13,
+        384,
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 1664,
+      "inference": true,
+      "path": "cycles.g.blockstack.0.normactconv1.convpool.normg.beta",
+      "shape": [
+        13,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 1664,
+      "inference": true,
+      "path": "cycles.g.blockstack.0.normactconv1.convpool.normg.gamma",
+      "shape": [
+        13,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.g.blockstack.0.normactconv1.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.g.blockstack.0.normactconv1.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 11501568,
+      "inference": true,
+      "path": "cycles.g.blockstack.0.normactconv2.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        256,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3328,
+      "inference": true,
+      "path": "cycles.g.blockstack.0.normactconv2.norm.beta",
+      "shape": [
+        13,
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3328,
+      "inference": true,
+      "path": "cycles.g.blockstack.0.normactconv2.norm.gamma",
+      "shape": [
+        13,
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 17252352,
+      "inference": true,
+      "path": "cycles.g.blockstack.1.normactconv1.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.g.blockstack.1.normactconv1.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.g.blockstack.1.normactconv1.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 17252352,
+      "inference": true,
+      "path": "cycles.g.blockstack.1.normactconv2.conv.weight",
+      "shape": [
+        13,
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.g.blockstack.1.normactconv2.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.g.blockstack.1.normactconv2.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3833856,
+      "inference": true,
+      "path": "cycles.g.normactconvp.conv.weight",
+      "shape": [
+        13,
+        1,
+        1,
+        768,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 9984,
+      "inference": true,
+      "path": "cycles.g.normactconvp.norm.beta",
+      "shape": [
+        13,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 9984,
+      "inference": true,
+      "path": "cycles.g.normactconvp.norm.gamma",
+      "shape": [
+        13,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3833856,
+      "inference": true,
+      "path": "cycles.g.normactconvq.conv.weight",
+      "shape": [
+        13,
+        1,
+        1,
+        384,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.g.normactconvq.norm.beta",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4992,
+      "inference": true,
+      "path": "cycles.g.normactconvq.norm.gamma",
+      "shape": [
+        13,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 128,
+      "inference": false,
+      "path": "intermediate_policy_head.bias2.beta",
+      "shape": [
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 128,
+      "inference": false,
+      "path": "intermediate_policy_head.biasg.beta",
+      "shape": [
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 98304,
+      "inference": false,
+      "path": "intermediate_policy_head.conv1g.weight",
+      "shape": [
+        1,
+        1,
+        768,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 98304,
+      "inference": false,
+      "path": "intermediate_policy_head.conv1p.weight",
+      "shape": [
+        1,
+        1,
+        768,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 128,
+      "inference": false,
+      "path": "intermediate_policy_head.conv2p.weight",
+      "shape": [
+        1,
+        1,
+        128,
+        1
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 49152,
+      "inference": false,
+      "path": "intermediate_policy_head.linear_g.weight",
+      "shape": [
+        384,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 128,
+      "inference": false,
+      "path": "intermediate_policy_head.linear_pass.bias",
+      "shape": [
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 49152,
+      "inference": false,
+      "path": "intermediate_policy_head.linear_pass.weight",
+      "shape": [
+        384,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 128,
+      "inference": false,
+      "path": "intermediate_policy_head.linear_pass2.weight",
+      "shape": [
+        128,
+        1
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 256,
+      "inference": false,
+      "path": "intermediate_value_head.bias1.beta",
+      "shape": [
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 196608,
+      "inference": false,
+      "path": "intermediate_value_head.conv1.weight",
+      "shape": [
+        1,
+        1,
+        768,
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 256,
+      "inference": false,
+      "path": "intermediate_value_head.linear2.bias",
+      "shape": [
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 196608,
+      "inference": false,
+      "path": "intermediate_value_head.linear2.weight",
+      "shape": [
+        768,
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3,
+      "inference": false,
+      "path": "intermediate_value_head.linear_valuehead.bias",
+      "shape": [
+        3
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": false,
+      "path": "intermediate_value_head.linear_valuehead.weight",
+      "shape": [
+        256,
+        3
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 14592,
+      "inference": true,
+      "path": "linear_global.weight",
+      "shape": [
+        19,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": false,
+      "path": "norm_intermediate_trunkfinal.beta",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": false,
+      "path": "norm_intermediate_trunkfinal.gamma",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "norm_trunkfinal.beta",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 128,
+      "inference": true,
+      "path": "policy_head.bias2.beta",
+      "shape": [
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 128,
+      "inference": true,
+      "path": "policy_head.biasg.beta",
+      "shape": [
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 98304,
+      "inference": true,
+      "path": "policy_head.conv1g.weight",
+      "shape": [
+        1,
+        1,
+        768,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 98304,
+      "inference": true,
+      "path": "policy_head.conv1p.weight",
+      "shape": [
+        1,
+        1,
+        768,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 128,
+      "inference": true,
+      "path": "policy_head.conv2p.weight",
+      "shape": [
+        1,
+        1,
+        128,
+        1
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 49152,
+      "inference": true,
+      "path": "policy_head.linear_g.weight",
+      "shape": [
+        384,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 128,
+      "inference": true,
+      "path": "policy_head.linear_pass.bias",
+      "shape": [
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 49152,
+      "inference": true,
+      "path": "policy_head.linear_pass.weight",
+      "shape": [
+        384,
+        128
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 128,
+      "inference": true,
+      "path": "policy_head.linear_pass2.weight",
+      "shape": [
+        128,
+        1
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 1327104,
+      "inference": true,
+      "path": "tail.0.blockstack.0.normactconv1.conv.weight",
+      "shape": [
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 384,
+      "inference": true,
+      "path": "tail.0.blockstack.0.normactconv1.norm.beta",
+      "shape": [
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 384,
+      "inference": true,
+      "path": "tail.0.blockstack.0.normactconv1.norm.gamma",
+      "shape": [
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 1327104,
+      "inference": true,
+      "path": "tail.0.blockstack.0.normactconv2.conv.weight",
+      "shape": [
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 384,
+      "inference": true,
+      "path": "tail.0.blockstack.0.normactconv2.norm.beta",
+      "shape": [
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 384,
+      "inference": true,
+      "path": "tail.0.blockstack.0.normactconv2.norm.gamma",
+      "shape": [
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 1327104,
+      "inference": true,
+      "path": "tail.0.blockstack.1.normactconv1.conv.weight",
+      "shape": [
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 384,
+      "inference": true,
+      "path": "tail.0.blockstack.1.normactconv1.norm.beta",
+      "shape": [
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 384,
+      "inference": true,
+      "path": "tail.0.blockstack.1.normactconv1.norm.gamma",
+      "shape": [
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 1327104,
+      "inference": true,
+      "path": "tail.0.blockstack.1.normactconv2.conv.weight",
+      "shape": [
+        3,
+        3,
+        384,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 384,
+      "inference": true,
+      "path": "tail.0.blockstack.1.normactconv2.norm.beta",
+      "shape": [
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 384,
+      "inference": true,
+      "path": "tail.0.blockstack.1.normactconv2.norm.gamma",
+      "shape": [
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 294912,
+      "inference": true,
+      "path": "tail.0.normactconvp.conv.weight",
+      "shape": [
+        1,
+        1,
+        768,
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "tail.0.normactconvp.norm.beta",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "tail.0.normactconvp.norm.gamma",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 294912,
+      "inference": true,
+      "path": "tail.0.normactconvq.conv.weight",
+      "shape": [
+        1,
+        1,
+        384,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 384,
+      "inference": true,
+      "path": "tail.0.normactconvq.norm.beta",
+      "shape": [
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 384,
+      "inference": true,
+      "path": "tail.0.normactconvq.norm.gamma",
+      "shape": [
+        384
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 256,
+      "inference": true,
+      "path": "value_head.bias1.beta",
+      "shape": [
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 196608,
+      "inference": true,
+      "path": "value_head.conv1.weight",
+      "shape": [
+        1,
+        1,
+        768,
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 256,
+      "inference": true,
+      "path": "value_head.linear2.bias",
+      "shape": [
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 196608,
+      "inference": true,
+      "path": "value_head.linear2.weight",
+      "shape": [
+        768,
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3,
+      "inference": true,
+      "path": "value_head.linear_valuehead.bias",
+      "shape": [
+        3
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "value_head.linear_valuehead.weight",
+      "shape": [
+        256,
+        3
+      ]
+    }
+  ],
+  "created": 1791157273.7105718,
+  "files": {
+    "adamw.py": {
+      "clone_sha256": "08c0f19c7bc7abe396c04a5c09364d619ef33f0ab717bd7679a3eb435cb5e4d0",
+      "parent_sha256": "08c0f19c7bc7abe396c04a5c09364d619ef33f0ab717bd7679a3eb435cb5e4d0"
+    },
+    "benchmark.py": {
+      "clone_sha256": "d41633a802bbc0e57690c62c3fe227b18aea06027eda26ec263b12cf348befdb",
+      "parent_sha256": "d41633a802bbc0e57690c62c3fe227b18aea06027eda26ec263b12cf348befdb"
+    },
+    "board_pool.py": {
+      "clone_sha256": "a6c9fc2b4be76edc82ad8c3fa676e969d0e8c2c910a109975613269d648388e3",
+      "parent_sha256": "a6c9fc2b4be76edc82ad8c3fa676e969d0e8c2c910a109975613269d648388e3"
+    },
+    "causal.py": {
+      "clone_sha256": "1a283347ddc03129ef17d75bafe8390b613a4ee44aba72968f658e7a59ca6271",
+      "parent_sha256": "1a283347ddc03129ef17d75bafe8390b613a4ee44aba72968f658e7a59ca6271"
+    },
+    "cnn_chunks.py": {
+      "clone_sha256": "1c5dffb60074ef8343d31b7c93c109f83895a41f9f7ed560fd1ac4a055e65f3a",
+      "parent_sha256": "1c5dffb60074ef8343d31b7c93c109f83895a41f9f7ed560fd1ac4a055e65f3a"
+    },
+    "compact.py": {
+      "clone_sha256": "d4af0ca23198cd2394a22b6625b3d52619460e1e34a0e9ac1cdbfc717764666a",
+      "parent_sha256": "d4af0ca23198cd2394a22b6625b3d52619460e1e34a0e9ac1cdbfc717764666a"
+    },
+    "compact_reference.py": {
+      "clone_sha256": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1",
+      "parent_sha256": "d5007f56f67519edf22da2e20264accf21c49bc4a4899297fb670898d26038e1"
+    },
+    "diagnose.py": {
+      "clone_sha256": "d427629031f7094307b53cb73a15dd13b414ebf430ba1078cb82d8a89c92bf84",
+      "parent_sha256": "d427629031f7094307b53cb73a15dd13b414ebf430ba1078cb82d8a89c92bf84"
+    },
+    "draft_mask.py": {
+      "clone_sha256": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44",
+      "parent_sha256": "ca44e140b924e8625eb4881b45b968a6ce697e6ed9ab2a72e5f9628375fb7f44"
+    },
+    "draft_model.py": {
+      "clone_sha256": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3",
+      "parent_sha256": "01b94a2b8850e79a90bbafc2b16d440c49dfe98b3e38e3f4e0f5e447765389f3"
+    },
+    "encoder.py": {
+      "clone_sha256": "005cb2f95d8d71c043ef53c78e54de34d0333c303e8d931756a5ce6241c0bb4d",
+      "parent_sha256": "005cb2f95d8d71c043ef53c78e54de34d0333c303e8d931756a5ce6241c0bb4d"
+    },
+    "evaluation.py": {
+      "clone_sha256": "5f22ee880bf680db2a0e2fdf7242c1e40aea38d7b858c1b7448e7e861b199749",
+      "parent_sha256": "5f22ee880bf680db2a0e2fdf7242c1e40aea38d7b858c1b7448e7e861b199749"
+    },
+    "heads.py": {
+      "clone_sha256": "cd0a404ec4ba00972fa57bf7e8214f1c4153cfbc77b782763c2c73e7c3519d9d",
+      "parent_sha256": "cd0a404ec4ba00972fa57bf7e8214f1c4153cfbc77b782763c2c73e7c3519d9d"
+    },
+    "host_metrics.py": {
+      "clone_sha256": "ca09a96510f26dc1135f58514a8fdf386631c63ae2b119b5b9e82765ac0a049b",
+      "parent_sha256": "ca09a96510f26dc1135f58514a8fdf386631c63ae2b119b5b9e82765ac0a049b"
+    },
+    "inference.py": {
+      "clone_sha256": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2",
+      "parent_sha256": "80fa0d693782ac12d0090fd4db60c29de71545bd0f3ff4efdc5f6f870b7e59d2"
+    },
+    "joint.py": {
+      "clone_sha256": "86256793e623b80ff000dc97f44711af60ce01dfc464674c0ae78cc0d5fef4b8",
+      "parent_sha256": "86256793e623b80ff000dc97f44711af60ce01dfc464674c0ae78cc0d5fef4b8"
+    },
+    "katago.py": {
+      "clone_sha256": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29",
+      "parent_sha256": "0806b429b309eb77c4c94c880be67880cdaf9f29e5595ddcc8eb9c55eeb55f29"
+    },
+    "learner.py": {
+      "clone_sha256": "4e4d0b728d9afca48f25e7b6e3bbfb3a05a9fff29bebebc020f8232c48afc89f",
+      "parent_sha256": "4e4d0b728d9afca48f25e7b6e3bbfb3a05a9fff29bebebc020f8232c48afc89f"
+    },
+    "moe_layers.py": {
+      "clone_sha256": "ff18490fc4a274b55bb4dd9516b09b31b7147b358b5d92d6f78c526657a5d47d",
+      "parent_sha256": "ff18490fc4a274b55bb4dd9516b09b31b7147b358b5d92d6f78c526657a5d47d"
+    },
+    "observation_attention.py": {
+      "clone_sha256": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544",
+      "parent_sha256": "057ebbac64a76ee74afe2ce43b03b8cff5311c9915fb9bd5e4a15392d599e544"
+    },
+    "optimizer_io.py": {
+      "clone_sha256": "a50990bd5bc69efd3ca030d99ecd732c4b173e71c30417e706508adb149e3221",
+      "parent_sha256": "a50990bd5bc69efd3ca030d99ecd732c4b173e71c30417e706508adb149e3221"
+    },
+    "policy_config.py": {
+      "clone_sha256": "1578246ad13ce0fe11e712249282bd707ccf530167d73320f2f3238453d24aac",
+      "parent_sha256": "1578246ad13ce0fe11e712249282bd707ccf530167d73320f2f3238453d24aac"
+    },
+    "policy_model.py": {
+      "clone_sha256": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2",
+      "parent_sha256": "781cfeb045f3879652c7ec462ccf2493e331860754e765df96dd192d3eb1c7e2"
+    },
+    "qualify_control.py": {
+      "clone_sha256": "ed5271fa7ef224362758aaab2b9ec89a5e8d7cdb7c5afb5b56662c212b2e7976",
+      "parent_sha256": "ed5271fa7ef224362758aaab2b9ec89a5e8d7cdb7c5afb5b56662c212b2e7976"
+    },
+    "qualify_evaluation.py": {
+      "clone_sha256": "376bb447beffda37a5c41fe0d614a89b7a132c9746c8ca5c0a45aa4180a6b08a",
+      "parent_sha256": "376bb447beffda37a5c41fe0d614a89b7a132c9746c8ca5c0a45aa4180a6b08a"
+    },
+    "qualify_kernels.py": {
+      "clone_sha256": "7f284403948fd386d9fe94810c3959f3caf679c18ecae45be0a7ef0df775c4bb",
+      "parent_sha256": "7f284403948fd386d9fe94810c3959f3caf679c18ecae45be0a7ef0df775c4bb"
+    },
+    "qualify_padding.py": {
+      "clone_sha256": "8360ef0ddf4111a70b2c61f7bed2980c86a0155153afbabc74c1d4baf329a197",
+      "parent_sha256": "8360ef0ddf4111a70b2c61f7bed2980c86a0155153afbabc74c1d4baf329a197"
+    },
+    "qualify_system.py": {
+      "clone_sha256": "137a0eb2dd1ae110704930d7c59247580e422e3d60fbcd8b2981056efac493d8",
+      "parent_sha256": "5227c5af321538c9cfc0d438a774ce1534caa44416bac2ac73e8891fb2ec42e1"
+    },
+    "qualify_value_ce.py": {
+      "clone_sha256": "70c9c73fa901f612f5b91454d77aa2c90a5ea8bd754af2eddf002a4bcc473631",
+      "parent_sha256": "70c9c73fa901f612f5b91454d77aa2c90a5ea8bd754af2eddf002a4bcc473631"
+    },
+    "spatial_readout.py": {
+      "clone_sha256": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9",
+      "parent_sha256": "6ebc6821b07cfa522ddce7787bbb36a490ce726f35d0de28517399f78ce55ba9"
+    },
+    "train.py": {
+      "clone_sha256": "715606cd9bb50b30eb0c48352a4814deaba7e5c701b0c79ac69ba51912f37af0",
+      "parent_sha256": "715606cd9bb50b30eb0c48352a4814deaba7e5c701b0c79ac69ba51912f37af0"
+    },
+    "train_config.py": {
+      "clone_sha256": "ecc3b41a2fc88767226bd0b0c82049f410cdb844f528da35d394d6325cd7aa2a",
+      "parent_sha256": "ecc3b41a2fc88767226bd0b0c82049f410cdb844f528da35d394d6325cd7aa2a"
+    },
+    "train_joint.py": {
+      "clone_sha256": "74b2f4dc255f65f807175d6bf150c9a3b13dbf997fb288567fded15d3b4de809",
+      "parent_sha256": "74b2f4dc255f65f807175d6bf150c9a3b13dbf997fb288567fded15d3b4de809"
+    },
+    "training_probe.py": {
+      "clone_sha256": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5",
+      "parent_sha256": "e399a32ea3cd0b00cf837e6a06251f2b3ee2a44c855213d82bbe8e4d55e5c5f5"
+    },
+    "verify_varied.py": {
+      "clone_sha256": "13b4ca480a979d0f97b1b17c8e2cbeb3f081a72803cf655d319a2af25d1fd600",
+      "parent_sha256": "13b4ca480a979d0f97b1b17c8e2cbeb3f081a72803cf655d319a2af25d1fd600"
+    }
+  },
+  "inherited_temporal_cpu_sha256": "08ff7e75aeed5194d12141e36d5fee9d4a3f2dbcfd022214a61ddb67f4fff4f8",
+  "operator_sha256": "8372b133711f8cdaea5da7ab41938b18f1f2bae6afc9e74fa155d29f17304ab6",
+  "original_cnn_budget_sha256": "3c25f4957d2c14c2b5b0580a500baaaf5dc17a8a1b0fd0b00095472ea4567724",
+  "scope": "No learner-math changes. CNN schema/configuration equal the registered earlier control. Cached-move logical matrix work includes encoder, both normal temporal tokens, routers and heads; physical overhead is measured separately.",
+  "status": "passed",
+  "temporal_schema": [
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "action_type",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 13824,
+      "inference": true,
+      "path": "blocks.attn_norm.scale",
+      "shape": [
+        18,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 7077888,
+      "inference": true,
+      "path": "blocks.kv.weight",
+      "shape": [
+        18,
+        768,
+        512
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 13824,
+      "inference": true,
+      "path": "blocks.mlp_norm.scale",
+      "shape": [
+        18,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 56623104,
+      "inference": true,
+      "path": "blocks.moe.down",
+      "shape": [
+        18,
+        4,
+        1024,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 56623104,
+      "inference": true,
+      "path": "blocks.moe.gate",
+      "shape": [
+        18,
+        4,
+        768,
+        1024
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 55296,
+      "inference": true,
+      "path": "blocks.moe.router",
+      "shape": [
+        18,
+        768,
+        4
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 56623104,
+      "inference": true,
+      "path": "blocks.moe.up",
+      "shape": [
+        18,
+        4,
+        768,
+        1024
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 10616832,
+      "inference": true,
+      "path": "blocks.out.weight",
+      "shape": [
+        18,
+        768,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 10616832,
+      "inference": true,
+      "path": "blocks.q.weight",
+      "shape": [
+        18,
+        768,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true,
+      "path": "encoder.attention.attn.gamma",
+      "shape": [
+        4,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true,
+      "path": "encoder.attention.attn.norm.bias",
+      "shape": [
+        4,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true,
+      "path": "encoder.attention.attn.norm.scale",
+      "shape": [
+        4,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3145728,
+      "inference": true,
+      "path": "encoder.attention.down.weight",
+      "shape": [
+        4,
+        1024,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3145728,
+      "inference": true,
+      "path": "encoder.attention.gate.weight",
+      "shape": [
+        4,
+        768,
+        1024
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 2359296,
+      "inference": true,
+      "path": "encoder.attention.k.weight",
+      "shape": [
+        4,
+        768,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true,
+      "path": "encoder.attention.mlp.gamma",
+      "shape": [
+        4,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true,
+      "path": "encoder.attention.mlp.norm.bias",
+      "shape": [
+        4,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3072,
+      "inference": true,
+      "path": "encoder.attention.mlp.norm.scale",
+      "shape": [
+        4,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 2359296,
+      "inference": true,
+      "path": "encoder.attention.out.weight",
+      "shape": [
+        4,
+        768,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 2359296,
+      "inference": true,
+      "path": "encoder.attention.q.weight",
+      "shape": [
+        4,
+        768,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3145728,
+      "inference": true,
+      "path": "encoder.attention.up.weight",
+      "shape": [
+        4,
+        768,
+        1024
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 2359296,
+      "inference": true,
+      "path": "encoder.attention.v.weight",
+      "shape": [
+        4,
+        768,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 15360,
+      "inference": true,
+      "path": "encoder.blocks.depthwise.bias",
+      "shape": [
+        20,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 138240,
+      "inference": true,
+      "path": "encoder.blocks.depthwise.weight",
+      "shape": [
+        20,
+        3,
+        3,
+        1,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 15360,
+      "inference": true,
+      "path": "encoder.blocks.down.bias",
+      "shape": [
+        20,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 47185920,
+      "inference": true,
+      "path": "encoder.blocks.down.weight",
+      "shape": [
+        20,
+        3072,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 15360,
+      "inference": true,
+      "path": "encoder.blocks.gamma",
+      "shape": [
+        20,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 15360,
+      "inference": true,
+      "path": "encoder.blocks.norm.bias",
+      "shape": [
+        20,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 15360,
+      "inference": true,
+      "path": "encoder.blocks.norm.scale",
+      "shape": [
+        20,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 61440,
+      "inference": true,
+      "path": "encoder.blocks.up.bias",
+      "shape": [
+        20,
+        3072
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 47185920,
+      "inference": true,
+      "path": "encoder.blocks.up.weight",
+      "shape": [
+        20,
+        768,
+        3072
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 16,
+      "inference": true,
+      "path": "encoder.compress.bias",
+      "shape": [
+        16
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 12288,
+      "inference": true,
+      "path": "encoder.compress.weight",
+      "shape": [
+        768,
+        16
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "encoder.flat.bias",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 4435968,
+      "inference": true,
+      "path": "encoder.flat.weight",
+      "shape": [
+        5776,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 14592,
+      "inference": true,
+      "path": "encoder.global.weight",
+      "shape": [
+        19,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "encoder.stem.bias",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "encoder.stem.norm.bias",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "encoder.stem.norm.scale",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 152064,
+      "inference": true,
+      "path": "encoder.stem.weight",
+      "shape": [
+        3,
+        3,
+        22,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "encoder.token.norm.bias",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "encoder.token.norm.scale",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "encoder.type",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 278016,
+      "inference": true,
+      "path": "head.actions.weight",
+      "shape": [
+        362,
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 49152,
+      "inference": true,
+      "path": "head.context.k.weight",
+      "shape": [
+        768,
+        64
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 49152,
+      "inference": true,
+      "path": "head.context.q.weight",
+      "shape": [
+        768,
+        64
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 1,
+      "inference": true,
+      "path": "head.local.bias",
+      "shape": []
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "head.local.weight",
+      "shape": [
+        768,
+        1
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "head.norm.scale",
+      "shape": [
+        768
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 256,
+      "inference": true,
+      "path": "value_head.linear2.bias",
+      "shape": [
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 196608,
+      "inference": true,
+      "path": "value_head.linear2.weight",
+      "shape": [
+        768,
+        256
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 3,
+      "inference": true,
+      "path": "value_head.linear_valuehead.bias",
+      "shape": [
+        3
+      ]
+    },
+    {
+      "dtype": "float32",
+      "elements": 768,
+      "inference": true,
+      "path": "value_head.linear_valuehead.weight",
+      "shape": [
+        256,
+        3
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Rematerializing only nonlinear activation arithmetic reduces scan residual storage and permits larger encoder chunks without recomputing expert matrix multiplications.",
+  "id": "strong19_moe_remat",
+  "name": "Sparse expert activation recomputation qualification",
+  "parent": {
+    "recipe": "research/recipes/strong19_moe",
+    "source_sha256": "b5a927e2c69a8e5afb41f7777340c826589020b84d6ab46b3e39cdd2f49ca25e"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

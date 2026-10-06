@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Additional sparse expert capacity in the spatial encoder and temporal transformer improves fixed-data learning at matched active matrix FLOPs.",
+  "id": "strong19_moe",
+  "name": "Joint19 dropless sparse experts at matched active compute",
+  "parent": {
+    "recipe": "research/recipes/strong19_recovery",
+    "source_sha256": "ba216d3c0834be144273844d84f43a37aa1e0a47131e2cbfdc41fb3c8a1f5c8d"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

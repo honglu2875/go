@@ -1,0 +1,11 @@
+{
+  "hypothesis": "At fixed game exposure and active decoding FLOPs, temporal experts and a weaker router balance penalty improve over the tuned dense reference.",
+  "id": "strong19_moe_batch64",
+  "name": "Temporal MoE at tuned dense defaults",
+  "parent": {
+    "recipe": "research/recipes/strong19_dense_batch_keepall",
+    "recipe_sha256": "caa5a624c8e79f5e23c1c8760e875138c8ee34abf19825ff4301141707589a80"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

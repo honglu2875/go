@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Changing the physical game batch improves learning or throughput at a fixed complete-game exposure budget. New provisional trial checkpoints use guarded RAM; existing checkpoint files are never retired.",
+  "id": "strong19_dense_batch_keepall",
+  "name": "Dense matched-exposure batch screen",
+  "parent": {
+    "recipe": "research/recipes/strong19_dense_batch",
+    "source_sha256": "1db17690308b397fdc42387ab1e8a8a9e6a7d14dfede1a02c1ded114dc28cf7c"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}
