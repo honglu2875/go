@@ -1,0 +1,18 @@
+{
+  "accelerator_jobs_started": false,
+  "authorization": "User requested publishing research results and making G8 the default.",
+  "comparison": "research/studies/strong19_fuzzy_topk/scientific-summary.json",
+  "comparison_sha256": "78dceff93a5fddd816af33e38793577e4a3ef29f1bd0e91c3d35f1d661242d28",
+  "configuration": "research/recipes/strong19_fuzzy_topk/g8_default.json",
+  "configuration_sha256": "6ba1ca30b51bae07bcfadb928b4b07ba525e4a959363c12d4c6fbe405a20fa92",
+  "effective_date": "2026-10-10",
+  "evidence": "research/studies/strong19_fuzzy_topk/RESULTS.md",
+  "historical_registered_runs_modified": false,
+  "historical_source_hash_scope": "Hashes refer to original audited private sources; sanitized source hashes are listed in PUBLIC_SOURCE_MANIFEST.json. Freeze a fresh snapshot.",
+  "kind": "explicit_research_default_selection",
+  "previous_defaults": "research/defaults/strong19_dense_20261006.json",
+  "previous_defaults_sha256": "aa8dceb069aa56b1b05142df49c9c583ce3d42c3e8c18d621a89231f6223d939",
+  "schema_version": 1,
+  "scope": "Default for new fixed-data 19x19 research; historical runs remain immutable.",
+  "selected": "g8_lr0015"
+}

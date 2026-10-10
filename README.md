@@ -22,13 +22,18 @@ tests/              Shared infrastructure checks
 ## Research direction
 
 See the [current architecture and results](research/ARCHITECTURE_PROGRESS.md) for
-the dense transformer, temporal MoE implementation, completed matched ablations,
-and selected LR/batch defaults. The new batch-64 MoE comparison is registered;
-its learning results are pending.
+the dense transformer, conventional temporal MoE, grouped fuzzy TopK, and their
+completed matched-data comparisons. The selected research default is G8 at
+peak LR 0.0015 and 64 complete games per update. Its 298,257,732 parameters
+include grouped feature selection in the 18 temporal FFNs and the unchanged
+shared spatial encoder. See the [default configuration](research/defaults/README.md)
+and [selection rationale](research/studies/strong19_fuzzy_topk/PROMOTION.md).
 
-The [current 19×19 transformer](research/studies/strong19_long_pair/ARCHITECTURE.md)
-contains 232,011,540 parameters. Its architecture guide links the exact active
-configuration, full tensor inventory and pure-JAX implementation.
+The [dense 19×19 transformer](research/studies/strong19_long_pair/ARCHITECTURE.md)
+contains 232,011,540 parameters and remains a comparison baseline. Its
+architecture guide records the tensor inventory and pure-JAX implementation.
+The [G8 recipe](research/recipes/strong19_fuzzy_topk/README.md) documents the
+temporal replacement and logical active versus issued decoding FLOPs.
 
 The current causal candidate encodes a board into one soft token while retaining
 spatial features for its policy readout. A causal transformer processes the
@@ -36,14 +41,19 @@ board/action history. The policy combines local board features with a query
 from the temporal representation. A shared encoder supports repeated passes
 and a training-only first-pass objective.
 
-The comparison program uses fixed teacher data, matching model width, parameter
-counts and complete decoding FLOPs, including the encoder. Learning-rate and
+The comparison program uses fixed teacher data and matched model width.
+Early dense comparisons matched total parameters and complete decoding FLOPs,
+including the encoder. Sparse comparisons match logical active decoding FLOPs
+while allowing more total parameters and reporting issued work and runtime.
+Learning-rate and
 encoder/readout studies precede larger-data comparisons. Validation includes
 both position-weighted and opening-family-weighted metrics and a fixed training
 probe. Supervised loss improvements and stronger Go play are evaluated separately.
 
 Relevant starting points:
 
+- [G8 sweep results and learning curves](research/studies/strong19_fuzzy_topk/RESULTS.md)
+- [G8 versus conventional MoE](research/studies/strong19_fuzzy_topk/MOE_COMPARISON.md)
 - [Completed value-objective repair](research/studies/strong19_value_debug/CE_RESULTS.md)
 - [Longer common-AdamW comparison](research/studies/strong19_long_pair/README.md)
 - [Research workflow](research/README.md)

@@ -1,0 +1,5070 @@
+{
+  "schema_version": 1,
+  "kind": "public_fixed_data_research_comparison",
+  "status": "passed",
+  "scope": "Single-seed, fixed-data 256-update prefix. Historical dense timing. LR selection uses validation, not test. No convergence or playing-strength conclusion; no automatic default promotion.",
+  "selected_fuzzy": "g8_lr0015",
+  "provisional_winner": "g8_lr0015",
+  "default_selection": "Explicit user selection on 2026-10-10; see PROMOTION.md.",
+  "dataset_manifest_sha256": "8e1ab17423f083137367adec93d215d7dcea2440dfafa1c448f0cea834470855",
+  "validation_population_sha256": "7bef19b033a315916e31de6216a0119c35065c14fe04dbace94e7430ecd58358",
+  "probe_population_sha256": "9bf1249ea023afe59d781a8758cb824d5af82e519516d2feec162127c2bb09fe",
+  "table": {
+    "dense": {
+      "activity_endpoint": {},
+      "batch_games": 64,
+      "endpoint": {
+        "expert_kl": 0.7280013485061207,
+        "expert_top1": 0.48670985381615944,
+        "family_kl": 0.7631861628318317,
+        "value_family_mse": 0.14215277964059186,
+        "value_mse": 0.12195566106432609
+      },
+      "learning_seconds": 8771.791782968212,
+      "parameters": 232011540,
+      "position_exposures": 7001181,
+      "sustained_overfit": false,
+      "tail": {
+        "expert_kl": 0.7749992374121627,
+        "expert_top1": 0.4739349500033659,
+        "family_kl": 0.8109375311403858,
+        "value_family_mse": 0.14909213826127873,
+        "value_mse": 0.12942071847767053
+      },
+      "training_probe": {
+        "expert_kl": 0.7126139186297946,
+        "expert_top1": 0.4851830225174264,
+        "family_kl": 0.763751208782196,
+        "value_family_mse": 0.12917578780616168,
+        "value_mse": 0.10192052389008256
+      },
+      "updates": 256,
+      "validation_curve": {
+        "0": {
+          "expert_kl": 2.4566923484808765,
+          "expert_top1": 0.005825604697767628,
+          "family_kl": 2.5325911645175645,
+          "value_family_mse": 0.9763774871826172,
+          "value_mse": 0.9847092971674939
+        },
+        "128": {
+          "expert_kl": 0.9853650190400178,
+          "expert_top1": 0.4012365816905128,
+          "family_kl": 1.0294348139341185,
+          "value_family_mse": 0.24680796164233668,
+          "value_mse": 0.20845883616816513
+        },
+        "160": {
+          "expert_kl": 0.9006074163831537,
+          "expert_top1": 0.46792810427055664,
+          "family_kl": 0.9401168823242188,
+          "value_family_mse": 0.21050039775112048,
+          "value_mse": 0.18530398543640925
+        },
+        "192": {
+          "expert_kl": 0.8322659126392318,
+          "expert_top1": 0.45127464230787157,
+          "family_kl": 0.869338963307491,
+          "value_family_mse": 0.16207051054150068,
+          "value_mse": 0.14248598889920405
+        },
+        "224": {
+          "expert_kl": 0.7647304510911357,
+          "expert_top1": 0.4838203538860667,
+          "family_kl": 0.8002874672818345,
+          "value_family_mse": 0.14305312460174366,
+          "value_mse": 0.12382050546948142
+        },
+        "256": {
+          "expert_kl": 0.7280013485061207,
+          "expert_top1": 0.48670985381615944,
+          "family_kl": 0.7631861628318317,
+          "value_family_mse": 0.14215277964059186,
+          "value_mse": 0.12195566106432609
+        },
+        "32": {
+          "expert_kl": 1.4785723639624209,
+          "expert_top1": 0.21587360768047723,
+          "family_kl": 1.532714220942283,
+          "value_family_mse": 0.3088509928004271,
+          "value_mse": 0.2734040742418931
+        },
+        "64": {
+          "expert_kl": 1.1339563817557599,
+          "expert_top1": 0.4217271752807941,
+          "family_kl": 1.1794682068078695,
+          "value_family_mse": 0.25934931656130317,
+          "value_mse": 0.2295498959742705
+        },
+        "96": {
+          "expert_kl": 1.1813563233540725,
+          "expert_top1": 0.3946342296997095,
+          "family_kl": 1.2295750468766609,
+          "value_family_mse": 0.28090467876723024,
+          "value_mse": 0.24565322165317266
+        }
+      }
+    },
+    "g1": {
+      "activity_endpoint": {
+        "fuzzy_batch_inactive_feature_fraction": 0.2940538227558136,
+        "fuzzy_batch_never_winner_fraction": 0.0,
+        "fuzzy_group_entropy": -0.0,
+        "fuzzy_live_tokens_per_layer": 76506.0,
+        "fuzzy_positive_group_fraction": 0.29921257495880127
+      },
+      "batch_games": 64,
+      "endpoint": {
+        "expert_kl": 0.7290719550777913,
+        "expert_top1": 0.5057401624955337,
+        "family_kl": 0.7638352742638195,
+        "value_family_mse": 0.14428043406351332,
+        "value_mse": 0.12076568259801156
+      },
+      "learning_seconds": 10393.52574383677,
+      "parameters": 232080660,
+      "position_exposures": 7001181,
+      "sustained_overfit": false,
+      "tail": {
+        "expert_kl": 0.7793503522306241,
+        "expert_top1": 0.48187848565347746,
+        "family_kl": 0.8149258860340347,
+        "value_family_mse": 0.15613838341949954,
+        "value_mse": 0.1340187178021401
+      },
+      "training_probe": {
+        "expert_kl": 0.7133835928661361,
+        "expert_top1": 0.5097806649392358,
+        "family_kl": 0.764268159866333,
+        "value_family_mse": 0.13435925066005439,
+        "value_mse": 0.10671909203220817
+      },
+      "updates": 256,
+      "validation_curve": {
+        "0": {
+          "expert_kl": 2.436553672995215,
+          "expert_top1": 0.006276118127728325,
+          "family_kl": 2.512426330768477,
+          "value_family_mse": 1.1127740884278214,
+          "value_mse": 1.1225302697813262
+        },
+        "128": {
+          "expert_kl": 0.9503072429985941,
+          "expert_top1": 0.42483416445293687,
+          "family_kl": 0.9937986906687586,
+          "value_family_mse": 0.17533575237172636,
+          "value_mse": 0.1503406064258597
+        },
+        "160": {
+          "expert_kl": 0.8732012990370275,
+          "expert_top1": 0.4658153516334996,
+          "family_kl": 0.9113138949943864,
+          "value_family_mse": 0.169070672711036,
+          "value_mse": 0.14879346483878345
+        },
+        "192": {
+          "expert_kl": 0.819451053876163,
+          "expert_top1": 0.46556679249972815,
+          "family_kl": 0.8561096599331073,
+          "value_family_mse": 0.16313985366380324,
+          "value_mse": 0.1437754004874719
+        },
+        "224": {
+          "expert_kl": 0.7895280477379178,
+          "expert_top1": 0.4743285019651707,
+          "family_kl": 0.8248327239051774,
+          "value_family_mse": 0.16099486253118206,
+          "value_mse": 0.13751507032093688
+        },
+        "256": {
+          "expert_kl": 0.7290719550777913,
+          "expert_top1": 0.5057401624955337,
+          "family_kl": 0.7638352742638195,
+          "value_family_mse": 0.14428043406351332,
+          "value_mse": 0.12076568259801156
+        },
+        "32": {
+          "expert_kl": 1.458355558622089,
+          "expert_top1": 0.30900560811545574,
+          "family_kl": 1.5142537394120907,
+          "value_family_mse": 0.340414426807943,
+          "value_mse": 0.3029091360295992
+        },
+        "64": {
+          "expert_kl": 1.1596718904135788,
+          "expert_top1": 0.366935421230057,
+          "family_kl": 1.2053282964105891,
+          "value_family_mse": 0.2310010399980475,
+          "value_mse": 0.20132852583270344
+        },
+        "96": {
+          "expert_kl": 1.1399003645614876,
+          "expert_top1": 0.41130322660825525,
+          "family_kl": 1.188806764916572,
+          "value_family_mse": 0.2000718426837001,
+          "value_mse": 0.17034282258535058
+        }
+      }
+    },
+    "g2": {
+      "activity_endpoint": {
+        "fuzzy_batch_inactive_feature_fraction": 0.3454725444316864,
+        "fuzzy_batch_never_winner_fraction": 0.0803087055683136,
+        "fuzzy_group_entropy": 0.34737297892570496,
+        "fuzzy_live_tokens_per_layer": 76506.0,
+        "fuzzy_positive_group_fraction": 0.4478051960468292
+      },
+      "batch_games": 64,
+      "endpoint": {
+        "expert_kl": 0.7300626112933233,
+        "expert_top1": 0.5122493048111727,
+        "family_kl": 0.765124641922871,
+        "value_family_mse": 0.17276506294564242,
+        "value_mse": 0.14642261982119673
+      },
+      "learning_seconds": 10023.6025360676,
+      "parameters": 260410644,
+      "position_exposures": 7001181,
+      "sustained_overfit": false,
+      "tail": {
+        "expert_kl": 0.7666821803733437,
+        "expert_top1": 0.48255166664077515,
+        "family_kl": 0.8024765351681281,
+        "value_family_mse": 0.16403890493654272,
+        "value_mse": 0.13915001254461415
+      },
+      "training_probe": {
+        "expert_kl": 0.7155327360315318,
+        "expert_top1": 0.5193971022955367,
+        "family_kl": 0.7654930353164673,
+        "value_family_mse": 0.13800539674411993,
+        "value_mse": 0.10850063507880857
+      },
+      "updates": 256,
+      "validation_curve": {
+        "0": {
+          "expert_kl": 2.438735013025081,
+          "expert_top1": 0.006897515962156872,
+          "family_kl": 2.5146333536857375,
+          "value_family_mse": 1.0263361667926794,
+          "value_mse": 1.0316077778437205
+        },
+        "128": {
+          "expert_kl": 0.9631959837795745,
+          "expert_top1": 0.42377778813440836,
+          "family_kl": 1.0080777640819187,
+          "value_family_mse": 0.20168986021293445,
+          "value_mse": 0.1685430088467819
+        },
+        "160": {
+          "expert_kl": 0.8695711280846576,
+          "expert_top1": 0.46163645119696756,
+          "family_kl": 0.9094252825182272,
+          "value_family_mse": 0.18633366205348564,
+          "value_mse": 0.16035132176949662
+        },
+        "192": {
+          "expert_kl": 0.7918492933056034,
+          "expert_top1": 0.46693386773547096,
+          "family_kl": 0.8287084692519247,
+          "value_family_mse": 0.15972177536619486,
+          "value_mse": 0.13548619038510037
+        },
+        "224": {
+          "expert_kl": 0.7781346365211044,
+          "expert_top1": 0.4684718273756816,
+          "family_kl": 0.8135964943295888,
+          "value_family_mse": 0.1596298764977909,
+          "value_mse": 0.1355412274275454
+        },
+        "256": {
+          "expert_kl": 0.7300626112933233,
+          "expert_top1": 0.5122493048111727,
+          "family_kl": 0.765124641922871,
+          "value_family_mse": 0.17276506294564242,
+          "value_mse": 0.14642261982119673
+        },
+        "32": {
+          "expert_kl": 1.430016479786123,
+          "expert_top1": 0.3511519162355719,
+          "family_kl": 1.4860501518243003,
+          "value_family_mse": 0.3179587108850971,
+          "value_mse": 0.28184791146913496
+        },
+        "64": {
+          "expert_kl": 1.150096780892211,
+          "expert_top1": 0.41778129903217287,
+          "family_kl": 1.1961612546212166,
+          "value_family_mse": 0.23788098388294318,
+          "value_mse": 0.20737365029538243
+        },
+        "96": {
+          "expert_kl": 1.0590216740409115,
+          "expert_top1": 0.4420158145748862,
+          "family_kl": 1.105772951271771,
+          "value_family_mse": 0.24071861394895352,
+          "value_mse": 0.20887193091494846
+        }
+      }
+    },
+    "g4": {
+      "activity_endpoint": {
+        "fuzzy_batch_inactive_feature_fraction": 0.4798113703727722,
+        "fuzzy_batch_never_winner_fraction": 0.2644543945789337,
+        "fuzzy_group_entropy": 0.6188806295394897,
+        "fuzzy_live_tokens_per_layer": 76506.0,
+        "fuzzy_positive_group_fraction": 0.6203058958053589
+      },
+      "batch_games": 64,
+      "endpoint": {
+        "expert_kl": 0.7376361704756413,
+        "expert_top1": 0.4847213807459881,
+        "family_kl": 0.7729420723825302,
+        "value_family_mse": 0.16339401365650008,
+        "value_mse": 0.1410965611114599
+      },
+      "learning_seconds": 9527.267923635896,
+      "parameters": 282986100,
+      "position_exposures": 7001181,
+      "sustained_overfit": false,
+      "tail": {
+        "expert_kl": 0.7737528411959579,
+        "expert_top1": 0.4887242184627653,
+        "family_kl": 0.8100603046106656,
+        "value_family_mse": 0.1530218416031598,
+        "value_mse": 0.13390528269345411
+      },
+      "training_probe": {
+        "expert_kl": 0.7216822179163169,
+        "expert_top1": 0.4897448998211744,
+        "family_kl": 0.7720046639442444,
+        "value_family_mse": 0.11853382152912673,
+        "value_mse": 0.09384152485608123
+      },
+      "updates": 256,
+      "validation_curve": {
+        "0": {
+          "expert_kl": 2.4493465340322116,
+          "expert_top1": 0.0056236504015783504,
+          "family_kl": 2.5251720386275203,
+          "value_family_mse": 1.1783001156463089,
+          "value_mse": 1.192351621241514
+        },
+        "128": {
+          "expert_kl": 0.9278288135136554,
+          "expert_top1": 0.4167870624970872,
+          "family_kl": 0.9705629936456615,
+          "value_family_mse": 0.21909745229704913,
+          "value_mse": 0.17830978614954215
+        },
+        "160": {
+          "expert_kl": 0.8669190063751535,
+          "expert_top1": 0.450327010610368,
+          "family_kl": 0.9058712562785343,
+          "value_family_mse": 0.21167145807889584,
+          "value_mse": 0.18698927538033916
+        },
+        "192": {
+          "expert_kl": 0.8125248650158845,
+          "expert_top1": 0.4943685821254913,
+          "family_kl": 0.8496166560164382,
+          "value_family_mse": 0.14996630042632356,
+          "value_mse": 0.13356984579643327
+        },
+        "224": {
+          "expert_kl": 0.7710974880963479,
+          "expert_top1": 0.4870826925168166,
+          "family_kl": 0.8076221854330283,
+          "value_family_mse": 0.14570521072665577,
+          "value_mse": 0.12704944117246916
+        },
+        "256": {
+          "expert_kl": 0.7376361704756413,
+          "expert_top1": 0.4847213807459881,
+          "family_kl": 0.7729420723825302,
+          "value_family_mse": 0.16339401365650008,
+          "value_mse": 0.1410965611114599
+        },
+        "32": {
+          "expert_kl": 1.4380904644803172,
+          "expert_top1": 0.26008606360006836,
+          "family_kl": 1.494852371023108,
+          "value_family_mse": 0.3939784458675716,
+          "value_mse": 0.35206659401197016
+        },
+        "64": {
+          "expert_kl": 1.1348033700637714,
+          "expert_top1": 0.3908903077472775,
+          "family_kl": 1.182025245328822,
+          "value_family_mse": 0.2721537212900081,
+          "value_mse": 0.23532436437399842
+        },
+        "96": {
+          "expert_kl": 1.089930876166092,
+          "expert_top1": 0.43333177983874727,
+          "family_kl": 1.138728276223834,
+          "value_family_mse": 0.22794273544567478,
+          "value_mse": 0.19595456597811356
+        }
+      }
+    },
+    "g8": {
+      "activity_endpoint": {
+        "fuzzy_batch_inactive_feature_fraction": 0.5874613523483276,
+        "fuzzy_batch_never_winner_fraction": 0.42043882608413696,
+        "fuzzy_group_entropy": 0.802220344543457,
+        "fuzzy_live_tokens_per_layer": 76506.0,
+        "fuzzy_positive_group_fraction": 0.7398341298103333
+      },
+      "batch_games": 64,
+      "endpoint": {
+        "expert_kl": 0.7069774693524646,
+        "expert_top1": 0.4946792810427056,
+        "family_kl": 0.7420455291378834,
+        "value_family_mse": 0.1381137376964337,
+        "value_mse": 0.11615734490279937
+      },
+      "learning_seconds": 9216.049962633057,
+      "parameters": 298257732,
+      "position_exposures": 7001181,
+      "sustained_overfit": false,
+      "tail": {
+        "expert_kl": 0.7446993267866482,
+        "expert_top1": 0.4901793250583855,
+        "family_kl": 0.7803502446516268,
+        "value_family_mse": 0.15056799664069226,
+        "value_mse": 0.13008828406191622
+      },
+      "training_probe": {
+        "expert_kl": 0.6896458643160832,
+        "expert_top1": 0.4985949417904456,
+        "family_kl": 0.7390605807304382,
+        "value_family_mse": 0.10264486668165773,
+        "value_mse": 0.08190225050452069
+      },
+      "updates": 256,
+      "validation_curve": {
+        "0": {
+          "expert_kl": 2.4369306078241753,
+          "expert_top1": 0.008699569681999659,
+          "family_kl": 2.513789397339731,
+          "value_family_mse": 1.0195383893286984,
+          "value_mse": 1.0293219524077224
+        },
+        "128": {
+          "expert_kl": 0.9345723453933061,
+          "expert_top1": 0.3990616892700129,
+          "family_kl": 0.9780999400586503,
+          "value_family_mse": 0.2090577678301916,
+          "value_mse": 0.17303847303608436
+        },
+        "160": {
+          "expert_kl": 0.8405708431154948,
+          "expert_top1": 0.47021174131208154,
+          "family_kl": 0.8788595539682147,
+          "value_family_mse": 0.1864740483747982,
+          "value_mse": 0.16197604163841098
+        },
+        "192": {
+          "expert_kl": 0.7955779685582405,
+          "expert_top1": 0.47981233785400257,
+          "family_kl": 0.831984502675783,
+          "value_family_mse": 0.16903366038119017,
+          "value_mse": 0.1481942706924341
+        },
+        "224": {
+          "expert_kl": 0.7315425424492394,
+          "expert_top1": 0.4960463562784484,
+          "family_kl": 0.7670207021412141,
+          "value_family_mse": 0.1445565918444529,
+          "value_mse": 0.1259132365905152
+        },
+        "256": {
+          "expert_kl": 0.7069774693524646,
+          "expert_top1": 0.4946792810427056,
+          "family_kl": 0.7420455291378834,
+          "value_family_mse": 0.1381137376964337,
+          "value_mse": 0.11615734490279937
+        },
+        "32": {
+          "expert_kl": 1.4454566382037335,
+          "expert_top1": 0.36034860418511444,
+          "family_kl": 1.5027692950142413,
+          "value_family_mse": 0.37280664154874527,
+          "value_mse": 0.33233592846196874
+        },
+        "64": {
+          "expert_kl": 1.172472518923506,
+          "expert_top1": 0.4046231998881484,
+          "family_kl": 1.218097437409674,
+          "value_family_mse": 0.27747621184334514,
+          "value_mse": 0.24471968242671754
+        },
+        "96": {
+          "expert_kl": 1.0889216660064314,
+          "expert_top1": 0.4349629491541222,
+          "family_kl": 1.136402569512574,
+          "value_family_mse": 0.2245873230303249,
+          "value_mse": 0.19762160699487638
+        }
+      }
+    },
+    "g8_lr0006": {
+      "activity_endpoint": {
+        "fuzzy_batch_inactive_feature_fraction": 0.5101980566978455,
+        "fuzzy_batch_never_winner_fraction": 0.40112045407295227,
+        "fuzzy_group_entropy": 0.7652730941772461,
+        "fuzzy_live_tokens_per_layer": 76506.0,
+        "fuzzy_positive_group_fraction": 0.8108699321746826
+      },
+      "batch_games": 64,
+      "endpoint": {
+        "expert_kl": 0.7463527770172127,
+        "expert_top1": 0.49385592891208774,
+        "family_kl": 0.782109477476399,
+        "value_family_mse": 0.15228401082740417,
+        "value_mse": 0.12475849647982432
+      },
+      "learning_seconds": 9232.897843329236,
+      "parameters": 298257732,
+      "position_exposures": 7001181,
+      "sustained_overfit": false,
+      "tail": {
+        "expert_kl": 0.7815272168610478,
+        "expert_top1": 0.4911321350711759,
+        "family_kl": 0.8181391715812357,
+        "value_family_mse": 0.1612423319532739,
+        "value_mse": 0.13582375075110384
+      },
+      "training_probe": {
+        "expert_kl": 0.7308766816220209,
+        "expert_top1": 0.5001642275829349,
+        "family_kl": 0.7827366590499878,
+        "value_family_mse": 0.11565650772536173,
+        "value_mse": 0.09141895785905475
+      },
+      "updates": 256,
+      "validation_curve": {
+        "0": {
+          "expert_kl": 2.4369306078241753,
+          "expert_top1": 0.008699569681999659,
+          "family_kl": 2.513789397339731,
+          "value_family_mse": 1.0195383893286984,
+          "value_mse": 1.0293219524077224
+        },
+        "128": {
+          "expert_kl": 1.0011507541488016,
+          "expert_top1": 0.4480433735688431,
+          "family_kl": 1.047149540814905,
+          "value_family_mse": 0.211107719003162,
+          "value_mse": 0.1737934337800328
+        },
+        "160": {
+          "expert_kl": 0.8671344627238975,
+          "expert_top1": 0.46749312578645663,
+          "family_kl": 0.9060174733633248,
+          "value_family_mse": 0.18993520378745068,
+          "value_mse": 0.16465333320297784
+        },
+        "192": {
+          "expert_kl": 0.8230193277786193,
+          "expert_top1": 0.4853272436345559,
+          "family_kl": 0.8605850653021019,
+          "value_family_mse": 0.16974603486329798,
+          "value_mse": 0.14409893672530835
+        },
+        "224": {
+          "expert_kl": 0.7752095457873112,
+          "expert_top1": 0.49421323266688416,
+          "family_kl": 0.8117229719652062,
+          "value_family_mse": 0.16169695016911953,
+          "value_mse": 0.1386138190481788
+        },
+        "256": {
+          "expert_kl": 0.7463527770172127,
+          "expert_top1": 0.49385592891208774,
+          "family_kl": 0.782109477476399,
+          "value_family_mse": 0.15228401082740417,
+          "value_mse": 0.12475849647982432
+        },
+        "32": {
+          "expert_kl": 1.5049521280933957,
+          "expert_top1": 0.35096549688524337,
+          "family_kl": 1.5647886164037406,
+          "value_family_mse": 0.30776909091091037,
+          "value_mse": 0.27343547066236096
+        },
+        "64": {
+          "expert_kl": 1.2323125993993802,
+          "expert_top1": 0.39725963555017013,
+          "family_kl": 1.2787141179880912,
+          "value_family_mse": 0.27395445685543063,
+          "value_mse": 0.2404586387357291
+        },
+        "96": {
+          "expert_kl": 1.0693041394076914,
+          "expert_top1": 0.42912180951049383,
+          "family_kl": 1.1148178967999063,
+          "value_family_mse": 0.22154148943191984,
+          "value_mse": 0.19259204394265
+        }
+      }
+    },
+    "g8_lr0015": {
+      "activity_endpoint": {
+        "fuzzy_batch_inactive_feature_fraction": 0.7049881815910339,
+        "fuzzy_batch_never_winner_fraction": 0.5318447947502136,
+        "fuzzy_group_entropy": 0.6294947266578674,
+        "fuzzy_live_tokens_per_layer": 76506.0,
+        "fuzzy_positive_group_fraction": 0.6890560388565063
+      },
+      "batch_games": 64,
+      "endpoint": {
+        "expert_kl": 0.6862368298855461,
+        "expert_top1": 0.5195817992574295,
+        "family_kl": 0.719835583435946,
+        "value_family_mse": 0.1444857006480327,
+        "value_mse": 0.12331060130514936
+      },
+      "learning_seconds": 9211.561080940533,
+      "parameters": 298257732,
+      "position_exposures": 7001181,
+      "sustained_overfit": false,
+      "tail": {
+        "expert_kl": 0.7207012640429437,
+        "expert_top1": 0.4973875399377566,
+        "family_kl": 0.7552436894971232,
+        "value_family_mse": 0.14950094586906915,
+        "value_mse": 0.12731418112418383
+      },
+      "training_probe": {
+        "expert_kl": 0.6746526130433197,
+        "expert_top1": 0.5214955658552608,
+        "family_kl": 0.7220953106880188,
+        "value_family_mse": 0.1433054010849446,
+        "value_mse": 0.11519681427201313
+      },
+      "updates": 256,
+      "validation_curve": {
+        "0": {
+          "expert_kl": 2.4369306078241753,
+          "expert_top1": 0.008699569681999659,
+          "family_kl": 2.513789397339731,
+          "value_family_mse": 1.0195383893286984,
+          "value_mse": 1.0293219524077224
+        },
+        "128": {
+          "expert_kl": 0.8765574238350733,
+          "expert_top1": 0.461015053362539,
+          "family_kl": 0.9172109887102216,
+          "value_family_mse": 0.21211786067393704,
+          "value_mse": 0.17845956168540902
+        },
+        "160": {
+          "expert_kl": 0.8445715771416866,
+          "expert_top1": 0.46365599415886033,
+          "family_kl": 0.8839872595860063,
+          "value_family_mse": 0.20140438726769808,
+          "value_mse": 0.1771685664623518
+        },
+        "192": {
+          "expert_kl": 0.7563070514818397,
+          "expert_top1": 0.48771962529710583,
+          "family_kl": 0.7926212130096171,
+          "value_family_mse": 0.16356619351813656,
+          "value_mse": 0.13862585400292773
+        },
+        "224": {
+          "expert_kl": 0.7195599107614452,
+          "expert_top1": 0.4848611952587345,
+          "family_kl": 0.7532742720458065,
+          "value_family_mse": 0.14045094344103815,
+          "value_mse": 0.12000608806447435
+        },
+        "256": {
+          "expert_kl": 0.6862368298855461,
+          "expert_top1": 0.5195817992574295,
+          "family_kl": 0.719835583435946,
+          "value_family_mse": 0.1444857006480327,
+          "value_mse": 0.12331060130514936
+        },
+        "32": {
+          "expert_kl": 1.3727642573179306,
+          "expert_top1": 0.2962669525096705,
+          "family_kl": 1.4266739095743146,
+          "value_family_mse": 0.312830639529966,
+          "value_mse": 0.28764426156167106
+        },
+        "64": {
+          "expert_kl": 1.2065298838956986,
+          "expert_top1": 0.4012521166363735,
+          "family_kl": 1.2513538120379568,
+          "value_family_mse": 0.26365648384929213,
+          "value_mse": 0.23333439472361633
+        },
+        "96": {
+          "expert_kl": 1.0177052566858524,
+          "expert_top1": 0.395690606018238,
+          "family_kl": 1.0627082894421491,
+          "value_family_mse": 0.27787518799629096,
+          "value_mse": 0.23419984559511617
+        }
+      }
+    },
+    "g8_lr00225": {
+      "activity_endpoint": {
+        "fuzzy_batch_inactive_feature_fraction": 0.7860643267631531,
+        "fuzzy_batch_never_winner_fraction": 0.6653957366943359,
+        "fuzzy_group_entropy": 0.5248306393623352,
+        "fuzzy_live_tokens_per_layer": 76506.0,
+        "fuzzy_positive_group_fraction": 0.7297490239143372
+      },
+      "batch_games": 64,
+      "endpoint": {
+        "expert_kl": 0.6855619093079572,
+        "expert_top1": 0.5149057805533548,
+        "family_kl": 0.7190639636102798,
+        "value_family_mse": 0.1544836151585791,
+        "value_mse": 0.13434149574461954
+      },
+      "learning_seconds": 9218.716870418983,
+      "parameters": 298257732,
+      "position_exposures": 7001181,
+      "sustained_overfit": false,
+      "tail": {
+        "expert_kl": 0.7295300893291753,
+        "expert_top1": 0.4986665838136221,
+        "family_kl": 0.7639690222192748,
+        "value_family_mse": 0.15215142608749396,
+        "value_mse": 0.13235857571752208
+      },
+      "training_probe": {
+        "expert_kl": 0.6692253333591838,
+        "expert_top1": 0.5193241122586767,
+        "family_kl": 0.716018795967102,
+        "value_family_mse": 0.10842503275489435,
+        "value_mse": 0.08776574931672522
+      },
+      "updates": 256,
+      "validation_curve": {
+        "0": {
+          "expert_kl": 2.4369306078241753,
+          "expert_top1": 0.008699569681999659,
+          "family_kl": 2.513789397339731,
+          "value_family_mse": 1.0195383893286984,
+          "value_mse": 1.0293219524077224
+        },
+        "128": {
+          "expert_kl": 0.9115549564487502,
+          "expert_top1": 0.4457908064190396,
+          "family_kl": 0.9535937023345311,
+          "value_family_mse": 0.23445134199296416,
+          "value_mse": 0.20549630177263442
+        },
+        "160": {
+          "expert_kl": 0.8623786302012939,
+          "expert_top1": 0.44729769616752885,
+          "family_kl": 0.9022764101835961,
+          "value_family_mse": 0.20441689543320993,
+          "value_mse": 0.17340054419946968
+        },
+        "192": {
+          "expert_kl": 0.7948701424166162,
+          "expert_top1": 0.47731121157042766,
+          "family_kl": 0.8310604117379166,
+          "value_family_mse": 0.1677043229679922,
+          "value_mse": 0.14618909938070485
+        },
+        "224": {
+          "expert_kl": 0.7081582162629525,
+          "expert_top1": 0.5037827593170838,
+          "family_kl": 0.7417826913096279,
+          "value_family_mse": 0.13426634013591052,
+          "value_mse": 0.11654513202724186
+        },
+        "256": {
+          "expert_kl": 0.6855619093079572,
+          "expert_top1": 0.5149057805533548,
+          "family_kl": 0.7190639636102798,
+          "value_family_mse": 0.1544836151585791,
+          "value_mse": 0.13434149574461954
+        },
+        "32": {
+          "expert_kl": 1.395087307002571,
+          "expert_top1": 0.21716300818691647,
+          "family_kl": 1.4448609197076685,
+          "value_family_mse": 0.3307416189350515,
+          "value_mse": 0.30270145236876367
+        },
+        "64": {
+          "expert_kl": 1.2115365208372175,
+          "expert_top1": 0.37085022758695685,
+          "family_kl": 1.2546358399860118,
+          "value_family_mse": 0.25186277528214257,
+          "value_mse": 0.22350795027782672
+        },
+        "96": {
+          "expert_kl": 1.0868396798441844,
+          "expert_top1": 0.41548212704478726,
+          "family_kl": 1.1352977475627228,
+          "value_family_mse": 0.30235477828843543,
+          "value_mse": 0.27246240053841936
+        }
+      }
+    }
+  },
+  "gates_vs_dense": {
+    "g1": {
+      "endpoint_policy": false,
+      "health": true,
+      "learning_time": true,
+      "tail_policy": false
+    },
+    "g2": {
+      "endpoint_policy": false,
+      "health": false,
+      "learning_time": true,
+      "tail_policy": true
+    },
+    "g4": {
+      "endpoint_policy": false,
+      "health": false,
+      "learning_time": true,
+      "tail_policy": true
+    },
+    "g8": {
+      "endpoint_policy": true,
+      "health": true,
+      "learning_time": true,
+      "tail_policy": true
+    },
+    "g8_lr0006": {
+      "endpoint_policy": false,
+      "health": true,
+      "learning_time": true,
+      "tail_policy": false
+    },
+    "g8_lr0015": {
+      "endpoint_policy": true,
+      "health": true,
+      "learning_time": true,
+      "tail_policy": true
+    },
+    "g8_lr00225": {
+      "endpoint_policy": true,
+      "health": false,
+      "learning_time": true,
+      "tail_policy": true
+    }
+  },
+  "moe_comparison": {
+    "balance_low": {
+      "all_tokens_retained": true,
+      "batch_games": 64,
+      "endpoint": {
+        "expert_kl": 0.7339493819276148,
+        "expert_top1": 0.4323064734119402,
+        "family_kl": 0.7685044636563609,
+        "value_family_mse": 0.14135060075768027,
+        "value_mse": 0.12059243006010735
+      },
+      "learning_seconds": 8798.68035241263,
+      "parameters": 317001492,
+      "peak_lr": 0.001,
+      "position_exposures": 7001181,
+      "router_endpoint": {
+        "moe_aux_loss": 0.0016622983384877443,
+        "moe_balance": 1.1067529916763306,
+        "moe_dead_expert_fraction": 0.0,
+        "moe_dropped_tokens": 0.0,
+        "moe_entropy": 0.9313605427742004,
+        "moe_load_cv2": 0.14063416421413422,
+        "moe_max_load": 0.4875434637069702,
+        "moe_min_load": 0.03909497335553169,
+        "moe_valid_tokens": 1377108.0,
+        "moe_z": 0.18951931595802307
+      },
+      "router_maxima": {
+        "moe_dead_expert_fraction": 0.347222238779068,
+        "moe_load_cv2": 0.8883641362190247
+      },
+      "sustained_overfit": false,
+      "tail": {
+        "expert_kl": 0.7594737278173919,
+        "expert_top1": 0.4602952675376593,
+        "family_kl": 0.7950340738746217,
+        "value_family_mse": 0.14712725342166919,
+        "value_mse": 0.1263837511630215
+      },
+      "training_probe": {
+        "expert_kl": 0.7195513222601364,
+        "expert_top1": 0.42868873398781066,
+        "family_kl": 0.7687435746192932,
+        "value_family_mse": 0.12999401218257844,
+        "value_mse": 0.10373382896216463
+      },
+      "updates": 256
+    },
+    "temporal": {
+      "all_tokens_retained": true,
+      "batch_games": 64,
+      "endpoint": {
+        "expert_kl": 0.7430471711349056,
+        "expert_top1": 0.4612480775504497,
+        "family_kl": 0.7787744978979396,
+        "value_family_mse": 0.1461694656284902,
+        "value_mse": 0.12454921679862628
+      },
+      "learning_seconds": 8799.04230161081,
+      "parameters": 317001492,
+      "peak_lr": 0.001,
+      "position_exposures": 7001181,
+      "router_endpoint": {
+        "moe_aux_loss": 0.005293834488838911,
+        "moe_balance": 1.2007334232330322,
+        "moe_dead_expert_fraction": 0.0,
+        "moe_dropped_tokens": 0.0,
+        "moe_entropy": 1.101158618927002,
+        "moe_load_cv2": 0.26019391417503357,
+        "moe_max_load": 0.4883211851119995,
+        "moe_min_load": 0.024089613929390907,
+        "moe_valid_tokens": 1377108.0,
+        "moe_z": 0.3449464738368988
+      },
+      "router_maxima": {
+        "moe_dead_expert_fraction": 0.2916666567325592,
+        "moe_load_cv2": 0.8568663001060486
+      },
+      "sustained_overfit": false,
+      "tail": {
+        "expert_kl": 0.7803098121307214,
+        "expert_top1": 0.4755764759493146,
+        "family_kl": 0.8168882622981998,
+        "value_family_mse": 0.156109678265168,
+        "value_mse": 0.1328915958306069
+      },
+      "training_probe": {
+        "expert_kl": 0.7274203467711033,
+        "expert_top1": 0.45801248129630306,
+        "family_kl": 0.7785193920135498,
+        "value_family_mse": 0.12350843424792401,
+        "value_mse": 0.09837480252826523
+      },
+      "updates": 256
+    }
+  },
+  "budgets": {
+    "dense": {
+      "decode": {
+        "0": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 165888,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 339738624,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167547763328,
+          "total_issued_matrix_flops": 167547763328,
+          "value": 394752
+        },
+        "128": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 14321664,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 339738624,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167561919104,
+          "total_issued_matrix_flops": 167561919104,
+          "value": 394752
+        },
+        "1534": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 169814016,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 339738624,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167717411456,
+          "total_issued_matrix_flops": 167717411456,
+          "value": 394752
+        },
+        "512": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 56788992,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 339738624,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167604386432,
+          "total_issued_matrix_flops": 167604386432,
+          "value": 394752
+        },
+        "768": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 85100544,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 339738624,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167632697984,
+          "total_issued_matrix_flops": 167632697984,
+          "value": 394752
+        }
+      },
+      "encoder_parameters": 118161424,
+      "ffn_active_ratio_vs_swiglu": 1.0,
+      "ffn_issued_ratio_vs_swiglu": 1.0,
+      "ffn_token_128_tile_rounding_estimate": 9437184,
+      "ffn_token_active_matrix_flops": 9437184,
+      "ffn_token_issued_matrix_flops": 9437184,
+      "parameters": 232011540,
+      "schema": [
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "action_type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.attn_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 28311552,
+          "inference": true,
+          "path": "blocks.down.weight",
+          "shape": [
+            18,
+            2048,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 28311552,
+          "inference": true,
+          "path": "blocks.gate.weight",
+          "shape": [
+            18,
+            768,
+            2048
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 7077888,
+          "inference": true,
+          "path": "blocks.kv.weight",
+          "shape": [
+            18,
+            768,
+            512
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.mlp_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.out.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.q.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 28311552,
+          "inference": true,
+          "path": "blocks.up.weight",
+          "shape": [
+            18,
+            768,
+            2048
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.down.weight",
+          "shape": [
+            4,
+            1024,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.gate.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.k.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.out.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.q.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.up.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.v.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 138240,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.weight",
+          "shape": [
+            20,
+            3,
+            3,
+            1,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.down.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.down.weight",
+          "shape": [
+            20,
+            3072,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.gamma",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.scale",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 61440,
+          "inference": true,
+          "path": "encoder.blocks.up.bias",
+          "shape": [
+            20,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.up.weight",
+          "shape": [
+            20,
+            768,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 16,
+          "inference": true,
+          "path": "encoder.compress.bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 12288,
+          "inference": true,
+          "path": "encoder.compress.weight",
+          "shape": [
+            768,
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.flat.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 4435968,
+          "inference": true,
+          "path": "encoder.flat.weight",
+          "shape": [
+            5776,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 14592,
+          "inference": true,
+          "path": "encoder.global.weight",
+          "shape": [
+            19,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 152064,
+          "inference": true,
+          "path": "encoder.stem.weight",
+          "shape": [
+            3,
+            3,
+            22,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 278016,
+          "inference": true,
+          "path": "head.actions.weight",
+          "shape": [
+            362,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.k.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.q.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 1,
+          "inference": true,
+          "path": "head.local.bias",
+          "shape": []
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.local.weight",
+          "shape": [
+            768,
+            1
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 256,
+          "inference": true,
+          "path": "value_head.linear2.bias",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 196608,
+          "inference": true,
+          "path": "value_head.linear2.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3,
+          "inference": true,
+          "path": "value_head.linear_valuehead.bias",
+          "shape": [
+            3
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "value_head.linear_valuehead.weight",
+          "shape": [
+            256,
+            3
+          ]
+        }
+      ],
+      "scope": "Cached move includes both action and board tokens, encoder passes, attention and heads. Training has three temporal tokens per position. Issued training excludes rematerialization and padding. Tile estimate is illustrative, not measured HLO or MFU. Selection, masks, reductions, statistics, nonlinearities are additional work.",
+      "temporal_ffn_parameters": 84934656,
+      "training_ffn_issued_matrix_flops_per_live_position": 1528823808
+    },
+    "g1": {
+      "decode": {
+        "0": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 165888,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 339738624,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167547763328,
+          "total_issued_matrix_flops": 167547763328,
+          "value": 394752
+        },
+        "128": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 14321664,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 339738624,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167561919104,
+          "total_issued_matrix_flops": 167561919104,
+          "value": 394752
+        },
+        "1534": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 169814016,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 339738624,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167717411456,
+          "total_issued_matrix_flops": 167717411456,
+          "value": 394752
+        },
+        "512": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 56788992,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 339738624,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167604386432,
+          "total_issued_matrix_flops": 167604386432,
+          "value": 394752
+        },
+        "768": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 85100544,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 339738624,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167632697984,
+          "total_issued_matrix_flops": 167632697984,
+          "value": 394752
+        }
+      },
+      "encoder_parameters": 118161424,
+      "ffn_active_ratio_vs_swiglu": 1.0,
+      "ffn_issued_ratio_vs_swiglu": 1.0,
+      "ffn_token_128_tile_rounding_estimate": 9437184,
+      "ffn_token_active_matrix_flops": 9437184,
+      "ffn_token_issued_matrix_flops": 9437184,
+      "parameters": 232080660,
+      "schema": [
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "action_type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.attn_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.fuzzy.down.bias",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 42467328,
+          "inference": true,
+          "path": "blocks.fuzzy.down.weight",
+          "shape": [
+            18,
+            3072,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 55296,
+          "inference": true,
+          "path": "blocks.fuzzy.up.bias",
+          "shape": [
+            18,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 42467328,
+          "inference": true,
+          "path": "blocks.fuzzy.up.weight",
+          "shape": [
+            18,
+            768,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 7077888,
+          "inference": true,
+          "path": "blocks.kv.weight",
+          "shape": [
+            18,
+            768,
+            512
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.mlp_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.out.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.q.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.down.weight",
+          "shape": [
+            4,
+            1024,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.gate.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.k.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.out.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.q.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.up.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.v.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 138240,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.weight",
+          "shape": [
+            20,
+            3,
+            3,
+            1,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.down.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.down.weight",
+          "shape": [
+            20,
+            3072,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.gamma",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.scale",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 61440,
+          "inference": true,
+          "path": "encoder.blocks.up.bias",
+          "shape": [
+            20,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.up.weight",
+          "shape": [
+            20,
+            768,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 16,
+          "inference": true,
+          "path": "encoder.compress.bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 12288,
+          "inference": true,
+          "path": "encoder.compress.weight",
+          "shape": [
+            768,
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.flat.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 4435968,
+          "inference": true,
+          "path": "encoder.flat.weight",
+          "shape": [
+            5776,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 14592,
+          "inference": true,
+          "path": "encoder.global.weight",
+          "shape": [
+            19,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 152064,
+          "inference": true,
+          "path": "encoder.stem.weight",
+          "shape": [
+            3,
+            3,
+            22,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 278016,
+          "inference": true,
+          "path": "head.actions.weight",
+          "shape": [
+            362,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.k.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.q.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 1,
+          "inference": true,
+          "path": "head.local.bias",
+          "shape": []
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.local.weight",
+          "shape": [
+            768,
+            1
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 256,
+          "inference": true,
+          "path": "value_head.linear2.bias",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 196608,
+          "inference": true,
+          "path": "value_head.linear2.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3,
+          "inference": true,
+          "path": "value_head.linear_valuehead.bias",
+          "shape": [
+            3
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "value_head.linear_valuehead.weight",
+          "shape": [
+            256,
+            3
+          ]
+        }
+      ],
+      "scope": "Cached move includes both action and board tokens, encoder passes, attention and heads. Training has three temporal tokens per position. Issued training excludes rematerialization and padding. Tile estimate is illustrative, not measured HLO or MFU. Selection, masks, reductions, statistics, nonlinearities are additional work.",
+      "temporal_ffn_parameters": 85003776,
+      "training_ffn_issued_matrix_flops_per_live_position": 1528823808
+    },
+    "g2": {
+      "decode": {
+        "0": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 165888,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 452984832,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167547763328,
+          "total_issued_matrix_flops": 167661009536,
+          "value": 394752
+        },
+        "128": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 14321664,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 452984832,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167561919104,
+          "total_issued_matrix_flops": 167675165312,
+          "value": 394752
+        },
+        "1534": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 169814016,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 452984832,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167717411456,
+          "total_issued_matrix_flops": 167830657664,
+          "value": 394752
+        },
+        "512": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 56788992,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 452984832,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167604386432,
+          "total_issued_matrix_flops": 167717632640,
+          "value": 394752
+        },
+        "768": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 85100544,
+          "temporal_ffn_active": 339738624,
+          "temporal_ffn_issued": 452984832,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167632697984,
+          "total_issued_matrix_flops": 167745944192,
+          "value": 394752
+        }
+      },
+      "encoder_parameters": 118161424,
+      "ffn_active_ratio_vs_swiglu": 1.0,
+      "ffn_issued_ratio_vs_swiglu": 1.3333333333333333,
+      "ffn_token_128_tile_rounding_estimate": 12582912,
+      "ffn_token_active_matrix_flops": 9437184,
+      "ffn_token_issued_matrix_flops": 12582912,
+      "parameters": 260410644,
+      "schema": [
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "action_type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.attn_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.fuzzy.down.bias",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 56623104,
+          "inference": true,
+          "path": "blocks.fuzzy.down.weight",
+          "shape": [
+            18,
+            4096,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 73728,
+          "inference": true,
+          "path": "blocks.fuzzy.up.bias",
+          "shape": [
+            18,
+            4096
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 56623104,
+          "inference": true,
+          "path": "blocks.fuzzy.up.weight",
+          "shape": [
+            18,
+            768,
+            4096
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 7077888,
+          "inference": true,
+          "path": "blocks.kv.weight",
+          "shape": [
+            18,
+            768,
+            512
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.mlp_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.out.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.q.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.down.weight",
+          "shape": [
+            4,
+            1024,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.gate.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.k.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.out.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.q.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.up.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.v.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 138240,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.weight",
+          "shape": [
+            20,
+            3,
+            3,
+            1,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.down.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.down.weight",
+          "shape": [
+            20,
+            3072,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.gamma",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.scale",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 61440,
+          "inference": true,
+          "path": "encoder.blocks.up.bias",
+          "shape": [
+            20,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.up.weight",
+          "shape": [
+            20,
+            768,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 16,
+          "inference": true,
+          "path": "encoder.compress.bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 12288,
+          "inference": true,
+          "path": "encoder.compress.weight",
+          "shape": [
+            768,
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.flat.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 4435968,
+          "inference": true,
+          "path": "encoder.flat.weight",
+          "shape": [
+            5776,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 14592,
+          "inference": true,
+          "path": "encoder.global.weight",
+          "shape": [
+            19,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 152064,
+          "inference": true,
+          "path": "encoder.stem.weight",
+          "shape": [
+            3,
+            3,
+            22,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 278016,
+          "inference": true,
+          "path": "head.actions.weight",
+          "shape": [
+            362,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.k.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.q.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 1,
+          "inference": true,
+          "path": "head.local.bias",
+          "shape": []
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.local.weight",
+          "shape": [
+            768,
+            1
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 256,
+          "inference": true,
+          "path": "value_head.linear2.bias",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 196608,
+          "inference": true,
+          "path": "value_head.linear2.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3,
+          "inference": true,
+          "path": "value_head.linear_valuehead.bias",
+          "shape": [
+            3
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "value_head.linear_valuehead.weight",
+          "shape": [
+            256,
+            3
+          ]
+        }
+      ],
+      "scope": "Cached move includes both action and board tokens, encoder passes, attention and heads. Training has three temporal tokens per position. Issued training excludes rematerialization and padding. Tile estimate is illustrative, not measured HLO or MFU. Selection, masks, reductions, statistics, nonlinearities are additional work.",
+      "temporal_ffn_parameters": 113333760,
+      "training_ffn_issued_matrix_flops_per_live_position": 2038431744
+    },
+    "g4": {
+      "decode": {
+        "0": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 165888,
+          "temporal_ffn_active": 339517440,
+          "temporal_ffn_issued": 543227904,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167547542144,
+          "total_issued_matrix_flops": 167751252608,
+          "value": 394752
+        },
+        "128": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 14321664,
+          "temporal_ffn_active": 339517440,
+          "temporal_ffn_issued": 543227904,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167561697920,
+          "total_issued_matrix_flops": 167765408384,
+          "value": 394752
+        },
+        "1534": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 169814016,
+          "temporal_ffn_active": 339517440,
+          "temporal_ffn_issued": 543227904,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167717190272,
+          "total_issued_matrix_flops": 167920900736,
+          "value": 394752
+        },
+        "512": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 56788992,
+          "temporal_ffn_active": 339517440,
+          "temporal_ffn_issued": 543227904,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167604165248,
+          "total_issued_matrix_flops": 167807875712,
+          "value": 394752
+        },
+        "768": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 85100544,
+          "temporal_ffn_active": 339517440,
+          "temporal_ffn_issued": 543227904,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167632476800,
+          "total_issued_matrix_flops": 167836187264,
+          "value": 394752
+        }
+      },
+      "encoder_parameters": 118161424,
+      "ffn_active_ratio_vs_swiglu": 0.9993489583333334,
+      "ffn_issued_ratio_vs_swiglu": 1.5989583333333333,
+      "ffn_token_128_tile_rounding_estimate": 15532032,
+      "ffn_token_active_matrix_flops": 9431040,
+      "ffn_token_issued_matrix_flops": 15089664,
+      "parameters": 282986100,
+      "schema": [
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "action_type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.attn_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.fuzzy.down.bias",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 67903488,
+          "inference": true,
+          "path": "blocks.fuzzy.down.weight",
+          "shape": [
+            18,
+            4912,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 88416,
+          "inference": true,
+          "path": "blocks.fuzzy.up.bias",
+          "shape": [
+            18,
+            4912
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 67903488,
+          "inference": true,
+          "path": "blocks.fuzzy.up.weight",
+          "shape": [
+            18,
+            768,
+            4912
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 7077888,
+          "inference": true,
+          "path": "blocks.kv.weight",
+          "shape": [
+            18,
+            768,
+            512
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.mlp_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.out.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.q.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.down.weight",
+          "shape": [
+            4,
+            1024,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.gate.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.k.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.out.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.q.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.up.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.v.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 138240,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.weight",
+          "shape": [
+            20,
+            3,
+            3,
+            1,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.down.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.down.weight",
+          "shape": [
+            20,
+            3072,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.gamma",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.scale",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 61440,
+          "inference": true,
+          "path": "encoder.blocks.up.bias",
+          "shape": [
+            20,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.up.weight",
+          "shape": [
+            20,
+            768,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 16,
+          "inference": true,
+          "path": "encoder.compress.bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 12288,
+          "inference": true,
+          "path": "encoder.compress.weight",
+          "shape": [
+            768,
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.flat.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 4435968,
+          "inference": true,
+          "path": "encoder.flat.weight",
+          "shape": [
+            5776,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 14592,
+          "inference": true,
+          "path": "encoder.global.weight",
+          "shape": [
+            19,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 152064,
+          "inference": true,
+          "path": "encoder.stem.weight",
+          "shape": [
+            3,
+            3,
+            22,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 278016,
+          "inference": true,
+          "path": "head.actions.weight",
+          "shape": [
+            362,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.k.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.q.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 1,
+          "inference": true,
+          "path": "head.local.bias",
+          "shape": []
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.local.weight",
+          "shape": [
+            768,
+            1
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 256,
+          "inference": true,
+          "path": "value_head.linear2.bias",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 196608,
+          "inference": true,
+          "path": "value_head.linear2.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3,
+          "inference": true,
+          "path": "value_head.linear_valuehead.bias",
+          "shape": [
+            3
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "value_head.linear_valuehead.weight",
+          "shape": [
+            256,
+            3
+          ]
+        }
+      ],
+      "scope": "Cached move includes both action and board tokens, encoder passes, attention and heads. Training has three temporal tokens per position. Issued training excludes rematerialization and padding. Tile estimate is illustrative, not measured HLO or MFU. Selection, masks, reductions, statistics, nonlinearities are additional work.",
+      "temporal_ffn_parameters": 135909216,
+      "training_ffn_issued_matrix_flops_per_live_position": 2444525568
+    },
+    "g8": {
+      "decode": {
+        "0": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 165888,
+          "temporal_ffn_active": 339904512,
+          "temporal_ffn_issued": 604274688,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167547929216,
+          "total_issued_matrix_flops": 167812299392,
+          "value": 394752
+        },
+        "128": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 14321664,
+          "temporal_ffn_active": 339904512,
+          "temporal_ffn_issued": 604274688,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167562084992,
+          "total_issued_matrix_flops": 167826455168,
+          "value": 394752
+        },
+        "1534": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 169814016,
+          "temporal_ffn_active": 339904512,
+          "temporal_ffn_issued": 604274688,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167717577344,
+          "total_issued_matrix_flops": 167981947520,
+          "value": 394752
+        },
+        "512": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 56788992,
+          "temporal_ffn_active": 339904512,
+          "temporal_ffn_issued": 604274688,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167604552320,
+          "total_issued_matrix_flops": 167868922496,
+          "value": 394752
+        },
+        "768": {
+          "encoder": 167057475072,
+          "policy": 36742784,
+          "temporal_attention": 85100544,
+          "temporal_ffn_active": 339904512,
+          "temporal_ffn_issued": 604274688,
+          "temporal_projection": 113246208,
+          "total_active_matrix_flops": 167632863872,
+          "total_issued_matrix_flops": 167897234048,
+          "value": 394752
+        }
+      },
+      "encoder_parameters": 118161424,
+      "ffn_active_ratio_vs_swiglu": 1.00048828125,
+      "ffn_issued_ratio_vs_swiglu": 1.7786458333333333,
+      "ffn_token_128_tile_rounding_estimate": 17891328,
+      "ffn_token_active_matrix_flops": 9441792,
+      "ffn_token_issued_matrix_flops": 16785408,
+      "parameters": 298257732,
+      "schema": [
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "action_type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.attn_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.fuzzy.down.bias",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 75534336,
+          "inference": true,
+          "path": "blocks.fuzzy.down.weight",
+          "shape": [
+            18,
+            5464,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 98352,
+          "inference": true,
+          "path": "blocks.fuzzy.up.bias",
+          "shape": [
+            18,
+            5464
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 75534336,
+          "inference": true,
+          "path": "blocks.fuzzy.up.weight",
+          "shape": [
+            18,
+            768,
+            5464
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 7077888,
+          "inference": true,
+          "path": "blocks.kv.weight",
+          "shape": [
+            18,
+            768,
+            512
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 13824,
+          "inference": true,
+          "path": "blocks.mlp_norm.scale",
+          "shape": [
+            18,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.out.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 10616832,
+          "inference": true,
+          "path": "blocks.q.weight",
+          "shape": [
+            18,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.attn.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.down.weight",
+          "shape": [
+            4,
+            1024,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.gate.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.k.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.gamma",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.bias",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3072,
+          "inference": true,
+          "path": "encoder.attention.mlp.norm.scale",
+          "shape": [
+            4,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.out.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.q.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3145728,
+          "inference": true,
+          "path": "encoder.attention.up.weight",
+          "shape": [
+            4,
+            768,
+            1024
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 2359296,
+          "inference": true,
+          "path": "encoder.attention.v.weight",
+          "shape": [
+            4,
+            768,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 138240,
+          "inference": true,
+          "path": "encoder.blocks.depthwise.weight",
+          "shape": [
+            20,
+            3,
+            3,
+            1,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.down.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.down.weight",
+          "shape": [
+            20,
+            3072,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.gamma",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.bias",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 15360,
+          "inference": true,
+          "path": "encoder.blocks.norm.scale",
+          "shape": [
+            20,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 61440,
+          "inference": true,
+          "path": "encoder.blocks.up.bias",
+          "shape": [
+            20,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 47185920,
+          "inference": true,
+          "path": "encoder.blocks.up.weight",
+          "shape": [
+            20,
+            768,
+            3072
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 16,
+          "inference": true,
+          "path": "encoder.compress.bias",
+          "shape": [
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 12288,
+          "inference": true,
+          "path": "encoder.compress.weight",
+          "shape": [
+            768,
+            16
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.flat.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 4435968,
+          "inference": true,
+          "path": "encoder.flat.weight",
+          "shape": [
+            5776,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 14592,
+          "inference": true,
+          "path": "encoder.global.weight",
+          "shape": [
+            19,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.stem.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 152064,
+          "inference": true,
+          "path": "encoder.stem.weight",
+          "shape": [
+            3,
+            3,
+            22,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.bias",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.token.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "encoder.type",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 278016,
+          "inference": true,
+          "path": "head.actions.weight",
+          "shape": [
+            362,
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.k.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 49152,
+          "inference": true,
+          "path": "head.context.q.weight",
+          "shape": [
+            768,
+            64
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 1,
+          "inference": true,
+          "path": "head.local.bias",
+          "shape": []
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.local.weight",
+          "shape": [
+            768,
+            1
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "head.norm.scale",
+          "shape": [
+            768
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 256,
+          "inference": true,
+          "path": "value_head.linear2.bias",
+          "shape": [
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 196608,
+          "inference": true,
+          "path": "value_head.linear2.weight",
+          "shape": [
+            768,
+            256
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 3,
+          "inference": true,
+          "path": "value_head.linear_valuehead.bias",
+          "shape": [
+            3
+          ]
+        },
+        {
+          "dtype": "float32",
+          "elements": 768,
+          "inference": true,
+          "path": "value_head.linear_valuehead.weight",
+          "shape": [
+            256,
+            3
+          ]
+        }
+      ],
+      "scope": "Cached move includes both action and board tokens, encoder passes, attention and heads. Training has three temporal tokens per position. Issued training excludes rematerialization and padding. Tile estimate is illustrative, not measured HLO or MFU. Selection, masks, reductions, statistics, nonlinearities are additional work.",
+      "temporal_ffn_parameters": 151180848,
+      "training_ffn_issued_matrix_flops_per_live_position": 2719236096
+    }
+  },
+  "cpu_qualification": {
+    "status": "passed",
+    "tests": 6,
+    "coverage": "FP32/BF16 forward and gradient oracle, ties/nonpositive groups, masked diagnostics, common initialization, bounded gradients, causal cache parity, optimizer roundtrip and first-update LR scaling"
+  },
+  "systems_qualification": {
+    "status": "passed",
+    "dense_first_update_verified": true,
+    "cases": [
+      {
+        "arm": "dense",
+        "bucket": 512,
+        "status": "passed",
+        "global_peak_bytes": 25610935296,
+        "updates": [
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.364846229553223,
+              "aux_value_ce": 1.1743793487548828,
+              "aux_value_mse": 0.9724363088607788,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.44072356820106506,
+              "aux_value_probability_neutral": 0.3110736310482025,
+              "aux_value_probability_win": 0.24820218980312347,
+              "clip_scale": 0.023743275552988052,
+              "eligible": 1.0,
+              "grad_norm": 42.1171875,
+              "gradient_norm_head": 2.570312976837158,
+              "gradient_norm_input": 17.23227882385254,
+              "gradient_norm_trunk": 37.955055236816406,
+              "gradient_norm_value": 5.450967311859131,
+              "learning_rate": 1.249999968422344e-05,
+              "loss": 6.184030055999756,
+              "main_policy_ce": 5.365653991699219,
+              "main_value_ce": 1.1677367687225342,
+              "main_value_mse": 0.9739094376564026,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.4392780065536499,
+              "main_value_probability_neutral": 0.3072326183319092,
+              "main_value_probability_win": 0.25348907709121704,
+              "parameter_norm_head": 30.716270446777344,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 353.8059387207031,
+              "parameter_norm_value": 23.825162887573242,
+              "policy_loss": 5.365451812744141,
+              "positions": 25843.0,
+              "raw_grad_norm": 42.1171875,
+              "update_norm_head": 0.007145381066948175,
+              "update_norm_input": 0.12784713506698608,
+              "update_norm_trunk": 0.13117656111717224,
+              "update_norm_value": 0.005548836197704077,
+              "value_loss": 1.1693973541259766
+            },
+            "seconds": 34.41161745390855
+          },
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.350550651550293,
+              "aux_value_ce": 1.4874930381774902,
+              "aux_value_mse": 1.6575604677200317,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.05407753959298134,
+              "aux_value_probability_neutral": 0.0005372195155359805,
+              "aux_value_probability_win": 0.9453847408294678,
+              "clip_scale": 0.014634641818702221,
+              "eligible": 1.0,
+              "grad_norm": 68.33101654052734,
+              "gradient_norm_head": 2.6246490478515625,
+              "gradient_norm_input": 28.08091926574707,
+              "gradient_norm_trunk": 61.466705322265625,
+              "gradient_norm_value": 9.7747220993042,
+              "learning_rate": 2.499999936844688e-05,
+              "loss": 6.412105083465576,
+              "main_policy_ce": 5.351293087005615,
+              "main_value_ce": 1.5251168012619019,
+              "main_value_mse": 1.6741764545440674,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.050169628113508224,
+              "main_value_probability_neutral": 0.0004933353047817945,
+              "main_value_probability_win": 0.9493364691734314,
+              "parameter_norm_head": 30.71615982055664,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 353.805908203125,
+              "parameter_norm_value": 23.825143814086914,
+              "policy_loss": 5.351107597351074,
+              "positions": 25843.0,
+              "raw_grad_norm": 68.33101654052734,
+              "update_norm_head": 0.01238958165049553,
+              "update_norm_input": 0.16954371333122253,
+              "update_norm_trunk": 0.18057776987552643,
+              "update_norm_value": 0.0075560156255960464,
+              "value_loss": 1.5157108306884766
+            },
+            "seconds": 34.34110886184499
+          }
+        ],
+        "cached_decode": [
+          {
+            "global_batch": 128,
+            "history_positions": 128,
+            "median_seconds": 0.02119194809347391,
+            "scope": "Synthetic finite inputs, repeated same cache; latency only. No sparse-kernel or MFU claim.",
+            "seconds": [
+              0.02119194809347391,
+              0.021215687971562147,
+              0.02038637804798782,
+              0.021780187031254172,
+              0.020541399018839
+            ]
+          },
+          {
+            "global_batch": 128,
+            "history_positions": 512,
+            "median_seconds": 0.0220347479917109,
+            "scope": "Synthetic finite inputs, repeated same cache; latency only. No sparse-kernel or MFU claim.",
+            "seconds": [
+              0.022294488037005067,
+              0.022602557903155684,
+              0.021946957102045417,
+              0.0220347479917109,
+              0.02196590811945498
+            ]
+          }
+        ]
+      },
+      {
+        "arm": "g1",
+        "bucket": 512,
+        "status": "passed",
+        "global_peak_bytes": 25279141888,
+        "updates": [
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.346175193786621,
+              "aux_value_ce": 1.544622778892517,
+              "aux_value_mse": 1.0894114971160889,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.4926455616950989,
+              "aux_value_probability_neutral": 0.39011847972869873,
+              "aux_value_probability_win": 0.11723238974809647,
+              "clip_scale": 0.013573904521763325,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.002640335587784648,
+              "fuzzy_batch_never_winner_fraction": 0.0,
+              "fuzzy_group_entropy": -0.0,
+              "fuzzy_live_tokens_per_layer": 77529.0,
+              "fuzzy_positive_group_fraction": 0.49984461069107056,
+              "grad_norm": 73.67076873779297,
+              "gradient_norm_head": 2.572324275970459,
+              "gradient_norm_input": 23.304182052612305,
+              "gradient_norm_trunk": 69.38507843017578,
+              "gradient_norm_value": 7.961875915527344,
+              "learning_rate": 1.249999968422344e-05,
+              "loss": 6.42811393737793,
+              "main_policy_ce": 5.346902370452881,
+              "main_value_ce": 1.5449222326278687,
+              "main_value_mse": 1.084351897239685,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.48831549286842346,
+              "main_value_probability_neutral": 0.3933029770851135,
+              "main_value_probability_win": 0.11837798357009888,
+              "parameter_norm_head": 30.716270446777344,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 326.7164306640625,
+              "parameter_norm_value": 23.825162887573242,
+              "policy_loss": 5.3467206954956055,
+              "positions": 25843.0,
+              "raw_grad_norm": 73.67076873779297,
+              "update_norm_head": 0.007133712992072105,
+              "update_norm_input": 0.12621141970157623,
+              "update_norm_trunk": 0.13010036945343018,
+              "update_norm_value": 0.0055453479290008545,
+              "value_loss": 1.5448473691940308
+            },
+            "seconds": 40.19890715600923
+          },
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.328996181488037,
+              "aux_value_ce": 2.365032911300659,
+              "aux_value_mse": 1.8628603219985962,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.00939273089170456,
+              "aux_value_probability_neutral": 5.6684479204704985e-05,
+              "aux_value_probability_win": 0.9905495047569275,
+              "clip_scale": 0.012604359537363052,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.007125289179384708,
+              "fuzzy_batch_never_winner_fraction": 0.0,
+              "fuzzy_group_entropy": -0.0,
+              "fuzzy_live_tokens_per_layer": 77529.0,
+              "fuzzy_positive_group_fraction": 0.4990593194961548,
+              "grad_norm": 79.33763122558594,
+              "gradient_norm_head": 2.582709312438965,
+              "gradient_norm_input": 25.093259811401367,
+              "gradient_norm_trunk": 74.32733154296875,
+              "gradient_norm_value": 11.557055473327637,
+              "learning_rate": 2.499999936844688e-05,
+              "loss": 7.002760410308838,
+              "main_policy_ce": 5.329178810119629,
+              "main_value_ce": 2.39951753616333,
+              "main_value_mse": 1.8655359745025635,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.008765027858316898,
+              "main_value_probability_neutral": 5.2796804084209725e-05,
+              "main_value_probability_win": 0.9911810159683228,
+              "parameter_norm_head": 30.716150283813477,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 326.7164306640625,
+              "parameter_norm_value": 23.82512664794922,
+              "policy_loss": 5.329133033752441,
+              "positions": 25843.0,
+              "raw_grad_norm": 79.33763122558594,
+              "update_norm_head": 0.012130503542721272,
+              "update_norm_input": 0.16183391213417053,
+              "update_norm_trunk": 0.17626313865184784,
+              "update_norm_value": 0.00745557714253664,
+              "value_loss": 2.3908963203430176
+            },
+            "seconds": 40.12750166608021
+          }
+        ],
+        "cached_decode": [
+          {
+            "global_batch": 128,
+            "history_positions": 128,
+            "median_seconds": 0.028427546843886375,
+            "scope": "Synthetic finite inputs, repeated same cache; latency only. No sparse-kernel or MFU claim.",
+            "seconds": [
+              0.028044087113812566,
+              0.02859917702153325,
+              0.028427546843886375,
+              0.028445257106795907,
+              0.027677486883476377
+            ]
+          },
+          {
+            "global_batch": 128,
+            "history_positions": 512,
+            "median_seconds": 0.029612147016450763,
+            "scope": "Synthetic finite inputs, repeated same cache; latency only. No sparse-kernel or MFU claim.",
+            "seconds": [
+              0.029612147016450763,
+              0.029801767086610198,
+              0.029228887055069208,
+              0.029271837091073394,
+              0.029746996937319636
+            ]
+          }
+        ]
+      },
+      {
+        "arm": "g1",
+        "bucket": 768,
+        "status": "passed",
+        "global_peak_bytes": 25679928320,
+        "updates": [
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.175410270690918,
+              "aux_value_ce": 1.5504978895187378,
+              "aux_value_mse": 1.1912378072738647,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.4576173424720764,
+              "aux_value_probability_neutral": 0.4111432135105133,
+              "aux_value_probability_win": 0.13123606145381927,
+              "clip_scale": 0.013241746462881565,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.0024594906717538834,
+              "fuzzy_batch_never_winner_fraction": 0.0,
+              "fuzzy_group_entropy": -0.0,
+              "fuzzy_live_tokens_per_layer": 107466.0,
+              "fuzzy_positive_group_fraction": 0.4999050498008728,
+              "grad_norm": 75.51873779296875,
+              "gradient_norm_head": 2.3825018405914307,
+              "gradient_norm_input": 24.170867919921875,
+              "gradient_norm_trunk": 71.03227233886719,
+              "gradient_norm_value": 8.221264839172363,
+              "learning_rate": 1.249999968422344e-05,
+              "loss": 6.261465549468994,
+              "main_policy_ce": 5.176372528076172,
+              "main_value_ce": 1.5504690408706665,
+              "main_value_mse": 1.1864732503890991,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.45401114225387573,
+              "main_value_probability_neutral": 0.41350749135017395,
+              "main_value_probability_win": 0.1324780285358429,
+              "parameter_norm_head": 30.716270446777344,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 326.7164306640625,
+              "parameter_norm_value": 23.825162887573242,
+              "policy_loss": 5.1761322021484375,
+              "positions": 35822.0,
+              "raw_grad_norm": 75.51873779296875,
+              "update_norm_head": 0.00713228527456522,
+              "update_norm_input": 0.12663982808589935,
+              "update_norm_trunk": 0.13001695275306702,
+              "update_norm_value": 0.005546824540942907,
+              "value_loss": 1.550476312637329
+            },
+            "seconds": 51.2145653499756
+          },
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.150853157043457,
+              "aux_value_ce": 1.9370559453964233,
+              "aux_value_mse": 1.8995479345321655,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.018659939989447594,
+              "aux_value_probability_neutral": 6.318938540061936e-05,
+              "aux_value_probability_win": 0.9812753200531006,
+              "clip_scale": 0.012482156977057457,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.00726996548473835,
+              "fuzzy_batch_never_winner_fraction": 0.0,
+              "fuzzy_group_entropy": -0.0,
+              "fuzzy_live_tokens_per_layer": 107466.0,
+              "fuzzy_positive_group_fraction": 0.49928537011146545,
+              "grad_norm": 80.1143569946289,
+              "gradient_norm_head": 2.3579318523406982,
+              "gradient_norm_input": 25.85649871826172,
+              "gradient_norm_trunk": 74.92527770996094,
+              "gradient_norm_value": 11.4190034866333,
+              "learning_rate": 2.499999936844688e-05,
+              "loss": 6.526022911071777,
+              "main_policy_ce": 5.151178359985352,
+              "main_value_ce": 1.9732203483581543,
+              "main_value_mse": 1.90592622756958,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.017333516851067543,
+              "main_value_probability_neutral": 5.8723060647025704e-05,
+              "main_value_probability_win": 0.9826062321662903,
+              "parameter_norm_head": 30.716150283813477,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 326.7164306640625,
+              "parameter_norm_value": 23.82513427734375,
+              "policy_loss": 5.151097297668457,
+              "positions": 35822.0,
+              "raw_grad_norm": 80.1143569946289,
+              "update_norm_head": 0.012033051811158657,
+              "update_norm_input": 0.16774959862232208,
+              "update_norm_trunk": 0.17826592922210693,
+              "update_norm_value": 0.007547077257186174,
+              "value_loss": 1.964179277420044
+            },
+            "seconds": 50.968919492093846
+          }
+        ],
+        "cached_decode": []
+      },
+      {
+        "arm": "g2",
+        "bucket": 512,
+        "status": "passed",
+        "global_peak_bytes": 26186964992,
+        "updates": [
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.347426414489746,
+              "aux_value_ce": 1.2014816999435425,
+              "aux_value_mse": 1.0084662437438965,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.49794960021972656,
+              "aux_value_probability_neutral": 0.2922065556049347,
+              "aux_value_probability_win": 0.20984168350696564,
+              "clip_scale": 0.018463190644979477,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.007907443679869175,
+              "fuzzy_batch_never_winner_fraction": 0.0030381944961845875,
+              "fuzzy_group_entropy": 0.4585932791233063,
+              "fuzzy_live_tokens_per_layer": 77529.0,
+              "fuzzy_positive_group_fraction": 0.7515994906425476,
+              "grad_norm": 54.16182327270508,
+              "gradient_norm_head": 2.5293381214141846,
+              "gradient_norm_input": 17.44380760192871,
+              "gradient_norm_trunk": 50.85300064086914,
+              "gradient_norm_value": 6.065479755401611,
+              "learning_rate": 1.249999968422344e-05,
+              "loss": 6.1914262771606445,
+              "main_policy_ce": 5.348461627960205,
+              "main_value_ce": 1.2056457996368408,
+              "main_value_mse": 1.016247272491455,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.5009642243385315,
+              "main_value_probability_neutral": 0.29022085666656494,
+              "main_value_probability_win": 0.20881281793117523,
+              "parameter_norm_head": 30.716270446777344,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 353.8150634765625,
+              "parameter_norm_value": 23.825162887573242,
+              "policy_loss": 5.348202705383301,
+              "positions": 25843.0,
+              "raw_grad_norm": 54.16182327270508,
+              "update_norm_head": 0.007138293236494064,
+              "update_norm_input": 0.12661121785640717,
+              "update_norm_trunk": 0.14337262511253357,
+              "update_norm_value": 0.0055443705059587955,
+              "value_loss": 1.2046047449111938
+            },
+            "seconds": 38.9409890929237
+          },
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.330437660217285,
+              "aux_value_ce": 3.074735164642334,
+              "aux_value_mse": 1.8931622505187988,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.0021444130688905716,
+              "aux_value_probability_neutral": 1.177969988930272e-05,
+              "aux_value_probability_win": 0.9978424906730652,
+              "clip_scale": 0.012910734862089157,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.01700846292078495,
+              "fuzzy_batch_never_winner_fraction": 0.007541232742369175,
+              "fuzzy_group_entropy": 0.43116024136543274,
+              "fuzzy_live_tokens_per_layer": 77529.0,
+              "fuzzy_positive_group_fraction": 0.7528796792030334,
+              "grad_norm": 77.45492553710938,
+              "gradient_norm_head": 2.552565097808838,
+              "gradient_norm_input": 24.059871673583984,
+              "gradient_norm_trunk": 72.53455352783203,
+              "gradient_norm_value": 12.353588104248047,
+              "learning_rate": 2.499999936844688e-05,
+              "loss": 7.500710487365723,
+              "main_policy_ce": 5.330557346343994,
+              "main_value_ce": 3.108771324157715,
+              "main_value_mse": 1.8938599824905396,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.001994242426007986,
+              "main_value_probability_neutral": 1.0846752957149874e-05,
+              "main_value_probability_win": 0.9979935884475708,
+              "parameter_norm_head": 30.71615982055664,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 353.8150939941406,
+              "parameter_norm_value": 23.825138092041016,
+              "policy_loss": 5.330527305603027,
+              "positions": 25843.0,
+              "raw_grad_norm": 77.45492553710938,
+              "update_norm_head": 0.012156115844845772,
+              "update_norm_input": 0.15483665466308594,
+              "update_norm_trunk": 0.19358256459236145,
+              "update_norm_value": 0.007363021839410067,
+              "value_loss": 3.10026216506958
+            },
+            "seconds": 38.78480892186053
+          }
+        ],
+        "cached_decode": [
+          {
+            "global_batch": 128,
+            "history_positions": 128,
+            "median_seconds": 0.028124197153374553,
+            "scope": "Synthetic finite inputs, repeated same cache; latency only. No sparse-kernel or MFU claim.",
+            "seconds": [
+              0.02905271598137915,
+              0.028766067000105977,
+              0.02803341718390584,
+              0.02782437694258988,
+              0.028124197153374553
+            ]
+          },
+          {
+            "global_batch": 128,
+            "history_positions": 512,
+            "median_seconds": 0.029938556952401996,
+            "scope": "Synthetic finite inputs, repeated same cache; latency only. No sparse-kernel or MFU claim.",
+            "seconds": [
+              0.02985867694951594,
+              0.02959060692228377,
+              0.029938556952401996,
+              0.030226876959204674,
+              0.030211736913770437
+            ]
+          }
+        ]
+      },
+      {
+        "arm": "g2",
+        "bucket": 768,
+        "status": "passed",
+        "global_peak_bytes": 26136958976,
+        "updates": [
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.182664394378662,
+              "aux_value_ce": 1.1266895532608032,
+              "aux_value_mse": 1.0419597625732422,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.46465596556663513,
+              "aux_value_probability_neutral": 0.2881079912185669,
+              "aux_value_probability_win": 0.2472349852323532,
+              "clip_scale": 0.019362108781933784,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.00775824673473835,
+              "fuzzy_batch_never_winner_fraction": 0.0030517578125,
+              "fuzzy_group_entropy": 0.4579840898513794,
+              "fuzzy_live_tokens_per_layer": 107466.0,
+              "fuzzy_positive_group_fraction": 0.7514165043830872,
+              "grad_norm": 51.64726638793945,
+              "gradient_norm_head": 2.3826992511749268,
+              "gradient_norm_input": 16.897998809814453,
+              "gradient_norm_trunk": 48.395545959472656,
+              "gradient_norm_value": 5.8388285636901855,
+              "learning_rate": 1.249999968422344e-05,
+              "loss": 5.975863933563232,
+              "main_policy_ce": 5.1838788986206055,
+              "main_value_ce": 1.133558750152588,
+              "main_value_mse": 1.0541956424713135,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.46743664145469666,
+              "main_value_probability_neutral": 0.28627628087997437,
+              "main_value_probability_win": 0.24628588557243347,
+              "parameter_norm_head": 30.716270446777344,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 353.8150634765625,
+              "parameter_norm_value": 23.825162887573242,
+              "policy_loss": 5.18357515335083,
+              "positions": 35822.0,
+              "raw_grad_norm": 51.64726638793945,
+              "update_norm_head": 0.007138746324926615,
+              "update_norm_input": 0.1272374540567398,
+              "update_norm_trunk": 0.14331412315368652,
+              "update_norm_value": 0.005546611733734608,
+              "value_loss": 1.1318414211273193
+            },
+            "seconds": 49.17725535784848
+          },
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.145016193389893,
+              "aux_value_ce": 2.3627212047576904,
+              "aux_value_mse": 1.9478708505630493,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.0076829358004033566,
+              "aux_value_probability_neutral": 1.4701148757012561e-05,
+              "aux_value_probability_win": 0.9923009872436523,
+              "clip_scale": 0.012368211522698402,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.0164794921875,
+              "fuzzy_batch_never_winner_fraction": 0.00714789517223835,
+              "fuzzy_group_entropy": 0.43074831366539,
+              "fuzzy_live_tokens_per_layer": 107466.0,
+              "fuzzy_positive_group_fraction": 0.7525621652603149,
+              "grad_norm": 80.85243225097656,
+              "gradient_norm_head": 2.2833971977233887,
+              "gradient_norm_input": 25.922285079956055,
+              "gradient_norm_trunk": 75.56961059570312,
+              "gradient_norm_value": 12.213580131530762,
+              "learning_rate": 2.499999936844688e-05,
+              "loss": 6.819908142089844,
+              "main_policy_ce": 5.144902229309082,
+              "main_value_ce": 2.4028589725494385,
+              "main_value_mse": 1.9514449834823608,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.007069894578307867,
+              "main_value_probability_neutral": 1.3407083315541968e-05,
+              "main_value_probability_win": 0.9929153323173523,
+              "parameter_norm_head": 30.716154098510742,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 353.8150634765625,
+              "parameter_norm_value": 23.825138092041016,
+              "policy_loss": 5.144930839538574,
+              "positions": 35822.0,
+              "raw_grad_norm": 80.85243225097656,
+              "update_norm_head": 0.012064258567988873,
+              "update_norm_input": 0.16501112282276154,
+              "update_norm_trunk": 0.19648751616477966,
+              "update_norm_value": 0.007513185031712055,
+              "value_loss": 2.392824649810791
+            },
+            "seconds": 49.07475062389858
+          }
+        ],
+        "cached_decode": []
+      },
+      {
+        "arm": "g4",
+        "bucket": 512,
+        "status": "passed",
+        "global_peak_bytes": 26638961664,
+        "updates": [
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.358328342437744,
+              "aux_value_ce": 1.2471632957458496,
+              "aux_value_mse": 1.1519166231155396,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.5428240299224854,
+              "aux_value_probability_neutral": 0.2504477798938751,
+              "aux_value_probability_win": 0.2067265659570694,
+              "clip_scale": 0.020612547174096107,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.013753167353570461,
+              "fuzzy_batch_never_winner_fraction": 0.011072657071053982,
+              "fuzzy_group_entropy": 0.8987559676170349,
+              "fuzzy_live_tokens_per_layer": 77529.0,
+              "fuzzy_positive_group_fraction": 0.9373814463615417,
+              "grad_norm": 48.51414108276367,
+              "gradient_norm_head": 2.5324602127075195,
+              "gradient_norm_input": 16.18813705444336,
+              "gradient_norm_trunk": 45.33760070800781,
+              "gradient_norm_value": 5.445627212524414,
+              "learning_rate": 1.249999968422344e-05,
+              "loss": 6.228039264678955,
+              "main_policy_ce": 5.359351634979248,
+              "main_value_ce": 1.2394095659255981,
+              "main_value_mse": 1.150916576385498,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.5385178327560425,
+              "main_value_probability_neutral": 0.24893014132976532,
+              "main_value_probability_win": 0.21255041658878326,
+              "parameter_norm_head": 30.716270446777344,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 374.0008239746094,
+              "parameter_norm_value": 23.825162887573242,
+              "policy_loss": 5.359095573425293,
+              "positions": 25843.0,
+              "raw_grad_norm": 48.51414108276367,
+              "update_norm_head": 0.007141503505408764,
+              "update_norm_input": 0.1270626038312912,
+              "update_norm_trunk": 0.1515832245349884,
+              "update_norm_value": 0.005546551197767258,
+              "value_loss": 1.2413480281829834
+            },
+            "seconds": 37.20354416919872
+          },
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.337364196777344,
+              "aux_value_ce": 2.9529354572296143,
+              "aux_value_mse": 1.8906667232513428,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.002840682165697217,
+              "aux_value_probability_neutral": 2.9880087822675705e-05,
+              "aux_value_probability_win": 0.9971280694007874,
+              "clip_scale": 0.013466409407556057,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.03284473344683647,
+              "fuzzy_batch_never_winner_fraction": 0.02810577303171158,
+              "fuzzy_group_entropy": 0.8321544528007507,
+              "fuzzy_live_tokens_per_layer": 77529.0,
+              "fuzzy_positive_group_fraction": 0.9378743767738342,
+              "grad_norm": 74.25884246826172,
+              "gradient_norm_head": 2.5823607444763184,
+              "gradient_norm_input": 23.51397132873535,
+              "gradient_norm_trunk": 69.38887023925781,
+              "gradient_norm_value": 11.831581115722656,
+              "learning_rate": 2.499999936844688e-05,
+              "loss": 7.421823978424072,
+              "main_policy_ce": 5.337191104888916,
+              "main_value_ce": 2.986335039138794,
+              "main_value_mse": 1.8914600610733032,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.0026566737797111273,
+              "main_value_probability_neutral": 2.7054080419475213e-05,
+              "main_value_probability_win": 0.997314989566803,
+              "parameter_norm_head": 30.716144561767578,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 374.0008239746094,
+              "parameter_norm_value": 23.82513427734375,
+              "policy_loss": 5.3372344970703125,
+              "positions": 25843.0,
+              "raw_grad_norm": 74.25884246826172,
+              "update_norm_head": 0.012357487343251705,
+              "update_norm_input": 0.16824238002300262,
+              "update_norm_trunk": 0.20578613877296448,
+              "update_norm_value": 0.007233288139104843,
+              "value_loss": 2.977985143661499
+            },
+            "seconds": 37.024214600911364
+          }
+        ],
+        "cached_decode": [
+          {
+            "global_batch": 128,
+            "history_positions": 128,
+            "median_seconds": 0.02901718602515757,
+            "scope": "Synthetic finite inputs, repeated same cache; latency only. No sparse-kernel or MFU claim.",
+            "seconds": [
+              0.029093306977301836,
+              0.028768996940925717,
+              0.029371576849371195,
+              0.02901718602515757,
+              0.028535197023302317
+            ]
+          },
+          {
+            "global_batch": 128,
+            "history_positions": 512,
+            "median_seconds": 0.03051679697819054,
+            "scope": "Synthetic finite inputs, repeated same cache; latency only. No sparse-kernel or MFU claim.",
+            "seconds": [
+              0.030564676970243454,
+              0.030166797107085586,
+              0.02998632611706853,
+              0.03058457700535655,
+              0.03051679697819054
+            ]
+          }
+        ]
+      },
+      {
+        "arm": "g4",
+        "bucket": 768,
+        "status": "passed",
+        "global_peak_bytes": 26497809408,
+        "updates": [
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.19132661819458,
+              "aux_value_ce": 1.283502221107483,
+              "aux_value_mse": 1.314791202545166,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.5048469305038452,
+              "aux_value_probability_neutral": 0.25252461433410645,
+              "aux_value_probability_win": 0.24262727797031403,
+              "clip_scale": 0.020959338173270226,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.013221588917076588,
+              "fuzzy_batch_never_winner_fraction": 0.010936934500932693,
+              "fuzzy_group_entropy": 0.8943793177604675,
+              "fuzzy_live_tokens_per_layer": 107466.0,
+              "fuzzy_positive_group_fraction": 0.9375544786453247,
+              "grad_norm": 47.711429595947266,
+              "gradient_norm_head": 2.376005172729492,
+              "gradient_norm_input": 16.539653778076172,
+              "gradient_norm_trunk": 44.36500930786133,
+              "gradient_norm_value": 5.377795219421387,
+              "learning_rate": 1.249999968422344e-05,
+              "loss": 6.088164329528809,
+              "main_policy_ce": 5.1924028396606445,
+              "main_value_ce": 1.27889084815979,
+              "main_value_mse": 1.3176085948944092,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.4993821680545807,
+              "main_value_probability_neutral": 0.2504192590713501,
+              "main_value_probability_win": 0.2501971423625946,
+              "parameter_norm_head": 30.716270446777344,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 374.0008239746094,
+              "parameter_norm_value": 23.825162887573242,
+              "policy_loss": 5.192133903503418,
+              "positions": 35822.0,
+              "raw_grad_norm": 47.711429595947266,
+              "update_norm_head": 0.007140602916479111,
+              "update_norm_input": 0.12798425555229187,
+              "update_norm_trunk": 0.15147458016872406,
+              "update_norm_value": 0.005547044333070517,
+              "value_loss": 1.2800437211990356
+            },
+            "seconds": 46.34643417596817
+          },
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.150677680969238,
+              "aux_value_ce": 2.0892062187194824,
+              "aux_value_mse": 1.9207900762557983,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.012778055854141712,
+              "aux_value_probability_neutral": 3.597034083213657e-05,
+              "aux_value_probability_win": 0.9871846437454224,
+              "clip_scale": 0.013167517259716988,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.032561980187892914,
+              "fuzzy_batch_never_winner_fraction": 0.027506334707140923,
+              "fuzzy_group_entropy": 0.8287144899368286,
+              "fuzzy_live_tokens_per_layer": 107466.0,
+              "fuzzy_positive_group_fraction": 0.9379628300666809,
+              "grad_norm": 75.94446563720703,
+              "gradient_norm_head": 2.32511568069458,
+              "gradient_norm_input": 24.664567947387695,
+              "gradient_norm_trunk": 70.84745025634766,
+              "gradient_norm_value": 11.595329284667969,
+              "learning_rate": 2.499999936844688e-05,
+              "loss": 6.633715629577637,
+              "main_policy_ce": 5.150148391723633,
+              "main_value_ce": 2.1291873455047607,
+              "main_value_mse": 1.926314353942871,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.01180756464600563,
+              "main_value_probability_neutral": 3.2675474358256906e-05,
+              "main_value_probability_win": 0.9881584048271179,
+              "parameter_norm_head": 30.716142654418945,
+              "parameter_norm_input": 375.6630859375,
+              "parameter_norm_trunk": 374.0008239746094,
+              "parameter_norm_value": 23.825145721435547,
+              "policy_loss": 5.150280952453613,
+              "positions": 35822.0,
+              "raw_grad_norm": 75.94446563720703,
+              "update_norm_head": 0.012281634844839573,
+              "update_norm_input": 0.17475056648254395,
+              "update_norm_trunk": 0.20984864234924316,
+              "update_norm_value": 0.007537787314504385,
+              "value_loss": 2.119192123413086
+            },
+            "seconds": 46.257602721918374
+          }
+        ],
+        "cached_decode": []
+      },
+      {
+        "arm": "g8",
+        "bucket": 512,
+        "status": "passed",
+        "global_peak_bytes": 26945896448,
+        "updates": [
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.34755277633667,
+              "aux_value_ce": 1.3839143514633179,
+              "aux_value_mse": 1.0017776489257812,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.3932002782821655,
+              "aux_value_probability_neutral": 0.40146404504776,
+              "aux_value_probability_win": 0.20533402264118195,
+              "clip_scale": 0.017147330567240715,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.03576948121190071,
+              "fuzzy_batch_never_winner_fraction": 0.035189930349588394,
+              "fuzzy_group_entropy": 1.2963109016418457,
+              "fuzzy_live_tokens_per_layer": 77529.0,
+              "fuzzy_positive_group_fraction": 0.995952308177948,
+              "grad_norm": 58.318119049072266,
+              "gradient_norm_head": 2.477177143096924,
+              "gradient_norm_input": 21.068729400634766,
+              "gradient_norm_trunk": 53.8709716796875,
+              "gradient_norm_value": 6.992354869842529,
+              "learning_rate": 1.249999968422344e-05,
+              "loss": 6.314101696014404,
+              "main_policy_ce": 5.3489556312561035,
+              "main_value_ce": 1.3777364492416382,
+              "main_value_mse": 1.0055445432662964,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.3941660523414612,
+              "main_value_probability_neutral": 0.39775246381759644,
+              "main_value_probability_win": 0.20807987451553345,
+              "parameter_norm_head": 30.716270446777344,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 387.0552673339844,
+              "parameter_norm_value": 23.825162887573242,
+              "policy_loss": 5.348605155944824,
+              "positions": 25843.0,
+              "raw_grad_norm": 58.318119049072266,
+              "update_norm_head": 0.007137991487979889,
+              "update_norm_input": 0.12712091207504272,
+              "update_norm_trunk": 0.15207788348197937,
+              "update_norm_value": 0.005547713954001665,
+              "value_loss": 1.379280924797058
+            },
+            "seconds": 35.96171372500248
+          },
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.339623928070068,
+              "aux_value_ce": 1.2508944272994995,
+              "aux_value_mse": 1.5367411375045776,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.08800669014453888,
+              "aux_value_probability_neutral": 6.711111927870661e-05,
+              "aux_value_probability_win": 0.9119266867637634,
+              "clip_scale": 0.015846578404307365,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.05931755155324936,
+              "fuzzy_batch_never_winner_fraction": 0.058565154671669006,
+              "fuzzy_group_entropy": 1.2258883714675903,
+              "fuzzy_live_tokens_per_layer": 77529.0,
+              "fuzzy_positive_group_fraction": 0.9960367679595947,
+              "grad_norm": 63.10511016845703,
+              "gradient_norm_head": 2.4996936321258545,
+              "gradient_norm_input": 21.349332809448242,
+              "gradient_norm_trunk": 58.587188720703125,
+              "gradient_norm_value": 9.367714881896973,
+              "learning_rate": 2.499999936844688e-05,
+              "loss": 6.23117733001709,
+              "main_policy_ce": 5.340260028839111,
+              "main_value_ce": 1.280322551727295,
+              "main_value_mse": 1.5560343265533447,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.08274822682142258,
+              "main_value_probability_neutral": 5.9893729485338554e-05,
+              "main_value_probability_win": 0.9171925783157349,
+              "parameter_norm_head": 30.716157913208008,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 387.0552673339844,
+              "parameter_norm_value": 23.825157165527344,
+              "policy_loss": 5.34010124206543,
+              "positions": 25843.0,
+              "raw_grad_norm": 63.10511016845703,
+              "update_norm_head": 0.012533926405012608,
+              "update_norm_input": 0.16769765317440033,
+              "update_norm_trunk": 0.21383391320705414,
+              "update_norm_value": 0.007564842235296965,
+              "value_loss": 1.2729655504226685
+            },
+            "seconds": 35.88229884603061
+          }
+        ],
+        "cached_decode": [
+          {
+            "global_batch": 128,
+            "history_positions": 128,
+            "median_seconds": 0.025488248094916344,
+            "scope": "Synthetic finite inputs, repeated same cache; latency only. No sparse-kernel or MFU claim.",
+            "seconds": [
+              0.025701246922835708,
+              0.025488248094916344,
+              0.025488157058134675,
+              0.025849028024822474,
+              0.025210528168827295
+            ]
+          },
+          {
+            "global_batch": 128,
+            "history_positions": 512,
+            "median_seconds": 0.027107237139716744,
+            "scope": "Synthetic finite inputs, repeated same cache; latency only. No sparse-kernel or MFU claim.",
+            "seconds": [
+              0.027427006978541613,
+              0.02710945694707334,
+              0.026955407112836838,
+              0.027107237139716744,
+              0.026939178118482232
+            ]
+          }
+        ]
+      },
+      {
+        "arm": "g8",
+        "bucket": 768,
+        "status": "passed",
+        "global_peak_bytes": 26743085056,
+        "updates": [
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.171618461608887,
+              "aux_value_ce": 1.3489612340927124,
+              "aux_value_mse": 1.0975195169448853,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.36989808082580566,
+              "aux_value_probability_neutral": 0.39427366852760315,
+              "aux_value_probability_win": 0.23582743108272552,
+              "clip_scale": 0.017179012298583984,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.034905239939689636,
+              "fuzzy_batch_never_winner_fraction": 0.03437652438879013,
+              "fuzzy_group_entropy": 1.291116714477539,
+              "fuzzy_live_tokens_per_layer": 107466.0,
+              "fuzzy_positive_group_fraction": 0.9959211349487305,
+              "grad_norm": 58.2105598449707,
+              "gradient_norm_head": 2.2680721282958984,
+              "gradient_norm_input": 21.171554565429688,
+              "gradient_norm_trunk": 53.727500915527344,
+              "gradient_norm_value": 6.960330486297607,
+              "learning_rate": 1.249999968422344e-05,
+              "loss": 6.116217136383057,
+              "main_policy_ce": 5.173481464385986,
+              "main_value_ce": 1.3469206094741821,
+              "main_value_mse": 1.1044416427612305,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.3709045350551605,
+              "main_value_probability_neutral": 0.3908454477787018,
+              "main_value_probability_win": 0.23824940621852875,
+              "parameter_norm_head": 30.716270446777344,
+              "parameter_norm_input": 375.6631164550781,
+              "parameter_norm_trunk": 387.0552673339844,
+              "parameter_norm_value": 23.825162887573242,
+              "policy_loss": 5.173015594482422,
+              "positions": 35822.0,
+              "raw_grad_norm": 58.2105598449707,
+              "update_norm_head": 0.0071366773918271065,
+              "update_norm_input": 0.12760841846466064,
+              "update_norm_trunk": 0.1517370492219925,
+              "update_norm_value": 0.005548628978431225,
+              "value_loss": 1.3474308252334595
+            },
+            "seconds": 44.63442264008336
+          },
+          {
+            "metrics": {
+              "accepted": 1.0,
+              "aux_policy_ce": 5.154254913330078,
+              "aux_value_ce": 0.825679361820221,
+              "aux_value_mse": 1.1913949251174927,
+              "aux_value_neutral_over_99": 0.0,
+              "aux_value_probability_loss": 0.17232701182365417,
+              "aux_value_probability_neutral": 8.443125989288092e-05,
+              "aux_value_probability_win": 0.8275884389877319,
+              "clip_scale": 0.019111301749944687,
+              "eligible": 1.0,
+              "fuzzy_batch_inactive_feature_fraction": 0.0585244819521904,
+              "fuzzy_batch_never_winner_fraction": 0.05770090967416763,
+              "fuzzy_group_entropy": 1.2204357385635376,
+              "fuzzy_live_tokens_per_layer": 107466.0,
+              "fuzzy_positive_group_fraction": 0.9959610104560852,
+              "grad_norm": 52.32505798339844,
+              "gradient_norm_head": 2.2093265056610107,
+              "gradient_norm_input": 17.98880386352539,
+              "gradient_norm_trunk": 48.49445343017578,
+              "gradient_norm_value": 7.597513198852539,
+              "learning_rate": 2.499999936844688e-05,
+              "loss": 5.745716571807861,
+              "main_policy_ce": 5.154828071594238,
+              "main_value_ce": 0.8505482077598572,
+              "main_value_mse": 1.2232962846755981,
+              "main_value_neutral_over_99": 0.0,
+              "main_value_probability_loss": 0.16276216506958008,
+              "main_value_probability_neutral": 7.57412999519147e-05,
+              "main_value_probability_win": 0.8371621966362,
+              "parameter_norm_head": 30.71614646911621,
+              "parameter_norm_input": 375.6630554199219,
+              "parameter_norm_trunk": 387.0552673339844,
+              "parameter_norm_value": 23.825153350830078,
+              "policy_loss": 5.154685020446777,
+              "positions": 35822.0,
+              "raw_grad_norm": 52.32505798339844,
+              "update_norm_head": 0.012483096681535244,
+              "update_norm_input": 0.17352434992790222,
+              "update_norm_trunk": 0.21589522063732147,
+              "update_norm_value": 0.00770269799977541,
+              "value_loss": 0.8443309664726257
+            },
+            "seconds": 44.600707232020795
+          }
+        ],
+        "cached_decode": []
+      }
+    ]
+  },
+  "provenance": "Numerical fields extracted from audited immutable study records; deployment identity, source archives and live execution receipts excluded."
+}

@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Increasing a grouped feature dictionary at nearly equal active decoding FLOPs improves temporal policy learning; issued work and latency are measured separately.",
+  "id": "strong19_fuzzy_topk",
+  "name": "Temporal grouped fuzzy TopK at matched active decoding cost",
+  "parent": {
+    "recipe": "research/recipes/strong19_moe_batch64",
+    "recipe_sha256": "166c79a60c6c5fb4f4c70f9fe845181ef0e464319c5dc3ac8838a274b185e1a9"
+  },
+  "requires_native": false,
+  "schema_version": 1
+}

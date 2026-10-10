@@ -1,0 +1,19 @@
+{
+  "configuration": "research/recipes/strong19_moe_batch64/dense.json",
+  "end_learning_rate": 0.0003,
+  "evidence": "research/studies/strong19_dense_tuning_keepall/REVIEW-001.md",
+  "expected_processes": 4,
+  "games_per_process": 16,
+  "global_games_per_update": 64,
+  "moe_is_default": false,
+  "optimizer": "adamw",
+  "peak_learning_rate": 0.001,
+  "recipe": "research/recipes/strong19_moe_batch64",
+  "schedule_updates": 1024,
+  "schema_version": 1,
+  "scope": "Default for new fixed-data 19x19 research; historical runs remain immutable.",
+  "screen_position_exposures": 7001181,
+  "screen_updates": 256,
+  "validation_every_updates": 32,
+  "warmup_updates": 80
+}
